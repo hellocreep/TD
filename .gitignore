@@ -1,0 +1,7 @@
+*.pyc
+*.*~
+migrations
+build
+.project
+.pydevproject
+.settings
