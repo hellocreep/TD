@@ -16,10 +16,14 @@
 }
 .tag{
 	border-bottom:3px solid #991926;
+	padding: 0 46px;
 }
 .tag li
 {
-	background:url(../images/hotel-tag.png) no-repeat;
+	border-radius: 7px 7px 0 0;
+	background: none repeat scroll 0 0 #7E0122;
+	-moz-border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
 	width:83px;
 	height:26px;
 	float:left;
@@ -47,4 +51,5 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdc984', endColorstr='#fdc984',GradientType=1 ); /* IE6-8 */
     width: 680px;
     height: 30px;
+    line-height: 27px;
 }
