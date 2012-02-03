@@ -231,9 +231,16 @@
     z-index: 2;
 }
 
+.schedule-detail td {
+    vertical-align: middle;
+}
+
 .schedule-detail thead th {
     height: 53px;
     background-color: #F0F4F7;
+    vertical-align: middle;
+    padding: 0 20px;
+    color: #868282;
 }
 
 .schedule-detail-title {
@@ -252,8 +259,6 @@
     padding: 10px 0 0 20px;
 }
 
-
-
 .table-odd {
     background: #FFFFFF;
 }
@@ -265,7 +270,6 @@
 /* 火车左侧导航 */
 
 .nav-train {
-    
 }
 
 .nav-train li p{
@@ -346,6 +350,10 @@
 
 /* content foot */
 
+.life-on-board {
+    margin-top: 30px;
+}
+
 .pic-list {
     margin: 20px 0 50px 0;
 }
@@ -395,4 +403,9 @@
 	color:#0069ca;
 	font-weight:bold;
 	font-size:13px;
+}
+
+.timeTable-info .trainInfo-time {
+     line-height: 20px;
+     margin-top: 3px;
 }

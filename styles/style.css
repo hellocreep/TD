@@ -92,16 +92,74 @@ a:hover {
     display: block;
 }
 
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.1s linear 0s;
+    background-color: #E6E6E6;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+    background-repeat: no-repeat;
+    border-color: #CCCCCC #CCCCCC #BBBBBB;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: normal;
+    padding: 5px 14px 6px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    border-radius: 6px 6px 6px 6px;
+    font-size: 15px;
+}
+
+.btn-red {
+    background-color: #E16020;
+    background-image: -moz-linear-gradient(center top , #F86218, #F86218 25%, #CB4909);
+    border-color: #B94106;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-red:hover {
+    background: none repeat scroll 0 0 #EA5207;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.black {
+    color: #000000;
+}
+
+.grey {
+    color: #868282;
+}
+
 /* LAYOUT */
 
 .wrapper {
-    margin: 0 auto;
+    margin: 30px auto 30px auto;
     width: 950px;
-    min-height: 1000px;
+    min-height: 900px;
     border: 1px solid #B8B8B8; 
     -webkit-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.5); 
+    margin: 30px auto 30px auto;
 }
 
 .sidebar {
@@ -117,9 +175,9 @@ a:hover {
     background: -ms-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* IE10+ */
     background: linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0ebdf', endColorstr='#f2eee2',GradientType=1 ); /* IE6-8 */
-   -webkit-box-shadow: 0 0 0 0 white,0 0 0 0 white,0 0 0 0 white,0px 0px 4px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 0 0 white,0 0 0 0 white,0 0 0 0 white,0px 0px 4px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0 0 white,0 0 0 0 white,0 0 0 0 white,0px 0px 4px 3px rgba(0, 0, 0, 0.5); 
+    -webkit-box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.5); 
 }
 
 .sidebar h1 {
@@ -144,4 +202,13 @@ a:hover {
     height: 75px;
 }
 
+.footer {
+    background: none repeat scroll 0 0 #670E14;
+    min-height: 200px;
+}
+
+.footer-footer {
+    margin: 0 auto;
+    width: 950px;
+}
 
