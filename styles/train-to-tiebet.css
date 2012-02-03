@@ -231,9 +231,16 @@
     z-index: 2;
 }
 
+.schedule-detail td {
+    vertical-align: middle;
+}
+
 .schedule-detail thead th {
     height: 53px;
     background-color: #F0F4F7;
+    vertical-align: middle;
+    padding: 0 20px;
+    color: #868282;
 }
 
 .schedule-detail-title {
@@ -252,8 +259,6 @@
     padding: 10px 0 0 20px;
 }
 
-
-
 .table-odd {
     background: #FFFFFF;
 }
@@ -262,97 +267,9 @@
     background: #F0F8FA;
 }
 
-/* 火车左侧导航 */
-
-.nav-train {
+.life-on-board {
+    margin-top: 30px;
 }
-
-.nav-train li a {
-    height: 38px;
-    border-bottom: 1px solid #F8F3E7;
-    vertical-align: middle;
-    line-height: 2.5;
-    cursor: pointer;
-    padding: 0 0 0 38px;
-    font-size: 15px;
-}
-
-.nav-train li a:hover {
-    background-color: #FCFBF8;
-    color: #D0D0CF;
-}
-
-.nav-train-active {
-	position:relative;
-	border:1px solid red;
-	top:0;
-	left:-5px;
-	width:252px;
-	background:url("images/.png") no-repeat;
-}
-
-.subnav-train {
-}
-
-.subnav-train li {
-    border: none;
-    height: 32px;
-    position: relative;
-}
-
-.subnav-train li p{
-    padding-left: 60px;
-    font-size: 14px;
-}
-
-.train-faqs{
-    font-size: 14px;
-    padding-left: 48px;
-    height: 38px;
-    border-bottom: 1px solid #F8F3E7;
-    vertical-align: middle;
-    line-height: 2.5;
-    cursor: pointer;
-}
-
-.train-faqs:hover {
-    background-color: #FCFBF8;
-    color: #D0D0CF;
-}
-
-.icon-navRight {
-    margin-left: 30px;
-}
-
-/*左侧弹出框*/
-
-.poptips {
-    display: none;
-    width: 550px;
-    height: 150px;
-    position: absolute;
-    background-color: #F5F1E7;
-    padding: 22px 15px;
-    left: 250px;
-    top: -80px;
-    z-index: 3;
-    cursor: auto;
-}
-
-.poptips img {
-    float: left;
-    outline: 1px solid #DDDDDD;
-    border: 1px solid white;
-    margin-right: 18px;
-    width: 184px;
-    height: 124px;
-}
-
-.poptips div {
-    float: right;
-}
-
-/* content foot */
 
 .pic-list {
     margin: 20px 0 50px 0;
@@ -403,4 +320,9 @@
 	color:#0069ca;
 	font-weight:bold;
 	font-size:13px;
+}
+
+.timeTable-info .trainInfo-time {
+     line-height: 20px;
+     margin-top: 3px;
 }
