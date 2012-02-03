@@ -265,10 +265,9 @@
 /* 火车左侧导航 */
 
 .nav-train {
-    
 }
 
-.nav-train li p{
+.nav-train li a {
     height: 38px;
     border-bottom: 1px solid #F8F3E7;
     vertical-align: middle;
@@ -278,9 +277,18 @@
     font-size: 15px;
 }
 
-.nav-train li p:hover {
+.nav-train li a:hover {
     background-color: #FCFBF8;
     color: #D0D0CF;
+}
+
+.nav-train-active {
+	position:relative;
+	border:1px solid red;
+	top:0;
+	left:-5px;
+	width:252px;
+	background:url("images/.png") no-repeat;
 }
 
 .subnav-train {
