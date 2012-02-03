@@ -94,17 +94,6 @@ $(function(){
         $( this ).removeClass( className+'-active' );
     });
 
-    //sidebar
-    $( '.train-faqs' ).each(
-        function(){
-            $( this ).hover( function(){
-                $( this ).children( '.poptips' ).show();
-            },function(){
-                $( this ).children( '.poptips' ).hide();
-            })
-        }
-    );
-
     //火车时刻标弹出框
     $( '.icon-train' ).click( function(){
         $( '.schedule-detail.'+$( this ).attr( 'name' ) ).toggle( );
