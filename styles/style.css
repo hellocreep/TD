@@ -162,6 +162,8 @@ a:hover {
     margin: 30px auto 30px auto;
 }
 
+/* sidebar */
+
 .sidebar {
     width: 240px;
     float: left;
@@ -186,9 +188,90 @@ a:hover {
     text-align: center;
 }
 
-.sidebar-trainPic {
+.sidebar-pic {
     height: 146px;    
 }
+
+.nav-left {
+}
+
+.nav-left li p{
+    height: 38px;
+    border-bottom: 1px solid #F8F3E7;
+    vertical-align: middle;
+    line-height: 2.5;
+    cursor: pointer;
+    padding: 0 0 0 38px;
+    font-size: 15px;
+}
+
+.nav-left li p:hover {
+    background-color: #FCFBF8;
+    color: #D0D0CF;
+}
+
+.subnav-left {
+}
+
+.subnav-left li {
+    border: none;
+    height: 32px;
+    position: relative;
+}
+
+.subnav-left li p{
+    padding-left: 60px;
+    font-size: 14px;
+}
+
+.nav-left-faqs{
+    font-size: 14px;
+    padding-left: 48px;
+    height: 38px;
+    border-bottom: 1px solid #F8F3E7;
+    vertical-align: middle;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+.nav-left-faqs:hover {
+    background-color: #FCFBF8;
+    color: #D0D0CF;
+}
+
+.icon-navRight {
+    margin-left: 30px;
+}
+
+/*左侧弹出框*/
+
+.poptips {
+    display: none;
+    width: 550px;
+    height: 150px;
+    position: absolute;
+    background-color: #F5F1E7;
+    padding: 22px 15px;
+    left: 250px;
+    top: -80px;
+    z-index: 3;
+    cursor: auto;
+}
+
+.poptips img {
+    float: left;
+    outline: 1px solid #DDDDDD;
+    border: 1px solid white;
+    margin-right: 18px;
+    width: 184px;
+    height: 124px;
+}
+
+.poptips div {
+    float: right;
+}
+
+/* content */
 
 .content {
     width: 694px;
@@ -197,10 +280,6 @@ a:hover {
 }
 
 .content-foot {
-    background-color: #F6F6F6;
-    border-radius: 5px;
-    margin: 0 30px 80px 30px;
-    height: 75px;
 }
 
 .footer {
@@ -208,7 +287,7 @@ a:hover {
     min-height: 200px;
 }
 
-.footer-footer {
+.footer-wrapper {
     margin: 0 auto;
     width: 950px;
 }
