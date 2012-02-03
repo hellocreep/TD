@@ -342,3 +342,29 @@
 .poptips div {
     float: right;
 }
+
+/* content foot */
+
+.pic-list {
+    margin: 20px 0 50px 0;
+}
+
+.pic-list li{
+    margin-right: 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+.pic-list li p {
+    height: 60px;
+    line-height: 2;
+}
+
+.pic-list li img {
+    outline: 1px solid #DDDDDD;
+    border: 1px solid white;
+    width: 184px;
+    height: 124px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
