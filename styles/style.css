@@ -165,8 +165,9 @@ a:hover {
 .sidebar {
     width: 240px;
     float: left;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     height: auto;
+    min-height: 900px;
     background: rgb(240,235,223); /* Old browsers */
     background: -moz-linear-gradient(left, rgba(240,235,223,1) 0%, rgba(255,253,249,1) 50%, rgba(242,238,226,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(240,235,223,1)), color-stop(50%,rgba(255,253,249,1)), color-stop(100%,rgba(242,238,226,1))); /* Chrome,Safari4+ */
