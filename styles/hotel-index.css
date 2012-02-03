@@ -1,0 +1,30 @@
+.content{
+	width:680px;
+}
+.right-head{
+	background:url(../images/hotel-index.png) no-repeat;
+	width:680px;
+	min-height:265px;
+}
+.right-head p{
+	color:#FFF;
+	text-align:left;
+	padding:20px 50px 0px 15px;
+}
+.right-content{
+	width:680px;
+}
+.tag{
+	border-bottom:3px solid #991926;
+}
+.tag li
+{
+	background:url(../images/hotel-tag.png) no-repeat;
+	width:84px;
+	height:26px;
+	float:left;
+	color:#FFF;
+	margin-right:15px;
+	line-height:26px;
+	font-weight:bold;
+}
