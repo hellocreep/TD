@@ -1,3 +1,51 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* COMMON STYLE */
+
 body {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 13px;
@@ -6,10 +54,23 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #7E0122;/*臧红色*/
     font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-weight: bold;
 }
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3{
+    font-size: 16px;  
+}
+
 p {
     color: black;
-    margin-bottom: 10px;
     margin-top: 0;
 }
 img {
@@ -23,3 +84,48 @@ a:hover {
     text-decoration: underline;
 }
 
+.clearfix:after {
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: '';
+    display: block;
+}
+
+/* LAYOUT */
+
+.wrapper {
+    margin: 0 auto;
+    width: 950px;
+    min-height: 1000px;
+}
+
+.sidebar {
+    width: 240px;
+    float: left;
+    padding-bottom: 150px;
+    height: auto;
+    background: rgb(240,235,223); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(240,235,223,1) 0%, rgba(255,253,249,1) 50%, rgba(242,238,226,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(240,235,223,1)), color-stop(50%,rgba(255,253,249,1)), color-stop(100%,rgba(242,238,226,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0ebdf', endColorstr='#f2eee2',GradientType=1 ); /* IE6-8 */
+}
+
+.sidebar h1 {
+    margin: 25px 0 30px 0; 
+    text-align: center;
+}
+
+.sidebar-trainPic {
+    height: 146px;    
+}
+
+.content {
+    width: 694px;
+    float: right;
+    text-align: center;
+}

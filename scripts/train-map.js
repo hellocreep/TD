@@ -1,5 +1,5 @@
 ( function(){
-    
+    //车站资料
     var trainStation = [
     ['icon-beijing','Beijing West Railway Station','<img class="attraction-pic" src="" />'+
     'No.118, East Lianhuachi Road,</br>Fengtai District, Beijing 北京市丰台区莲花池东路118号',
@@ -45,6 +45,7 @@
     ],
     ];
     
+    //车站信息的lightbox
     var show = function( e ){
         var attraction = $( this ).attr( 'name' );
         if( attraction==undefined ){
@@ -64,6 +65,7 @@
         });
     };
     
+    //地图图标北京变化
     var turnon = function( e ){
         var attraction = 'icon' + $( this ).attr( "class" )
         .replace(/marker/g,'').replace(' ',"");
@@ -77,7 +79,7 @@
     };
     
 $(function(){
-        
+    //地图    
     $( '.marker' ).click( show );
     $( '.attraction-icons' ).click( show );
     $( '.marker' ).hover( turnon ,turnoff );
@@ -90,6 +92,22 @@ $(function(){
     }, function(){
         var className = $( this ).attr( 'name' );
         $( this ).removeClass( className+'-active' );
+    });
+
+    //sidebar
+    $( '.train-faqs' ).each(
+        function(){
+            $( this ).hover( function(){
+                $( this ).children( '.poptips' ).show();
+            },function(){
+                $( this ).children( '.poptips' ).hide();
+            })
+        }
+    );
+
+    //火车时刻标弹出框
+    $( '.icon-train' ).click( function(){
+        $( '.schedule-detail.'+$( this ).attr( 'name' ) ).toggle( );
     });
 
 });

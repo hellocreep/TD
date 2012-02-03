@@ -1,19 +1,12 @@
-.wrapper {
-    margin: 0 auto;
-    width: 950px;
-    min-height: 500px;
-}
-
-.content {
-    text-align: center;
-}
 
 .train-map {
-    margin: 0 auto;
+    margin: 10px auto;
     position: relative;
     height: 300px;
     width: 680px;
     background: url(../images/Beijing-Lhasa.png) no-repeat 0 0 ;
+    outline: 2px solid #DDDDDD;
+    border: 1px solid white;
 }
 
 .lightbox {
@@ -37,7 +30,6 @@
     behavior: url(../styles/PIE.htc);
 }
 
-
 .lightbox-close {
     cursor: pointer;
     color: #BBBBBB;
@@ -48,14 +40,6 @@
 }
 
 .attraction-des {
-}
-
-.clearfix:after {
-    clear: both;
-    height: 0;
-    visibility: hidden;
-    content: '';
-    display: block;
 }
 
 .attraction-title {
@@ -190,4 +174,171 @@
 
 .icon-lhasa-active {
    background-position: 1% 74%;
+}
+
+/* 内页火车时间表*/
+
+.schedule-title {
+    background-color: #F5EACE;
+    text-align: center;
+    height: 30px;
+    line-height: 140%;
+}
+
+.timeTable {
+    width: 100%;
+}
+
+.icon-train {
+    cursor: pointer;
+    width:  70px;
+}
+
+.timeTable-title {
+    background-color: #F4F4F4;
+    color: #7E0122;
+    font-size: 15px;
+    height: 45px;
+}
+
+.timeTable-title td {
+    vertical-align: middle;
+}
+
+.timeTable-info {
+    height: 45px;
+    background: rgb(255,254,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,254,255,1) 0%, rgba(242,232,209,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,254,255,1)), color-stop(100%,rgba(242,232,209,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,254,255,1) 0%,rgba(242,232,209,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,254,255,1) 0%,rgba(242,232,209,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,254,255,1) 0%,rgba(242,232,209,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(255,254,255,1) 0%,rgba(242,232,209,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffeff', endColorstr='#f2e8d1',GradientType=0 ); /* IE6-8 */
+}
+
+.timeTable-info td {
+    vertical-align: middle;
+}
+
+.schedule-detail {
+    display: none;
+    position: relative;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    top: 5px;
+    z-index: 2;
+}
+
+.schedule-detail thead th {
+    height: 53px;
+    background-color: #F0F4F7;
+}
+
+.schedule-detail-title {
+    border: 1px solid #DDDDDD;
+}
+
+.schedule-detail tr {
+    height: 33px;
+}
+
+.schedule-detail tfoot th {
+    background-color: #F0F4F7;
+    height: 84px;
+    border-top: 1px solid #DDDDDD;
+    text-align: left;
+    padding: 10px 0 0 20px;
+}
+
+
+
+.table-odd {
+    background: #FFFFFF;
+}
+
+.table-even {
+    background: #F0F8FA;
+}
+
+/* 火车左侧导航 */
+
+.nav-train {
+    
+}
+
+.nav-train li p{
+    height: 38px;
+    border-bottom: 1px solid #F8F3E7;
+    vertical-align: middle;
+    line-height: 2.5;
+    cursor: pointer;
+    padding: 0 0 0 38px;
+    font-size: 15px;
+}
+
+.nav-train li p:hover {
+    background-color: #FCFBF8;
+    color: #D0D0CF;
+}
+
+.subnav-train {
+}
+
+.subnav-train li {
+    border: none;
+    height: 32px;
+    position: relative;
+}
+
+.subnav-train li p{
+    padding-left: 60px;
+    font-size: 14px;
+}
+
+.train-faqs{
+    font-size: 14px;
+    padding-left: 48px;
+    height: 38px;
+    border-bottom: 1px solid #F8F3E7;
+    vertical-align: middle;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+.train-faqs:hover {
+    background-color: #FCFBF8;
+    color: #D0D0CF;
+}
+
+.icon-navRight {
+    margin-left: 30px;
+}
+
+/*左侧弹出框*/
+
+.poptips {
+    display: none;
+    width: 550px;
+    height: 150px;
+    position: absolute;
+    background-color: #F5F1E7;
+    padding: 22px 15px;
+    left: 250px;
+    top: -80px;
+    z-index: 3;
+    cursor: auto;
+}
+
+.poptips img {
+    float: left;
+    outline: 1px solid #DDDDDD;
+    border: 1px solid white;
+    margin-right: 18px;
+    width: 184px;
+    height: 124px;
+}
+
+.poptips div {
+    float: right;
 }
