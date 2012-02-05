@@ -11,7 +11,7 @@ $( function(){
             })
         }
     );
-
+	//sidebar同步content 有没其他可以不写js的方法实现？
 	$( '.sidebar' ).height($( '.content' ).height());
 
 });
