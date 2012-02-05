@@ -1,258 +1,500 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-    <head>
-        <link href="styles/train-to-tiebet.css" rel="stylesheet" type="text/css"/>
-        <link href="styles/style.css" rel="stylesheet" type="text/css"/>
-        <script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
-        <script src="scripts/train-map.js" type="text/javascript"></script>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>train-to-tibet</title>
-    </head>
-    <body>
-        <div class="header"></div>
-        <div class="wrapper clearfix">
-            <div class="bread"></div>
-            <div class="sidebar">
-                <h1>Century Gothic</h1>
-                <div class="sidebar-trainPic"></div>
-                <ul class="nav-left">
-                    <li><p>Beijing Lhasa Train</p></li>
-                    <li><p>Beijing Lhasa Train</p></li>
-                    <li><p>Beijing Lhasa Train</p></li>
-                    <li><p>Beijing Lhasa Train</p></li>
-                    <li><p>Beijing Lhasa Train</p></li>
-                    <li><p>Beijing Lhasa Train</p></li>
-                    <li><p>Beijing Lhasa Train</p>
-                        <ul class="subnav-left">
-                            <li><p>Fact&Feature</p></li>
-                            <li><p>Fact&Feature</p></li>
-                            <li><p>Fact&Feature</p></li>
-                            <li><p>Fact&Feature</p></li>
-                        </ul>
-                    </li>
-                    <li><h1>FAQs</h1>
-                        <div>7 things to know</div>
-                        <ul class="subnav-left">
-                            <li><div class="nav-left-faqs">
-                                    Fact&Feature
-                                    <span class="icon-navRight">></span>
-                                    <div class="poptips">
-                                        <img src=""/>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><div class="nav-left-faqs">Fact&Feature
-                                    <span class="icon-navRight">></span>
-                                    <div class="poptips">
-                                        <img src=""/>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><div class="nav-left-faqs">Fact&Feature
-                                    <span class="icon-navRight">></span>
-                                    <div class="poptips">
-                                        <img src=""/>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><div class="nav-left-faqs">Fact&Feature
-                                    <span class="icon-navRight">></span>
-                                    <div class="poptips">
-                                        <img src=""/>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="content">
-                <h1>Train to Lhasa</h1>
-                <p></p>
-                <div class="train-map">
-                    <span class="marker marker-beijing"></span>
-                    <span class="attraction-icons icon-beijing" name="icon-beijing"></span>
-                    <span class="marker marker-lanzhou"></span>
-                    <span class="attraction-icons icon-lanzhou" name="icon-lanzhou"></span>
-                    <span class="marker marker-xining"></span>
-                    <span class="attraction-icons icon-xining" name="icon-xining"></span>
-                    <span class="marker marker-golmud"></span>
-                    <span class="attraction-icons icon-golmud" name="icon-golmud"></span>
-                    <span class="marker marker-naqu"></span>
-                    <span class="attraction-icons icon-naqu" name="icon-naqu"></span>
-                    <span class="marker marker-lhasa"></span>
-                    <span class="attraction-icons icon-lhasa" name="icon-lhasa"></span>
-                </div>
-                <div class="schedule">
-                    <h1 class="schedule-title">Train to lhasa Schedule</h1>
-                    <p></p>
-                   <div class="timeTable">
-                            <ul class="timeTable-title">
-                                <li class="trainno">Train No.</li>
-                                <li>Route</li>
-                                <li class="traintime">Dep. Time </br>Arr.Time</li>
-                                <li class="traindate">Duration</li>
-                            </ul>
-                            <ul class="timeTable-info">
-                                <li class="icon-train" name="beijing-to-lhasa">TD177></li>
-                                <li>Beijing to Lhasa</li>
-                                <li class="trainInfo-time">20:00</br>20:00</li>
-                                <li>43 hours</li>
-                                <li><a class="btn btn-red" href="#">buy now</a></li>
-                            </ul>
-                              <div>
-                            <table class="schedule-detail beijing-to-lhasa">
-                                <thead>
-                                    <th colspan="5" class="clearfix">
-                                        <div class="left">
-                                            <p><span class="black">Train T27</span>-everyday</p>
-                                            <p>43 hours 51minuts</p>
-                                        </div>
-                                        <div class="right"></div>
-                                    </th>
-                                </thead>
-                                <tbody>
-                                    <tr class="schedule-detail-title table-odd">
-                                        <td>Train Station</td>
-                                        <td>Arrive Time</td>
-                                        <td>Depature Time</td>
-                                        <td>Duration</td>
-                                        <td>Distance</td>
-                                    </tr>
-                                    <tr class="table-even">
-                                        <td>Beijing West</td>
-                                        <td>12:00</td>
-                                        <td>08:00</td>
-                                        <td>33 hours</td>
-                                        <td>11111km</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <th colspan="5"><h4>Note:</h4>
-                                    <p>
-                                        1.fdfdsfsdfsdfdsfds
-                                    </p>
-                                    <p>
-                                        2.fdfsdfsdfsdfsdfsfsdfsd
-                                    </p></th>
-                                </tfoot>
-                            </table>
-                        </div>
-                            <ul class="timeTable-title">
-                                <li class="trainno">Train No.</li>
-                                <li>Route</li>
-                                <li class="traintime">Dep. Time </br>Arr.Time</li>
-                                <li class="traindate">Duration</li>
-                            </ul>
-                            <ul class="timeTable-info">
-                                <li class="icon-train" name="beijing-to-chengdu">TD21></li>
-                                <li>Beijing to Lhasa</li>
-                                <li class="trainInfo-time">20:00</br>20:00</li>
-                                <li>43 hours</li>
-                                <li><a class="btn btn-red" href="#">buy now</a></li>
-                            </ul>
-                                <div>
-                                <table class="schedule-detail beijing-to-chengdu">
-                                    <thead>
-                                        <th colspan="5" class="clearfix">
-                                            <div class="left">
-                                                <p><span class="black">Train T27</span>-everyday</p>
-                                                <p>43 hours 51minuts</p>
-                                            </div>
-                                            <div class="right"></div>
-                                        </th>
-                                    </thead>    
-                                    <tbody>
-                                        <tr class="schedule-detail-title table-odd">
-                                            <td>Train Station</td>
-                                            <td>Arrive Time</td>
-                                            <td>Depature Time</td>
-                                            <td>Duration</td>
-                                            <td>Distance</td>
-                                        </tr>
-                                        <tr class="table-even">
-                                            <td>Beijing West</td>
-                                            <td>12:00</td>
-                                            <td>08:00</td>
-                                            <td>33 hours</td>
-                                            <td>11111km</td>
-                                        </tr>
-                                        <tr class="schedule-detail-title table-odd">
-                                            <td>Train Station</td>
-                                            <td>Arrive Time</td>
-                                            <td>Depature Time</td>
-                                            <td>Duration</td>
-                                            <td>Distance</td>
-                                        </tr>
-                                        <tr class="table-even">
-                                            <td>Beijing West</td>
-                                            <td>12:00</td>
-                                            <td>08:00</td>
-                                            <td>33 hours</td>
-                                            <td>11111km</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <th colspan="5">
-                                            <h4>Note:</h4>
-                                            <p>1.fdfdsfsdfsdfdsfds</p>
-                                            <p>2.fdfsdfsdfsdfsdfsfsdfsd</p>
-                                        </th>
-                                    </tfoot>
-                                </table> 
-                            </div>
-                    </div>
-                </div>
-                <div class="life-on-board">
-                    <h2>Life on Board</h2>
-                    <ul class="pic-list clearfix">
-                        <li>
-                            <img src="" />
-                            <a href="#">test</a>
-                            <p>fdssdfdsfdsfdsfdsfdsfdsf
-                                fdfffffffffffffff
-                                dsfdsffdfdsfsdfdsfdsfds
-                            </p>
-                        </li>
-                        <li>
-                            <img src="" />
-                            <a href="#">test</a>
-                            <p>fdssdfdsfdsfdsfdsfdsfdsf
-                                fdfffffffffffffff
-                                dsfdsffdfdsfsdfdsfdsfds
-                            </p>
-                        </li>
-                        <li>
-                            <img src="" />
-                            <a href="#">test</a>
-                            <p>fdssdfdsfdsfdsfdsfdsfdsf
-                                fdfffffffffffffff
-                                dsfdsffdfdsfsdfdsfdsfds
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="content-foot">
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="footer-wapper"></div>
-        </div>
-        
-        <div class="lightbox">
-            <p style="text-align: right;"><span class="lightbox-close">X</span></p>
-            <h2 class="attraction-title"></h2>
-            <div class="attraction-des clearfix"></div>
-            <div class="attraction-faq">
-            </div>
-        </div>
-        <div class="mask"></div>
-    </body>
+	<head>
+		<link href="styles/train-to-tiebet.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/style.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="scripts/train-map.js" type="text/javascript"></script>
+		<script src="scripts/global.js" type="text/javascript"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>train-to-tibet</title>
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="wrapper clearfix">
+			<div class="bread"></div>
+			<div class="sidebar">
+				<h1>Century Gothic</h1>
+				<div class="sidebar-trainPic"></div>
+				<ul class="nav-left">
+					<li>
+						<p>
+							Beijing Lhasa Train
+						</p>
+					</li>
+					<li>
+						<p>
+							Beijing Lhasa Train
+						</p>
+					</li>
+					<li>
+						<p>
+							Beijing Lhasa Train
+						</p>
+					</li>
+					<li>
+						<p>
+							Beijing Lhasa Train
+						</p>
+					</li>
+					<li>
+						<p>
+							Beijing Lhasa Train
+						</p>
+					</li>
+					<li>
+						<p>
+							Beijing Lhasa Train
+						</p>
+					</li>
+					<li>
+						<p>
+							Beijing Lhasa Train
+						</p>
+						<ul class="subnav-left">
+							<li>
+								<p>
+									Fact&Feature
+								</p>
+							</li>
+							<li>
+								<p>
+									Fact&Feature
+								</p>
+							</li>
+							<li>
+								<p>
+									Fact&Feature
+								</p>
+							</li>
+							<li>
+								<p>
+									Fact&Feature
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h1>FAQs</h1>
+						<div>
+							7 things to know
+						</div>
+						<ul class="subnav-left">
+							<li>
+								<div class="nav-left-faqs">
+									Fact&Feature <span class="icon-navRight">></span>
+									<div class="poptips">
+										<span class="triangle-left"></span>
+										<img src=""/>
+										<div></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="nav-left-faqs">
+									Fact&Feature <span class="icon-navRight">></span>
+									<div class="poptips">
+										<span class="triangle-left"></span>
+										<img src=""/>
+										<div></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="nav-left-faqs">
+									Fact&Feature <span class="icon-navRight">></span>
+									<div class="poptips">
+										<span class="triangle-left"></span>
+										<img src=""/>
+										<div></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="nav-left-faqs">
+									Fact&Feature <span class="icon-navRight">></span>
+									<div class="poptips">
+										<span class="triangle-left"></span>
+										<img src=""/>
+										<div></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<h1>Train to Lhasa</h1>
+				<p></p>
+				<div class="train-map">
+					<span class="marker marker-beijing"></span>
+					<span class="attraction-icons icon-beijing" name="icon-beijing"></span>
+					<span class="marker marker-lanzhou"></span>
+					<span class="attraction-icons icon-lanzhou" name="icon-lanzhou"></span>
+					<span class="marker marker-xining"></span>
+					<span class="attraction-icons icon-xining" name="icon-xining"></span>
+					<span class="marker marker-golmud"></span>
+					<span class="attraction-icons icon-golmud" name="icon-golmud"></span>
+					<span class="marker marker-naqu"></span>
+					<span class="attraction-icons icon-naqu" name="icon-naqu"></span>
+					<span class="marker marker-lhasa"></span>
+					<span class="attraction-icons icon-lhasa" name="icon-lhasa"></span>
+				</div>
+				<div class="schedule">
+					<h1 class="schedule-title">Train to lhasa Schedule</h1>
+					<p></p>
+					<div class="timeTable">
+						<ul class="timeTable-title">
+							<li class="trainno">
+								Train No.
+							</li>
+							<li>
+								Route
+							</li>
+							<li class="traintime">
+								Dep. Time </br>Arr.Time
+							</li>
+							<li class="traindate">
+								Duration
+							</li>
+						</ul>
+						<ul class="timeTable-info">
+							<li class="icon-train" name="beijing-to-lhasa">
+								TD177>
+							</li>
+							<li>
+								Beijing to Lhasa
+							</li>
+							<li class="trainInfo-time">
+								20:00</br>20:00
+							</li>
+							<li>
+								43 hours
+							</li>
+							<li>
+								<a class="btn btn-red" href="#">buy now</a>
+							</li>
+						</ul>
+						<div>
+							<table class="schedule-detail beijing-to-lhasa">
+								<thead>
+									<th colspan="5" class="clearfix">
+									<div class="left">
+										<p>
+											<span class="black">Train T27</span>-everyday
+										</p>
+										<p>
+											43 hours 51minuts
+										</p>
+									</div><div class="right"></div></th>
+								</thead>
+								<tbody>
+									<tr class="schedule-detail-title table-odd">
+										<td>Train Station</td>
+										<td>Arrive Time</td>
+										<td>Depature Time</td>
+										<td>Duration</td>
+										<td>Distance</td>
+									</tr>
+									<tr class="table-even">
+										<td>Beijing West</td>
+										<td>12:00</td>
+										<td>08:00</td>
+										<td>33 hours</td>
+										<td>11111km</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<th colspan="5"><h4>Note:</h4>
+									<p>
+										1.fdfdsfsdfsdfdsfds
+									</p>
+									<p>
+										2.fdfsdfsdfsdfsdfsfsdfsd
+									</p></th>
+								</tfoot>
+							</table>
+						</div>
+						<ul class="timeTable-title">
+							<li class="trainno">
+								Train No.
+							</li>
+							<li>
+								Route
+							</li>
+							<li class="traintime">
+								Dep. Time </br>Arr.Time
+							</li>
+							<li class="traindate">
+								Duration
+							</li>
+						</ul>
+						<ul class="timeTable-info">
+							<li class="icon-train" name="beijing-to-chengdu">
+								TD21>
+							</li>
+							<li>
+								Beijing to Lhasa
+							</li>
+							<li class="trainInfo-time">
+								20:00</br>20:00
+							</li>
+							<li>
+								43 hours
+							</li>
+							<li>
+								<a class="btn btn-red" href="#">buy now</a>
+							</li>
+						</ul>
+						<div>
+							<table class="schedule-detail beijing-to-chengdu">
+								<thead>
+									<th colspan="5" class="clearfix">
+									<div class="left">
+										<p>
+											<span class="black">Train T27</span>-everyday
+										</p>
+										<p>
+											43 hours 51minuts
+										</p>
+									</div><div class="right"></div></th>
+								</thead>
+								<tbody>
+									<tr class="schedule-detail-title table-odd">
+										<td>Train Station</td>
+										<td>Arrive Time</td>
+										<td>Depature Time</td>
+										<td>Duration</td>
+										<td>Distance</td>
+									</tr>
+									<tr class="table-even">
+										<td>Beijing West</td>
+										<td>12:00</td>
+										<td>08:00</td>
+										<td>33 hours</td>
+										<td>11111km</td>
+									</tr>
+									<tr class="schedule-detail-title table-odd">
+										<td>Train Station</td>
+										<td>Arrive Time</td>
+										<td>Depature Time</td>
+										<td>Duration</td>
+										<td>Distance</td>
+									</tr>
+									<tr class="table-even">
+										<td>Beijing West</td>
+										<td>12:00</td>
+										<td>08:00</td>
+										<td>33 hours</td>
+										<td>11111km</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<th colspan="5"><h4>Note:</h4>
+									<p>
+										1.fdfdsfsdfsdfdsfds
+									</p>
+									<p>
+										2.fdfsdfsdfsdfsdfsfsdfsd
+									</p></th>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="life-on-board">
+					<h2>Life on Board</h2>
+					<ul class="pic-list clearfix">
+						<li>
+							<img src="" />
+							<a href="#">test</a>
+							<p>
+								fdssdfdsfdsfdsfdsfdsfdsf
+								fdfffffffffffffff
+								dsfdsffdfdsfsdfdsfdsfds
+							</p>
+						</li>
+						<li>
+							<img src="" />
+							<a href="#">test</a>
+							<p>
+								fdssdfdsfdsfdsfdsfdsfdsf
+								fdfffffffffffffff
+								dsfdsffdfdsfsdfdsfdsfds
+							</p>
+						</li>
+						<li>
+							<img src="" />
+							<a href="#">test</a>
+							<p>
+								fdssdfdsfdsfdsfdsfdsfdsf
+								fdfffffffffffffff
+								dsfdsffdfdsfsdfdsfdsfds
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="content-foot">
+					<!-- Not Sure This-->
+					<div class="FAQ-footer clearfix">
+						<div class="FAQ-help clearfix">
+							<h2 style="font-size:14px">"Can you tell me more about...?"
+							<br>
+							No problem! No matter you want to get more answers
+							<br>
+							or customize your unique Tibet Tour,
+							<br>
+							just feel free to tell us. </h2>
+							<div class="btn-enquiry">
+								<a href="#">make a enquiry</a>
+							</div>
+						</div>
+						<div class="author-list">
+							<ul>
+								<li>
+									<a href="#">
+									<div><img src="" class="img-icon">
+									</div>testst<div></div> </a>
+								</li>
+								<li>
+									<a href="#">
+									<div><img src="" class="img-icon">
+									</div>tetes<div></div> </a>
+								</li>
+								<li>
+									<a href="#">
+									<div><img src="" class="img-icon">
+									</div>testest<div></div> </a>
+								</li>
+								<li>
+									<a href="#">
+									<div><img src="" class="img-icon">
+									</div>esdtes<div></div> </a>
+								</li>
+							</ul>
+						</div>
+						<h2 align="center" style="color:#000000; font-weight: normal;">Our specialists are always ready to help!</h2>
+					</div>
+					<!-- end -->
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-wrapper clearfix">
+				<div class="nav">
+					<h4>About Us</h4>
+					<ul>
+						<li>
+							<a href="about-us/">About TibetDiscovery</a>
+						</li>
+						<li>
+							<a href="why-choose-us/">Why Choose Us</a>
+						</li>
+						<li>
+							<a href="testimonials/">Testimonials</a>
+						</li>
+						<li>
+							<a href="contact-us/">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h4>Tibet Tours</h4>
+					<ul>
+						<li>
+							<a href="classic-tibet-tour/">Classic Tours</a>
+						</li>
+						<li>
+							<a href="tibet-adventure-tours/">Adventure Tours</a>
+						</li>
+						<li>
+							<a href="tibet-overland-tours/">Overland Tours</a>
+						</li>
+						<li>
+							<a href="tibet-train-tour/">Train Tours</a>
+						</li>
+						<li>
+							<a href="china-and-tibet-tour/">Tibet+China Tours</a>
+						</li>
+						<li>
+							<a href="tibet-festival-tours/">Featured Tours 2011</a>
+						</li>
+						<li>
+							<a href="join-in-tours/">Join-in Tours</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h4>Explore Tibet</h4>
+					<ul>
+						<li>
+							<a href="travel-guide/">Tibet Guide</a>
+						</li>
+						<li>
+							<a href="what-to-see/">What to See</a>
+						</li>
+						<li>
+							<a href="what-to-buy/">What to Buy</a>
+						</li>
+						<li>
+							<a href="what-to-eat-and-drink/">What to Eat &amp; Drink</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h4>Travel Essentials</h4>
+					<ul>
+						<li>
+							<a href="travel-tips/travel-permits-and-visa/">Travel Permits</a>
+						</li>
+						<li>
+							<a href="travel-tips/high-altitude-sickness/">High Altitude Sickness</a>
+						</li>
+						<li>
+							<a href="travel-tips/what-to-pack/">What to Pack</a>
+						</li>
+						<li>
+							<a href="travel-tips/best-time-to-go/">When to Go</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h4>Help</h4>
+					<ul>
+						<li>
+							<a href="how-to-book/">How to Book</a>
+						</li>
+						<li>
+							<a href="payment-guide/">Payment Guide</a>
+						</li>
+						<li>
+							<a href="travel-tips/faq/">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-wrapper">
+				<div class="info">
+					<a href="/">Home</a> | <a href="privacy-policy/">Privacy Policy</a> | <a href="terms-and-conditions/">Terms &amp; Conditions</a> | <a href="travel-links/">Travel Links</a>
+					<br>
+					Copyright &copy; 2000 - 2011. All Rights Reserved to TibetDiscovery.com.
+					<br>
+					Any questions, please contact us at Info<img align="absbottom" alt="@" src="img/mailat_670e14.gif">TibetDiscovery.com. TEL: 86-0891-6809260
+					<br>
+					Office Address: Tibet Discovery Tour, Tibet Niwei International Travel Service No. 2, North Lingkuo Road Lhasa, Tibet, P.R. China
+				</div>
+			</div>
+		</div>
+		<div class="lightbox">
+			<p style="text-align: right;">
+				<span class="lightbox-close">X</span>
+			</p>
+			<h2 class="attraction-title"></h2>
+			<div class="attraction-des clearfix"></div>
+			<div class="attraction-faq"></div>
+		</div>
+		<div class="mask"></div>
+	</body>
 </html>
