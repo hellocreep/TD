@@ -37,7 +37,10 @@
 	border:1px solid #993333;
 	border-top:solid #993333 3px;
 	padding:10px  5px;
+	text-align:left;
 }
+
+
 
 .tag-title {
     background: rgb(253,201,132); /* Old browsers */
@@ -52,4 +55,22 @@
     width: 680px;
     height: 30px;
     line-height: 27px;	
+}
+
+.hotel-table{
+	width:100%;
+	text-align:center;
+	border-top:1px solid #ffd7a2;
+	border-bottom:1px solid #ffd7a2;
+	margin-top:10px;
+}
+
+.hotel-table tr{
+	border-top:1px solid #ffeed7;
+	height:28px;
+	line-height:28px;
+}
+
+.hotel-table th{
+	background:#ffeed7;
 }

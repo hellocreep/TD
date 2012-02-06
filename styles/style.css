@@ -46,7 +46,7 @@ body {
     font-size: 13px;
     line-height: 140%;
 }
-
+/*暂时不用本地字体，此样式暂时不用
 @font-face {
     font-family: 'Cantarell';
     src: url('../fonts/Cantarell-Regular.ttf');
@@ -57,7 +57,7 @@ body {
     font-style: normal;
 
 }
-
+*/
 
 h1, h2, h3, h4, h5, h6 {
     color: #7E0122;/*臧红色*/
