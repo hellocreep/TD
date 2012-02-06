@@ -278,6 +278,7 @@
 
 .timeTable {
     width: 100%;
+    text-align: center;
 }
 
 .icon-train {
@@ -364,11 +365,12 @@
 
 .pic-list {
     margin: 20px 0 50px 0;
+    text-align: center;
 }
 
 .pic-list li{
     margin-right: 20px;
-    display: inline-block;
+    float: left;
     width: 30%;
 }
 
