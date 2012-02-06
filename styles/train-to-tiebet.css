@@ -4,9 +4,14 @@
     position: relative;
     height: 300px;
     width: 680px;
-    background: url(../images/Beijing-Lhasa.png) no-repeat 0 0 ;
     outline: 2px solid #DDDDDD;
     border: 1px solid white;
+}
+
+.train-map img {
+    display: block;
+    height: 300px;
+    width: 680px;
 }
 
 .lightbox {
