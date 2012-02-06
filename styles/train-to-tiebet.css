@@ -8,7 +8,6 @@
 .train-map {
     margin: 10px auto;
     position: relative;
-    height: 300px;
     width: 680px;
     outline: 2px solid #DDDDDD;
     border: 1px solid white;
@@ -16,7 +15,6 @@
 
 .train-map img {
     display: block;
-    height: 300px;
     width: 680px;
 }
 
@@ -84,36 +82,62 @@
     width: 14px;
     height: 14px;
     cursor: pointer;
+    background: red;
 }
 
 .marker-beijing {
-    left: 574px;
-    top: 60px;
+    left: 496px;
+    top: 65px;
+}
+
+.marker-xian {
+    left: 423px;
+    top: 135px;
 }
 
 .marker-lanzhou {
-    left: 401px;
-    top: 117px
+    left: 350px;
+    top: 114px;
 }
 
 .marker-xining {
-    left: 371px;
+    left: 325px;
     top: 103px;
 }
 
 .marker-golmud {
-    left: 275px;
+    left: 242px;
     top: 99px;
 }
 
 .marker-naqu {
-    left: 232px;
-    top: 182px;
+    left: 205px;
+    top: 169px;
 }
 
 .marker-lhasa {
-    left: 200px;
-    top: 223px;
+    left: 178px;
+    top: 207px;
+}
+
+.marker-chengdu {
+    left: 361px;
+    top: 211px;
+}
+
+.marker-chongqing {
+    left: 386px;
+    top: 225px;
+}
+
+.marker-shanghai {
+    left: 574px;
+    top: 180px;
+}
+
+.marker-guangzhou {
+    left: 485px;
+    top: 303px;
 }
 
 .attraction-icons {
@@ -124,8 +148,8 @@
 
 .icon-beijing {
     height: 36px;
-    right: 66px;
-    top: 28px;
+    right: 144px;
+    top: 35px;
     width: 70px;
 }
 
@@ -135,8 +159,8 @@
 
 .icon-lanzhou {
     height: 50px;
-    right: 235px;
-    top: 66px;
+    right: 288px;
+    top: 67px;
     width: 42px;
 }
 
@@ -146,8 +170,8 @@
 
 .icon-xining {
     height: 38px;
-    right: 270px;
-    top: 64px;
+    right: 317px;
+    top: 63px;
     width: 66px;
 }
 
@@ -157,7 +181,7 @@
 
 .icon-golmud {
     height: 45px;
-    right: 356px;
+    right: 389px;
     top: 54px;
     width: 70px;
 }
@@ -168,8 +192,8 @@
 
 .icon-naqu {
     height: 56px;
-    right: 396px;
-    top: 150px;
+    right: 421px;
+    top: 139px;
     width: 45px;
 }
 
@@ -179,12 +203,68 @@
 
 .icon-lhasa {
     height: 45px;
-    right: 472px;
-    top: 185px;
-    width: 85px;}
+    right: 490px;
+    top: 169px;
+    width: 85px;
+}
 
 .icon-lhasa-active {
    background-position: 1% 74%;
+}
+
+.icon-xian {
+    height: 58px;
+    right: 220px;
+    top: 88px;
+    width: 60px;
+}
+
+.icon-xian-active {
+    background-position: 99% 65%;
+}
+
+.icon-chengdu {
+    height: 50px;
+    right: 305px;
+    top: 166px;
+    width: 75px
+}
+
+.icon-chengdu-active {
+    background-position: 34% 60%;
+}
+
+.icon-chongqing {
+    height: 53px;
+    right: 222px;
+    top: 180px;
+    width: 62px;
+}
+
+.icon-chongqing-active {
+    background-position: 45% 60%;
+}
+
+.icon-shanghai {
+    height: 71px;
+    right: 76px;
+    top: 122px;
+    width: 60px;
+}
+
+.icon-shanghai-active {
+    background-position: 81% 75%;
+}
+
+.icon-guangzhou {
+    height: 64px;
+    right: 182px;
+    top: 258px;
+    width: 60px;
+}
+
+.icon-guangzhou-active {
+    background-position: 73% 50%;
 }
 
 /* 内页火车时间表*/
