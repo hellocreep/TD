@@ -1,4 +1,10 @@
 
+
+.content h1{
+	font-family:'Cantarell';
+	font-weight:bold;
+}
+
 .train-map {
     margin: 10px auto;
     position: relative;
