@@ -83,6 +83,7 @@
 .station-info {
     border: 1px solid #000000;
     padding: 10px;
+    display: none;
 }
 
 .station-info img {

@@ -142,5 +142,13 @@ $(function(){
         $( '.schedule-detail.'+$( this ).attr( 'name' ) ).toggle( );
     });
 
+    //火车首页TAB切换
+    $( '.station-list li' ).each( function(){
+        $( this ).mouseover( function(){
+            $( '.station-info' ).hide();
+            $( '.station-info[name='+$(this).text()+']' ).show(); 
+        });
+    });
+
 });
 })( jQuery )
