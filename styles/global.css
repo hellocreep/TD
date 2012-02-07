@@ -112,8 +112,10 @@ a:hover {
     background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
     background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
     background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-    padding: 5px 14px 6px;
+    /*
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+    */
+	padding: 5px 14px 6px;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     color: #333;
     font-size: 13px;
@@ -131,7 +133,8 @@ a:hover {
     -ms-transition: 0.1s linear all;
     -o-transition: 0.1s linear all;
     transition: 0.1s linear all;
-    behavior: url(/PIE.htc);
+			behavior: url(PIE.htc);
+
 }
 
 .btn.small {
@@ -170,7 +173,8 @@ a:hover {
     background-image: linear-gradient(#f86218, #f86218 0.25, #cb4909);
     -webkit-transition: linear 0.25 all;
     -moz-transition: linear 0.25 all;
-    behavior: url(/PIE.htc);
+	behavior: url(PIE.htc);
+    
 }
 
 .btn.orange:hover {
@@ -196,18 +200,30 @@ a:hover {
 }
 
 /* LAYOUT */
-
+.bread{
+	width:950px;
+	margin:0 auto;
+	height:25px;
+	line-height:25px;
+}
+.bread a{
+	color:#ffffff;
+	text-decoration:none;
+}
+.bread a:hover{
+	color:#ffffff;
+	text-decoration:underline;
+}
 .wrapper {
-	background:url(../images/body-bg2.png) repeat-x bottom #ffffff;
-    margin: 30px auto 30px auto;
+	background:#ffffff;
+    margin:0 auto;
     width: 950px;
     min-height: 900px;
     border: 1px solid #B8B8B8; 
     -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-    margin: 30px auto 30px auto;
-    behavior: url(/PIE.htc);
+    behavior: url(PIE.htc);
 }
 
 /* CONTENT */
@@ -216,6 +232,8 @@ a:hover {
     width: 694px;
     float: right;
     text-align: center;
+	margin-top:10px;
+	margin-right:5px;
 }
 
 .content-foot {
@@ -224,7 +242,7 @@ a:hover {
 
 .header{
 	width:950px;
-	height:155px;
+	height:145px;
 	margin:0 auto;
 }
 
@@ -244,13 +262,13 @@ a:hover {
 	/*导航样式*/
 #menus {
 	font: 15px Arial,Helvetica,sans-serif;
-	height: 34px;
+	height: 35px;
 	list-style-type: none;
 	position: relative;
 	width: 950px;
 	z-index: 210;
 	float:left;
-	margin-top:15px;
+	margin-top:14px;
 }
 #menus > li {
     background:#d2d2d2;
@@ -262,7 +280,7 @@ a:hover {
 	margin-right:5px;
 }
 #menus > li:first-child + li, #menus > li:first-child + li + li {
-    background: url("../images/menu/ico_arrows.gif") no-repeat scroll 98% 50% #d2d2d2;
+    background: url("../images/menu/ico_arrows.gif") no-repeat scroll 100% 60% #d2d2d2;
 }
 #menus > li > a {
     color: #92240d;
@@ -278,7 +296,7 @@ a:hover {
 
 }
 #menus > li:first-child + li > a:hover, #menus > li:first-child + li + li > a:hover {
-    background: url("../images/menu/ico_arrows.gif") no-repeat scroll 98% 50% #92240d;
+    background: url("../images/menu/ico_arrows.gif") no-repeat scroll 100% 60% #92240d;
 }
 
 #nav-right{
@@ -303,7 +321,10 @@ a:hover {
 	line-height:24px;
 	padding:0 3px;
 }
-
+#nav-right li a:hover{
+	text-decoration:none;
+	background:#333;
+}
 
 div#travelStyle {
     -moz-border-bottom-colors: none;
@@ -445,11 +466,15 @@ div#tibetTours ul li a:hover {
 .footer {
     background: none repeat scroll 0 0 #670E14;
     min-height: 200px;
+	margin-top:-100px;
+	position:relative;
+	z-index:-1;
 }
 
 .footer-wrapper {
     margin: 0 auto;
     width: 950px;
+	clear:left;
 }
 
 .footer .nav {
@@ -508,7 +533,7 @@ div#tibetTours ul li a:hover {
     -webkit-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
-    behavior: url(/PIE.htc);
+   
 }
 
 .sidebar h1 {
@@ -590,7 +615,7 @@ div#tibetTours ul li a:hover {
     -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
-    behavior: url(/PIE.htc);
+    behavior: url(PIE.htc);
 }
 
 .poptips .triangle-left {
@@ -687,5 +712,3 @@ div#tibetTours ul li a:hover {
     width: 80px;
     display: block;
 }
-
-
