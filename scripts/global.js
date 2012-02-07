@@ -16,20 +16,20 @@ $( function(){
 	$( '.sidebar' ).height($( '.content' ).height());
 	
 	//头部menu下拉效果
-	$('div#tibetTours').hide();
+	$('#tibetTours').hide();
     
-    $('div#travelStyle').hide();
+    $('#travelStyle').hide();
     
-    $('ul#menus>li:eq(1)').hover(function(){
-        $('div#tibetTours').show();
+    $('#menus>li:eq(1)').hover(function(){
+        $('#tibetTours').show();
     },function(){
-        $('div#tibetTours').hide();
+        $('#tibetTours').hide();
     })
     
-    $('ul#menus>li:eq(2)').hover(function(){
-        $('div#travelStyle').show();
+    $('#menus>li:eq(2)').hover(function(){
+        $('#travelStyle').show();
     },function(){
-        $('div#travelStyle').hide();
+        $('#travelStyle').hide();
     })
 
 

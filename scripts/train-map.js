@@ -126,7 +126,7 @@ $(function(){
     $( '.attraction-icons' ).click( show );
     $( '.marker' ).hover( turnon ,turnoff );
     $( '.lightbox-close' ).click( function(){
-        ( '.mask' ).click();
+        $( '.mask' ).click();
     })
     $( '.attraction-icons' ).hover( function(){
         var className = $( this ).attr( 'name' );
