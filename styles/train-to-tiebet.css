@@ -90,8 +90,9 @@
     margin-left: 10px;
 }
 
-.station-info.info {
+.station-info .info {
     float: left;
+    margin-left: 30px;
 }
 
 .customize-trip {

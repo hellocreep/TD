@@ -534,7 +534,6 @@ div#tibetTours ul li a:hover {
     -webkit-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
-   
 }
 
 .sidebar h1 {
@@ -545,7 +544,8 @@ div#tibetTours ul li a:hover {
 }
 
 .sidebar-pic {
-    height: 146px;    
+    height: 146px;
+    margin: 0 0 3px;    
 }
 
 .nav-left {
@@ -566,7 +566,12 @@ div#tibetTours ul li a:hover {
 }
 
 .nav-left li a.active {
-    
+    background: url("../images/sidebar-nav-bg .png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    left: -1px;
+    position: relative;
+    width: 253px;
 }
 
 .nav-left li a:hover {
