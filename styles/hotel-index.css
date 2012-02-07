@@ -1,6 +1,4 @@
-.content{
-	width:680px;
-}
+
 .right-head{
 	background:url(../images/hotel-index.png) no-repeat;
 	width:680px;
@@ -22,8 +20,6 @@
 {
 	border-radius: 7px 7px 0 0;
 	background: none repeat scroll 0 0 #7E0122;
-	-moz-border-radius: 7px 7px 0 0;
-	-webkit-border-radius: 7px 7px 0 0;
 	width:83px;
 	height:26px;
 	float:left;
@@ -32,12 +28,29 @@
 	line-height:26px;
 	font-weight:bold;
 	cursor:pointer;
+	
+	text-shadow: 0px 1px 2px #050505;
+    filter: dropshadow(color=#050505, offx=0, offy=1);
+    background: rgb(126,1,34); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdlMDEyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzkxMjY0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iIzhjMDAyMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, rgba(126,1,34,1) 0%, rgba(145,38,66,1) 60%, rgba(140,0,32,1) 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(126,1,34,1)), color-stop(60%,rgba(145,38,66,1)), color-stop(99%,rgba(140,0,32,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(126,1,34,1) 0%,rgba(145,38,66,1) 60%,rgba(140,0,32,1) 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(126,1,34,1) 0%,rgba(145,38,66,1) 60%,rgba(140,0,32,1) 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(126,1,34,1) 0%,rgba(145,38,66,1) 60%,rgba(140,0,32,1) 99%); /* IE10+ */
+    background: linear-gradient(top, rgba(126,1,34,1) 0%,rgba(145,38,66,1) 60%,rgba(140,0,32,1) 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e0122', endColorstr='#8c0020',GradientType=0 ); /* IE6-8 */
+   behavior: url(../styles/PIE.htc);
 }
 .hotel-list{
 	border:1px solid #993333;
 	border-top:solid #993333 3px;
 	padding:10px  5px;
+	text-align:left;
 }
+
+
 
 .tag-title {
     background: rgb(253,201,132); /* Old browsers */
@@ -52,4 +65,23 @@
     width: 680px;
     height: 30px;
     line-height: 27px;	
+    behavior: url(../styles/PIE.htc);
+}
+
+.hotel-table{
+	width:100%;
+	text-align:center;
+	border-top:1px solid #ffd7a2;
+	border-bottom:1px solid #ffd7a2;
+	margin-top:10px;
+}
+
+.hotel-table tr{
+	border-top:1px solid #ffeed7;
+	height:28px;
+	line-height:28px;
+}
+
+.hotel-table th{
+	background:#ffeed7;
 }
