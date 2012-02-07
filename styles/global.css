@@ -259,7 +259,8 @@ a:hover {
 	float:right;
 }
 
-	/*导航样式*/
+
+/*HEADER*/
 #menus {
 	font: 15px Arial,Helvetica,sans-serif;
 	height: 35px;
@@ -458,6 +459,12 @@ div#tibetTours ul li img {
 div#tibetTours ul li a:hover {
     background: none repeat scroll 0 0 #990100;
     color: #FFFFFF;
+}
+
+.tiny-form {
+    position: absolute;
+    top: 50px;
+    
 }
 
 

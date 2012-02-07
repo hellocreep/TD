@@ -146,9 +146,10 @@ $(function(){
     $( '.station-list li' ).each( function(){
         $( this ).mouseover( function(){
             $( '.station-info' ).hide();
-            $( '.station-info[name='+$(this).text()+']' ).show(); 
+            $( '.station-info[id='+$(this).text()+']' ).show(); 
         });
     });
+    $( '.station-list li:first-child' ).mouseover();
 
 });
 })( jQuery )
