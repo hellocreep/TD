@@ -22,7 +22,7 @@
 .lightbox {
     padding: 10px 30px;
     display: none;
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: 430px;
     width: 500px;
@@ -36,7 +36,7 @@
     background: #FFFFFF; 
     opacity: 0.9;
     filter:alpha(opacity=90);
-    z-index: 3;
+    z-index: 300;
     behavior: url(/PIE.htc);
 }
 
@@ -76,6 +76,7 @@
     opacity: 0.5;
     filter:alpha(opacity=80);
     background-color: #EBE6E3;
+    z-index: 299;
 }
 
 .marker {
@@ -142,7 +143,7 @@
 
 .attraction-icons {
     position: absolute;
-    background: url("../images/icon.png") no-repeat left -999px;
+    background: url("../images/train/attraction-icon.png") no-repeat left -999px;
     cursor: pointer;
 }
 
