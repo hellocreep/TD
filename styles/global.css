@@ -215,7 +215,7 @@ a:hover {
 	text-decoration:underline;
 }
 .wrapper {
-	background:#ffffff;
+	background-color:#ffffff;
     margin:0 auto;
     width: 950px;
     min-height: 900px;
@@ -462,6 +462,7 @@ div#tibetTours ul li a:hover {
 
 
 /* FOOTER */
+
 
 .footer {
     background: none repeat scroll 0 0 #670E14;

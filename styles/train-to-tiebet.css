@@ -1,5 +1,4 @@
 
-
 .content h1{
 	font-family:'Cantarell';
 	font-weight:bold;
@@ -8,15 +7,27 @@
 .train-map {
     margin: 10px auto;
     position: relative;
-    width: 680px;
-    outline: 2px solid #DDDDDD;
-    border: 1px solid white;
+    width: 682px;
     min-height: 300px;
+    background-color: #F3EAD6;
 }
 
 .train-map img {
     display: block;
     width: 680px;
+    border: 1px solid #DDDDDD;
+}
+
+.train-map ul {
+    margin-top: 10px;
+    padding: 0 1px;
+}
+
+.train-map ul li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 6px 0;
 }
 
 .lightbox {
@@ -24,7 +35,7 @@
     display: none;
     position: fixed;
     top: 100px;
-    left: 430px;
+    left: 482px;
     width: 500px;
     min-height: 480px;
     border-radius: 8px;
@@ -47,6 +58,50 @@
 
 .lightbox-close:hover {
     background-color:#FFF6ED;
+}
+
+.station-list {
+    background-color: #F9F9F9;
+    margin-top: 30px;
+}
+
+.station-list li {
+    float: left;
+    padding: 8px;
+    width: 85px;
+    cursor: pointer;
+}
+
+.station-list li:hover {
+    background-color: #FAF4E3;
+}
+
+.station-list li.active {
+    background-color: #FAF4E3;
+}
+
+.station-info {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.station-info img {
+    float: left;
+    margin-left: 10px;
+}
+
+.station-info.info {
+    float: left;
+}
+
+.customize-trip {
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.customize-trip div{
+    float: left;
+    width: 60%;
 }
 
 .attraction-des {
