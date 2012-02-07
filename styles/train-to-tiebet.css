@@ -11,6 +11,7 @@
     width: 680px;
     outline: 2px solid #DDDDDD;
     border: 1px solid white;
+    min-height: 300px;
 }
 
 .train-map img {
@@ -36,7 +37,7 @@
     opacity: 0.9;
     filter:alpha(opacity=90);
     z-index: 3;
-    behavior: url(../styles/PIE.htc);
+    behavior: url(/PIE.htc);
 }
 
 .lightbox-close {
@@ -61,7 +62,7 @@
     height: 140px;
     margin: 0px 30px 10px 0;
     position: relative;
-    top: -10px;
+    top: -4px;
     border: 1px solid red;
 }
 
@@ -82,7 +83,6 @@
     width: 14px;
     height: 14px;
     cursor: pointer;
-    background: red;
 }
 
 .marker-beijing {
@@ -308,6 +308,7 @@
     background: -ms-linear-gradient(top, rgba(255,254,255,1) 0%,rgba(242,232,209,1) 100%); /* IE10+ */
     background: linear-gradient(top, rgba(255,254,255,1) 0%,rgba(242,232,209,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffeff', endColorstr='#f2e8d1',GradientType=0 ); /* IE6-8 */
+   behavior: url(/PIE.htc);
 }
 
 .timeTable-info td {
