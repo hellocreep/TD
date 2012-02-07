@@ -11,6 +11,7 @@
     width: 680px;
     outline: 2px solid #DDDDDD;
     border: 1px solid white;
+    min-height: 300px;
 }
 
 .train-map img {
