@@ -549,9 +549,10 @@ div#tibetTours ul li a:hover {
 }
 
 .nav-left {
+
 }
 
-.nav-left li p{
+.nav-left li a{
     height: 38px;
     border-bottom: 1px solid #F8F3E7;
     vertical-align: middle;
@@ -559,9 +560,16 @@ div#tibetTours ul li a:hover {
     cursor: pointer;
     padding: 0 0 0 38px;
     font-size: 15px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
 }
 
-.nav-left li p:hover {
+.nav-left li a.active {
+    
+}
+
+.nav-left li a:hover {
     background-color: #FCFBF8;
     color: #D0D0CF;
 }
