@@ -45,6 +45,7 @@ body {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 13px;
     line-height: 140%;
+	background: url("../images/body-bg.png") repeat-x scroll 0 145px transparent;
 }
 /*暂时不用本地字体，此样式暂时不用
 @font-face {
@@ -160,6 +161,7 @@ a:hover {
 /* LAYOUT */
 
 .wrapper {
+	background:url(../images/body-bg2.png) repeat-x bottom #ffffff;
     margin: 30px auto 30px auto;
     width: 950px;
     min-height: 900px;
@@ -169,6 +171,224 @@ a:hover {
     box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.5); 
     margin: 30px auto 30px auto;
 }
+
+.header{
+	width:950px;
+	height:155px;
+	margin:0 auto;
+}
+
+.logo{
+	width:165px;
+	height:55px;
+	background:url(../images/logo.png) no-repeat;
+	display:block;
+	margin-top:35px;
+	float:left;
+}
+
+.header-info{
+	float:right;
+}
+
+	/*导航样式*/
+#menus {
+	font: 15px Arial,Helvetica,sans-serif;
+	height: 34px;
+	list-style-type: none;
+	position: relative;
+	width: 950px;
+	z-index: 210;
+	float:left;
+	margin-top:15px;
+}
+#menus > li {
+    background:#d2d2d2;
+    float: left;
+    font-weight: bold;
+    line-height: 34px;
+	border-radius:5px;
+	-moz-border-radius:5px 5px 0 0;
+	margin-right:5px;
+}
+#menus > li:first-child + li, #menus > li:first-child + li + li {
+    background: url("../images/menu/ico_arrows.gif") no-repeat scroll 98% 50% #d2d2d2;
+}
+#menus > li > a {
+    color: #92240d;
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+#menus > li > a:hover {
+    background:#92240d;
+	color:#ffffff;
+	border-radius:5px;
+	-moz-border-radius:5px 5px 0 0;
+
+}
+#menus > li:first-child + li > a:hover, #menus > li:first-child + li + li > a:hover {
+    background: url("../images/menu/ico_arrows.gif") no-repeat scroll 98% 50% #92240d;
+}
+
+#nav-right{
+	background:#92240d;
+	border-radius:5px;
+	-moz-border-radius:5px 5px 0 0;
+	display:block;
+	float:left;
+}
+#nav-right li{
+	float:left;
+}
+#nav-right li a{
+	display:block;
+	color:#ffffff;
+	background:#505050;
+	font-size:10px;
+	margin:5px 2px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	height:24px;
+	line-height:24px;
+	padding:0 3px;
+}
+
+
+div#travelStyle {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+    border-style: none solid solid;
+    border-width: medium 2px 2px;
+    color: #666666;
+    float: left;
+    font: 13px Arial,Helvetica,sans-serif;
+    left: 245px;
+    padding: 8px 10px 3px;
+    position: absolute;
+    top: 35px;
+    width: 425px;
+    z-index: 100;
+}
+div#travelStyle h2 {
+    color: #990100;
+    font-size: 15px;
+    font-weight: normal;
+}
+div#travelStyle h2, div#travelStyle p, div#travelStyle ul {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    list-style-type: none;
+    width: 207px;
+}
+div#travelStyle h2 + h2, div#travelStyle p + p, div#travelStyle ul + ul {
+    border: medium none;
+    margin-left: 10px;
+}
+div#travelStyle p {
+    padding: 8px 0 5px;
+}
+div#travelStyle ul li {
+    border-top: 1px dashed #CCCCCC;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    width: 200px;
+}
+div#travelStyle ul li a {
+    color: #2368C7;
+    display: block;
+    height: 60px;
+    text-decoration: none;
+    width: 200px;
+}
+div#travelStyle ul li img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    margin: 3px 8px 3px 5px;
+}
+div#travelStyle ul li a:hover {
+    background: none repeat scroll 0 0 #990100;
+    color: #FFFFFF;
+}
+div#tibetTours {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-right: 2px solid #CCCCCC;
+    border-style: none solid solid;
+    border-width: medium 2px 2px;
+    color: #666666;
+    float: left;
+    font: 13px Arial,Helvetica,sans-serif;
+    left: 35px;
+    padding: 8px 10px 3px;
+    position: absolute;
+    top: 35px;
+    width: 880px;
+    z-index: 100;
+}
+div#tibetTours * {
+    margin: 0;
+    padding: 0;
+}
+div#tibetTours h2 {
+    color: #990100;
+    font-size: 15px;
+    font-weight: normal;
+}
+div#tibetTours h2, div#tibetTours p, div#tibetTours ul {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    list-style-type: none;
+    margin-left: 8px;
+    width: 213px;
+}
+div#tibetTours h2.first, div#tibetTours p.first, div#tibetTours ul.first {
+    margin-left: 0;
+}
+div#tibetTours h2 + h2 + h2 + h2, div#tibetTours p + p + p + p, div#tibetTours ul + ul + ul + ul {
+    border: medium none;
+}
+div#tibetTours p {
+    padding: 8px 0 5px;
+}
+div#tibetTours ul li {
+    border-top: 1px dashed #CCCCCC;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+div#tibetTours ul.first li.last img {
+    border: medium none;
+    margin: 9px 0 9px 5px;
+}
+div#tibetTours ul.first li.last a:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #2368C7;
+}
+div#tibetTours ul li a {
+    color: #2368C7;
+    display: block;
+    height: 60px;
+    text-decoration: none;
+    width: 213px;
+}
+div#tibetTours ul li img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    margin: 3px 8px 3px 5px;
+}
+div#tibetTours ul li a:hover {
+    background: none repeat scroll 0 0 #990100;
+    color: #FFFFFF;
+}
+
 
 /* FOOTER */
 
