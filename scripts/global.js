@@ -6,6 +6,8 @@ $( function(){
     $( '#contact-us' ).click( function(){
        $( '.tiny-form' ).toggle( 'slow' ); 
     });
+    //contact us 表单验证
+    $( '#tiny-form' ).validate();  
     
     //sidebar弹出框
     $( '.nav-left-faqs' ).each(
@@ -17,6 +19,7 @@ $( function(){
             })
         }
     );
+    
 	//sidebar同步content 有没其他可以不写js的方法实现？
 	$( '.sidebar' ).height($( '.content' ).height());
 	

@@ -478,6 +478,11 @@ div#tibetTours ul li a:hover {
     border: 2px solid #F1EDE2;
 }
 
+.tiny-form .error {
+    font-size: 12px;
+    color: red;
+}
+
 .tiny-form input {
     border: 1px solid #CCCCCC;
     margin-bottom: 5px;
