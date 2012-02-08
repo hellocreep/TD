@@ -13,23 +13,6 @@
 		<title>train-to-tibet</title>
 	</head>
 	<body>
-    <script>
-	$(document).ready(function(){
-$('div#tibetTours').hide();
-$('div#travelStyle').hide();
-$('ul#menus>li:eq(1)').hover(function(){
-$('div#tibetTours').show();
-},function(){
-$('div#tibetTours').hide();
-})
-$('ul#menus>li:eq(2)').hover(function(){
-$('div#travelStyle').show();
-},function(){
-$('div#travelStyle').hide();
-})
-})
-
-	</script>
 		<div class="header">
         	<a class="logo" href="###"></a>
             <div class="header-info">
@@ -126,6 +109,29 @@ $('div#travelStyle').hide();
                 </li>
             </ul>
         </div>
+        
+        <!-- tiny form-->
+        <div class="tiny-form">
+            <form name="" action="#" method="post">
+                <label>First Name
+                    <input type="text" name="firstname"/>
+                </label>
+                <label>Last Name
+                    <input type="text" name="lastname"/>
+                </label>
+                <label>Phone Number
+                    <input type="text" name="phone"/>
+                </label>
+                <label>Email Address
+                    <input type="text" name="email"/>
+                </label>
+                <label>Questions
+                    <input type="text" name="question" class="form-question"/>
+                </label>
+                <input class="btn orange middle" type="submit" value="Send Callback Request" />
+            </form>
+        </div>
+        
         <div class="bread">首页》<a href="###">trian</a></div>
 		<div class="wrapper clearfix">
 			<div class="sidebar">
@@ -133,7 +139,11 @@ $('div#travelStyle').hide();
 				<div class="sidebar-pic"><img src="images/train-img.jpg"></div>
 				<ul class="nav-left">
 					<li>
+<<<<<<< HEAD
 						<a id="nav-left-active">
+=======
+						<a href="#" class="active">
+>>>>>>> 55a6529a064abf86d61b8711940201341805380d
 							Beijing Lhasa Train
 						</a>
 					</li>

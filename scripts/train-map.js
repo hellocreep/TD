@@ -126,7 +126,7 @@ $(function(){
     $( '.attraction-icons' ).click( show );
     $( '.marker' ).hover( turnon ,turnoff );
     $( '.lightbox-close' ).click( function(){
-        ( '.mask' ).click();
+        $( '.mask' ).click();
     })
     $( '.attraction-icons' ).hover( function(){
         var className = $( this ).attr( 'name' );
@@ -141,6 +141,15 @@ $(function(){
     $( '.icon-train' ).click( function(){
         $( '.schedule-detail.'+$( this ).attr( 'name' ) ).toggle( );
     });
+
+    //火车首页TAB切换
+    $( '.station-list li' ).each( function(){
+        $( this ).mouseover( function(){
+            $( '.station-info' ).hide();
+            $( '.station-info[id='+$(this).text()+']' ).show(); 
+        });
+    });
+    $( '.station-list li:first-child' ).mouseover();
 
 });
 })( jQuery )
