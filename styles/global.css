@@ -462,14 +462,20 @@ div#tibetTours ul li a:hover {
     color: #FFFFFF;
 }
 
+.contact-us {
+    position: relative;
+}
+
 .tiny-form {
+    display: none;
     position: absolute;
-    top: 50px;
-    right: 0;
+    top: 23px;
+    left: 0;
     z-index: 99999;
     padding: 10px;
     width: 163px;
     background-color: #F9F9F9;
+    border: 2px solid #F1EDE2;
 }
 
 .tiny-form input {
@@ -481,6 +487,7 @@ div#tibetTours ul li a:hover {
 
 .form-question {
     height: 55px;
+    width: 158px;
 }
 
 /* FOOTER */
@@ -496,6 +503,31 @@ div#tibetTours ul li a:hover {
     margin: 0 auto;
     width: 950px;
 	clear:left;
+}
+
+.newsletter {
+    padding-top: 145px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.newsletter-title {
+    float: left;
+    width: 230px;
+}
+
+.newsletter-container {
+    border: 1px solid #F4F4F4;
+    border-left: none;
+    border-right: none;
+    background: #92240D no-repeat 0 0 ;
+    padding: 10px 0;
+}
+
+.newsletter-container label {
+    font-weight:bold;
+    line-height: 50px;
 }
 
 .footer .nav {
@@ -675,7 +707,7 @@ div#tibetTours ul li a:hover {
     height: 0;
     width: 0;
     position: relative;
-    left: -25px;
+    left: -24px;
     top: 58px;
 }
 
@@ -753,10 +785,10 @@ div#tibetTours ul li a:hover {
 }
 .img-icon {
     border: 1px solid white;
-    height: 105px;
+    height: 85px;
     margin: 0 auto;
     outline: 1px solid #DDDDDD;
     overflow: hidden;
-    width: 80px;
+    width: 60px;
     display: block;
 }

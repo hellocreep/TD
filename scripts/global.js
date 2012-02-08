@@ -2,13 +2,18 @@
     
 $( function(){
     
+    //contact us 弹出框
+    $( '#contact-us' ).click( function(){
+       $( '.tiny-form' ).toggle( 'slow' ); 
+    });
+    
     //sidebar弹出框
     $( '.nav-left-faqs' ).each(
         function(){
             $( this ).hover( function(){
-                $( this ).children( '.poptips' ).fadeIn( 'fast' );
+                $( this ).children( '.poptips' ).fadeIn( 100 );
             },function(){
-                $( this ).children( '.poptips' ).fadeOut( 'fast' );
+                $( this ).children( '.poptips' ).fadeOut( 100 );
             })
         }
     );
