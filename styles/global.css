@@ -616,14 +616,19 @@ div#tibetTours ul li a:hover {
     vertical-align: middle;
     line-height: 2.5;
     cursor: pointer;
-    padding: 0 0 0 38px;
+    padding: 0 0 0 20px;
     font-size: 15px;
     display: block;
     text-decoration: none;
 }
 
+.nav-left li a:hover {
+    background-color: #FCFBF8;
+	text-decoration:none;
+}
+
 .nav-left li a.active {
-    background: url("../images/sidebar-nav.png") no-repeat scroll 0 0 transparent;
+    background: url(../images/sidebar-nav.png) no-repeat scroll 0 0 transparent;
     border: medium none;
     color: #FFFFFF;
     left: -1px;
@@ -631,26 +636,34 @@ div#tibetTours ul li a:hover {
     width: 253px;
 }
 
-.nav-left li a:hover {
-    background-color: #FCFBF8;
-    color: #D0D0CF;
-	text-decoration:none;
+.subnav-left {
+	
 }
 
-
-.subnav-left {
+.have-arrow li{
+	background:url(../images/nav-arrow.png) no-repeat 200px center;
 }
 
 .subnav-left li {
     border: none;
-    height: 32px;
     position: relative;
 }
 
 .subnav-left li a{
-    padding-left: 60px;
-    font-size: 14px;
+	display:block;
+	height: 24px;
+    padding-left: 40px;
+    font-size: 12px;
+	line-height:24px;
+	background:url(../images/nav-dot.png) no-repeat 25px center transparent;
+	position:relative;
 }
+
+.subnav-left li a:hover{
+	color:#F09;
+	background-color:transparent;
+}
+
 
 .nav-left-faqs{
     font-size: 14px;
@@ -683,13 +696,12 @@ div#tibetTours ul li a:hover {
     left: 220px;
     top: -80px;
     z-index: 3;
-    cursor: auto;
     border: 1px solid #B8B8B8; 
-    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+/*    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
     behavior: url(PIE.htc);
-}
+*/}
 
 .poptips .triangle-left {
 	float: left;
