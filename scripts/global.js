@@ -3,7 +3,7 @@
 $( function(){
     
     //contact us 弹出框
-    $( '#contact-us' ).click( function(){
+    $( '#call-you' ).click( function(){
        $( '.tiny-form' ).toggle( 'slow' ); 
     });
     //contact us 表单验证

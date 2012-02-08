@@ -14,14 +14,18 @@
 		<title>train-to-tibet</title>
 	</head>
 	<body>
-		<div class="header">
+		<div class="header clearfix">
         	<a class="logo" href="###"></a>
+        	<p class="slogan">
+        	</p>
             <div class="header-info">
                 <ul>
-                    <li class="tell">
+                    <li class="info">Info@TibetDiscovery.com</li>
+                    <li class="tel">
                         Tel:<span> 86-891-6809260</span>
-                        <span href="#" class="contact-us">
-                            <a class="btn small" id="contact-us" href="#">contact us</a> 
+                        <span class="grey">OR</span>
+                        <span href="#" class="call-you">
+                            <a class="" id="call-you" href="#">we'll call you</a> 
                             <!-- tiny form-->
                             <div class="tiny-form">
                                 <form name="" action="#" method="post" id="tiny-form">
@@ -42,7 +46,7 @@
                                     </p>
                                     <p>
                                         <label for="cemail">Email Address
-                                            <input type="text" name="cemail" class="required"/>
+                                            <input type="text" name="cemail" class="required" value="2323"/>
                                         </label>
                                     </p>
                                     <p>
@@ -55,11 +59,10 @@
                             </div> 
                         </span>
                     </li>
-                    <li class="info">Info@TibetDiscovery.com</li>
-                </ul>
-                <ul>
-                    <li class="contact1"><a href="contact-us/">Contact us</a></li>
-                    <li class="costomize"><a href="tailor-made-tours/">Customize a Tour</a></li>
+                    <li class="last">
+                        <span class="custom"><a href="#">Customize a Tour</a></span>
+                        <span class="contact"><a href="#">Contact us</a></span>
+                    </li>
                 </ul>
             </div>
             
@@ -141,9 +144,9 @@
                 </li>
             </ul>
         </div>
-        
         <div class="bread">You are here: <a href="###">Trian to Tibet</a></div>
 		<div class="wrapper clearfix">
+
 			<div class="sidebar">
 				<h1 class="sidebar-title">Train to Tibet</h1>
 				<div class="sidebar-pic"><img src="images/train-img.jpg"></div>
@@ -249,7 +252,7 @@
 				<h1>Train to Lhasa from Beijing</h1>
 				<p>It is no longer a dream to take a train from Beijing to Lhasa. The 3753 kilometers' railway between Beijing and Lhasa covers 1110 km over the world's highest Qinghai-Tibet Railway. There are daily trains transferring thousands of passengers from Beijing to Lhasa for their lifetime Tibet tour.</p>
 				<div class="train-map">
-				    <img src="images/train/Alltrains.png"/>
+				    <img src="images/train/Beijing_Lhasa.png"/>
 					<span class="marker marker-beijing"></span>
 					<span class="attraction-icons icon-beijing" name="icon-beijing"></span>
 					<span class="marker marker-xian"></span>
@@ -502,6 +505,7 @@ See what other travelers are curious about trains to Tibet. Get more information
 				</div>
 			</div>
 		</div>
+		
 		<div class="footer">
 		    
 		    <div class="newsletter">
@@ -511,11 +515,13 @@ See what other travelers are curious about trains to Tibet. Get more information
     		                <h4>Sign up for our free newsletter</h4>
     		                <p>Receive news and offers from us.</p>
     		            </div>
-                        <label for="name">Name</label>
-                        <input type="text" name="newsletter" id="name"/>
-                        <label>Email</label>
-                        <input type="text" name="email" id="email"/>
-                    	<input class="btn small" type="submit" value="Submit" id="submit" name="submit"/>
+    		            <form id="newsletter-form" action="#" method="post">
+                            <label for="nname">Name</label>
+                            <input type="text" name="nname" id="name" class="required"/>
+                            <label for="nemail">Email</label>
+                            <input type="text" name="nemail" id="email" class="required"/>
+                            <input class="btn small" type="submit" value="submit" id="submit" name="submit"/>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -625,6 +631,10 @@ See what other travelers are curious about trains to Tibet. Get more information
 				</div>
 			</div>
 		</div>
+		
+		<div id="feedback">
+		</div>
+		
 		<div class="lightbox">
 			<p style="text-align: right;">
 				<span class="lightbox-close">X</span>
