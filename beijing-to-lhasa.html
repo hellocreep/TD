@@ -42,7 +42,7 @@
                                     </p>
                                     <p>
                                         <label for="cemail">Email Address
-                                            <input type="text" name="cemail" class="required"/>
+                                            <input type="text" name="cemail" class="required" value="2323"/>
                                         </label>
                                     </p>
                                     <p>
@@ -481,11 +481,13 @@
     		                <h3>Sign up for our free newsletter</h3>
     		                <p>Receive news and offers from Audley</p>
     		            </div>
-                        <label for="name">Name</label>
-                        <input type="text" name="newsletter" id="name"/>
-                        <label>Email</label>
-                        <input type="text" name="email" id="email"/>
-                    <input class="btn small" type="submit" value="submit" id="submit" name="submit"/>
+    		            <form id="newsletter-form" action="#" method="post">
+                            <label for="nname">Name</label>
+                            <input type="text" name="nname" id="name" class="required"/>
+                            <label for="nemail">Email</label>
+                            <input type="text" name="nemail" id="email" class="required"/>
+                            <input class="btn small" type="submit" value="submit" id="submit" name="submit"/>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ $( function(){
        $( '.tiny-form' ).toggle( 'slow' ); 
     });
     //contact us 表单验证
-    $( '#tiny-form' ).validate();  
+    $( '#tiny-form' ).validate({focusCleanup: true});  
     
     //sidebar弹出框
     $( '.have-arrow li' ).each(
