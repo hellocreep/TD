@@ -464,9 +464,23 @@ div#tibetTours ul li a:hover {
 .tiny-form {
     position: absolute;
     top: 50px;
-    
+    right: 0;
+    z-index: 99999;
+    padding: 10px;
+    width: 163px;
+    background-color: #F9F9F9;
 }
 
+.tiny-form input {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 5px;
+    padding: 3px;
+    width: 155px;
+}
+
+.form-question {
+    height: 55px;
+}
 
 /* FOOTER */
 
