@@ -10,7 +10,7 @@ $( function(){
     $( '#tiny-form' ).validate();  
     
     //sidebar弹出框
-    $( '.nav-left-faqs' ).each(
+    $( '.have-arrow li' ).each(
         function(){
             $( this ).hover( function(){
                 $( this ).children( '.poptips' ).fadeIn( 100 );

@@ -689,7 +689,7 @@ div#tibetTours ul li a:hover {
 .poptips {
     display: none;
     width: 550px;
-    height: 150px;
+    min-height: 130px;
     position: absolute;
     background-color: #F5F1E7;
     padding: 22px 15px;
