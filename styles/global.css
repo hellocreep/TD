@@ -45,7 +45,7 @@ body {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 13px;
     line-height: 140%;
-	background: url("../images/body-bg.png") repeat-x scroll 0 145px transparent;
+	background: url("../images/body-bg.png") repeat-x scroll 0 145px #FBFBF5;
 }
 /*暂时不用本地字体，此样式暂时不用
 @font-face {
@@ -241,13 +241,24 @@ a:hover {
     margin-bottom: 40px;
 }
 
-.header{
+.body-wrapper {
+    background: url(../images/all-wrapper-bg.png) no-repeat top ;
+    width: 1428px;
+    height: 170px;
+}
+
+/* HEADER */
+.header {
 	width:950px;
 	height:145px;
 	margin:0 auto;
 }
 
-.logo{
+.header a {
+    color: #92240D;
+}
+
+.logo {
 	width:165px;
 	height:55px;
 	background:url(../images/logo.png) no-repeat;
@@ -256,12 +267,56 @@ a:hover {
 	float:left;
 }
 
-.header-info{
-	float:right;
+.header .slogan {
+    float: left;
+    margin: 45px 0 0 20px;
+    background: url(../images/slogan.png) no-repeat 0 0 ;
+    width: 296px;
+    height: 34px;
 }
 
+.header-info {
+	float:right;
+	color: #92240D;
+	margin: 5px 0px 0 0;
+	width: 300px;
+}
 
-/*HEADER*/
+.header-info ul {
+    margin-left: 21px;
+}
+
+.header-info ul li {
+    margin-top: 6px;
+    padding-left: 25px;
+}
+
+.header-info .last {
+    padding-left: 0;
+}
+
+.header-info .info {
+    margin: 6px 0 0 50px;
+    background: url(../images/email-icon.png) no-repeat left;
+}
+
+.header-info .tel {
+    background: url(../images/tel-icon.png) no-repeat left;
+}
+
+.header-info .custom {
+    padding-left: 26px;
+    background: url(../images/customize-icon.png) no-repeat left;
+    
+}
+
+.header-info .contact {
+    padding-left: 27px;
+    background: url(../images/contact-icon.png) no-repeat left;
+    margin-left: 10px;
+}
+
+/*HEADER MENU*/
 #menus {
 	font: 15px Arial,Helvetica,sans-serif;
 	height: 35px;
@@ -462,8 +517,28 @@ div#tibetTours ul li a:hover {
     color: #FFFFFF;
 }
 
-.contact-us {
+.call-you {
     position: relative;
+    border: 1px solid #4E4E4E;
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 1px 5px;
+    background: rgb(202,0,0); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NhMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2EyMmYxNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZTJiMTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(202,0,0,1) 0%, rgba(162,47,22,1) 58%, rgba(158,43,18,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(202,0,0,1)), color-stop(58%,rgba(162,47,22,1)), color-stop(100%,rgba(158,43,18,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(202,0,0,1) 0%,rgba(162,47,22,1) 58%,rgba(158,43,18,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(202,0,0,1) 0%,rgba(162,47,22,1) 58%,rgba(158,43,18,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(202,0,0,1) 0%,rgba(162,47,22,1) 58%,rgba(158,43,18,1) 100%); /* IE10+ */
+background: linear-gradient(top, rgba(202,0,0,1) 0%,rgba(162,47,22,1) 58%,rgba(158,43,18,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0000', endColorstr='#9e2b12',GradientType=0 ); /* IE6-8 */
+
+}
+
+#call-you {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .tiny-form {
@@ -655,7 +730,7 @@ div#tibetTours ul li a:hover {
     padding-left: 40px;
     font-size: 12px;
 	line-height:24px;
-	background:url(../images/nav-dot.png) no-repeat 25px center transparent;
+	background:url(../images/nav-dot.png) no-repeat 26px center transparent;
 	position:relative;
 }
 
@@ -728,6 +803,11 @@ div#tibetTours ul li a:hover {
 .poptips div {
     float: right;
 }
+
+/* FEEDBACK */
+#feedback {
+    position: fixed;
+} 
 
 /* CONTENT FOOT NOT SURE*/
 .FAQ-footer {
