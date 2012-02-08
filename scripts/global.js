@@ -2,6 +2,11 @@
     
 $( function(){
     
+    //contact us 弹出框
+    $( '#contact-us' ).click( function(){
+       $( '.tiny-form' ).toggle( 'slow' ); 
+    });
+    
     //sidebar弹出框
     $( '.nav-left-faqs' ).each(
         function(){

@@ -17,18 +17,39 @@
         	<a class="logo" href="###"></a>
             <div class="header-info">
                 <ul>
-                    <li class="tell">Tel:<span> 86-891-6809260</span> </li>
+                    <li class="tell">
+                        Tel:<span> 86-891-6809260</span>
+                        <span href="#" class="contact-us" id="contact-us">
+                            <a class="btn small" href="#">contact us</a> 
+                            <!-- tiny form-->
+                            <div class="tiny-form">
+                                <form name="" action="#" method="post">
+                                    <label>First Name
+                                        <input type="text" name="firstname"/>
+                                    </label>
+                                    <label>Last Name
+                                        <input type="text" name="lastname"/>
+                                    </label>
+                                    <label>Phone Number
+                                        <input type="text" name="phone"/>
+                                    </label>
+                                    <label>Email Address
+                                        <input type="text" name="email"/>
+                                    </label>
+                                    <label>Questions
+                                        <textarea name="question" class="form-question"></textarea>
+                                    </label>
+                                    <input class="btn orange middle" type="submit" value="Send Callback Request" />
+                                </form>
+                            </div> 
+                        </span>
+                    </li>
                     <li class="info">Info@TibetDiscovery.com</li>
                 </ul>
                 <ul>
                     <li class="contact1"><a href="contact-us/">Contact us</a></li>
                     <li class="costomize"><a href="tailor-made-tours/">Customize a Tour</a></li>
                 </ul>
-                <p class="fourths">
-                    <label for="newsletter">Newsletter</label>
-                    <input type="text" name="newsletter" id="newsletter"  value="email@address.com" class="grey"/>
-                    <input type="submit" value="submit" id="submit" name="submit" onclick="addnewsletter()"/>
-                </p>
             </div>
             
             <ul id="menus">  
@@ -108,28 +129,6 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-        
-        <!-- tiny form-->
-        <div class="tiny-form">
-            <form name="" action="#" method="post">
-                <label>First Name
-                    <input type="text" name="firstname"/>
-                </label>
-                <label>Last Name
-                    <input type="text" name="lastname"/>
-                </label>
-                <label>Phone Number
-                    <input type="text" name="phone"/>
-                </label>
-                <label>Email Address
-                    <input type="text" name="email"/>
-                </label>
-                <label>Questions
-                    <input type="text" name="question" class="form-question"/>
-                </label>
-                <input class="btn orange middle" type="submit" value="Send Callback Request" />
-            </form>
         </div>
         
         <div class="bread">首页》<a href="###">trian</a></div>
@@ -517,6 +516,23 @@
 			</div>
 		</div>
 		<div class="footer">
+		    
+		    <div class="newsletter">
+		        <div class="newsletter-container">
+		            <div class="footer-wrapper clearfix">
+    		            <div class="newsletter-title">
+    		                <h3>Sign up for our free newsletter</h3>
+    		                <p>Receive news and offers from Audley</p>
+    		            </div>
+                        <label for="name">Name</label>
+                        <input type="text" name="newsletter" id="name"/>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email"/>
+                    <input class="btn small" type="submit" value="submit" id="submit" name="submit"/>
+                    </div>
+                </div>
+            </div>
+		    
 			<div class="footer-wrapper clearfix">
 				<div class="nav">
 					<h4>About Us</h4>
