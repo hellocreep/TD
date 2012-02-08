@@ -43,6 +43,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e0122', endColorstr='#8c0020',GradientType=0 ); /* IE6-8 */
    behavior: url(/PIE.htc);
 }
+
+.tag li:hover{
+    line-height: 28px;
+}
+
 .hotel-list{
 	border:1px solid #993333;
 	border-top:solid #993333 3px;
