@@ -519,6 +519,8 @@ div#tibetTours ul li a:hover {
 
 .newsletter-container {
     border: 1px solid #F4F4F4;
+    border-left: none;
+    border-right: none;
     background: #92240D no-repeat 0 0 ;
     padding: 10px 0;
 }
@@ -693,7 +695,7 @@ div#tibetTours ul li a:hover {
     height: 0;
     width: 0;
     position: relative;
-    left: -25px;
+    left: -24px;
     top: 58px;
 }
 
@@ -771,10 +773,10 @@ div#tibetTours ul li a:hover {
 }
 .img-icon {
     border: 1px solid white;
-    height: 105px;
+    height: 85px;
     margin: 0 auto;
     outline: 1px solid #DDDDDD;
     overflow: hidden;
-    width: 80px;
+    width: 60px;
     display: block;
 }
