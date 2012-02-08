@@ -571,7 +571,7 @@ div#tibetTours ul li a:hover {
 #nav-left-active{
 	position:relative;
 	width:252px;
-	background:url("../images/sidebar-nav-bg.png") no-repeat 0 0;
+	background:url("../images/sidebar-nav.png") no-repeat 0 0;
 	color:#ffffff;
 	border:none;
 	left:-1px;
