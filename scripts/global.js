@@ -16,4 +16,22 @@ $( function(){
 
 });
 
+$(document).ready(function(){
+	$('div#tibetTours').hide();
+	$('div#travelStyle').hide();
+	$('ul#menus>li:eq(1)').hover(function(){
+		$('div#tibetTours').show();
+	},function(){
+		$('div#tibetTours').hide();
+	})
+	$('ul#menus>li:eq(2)').hover(function(){
+		$('div#travelStyle').show();
+	},function(){
+	$('div#travelStyle').hide();
+	})
+})
+
 })( jQuery );
+
+
+//头部导航下拉列表效果
