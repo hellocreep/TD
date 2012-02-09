@@ -10,8 +10,8 @@
     position: relative;
     width: 682px;
     min-height: 300px;
-    background-color: #F3EAD6;
-}
+/*    background-color: #F3EAD6;
+*/}
 
 .train-map img {
     display: block;
@@ -429,7 +429,7 @@
 }
 
 .pic-list {
-    margin: 20px 0 50px 0;
+    margin: 20px 0 0 0;
 }
 
 .pic-list li{
@@ -443,8 +443,8 @@
 }
 
 .pic-list li img {
-    outline: 1px solid #DDDDDD;
-    border: 1px solid white;
+/*    outline: 1px solid #DDDDDD;
+*/    border: 1px solid white;
     width: 184px;
     height: 124px;
     display: block;
