@@ -5,7 +5,7 @@
     'No.118, East Lianhuachi Road,</br>Fengtai District, Beijing 北京市丰台区莲花池东路118号',
     '<h3>How to get there?</h3><p><strong>By taxi:</strong>the cost from Beijing downtown to the railway station is normally around 40 RMB.</p>'+
     '<p><strong>subway:</strong>currently served by Line 9 from Guogongzhuang Station to Beijing West Railway Station.</p>'+
-    '<p><strong>By bus:</strong>a great number of routes to the station’s North Square.</p>','Train to Lhasa from Beijing'
+    '<p><strong>By bus:</strong>a great number of routes to the station’s North Square.</p>','Train to Lhasa from Beijing','0'
     ],
     ['icon-lhasa','Lhasa Railway Station','<img class="attraction-pic" src="images/train/lhasa-railway-station-210.jpg" />'+
     'The brand-new modern railway station is located 20km southwest of Lhasa downtown.',
@@ -18,25 +18,25 @@
     'Gong Jiao Lu, Jin Niu Qu, Chengdu, Sichuan 成都市金牛区二环路北三段',
     '<h3>How to get there?</h3>'+
     '<p><strong>By taxi:</strong>the cost from Tianfu Square to the railway station is normally no less than 15 RMB.</p>'+
-    '<p><strong>By subway:</strong>served by Line 1 </p>','Train to Lhasa from Chengdu'
+    '<p><strong>By subway:</strong>served by Line 1 </p>','Train to Lhasa from Chengdu','0'
     ],
     ['icon-chongqing','Chongqing Railway Station','<img class="attraction-pic" src="images/train/" />'+
     'Caiyuanba Motorway Interchange,Yuzhong, Chongqing 渝中区菜袁路6号',
     '<h3>How to get there?</h3>'+
     '<p><strong>By taxi:</strong>the cost from Chaotianmen to the railway station is normally no less than 15 RMB.</p>'+
-    '<p><strong>By subway:</strong>served by Line 1 </p>','Train to Lhasa from Chongqing'
+    '<p><strong>By subway:</strong>served by Line 1 </p>','Train to Lhasa from Chongqing','0'
     ],
     ['icon-shanghai','Shanghai Railway Station','<img class="attraction-pic" src="images/train/shanghai-railway-station-210.jpg" />'+
     'Moling Road, Zhabei District Shanghai 上海市闸北区秣陵路303号',
     '<h3>How to get there?</h3>'+
     '<p><strong>By taxi:</strong>the cost from the Bund to the railway station is normally around 25 RMB.</p>'+
-    '<p><strong>By subway:</strong>scurrently served by Line 1, 3 and 4 </p>','Train to Lhasa from Shanghai'
+    '<p><strong>By subway:</strong>scurrently served by Line 1, 3 and 4 </p>','Train to Lhasa from Shanghai','0'
     ],
     ['icon-guangzhou','Guangzhou Railway Station','<img class="attraction-pic" src="images/train/" />'+
     '159 Huanshi Xilu, Yuexiu District, Guangzhou 广州市环市西路159号 ',
     '<h3>How to get there?</h3>'+
     '<p><strong>By taxi:</strong>the cost from Baiyunshan Airport to the railway station is normally around 80 RMB.</p>'+
-    '<p><strong>By subway:</strong>served by Line 1 and 2.  </p>','Train to Lhasa from Guangzhou'
+    '<p><strong>By subway:</strong>served by Line 1 and 2. ','Train to Lhasa from Guangzhou</p>','0'
     ],
     ['icon-lanzhou','Lanzhou Railway Station','<img class="attraction-pic" src="images/train/lanzhou-railway-station-210.jpg" />'+
     'Huochezhan West Road, Chengguan, Lanzhou, 兰州市火车站东路393号',

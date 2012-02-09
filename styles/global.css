@@ -245,7 +245,8 @@ a:hover {
 	float:right;
 	color: #92240D;
 	margin: 5px 10px 0 0;
-    width: 263px;}
+    width: 280px;
+}
 
 .header-info ul {
     margin-left: 21px;
@@ -634,7 +635,6 @@ a:hover {
 .sidebar {
     width: 240px;
     float: left;
-    padding-bottom: 10px;
     height: auto;
     min-height: 900px;
 	border-right:2px solid #b6b6b6;
