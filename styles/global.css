@@ -223,9 +223,9 @@ a:hover {
 	position:relative;
     min-height: 900px;
     border: 1px solid #B8B8B8; 
-    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: #666 0px 0px 3px;
+    -moz-box-shadow: #666 0px 0px 3px;
+    box-shadow: #666 0px 0px 3px;
     behavior: url(PIE.htc);
 }
 
@@ -323,7 +323,15 @@ a:hover {
 	margin-top:14px;
 }
 #menus > li {
-    background:#d2d2d2;
+    background: #D2D2D2;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#D2D2D2), to(#FFFFFF));
+    background: -webkit-linear-gradient(#D2D2D2, #FFFFFF);
+    background: -moz-linear-gradient(#D2D2D2, #FFFFFF);
+    background: -ms-linear-gradient(#D2D2D2, #FFFFFF);
+    background: -o-linear-gradient(#D2D2D2, #FFFFFF);
+    background: linear-gradient(#D2D2D2, #FFFFFF);
+    -pie-background: linear-gradient(#D2D2D2, #FFFFFF);
+    behavior: url(PIE.htc);
     float: left;
     font-weight: bold;
     line-height: 34px;
@@ -335,7 +343,7 @@ a:hover {
 	margin-right:5px;
 }
 #menus > li:first-child + li > a, #menus > li:first-child + li + li > a{
-    background: url(../images/menu/ico_arrows2.png) no-repeat scroll 98% 55% #d2d2d2;
+    background: url(../images/menu/ico_arrows2.png) no-repeat scroll 98% 55%;
 }
 #menus > li > a {
     color: #92240d;
@@ -381,7 +389,7 @@ a:hover {
 	background:#333;
 }
 
-div#travelStyle {
+#travelStyle {
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
     -moz-border-left-colors: none;
@@ -402,48 +410,48 @@ div#travelStyle {
     width: 425px;
     z-index: 100;
 }
-div#travelStyle h2 {
+#travelStyle h2 {
     color: #990100;
     font-size: 15px;
     font-weight: normal;
 }
-div#travelStyle h2, div#travelStyle p, div#travelStyle ul {
+#travelStyle h2, div#travelStyle p, div#travelStyle ul {
     border-right: 1px solid #CCCCCC;
     float: left;
     list-style-type: none;
     width: 207px;
 }
-div#travelStyle h2 + h2, div#travelStyle p + p, div#travelStyle ul + ul {
+#travelStyle h2 + h2, div#travelStyle p + p, div#travelStyle ul + ul {
     border: medium none;
     margin-left: 10px;
 }
-div#travelStyle p {
+#travelStyle p {
     padding: 8px 0 5px;
 }
-div#travelStyle ul li {
+#travelStyle ul li {
     border-top: 1px dashed #CCCCCC;
     float: left;
     height: 60px;
     line-height: 60px;
     width: 200px;
 }
-div#travelStyle ul li a {
+#travelStyle ul li a {
     color: #2368C7;
     display: block;
     height: 60px;
     text-decoration: none;
     width: 200px;
 }
-div#travelStyle ul li img {
+#travelStyle ul li img {
     border: 2px solid #FFFFFF;
     float: left;
     margin: 3px 8px 3px 5px;
 }
-div#travelStyle ul li a:hover {
+#travelStyle ul li a:hover {
     background: none repeat scroll 0 0 #990100;
     color: #FFFFFF;
 }
-div#tibetTours {
+#tibetTours {
     background: none repeat scroll 0 0 #FAFAFA;
     border-color: -moz-use-text-color #CCCCCC #CCCCCC;
     border-right: 2px solid #CCCCCC;
@@ -459,58 +467,58 @@ div#tibetTours {
     width: 880px;
     z-index: 100;
 }
-div#tibetTours * {
+#tibetTours * {
     margin: 0;
     padding: 0;
 }
-div#tibetTours h2 {
+#tibetTours h2 {
     color: #990100;
     font-size: 15px;
     font-weight: normal;
 }
-div#tibetTours h2, div#tibetTours p, div#tibetTours ul {
+#tibetTours h2, div#tibetTours p, div#tibetTours ul {
     border-right: 1px solid #CCCCCC;
     float: left;
     list-style-type: none;
     margin-left: 8px;
     width: 213px;
 }
-div#tibetTours h2.first, div#tibetTours p.first, div#tibetTours ul.first {
+#tibetTours h2.first, div#tibetTours p.first, div#tibetTours ul.first {
     margin-left: 0;
 }
-div#tibetTours h2 + h2 + h2 + h2, div#tibetTours p + p + p + p, div#tibetTours ul + ul + ul + ul {
+#tibetTours h2 + h2 + h2 + h2, div#tibetTours p + p + p + p, div#tibetTours ul + ul + ul + ul {
     border: medium none;
 }
-div#tibetTours p {
+#tibetTours p {
     padding: 8px 0 5px;
 }
-div#tibetTours ul li {
+#tibetTours ul li {
     border-top: 1px dashed #CCCCCC;
     float: left;
     height: 60px;
     line-height: 60px;
 }
-div#tibetTours ul.first li.last img {
+#tibetTours ul.first li.last img {
     border: medium none;
     margin: 9px 0 9px 5px;
 }
-div#tibetTours ul.first li.last a:hover {
+#tibetTours ul.first li.last a:hover {
     background: none repeat scroll 0 0 transparent;
     color: #2368C7;
 }
-div#tibetTours ul li a {
+#tibetTours ul li a {
     color: #2368C7;
     display: block;
     height: 60px;
     text-decoration: none;
     width: 213px;
 }
-div#tibetTours ul li img {
+#tibetTours ul li img {
     border: 2px solid #FFFFFF;
     float: left;
     margin: 3px 8px 3px 5px;
 }
-div#tibetTours ul li a:hover {
+#tibetTours ul li a:hover {
     background: none repeat scroll 0 0 #990100;
     color: #FFFFFF;
 }
@@ -663,18 +671,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0000', end
     padding-bottom: 10px;
     height: auto;
     min-height: 900px;
-    background: rgb(240,235,223); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(240,235,223,1) 0%, rgba(255,253,249,1) 50%, rgba(242,238,226,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(240,235,223,1)), color-stop(50%,rgba(255,253,249,1)), color-stop(100%,rgba(242,238,226,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* IE10+ */
-    background: linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0ebdf', endColorstr='#f2eee2',GradientType=1 ); /* IE6-8 */
+    background: url(../images/nav-bg-down.png) no-repeat center bottom #F8F4ED;
+    -webkit-box-shadow: #666 1px 0px 3px;
+    -moz-box-shadow: #666 1px 0px 3px;
+    box-shadow: #666 1px 0px 3px;
+    behavior: url(PIE.htc);
+    /*
+    background: rgb(240,235,223); 
+    background: -moz-linear-gradient(left, rgba(240,235,223,1) 0%, rgba(255,253,249,1) 50%, rgba(242,238,226,1) 100%); 
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(240,235,223,1)), color-stop(50%,rgba(255,253,249,1)), color-stop(100%,rgba(242,238,226,1))); 
+    background: -webkit-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); 
+    background: -o-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); 
+    background: -ms-linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); 
+    background: linear-gradient(left, rgba(240,235,223,1) 0%,rgba(255,253,249,1) 50%,rgba(242,238,226,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0ebdf', endColorstr='#f2eee2',GradientType=1 ); 
     -webkit-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
-	background:url(../images/nav-bg-down.png) no-repeat center bottom;
+    */
 }
 
 .sidebar h1 {
