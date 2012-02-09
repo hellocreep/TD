@@ -1,4 +1,4 @@
-( function(){
+;( function(){
     //车站资料
     var trainStation = [
     ['icon-beijing','Beijing West Railway Station','<img class="attraction-pic" src="images/train/beijing-west-railway-station210.jpg" />'+
