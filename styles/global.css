@@ -217,7 +217,6 @@ a:hover {
 	text-decoration:underline;
 }
 .wrapper {
-	position: relative;
 	background-color:#ffffff;
     margin:0 auto;
     width: 950px;
@@ -241,12 +240,6 @@ a:hover {
 
 .content-foot {
     margin-bottom: 60px;
-}
-
-.body-wrapper {
-    background: url(../images/all-wrapper-bg.png) no-repeat top ;
-    width: 1428px;
-    height: 170px;
 }
 
 /* HEADER */
@@ -597,7 +590,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0000', end
 }
 .newsletter-title{
 	float:left;
-	margin-right:100px;
+	margin-right:70px;
 }
 .newsletter-title h4{
 	display:block;
