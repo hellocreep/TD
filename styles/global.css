@@ -278,7 +278,8 @@ a:hover {
 	float:right;
 	color: #92240D;
 	margin: 5px 10px 0 0;
-    width: 263px;}
+    width: 280px;
+}
 
 .header-info ul {
     margin-left: 21px;
@@ -351,13 +352,13 @@ a:hover {
 #menus > li > a {
     color: #92240d;
     display: block;
-    padding: 0 10px;
+    padding: 0 7px;
     text-decoration: none;
 }
 #menus > li > a:hover {
     background:#92240d;
 	color:#ffffff;
-	border-radius:5px;
+	border-radius:5px 5px 0 0;
 	-moz-border-radius:5px 5px 0 0;
 
 }
@@ -367,7 +368,7 @@ a:hover {
 
 #nav-right{
 	background:#92240d;
-	border-radius:5px;
+	border-radius:5px 5px 0 0;
 	-moz-border-radius:5px 5px 0 0;
 	display:block;
 	float:left;
@@ -664,7 +665,6 @@ a:hover {
 .sidebar {
     width: 240px;
     float: left;
-    padding-bottom: 10px;
     height: auto;
     min-height: 900px;
     background: url(../images/nav-bg-down.png) no-repeat center bottom #F8F4ED;
