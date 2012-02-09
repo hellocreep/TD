@@ -681,13 +681,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0000', end
     -webkit-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+	background:url(../images/nav-bg-down.png) no-repeat center bottom;
 }
 
 .sidebar h1 {
-    margin: 25px 0 25px 0; 
 	font-family: 'Wellfleet', cursive;
-	text-indent:20px;
+	text-align:center;
 	cursor:pointer;
+	display:block;
+	width:240px;
+	background:url(../images/nav-bg-up.png) no-repeat center top;
+	padding:20px 0;
 }
 
 .sidebar-pic {
