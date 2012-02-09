@@ -79,7 +79,7 @@
         if( attraction==undefined ){
             attraction = 'icon' + $( this ).attr( 'class' ).replace(/marker/g,'').replace(' ','');
         }
-        for( var i =0; i<trainStation.length; i++){
+        for( var i =0; i<11; i++){
             if( trainStation[i][0]==attraction ){
                 $( '.attraction-title' ).text( trainStation[i][1] );
                 $( '.attraction-des' ).html( trainStation[i][2] );
@@ -112,7 +112,7 @@
 
             var route = $('.content h1:eq(0)').text();
 
-            for(var i = 0; i < trainStation.length; i++) {
+            for(var i = 0; i < 11; i++) {
                 if(trainStation[i][4] != route && trainStation[i][4] != '1') {
                     $('.' + trainStation[i][0]).hide()
                     $('.' + trainStation[i][0].replace('icon', 'marker')).hide();

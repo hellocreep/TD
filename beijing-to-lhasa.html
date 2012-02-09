@@ -2,10 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
-        <!--    	<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+<!--        <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-        -->
-        <link href="styles/train-to-tiebet.css" rel="stylesheet" type="text/css"/>
+-->        <link href="styles/train-to-tiebet.css" rel="stylesheet" type="text/css"/>
         <link href="styles/global.css" rel="stylesheet" type="text/css"/>
         <script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
         <script src="scripts/train-map.js" type="text/javascript"></script>
@@ -16,6 +15,7 @@
     </head>
     <body>
         <div class="header clearfix">
+            <div class="wrap">
             <a class="logo" href="###"></a>
             <p class="slogan"></p>
             <div class="header-info">
@@ -24,34 +24,65 @@
                         Info@TibetDiscovery.com
                     </li>
                     <li class="tel">
-                        Tel:<span> 86-891-6809260</span>
-                        <span class="grey">OR</span>
-                        <span href="#" class="call-you"> <a class="" id="call-you" href="#">we'll call you</a> <!-- tiny form-->
+                        <span class="call-you"> 
+                        86-891-6809260<span class="grey">&nbsp;OR</span>
+                           <a id="call-you" href="#">we'll call you</a> 
+                            <!-- tiny form-->
                             <div class="tiny-form">
                                 <form name="" action="#" method="post" id="tiny-form">
-                                    <p>
                                         <label for="cfirstname">First Name
                                             <input type="text" name="cfirstname"/>
                                         </label>
-                                    </p>
-                                    <p>
                                         <label for="clastname">Last Name
                                             <input type="text" name="clastname"/>
                                         </label>
-                                    </p>
-                                    <p>
                                         <label for="cphone">Phone Number
                                             <input type="text" name="cphone" class="required"/>
                                         </label>
-                                    </p>
-                                    <p>
                                         <label for="cemail">Email Address
                                             <input type="text" name="cemail" class="required" value="2323"/>
                                         </label>
-                                    </p>
-                                    <p>
                                         <label for="cquestion">Questions                                             <textarea name="cquestion" class="form-question"></textarea> </label>
-                                    </p>
+                                    <input class="btn orange middle" type="submit" value="Send Callback Request" />
+                                </form>
+                            </div> 
+                        </span>
+                    </li>
+                    <li>
+                        <a class="custom" href="#">Customize a Tour</a>
+                        <a class="contact" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+            
+            <!--<div class="header-info">
+                <ul>
+                    <li class="info">
+                        Info@TibetDiscovery.com
+                    </li>
+                    <li class="tel">
+                        Tel:<span> 86-891-6809260</span>
+                        <span class="grey">OR</span>
+                        <span class="call-you"> 
+                        	<a id="call-you" href="#">we'll call you</a> 
+                            <div class="tiny-form">
+                                <form name="" action="#" method="post" id="tiny-form">
+                                        <label for="cfirstname">First Name
+                                            <input type="text" name="cfirstname"/>
+                                        </label>
+                                        <label for="clastname">Last Name
+                                            <input type="text" name="clastname"/>
+                                        </label>
+                                        <label for="cphone">Phone Number
+                                            <input type="text" name="cphone" class="required"/>
+                                        </label>
+                                        <label for="cemail">Email Address
+                                            <input type="text" name="cemail" class="required" value="2323"/>
+                                        </label>
+                                        <label for="cquestion">Questions                                             <textarea name="cquestion" class="form-question"></textarea> </label>
                                     <input class="btn orange middle" type="submit" value="Send Callback Request" />
                                 </form>
                             </div> </span>
@@ -61,7 +92,7 @@
                         <span class="contact"><a href="#">Contact us</a></span>
                     </li>
                 </ul>
-            </div>
+            </div>-->
             <ul id="menus" class="menu">
                 <li>
                     <a href="http://www.tibetdiscovery.com/"  title="Go to TibetDiscovey.com">Home</a>
@@ -210,6 +241,7 @@
                     </ul>
                 </li>
             </ul>
+            </div>
         </div>
         <div class="bread">
             You are here: <a href="###">Trian to Tibet</a>
@@ -614,7 +646,7 @@ See what other travelers are curious about trains to Tibet. Get more information
 		    
 		    <div class="newsletter">
 		        <div class="newsletter-container">
-		            <div class="footer-wrapper clearfix">
+		            <div class="wrap clearfix">
     		            <div class="newsletter-title">
     		                <h4>Sign up for our free newsletter</h4>
     		                <p>Receive news and offers from us.</p>
@@ -629,7 +661,7 @@ See what other travelers are curious about trains to Tibet. Get more information
                     </div>
                 </div>
             </div>
-            <div class="footer-wrapper clearfix">
+            <div class="wrap clearfix">
                 <div class="nav">
                     <h4>About Us</h4>
                     <ul>

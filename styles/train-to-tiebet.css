@@ -10,15 +10,16 @@
     position: relative;
     width: 682px;
     min-height: 300px;
-/*    background-color: #F3EAD6;
-*/}
+    background-color: #F3EAD6;
+	margin:30px 0;
+}
 
 .train-map img {
     display: block;
     width: 680px;
     border: 1px solid #DDDDDD;
-	margin:30px 0;
-}
+/*	margin:30px 0;
+*/}
 
 .train-map ul {
     margin-top: 10px;

@@ -45,7 +45,13 @@ body {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 13px;
     line-height: 140%;
-	background: url("../images/body-bg.png") repeat-x scroll 0 129px #FBFBF5;
+	background: url("../images/body-bg.png") no-repeat center 139px #FBFBF5;
+}
+
+.wrap{
+	margin:0 auto;
+	width:960px;
+	height:auto;
 }
 /*暂时不用本地字体，此样式暂时不用
 @font-face {
@@ -171,7 +177,7 @@ a:hover {
 
 /* LAYOUT */
 .bread{
-	width:950px;
+	width:960px;
 	margin:0 auto;
 	height:40px;
 	line-height:35px;
@@ -215,9 +221,8 @@ a:hover {
 
 /* HEADER */
 .header {
-	width:950px;
 	min-height:125px;
-	margin:0 auto;
+	background:url(../images/header-top.png) no-repeat center top #EEF1F0;
 }
 
 .header a {
@@ -245,42 +250,79 @@ a:hover {
 	float:right;
 	color: #92240D;
 	margin: 5px 10px 0 0;
-    width: 280px;
+	width: 290px;
 }
 
-.header-info ul {
-    margin-left: 21px;
-}
 
 .header-info ul li {
-    margin-top: 6px;
-    padding-left: 25px;
-}
-
-.header-info .last {
-    padding-left: 0;
+	display:block;
+	float:right;
+	margin-top:7px;
 }
 
 .header-info .info {
-    margin: 6px 0 0 50px;
     background: url(../images/email-icon.png) no-repeat left;
+	padding-left:25px;
 }
 
 .header-info .tel {
     background: url(../images/tel-icon.png) no-repeat left;
+	padding-left:25px;
+	min-width:190px;
 }
 
 .header-info .custom {
-    padding-left: 26px;
     background: url(../images/customize-icon.png) no-repeat left;
-    
+	padding-left:25px;
+	margin-right:5px;
 }
 
 .header-info .contact {
-    padding-left: 27px;
     background: url(../images/contact-icon.png) no-repeat left;
-    margin-left: 10px;
+	padding-left:25px;
 }
+.call-you {
+    position: relative;
+    font-size: 11px;
+}
+
+#call-you {
+	background:url(../images/callyou-btn.png) no-repeat;
+	line-height:17px;
+    text-decoration: none;
+    color: #FFFFFF;
+	text-align:center;
+	padding: 2px 25px 2px 14px;
+}
+.tiny-form {
+    display: none;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    z-index: 99999;
+    padding: 10px;
+    width: 163px;
+    background-color: #F9F9F9;
+    border: 2px solid #F1EDE2;
+}
+
+.tiny-form .error {
+    font-size: 12px;
+    color: red;
+}
+
+.tiny-form input {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 5px;
+    padding: 3px;
+    width: 155px;
+}
+
+.form-question {
+    height: 55px;
+    width: 158px;
+}
+
 
 /*HEADER MENU*/
 .menu {
@@ -288,10 +330,10 @@ a:hover {
 	height: 35px;
 	list-style-type: none;
 	position: relative;
-	width: 950px;
+	width: 960px;
 	z-index: 210;
 	float:left;
-	margin-top:14px;
+	margin-top:24px;
 }
 .menu > li {
     background: #D2D2D2;
@@ -302,7 +344,7 @@ a:hover {
     background: -o-linear-gradient(#D2D2D2, #FFFFFF);
     background: linear-gradient(#D2D2D2, #FFFFFF);
 /*    -pie-background: linear-gradient(#D2D2D2, #FFFFFF);
-*/    float: left;
+*/  float: left;
     font-weight: bold;
     line-height: 34px;
 	border-top:1px solid #7d7d7d;
@@ -314,7 +356,7 @@ a:hover {
     behavior: url(PIE.htc);
 }
 .nav-slide{
-    background: url(../images/menu/ico_arrows2.png) no-repeat scroll 98% 55%;
+    background: url(../images/menu/ico_arrows2.png) no-repeat scroll 99% 55%;
 }
 .menu > li > a {
     color: #92240d;
@@ -330,7 +372,7 @@ a:hover {
 	border-radius:5px 5px 0 0;
 }
 .nav-slide:hover {
-    background:#92240d url(../images/menu/ico_arrows.png) no-repeat scroll 98% 55% ;
+    background:#92240d url(../images/menu/ico_arrows.png) no-repeat scroll 99% 55% ;
 }
 
 #nav-last{
@@ -377,7 +419,7 @@ a:hover {
     color: #666666;
     float: left;
     font: 13px Arial,Helvetica,sans-serif;
-    left: 173px;
+    left: 165px;
     padding: 8px 10px 3px;
     position: absolute;
     top: 35px;
@@ -497,51 +539,7 @@ a:hover {
     color: #FFFFFF;
 }
 
-.call-you {
-    position: relative;
-    font-size: 11px;
-	float:right;
-}
 
-#call-you {
-	background:url(../images/callyou-btn.png) no-repeat;
-	height:17px;
-	width:74px;
-	line-height:17px;
-    text-decoration: none;
-    color: #FFFFFF;
-	display:block;
-	text-align:center;
-}
-
-.tiny-form {
-    display: none;
-    position: absolute;
-    top: 23px;
-    left: 0;
-    z-index: 99999;
-    padding: 10px;
-    width: 163px;
-    background-color: #F9F9F9;
-    border: 2px solid #F1EDE2;
-}
-
-.tiny-form .error {
-    font-size: 12px;
-    color: red;
-}
-
-.tiny-form input {
-    border: 1px solid #CCCCCC;
-    margin-bottom: 5px;
-    padding: 3px;
-    width: 155px;
-}
-
-.form-question {
-    height: 55px;
-    width: 158px;
-}
 
 /* FOOTER */
 
@@ -552,11 +550,6 @@ a:hover {
 	margin-top:-100px;
 }
 
-.footer-wrapper {
-    margin: 0 auto;
-    width: 950px;
-	clear:left;
-}
 
 .newsletter {
     padding-top: 145px;
