@@ -9,7 +9,7 @@ var hotel = new Array(1);
 
 			for( var i = 0; i<hotel.length; i++)
 			{
-				if( hotel.indexOf(hname)==-1){ // hotel²»´æÔÚ
+				if( hotel.indexOf(hname)==-1){ // hotelï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					hotel.push(hname);
 					}
 			}
