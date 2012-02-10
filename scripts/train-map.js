@@ -153,7 +153,7 @@ $(function(){
     $( '.station-list li' ).each( function(){
         $( this ).mouseover( function(){
             $( '.station-info' ).hide();
-            $( '.station-info[id='+$(this).text()+']' ).show(); 
+            $( '#'+$( this ).text() ).show(); 
         });
     });
     $( '.station-list li:first-child' ).mouseover();
