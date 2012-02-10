@@ -21,6 +21,7 @@ $( function(){
         $( this ).click( function( e ){
             e.preventDefault();
             $( this ).toggleClass( 'active' );
+            $( this ).parent().parent().parent().next().toggle();
         });
     });
 
