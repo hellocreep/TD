@@ -1,7 +1,8 @@
-
 .content h1{
 	font-family:'Cantarell';
 	font-weight:bold;
+	margin-bottom:20px;
+	margin-top:10px;
 }
 
 .train-map {
@@ -10,13 +11,15 @@
     width: 682px;
     min-height: 300px;
     background-color: #F3EAD6;
+	margin:30px 0;
 }
 
 .train-map img {
     display: block;
     width: 680px;
     border: 1px solid #DDDDDD;
-}
+/*	margin:30px 0;
+*/}
 
 .train-map ul {
     margin-top: 10px;
@@ -34,7 +37,7 @@
     padding: 10px 30px;
     display: none;
     position: fixed;
-    top: 100px;
+    top: 168px;
     left: 482px;
     width: 500px;
     min-height: 400px;
@@ -134,7 +137,7 @@
     width: 100%;
     height: 100%;
     display: none;
-    opacity: 0.5;
+    opacity: 0.7;
     filter:alpha(opacity=80);
     background-color: #EBE6E3;
     z-index: 299;
@@ -349,10 +352,10 @@
 }
 
 .timeTable-title {
-    background-color: #F4F4F4;
-    color: #7E0122;
-    font-size: 15px;
-    height: 45px;
+	background-color: #F4F4F4;
+	color: #7E0122;
+	font-size: 13px;
+	height: 45px;
 	margin-top:20px;
 }
 
@@ -423,12 +426,11 @@
 }
 
 .life-on-board {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .pic-list {
-    margin: 20px 0 50px 0;
-    text-align: center;
+    margin: 20px 0 0 0;
 }
 
 .pic-list li{
@@ -439,16 +441,15 @@
 
 .pic-list li p {
     height: 60px;
-    line-height: 2;
 }
 
 .pic-list li img {
-    outline: 1px solid #DDDDDD;
-    border: 1px solid white;
+/*    outline: 1px solid #DDDDDD;
+*/    border: 1px solid white;
     width: 184px;
     height: 124px;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 0 10px;
 }
 /*
 	author:chenzhao
