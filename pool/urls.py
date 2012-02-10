@@ -28,5 +28,5 @@ urlpatterns += patterns('TD.views',
     (r'^get-to-tibet/$', 'get_to_tibet'),
     (r'^hotel-index/$', 'hotel_index'),
     (r'^hotel-lhasa/$','hotel_lhasa'),
-    (r'^train-map/$', 'train_map'),
+    (r'^train-to-tibet/$', 'train_to_tibet'),
 )

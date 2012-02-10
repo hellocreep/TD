@@ -1,5 +1,5 @@
 .content-head{
-	background:url(../images/hotel-index.png) no-repeat;
+	background:url(/images/hotel-index.png) no-repeat;
 	width:680px;
 	min-height:265px;
 }
@@ -116,12 +116,12 @@
 
 .hotel-roomtype {
     padding-left: 18px;
-    background: url(../images/room-icon.png) no-repeat left center;
+    background: url(/images/room-icon.png) no-repeat left center;
 }
 
 .hotel-roomtype a {
     padding-right: 10px;
-    background: url(../images/room-show.png) no-repeat right center;
+    background: url(/images/room-show.png) no-repeat right center;
     color: #D35400;
 }
 
@@ -130,7 +130,29 @@
 }
 
 .hotel-roomtype a.active {
-    background: url(../images/room-hide.png) no-repeat right center;
+    background: url(/images/room-hide.png) no-repeat right center;
+}
+
+.roomtype-pic {
+    display: none;
+    background: none repeat scroll 0 0 #FFF7ED;
+}
+
+.roomtype-pic td{
+    border-bottom: 1px solid #FFEED7;
+    padding: 0 25px;
+}
+
+.roomtype-pic td img {
+    float: left;
+}
+
+.roomtype-pic td span {
+    float: right;
+    height: 55px;
+    padding-top: 25px;
+    text-align: left;
+    width: 495px;
 }
 
 .hotel-table th{

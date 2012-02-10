@@ -12,7 +12,7 @@ $( function(){
           $( '.recommended-hotel' ).hide();
           $( '#'+hotel ).show();
           //sidebar同步content 有没其他可以不写js的方法实现？ 
-          $( '.sidebar' ).height($( '.content' ).height() + 60); 
+          auto_height();
        }); 
     });
     
@@ -21,6 +21,7 @@ $( function(){
         $( this ).click( function( e ){
             e.preventDefault();
             $( this ).toggleClass( 'active' );
+            $( this ).parent().parent().parent().next().toggle();
         });
     });
 

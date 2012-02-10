@@ -45,7 +45,7 @@ body {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 13px;
     line-height: 140%;
-	background: url("../images/body-bg.png") no-repeat center 139px #FBFBF5;
+	background: url("/images/body-bg.png") no-repeat center 139px #FBFBF5;
 }
 
 .wrap{
@@ -108,7 +108,7 @@ a:hover {
 }
 
 .btn{
-	background-image:url(../images/btn.png);
+	background-image:url(/images/btn.png);
 	display:block;
     color: #ffffff;
 	text-decoration:none;
@@ -220,7 +220,7 @@ a:hover {
 /* HEADER */
 .header {
 	min-height:125px;
-	background:url(../images/header-top.png) no-repeat center top #EEF1F0;
+	background:url(/images/header-top.png) no-repeat center top #EEF1F0;
 }
 
 .header a {
@@ -230,7 +230,7 @@ a:hover {
 .logo {
 	width:165px;
 	height:55px;
-	background:url(../images/logo.png) no-repeat;
+	background:url(/images/logo.png) no-repeat;
 	display:block;
 	margin-top:25px;
 	float:left;
@@ -239,7 +239,7 @@ a:hover {
 .header .slogan {
     float: left;
     margin: 36px 0 0 20px;
-    background: url(../images/slogan.png) no-repeat 0 0 ;
+    background: url(/images/slogan.png) no-repeat 0 0 ;
     width: 296px;
     height: 34px;
 }
@@ -259,24 +259,24 @@ a:hover {
 }
 
 .header-info .info {
-    background: url(../images/email-icon.png) no-repeat left;
+    background: url(/images/email-icon.png) no-repeat left;
 	padding-left:25px;
 }
 
 .header-info .tel {
-    background: url(../images/tel-icon.png) no-repeat left;
+    background: url(/images/tel-icon.png) no-repeat left;
 	padding-left:25px;
 	min-width:190px;
 }
 
 .header-info .custom {
-    background: url(../images/customize-icon.png) no-repeat left;
+    background: url(/images/customize-icon.png) no-repeat left;
 	padding-left:25px;
 	margin-right:5px;
 }
 
 .header-info .contact {
-    background: url(../images/contact-icon.png) no-repeat left;
+    background: url(/images/contact-icon.png) no-repeat left;
 	padding-left:25px;
 }
 .call-you {
@@ -285,7 +285,7 @@ a:hover {
 }
 
 #call-you {
-	background:url(../images/callyou-btn.png) no-repeat;
+	background:url(/images/callyou-btn.png) no-repeat;
 	line-height:17px;
     text-decoration: none;
     color: #FFFFFF;
@@ -354,7 +354,7 @@ a:hover {
     behavior: url(PIE.htc);
 }
 .nav-slide{
-    background: url(../images/menu/ico_arrows2.png) no-repeat scroll 99% 55%;
+    background: url(/images/menu/ico_arrows2.png) no-repeat scroll 99% 55%;
 }
 .menu > li > a {
     color: #92240d;
@@ -370,7 +370,7 @@ a:hover {
 	border-radius:5px 5px 0 0;
 }
 .nav-slide:hover {
-    background:#92240d url(../images/menu/ico_arrows.png) no-repeat scroll 99% 55% ;
+    background:#92240d url(/images/menu/ico_arrows.png) no-repeat scroll 99% 55% ;
 }
 
 #nav-last{
@@ -603,7 +603,7 @@ a:hover {
 
 .footer .nav li {
 	padding-left: 11px;
-	background: url("../images/footer_list.gif") no-repeat scroll 0 50% transparent;
+	background: url("/images/footer_list.gif") no-repeat scroll 0 50% transparent;
 }
 
 .footer .nav a {
@@ -629,7 +629,7 @@ a:hover {
     height: auto;
     min-height: 900px;
 	border-right:2px solid #b6b6b6;
-    background: url(../images/nav-bg-down.png) no-repeat center bottom #F8F4ED;
+    background: url(/images/nav-bg-down.png) no-repeat center bottom #F8F4ED;
 /*    -webkit-box-shadow: #666 1px 0px 3px;
     -moz-box-shadow: #666 1px 0px 3px;
     box-shadow: #666 1px 0px 3px;
@@ -651,7 +651,7 @@ a:hover {
 	cursor:pointer;
 	display:block;
 	width:240px;
-	background:url(../images/nav-bg-up.png) no-repeat center top;
+	background:url(/images/nav-bg-up.png) no-repeat center top;
 	padding:20px 0;
 }
 
@@ -682,7 +682,7 @@ a:hover {
 }
 
 .nav-left li a.active {
-    background: url(../images/sidebar-nav.png) no-repeat scroll 0 0 transparent;
+    background: url(/images/sidebar-nav.png) no-repeat scroll 0 0 transparent;
     border: medium none;
     color: #FFFFFF;
     left: -1px;
@@ -696,7 +696,7 @@ a:hover {
 }
 
 .have-arrow li{
-	background:url(../images/nav-arrow.png) no-repeat 200px center;
+	background:url(/images/nav-arrow.png) no-repeat 200px center;
 }
 
 .subnav-left li {
@@ -711,7 +711,7 @@ a:hover {
     padding-left: 40px;
     font-size: 12px;
 	line-height:24px;
-	background:url(../images/nav-dot.png) no-repeat 26px center transparent;
+	background:url(/images/nav-dot.png) no-repeat 26px center transparent;
 	position:relative;
 }
 
@@ -785,7 +785,7 @@ a:hover {
 /* FEEDBACK */
 #feedback {
     position: fixed;
-	background:url(../images/feedback.jpg) no-repeat;
+	background:url(/images/feedback.jpg) no-repeat;
 	width:41px;
 	height:143px;
 	top:321px;
@@ -822,7 +822,7 @@ a:hover {
 .btn-enquiry a {
     color: #FFFFFF;
     display: block;
-	background:url(../images/btn-enquiry.png) no-repeat;
+	background:url(/images/btn-enquiry.png) no-repeat;
 	width:199px;
 	height:43px;
 	line-height:43px;

@@ -1,6 +1,15 @@
 ;(function(){
-    
+    //sidebar高度同步content 
+    var auto_height = function() {
+        var sidebar_height = $('.sidebar').height($('.content').height() + 60);
+        if($('.sidebar').height() < 950) {
+            $('.sidebar').height(1000);
+        }
+    }
+
 $( function(){
+    
+    auto_height();
     
     //contact us 弹出框
     $( '#call-you' ).click( function(){
@@ -20,9 +29,6 @@ $( function(){
         }
     );
     
-	//sidebar同步content 有没其他可以不写js的方法实现？ 
-	$( '.sidebar' ).height($( '.content' ).height() + 60);
-	
 	//头部menu下拉效果
 	$('#tibetTours').hide();
     
