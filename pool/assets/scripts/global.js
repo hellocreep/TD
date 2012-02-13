@@ -3,7 +3,7 @@
    var autoHeight = function(){
        var side_height = $( '.sidebar' ).height();
        if( side_height <1000 ){
-           $( '.sidebar' ).height( 1000 )
+           $( '.sidebar' ).height( 1200 )
        }else{
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }

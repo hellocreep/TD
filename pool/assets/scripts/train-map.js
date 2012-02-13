@@ -152,6 +152,7 @@ $(function(){
     //火车首页TAB切换
     $( '.station-list li' ).each( function(){
         $( this ).mouseover( function(){
+            $( this ).addClass( 'active' ).siblings().removeClass( 'active' );
             $( '.station-info' ).hide();
             $( '#'+$( this ).text() ).show(); 
         });
