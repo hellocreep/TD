@@ -1,22 +1,20 @@
-.right-head{
+.content-head{
 	background:url(../images/hotel-index.png) no-repeat;
 	width:680px;
 	min-height:265px;
 }
-.right-head p{
+.content-head p{
 	color:#FFF;
 	text-align:left;
 	padding:20px 50px 0px 15px;
 }
-.right-content{
-	width:680px;
-}
-.tag{
+
+.hotel-tag{
 	border-bottom:3px solid #991926;
 	padding: 0 46px;
 	text-align:center;
 }
-.tag li
+.hotel-tag li
 {
 	border-radius: 7px 7px 0 0;
 	background: none repeat scroll 0 0 #7E0122;
@@ -29,7 +27,6 @@
 	font-weight:bold;
 	cursor:pointer;
 	
-	text-shadow: 0px 1px 2px #050505;
     filter: dropshadow(color=#050505, offx=0, offy=1);
     background: rgb(126,1,34); /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -41,12 +38,19 @@
     background: -ms-linear-gradient(top, rgba(126,1,34,1) 0%,rgba(145,38,66,1) 60%,rgba(140,0,32,1) 99%); /* IE10+ */
     background: linear-gradient(top, rgba(126,1,34,1) 0%,rgba(145,38,66,1) 60%,rgba(140,0,32,1) 99%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e0122', endColorstr='#8c0020',GradientType=0 ); /* IE6-8 */
-   behavior: url(/PIE.htc);
+    behavior: url(/PIE.htc);
 }
 
-.tag li:hover{
+.hotel-tag li:hover{
 	line-height: 28px;
 	text-align: center;
+}
+
+.hotel-tag li.active {
+    color: #D35400;
+    line-height: 26px;
+    text-shadow: 0px 1px 2px #050505;
+    behavior: url(PIE.htc);
 }
 
 .hotel-list{
@@ -54,15 +58,10 @@
 	border-top:solid #993333 3px;
 	padding:10px  5px;
 	text-align:left;
+	margin: 0 0 5px 0;
 }
 
-.hotel-list > span{
-	display:block;
-	position:relative;
-	left:570px;;
-}
-
-.tag-title {
+.hotel-tag-title {
 	background: rgb(253,201,132); /* Old browsers */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkYzk4NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjExJSIgc3RvcC1jb2xvcj0iI2ZmOTQwNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iI2ZmOTQwNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZGM5ODQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(left, rgba(253,201,132,1) 0%, rgba(255,148,4,1) 11%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 67%, rgba(255,148,4,1) 90%, rgba(253,201,132,1) 100%); /* FF3.6+ */
@@ -76,8 +75,11 @@
 	width: 680px;
 	height: 30px;
 	line-height: 27px;
-	behavior: url(/PIE.htc);
 	text-align: center;
+}
+
+.recommended-hotel {
+    display: none;
 }
 
 .hotel-table{
@@ -94,8 +96,68 @@
 	line-height:28px;
 }
 
+.hotel-book {
+    text-align: center;
+    width: 120px;
+}
+
+.hotel-book a {
+    margin-left: 32px
+}
+
+.hotel-allroom {
+    text-align: right;
+    margin: 5px 8px 0 0 ;
+}
+
+.hotel-allroom a{
+    color: #D35400;
+}
+
+.hotel-roomtype {
+    padding-left: 18px;
+    background: url(../images/room-icon.png) no-repeat left center;
+}
+
+.hotel-roomtype a {
+    padding-right: 10px;
+    background: url(../images/room-show.png) no-repeat right center;
+    color: #D35400;
+}
+
+.hotel-roomtype a:hover {
+    text-decoration: none;
+}
+
+.hotel-roomtype a.active {
+    background: url(../images/room-hide.png) no-repeat right center;
+}
+
+.roomtype-pic {
+    display: none;
+    background: none repeat scroll 0 0 #FFF7ED;
+}
+
+.roomtype-pic td{
+    border-bottom: 1px solid #FFEED7;
+    padding: 0 25px;
+}
+
+.roomtype-pic td img {
+    float: left;
+}
+
+.roomtype-pic td span {
+    float: right;
+    height: 55px;
+    padding-top: 25px;
+    text-align: left;
+    width: 495px;
+}
+
 .hotel-table th{
 	background:#ffeed7;
+	color: #D35400;
 }
 
 .lhasa select{
