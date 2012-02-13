@@ -55,7 +55,7 @@ img, ul, ul li {
     padding: 0;
 }
 .sortCities .viewedhotel .viewhotelList a.closeWindow {
-    background: url("/images/reviewd/iconremove.gif") no-repeat scroll left top transparent;
+    background: url("/imagesnew/reviewd/iconremove.gif") no-repeat scroll left top transparent;
     display: block;
     float: right;
     height: 14px;
