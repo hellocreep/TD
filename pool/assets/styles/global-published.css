@@ -691,6 +691,12 @@ a:hover {
 	text-decoration:none;
 }
 
+.nav-left li a.nohover:hover {
+    background-color: #F8F4ED;
+    text-decoration:none;
+    cursor: text;
+}
+
 .nav-left li a.active {
     background: url(/imagesnew/sidebar-nav.png) no-repeat scroll 0 0 transparent;
     border: medium none;

@@ -33,6 +33,11 @@ $( function(){
         }
     );
     
+    $( '.staion-list' ).each(function(){
+        $( this ).click(function(){
+        });
+    })
+    
 	//头部menu下拉效果
 	$('#tibetTours').hide();
     
