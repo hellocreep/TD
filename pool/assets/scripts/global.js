@@ -51,35 +51,46 @@ $( function(){
     });
 	
 	/****newsletter**/
-	$('#submit').click( function( e ){
-    e.preventDefault();
-	var email=$('#newsletter').val();
-    $.ajax({ 
-      url: "http://www.tibetdiscovery.com/forms/newsletter.php?email="+email+"&&"+Math.random(),
-	context: '',
-	 success: function( data ){
-		if( data=="1")
-	 {
-		alert('Thank you for subscribing to our newsletter. The tibetdiscovery Team');
-	 }
-	 else if( data=="2")
-	  {
-		alert('You are already registered to our newsletter. We hope you have enjoyed our previous publications.');
-	 }
-	 else 
-	  {
-		alert('The system is busy, please try again later.');
-	 }
-  },
-error: function(){
- alert('error')
-}
-});
-});
+
+        $('#submit').click(function(e) {
+            e.preventDefault();
+            var email = $('#newsletter').val();
+            $.ajax({
+                url : "http://www.tibetdiscovery.com/forms/newsletter.php?email=" + email + "&&" + Math.random(),
+                context : '',
+                success : function(data) {
+                    if(data == "1") {
+                        alert('Thank you for subscribing to our newsletter. The tibetdiscovery Team');
+                    } else if(data == "2") {
+                        alert('You are already registered to our newsletter. We hope you have enjoyed our previous publications.');
+                    } else {
+                        alert('The system is busy, please try again later.');
+                    }
+                },
+                error : function() {
+                    alert('error')
+                }
+            });
+        });
+
+
+    //选择当前页面
+    var bread_len = $( '.bread a' ).length;
+    if( bread_len > 1 ) {
+        var selected = $( '.bread a' ).eq(1).text();
+    } else {
+        var selected = $( '.bread' ).text().substring( 18 );
+    }
+    if($( '.homebread' ).length!=0){
+        $( '#menus li a' ).eq( 0 ).addClass( 'selected' );
+    }
+    $( '#menus li a' ).each(function() {
+        if( $( this ).attr( 'title' ) == selected ) {
+            $( this ).addClass( 'selected' );
+        }
+    });
+
+
 
 });
-
 })( jQuery );
-
-
-//头部导航下拉列表效果

@@ -84,9 +84,16 @@
 }
 
 .station-info {
-    border: 1px solid #000000;
     padding: 20px;
     display: none;
+    background: url(/imagesnew/bg-huawen-col.png) repeat-y 0 0;
+    width: 679px;
+}
+
+.station-info-row {
+    background: url(/imagesnew/bg-huawen-row.png) repeat-x 0 0;
+    height: 12px;
+    width: 679px;
 }
 
 .station-info img {
@@ -98,6 +105,11 @@
     float: left;
     margin-left: 20px;
     width: 400px
+}
+
+.station-info p a{
+    margin-right: 40px;
+    color: #FBB017;
 }
 
 .customize-trip {

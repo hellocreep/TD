@@ -367,7 +367,18 @@ a:hover {
 	-moz-border-radius:5px 5px 0 0;
 	-webkit-border-radius:5px 5px 0 0;
 	border-radius:5px 5px 0 0;
+	behavior: url(PIE.htc);
 }
+
+.menu > li > a.selected {
+    background-color:#92240d;
+    color:#ffffff;
+    -moz-border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+    behavior: url(PIE.htc);
+}
+
 .nav-slide:hover {
     background:#92240d url(/imagesnew/menu/ico_arrows.png) no-repeat scroll 99% 55% ;
 }
