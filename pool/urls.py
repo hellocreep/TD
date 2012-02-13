@@ -20,7 +20,7 @@ urlpatterns = patterns('',
 
 urlpatterns += patterns('',
     (r'^assets/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.ASSETS_ROOT}),
-    (r'^images/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.IMAGES_ROOT}),
+    (r'^imagesnew/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.IMAGES_ROOT}),
 )
 
 urlpatterns += patterns('TD.views',
