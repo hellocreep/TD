@@ -1,5 +1,5 @@
 .content-head{
-	background:url(/images/hotel-index.png) no-repeat;
+	background:url(/imagesnew/hotel-index.png) no-repeat;
 	width:680px;
 	min-height:265px;
 }
@@ -116,12 +116,12 @@
 
 .hotel-roomtype {
     padding-left: 18px;
-    background: url(/images/room-icon.png) no-repeat left center;
+    background: url(/imagesnew/room-icon.png) no-repeat left center;
 }
 
 .hotel-roomtype a {
     padding-right: 10px;
-    background: url(/images/room-show.png) no-repeat right center;
+    background: url(/imagesnew/room-show.png) no-repeat right center;
     color: #D35400;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .hotel-roomtype a.active {
-    background: url(/images/room-hide.png) no-repeat right center;
+    background: url(/imagesnew/room-hide.png) no-repeat right center;
 }
 
 .roomtype-pic {
