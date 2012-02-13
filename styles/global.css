@@ -1,4 +1,5 @@
-/* CSS RESET */
+/* CSS RESET*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -181,16 +182,16 @@ a:hover {
 	margin:0 auto;
 	height:40px;
 	line-height:35px;
-	color: #ffffff;
+	color: #C09051;
+	font-size:11px;
 }
 .bread a{
-	color:#ffffff;
+	color:#C09051;
 	text-decoration:none;
-	font-size:12px;
 }
 .bread a:hover{
 	color:#ffffff;
-	text-decoration:underline;
+	text-decoration:none;
 }
 .wrapper {
 	background-color:#ffffff;
@@ -345,7 +346,6 @@ a:hover {
     background: linear-gradient(#D2D2D2, #FFFFFF);
 /*    -pie-background: linear-gradient(#D2D2D2, #FFFFFF);
 */  float: left;
-    font-weight: bold;
     line-height: 34px;
 	border-top:1px solid #7d7d7d;
 	border-left:1px solid #7d7d7d;
@@ -419,7 +419,7 @@ a:hover {
     color: #666666;
     float: left;
     font: 13px Arial,Helvetica,sans-serif;
-    left: 165px;
+    left: 152px;
     padding: 8px 10px 3px;
     position: absolute;
     top: 35px;
@@ -476,7 +476,7 @@ a:hover {
     color: #666666;
     float: left;
     font: 13px Arial,Helvetica,sans-serif;
-    left: 0;
+    left: 58px;
     padding: 8px 10px 3px;
     position: absolute;
     top: 35px;
