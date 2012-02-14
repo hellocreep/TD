@@ -1,8 +1,8 @@
 ;(function(){
     //sidebar同步content 有没其他可以不写js的方法实现？ 
    var autoHeight = function(){
-       var side_height = $( '.sidebar' ).height();
-       if( side_height <1000 ){
+       var content_height = $( '.content' ).height();
+       if( content_height <1000 ){
            $( '.sidebar' ).height( 1200 )
        }else{
            $( '.sidebar' ).height($( '.content' ).height() + 60);
@@ -33,10 +33,7 @@ $( function(){
         }
     );
     
-    $( '.staion-list' ).each(function(){
-        $( this ).click(function(){
-        });
-    })
+    $( '#'+$( '.train-map' ).attr( 'title' )).addClass( 'active' );
     
 	//头部menu下拉效果
 	$('#tibetTours').hide();

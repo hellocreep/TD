@@ -425,6 +425,7 @@
 
 .schedule-detail tr {
     height: 33px;
+    text-align: center;
 }
 
 .schedule-detail tfoot th {
