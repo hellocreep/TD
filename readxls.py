@@ -1,41 +1,32 @@
 import xlrd
-
+import os
 
 query = 'INSERT INTO flight VALUES'
-sql = '('
+sql = ''
+value = ''
 book = xlrd.open_workbook('flight.xls',encoding_override="cp1252")
 sh = book.sheet_by_index(0)
 st = ''
 for i in range(1,sh.nrows):
-	for j in range(sh.ncols):
-		s = sh.cell_value(i,j)
-		if type(s)==float:
-			s = str(s)
-		else:
-			s.encode('utf-8')
-		st += s+','
-
-s_list = st.split(',')
-
+        for j in range(sh.ncols):
+                cell = sh.cell_value(i,j)
+                if type(cell) == float:
+                        cell = str(cell)
+                else:
+                        cell = cell.encode('utf-8')
+                st += "'" + cell + "',|"
+                
 
 
-value = ''
-value3 = ''
-#for i in range(sh.ncols):
-        #value += "'"+''.join(s_list[i:i+1]) + "',"
+s_list = st.split('|')
+s_list.pop()
+for i in range(sh.nrows-1):
+        value = ''.join(s_list[10*i:10*i+10])
+        value = value[0:len(value)-1]
+        sql += '('+ value + '),'
 
+query = query + sql[0:len(sql)-1]
 
-for m in range(sh.nrows):
-        for f in range(sh.ncols):
-                value3 += "'"+ ''.join(s_list[10*m+f:10*m+f+1]) + "',"
-value3 = '('+ value3[0:len(value3)-1] +'),'
-
-for i in range(sh.ncols):
-        value += "'"+''.join(s_list[i:i+1]) + "',"
-value = '('+ value[0:len(value)-1] +'),'
-
-
-print value
-#print value3
-query = query  + value3 
-print query
+f = open('sql.txt','wr')
+f.write(query)
+f.close()
