@@ -362,13 +362,24 @@
 .timeTable {
     width: 100%;
     text-align: center;
+  
 }
 
 .icon-train {
     cursor: pointer;
     width:  70px;
+    text-align:left;
+    text-indent: 43px;;
+    background:url(/imagesnew/train-sprite.png) no-repeat  24px 12px;
 }
-
+.icon-train span{
+	background: url(/imagesnew/train-sprite.png) no-repeat 0 -38px; 
+	width: 11px; 
+	height: 9px;	
+	margin-left: 3px;
+    padding: 0 6px;
+    width: 11px;
+}
 .timeTable-title {
 	background-color: #F4F4F4;
 	color: #7E0122;
