@@ -1,0 +1,251 @@
+{% extends 'base.html' %}
+
+{% block title %}get-to-tibet{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/train-to-tibet.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block script %}
+<script src="/assets/scripts/train-map.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block body%}
+{% include 'header.html' %}
+<div class="bread"></div>
+<div class="wrapper clearfix">
+    {% include 'sidebar.html' %}
+    <div class="content">
+            <h1>Train to Lhasa from Beijing</h1>
+            <p>
+                It is no longer a dream to take a train from Beijing to Lhasa. The 3753 kilometers' railway between Beijing and Lhasa covers 1110 km over the world's highest Qinghai-Tibet Railway. There are daily trains transferring thousands of passengers from Beijing to Lhasa for their lifetime Tibet tour.
+            </p>
+            <div class="train-map" title="train-chengdu">
+                <img src="/imagesnew/train/Beijing_Lhasa.png"/>
+                <span class="marker marker-beijing"></span>
+                <span class="attraction-icons icon-beijing" name="icon-beijing"></span>
+                <span class="marker marker-xian"></span>
+                <span class="attraction-icons icon-xian" name="icon-xian"></span>
+                <span class="marker marker-lanzhou"></span>
+                <span class="attraction-icons icon-lanzhou" name="icon-lanzhou"></span>
+                <span class="marker marker-xining"></span>
+                <span class="attraction-icons icon-xining" name="icon-xining"></span>
+                <span class="marker marker-golmud"></span>
+                <span class="attraction-icons icon-golmud" name="icon-golmud"></span>
+                <span class="marker marker-naqu"></span>
+                <span class="attraction-icons icon-naqu" name="icon-naqu"></span>
+                <span class="marker marker-lhasa"></span>
+                <span class="attraction-icons icon-lhasa" name="icon-lhasa"></span>
+                <span class="marker marker-chengdu"></span>
+                <span class="attraction-icons icon-chengdu" name="icon-chengdu"></span>
+                <span class="marker marker-chongqing"></span>
+                <span class="attraction-icons icon-chongqing" name="icon-chongqing"></span>
+                <span class="marker marker-shanghai"></span>
+                <span class="attraction-icons icon-shanghai" name="icon-shanghai"></span>
+                <span class="marker marker-guangzhou"></span>
+                <span class="attraction-icons icon-guangzhou" name="icon-guangzhou"></span>
+            </div>
+            <div class="schedule">
+                <h1 class="schedule-title">Train to lhasa Schedule</h1>
+                <p></p>
+                <div class="timeTable">
+                    <ul class="timeTable-title">
+                        <li class="trainno">
+                            Train No.
+                        </li>
+                        <li>
+                            Route
+                        </li>
+                        <li class="traintime">
+                            Dep. Time </br>Arr.Time
+                        </li>
+                        <li class="traindate">
+                            Duration
+                        </li>
+                    </ul>
+                    <ul class="timeTable-info">
+                        <li class="icon-train" name="beijing-to-lhasa">
+                            TD177>
+                        </li>
+                        <li>
+                            Beijing to Lhasa
+                        </li>
+                        <li class="trainInfo-time">
+                            20:00</br>20:00
+                        </li>
+                        <li>
+                            43 hours
+                        </li>
+                        <li>
+                            <span class="btn-wrap"><a class="btn middle" href="#">Buy Now</a></span>
+                        </li>
+                    </ul>
+                    <div>
+                        <table class="schedule-detail beijing-to-lhasa">
+                            <thead>
+                                <th colspan="5" class="clearfix">
+                                <div class="left">
+                                    <p>
+                                        <span class="black">Train T27</span>-everyday
+                                    </p>
+                                    <p>
+                                        43 hours 51minuts
+                                    </p>
+                                </div><div class="right"></div></th>
+                            </thead>
+                            <tbody>
+                                <tr class="schedule-detail-title table-odd">
+                                    <td>Train Station</td>
+                                    <td>Arrive Time</td>
+                                    <td>Depature Time</td>
+                                    <td>Duration</td>
+                                    <td>Distance</td>
+                                </tr>
+                                <tr class="table-even">
+                                    <td>Beijing West</td>
+                                    <td>12:00</td>
+                                    <td>08:00</td>
+                                    <td>33 hours</td>
+                                    <td>11111km</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <th colspan="5"><h4>Note:</h4>
+                                <p>
+                                    1.fdfdsfsdfsdfdsfds
+                                </p>
+                                <p>
+                                    2.fdfsdfsdfsdfsdfsfsdfsd
+                                </p></th>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <ul class="timeTable-title">
+                        <li class="trainno">
+                            Train No.
+                        </li>
+                        <li>
+                            Route
+                        </li>
+                        <li class="traintime">
+                            Dep. Time </br>Arr.Time
+                        </li>
+                        <li class="traindate">
+                            Duration
+                        </li>
+                    </ul>
+                    <ul class="timeTable-info">
+                        <li class="icon-train" name="beijing-to-chengdu">
+                            TD21>
+                        </li>
+                        <li>
+                            Beijing to Lhasa
+                        </li>
+                        <li class="trainInfo-time">
+                            20:00</br>20:00
+                        </li>
+                        <li>
+                            43 hours
+                        </li>
+                        <li>
+                            <span class="btn-wrap"><a class="btn middle" href="#">Buy Now</a></span>
+                        </li>
+                    </ul>
+                    <div>
+                        <table class="schedule-detail beijing-to-chengdu">
+                            <thead>
+                                <th colspan="5" class="clearfix">
+                                <div class="left">
+                                    <p>
+                                        <span class="black">Train T27</span>-everyday
+                                    </p>
+                                    <p>
+                                        43 hours 51minuts
+                                    </p>
+                                </div><div class="right"></div></th>
+                            </thead>
+                            <tbody>
+                                <tr class="schedule-detail-title table-odd">
+                                    <td>Train Station</td>
+                                    <td>Arrive Time</td>
+                                    <td>Depature Time</td>
+                                    <td>Duration</td>
+                                    <td>Distance</td>
+                                </tr>
+                                <tr class="table-even">
+                                    <td>Beijing West</td>
+                                    <td>12:00</td>
+                                    <td>08:00</td>
+                                    <td>33 hours</td>
+                                    <td>11111km</td>
+                                </tr>
+                                <tr class="schedule-detail-title table-odd">
+                                    <td>Train Station</td>
+                                    <td>Arrive Time</td>
+                                    <td>Depature Time</td>
+                                    <td>Duration</td>
+                                    <td>Distance</td>
+                                </tr>
+                                <tr class="table-even">
+                                    <td>Beijing West</td>
+                                    <td>12:00</td>
+                                    <td>08:00</td>
+                                    <td>33 hours</td>
+                                    <td>11111km</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <th colspan="5"><h4>Note:</h4>
+                                <p>
+                                    1.fdfdsfsdfsdfdsfds
+                                </p>
+                                <p>
+                                    2.fdfsdfsdfsdfsdfsfsdfsd
+                                </p></th>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="life-on-board clearfix" >
+                <h2>Life on Board</h2>
+                <ul class="pic-list clearfix">
+                    <li>
+                        <img src="/imagesnew/img1.jpg" />
+                        <a href="#">Soft Sleeper Cars</a>
+                        <p>
+                            The most comfortable compartments with doors and 4 soft berths in each offer more privacy and fewer crowds.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="/imagesnew/img2.jpg" />
+                        <a href="#">What to eat on board?</a>
+                        <p>
+                            Simple Western and Chinese food are offered in the Dining car. Also some snacks and drinks are sold by the train attendant with a trolley.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="/imagesnew/img3.jpg" />
+                        <a href="#">More Tibet Train FAQs</a>
+                        <p>
+                            See what other travelers are curious about trains to Tibet. Get more information about every corner of the train.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            {% include 'content-foot.html' %}
+    </div>
+</div>
+
+<div class="lightbox">
+    <p style="text-align: right;">
+        <span class="lightbox-close">X</span>
+    </p>
+    <h2 class="attraction-title"></h2>
+    <div class="attraction-des clearfix"></div>
+    <div class="attraction-faq"></div>
+</div>
+<div class="mask"></div>
+
+{% include 'footer.html' %}
+{% endblock %}

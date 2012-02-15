@@ -15,7 +15,6 @@ var hotelhistory='';
 			alert(hotelhistory);
 			if( hotel.indexOf(hname)==-1)
 			{
-				
 			}
 			
 			$('.viewedhotel').remove();

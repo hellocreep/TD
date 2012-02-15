@@ -84,9 +84,16 @@
 }
 
 .station-info {
-    border: 1px solid #000000;
-    padding: 10px;
+    padding: 20px;
     display: none;
+    background: url(/imagesnew/bg-huawen-col.png) repeat-y 0 0;
+    width: 679px;
+}
+
+.station-info-row {
+    background: url(/imagesnew/bg-huawen-row.png) repeat-x 0 0;
+    height: 12px;
+    width: 679px;
 }
 
 .station-info img {
@@ -96,12 +103,23 @@
 
 .station-info div {
     float: left;
-    margin-left: 30px;
+    margin-left: 20px;
+    width: 400px
+}
+
+.station-info p a{
+    margin-right: 40px;
+    color: #FBB017;
 }
 
 .customize-trip {
     margin-top: 30px;
     padding: 0 10px;
+}
+
+.custom-btn {
+    float: right;
+    cursor: pointer;
 }
 
 .customize-trip div{
@@ -207,7 +225,7 @@
 
 .attraction-icons {
     position: absolute;
-    background: url("../images/train/attraction-icon.png") no-repeat left -999px;
+    background: url("/imagesnew/train/attraction-icon.png") no-repeat left -999px;
     cursor: pointer;
 }
 
@@ -407,6 +425,7 @@
 
 .schedule-detail tr {
     height: 33px;
+    text-align: center;
 }
 
 .schedule-detail tfoot th {

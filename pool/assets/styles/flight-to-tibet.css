@@ -1,0 +1,16 @@
+.timetable-title {
+    background-color: #92240D;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.timetable-title li {
+    float: left;
+    padding: 5px 8px;
+}
+
+.schedule-detail {
+    border-top: 1px solid #92240D;
+    border-bottom: 1px solid #DDDDDD;
+    width: 100%;
+}
