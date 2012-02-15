@@ -6,15 +6,13 @@
 <link href="/assets/styles/flight-to-tibet.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
-{% block script %}
-<script src="/assets/scripts/flight-to-tibet.js" type="text/javascript"></script>
+{% block script %} <script src="/assets/scripts/flight-to-tibet.js" type="text/javascript"></script>
 {% endblock %}
 
 {% block body%}
-{% include 'header.html' %}
-<div class="bread"></div>
+{% include 'header.html' %} <div class="bread"></div>
 <div class="wrapper clearfix">
-    {% include 'sidebar.html' %} 
+    {% include 'sidebar.html' %}
     <div class="content">
         <h1>Flight to Tibet</h1>
         <p>
@@ -23,26 +21,50 @@
         <div class="timetable">
             <h2>TimeSchedule</h2>
             <ul class="timetable-title clearfix">
-                <li>AirLine</li>
-                <li>Dep./Arr.Time</li>
-                <li>Airport</li>
-                <li>Duration</li>
-                <li>Flight No</li>
-                <li>Freq</li>
+                <li>
+                    AirLine
+                </li>
+                <li>
+                    Dep./Arr.Time
+                </li>
+                <li>
+                    Airport
+                </li>
+                <li>
+                    Duration
+                </li>
+                <li>
+                    Flight No
+                </li>
+                <li>
+                    Freq
+                </li>
             </ul>
             <ul class="flight-rows clearfix">
                 <li class="flight-row1">
-                     China
+                    China <img src="" width="20" height="20"/>
                 </li>
                 <li class="flight-row2">
                     <dl>
-                      <dt>06:10</dt> 
-                      <dd>08:10</dd>
-                        <dt>06:10</dt> 
-                      <dd>08:10</dd>
-                        <dt>06:10</dt> 
-                      <dd>08:10</dd>
-                     </dl>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                    </dl>
                 </li>
                 <li class="flight-row3">
                     <p>
@@ -53,60 +75,99 @@
                         Chengdu(CTU)</br>
                         Lhasa(LXA)
                     </p>
-                     <p>
+                    <p>
                         Chengdu(CTU)</br>
                         Lhasa(LXA)
                     </p>
                 </li>
                 <li class="flight-row4">
                     <dl>
-                        <dt>2hr</dt>
-                        <dd>No-stop</dd>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>2hr</dt>
-                        <dd>No-stop</dd>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>2hr</dt>
-                        <dd>No-stop</dd>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
                     </dl>
                 </li>
                 <li class="flight-row5">
                     <dl>
-                        <dt>CA4423</dt>
-                        <dd>Type:319</dd>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>CA4423</dt>
-                        <dd>Type:319</dd>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>CA4423</dt>
-                        <dd>Type:319</dd>
-                    </dl>                    
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
                 </li>
                 <li class="flight-row6">
-                    <p>Tue/Wed</p>
+                    <p>
+                        Tue/Wed
+                    </p>
                 </li>
                 <li class="flight-row7 last">
-                   <p>Enquiry</p> 
+                    <p>
+                        Enquiry
+                    </p>
                 </li>
             </ul>
-            
-                        <ul class="flight-rows clearfix">
+            <ul class="flight-rows timetable-end clearfix">
                 <li class="flight-row1">
-                     China
+                    China
                 </li>
                 <li class="flight-row2">
                     <dl>
-                      <dt>06:10</dt> 
-                      <dd>08:10</dd>
-                        <dt>06:10</dt> 
-                      <dd>08:10</dd>
-                        <dt>06:10</dt> 
-                      <dd>08:10</dd>
-                     </dl>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                    </dl>
                 </li>
                 <li class="flight-row3">
                     <p>
@@ -117,54 +178,79 @@
                         Chengdu(CTU)</br>
                         Lhasa(LXA)
                     </p>
-                     <p>
+                    <p>
                         Chengdu(CTU)</br>
                         Lhasa(LXA)
                     </p>
                 </li>
                 <li class="flight-row4">
                     <dl>
-                        <dt>2hr</dt>
-                        <dd>No-stop</dd>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>2hr</dt>
-                        <dd>No-stop</dd>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>2hr</dt>
-                        <dd>No-stop</dd>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
                     </dl>
                 </li>
                 <li class="flight-row5">
                     <dl>
-                        <dt>CA4423</dt>
-                        <dd>Type:319</dd>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>CA4423</dt>
-                        <dd>Type:319</dd>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
                     </dl>
                     <dl>
-                        <dt>CA4423</dt>
-                        <dd>Type:319</dd>
-                    </dl>                    
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
                 </li>
                 <li class="flight-row6">
-                    <p>Tue/Wed</p>
+                    <p>
+                        Tue/Wed
+                    </p>
                 </li>
                 <li class="flight-row7 last">
-                   <p>Enquiry</p> 
+                    <p>
+                        Enquiry
+                    </p>
                 </li>
             </ul>
-   
-   
         </div>
-    
-    
-    
+        {% include 'life-on-board.html' %}
+        {% include 'content-foot.html' %}
+        
     </div>
 </div>
-
 {% include 'footer.html' %}
 {% endblock %}
