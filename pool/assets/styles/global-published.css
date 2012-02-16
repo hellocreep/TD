@@ -175,22 +175,31 @@ a:hover {
 }
 
 /* LAYOUT */
-.bread{
-	width:960px;
-	margin:0 auto;
-	height:40px;
-	line-height:35px;
-	color: #ffffff;
+.bread {
+    color: #C09051;
+    font-size: 11px;
+    height: 37px;
+    line-height: 35px;
+    margin: 0 auto;
+    width: 974px;
 }
-.bread a{
-	color:#ffffff;
-	text-decoration:none;
-	font-size:12px;
+
+.bread .home {
+    font-weight: bold;
 }
-.bread a:hover{
-	color:#ffffff;
-	text-decoration:underline;
+
+.bread span {
+    background: url("../imagesnew/nav-arrow.png") no-repeat scroll 100% 3px transparent;
+    margin-right: 5px;
+    padding-right: 11px;
 }
+
+.bread a {
+    color: #C09051;
+    text-decoration: none;
+}
+/*使面包屑导航样式与老版改良版一致。。*/
+
 .wrapper {
 	background-color:#ffffff;
     margin:0 auto;
