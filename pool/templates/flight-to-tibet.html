@@ -3,69 +3,81 @@
 {% block title %}Flight-to-tibet{% endblock %}
 
 {% block style %}
-<!-- 页面样式表 -->
-{% endblock %}
-
-{% block script %}
 <link href="/assets/styles/flight-to-tibet.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
+{% block script %} <script src="/assets/scripts/flight-to-tibet.js" type="text/javascript"></script>
+{% endblock %}
+
 {% block body%}
-{% include 'header.html' %}
-<div class="bread"></div>
+{% include 'header.html' %} <div class="bread"></div>
 <div class="wrapper clearfix">
-    {% include 'sidebar.html' %} 
+    {% include 'sidebar.html' %}
     <div class="content">
         <h1>Flight to Tibet</h1>
         <p>
             description
         </p>
-        <h2></h2>
-        
         <div class="timetable">
+            <h2>TimeSchedule</h2>
             <ul class="timetable-title clearfix">
-                <li>AirLine</li>
-                <li>Dep./Arr.Time</li>
-                <li>Airport</li>
-                <li>Duration</li>
-                <li>Flight No</li>
-                <li>Freq</li>
+                <li>
+                    AirLine
+                </li>
+                <li>
+                    Dep./Arr.Time
+                </li>
+                <li>
+                    Airport
+                </li>
+                <li>
+                    Duration
+                </li>
+                <li>
+                    Flight No
+                </li>
+                <li>
+                    Freq
+                </li>
             </ul>
-            <table class="schedule-detail">
-                <tr>
-                    <td><p>China</p></td>
-                    <td>
-                        <p>06:10</p>
-                        <p>07:20</p>
-                        <p>06:10</p>
-                    </td>
-                    <td>
-                        <p>Chengdu</p>
-                    </td>
-                    <td>
-                        <p>2hr</p>
-                    </td>
-                    <td>
-                        CA4423
-                    </td>
-                    <td>
-                        Mon/Tue/Wed
-                    </td>
-                    <td>
-                        Book Now
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <div class="flight-rows clearfix">
+                <div class="flight-col1">
+                    China <img src="" width="20" height="20"/>
+                </div>
+                <div class="flight-col2">
+                    <ul class="clearfix">
+                        <li class="li-col1">
+                            <dl>
+                                <dt>6:50</dt>
+                                <dd>8:00</dd>
+                            </dl>
+                        </li>
+                        <li class="li-col2">fdfds</li>
+                        <li class="li-col3">fdfd</li>
+                        <li class="li-col4">fdfd</li>
+                        <li class="li-col5">fdfdfd</li>
+                    </ul>
+                                        <ul class="clearfix">
+                        <li class="li-col1">
+                            <dl>
+                                <dt>6:50</dt>
+                                <dd>8:00</dd>
+                            </dl>
+                        </li>
+                        <li class="li-col2">fdfds</li>
+                        <li class="li-col3">fdfd</li>
+                        <li class="li-col4">fdfd</li>
+                        <li class="li-col5">fdfdfd</li>
+                    </ul>
+                    <ul class="clearfix"></ul>
+                </div>
+            </div>
+
         </div>
+        {% include 'life-on-board.html' %}
+        {% include 'content-foot.html' %}
+        
     </div>
 </div>
-
 {% include 'footer.html' %}
 {% endblock %}

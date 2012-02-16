@@ -8,6 +8,15 @@
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }
    }
+   
+   $.fn.autoHeight = function(){
+       var content_height = $( '.content' ).height();
+       if( content_height <1000 ){
+           $( '.sidebar' ).height( 1200 )
+       }else{
+           $( '.sidebar' ).height($( '.content' ).height() + 60);
+       }
+   }
     
 $( function(){
     
@@ -18,7 +27,7 @@ $( function(){
        $( '.tiny-form' ).slideToggle( 'slow' ); 
     });
     //contact us 表单验证
-    $( '#inquiryform' ).validate();  
+    $( '#callbackform' ).validate();  
     $( '.close-tinyform' ).css('cursor','pointer').click(function(){
 		$( '.tiny-form' ).hide();
 	});
@@ -32,7 +41,7 @@ $( function(){
             })
         }
     );
-    
+    //sidebar判断当前页面
     $( '#'+$( '.train-map' ).attr( 'title' )).addClass( 'active' );
     
 	//头部menu下拉效果

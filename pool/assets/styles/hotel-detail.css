@@ -1,0 +1,48 @@
+/*Goolge Map 弹出框*/
+#map_canvas{
+    width:500px; 
+    height:400px;
+    float:left;
+    margin-top:25px;
+}
+
+.map_container {
+    width: 750px;
+    position: fixed;
+    left: 321px;
+    top: 160px;
+    display: none;
+    padding: 10px;
+    background: #F2F4F8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    -webkit-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.hotel-map-info {
+    float: right;
+    width: 200px;
+    margin: 20px 0 0 15px;
+}
+
+.hotel-map-info p {
+    margin: 5px 5px;
+}
+
+.hotel-map-info .attr-list li{
+    float: none;
+    margin: 5px 0;
+}
+
+.map_title a {
+    float: right;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.map_title a:hover {
+    color: #0283DE;
+}

@@ -1,0 +1,32 @@
+
+/* 快速表单 */
+
+.quickform {	background:url(/imagesnew/bkbg.gif) -240px 0 repeat-y;    width:240px;	padding:0;}
+.quickform form {	background:url(/imagesnew/askbg.gif) 100% 0 no-repeat;	margin:0;}
+.quickform .cont {	padding:0 10px 5px;	background:url(/imagesnew/bkbg.gif) 100% 100% no-repeat;}
+.quickform h4 {	background:url(/imagesnew/bkbg.gif) no-repeat;	font-size:1.1em;	padding:10px;	margin:0;}
+.quickform form .intext {	width:214px;	border:1px solid #CCC;	padding:2px;	background:#fff url(/imagesnew/input-bg.gif) repeat-x;}
+/* 线路页面内容块 */
+.inquirybox h2{	font-size:1.3em;	margin:0!important;	line-height:30px;	height:30px;	padding:0 5px 6px;	color:#fff;	background:url(/imagesnew/allbg.png) 0 -386px no-repeat;	border-right:1px solid #ccc;}
+.inquirybox h2.tm {	background:url(/imagesnew/enquiry-bg.png) no-repeat;	color:#666;}
+.inquirybox .cont {	padding:5px 10px;	border:1px solid #ccc;	border-top:none;}
+.inquirybox .formbox {	width:450px;	margin:0 auto;}
+.inquirybox .formbox h3 {	font-size:1.15em;	font-family:Arial, Helvetica, sans-serif;	margin-bottom:7px;	border-bottom:2px solid #e7e7e7;}
+.inquirybox .formbox td {	padding:4px 0;}
+.inquirybox .formbox label {	display:block;	width:140px;	text-align:right;}
+.inquirybox .w85 {	width:85px;	line-height:20px;	padding:2px;}
+.inquirybox .w180 {	width:180px;	line-height:20px;	padding:2px;}
+.inquirybox .w300 {	width:280px;	line-height:20px;	padding:2px;}
+.inquirybox .w400 {	width:400px;	line-height:20px;	padding:2px;}
+.btn_submit {
+    cursor: pointer;    border: none;
+	display:block;	width:105px;	height:30px;	line-height:200px;	overflow:hidden;	background-image:url(/imagesnew/allbg.png);	background-repeat:no-repeat;	background-position:-354px -97px;}
+.btn_submit:hover {	background-position:-354px -127px;}
+.mt8 {	margin-top:8px;}
+.room-check {
+    display: none;
+}
+
+.inquirybox .error {
+    color: red;
+}

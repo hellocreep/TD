@@ -113,6 +113,7 @@ a:hover {
     color: #ffffff;
 	text-decoration:none;
 	text-align:center;
+	cursor: pointer;
 }
 .btn:hover{
 	text-decoration:none;
@@ -120,7 +121,7 @@ a:hover {
 
 .btn-wrap{
 	margin-top:10px;
-	margin-left:10px;
+	margin-left:28px;
 	display:block;
 }
 
@@ -174,22 +175,31 @@ a:hover {
 }
 
 /* LAYOUT */
-.bread{
-	width:960px;
-	margin:0 auto;
-	height:40px;
-	line-height:35px;
-	color: #ffffff;
+.bread {
+    color: #C09051;
+    font-size: 11px;
+    height: 37px;
+    line-height: 35px;
+    margin: 0 auto;
+    width: 974px;
 }
-.bread a{
-	color:#ffffff;
-	text-decoration:none;
-	font-size:12px;
+
+.bread .home {
+    font-weight: bold;
 }
-.bread a:hover{
-	color:#ffffff;
-	text-decoration:underline;
+
+.bread span {
+    background: url("../imagesnew/nav-arrow.png") no-repeat scroll 100% 3px transparent;
+    margin-right: 5px;
+    padding-right: 11px;
 }
+
+.bread a {
+    color: #C09051;
+    text-decoration: none;
+}
+/*使面包屑导航样式与老版改良版一致。。*/
+
 .wrapper {
 	background-color:#ffffff;
     margin:0 auto;
@@ -636,7 +646,6 @@ a:hover {
 .sidebar {
     width: 240px;
     float: left;
-    height: auto;
     min-height: 900px;
 	border-right:2px solid #b6b6b6;
     background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;
@@ -658,11 +667,19 @@ a:hover {
 .sidebar h1 {
 	font-family: 'Wellfleet', cursive;
 	text-align:center;
-	cursor:pointer;
 	display:block;
 	width:240px;
 	background:url(/imagesnew/nav-bg-up.png) no-repeat center top;
 	padding:20px 0;
+}
+
+.sidebar h1 a {
+    color: #7E0122;
+    display: block;
+}
+
+.sidebar h1 a:hover {
+    text-decoration: none;
 }
 
 .sidebar-pic {
@@ -833,7 +850,7 @@ a:hover {
 }
 .btn-enquiry {
     float: right;
-	margin-top: 7px;
+	margin: 7px 30px 0 0;
 }
 .btn-enquiry a {
     color: #FFFFFF;
