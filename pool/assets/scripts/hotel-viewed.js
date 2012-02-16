@@ -6,20 +6,7 @@ $( function(){
 			e.preventDefault();
 			var hotel = $( this ).text();
 			var hotelHistory = $.cookie( 'hotel_history' );
-			if( hotelHistory == null ){
-			    hotelHistory = hotel;
-			    alert(123)
-			}
-			if( hotelHistory.indexOf( hotel ) !=-1 ){
-			    hotelHistory = hotel;
-			}
-			if( hotelHistory.split(',').length >6 ){
-			    hotelHistory.split(',').shift().push( hotel );
-			    alert(hotelHistory);
-			}else{
-			    hotelHistory += hotel;
-			    alert(hotelHistory);
-			}
+			
 			
 			$.cookie( 'hotel_history', hotelHistory, { expires: 8, path: '/' } );
 			alert( $.cookie('hotel_history') );
