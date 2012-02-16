@@ -10,9 +10,7 @@ $( function(){
            $( this ).addClass( 'active' ).siblings().removeClass( 'active' );
           var hotel = $( this ).text();
           $( '.recommended-hotel' ).hide();
-          $( '#'+hotel ).show();
-          //sidebar同步content 有没其他可以不写js的方法实现？ 
-          auto_height();
+          $( '#'+hotel ).show().autoHeight();
        }); 
     });
     

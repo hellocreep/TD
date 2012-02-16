@@ -8,6 +8,15 @@
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }
    }
+   
+   $.fn.autoHeight = function(){
+       var content_height = $( '.content' ).height();
+       if( content_height <1000 ){
+           $( '.sidebar' ).height( 1200 )
+       }else{
+           $( '.sidebar' ).height($( '.content' ).height() + 60);
+       }
+   }
     
 $( function(){
     

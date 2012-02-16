@@ -146,7 +146,7 @@ $(function(){
 
     //火车时刻标弹出框
     $( '.icon-train' ).click( function(){
-        $( '.schedule-detail.'+$( this ).attr( 'name' ) ).toggle( );
+        $( '.schedule-detail.'+$( this ).attr( 'name' ) ).toggle( ).autoHeight();
     });
 
     //火车首页TAB切换
