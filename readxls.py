@@ -4,9 +4,9 @@ import os
 query = 'INSERT INTO flight VALUES'
 sql = ''
 value = ''
+st = ''
 book = xlrd.open_workbook('flight.xls',encoding_override="cp1252")
 sh = book.sheet_by_index(0)
-st = ''
 for i in range(1,sh.nrows):
         for j in range(sh.ncols):
                 cell = sh.cell_value(i,j)
@@ -16,8 +16,6 @@ for i in range(1,sh.nrows):
                         cell = cell.encode('utf-8')
                 st += "'" + cell + "',|"
                 
-
-
 s_list = st.split('|')
 s_list.pop()
 for i in range(sh.nrows-1):
