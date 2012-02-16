@@ -1,17 +1,32 @@
 ;(function(){
 $( function(){
 			
-var hotel = new Array(1);
-var hotelhistory='';
-	$('.hotelreviewd' ).each( function(){
-		$(this).click(function( e ){
+	$( '.hotelreviewd' ).each( function(){
+		$( this ).click(function( e ){
 			e.preventDefault();
-			var hname=$(this).text();
-			var hid=$(this).attr("val");
-			$.cookies.set('test',hname);
-			alert('hname');
+			var hotel = $( this ).text();
+			var hotelHistory = $.cookie( 'hotel_history' );
+			if( hotelHistory == null ){
+			    hotelHistory = hotel;
+			    alert(123)
+			}
+			if( hotelHistory.indexOf( hotel ) !=-1 ){
+			    hotelHistory = hotel;
+			}
+			if( hotelHistory.split(',').length >6 ){
+			    hotelHistory.split(',').shift().push( hotel );
+			    alert(hotelHistory);
+			}else{
+			    hotelHistory += hotel;
+			    alert(hotelHistory);
+			}
+			
+			$.cookie( 'hotel_history', hotelHistory, { expires: 8, path: '/' } );
+			alert( $.cookie('hotel_history') );
+			//$.cookie( 'hotel_history', null )
 		});
 	});
+	
 	function closeThis(obj)
 	{
 		var hotelid = $(obj).attr("val");
