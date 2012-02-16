@@ -8,12 +8,10 @@ var hotelhistory='';
 			e.preventDefault();
 			var hname=$(this).text();
 			var hid=$(this).attr("val");
-			alert(hname);
-			$('#hotelviwed').after(strhtml);
-			
+			$.cookies.set('test',hname);
+			alert('hname');
 		});
 	});
-	
 	function closeThis(obj)
 	{
 		var hotelid = $(obj).attr("val");
