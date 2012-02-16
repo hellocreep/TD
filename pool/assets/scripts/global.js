@@ -27,7 +27,7 @@ $( function(){
        $( '.tiny-form' ).slideToggle( 'slow' ); 
     });
     //contact us 表单验证
-    $( '#inquiryform' ).validate();  
+    $( '#callbackform' ).validate();  
     $( '.close-tinyform' ).css('cursor','pointer').click(function(){
 		$( '.tiny-form' ).hide();
 	});

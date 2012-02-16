@@ -3,19 +3,21 @@
 {% block title %}hotel-form{% endblock %}
 
 {% block style %}
-<!-- 页面样式表 -->
 <link href="/assets/styles/hotel-form.css" type="text/css" rel="stylesheet" />
+<link href="/assets/styles/hotel-sidebar.css" type="text/css" rel="stylesheet" />
 {% endblock %}
 
 {% block script %}
+<script src="/assets/scripts/hotel.js" type="text/javascript"></script>
 <script src="/assets/scripts/hotel-form.js" type="text/javascript"></script>
+<script src="/assets/scripts/jquery.cookie.js" type="text/javascript"></script>
 {% endblock %}
 
 {% block body%}
 {% include 'header.html' %}
 <div class="bread"></div>
 <div class="wrapper clearfix">
-    {% include 'sidebar.html' %} 
+    {% include 'sidebar-hotel.html' %}
     <div class="content">
         	<h1>Fill in your Information</h1>
         	<form id="hotel-form">
@@ -404,6 +406,14 @@ x.style.border='';
 </p>
 				</div>
         	</form>
+    </div>
+    <div class="test">
+    	<ul>
+    		<li><a class="hotelreviewd" val='1'>Beijing hotel</a></li>
+    		<li><a class="hotelreviewd" val='2'>Shanghai hotel</a></li>
+    		<li><a class="hotelreviewd" val='3'>Lhasa hotel</a></li>
+    		<li><a class="hotelreviewd" val='4'>Chengdu hotel</a></li>
+    	</ul>
     </div>
 </div>
 
