@@ -32,7 +32,7 @@ $( function(){
             })
         }
     );
-    
+    //sidebar判断当前页面
     $( '#'+$( '.train-map' ).attr( 'title' )).addClass( 'active' );
     
 	//头部menu下拉效果

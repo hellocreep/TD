@@ -113,6 +113,7 @@ a:hover {
     color: #ffffff;
 	text-decoration:none;
 	text-align:center;
+	cursor: pointer;
 }
 .btn:hover{
 	text-decoration:none;
@@ -120,7 +121,7 @@ a:hover {
 
 .btn-wrap{
 	margin-top:10px;
-	margin-left:10px;
+	margin-left:28px;
 	display:block;
 }
 
@@ -636,7 +637,6 @@ a:hover {
 .sidebar {
     width: 240px;
     float: left;
-    height: auto;
     min-height: 900px;
 	border-right:2px solid #b6b6b6;
     background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;
@@ -658,11 +658,19 @@ a:hover {
 .sidebar h1 {
 	font-family: 'Wellfleet', cursive;
 	text-align:center;
-	cursor:pointer;
 	display:block;
 	width:240px;
 	background:url(/imagesnew/nav-bg-up.png) no-repeat center top;
 	padding:20px 0;
+}
+
+.sidebar h1 a {
+    color: #7E0122;
+    display: block;
+}
+
+.sidebar h1 a:hover {
+    text-decoration: none;
 }
 
 .sidebar-pic {
@@ -833,7 +841,7 @@ a:hover {
 }
 .btn-enquiry {
     float: right;
-	margin-top: 7px;
+	margin: 7px 30px 0 0;
 }
 .btn-enquiry a {
     color: #FFFFFF;

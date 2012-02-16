@@ -3,69 +3,254 @@
 {% block title %}Flight-to-tibet{% endblock %}
 
 {% block style %}
-<!-- 页面样式表 -->
-{% endblock %}
-
-{% block script %}
 <link href="/assets/styles/flight-to-tibet.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
+{% block script %} <script src="/assets/scripts/flight-to-tibet.js" type="text/javascript"></script>
+{% endblock %}
+
 {% block body%}
-{% include 'header.html' %}
-<div class="bread"></div>
+{% include 'header.html' %} <div class="bread"></div>
 <div class="wrapper clearfix">
-    {% include 'sidebar.html' %} 
+    {% include 'sidebar.html' %}
     <div class="content">
         <h1>Flight to Tibet</h1>
         <p>
             description
         </p>
-        <h2></h2>
-        
         <div class="timetable">
+            <h2>TimeSchedule</h2>
             <ul class="timetable-title clearfix">
-                <li>AirLine</li>
-                <li>Dep./Arr.Time</li>
-                <li>Airport</li>
-                <li>Duration</li>
-                <li>Flight No</li>
-                <li>Freq</li>
+                <li>
+                    AirLine
+                </li>
+                <li>
+                    Dep./Arr.Time
+                </li>
+                <li>
+                    Airport
+                </li>
+                <li>
+                    Duration
+                </li>
+                <li>
+                    Flight No
+                </li>
+                <li>
+                    Freq
+                </li>
             </ul>
-            <table class="schedule-detail">
-                <tr>
-                    <td><p>China</p></td>
-                    <td>
-                        <p>06:10</p>
-                        <p>07:20</p>
-                        <p>06:10</p>
-                    </td>
-                    <td>
-                        <p>Chengdu</p>
-                    </td>
-                    <td>
-                        <p>2hr</p>
-                    </td>
-                    <td>
-                        CA4423
-                    </td>
-                    <td>
-                        Mon/Tue/Wed
-                    </td>
-                    <td>
-                        Book Now
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <ul class="flight-rows clearfix">
+                <li class="flight-row1">
+                    China <img src="" width="20" height="20"/>
+                </li>
+                <li class="flight-row2">
+                    <dl>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                    </dl>
+                </li>
+                <li class="flight-row3">
+                    <p>
+                        Chengdu(CTU)</br>
+                        Lhasa(LXA)
+                    </p>
+                    <p>
+                        Chengdu(CTU)</br>
+                        Lhasa(LXA)
+                    </p>
+                    <p>
+                        Chengdu(CTU)</br>
+                        Lhasa(LXA)
+                    </p>
+                </li>
+                <li class="flight-row4">
+                    <dl>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
+                    </dl>
+                </li>
+                <li class="flight-row5">
+                    <dl>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
+                </li>
+                <li class="flight-row6">
+                    <p>
+                        Tue/Wed
+                    </p>
+                </li>
+                <li class="flight-row7 last">
+                    <p>
+                        Enquiry
+                    </p>
+                </li>
+            </ul>
+            <ul class="flight-rows timetable-end clearfix">
+                <li class="flight-row1">
+                    China
+                </li>
+                <li class="flight-row2">
+                    <dl>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                        <dt>
+                            06:10
+                        </dt>
+                        <dd>
+                            08:10
+                        </dd>
+                    </dl>
+                </li>
+                <li class="flight-row3">
+                    <p>
+                        Chengdu(CTU)</br>
+                        Lhasa(LXA)
+                    </p>
+                    <p>
+                        Chengdu(CTU)</br>
+                        Lhasa(LXA)
+                    </p>
+                    <p>
+                        Chengdu(CTU)</br>
+                        Lhasa(LXA)
+                    </p>
+                </li>
+                <li class="flight-row4">
+                    <dl>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            2hr
+                        </dt>
+                        <dd>
+                            No-stop
+                        </dd>
+                    </dl>
+                </li>
+                <li class="flight-row5">
+                    <dl>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            CA4423
+                        </dt>
+                        <dd>
+                            Type:319
+                        </dd>
+                    </dl>
+                </li>
+                <li class="flight-row6">
+                    <p>
+                        Tue/Wed
+                    </p>
+                </li>
+                <li class="flight-row7 last">
+                    <p>
+                        Enquiry
+                    </p>
+                </li>
+            </ul>
         </div>
+        {% include 'life-on-board.html' %}
+        {% include 'content-foot.html' %}
+        
     </div>
 </div>
-
 {% include 'footer.html' %}
 {% endblock %}

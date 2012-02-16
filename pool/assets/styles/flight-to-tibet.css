@@ -6,11 +6,138 @@
 
 .timetable-title li {
     float: left;
-    padding: 5px 8px;
+    padding: 5px 23px;
 }
 
 .schedule-detail {
+    width: 100%;
+    text-align: center;
+}
+
+.flight-rows {
     border-top: 1px solid #92240D;
     border-bottom: 1px solid #DDDDDD;
-    width: 100%;
+    background: #FBFBFB;
+}
+
+.timetable-end {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #DDDDDD;
+}
+
+.flight-rows li {
+    float: left;
+    text-align: center;
+    border-right: 1px dashed #D3D3D3;
+}
+
+.flight-rows li.last {
+    border-right: none;
+}
+
+.flight-rows li p {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 10px;
+}
+
+.flight-row2 dt {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0 0 0;
+}
+
+.flight-row2 dd {
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.flight-row4 dt, .flight-rows dt {
+    padding: 8px 0 0 0;
+}
+
+.flight-row4 dd,.flight-row5 dd {
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 10px;
+    color: #DDDDDD;
+}
+
+.flight-row1 {
+    line-height: 150px;
+    width: 80px;
+    font-weight: bold;
+}
+
+.flight-row2 {
+    width: 120px;
+}
+
+.flight-row3 {
+    width: 123px;
+}
+
+.flight-row4 {
+    width: 74px;
+}
+
+.flight-row5 {
+    width: 108px;
+}
+
+.flight-row6 {
+    width: 96px;
+}
+
+.flight-row7 {
+    width: 75px;
+}
+
+.flight-recommend {
+    margin: 20px 0;
+}
+
+.flight-recommend p {
+    margin: 6px 0;
+}
+
+.flight-recommend img {
+    float: left;
+    width: 40%;
+}
+
+.flight-recommend .recommend-detail {
+    float: right;
+    width: 58%;
+    padding: 5px 0;
+}
+
+.recommend-check {
+    padding-left: 280px;
+}
+
+/*LIFE ON BOARD*/
+.life-on-board {
+    margin-top: 35px;
+}
+
+.pic-list {
+    margin: 20px 0 0 0;
+}
+
+.pic-list li{
+    margin-right: 20px;
+    float: left;
+    width: 30%;
+}
+
+.pic-list li p {
+    height: 60px;
+}
+
+.pic-list li img {
+/*    outline: 1px solid #DDDDDD;
+*/    border: 1px solid white;
+    width: 184px;
+    height: 124px;
+    display: block;
+    margin: 0 0 10px;
 }

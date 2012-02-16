@@ -1,0 +1,54 @@
+.author {
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    left: 0;
+    position: relative;
+    top: 3px;
+}
+
+.tag {
+    margin: 0px 0 20px 0;
+}
+
+.tag span {
+    color: #7E0122;
+}
+
+.tag a {
+margin: 0 0 0 3px;
+}
+
+.relatedlink li{
+    margin-top: 2px;
+}
+
+.info_dl {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 20px 30px 20px;
+}
+
+.info_dt {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 -15px 10px;
+    color: #666666;
+}
+
+.info_dd {
+   margin: 10px 10px 0px 10px;
+}
+
+.info_dd img{
+    border: 1px solid #CCCCCC;
+    margin: 0 auto;
+}
+
+.addthis {
+    float: right;
+    margin-right: 15px;
+}
