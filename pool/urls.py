@@ -30,4 +30,5 @@ urlpatterns += patterns('TD.views',
     (r'^hotel-lhasa/$','hotel_lhasa'),
     (r'^train-to-tibet/$', 'train_to_tibet'),
     (r'^flight-to-tibet/$','flight_to_tibet'),
+    (r'^hotel-form/$','hotel_form'),
 )
