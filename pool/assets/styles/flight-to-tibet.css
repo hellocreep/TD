@@ -1,3 +1,11 @@
+.timetable {
+	margin-top: 20px;
+}
+
+.timetable h2 {
+	margin-bottom: 15px;
+}
+
 .timetable-title {
     background-color: #92240D;
     color: #FFFFFF;
@@ -6,7 +14,7 @@
 
 .timetable-title li {
     float: left;
-    padding: 5px 23px;
+    padding: 5px 24px;
 }
 
 .schedule-detail {
@@ -16,7 +24,7 @@
 
 .flight-rows {
     border-top: 1px solid #92240D;
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 3px solid #DDDDDD;
     background: #FBFBFB;
 }
 
@@ -44,6 +52,7 @@
     float: left;
     padding: 10px;
     border-left: 1px dashed #DDDDDD;
+    height: 40px;
 }
 
 .flight-col2 dt {

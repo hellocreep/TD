@@ -222,6 +222,13 @@ a:hover {
 	margin-right:10px;
 }
 
+.content h1 {
+	font-family: 'Cantarell';
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 .content-foot {
 	margin-bottom: 60px;
 	float:left;

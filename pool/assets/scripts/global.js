@@ -34,11 +34,15 @@ $( function(){
     //sidebar弹出框
     $( '.have-arrow li' ).each(
         function(){
-            $( this ).hover( function(){
-                $( this ).children( '.poptips' ).fadeIn( 100 );
-            },function(){
-                $( this ).children( '.poptips' ).fadeOut( 100 );
-            })
+			var _timeout;
+            $( this ).hover(function(){
+				var e = $( this );
+				_timeout = setTimeout(function( ){
+					e.children( '.poptips' ).fadeIn( 300 );
+					},300)},function(){
+					$( this ).children( '.poptips' ).fadeOut( 100 );
+					clearTimeout( _timeout );
+            });
         }
     );
     //sidebar判断当前页面
@@ -83,7 +87,6 @@ $( function(){
                 }
             });
         });
-
 
     //选择当前页面
     var bread_len = $( '.bread a' ).length;
