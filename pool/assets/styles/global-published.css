@@ -174,10 +174,6 @@ a:hover {
     color: #868282;
 }
 
-.none {
-    display: none;
-}
-
 /* LAYOUT */
 .bread {
     color: #C09051;
@@ -768,7 +764,9 @@ a:hover {
 	line-height:aoto;
 	color:#2368C7;	
 }
-
+.subnav-left li a.noicon:hover{
+	text-decoration: underline;
+}
 .nav-left-faqs{
     font-size: 14px;
     padding-left: 48px;
