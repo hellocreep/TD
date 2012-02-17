@@ -33,6 +33,7 @@
 .flight-col2 {
     float: left;
     margin-left: 30px;  
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .flight-col2 ul {
