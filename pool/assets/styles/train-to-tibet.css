@@ -360,17 +360,16 @@
 }
 
 .timeTable {
-    width: 100%;
+    width: 100%; 
     text-align: center;
-  
 }
 
 .icon-train {
     cursor: pointer;
     width:  70px;
     text-align:left;
-    text-indent: 43px;;
-    background:url(/imagesnew/train-sprite.png) no-repeat  24px 12px;
+    text-indent: 70px;;
+    background:url(/imagesnew/train-sprite.png) no-repeat  48px 12px;
 }
 .icon-train span{
 	background: url(/imagesnew/train-sprite.png) no-repeat 0 -38px; 
@@ -489,7 +488,8 @@
 */
 .timeTable li{
 	float:left;
-	width:136px;
+	width:168px;
+	
 	line-height:45px;
 	color:#7E0122;
 	font-weight:bold;
@@ -500,7 +500,7 @@
 }
 .timeTable-info li{
 	float:left;
-	width:136px;
+	width:179px;
 	line-height:45px;
 	color:#000;
 }
