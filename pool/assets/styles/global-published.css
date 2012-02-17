@@ -710,6 +710,7 @@ a:hover {
     text-decoration: none;
 }
 
+
 .nav-left li a:hover {
     background-color: #FCFBF8;
 	text-decoration:none;
@@ -729,10 +730,6 @@ a:hover {
     position: relative;
     width: 253px;
 	*width:233px;
-}
-
-.subnav-left {
-	
 }
 
 .have-arrow li{
@@ -760,6 +757,13 @@ a:hover {
 	background-color:transparent;
 }
 
+.subnav-left li a.noicon {
+	display:inline;
+	background:none;
+	padding:0;
+	line-height:aoto;
+	color:#2368C7;	
+}
 
 .nav-left-faqs{
     font-size: 14px;
