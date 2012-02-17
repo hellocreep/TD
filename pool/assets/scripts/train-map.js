@@ -125,6 +125,10 @@
                     $( '.marker' ).show();
                     $( '.attraction-icons' ).show();
                 }
+                if( $('.content').attr('name')=='train-qinghai'){
+                    $( '.marker' ).hide();
+                    $( '.attraction-icons' ).hide();
+                }
 
             }
         }
