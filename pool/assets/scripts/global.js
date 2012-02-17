@@ -2,8 +2,8 @@
     //sidebar同步content 有没其他可以不写js的方法实现？ 
    var autoHeight = function(){
        var content_height = $( '.content' ).height();
-       if( content_height <1000 || content_height>2000){
-           $( '.sidebar' ).height( 1200 )
+       if( content_height <1300 || content_height>2000){
+           $( '.sidebar' ).height( 1300 )
        }else{
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }
@@ -45,8 +45,8 @@ $( function(){
             });
         }
     );
-    //sidebar判断当前页面  ！！！要修改！！！
-    $( '#'+$( '.train-map' ).attr( 'title' )).addClass( 'active' );
+    //sidebar判断当前页面 
+    $( '#'+$( '.content' ).attr( 'name' )).addClass( 'active' );
     
 	//头部menu下拉效果
 	$('#tibetTours').hide();

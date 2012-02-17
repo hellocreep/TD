@@ -110,17 +110,21 @@
 
         var hideStation = function(e) {
 
-            var route = $('.content h1:eq(0)').text();
+            var route = $( '.content h1:eq(0)' ).text();
 
-            for(var i = 0; i < 11; i++) {
-                if(trainStation[i][4] != route && trainStation[i][4] != '1') {
+            for( var i = 0; i < 11; i++ ) {
+                if( trainStation[i][4] != route && trainStation[i][4] != '1') {
                     $('.' + trainStation[i][0]).hide()
                     $('.' + trainStation[i][0].replace('icon', 'marker')).hide();
                 }
                 if( route =='Train to Lhasa from Beijing' || route=='Train to Lhasa from Chengdu' ){
-                $( '.marker-xian' ).hide();
-                $( '.icon-xian' ).hide();
-            }
+                    $( '.marker-xian' ).hide();
+                    $( '.icon-xian' ).hide();
+                }
+                if( route == 'Train to Tibet'){
+                    $( '.marker' ).show();
+                    $( '.attraction-icons' ).show();
+                }
 
             }
         }

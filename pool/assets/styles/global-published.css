@@ -174,6 +174,10 @@ a:hover {
     color: #868282;
 }
 
+.none {
+    display: none;
+}
+
 /* LAYOUT */
 .bread {
     color: #C09051;
