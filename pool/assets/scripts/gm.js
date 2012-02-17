@@ -55,16 +55,16 @@ function gm_initialize( e ) {
             ['Rongpuk Guest House',28.191236550662385, 86.82906568050385,''],
             ['Tent Guest House',28.16553641408612, 86.84331893920898,''],
             //火车站坐标
-            ['Train Station',29.623105090607822, 91.0705018043518,''],
+            ['Train Station',29.623105090607822, 91.0705018043518,'imagesnew/hotel/train-station-icon.png'],
             //飞机场坐标
-            ['Airport',29.291220248740697, 90.90149849653244,'']
+            ['Airport',29.291220248740697, 90.90149849653244,'imagesnew/hotel/airport-icon.png']
     ];
     
-    var redlocal = 'images/tibet_map/redlocal.png';
-    var greenlocal = 'images/tibet_map/greenlocal.png';
+    var redlocal = 'imagesnew/hotel/hotel-icon1.png';
+    var greenlocal = 'imagesnew/hotel/hotel-icon2.png';
     var new_latlng1,latlng2;    
     //区分当前坐标
-    for(var i = 0; i < attractions.length; i++) {
+    for(var i = 0; i < attractions.length-2; i++) {
             if( attractions[i][0]==thisAttraction ){
                  attractions[i][3] = redlocal;
                  new_latlng1 = attractions[i][1];

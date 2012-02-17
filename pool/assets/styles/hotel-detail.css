@@ -1,6 +1,6 @@
 /*Goolge Map Canvas*/
 #map_canvas{
-    width:620px; 
+    width:740px; 
     height:440px;
     float:left;
 }
@@ -27,25 +27,16 @@
     margin-bottom: 5px;
 }
 
-
 .map_title .gm-icon {
     float: left;
     font-size: 14px;
     color: #000000;
+    line-height: 30px;
+    margin-left: 13px;
 }
 
-.hotel-map-info {
-    float: right;
-    width: 110px;
-    margin: 0 0 0 15px;
-}
-
-.hotel-map-info img {
+.map_title .gm-icon img {
     float: left;
-}
-
-.hotel-map-info p {
-    margin: 5px 0px;
 }
 
 .map_title a {
