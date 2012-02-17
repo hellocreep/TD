@@ -2,7 +2,7 @@
     //sidebar同步content 有没其他可以不写js的方法实现？ 
    var autoHeight = function(){
        var content_height = $( '.content' ).height();
-       if( content_height <1000 ){
+       if( content_height <1000 || content_height>2000){
            $( '.sidebar' ).height( 1200 )
        }else{
            $( '.sidebar' ).height($( '.content' ).height() + 60);
@@ -34,14 +34,18 @@ $( function(){
     //sidebar弹出框
     $( '.have-arrow li' ).each(
         function(){
-            $( this ).hover( function(){
-                $( this ).children( '.poptips' ).fadeIn( 100 );
-            },function(){
-                $( this ).children( '.poptips' ).fadeOut( 100 );
-            })
+			var _timeout;
+            $( this ).hover(function(){
+				var e = $( this );
+				_timeout = setTimeout(function( ){
+					e.children( '.poptips' ).fadeIn( 300 );
+					},300)},function(){
+					$( this ).children( '.poptips' ).fadeOut( 100 );
+					clearTimeout( _timeout );
+            });
         }
     );
-    //sidebar判断当前页面
+    //sidebar判断当前页面  ！！！要修改！！！
     $( '#'+$( '.train-map' ).attr( 'title' )).addClass( 'active' );
     
 	//头部menu下拉效果
@@ -84,8 +88,7 @@ $( function(){
             });
         });
 
-
-    //选择当前页面
+    //top menu 选择当前页面
     var bread_len = $( '.bread a' ).length;
     if( bread_len > 1 ) {
         var selected = $( '.bread a' ).eq(1).text();
@@ -100,7 +103,6 @@ $( function(){
             $( this ).addClass( 'selected' );
         }
     });
-
 
 
 });

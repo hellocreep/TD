@@ -2,9 +2,9 @@
 	padding-left:80px;
 	
 }
-h2{
+.hotel-sidebar h2{
 	font-size:18px;
-	background:url('../../imagesnew/hotel-leftbar-h2bg.png') no-repeat;
+	background:url('/imagesnew/hotel-leftbar-h2bg.png') no-repeat;
 	height: 37px;
 	line-height: 37px;
 	color:#FFF;
@@ -29,14 +29,14 @@ h2{
 {
 	float:right;
 	height: 14px;
-	background:url('../../imagesnew/reviewd/iconremove.gif') no-repeat left top;
+	background:url('/imagesnew/reviewd/iconremove.gif') no-repeat left top;
 	display:block;
 	margin-top:-15px;
 	width: 18px;
 	cursor: pointer;
 }
 .hotel-delete:hover{
-	background:url('../../imagesnew/reviewd/iconremove.gif') no-repeat left -16px;
+	background:url('/imagesnew/reviewd/iconremove.gif') no-repeat left -16px;
 }
 .near-list{
 	list-style: none;
@@ -44,7 +44,7 @@ h2{
 }
 .near-list li
 {
-	background:url('../../imagesnew/nav-dot.png') no-repeat left;
+	background:url('/imagesnew/nav-dot.png') no-repeat left;
 	padding-left:15px;
 }
 
