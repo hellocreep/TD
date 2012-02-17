@@ -1,9 +1,8 @@
-/*Goolge Map 弹出框*/
+/*Goolge Map Canvas*/
 #map_canvas{
-    width:500px; 
-    height:400px;
+    width:620px; 
+    height:440px;
     float:left;
-    margin-top:25px;
 }
 
 .map_container {
@@ -20,21 +19,33 @@
     -webkit-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.5); 
+    z-index: 9999;
+}
+
+.map_title {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+
+.map_title .gm-icon {
+    float: left;
+    font-size: 14px;
+    color: #000000;
 }
 
 .hotel-map-info {
     float: right;
-    width: 200px;
-    margin: 20px 0 0 15px;
+    width: 110px;
+    margin: 0 0 0 15px;
+}
+
+.hotel-map-info img {
+    float: left;
 }
 
 .hotel-map-info p {
-    margin: 5px 5px;
-}
-
-.hotel-map-info .attr-list li{
-    float: none;
-    margin: 5px 0;
+    margin: 5px 0px;
 }
 
 .map_title a {
@@ -46,3 +57,679 @@
 .map_title a:hover {
     color: #0283DE;
 }
+
+/*hotel*/
+.hotel_h1Title,.hotel_star{
+    display:inline;
+}
+.hotel_h1Title{
+    font-size:24px;
+}
+.hotel_picChange{
+    float:left;
+}
+.hotel_picWrapper{
+    width:250px;
+    height:44px;
+    padding:5px 15px;
+    position:relative;
+    top: 200px;
+}
+.hotel_picWrapperInner{
+    width:250px;
+    height:44px;
+    overflow:hidden;
+    position:relative;
+    top: -195px;
+}
+.hotel_prv,.hotel_next{
+    text-indent:-9999px;
+    width:10px;
+    height:45px;
+    float:left; 
+    position:absolute;
+    cursor:pointer;
+}
+.hotel_prv{
+    background:url(../images/tibet_hotels/arrow1.png) no-repeat left center;
+    left:5px;
+    top:5px;
+}
+.hotel_next{
+    background:url(../images/tibet_hotels/arrow2.png) no-repeat left center;
+    right:5px;
+    top:5px;
+}
+.hotel_info{
+    margin-left:10px;
+    width:240px;
+    float:left;
+}
+
+.hotel_infoInner{
+    float:left;
+}
+.hotel_infoList{
+    padding:7px 5px;
+    border-top:1px solid #ccc;
+    width:225px;    
+    float:left;
+}
+.hotel_infoTitle{
+    color:#990100;
+    float:left;
+    margin-right:5px;
+}
+.hotel_local{
+    width:160px;
+    float:left;
+}
+.hotel_showMap{
+    background:url(../images/tibet_hotels/ico_map.png) no-repeat;
+    height:20px;
+    float:left;
+    display:block;
+    margin-left:55px;
+    padding-left:22px;
+    color:#2368C7;
+    line-height:20px;
+}
+.hotel_showMap:hover{
+    cursor:pointer;
+    text-decoration:underline;
+}
+.hotel_office{
+    float:left;
+    width:180px;
+}
+.hotel_desk{
+    float:left;
+    margin-left:33px;
+    width:180px;
+}
+.hotel_rate{
+    float:left;
+    width:131px;
+    margin-left:10px;
+    border:2px solid #589442;   
+}
+.hotel_rateDt{
+    background:url(../images/tibet_hotels/tripadvisor.png) no-repeat;
+    text-indent:-9999px;
+    width:127px;
+    height:27px;
+}
+.hotel_rateImg{
+    padding:0px 5px 5px;
+    font-weight:bold;
+}
+.hotel_guest li{
+    font-weight:normal;
+    border-bottom: 1px dashed #589442;
+    color: #666666;
+    padding:5px 0px;
+    list-style-image:url(../images/tibet_hotels/rating-ico.png);
+    list-style-position:inside;
+}
+.hotel_rateH3{
+    font-size:12px;
+    margin-top: 10px;
+}
+.hotel_overview{
+    width:695px;
+    float:left;
+    margin-top:15px;
+}
+.hotel_tab{
+    float:left;
+    width:695px;
+    border-bottom:16px solid #680001;
+    margin-top:10px;
+}
+.hotel_tabli{
+    float:left;
+    background: #E4E4E4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#E4E4E4), to(#F6F6F6));
+    background: -webkit-linear-gradient(#E4E4E4, #F6F6F6);
+    background: -moz-linear-gradient(#E4E4E4, #F6F6F6);
+    background: -ms-linear-gradient(#E4E4E4, #F6F6F6);
+    background: -o-linear-gradient(#E4E4E4, #F6F6F6);
+    background: linear-gradient(#E4E4E4, #F6F6F6);
+    margin-right:5px;
+    padding:4px 10px;
+    color:#990100;
+    border:1px solid #ccc;
+    border-bottom:none;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    cursor:pointer;
+    position:relative;
+    z-index:1;
+    behavior: url(PIE.htc);
+}
+.hotel_tabliHover{
+    background: #9B5E5D;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9B5E5D), to(#680001));
+    background: -webkit-linear-gradient(#9B5E5D, #680001);
+    background: -moz-linear-gradient(#9B5E5D, #680001);
+    background: -ms-linear-gradient(#9B5E5D, #680001);
+    background: -o-linear-gradient(#9B5E5D, #680001);
+    background: linear-gradient(#9B5E5D, #680001);
+    -pie-background: linear-gradient(#9B5E5D, #680001); 
+    color:#fff;
+    border-color:#935655;
+    position:relative;
+    z-index:1;
+    behavior: url(PIE.htc);
+}
+.hotel_roomType,.hotel_amenities,.hotel_map,.hotel_review,.hotel_photo,.hotel_recommendTour{
+    width:663px;
+    float:left;
+    border:1px solid #ccc;
+    border-top:none;
+    padding:10px 15px;
+}
+.hotel_picChangeBig{
+    display:inline;
+    float: left;
+}
+.hotel_smallPic{
+    position:absolute;
+    left:0;
+    top:0;
+    width:256px;
+    height:44px;
+}
+.hotel_smallPicLi{
+    float:left;
+}
+.hotel_picChangeSmall{
+    float:left;
+    border:2px solid #fff;
+    margin-right:6px;
+}
+.hotel_picChangeSmall:hover{
+    border:2px solid #FF6600;
+}
+.hotel_picChangeSmallClick{
+    border:2px solid #FF6600;
+}
+.hotel_h2{
+    color:#990100;
+    background:url(../images/tibet_hotels/h2pic.png) no-repeat 0 65%;
+    padding-left:68px;
+    margin-bottom:10px;
+    width:597px;
+}
+.hotel_h2Span{
+    background:url(../images/tibet_hotels/h2pic.png) no-repeat 100% 65%;
+    padding-right:68px;
+}
+
+.hotel_reviewL{
+    float:left;
+    width:86px;
+    position:relative;
+}
+.hotel_reviewR{
+    float:right;
+    width:550px;
+}
+.hotel_reviewL dt{
+/*
+  position:absolute;
+    bottom:-20px;
+    */
+}
+.hotel_reviewLeftImg{
+    padding:5px;
+    border:1px solid #ddd;
+}
+.hotel_reviewLeftDes{
+/*
+    position:absolute;
+    bottom:-35px;
+    */
+    font-size:11px;
+    color:#666;
+    width:84px;
+    overflow: hidden;
+}
+.hotel_reviewBlock{
+    margin-bottom:20px;
+    padding-bottom:20px;
+    float:left;
+    width:663px;
+    border-bottom:1px solid #ccc;
+}
+.hotel_reviewR1{
+    padding-bottom:10px;
+}
+.hotel_reviewR2{
+    border-top:1px solid #ddd;
+    padding-top:10px;
+    color:#666;
+}
+.hotel_reviewR1 dt{
+    color:#991000;
+    font-size:15px;
+}
+.hotel_reviewR1Date{
+    color:#666;
+    font-size:11px;
+    padding:5px 0px;
+}
+.hotel_reviewR1Des{
+    font-size:13px;
+    width:550px;
+}
+.hotel_reviewR2Des{
+    width:550px;
+}
+.hotel_reviewR3Des{
+    width:550px;
+}
+.hotel_reviewDesOver{
+    overflow:hidden;
+    height:110px;
+}
+.hotel_reviewDesOver2{
+    overflow:hidden;
+    height:55px;
+}
+.reviewMore{
+    color:#246CCE;
+    cursor:pointer;
+}
+.reviewMore:hover{
+    text-decoration:underline;
+}
+.reviewMore2{
+    color:#246CCE;
+    cursor:pointer;
+}
+.reviewMore2:hover{
+    text-decoration:underline;
+}
+.hotel_reviewR2 dt{
+    font-weight:bold;
+}
+.hotel_reviewR2Date{
+    font-size:11px;
+    padding:5px 0px;
+}
+.pages{
+    float:left;
+    width:663px;
+    text-align:center;
+}
+.pages span.hover{
+    color:#fff;
+    background:#991000; 
+}
+.page,.pre,.next{
+    padding:2px 5px;
+    margin-right:5px;
+    cursor:pointer;
+}
+.clickhover{
+    color:#fff;
+    background:#991000;
+}
+.visi{
+    visibility:hidden;
+}
+
+.hotel_typeTable{
+    border-top:1px solid #FFD7A2;
+    width:663px;
+    margin-bottom:10px;
+}
+.hotel_typeTable td,.hotel_typeTable th{
+    padding:5px 22px;
+    text-align:center;
+}
+.hotel_typeTable td{
+    border-bottom:1px solid #FFEED7;    
+    text-align: left;
+}
+.hotel_typeTable th{
+    background:#FFEED7;
+    color:#D35400;
+}
+.inquiry{
+    background-image: url("/imagesnew/btn.png");
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-position: -193px 0;
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+    width: 86px;
+}
+.inquiry:hover{
+    background-position: -139px 39px;
+}
+.hotel_roomAmenities,.hotel_roomAmenitiesList{
+    float:left;
+    width:665px;
+}
+.hotel_roomAmenitiesUl{
+    float:left;
+    width:660px;
+}
+.hotel_roomAmenitiesLi{
+    float: left;
+    list-style-image: url("../images/tibet_hotels/ico_correct.png");
+    margin-bottom: 11px;
+    margin-left: 12px;
+    width: 153px;
+}
+.hotel_amenitiesImg{
+    float:left;
+}
+.hotel_amenitiesDl{
+    float:left;
+    width:150px;
+    margin-right:7px;
+    padding:4px;
+    border:1px solid #ddd;
+    min-height:270px;
+    position:relative;
+}
+.hotel_amenitiesDl dt{
+    position:absolute;
+    width:150px;
+    top:105px;
+}
+.hotel_amenitiesDd{
+    margin-top:25px;
+}
+.hotel_amenitiesLi{
+    background:url("../images/tibet_hotels/ico_correct.png") no-repeat left center;
+    padding-left:15px;
+    margin-bottom:3px;
+    color:#666;
+}
+.hotel_reviewDl{
+    border:1px solid #FFDC91;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    border-radius: 5px ;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFEED7), to(#fff));
+    background: -webkit-linear-gradient(#FFEED7, #fff);
+    background: -moz-linear-gradient(#FFEED7, #FFF);
+    background: -ms-linear-gradient(#FFEED7, #fff);
+    background: -o-linear-gradient(#FFEED7, #fff);
+    background: linear-gradient(#FFEED7, #fff);
+    padding:5px;
+    position:relative;
+    margin-bottom:55px;
+    behavior: url(PIE.htc);
+}
+.hotel_reviewDl dt{
+    background:url(../images/tibet_hotels/msg-tit.png) no-repeat left top;
+    min-height:27px;
+    padding-left:40px;
+    font-size:18px;
+    margin-bottom:10px;
+}
+.hotel_reviewContent{
+    margin-left:40px;
+}
+.hotel_reviewLink{
+    margin-left:40px;
+    margin-top:10px;
+}
+.hotel_reviewAuthor{
+    position:absolute;
+    right:0;
+    bottom:-46px;
+    background:url(../images/tibet_hotels/msg-bot2.png) no-repeat left top;
+    min-height:40px;
+    padding-left:60px;
+}
+.hotel_reviewAuthor span{
+    margin-top:35px;
+    display:block;
+    color:#666;
+    font-style:italic;
+}
+.hotel_photoBig{
+    float:left;
+    padding:5px;
+    border:1px solid #eee;
+    -webkit-box-shadow: #eee 0px 0px 5px;
+    -moz-box-shadow: #eee 0px 0px 5px;
+    box-shadow: #eee 0px 0px 5px;
+}
+
+.photo_des {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 350px;
+    color: #999999;
+    top: 5px;
+}
+
+.hotel_photoWrapper{ 
+    float:right;
+    width:240px;
+    margin:10px 0px 10px 10px;
+    position:relative;
+}
+.hotel_photoWrapperInner{
+    overflow:hidden;
+    margin-left:10px;
+    width:220px;
+    height:48px;
+    position:relative;
+}
+.hotel_photoSmall{
+    width:216px;
+    height:48px;
+    margin-left:0px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.hotel_photoSmallImg{
+    float:left;
+    margin-left:4px;
+    padding-bottom:1px;
+    border-bottom:2px solid #fff;
+}
+.hotel_photoSmallImg:hover{
+    border-bottom:2px solid red;
+}
+.photoTitle{
+    font-weight:normal;
+    font-size:14px;
+}
+.hotel_photoPrv,.hotel_photoNext{
+    text-indent:-9999px;
+    width:10px;
+    height:45px;
+    position:absolute;
+    cursor:pointer;
+}
+.hotel_photoPrv{
+    background:url(../images/tibet_hotels/arrow1.png) no-repeat left center;
+    left:0;
+    top:23px;
+}
+.hotel_photoNext{
+    background:url(../images/tibet_hotels/arrow2.png) no-repeat left center;
+    right:0;
+    top:23px;
+}
+.hotel_photoPrv2,.hotel_photoNext2{
+    text-indent:-9999px;
+    width:10px;
+    height:45px;
+    position:absolute;
+    cursor:pointer;
+}
+.hotel_photoPrv2{
+    background:url(../images/tibet_hotels/arrow1.png) no-repeat left center;
+    left:0;
+    top:23px;
+}
+.hotel_photoNext2{
+    background:url(../images/tibet_hotels/arrow2.png) no-repeat left center;
+    right:0;
+    top:23px;
+}
+.hotel_photoSmall2{
+    width:216px;
+    height:48px;
+    margin-left:0px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.hotel_photoSmall2 li{
+    float:left;
+}
+.hotel_photoSmall li{
+    float:left;
+}
+.hotel_similar{
+    margin-top:20px;
+    width:663px;
+    float:left;
+    border:1px solid #ccc;
+    border-top:none;
+    padding:0px 15px 10px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius:5px 5px 0px 0px;
+    position:relative;
+    z-index:1;
+    behavior: url(PIE.htc);
+}
+.hotel_similarH2{
+    background:#680001;
+    color:#fff;
+    width:663px;
+    padding:2px 15px;
+    margin-left:-15px;
+    margin-bottom:10px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius:5px 5px 0px 0px;
+    position:relative;
+    z-index:1;
+    behavior: url(PIE.htc);
+}
+.hotel_similarDl{
+    float:left;
+    margin-right:15px;
+}
+
+.hotel_similarDl dt {
+    height: 36px;
+}
+
+.hotel_similarDl dt a{
+    text-align:center;
+    margin-bottom:3px;
+    font-weight:bold;
+    color:#333;
+    display:block;
+    width:150px;
+}
+.hotel_similarDl dt a:hover{
+    color:#2368C7;
+}
+.hotel_star{
+    margin-left:33px;
+    margin-top:5px;
+}
+.hotel_stars{
+    margin-left:5px;
+    display:inline;
+}
+.hotel_roomimg{
+    width:120px;
+    height:80px;
+    float:left;
+    margin-right:10px;
+}
+.hotel_roomspan{
+    float:right;
+    width:495px;
+    height:55px;
+    text-align:left;
+    padding-top:25px;
+}
+.hotel_roomtr{
+    background:#fff7ed;
+}
+.hotel_roomico{
+    background:url(../images/tibet_hotels/roomimg.png) no-repeat right center;
+    padding-right:12px;
+    cursor:pointer;
+}
+.hotel_roomico a{
+    background:url(../images/tibet_hotels/roomimg2.png) no-repeat left center;
+    padding-left:18px;
+    color:#D35400;
+}
+.hotel_roomico a:hover{
+    text-decoration:none;
+}
+.hotel_roomtr td{
+    border-bottom:1px solid #FFEED7;
+}
+
+/*hotel map*/
+dl.tibet_hotels_map{
+height:200px;
+}
+dl.tibet_hotels_map dt{
+font-weight:bold;
+font-size:15px;
+text-align:center;
+margin-bottom:6px;
+}
+dl.tibet_hotels_map dd#img_map{
+
+}
+dl.tibet_hotels_map dd#img_map img{ 
+width:280px;
+height:150px;
+}
+#attraction_tips ul{
+width:600px;
+float:left;
+height:28px;
+margin-left:45px;
+}
+#attraction_tips ul li{
+float:left;
+width:120px;
+height:28px;
+line-height:28px;
+color:#666;
+}
+#attraction_tips ul li.color_icon{
+width:30px;
+}
+#attraction_tips ul li img{
+height:28px;
+display:block;
+}
+
+.hidden {
+    visibility:hidden;
+}
+
+.hotel_roomtr td img {
+    float: left;
+}
+

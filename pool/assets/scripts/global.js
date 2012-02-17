@@ -2,8 +2,8 @@
     //sidebar同步content 有没其他可以不写js的方法实现？ 
    var autoHeight = function(){
        var content_height = $( '.content' ).height();
-       if( content_height <1000 || content_height>2000){
-           $( '.sidebar' ).height( 1200 )
+       if( content_height <1500 || content_height>2500){
+           $( '.sidebar' ).height( 1500 )
        }else{
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }
