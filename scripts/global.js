@@ -4,7 +4,7 @@ $( function(){
     
     //contact us 弹出框
     $( '#call-you' ).click( function(){
-       $( '.tiny-form' ).toggle( 'slow' ); 
+       $( '.tiny-form' ).slideToggle( 'slow' ); 
     });
     //contact us 表单验证
     $( '#tiny-form' ).validate();  
