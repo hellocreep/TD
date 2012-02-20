@@ -178,6 +178,10 @@ a:hover {
     color: #868282;
 }
 
+.none {
+    display: none;
+}
+
 /* PAGER */
 #pager {
     text-align: center;
@@ -701,9 +705,10 @@ a:hover {
 .sidebar {
     width: 240px;
     float: left;
-    min-height: 900px;
+    min-height: 1100px;
 	border-right:2px solid #b6b6b6;
     background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;
+    padding-bottom: 80px;
 /*    -webkit-box-shadow: #666 1px 0px 3px;
     -moz-box-shadow: #666 1px 0px 3px;
     box-shadow: #666 1px 0px 3px;
