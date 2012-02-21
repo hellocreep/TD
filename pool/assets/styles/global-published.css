@@ -278,7 +278,7 @@ a:hover {
     margin-top: 10px;
 }
 
-.content h2,h3 {
+.content .content-h2,content-h3 {
     margin: 20px 0 6px 0;
 }
 

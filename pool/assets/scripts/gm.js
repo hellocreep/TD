@@ -20,9 +20,9 @@ function gm_initialize( e ) {
             ['Tibet Hotel', 29.656966362698242, 91.09017848968506,''],
             ['Yak Hotel',29.65320663343443, 91.13265663385391,''],
             ['Thangka Hotel',29.65003884178747, 91.13028556108475,''],
-            ['Tibet Cang-gyan Lhasa Hotel',29.657579374051608, 91.09351247549057,''],
+            ['Cang-gyan Lhasa Hotel',29.657579374051608, 91.09351247549057,''],
             ['Dhood Gu Hotel',29.652423435947714, 91.13320916891098,''],
-            ['Shangbala hotel',29.651628577505004, 91.1311411857605,''],
+            ['Shangbala Hotel',29.651628577505004, 91.1311411857605,''],
             ['Kyichu Hotel',29.652675178661685, 91.13057523965836,''],
             ['New Mandala Hotel', 29.649626252314075, 91.13081395626068,''],
             ['Tashitakge Hotel', 29.649735810135784, 91.1329784989357,''],
@@ -83,7 +83,7 @@ function gm_initialize( e ) {
     var latlng = new google.maps.LatLng( new_latlng1*1,new_latlng2*1 );//29.646605206678142, 91.13964915275574
 
     var myOptions = {
-        zoom : 11,
+        zoom : 8,
         center : latlng,
         mapTypeId : google.maps.MapTypeId.ROADMAP
     };

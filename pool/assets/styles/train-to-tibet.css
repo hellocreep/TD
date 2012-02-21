@@ -12,6 +12,7 @@
 	padding; 0;
 	margin-bottom: 15px;
 	color: #434343;
+	padding-top: 10px;
 }
 dl.recommend-info:hover{
 	background:rgba(243,234,213,0.6);
@@ -26,6 +27,12 @@ dl.recommend-info:hover{
 	text-indent:11px;
 	padding: 7px 0 4px;
 }
+
+.recommend-title {
+    font-size: 16px;
+    padding: 5px 0 5px 30px;
+}
+
 .recommend-info img{
 	height: 110px;
     margin-left: 10px;
@@ -532,24 +539,24 @@ dl.recommend-info:hover{
 
 .pic-list {
     margin: 20px 0 0 0;
+    text-align: center;
 }
 
 .pic-list li{
-    margin-right: 20px;
     float: left;
     width: 30%;
+    margin: 1px 20px 1px 1px;
 }
 
 .pic-list .wrap-img {
     display: block;
     padding: 8px;
-    margin: 1px;
 }
 
-.pic-list .wrap-img:hover {
+.pic-list li:hover {
     background-color: #F5F5F5;
     border: 1px solid #E0E0E0;
-    margin: 0;
+    margin: 0px 19px 0 0;
 }
 
 .pic-list li p {
