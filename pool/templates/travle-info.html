@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Travle-info{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/travle-info.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block script %}
+<!-- 页面js脚本 -->
+{% endblock %}
+
+{% block body%}
+{% include 'header.html' %}
+<div class="bread"></div>
+<div class="wrapper clearfix">
+    {% include 'sidebar.html' %} 
+    <div class="content">
+        <h1>title <span class="addthis">addthis</span></h1>
+        <span class="author"><a href='tag/?author=[*author_tibetinfo*]'>Carrie</a> | February 07,2012</span>
+        <p class="tag"><span>Tags:</span><a href="">fdfd</a>,</p>
+        <h2>More from this section：</h2>
+        <ul class="relatedlink">
+        </ul>
+    
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

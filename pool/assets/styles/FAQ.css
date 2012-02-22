@@ -1,0 +1,54 @@
+.accordion-act {
+    margin: 15px 0 0 0;
+    padding-bottom: 8px;
+}
+
+.accordion-act span {
+    width: 20px;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #C25648;
+    color: #FFFFFF; 
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.accordion-act span:hover {
+    opacity: 1;
+}
+
+.accordion-title {
+    padding: 0 13px;
+    margin-bottom: 4px;
+    cursor:  pointer;
+    color:  #000000;
+    font-size: 14px;
+    height: 35px;
+    background: url("../images/other_style/expandarr-down.gif") no-repeat right center #ECECEC;
+    line-height: 2.5;
+}
+
+.accordion-title:hover{
+    background-color: #9A3B43;
+    color: #FFFFFF;
+	background: url("../images/other_style/expandarr-down.gif") no-repeat right -9999999px #9A3B43;
+}
+
+.accordion-title-active {
+    border-bottom: none;
+    background: url("../images/other_style/expandarr-down.gif") no-repeat right -9999999px;
+    background-color: #9A3B43;
+    color: #FFFFFF;
+}
+
+.accordion-content {
+    padding: 10px 10px 30px 10px;
+}
+
+.FAQ-des {
+    color: #000000;
+    font-size: 13px;
+    width: 90%;
+}

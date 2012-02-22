@@ -12,3 +12,9 @@ def hotel_lhasa(request):
 
 def train_to_tibet(request):
     return render_to_response('train-to-tibet.html',{})
+
+def flight_to_tibet(request):
+    return render_to_response('flight-to-tibet.html',{})
+
+def hotel_form(request):
+    return render_to_response('hotel-form.html',{})

@@ -12,17 +12,16 @@
 
 {% block body%}
 {% include 'header.html' %}
+<div class="bread"></div>
 <div class="wrapper clearfix">
-    <div class="bread">
-    </div>
-    {% include 'sidebar.html' %}
+    {% include 'sidebar-train.html' %}
     <div class="content">
             <h1>Train to Lhasa from Beijing</h1>
             <p>
                 It is no longer a dream to take a train from Beijing to Lhasa. The 3753 kilometers' railway between Beijing and Lhasa covers 1110 km over the world's highest Qinghai-Tibet Railway. There are daily trains transferring thousands of passengers from Beijing to Lhasa for their lifetime Tibet tour.
             </p>
-            <div class="train-map">
-                <img src="/images/train/Beijing_Lhasa.png"/>
+            <div class="train-map" title="train-chengdu">
+                <img src="/imagesnew/train/Beijing_Lhasa.png"/>
                 <span class="marker marker-beijing"></span>
                 <span class="attraction-icons icon-beijing" name="icon-beijing"></span>
                 <span class="marker marker-xian"></span>
@@ -66,10 +65,10 @@
                     </ul>
                     <ul class="timeTable-info">
                         <li class="icon-train" name="beijing-to-lhasa">
-                            TD177>
+                            TD177<span></span>
                         </li>
-                        <li>
-                            Beijing to Lhasa
+                        <li class="train-route">
+                            Beijing West -west Lhasa
                         </li>
                         <li class="trainInfo-time">
                             20:00</br>20:00
@@ -77,9 +76,9 @@
                         <li>
                             43 hours
                         </li>
-                        <li>
+                        <!--<li>
                             <span class="btn-wrap"><a class="btn middle" href="#">Buy Now</a></span>
-                        </li>
+                        </li>-->
                     </ul>
                     <div>
                         <table class="schedule-detail beijing-to-lhasa">
@@ -137,9 +136,9 @@
                     </ul>
                     <ul class="timeTable-info">
                         <li class="icon-train" name="beijing-to-chengdu">
-                            TD21>
+                            TD21><span></span>
                         </li>
-                        <li>
+                        <li class="train-route">
                             Beijing to Lhasa
                         </li>
                         <li class="trainInfo-time">
@@ -148,9 +147,9 @@
                         <li>
                             43 hours
                         </li>
-                        <li>
+                        <!--<li>
                             <span class="btn-wrap"><a class="btn middle" href="#">Buy Now</a></span>
-                        </li>
+                        </li>-->
                     </ul>
                     <div>
                         <table class="schedule-detail beijing-to-chengdu">
@@ -208,75 +207,8 @@
                     </div>
                 </div>
             </div>
-            <div class="life-on-board clearfix" >
-                <h2>Life on Board</h2>
-                <ul class="pic-list clearfix">
-                    <li>
-                        <img src="/images/img1.jpg" />
-                        <a href="#">Soft Sleeper Cars</a>
-                        <p>
-                            The most comfortable compartments with doors and 4 soft berths in each offer more privacy and fewer crowds.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="/images/img2.jpg" />
-                        <a href="#">What to eat on board?</a>
-                        <p>
-                            Simple Western and Chinese food are offered in the Dining car. Also some snacks and drinks are sold by the train attendant with a trolley.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="/images/img3.jpg" />
-                        <a href="#">More Tibet Train FAQs</a>
-                        <p>
-                            See what other travelers are curious about trains to Tibet. Get more information about every corner of the train.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="content-foot">
-                <!-- Not Sure This-->
-                <div class="FAQ-footer clearfix">
-                    <div class="FAQ-help clearfix">
-                        <p>
-                            "Can you tell me more about...?"
-                            <br>
-                            No problem! No matter you want to get more answers
-                            or customize your unique Tibet Tour,
-                            just feel free to tell us.
-                        </p>
-                        <div class="btn-enquiry">
-                            <a href="#">Make an Enquiry</a><!--<a href="#">Customize your trip</a>-->
-                        </div>
-                    </div>
-                    <div class="author-list">
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#">
-                                <div><img src="/images/head1.jpg" class="img-icon">
-                                </div>testst<div></div> </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                <div><img src="/images/head2.jpg" class="img-icon">
-                                </div>tetes<div></div> </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                <div><img src="/images/head3.jpg" class="img-icon">
-                                </div>testest<div></div> </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                <div><img src="/images/head2.jpg" class="img-icon">
-                                </div>esdtes<div></div> </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h4>Our specialists are always ready to help!</h4>
-                </div>
-                <!-- end -->
-            </div>
+            {% include 'life-on-board.html' %}
+            {% include 'content-foot.html' %}
     </div>
 </div>
 

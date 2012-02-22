@@ -12,14 +12,14 @@
 
 {% block body%}
 {% include 'header.html' %}
+<div class="bread"></div>
 <div class="wrapper clearfix">
-    <div class="bread"></div>
     {% include 'sidebar.html' %}
     <div class="content">
         <h1>Train to Tibet</h1>
         <p></p>
-        <div class="train-map">
-            <img src="/images/train/Alltrains.png"/>
+        <div class="train-map" id="">
+            <img src="/imagesnew/train/Alltrains.png"/>
             <ul class="clearfix">
                 <li>
                     Beijing-Lhasa Train
@@ -54,41 +54,43 @@
                 <li>Beijinga</li>
                 <li>Beijings</li>
             </ul>
-            <div class="station-info clearfix" id="Beijing">
-                <img src="" />
-                <div class="info" name="Beijing">
-                    <h1>Beijing</h1>
-                    <p>
-                        fBeijngs
-                    </p>
-                    <p>
-                        fdsfsdfdsfdsfdsfdsfdsfdsfsdf
-                        fsdfdsfdsfdsfdsfdsfdsfdsdsfdsfds
-                    </p>
-                </div>
-                <p class="clearfix">
-                <p align="right">
-                    <a class="" href="#">See our simple tours</a>
-                </p>
-            </div>
-            <div class="station-info clearfix" id="Chengdu">
-                <img src="" />
-                <div class="info" name="Beijing">
-                    <h1>Chengdu</h1>
-                    <p>
-                        fsdfdsfdsfsdfsdfdsfdsfsdfdsfds
-                        fdsfsdfdsfdsfdsfdsfsdfsdfds
-                    </p>
-                    <p>
-                        fdsfsdfdsfdsfdsfdsfdsfdsfsdf
-                        fsdfdsfdsfdsfdsfdsfdsfdsdsfdsfds
+            <div class="station-info-row"></div>
+                <div class="station-info clearfix" id="Beijing">
+                    <img src="" />
+                    <div class="info" name="Beijing">
+                        <h1>Beijing</h1>
+                        <p>
+                            fBeijngs
+                        </p>
+                        <p>
+                            fdsfsdfdsfdsfdsfdsfdsfdsfsdf
+                            fsdfdsfdsfdsfdsfdsfdsfdsdsfdsfds
+                        </p>
+                    </div>
+                    <p class="clearfix">
+                    <p align="right">
+                        <a class="" href="#">See our simple tours</a>
                     </p>
                 </div>
-                <p class="clearfix">
-                <p align="right">
-                    <a class="" href="#">See our simple tours</a>
-                </p>
-            </div>
+                <div class="station-info clearfix" id="Chengdu">
+                    <img src="" />
+                    <div class="info" name="Beijing">
+                        <h1>Chengdu</h1>
+                        <p>
+                            fsdfdsfdsfsdfsdfdsfdsfsdfdsfds
+                            fdsfsdfdsfdsfdsfdsfsdfsdfds
+                        </p>
+                        <p>
+                            fdsfsdfdsfdsfdsfdsfdsfdsfsdf
+                            fsdfdsfdsfdsfdsfdsfdsfdsdsfdsfds
+                        </p>
+                    </div>
+                    <p class="clearfix">
+                    <p align="right">
+                        <a class="" href="#">See our simple tours</a>
+                    </p>
+                </div>
+            <div class="station-info-row"></div>
         </div>
         <div class="customize-trip clearfix">
             <div>
@@ -100,7 +102,7 @@
                 details, embed, figure, figcaption, footer, header, hgroup, menu,
                 nav, output, ruby, section, summary, time, mark, audio, video
             </div>
-            <a class="btn large custom-btn">Customize Your Own Trip</a>
+            <a href="#" class="btn large custom-btn">Customize Your Own Trip</a>
         </div>
     </div>
 </div>

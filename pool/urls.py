@@ -20,7 +20,7 @@ urlpatterns = patterns('',
 
 urlpatterns += patterns('',
     (r'^assets/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.ASSETS_ROOT}),
-    (r'^images/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.IMAGES_ROOT}),
+    (r'^imagesnew/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.IMAGES_ROOT}),
 )
 
 urlpatterns += patterns('TD.views',
@@ -29,4 +29,6 @@ urlpatterns += patterns('TD.views',
     (r'^hotel-index/$', 'hotel_index'),
     (r'^hotel-lhasa/$','hotel_lhasa'),
     (r'^train-to-tibet/$', 'train_to_tibet'),
+    (r'^flight-to-tibet/$','flight_to_tibet'),
+    (r'^hotel-form/$','hotel_form'),
 )
