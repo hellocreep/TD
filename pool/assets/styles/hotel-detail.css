@@ -49,6 +49,58 @@
     color: #0283DE;
 }
 
+
+/*HOTEL SIDEBAR*/
+.hotel-map .map-show{
+    padding-left:80px;
+    
+}
+.hotel-sidebar h2{
+    font-size:18px;
+    background:url('/imagesnew/hotel-leftbar-h2bg.png') no-repeat;
+    height: 37px;
+    line-height: 37px;
+    color:#FFF;
+    padding-left: 15px;
+}
+.hotel-viewd .v-hotel{
+    padding: 5px;
+}
+.hotel-viewd .v-hotel li
+{
+    float:left;
+}
+.hotel-viewd .v-hotel .hotel-name
+{
+    margin:5px 0px 0px 5px;
+}
+.hotel-viewd .v-hotel .hotel-star
+{
+    margin:5px 0px 0px 5px;
+}
+.hotel-delete
+{
+    float:right;
+    height: 14px;
+    background:url('/imagesnew/reviewd/iconremove.gif') no-repeat left top;
+    display:block;
+    margin-top:-15px;
+    width: 18px;
+    cursor: pointer;
+}
+.hotel-delete:hover{
+    background:url('/imagesnew/reviewd/iconremove.gif') no-repeat left -16px;
+}
+.near-list{
+    list-style: none;
+    padding:5px;
+}
+.near-list li
+{
+    background:url('/imagesnew/nav-dot.png') no-repeat left;
+    padding-left:15px;
+}
+
 /*hotel*/
 .hotel_h1Title,.hotel_star{
     display:inline;

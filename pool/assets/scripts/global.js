@@ -1,27 +1,30 @@
 ;(function(){
     //sidebar同步content 有没其他可以不写js的方法实现？ 
-   var autoHeight = function(){
+   var syncHeight = function(){
        var content_height = $( '.content' ).height();
-       if( content_height <1300 || content_height>2000){
-           $( '.sidebar' ).height( 1300 )
-       }else{
+       var sidebar_height = $( '.sidebar' ).height();
+       if( sidebar_height > content_height ){
+           return;
+       }
+       else{
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }
    }
    
    $.fn.autoHeight = function(){
+       var sidebar_height = $( '.sidebar' ).height();
        var content_height = $( '.content' ).height();
-       if( content_height <1000 ){
-           $( '.sidebar' ).height( 1200 )
+       if( content_height <sidebar_height ){
+           return;
        }else{
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }
    }
     
 $( function(){
-    
-    autoHeight();
-    
+
+    $( window ).bind( 'scroll',syncHeight)
+
     //contact us 弹出框
     $( '#call-you' ).click( function(){
        $( '.tiny-form' ).slideToggle( 'slow' ); 
