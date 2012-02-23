@@ -6,11 +6,17 @@
 <link href="/assets/styles/aboutus.css" type="text/css" rel="stylesheet"/>
 {% endblock %}
 
-{% block script %} <script type="text/javascript"></script>
+{% block script %}
+<script src="/assets/scripts/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
 {% endblock %}
-
 {% block body%}
-{% include 'header.html' %} <div class="bread"></div>
+<script>
+    $(function() {
+        $( "#accordion" ).accordion({header:'li'});
+    });
+    </script>
+{% include 'header.html' %}
+<div class="bread"></div>
 <div class="wrapper clearfix">
 	{% include 'sidebar.html' %}
 	<div class="content">
@@ -20,7 +26,7 @@
 			<h2>Bruce Tang</h2>
 			<h3>Expertise</h3>
 			<ul class="tc-ul clearfix">
-				<li>
+				<li class="first">
 					<h4>Tibet</h4>
 					<P>
 						Tibet Trekking; Biking;
@@ -44,11 +50,11 @@
 				nce to design a trip just for you, that suits your budget and interests.
 				His passion on travel and help never fades away!
 			</p>
-			<a href="###">Email Bruce</a>
-			<span>OR Call him at +86-15680858840</span>
+			<p align="right"><a href="###">Email Bruce</a></p>
+			<p align="right"><span>OR Call him at +86-15680858840</span></p>
 			</div>
 		</div>
-		<div class="tc-info">
+		<div class="tc-info clearfix">
 			<h3>Biography</h3>
 			<div class="tc-info-con2">
 			<p class="tc-talk">
@@ -67,43 +73,54 @@
 			<img class="tc-img" src="/imagesnew/bruce.jpg" alt="Bruce Tang">
 			
 		</div>
-		<div>
-			<h3>Tibet & China Travel Tips from Bruce (12)</h3>
-			<ol>
-				<li>
-					Is it safe to take a Tibet trekking tour?
-					<p>The answer to the question.</p>
-				</li>
-				<li>
-					Is it enough to take a Everest base camp hike with my Tibet travel permit?
-				</li>
+		<div class="tc-faq">
+			<h2>Tibet & China Travel Tips from Bruce (12)</h2>
+			<ol id="accordion">
+				<li>it safe to take a Tibet trekking tour?</li>
+				<div>
+				    fdfdfdfdfd
+				</div>
+				<li>Is it enough to take a Everest base camp hike with my Tibet travel permit?</li>
+				<div>
+				    fdfdfdfdfd
+				</div>
 			</ol>
+			<h3>Can't find Answer?an't find Answer?</h3>
+			<h4> an't find Answer?an't find Answer?</h4>    
+			<h4>an't find Answer?</h4>
 		</div>
-		<div>
-			<h3>See What My Customers Say & See! </h3>
-			<ul>
+		<div class="custom-say">
+			<h2>See What My Customers Say & See! </h2>
+			<ul class="clearfix">
 				<li>
 					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
 				</li>
 				<li>
-					<img src="" alt="Bruce with customers">
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
 				</li>
 				<li>
-					<img src="" alt="Bruce with customers">
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
 				</li>
 				<li>
-					<img src="" alt="Bruce with customers">
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
 				</li>
 				<li>
-					<img src="" alt="Bruce with customers">
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
 				</li>
 				<li>
-					<img src="" alt="Bruce with customers">
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
 				</li>
 			</ul>
-			<p class="letter-content">
-				<span>Dear Bruce,</span>
-			</p>
+			<div class="letter-content">
+				<pre>
+				    
+				</pre>
+			</div>
+			<div class="letter-content">
+                <pre>
+                    
+                </pre>
+            </div>
 		</div>
 	</div>
 </div>

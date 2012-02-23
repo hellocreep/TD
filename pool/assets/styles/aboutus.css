@@ -1,7 +1,4 @@
 .tc-info{
-	width:auto;
-	border:1px solid red;
-	float:left;
 }
 
 .tc-info img{	
@@ -10,7 +7,6 @@
 
 .tc-info-con{
 	width:378px;
-	
 	float:right;	
 }
 
@@ -22,6 +18,7 @@
 .tc-info h3{
 	color:#434343;
 	font-size:14px;
+	margin: 10px 0 6px;
 }
 
 .tc-ul{
@@ -29,12 +26,21 @@
 	float:left;
 }
 
+.tc-ul h4 {
+    background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
+    padding-left: 12px;
+}
+
 .tc-ul li{
 	display:block;
 	float:left;
-	width:190px;
-	
-	
+	width:40%;
+}
+
+.tc-ul li.first {
+    border-right: 1px dashed #DDDDDD;
+    margin-right: 28px;
+    padding-right: 10px;
 }
 
 .tc-cotact{
@@ -44,15 +50,58 @@
 }
 
 .tc-info-con2{
-	width:300px;
+	width:435px;
 	float: left;
 }
 .tc-img{
-	float:left;
+	float:right;
 	width:180px;
 	height:200px;
 }
 
 .tc-talk{
 	font-style:italic;
+}
+
+.tc-faq {
+    
+}
+
+.tc-faq h2 {
+    margin: 10px 0 6px;
+}
+
+.tc-faq h3,h4 {
+    color: #434343;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.tc-faq ol{
+    list-style: decimal inside none;
+}
+
+.tc-faq ol li {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.custom-say {
+    
+}
+
+.custom-say h2 {
+    margin: 10px 0 10px;
+}
+
+.custom-say ul li {
+    float: left;
+    display: inline;
+    margin: 0 13px 15px 0;
+}
+
+.custom-say ul li img {
+    width: 100px;
+    height: 80px;
 }
