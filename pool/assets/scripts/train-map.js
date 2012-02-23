@@ -20,7 +20,7 @@
     '<p><strong>By taxi:</strong>the cost from Tianfu Square to the railway station is normally no less than 15 RMB.</p>'+
     '<p><strong>By subway:</strong>served by Line 1 </p>','Train to Lhasa from Chengdu','0'
     ],
-    ['icon-chongqing','Chongqing Railway Station','<img class="attraction-pic" src="/imagesnew/train/" />'+
+    ['icon-chongqing','Chongqing Railway Station','<img class="attraction-pic" src="/imagesnew/train/chongqing-railway-station-210.jpg" />'+
     'Caiyuanba Motorway Interchange,Yuzhong, Chongqing 渝中区菜袁路6号',
     '<h3>How to get there?</h3>'+
     '<p><strong>By taxi:</strong>the cost from Chaotianmen to the railway station is normally no less than 15 RMB.</p>'+
@@ -45,10 +45,15 @@
     '<p><strong>By subway:</strong>served by Line 1 and 2. </p>','1'
     ],
     ['icon-xian','Xian Railway Station','<img class="attraction-pic" src="/imagesnew/train/xian-station-210.jpg" />'+
-    'ff',
+    '',
     '<h3>How to get there?</h3>'+
     '<p><strong>By taxi:</strong>the cost from Baiyunshan Airport to the railway station is normally around 80 RMB.</p>'+
-    '<p><strong>By subway:</strong>served by Line 1 and 2.  </p>','1'
+    '<p><strong>By subway:</strong>served by Line 1 and 2.  </p>'+
+    '<p>The historical heart of China, is one of the most importance transportation junction of China railway.</p>'+
+    '<p>However, only 3 trains to Tibet stop at Xian Railway Station, which are T264/T265 from Guangzhou to Lhasa,</p>'+
+    '<p>T164/T165 from Shanghai to Lhasa and T222/T223 from Chengdu to Lhasa. So it is more difficult to get a train </p>'+
+    '<p>ticket from Xian to Lhasa than from other cities.</p>',
+    '1'
     ],
     ['icon-xining','Xining Station ','<img class="attraction-pic" src="/imagesnew/train/xining-railway-station210.jpg" />'+
     'The starting point of Qinghai-Tibet Railway',
@@ -124,6 +129,10 @@
                 if( route == 'Train to Tibet'){
                     $( '.marker' ).show();
                     $( '.attraction-icons' ).show();
+                }
+                if( $('.content').attr('name')=='train-qinghai'){
+                    $( '.marker' ).hide();
+                    $( '.attraction-icons' ).hide();
                 }
 
             }
