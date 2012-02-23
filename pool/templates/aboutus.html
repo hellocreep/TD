@@ -7,14 +7,17 @@
 {% endblock %}
 
 {% block script %}
-<script src="/assets/scripts/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
-{% endblock %}
-{% block body%}
 <script>
     $(function() {
-        $( "#accordion" ).accordion({header:'li'});
-    });
+        $('.accordion li').click(function() {
+            $( this ).toggleClass( 'accordion-title-active' ).next().toggle('fast');
+            return false;
+        }).next().hide();
+});
+ 
     </script>
+{% endblock %}
+{% block body%}
 {% include 'header.html' %}
 <div class="bread"></div>
 <div class="wrapper clearfix">
@@ -75,14 +78,14 @@
 		</div>
 		<div class="tc-faq">
 			<h2>Tibet & China Travel Tips from Bruce (12)</h2>
-			<ol id="accordion">
-				<li>it safe to take a Tibet trekking tour?</li>
-				<div>
-				    fdfdfdfdfd
+			<ol class="accordion">
+				<li class="accordion-title">it safe to take a Tibet trekking tour?</li>
+				<div class="accordion-content">
+				    <p>fdfdfdfdfd</p>
 				</div>
-				<li>Is it enough to take a Everest base camp hike with my Tibet travel permit?</li>
-				<div>
-				    fdfdfdfdfd
+				<li class="accordion-title">Is it enough to take a Everest base camp hike with my Tibet travel permit?</li>
+				<div class="accordion-content">
+				    <p>fdfdfdfdfdfdfdfdf</p>
 				</div>
 			</ol>
 			<h3>Can't find Answer?an't find Answer?</h3>
