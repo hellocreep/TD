@@ -52,3 +52,39 @@ margin: 0 0 0 3px;
     float: right;
     margin-right: 15px;
 }
+
+/*Timetable of Trains to Lhasa*/
+
+.tableu {
+    border: medium none;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.tableu th {
+    background: none repeat scroll 0 0 #E7E7E7;
+    border: 2px solid #FFFFFF;
+    padding: 4px;
+}
+.tableu td {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 2px solid #FFFFFF;
+    padding: 4px;
+}
+.tableemp {
+    border: medium none;
+    border-collapse: collapse;
+    width: 100%;
+}
+.tableemp th {
+    border-bottom: 2px solid #EEEEEE;
+    font-size: 1.1em;
+    padding: 15px 0 1px;
+    text-align: left;
+}
+.tableemp td {
+    padding: 6px 3px;
+    vertical-align: top;
+    width: 32%;
+}

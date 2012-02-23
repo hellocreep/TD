@@ -21,11 +21,6 @@
 	margin: 10px 0 6px;
 }
 
-.tc-ul{
-	display:block;
-	float:left;
-}
-
 .tc-ul h4 {
     background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
     padding-left: 12px;
@@ -45,8 +40,33 @@
 
 .tc-cotact{
 	width:360px;
-	float: left;
 	margin-top:20px;
+}
+
+.tc-email {
+    height: 30px;
+    text-align: right;
+}
+
+.tc-email span {
+    background: #8F1105;
+    float: right;
+    height: 25px;
+    border-radius: 4px;
+    line-height: 25px;
+    padding: 0 8px;
+    behavior: url(PIE.htc);
+}
+
+.tc-email a {
+    background: url("/imagesnew/email-icon-white.png") no-repeat right center;
+    padding-right: 20px;
+    color: #DEDEDE;
+}
+
+.tc-email a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .tc-info-con2{
@@ -61,10 +81,11 @@
 
 .tc-talk{
 	font-style:italic;
+	margin-bottom: 15px;
 }
 
-.tc-faq {
-    
+.tc-talk img {
+    margin: 0;
 }
 
 .tc-faq h2 {
@@ -79,12 +100,35 @@
 
 .tc-faq ol{
     list-style: decimal inside none;
+    margin-bottom: 20px;
 }
 
-.tc-faq ol li {
+.accordion-title {
     height: 30px;
     line-height: 30px;
     cursor: pointer;
+    padding: 0 10px;
+}
+
+.accordion-title.odd {
+    background: url("/imagesnew/grid.png") repeat-x 0 0;
+}
+
+.accordion-content {
+    padding: 8px 0 0 10px;
+}
+
+.accordion-tri {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: url("/imagesnew/slide-icon.png") no-repeat center ;
+    float: right;
+    top: 5px;
+}
+
+.accordion-tri.active {
+    background-position: -9999px 0;
 }
 
 .custom-say {
@@ -104,4 +148,33 @@
 .custom-say ul li img {
     width: 100px;
     height: 80px;
+}
+
+.letter-content {
+    background: url(/imagesnew/grid.png) 0 0;
+    width: 650px;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+}
+
+/*SIDEBAR*/
+.aboutus-side-foot {
+    background: url(/imagesnew/sidebar-flower-down.png) no-repeat top center;
+    padding-top: 45px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.abuout-side-img {
+    background: url(/imagesnew/sidebar-flower-up.png) no-repeat bottom center;
+    padding-bottom: 45px;
+    margin-top: 10px;
+}
+
+.abuout-side-img img {
+    position: absolute;
+}
+
+.abuout-side-img div {
+    margin-left: 65px;
 }
