@@ -1,0 +1,58 @@
+.tc-info{
+	width:auto;
+	border:1px solid red;
+	float:left;
+}
+
+.tc-info img{	
+	margin:10px 20px 10px 0;
+}
+
+.tc-info-con{
+	width:378px;
+	
+	float:right;	
+}
+
+.tc-info h2{
+	display:block;
+	padding-top:8px;
+}
+
+.tc-info h3{
+	color:#434343;
+	font-size:14px;
+}
+
+.tc-ul{
+	display:block;
+	float:left;
+}
+
+.tc-ul li{
+	display:block;
+	float:left;
+	width:190px;
+	
+	
+}
+
+.tc-cotact{
+	width:360px;
+	float: left;
+	margin-top:20px;
+}
+
+.tc-info-con2{
+	width:300px;
+	float: left;
+}
+.tc-img{
+	float:left;
+	width:180px;
+	height:200px;
+}
+
+.tc-talk{
+	font-style:italic;
+}
