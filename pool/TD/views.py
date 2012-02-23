@@ -18,3 +18,9 @@ def flight_to_tibet(request):
 
 def hotel_form(request):
     return render_to_response('hotel-form.html',{})
+
+def sitemap(request):
+    return render_to_response('sitemap.html',{})
+
+def aboutus(request):
+    return render_to_response('aboutus.html',{})

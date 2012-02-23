@@ -24,7 +24,11 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-ol, ul {
+ol {
+	list-style-type:disc;
+}
+
+ul {
     list-style: none;
 }
 blockquote, q {
@@ -46,6 +50,7 @@ body {
     font-size: 13px;
     line-height: 140%;
 	background: url("/imagesnew/body-bg.png") no-repeat center 139px #FBFBF5;
+	color:#434343;
 }
 
 .wrap{
@@ -62,7 +67,6 @@ body {
          url('../fonts/Cantarell-BoldOblique.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 */
 
