@@ -24,7 +24,15 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-ol, ul {
+ol {
+	list-style-type:disc;
+}
+
+li {
+    color: #434343;
+}
+
+ul {
     list-style: none;
 }
 blockquote, q {
@@ -46,6 +54,7 @@ body {
     font-size: 13px;
     line-height: 140%;
 	background: url("/imagesnew/body-bg.png") no-repeat center 139px #FBFBF5;
+	color:#434343;
 }
 
 .wrap{
@@ -62,7 +71,6 @@ body {
          url('../fonts/Cantarell-BoldOblique.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 */
 
@@ -180,6 +188,10 @@ a:hover {
 
 .none {
     display: none;
+}
+
+.m10 {
+    margin: 10px 0;
 }
 
 /* PAGER */
@@ -921,7 +933,7 @@ a:hover {
 .btn-enquiry a {
     color: #FFFFFF;
     display: block;
-	background:url(/imagesnew/btn-enquiry.png) no-repeat;
+	background:url(/imagesnew/btn-enquiry1.png) no-repeat;
 	width:199px;
 	height:43px;
 	line-height:43px;
@@ -932,6 +944,7 @@ a:hover {
 }
 .btn-enquiry a:hover {
 	text-decoration:none;
+	background:url(/imagesnew/btn-enquiry2.png) no-repeat;
 }
 .author-list {
     clear: both;
@@ -969,3 +982,66 @@ a:hover {
     width: 60px;
     display: block;
 }
+
+
+/*火车页面sidebar样式*/
+.recommend-h3{
+    font-size:20px;
+    text-indent:21px;
+    font-weight:bold;
+    padding:25px 0 10px;
+}
+.side-reco{
+    cursor: pointer;
+    display:block;  
+    border:1px solid #F8F4ED;
+    padding:10px 10px 25px 10px;
+    margin:0 auto;
+    color: #434343;
+    width:184px;
+}
+.side-reco:hover{
+    background:rgba(243,234,213,0.6);
+    border:1px solid #ddd;
+}
+
+a.reco-title{
+    display:block;
+    background:url("/imagesnew/train_black.png") no-repeat 0 0;
+    color:#434343;
+    padding:5px 0 0 25px;
+    font-weight:bold;
+}
+
+.reco-con{
+    text-indent:25px;
+}
+
+a.reco-title:hover{
+    text-decoration: none;
+}
+
+a.reco-click{
+    float:right;
+    display:block;
+    color:#434343;
+    font-size:11px;
+}
+
+a.reco-click:hover{
+    color:#222222;
+}
+
+.reco-img{
+    width:180px;
+    height:100px;
+    border: 1px solid #DDDDDD;
+    padding: 1px;
+    background: none repeat scroll 0 0 white;
+}
+
+.reco-details{
+
+}
+
+/*火车页面sidebar样式-----end*/

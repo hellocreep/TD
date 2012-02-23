@@ -28,19 +28,18 @@ function gm_initialize( e ) {
             ['Tashitakge Hotel', 29.649735810135784, 91.1329784989357,''],
             //日喀则hotels坐标
             ['Jiumu Yamei Hotel', 29.266839774287874, 88.88052105903625,''],
-            ['Zhaxiquta Hotel', 29.266839774287874, 88.88052105903625,''],//坐标要修改
-            ['Zanglong Hotel', 29.266839774287874, 88.88052105903625,''],//坐标要修改
-            ['Taixing Hotel', 29.266839774287874, 88.88052105903625,''],//坐标要修改
-            ['Shigatse Hotel', 29.266839774287874, 88.88052105903625,''],//坐标要修改
-            ['Wutse Grand Hotel', 29.266839774287874, 88.88052105903625,''],//坐标要修改
+            ['Zhaxiquta Hotel', 29.27478787243529, 88.879753947258,''],
+            ['Zanglong Hotel', 29.264588831740124, 88.89420837163925,''],
+            ['Taixing Hotel', 29.25761106294176, 88.89226913452148,''],
+            ['Shigatse Hotel', 29.260470554949784, 88.88517200946808,''],
+            ['Wutse Grand Hotel', 29.2606109534802, 88.89092266559601,''],
             //['Shigatse Manasarovar Hotel', 29.270475807563095, 88.89087975025177,''],
             //['Shigatse Shangdong Mansion', 29.26557391768497, 88.88239324092865,''],
             ['Holy Land Hotel', 29.267317098771326, 88.88189435005188,''],
             //['Denzin Hotel', 29.271486573763372, 88.87865960597992,''],
-            
             //江孜hotels坐标
             ['Gyantse Hotel',28.908927157641713, 89.6045994758606,''],
-            ['Jianzang Hotel',28.90934040074421, 89.6030706167221,''],  
+            ['Gyantse Jianzang Hotel',28.90934040074421, 89.6030706167221,''],  
             //定日珠峰hotels坐标
             //['Tingri Baiba Hotel', 28.632928072441434, 87.17458248138428,''],
             ['Everest Hotel', 28.63291394726706, 87.17448860406876,''],
@@ -51,12 +50,12 @@ function gm_initialize( e ) {
             ['Zhangmu Hotel', 27.98532305497405, 85.98381847143173,''],
             ['Sharpa Hotel', 27.986583128169777, 85.98305404186249,''],
             //林芝hotels坐标
-            ['Nyingchi Holiday Hotel', 29.66639420415487, 94.35520201921463,''],
-            ['Chongqing Xiaotiane Hotel', 29.266839774287874, 88.88052105903625,''],//坐标要修改
-            ['Mingren Business Hotel', 29.266839774287874, 88.88052105903625,''],//坐标要修改
+            ['Nyingchi Hotel', 29.66639420415487, 94.35520201921463,''],
+            ['Chongqi Xiaotiane Hotel', 29.654595861601337, 94.35854136943817,''],
+            ['Nyingchi Mingren Business Hotel', 29.656434927780456, 94.35976982116699,''],
             //山南hotels坐标
-            ['Tsedang Hotel', 29.23196098171095, 91.77076488733292,''], 
-            ['Yalonghe Hotel',29.231450723281643, 91.7643141746521,''],
+            ['Tsetang Hotel', 29.23196098171095, 91.77076488733292,''], 
+            ['Yalong River Hotel',29.231450723281643, 91.7643141746521,''],
             ['Tibet Yulong Holiday Hotel',29.23177841247336, 91.77262365818024,''],
             //火车站坐标
             ['Train Station',29.623105090607822, 91.0705018043518,'imagesnew/hotel/train-station-icon.png'],
@@ -65,7 +64,7 @@ function gm_initialize( e ) {
     ];
     
     var redlocal = 'imagesnew/hotel/hotel-icon1.png';
-    var greenlocal = 'imagesnew/hotel/hotel-icon2.png';
+    var greenlocal = '';
     var new_latlng1,latlng2;    
     //区分当前坐标
     for(var i = 0; i < attractions.length-2; i++) {
@@ -83,7 +82,7 @@ function gm_initialize( e ) {
     var latlng = new google.maps.LatLng( new_latlng1*1,new_latlng2*1 );//29.646605206678142, 91.13964915275574
 
     var myOptions = {
-        zoom : 8,
+        zoom : 16,
         center : latlng,
         mapTypeId : google.maps.MapTypeId.ROADMAP
     };

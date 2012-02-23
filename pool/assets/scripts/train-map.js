@@ -36,7 +36,7 @@
     '159 Huanshi Xilu, Yuexiu District, Guangzhou 广州市环市西路159号 ',
     '<h3>How to get there?</h3>'+
     '<p><strong>By taxi:</strong>the cost from Baiyunshan Airport to the railway station is normally around 80 RMB.</p>'+
-    '<p><strong>By subway:</strong>served by Line 1 and 2. ','Train to Lhasa from Guangzhou</p>','0'
+    '<p><strong>By subway:</strong>served by Line 1 and 2.</p>','Train to Lhasa from Guangzhou','0'
     ],
     ['icon-lanzhou','Lanzhou Railway Station','<img class="attraction-pic" src="/imagesnew/train/lanzhou-railway-station-210.jpg" />'+
     'Huochezhan West Road, Chengguan, Lanzhou, 兰州市火车站东路393号',
@@ -46,9 +46,6 @@
     ],
     ['icon-xian','Xian Railway Station','<img class="attraction-pic" src="/imagesnew/train/xian-station-210.jpg" />'+
     '',
-    '<h3>How to get there?</h3>'+
-    '<p><strong>By taxi:</strong>the cost from Baiyunshan Airport to the railway station is normally around 80 RMB.</p>'+
-    '<p><strong>By subway:</strong>served by Line 1 and 2.  </p>'+
     '<p>The historical heart of China, is one of the most importance transportation junction of China railway.</p>'+
     '<p>However, only 3 trains to Tibet stop at Xian Railway Station, which are T264/T265 from Guangzhou to Lhasa,</p>'+
     '<p>T164/T165 from Shanghai to Lhasa and T222/T223 from Chengdu to Lhasa. So it is more difficult to get a train </p>'+

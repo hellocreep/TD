@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}hotel-index{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/aboutus.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block script %}
+<script>
+    $(function() {
+        $('.accordion li').click(function() {
+            $( this ).toggleClass( 'accordion-title-active' ).next().toggle('fast');
+            return false;
+        }).next().hide();
+});
+ 
+    </script>
+{% endblock %}
+{% block body%}
+{% include 'header.html' %}
+<div class="bread"></div>
+<div class="wrapper clearfix">
+	{% include 'sidebar-aboutus.html' %}
+	<div class="content">
+		<div class="tc-info">
+			<img src="/imagesnew/bruce.jpg" alt="Bruce Tang">
+			<div class="tc-info-con">
+			<h2>Bruce Tang</h2>
+			<h3>Expertise</h3>
+			<ul class="tc-ul clearfix">
+				<li class="first">
+					<h4>Tibet</h4>
+					<P>
+						Tibet Trekking; Biking;
+						Religion & culture discovery;
+						Overland; Tibet train
+						experience
+					</P>
+				</li>
+				<li>
+					<h4>China</h4>
+					<p>
+						Sichuan trekking, Silk Road,
+						Xinjiang discovery; Guilin;
+						Hong Kong; Shanghai;
+						Beijing; Xian
+					</p>
+				</li>
+			</ul>
+			<p class="tc-cotact">
+				Why not take the advantages of Bruce's Tibet & China travel experie-
+				nce to design a trip just for you, that suits your budget and interests.
+				His passion on travel and help never fades away!
+			</p>
+			<p class="tc-email"><span><a href="###">Email Bruce</a></span></p>
+			<p class="tc-email">OR Call him at +86-15680858840</p>
+			</div>
+		</div>
+		<div class="tc-info clearfix">
+			<h3>Biography</h3>
+			<div class="tc-info-con2">
+			<p class="tc-talk">
+			    <img src="/imagesnew/quote-left.png"/>
+				Tibet is the trip of a lifetime, and I'm here to make your travel experience exceptional!
+				That means I'll work with you to create your ideal itinerary and then make sure all of the
+				details of your trip are taken care of. I love tekking, biking, and the off-the-beaten-path
+				experience, so make sure to ask me how to have a differnt time in Tibet and China.
+				<img src="/imagesnew/qutoe-right.png"/>
+			</p>
+			<p>
+				A bit about Bruce  -  Bruce's passsion to travel steps from his senior high school
+				graduation trip 15 years ago - hiking from Guilin to Yangshuo, China. He graduated from
+				a college of tourism in Guilin, for the recent 7 years, he has almost discovered every corne
+				of China, especially Tibet and Sichuan Province.
+			</p>
+			</div>
+			<img class="tc-img" src="/imagesnew/bruce.jpg" alt="Bruce Tang">
+			
+		</div>
+		<div class="tc-faq">
+			<h2>Tibet & China Travel Tips from Bruce (12)</h2>
+			<ol class="accordion">
+				<li class="accordion-title odd">it safe to take a Tibet trekking tour?<span class="accordion-tri"></span></li>
+				<div class="accordion-content">
+				    <p>fdfdfdfdfd</p>
+				</div>
+				<li class="accordion-title">Is it enough to take a Everest base camp hike with my Tibet travel permit?<span class="accordion-tri"></span></li>
+				<div class="accordion-content">
+				    <p>fdfdfdfdfdfdfdfdf</p>
+				</div>
+				<li class="accordion-title odd">it safe to take a Tibet trekking tour?<span class="accordion-tri"></span></li>
+                <div class="accordion-content">
+                    <p>fdfdfdfdfd</p>
+                </div>
+			</ol>
+			<h3>Can't find Answer?an't find Answer?</h3>
+			<h4> an't find Answer?an't find Answer?</h4>    
+			<h4>an't find Answer?</h4>
+		</div>
+		<div class="custom-say">
+			<h2>See What My Customers Say & See! </h2>
+			<ul class="clearfix">
+				<li>
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
+				</li>
+				<li>
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
+				</li>
+				<li>
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
+				</li>
+				<li>
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
+				</li>
+				<li>
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
+				</li>
+				<li>
+					<img src="/imagesnew/bruce.jpg" alt="Bruce with customers">
+				</li>
+			</ul>
+			<div class="letter-content">
+				<pre>
+Dear Bruce,
+Tibet is the trip of a lifetime, and I'm here to make your 
+travel experience exceptional!
+That means I'll work with you to create your 
+ideal itinerary and then make sure all
+of the details of your trip are taken care of. 
+I love tekking, biking, and the off-the-beaten-path experience, 
+so make sure to ask me how to have a differnt time in Tibet and China			    
+				</pre>
+			</div>
+			<div class="letter-content">
+                <pre>
+                    
+                </pre>
+            </div>
+		</div>
+	</div>
+</div>
+{% include 'footer.html' %}
+{% endblock %}

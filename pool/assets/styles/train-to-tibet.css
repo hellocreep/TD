@@ -137,7 +137,7 @@ dl.recommend-info:hover{
 }
 
 .lightbox-close:hover {
-    background-color:#F5EACE;
+    color: blue;
 }
 
 .station-list {
@@ -539,7 +539,6 @@ dl.recommend-info:hover{
 
 .pic-list {
     margin: 20px 0 0 0;
-    text-align: center;
 }
 
 .pic-list li{
@@ -560,7 +559,12 @@ dl.recommend-info:hover{
 }
 
 .pic-list li p {
-    height: 80px;
+    height: 95px;
+    padding: 0 12px;
+}
+
+.pic-list li a {
+    padding: 0 12px;
 }
 
 .pic-list li img {
@@ -569,7 +573,7 @@ dl.recommend-info:hover{
     width: 184px;
     height: 124px;
     display: block;
-    margin: 0 0 10px;
+    margin: 0 auto;
 }
 /*
 	author:chenzhao
