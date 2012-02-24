@@ -64,7 +64,7 @@ function gm_initialize( e ) {
     ];
     
     var redlocal = 'imagesnew/hotel/hotel-icon1.png';
-    var greenlocal = '';
+    var greenlocal = 'imagesnew/hotel/hotel-icon2.png';
     var new_latlng1,latlng2;    
     //区分当前坐标
     for(var i = 0; i < attractions.length-2; i++) {
@@ -128,7 +128,10 @@ var url =  ['http://hatchee.cn'];
 
 
 $( function(){
-   
+        $( '.map-show' ).click(function( e ){
+            e.preventDefault();
+            $( '#show_map' ).click();
+        })    
         $( '#show_map' ).click( gm_initialize );
         $( '#close_map' ).click( function( e ){
             e.preventDefault();
