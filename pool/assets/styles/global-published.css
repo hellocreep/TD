@@ -815,11 +815,14 @@ a:hover {
 	line-height:24px;
 	background:url(/imagesnew/nav-dot.png) no-repeat 26px center transparent;
 	position:relative;
+	
 }
 
 .subnav-left li a:hover{
 	color:#888888;
 	background-color:transparent;
+	cursor:pointer;
+	text-decoration:none;
 }
 
 .subnav-left li a.noicon {
