@@ -49,7 +49,6 @@ $(function(){
             num: _num
         }
         $( '#pager' ).autoPager( pager_opts );
-
     
 });
 })(jQuery)

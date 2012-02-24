@@ -37,6 +37,8 @@ margin: 0 0 0 3px;
     width: 100%;
     margin: 0 -15px 10px;
     color: #666666;
+    bottom: 0;
+    left: 0;
 }
 
 .info_dd {
