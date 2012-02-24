@@ -86,7 +86,7 @@
                 $( '.attraction-title' ).text( trainStation[i][1] );
                 $( '.attraction-des' ).html( trainStation[i][2] );
                 $( '.attraction-faq' ).html( trainStation[i][3] );
-                $( '.lightbox' ).fadeIn( 'slow' );
+                $( '.lightbox' ).fadeIn( 'fast' );
             }
         }
         $( '.mask' ).show().click( function(){
