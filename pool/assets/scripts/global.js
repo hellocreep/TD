@@ -20,6 +20,15 @@
            $( '.sidebar' ).height($( '.content' ).height() + 60);
        }
    }
+   //去除字段最后的逗号
+   $.fn.removeComma = function( target ){
+
+        $( this ).each(function() {
+            var model = $( this ).html();
+            var len = model.lastIndexOf( ',' )
+            $( this ).html( model.substring( 0, len ))
+        })
+   }
     
 $( function(){
 
@@ -106,7 +115,11 @@ $( function(){
             $( this ).addClass( 'selected' );
         }
     });
-
+    
+    //train-info tag标签去逗号
+    $( '.tag' ).removeComma();
+    //酒店主页与内页surroundings 去逗号
+    $( '.surrounding-name' ).removeComma();
 
 });
 })( jQuery );
