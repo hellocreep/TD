@@ -1,180 +1,250 @@
-.tc-info{
+.tc-info {
 }
-
-.tc-info img{	
-	margin:10px 20px 10px 0;
+.tc-info img {
+	margin: 10px 0;
+	float:;
 }
-
-.tc-info-con{
-	width:378px;
-	float:right;	
+.tc-info-con {
+	width: 378px;
+	float: right;
 }
-
-.tc-info h2{
-	display:block;
-	padding-top:8px;
+.tc-info h2 {
+	display: block;
+	padding-top: 8px;
 }
-
-.tc-info h3{
-	color:#434343;
-	font-size:14px;
+.tc-info h3 {
+	color: #434343;
+	font-size: 14px;
 	margin: 10px 0 6px;
 }
-
 .tc-ul h4 {
-    background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
-    padding-left: 12px;
+	background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
+	padding-left: 12px;
 }
-
-.tc-ul li{
-	display:block;
-	float:left;
-	width:40%;
+.tc-ul li {
+	display: block;
+	float: left;
+	width: 40%;
 }
-
 .tc-ul li.first {
-    border-right: 1px dashed #DDDDDD;
-    margin-right: 28px;
-    padding-right: 10px;
+	border-right: 1px dashed #DDDDDD;
+	margin-right: 28px;
+	padding-right: 10px;
 }
-
-.tc-cotact{
-	width:360px;
-	margin-top:20px;
+.tc-cotact {
+	width: 360px;
+	margin-top: 20px;
 }
-
 .tc-email {
-    height: 30px;
-    text-align: right;
+	height: 30px;
+	text-align: right;
 }
-
 .tc-email span {
-    background: #8F1105;
-    float: right;
-    height: 25px;
-    border-radius: 4px;
-    line-height: 25px;
-    padding: 0 8px;
-    behavior: url(PIE.htc);
+	background: #8F1105;
+	float: right;
+	height: 25px;
+	border-radius: 4px;
+	line-height: 25px;
+	padding: 0 8px;
+	behavior: url(PIE.htc);
 }
-
 .tc-email a {
-    background: url("/imagesnew/email-icon-white.png") no-repeat right center;
-    padding-right: 20px;
-    color: #DEDEDE;
+	background: url("/imagesnew/email-icon-white.png") no-repeat right center;
+	padding-right: 20px;
+	color: #DEDEDE;
 }
-
 .tc-email a:hover {
-    text-decoration: none;
-    color: #FFFFFF;
+	text-decoration: none;
+	color: #FFFFFF;
 }
-
-.tc-info-con2{
-	width:435px;
+.tc-info-con2 {
+	width: 430px;
 	float: left;
 }
-.tc-img{
-	float:right;
-	width:180px;
-	height:200px;
+.tc-img {
+	float: right;
+	width: 180px;
+	height: 200px;
 }
-
-.tc-talk{
-	font-style:italic;
+.tc-talk {
+	font-style: italic;
 	margin-bottom: 15px;
 }
-
 .tc-talk img {
-    margin: 0;
+	margin: 0;
 }
-
 .tc-faq h2 {
-    margin: 10px 0 6px;
+	margin: 10px 0 6px;
 }
-
-.tc-faq h3,h4 {
-    color: #434343;
-    font-weight: normal;
-    margin-bottom: 10px;
+.tc-faq h3, h4 {
+	color: #434343;
+	font-weight: normal;
+	margin-bottom: 10px;
 }
-
-.tc-faq ol{
-    list-style: decimal inside none;
-    margin-bottom: 20px;
+.tc-faq ol {
+	list-style: decimal inside none;
+	margin-bottom: 20px;
 }
-
 .accordion-title {
-    height: 30px;
-    line-height: 30px;
-    cursor: pointer;
-    padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	padding: 0 10px;
 }
-
 .accordion-title.odd {
-    background: url("/imagesnew/grid.png") repeat-x 0 0;
+	background: url("/imagesnew/grid.png") repeat-x 0 0;
 }
-
-.accordion-content {
-    padding: 8px 0 0 10px;
+.accordion-content{
+	padding: 5px 10px;	
 }
-
+.accordion-content.odd {
+	background: url("/imagesnew/grid.png") repeat-x 0 0;
+}
 .accordion-tri {
-    position: relative;
-    height: 20px;
-    width: 20px;
-    background: url("/imagesnew/slide-icon.png") no-repeat center ;
-    float: right;
-    top: 5px;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	background: url("/imagesnew/slide-icon.png") no-repeat center;
+	float: right;
+	top: 5px;
 }
-
 .accordion-tri.active {
-    background-position: -9999px 0;
+	background-position: -9999px 0;
 }
-
 .custom-say {
-    
-}
 
+}
 .custom-say h2 {
-    margin: 10px 0 10px;
+	margin: 10px 0 10px;
 }
-
-.custom-say ul li {
-    float: left;
-    display: inline;
-    margin: 0 13px 15px 0;
+.slideshow {
+	width: 100%;
+	height: 350px;
 }
-
-.custom-say ul li img {
-    width: 100px;
-    height: 80px;
-}
-
 .letter-content {
-    background: url(/imagesnew/grid.png) 0 0;
-    width: 650px;
-    margin-bottom: 20px;
-    padding: 10px 8px;
+	background: url(/imagesnew/grid.png) 0 0;
+	margin: 20px 0px;
+	padding: 10px 8px;
+	width: 666px
+}
+.letter-content p {
+	margin: 10px 0;
+}
+/*SLIDESHOW*/
+div.slideshow {
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+	width: 682px;
+	margin:20px 0;
+}
+div.slideshow a.control-previous, div.slideshow a.control-next {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+	display: block;
+	height: 320px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+	width: 100px;
+	z-index: 2;
+}
+div.slideshow div.images {
+	display: none;
+	height: 320px;
+	margin-left: -865px;
+	width: 10000px;
+	z-index: 1;
+}
+div.slideshow div.images div.image, div.slideshow div.images div.spacer {
+	float: left;
+	height: 350px;
+	margin: 0 1px;
+	position: relative;
+	width: 480px;
+}
+div.slideshow ul.indicator {
+	float: right;
+	margin: 8px 0 0;
+}
+div.slideshow a.control-previous {
+	left: 0;
+}
+div.slideshow a.control-next {
+	right: 0;
+}
+div.slideshow a.control-previous:hover, div.slideshow a.control-next:hover {
+	background: rgba(255,255,255,0.8);
+}
+div.slideshow a.control-previous span {
+	background: url("http://static.audleytravel.com/images/2011/components/component-slideshow-left.png") no-repeat scroll left top transparent;
+	display: block;
+	height: 32px;
+	margin: 159px auto;
+	width: 30px;
+}
+div.slideshow a.control-next span {
+	background: url("http://static.audleytravel.com/images/2011/components/component-slideshow-right.png") no-repeat scroll left top transparent;
+	display: block;
+	height: 32px;
+	margin: 159px auto;
+	width: 30px;
+}
+div.slideshow div.images div.image div.caption {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+	bottom: 0;
+	color: white;
+	left: 0;
+	line-height: 16px;
+	padding: 8px 0px;
+	position: absolute;
+	width: 480px;
+	text-indent:20px;
+}
+div.slideshow ul.indicator li {
+	background: none repeat scroll 0 0 #AAAAAA;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 8px;
+	margin: 1px 5px;
+	width: 12px;
+}
+div.slideshow ul.indicator li.active {
+	background: none repeat scroll 0 0 #666666;
+	border: 1px solid black;
+	margin: 0 4px;
+}
+div.slideshow ul.indicator li:hover {
+	background: #666666;
 }
 
+div.slideshow div.images div.image, 
+div.slideshow div.images div.spacer {
+    float: left;
+    height: 320px;
+    margin: 0 1px;
+    position: relative;
+    width: 480px;
+}
+div.slideshow div.images div.image img{
+	width:480px;
+	height:320px;
+}
 /*SIDEBAR*/
 .aboutus-side-foot {
-    background: url(/imagesnew/sidebar-flower-down.png) no-repeat top center;
-    padding-top: 45px;
-    text-align: center;
-    margin-top: 60px;
+	background: url(/imagesnew/sidebar-flower-down.png) no-repeat top center;
+	padding-top: 45px;
+	text-align: center;
+	margin-top: 60px;
 }
-
 .abuout-side-img {
-    background: url(/imagesnew/sidebar-flower-up.png) no-repeat bottom center;
-    padding-bottom: 45px;
-    margin-top: 10px;
+	background: url(/imagesnew/sidebar-flower-up.png) no-repeat bottom center;
+	padding-bottom: 45px;
+	margin-top: 10px;
 }
-
 .abuout-side-img img {
-    position: absolute;
+	position: absolute;
 }
-
 .abuout-side-img div {
-    margin-left: 65px;
+	margin-left: 65px;
 }
