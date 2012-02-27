@@ -262,7 +262,7 @@ a:hover {
 /*使面包屑导航样式与老版改良版一致。。*/
 
 .wrapper {
-	background-color:#ffffff;
+	background:url("/imagesnew/sidebar-bg.png") repeat-y 0 0  #ffffff;
     margin:0 auto;
     width: 970px;
 	position:relative;
@@ -718,8 +718,8 @@ a:hover {
     width: 240px;
     float: left;
     min-height: 1100px;
-	border-right:2px solid #b6b6b6;
-    background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;
+	/*border-right:2px solid #b6b6b6;
+    background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;*/
     padding-bottom: 80px;
 /*    -webkit-box-shadow: #666 1px 0px 3px;
     -moz-box-shadow: #666 1px 0px 3px;
@@ -765,11 +765,11 @@ a:hover {
 }
 
 .nav-left li a{
-	color:#222222;
-    height: 38px;
-    border-bottom: 1px solid #F8F3E7;
+	color:#434343;
+    height: 32px;
+    border-bottom: 1px solid  #F8F3E7;
     vertical-align: middle;
-    line-height: 2.5;
+    line-height: 32px;
     cursor: pointer;
     padding: 0 0 0 20px;
     font-size: 15px;
@@ -781,6 +781,7 @@ a:hover {
 .nav-left li a:hover {
     background-color: #FCFBF8;
 	text-decoration:none;
+	color:#222222;
 }
 
 .nav-left li a.nohover:hover {
@@ -790,11 +791,13 @@ a:hover {
 }
 
 .nav-left li a.active {
-    background: url(/imagesnew/sidebar-nav.png) no-repeat scroll 0 0 transparent;
+    background: url(/imagesnew/sidebar-nav.png) no-repeat scroll left center transparent;
     border: medium none;
     color: #FFFFFF;
     left: -1px;
     position: relative;
+    height:33px;
+    line-height:33px;
     width: 253px;
 	*width:233px;
 }
@@ -943,7 +946,7 @@ a:hover {
 .btn-enquiry a {
     color: #FFFFFF;
     display: block;
-	background:url(/imagesnew/btn-enquiry1.png) no-repeat;
+	background:url(/imagesnew/btn.png) no-repeat -301px -110px;
 	width:199px;
 	height:43px;
 	line-height:43px;
@@ -954,7 +957,7 @@ a:hover {
 }
 .btn-enquiry a:hover {
 	text-decoration:none;
-	background:url(/imagesnew/btn-enquiry2.png) no-repeat;
+	background:url(/imagesnew/btn.png) no-repeat -301px -161px;
 }
 .author-list {
     clear: both;

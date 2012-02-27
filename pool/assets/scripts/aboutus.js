@@ -2,12 +2,73 @@
  * @author Administrator
  */
 //ACCORDION脚本
-$(function() {
+/*$(function() {
 	$('.accordion li').click(function() {
 		$(this).toggleClass('accordion-title-active').next().toggle('fast');
 		return false;
 	}).next().hide();
 }); 
+*/
+$(document).ready(function(){
+	/*$('.accordion li:even').addClass('oddli');*/
+	$('.accordion h6').click(function(){
+		$(this).next().toggle('fast');
+	})
+});
+
+/*Tips from TC翻页*/
+
+$(document).ready(function(){
+	var listNum = $('.accordion li').length;
+	var pageNum = Math.ceil(listNum/4);
+	for(var i=1;i<=pageNum;i++){
+		$('ul.pagenum').append('<li>'+i+'</li>');
+	};
+	$('.accordion li p').hide();
+	$('.accordion li').hide();
+	for(var a=0;a<4;a++){
+			$('.accordion li').eq(a).show();	
+		}
+	$('ul.pagenum li').click(function(){
+		$('ul.pagenum li').removeClass();
+		$(this).addClass('activedcss');
+		var clickNum = $(this).text();
+		var n=(clickNum-1)*4;
+		$('.accordion li').hide();
+		for(var x=n;x<n+4;x++){
+			$('.accordion li').eq(x).show();	
+		}			
+	})
+});	
+
+/*
+$('.accordion li p').hide();
+$(document).ready(function Pagenate(perPage,aimDiv,ulId){
+	var listNum = $(aimDiv).length;
+	var pageNum = Math.ceil(listNum/perPage);
+	for(var i=1;i<=pageNum;i++){
+		$(ulId).append('<li>'+i+'</li>');
+	};
+	
+	$(aimDiv).hide();
+	for(var a=0;a<perPage;a++){
+			$(aimDiv).eq(a).show();	
+		}
+	$('ulId').click(function(){
+		$(ulId+' li').removeClass();
+		$(this).addClass('activedcss');
+		var clickNum = $(this).text();
+		var n=(clickNum-1)*perPage;
+		$(aimDiv).hide();
+		for(var x=n;x<n+perPage;x++){
+			$(aimDiv).eq(x).show();	
+		}			
+	})
+});	
+	
+Pagenate(5,".accordion li","pagenum");	
+
+*/
 
 
 //SLIDESHOW脚本
