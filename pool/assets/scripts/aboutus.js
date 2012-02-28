@@ -2,13 +2,6 @@
  * @author Administrator
  */
 //ACCORDION脚本
-/*$(function() {
- $('.accordion li').click(function() {
- $(this).toggleClass('accordion-title-active').next().toggle('fast');
- return false;
- }).next().hide();
- });
- */
 $(document).ready(function() {
 	/*$('.accordion li:even').addClass('oddli');*/
 	$('.accordion h6').click(function() {
