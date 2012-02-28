@@ -91,8 +91,8 @@
 .tc-faq-head{
     border-bottom: 1px solid #F2F4F6;
     margin-bottom: 10px;
-    margin-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 15px;
+    padding-bottom: 15px;
 }
 .tc-faq-head p{
 	width:70%;
@@ -149,14 +149,11 @@
 	background: url("/imagesnew/ask-icon.png") no-repeat 2px center;
 }
 .accordion li p {
-	width: 660px;
-	height:30px;
-	line-height:30px;
-	padding-left:20px;
-	border-top:1px dashed #ccc;
-	background:#fff;
-	
-	
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px dashed #CCCCCC;
+    line-height: 20px;
+    padding: 8px;
+    width: 664px;	
 }
 
 ul.pagenum {
