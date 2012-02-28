@@ -20,6 +20,8 @@
 .tc-ul h4 {
 	background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
 	padding-left: 12px;
+    line-height: 12px;
+    padding-left: 18px;
 }
 .tc-ul li {
 	display: block;
@@ -28,8 +30,8 @@
 }
 .tc-ul li.first {
 	border-right: 1px dashed #DDDDDD;
-	margin-right: 28px;
-	padding-right: 10px;
+    margin-right: 30px;
+    padding-right: 30px;
 }
 .tc-cotact {
 	width: 360px;
@@ -86,49 +88,42 @@
 	margin-bottom: 10px;
 	
 }
-.notfind{
-	width:600px;
-	margin:0 auto;
+.tc-faq-head{
+    border-bottom: 1px solid #F2F4F6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
-
-.notfind dt{
-	font-weight:bold;
-	padding-top:5px;
-	background: url("/imagesnew/ask-icon.png") no-repeat scroll 2px center transparent;
-	text-indent:30px;
+.tc-faq-head p{
+	width:70%;
+	float:left;
+	
 }
-.notfind dd{
-	border:1px dashed #ccc;
-	margin-top:5px;
-	padding:5px;
-}
-.notfind dd img{
-    border: 1px dashed white;
-    display: block;
-    height: 60px;
-    outline: 1px solid #DDDDDD;
-    overflow: hidden;
-    width: 60px;
-    float:left;
-    margin-right:5px;
-}
-.notfind span{
+.tc-faq-head span{
 	background: none repeat scroll 0 0 #8F1105;
     border-radius: 4px 4px 4px 4px;
     height: 25px;
     line-height: 25px;
-    padding: 3px 8px;
+    padding: 0px 8px;	
+    float:right;
+    margin-top:6px;
 }
-.notfind span a{
+
+
+.tc-faq-head span a{
 	background: url("/imagesnew/email-icon-white.png") no-repeat scroll right center transparent;
     color: #DEDEDE;
     padding-right: 20px;
-   text-decoration:none;
+    text-decoration:none;
+    
 }
-.notfind span a:hover{
+.tc-faq-head span a:hover{
 	text-decoration:none;
 	color:#fff;
 }
+
+
+
 .accordion li{
 	display:block;
 	border:1px dotted #ccc;
@@ -145,7 +140,7 @@
 .accordion li h6 {
 	font-weight:normal;
 	color:#434343;
-	text-indent:30px;
+	text-indent:25px;
 	width: 100%;
 	height:30px;
 	line-height:28px;
@@ -185,9 +180,32 @@ ul.pagenum li.activedcss {
 	color:#fff;
 }
 
+ul.letter-page {
+	display:block;
+	margin:0 auto;
+	width:100px;	
+}
+ul.letter-page li {
+	border:1px solid #ccc;
+	width:18px;
+	height:18px;
+	float:left;
+	margin:0 1px;
+	text-align:center;
+	line-height:18px;
+	cursor:pointer;
+}
+ul.letter-page li:hover,
+ul.letter-page li.activedcss {
+	border:1px solid #922811;
+	background:#922811;
+	color:#fff;
+}
+
+
 
 .custom-say{
-	margin-top:30px;
+	margin-top:60px;
 }
 
 /*SLIDESHOW*/
@@ -325,11 +343,17 @@ div.slideshow div.images div.image img{
 .abuout-side-img {
 	background: url(/imagesnew/sidebar-flower-up.png) no-repeat bottom center;
 	padding-bottom: 45px;
-	margin-top: 10px;
+	margin-top: 5px;
+	position: relative;
 }
 .abuout-side-img img {
-	position: absolute;
+    left: -18px;
+    position: absolute;
+    top: 2px;
 }
-.abuout-side-img div {
-	margin-left: 65px;
+.abuout-side-img p {
+    margin-left: 90px;
+    margin-right: 14px;
+    font-size:12px;
+    text-align: left;
 }
