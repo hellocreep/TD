@@ -410,7 +410,7 @@ a:hover {
 	height: 35px;
 	list-style-type: none;
 	position: relative;
-	width: 960px;
+	width: 970px;
 	z-index: 210;
 	float:left;
 	margin-top:24px;
@@ -1021,7 +1021,9 @@ a:hover {
 
 a.reco-title{
     display:block;
+    /*
     background:url("/imagesnew/train_black.png") no-repeat 0 0;
+    */
     color:#434343;
     padding: 2px 0 0 20px;
     font-weight:bold;
