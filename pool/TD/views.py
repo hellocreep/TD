@@ -24,3 +24,6 @@ def sitemap(request):
 
 def aboutus(request):
     return render_to_response('aboutus.html',{})
+
+def contactus(request):
+    return render_to_response('contactus.html',{})

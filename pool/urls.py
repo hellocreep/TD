@@ -32,5 +32,6 @@ urlpatterns += patterns('TD.views',
     (r'^flight-to-tibet/$','flight_to_tibet'),
     (r'^hotel-form/$','hotel_form'),
     (r'^aboutus/$','aboutus'),
+    (r'^contactus/$','contactus'),
     (r'^$','sitemap'),
 )
