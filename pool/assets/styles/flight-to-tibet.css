@@ -1,9 +1,10 @@
 .timetable {
 	margin-top: 20px;
+	border-bottom:1px solid #DDDDDD;
 }
 
 .timetable h2 {
-	margin-bottom: 15px;
+	margin: 15px 0 15px;
 }
 
 .timetable-title {
@@ -14,7 +15,10 @@
 
 .timetable-title li {
     float: left;
-    padding: 5px 24px;
+    padding: 5px 8px;
+    text-align: center;
+    width: 95px;
+    color: #FFFFFF;
 }
 
 .schedule-detail {
@@ -24,7 +28,6 @@
 
 .flight-rows {
     border-top: 1px solid #92240D;
-    border-bottom: 3px solid #DDDDDD;
     background: #FBFBFB;
 }
 
@@ -35,13 +38,14 @@
 
 .flight-col1 {
     float: left;
-    padding: 30px 22px 0;
+    padding: 30px 0 0 25px;
+    width:90px;
 }
 
 .flight-col2 {
     float: left;
-    margin-left: 30px;  
-    border-bottom: 2px solid #FFFFFF;
+    width: 565px; 
+
 }
 
 .flight-col2 ul {
@@ -51,9 +55,10 @@
 .flight-col2 li {
     text-align: center;
     float: left;
-    padding: 10px;
+    padding: 5px;
     border-left: 1px dashed #DDDDDD;
-    height: 40px;
+    height: 55px;
+    width: 100px;
 }
 
 .flight-col2 dt {
@@ -61,28 +66,109 @@
 }
 
 .flight-col2 dd {
-    color: #DDDDDD;
+    color: #aaa;
 }
 
-.li-col1 {
-    width: 90px;
+
+/*LIFE ON BOARD*/
+.life-on-board {
+    margin-top: 35px;
 }
 
-.li-col2 {
-    width: 80px;
+.pic-list {
+    margin: 20px 0 0 0;
 }
 
-.li-col3 {
-    width: 65px;
+.pic-list li{
+    margin-right: 20px;
+    float: left;
+    width: 30%;
 }
 
-.li-col4 {
-    width: 90px;
+.pic-list li p {
+    height: 60px;
 }
 
-.li-col5 {
-    width: 65px
+.pic-list li img {
+/*    outline: 1px solid #DDDDDD;
+*/    border: 1px solid white;
+    width: 184px;
+    height: 124px;
+    display: block;
+    margin: 0 0 10px;
 }
+.timetable {
+	margin-top: 20px;
+	border-bottom:1px solid #DDDDDD;
+}
+
+.timetable h2 {
+	margin: 15px 0 15px;
+}
+
+.timetable-title {
+    background-color: #92240D;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.timetable-title li {
+    float: left;
+    padding: 5px 8px;
+    text-align: center;
+    width: 95px;
+    color: #FFFFFF;
+}
+
+.schedule-detail {
+    width: 100%;
+    text-align: center;
+}
+
+.flight-rows {
+    border-top: 1px solid #92240D;
+    background: #FBFBFB;
+}
+
+.timetable-end {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #DDDDDD;
+}
+
+.flight-col1 {
+    float: left;
+    padding: 30px 0 0 25px;
+    width:90px;
+}
+
+.flight-col2 {
+    float: left;
+    width: 565px; 
+
+}
+
+.flight-col2 ul {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.flight-col2 li {
+    text-align: center;
+    float: left;
+    padding: 5px;
+    border-left: 1px dashed #DDDDDD;
+    height: 55px;
+    width: 100px;
+}
+
+.flight-col2 dt {
+    font-weight: bold;
+}
+
+.flight-col2 dd {
+    color: #aaa;
+}
+
+
 /*LIFE ON BOARD*/
 .life-on-board {
     margin-top: 35px;
