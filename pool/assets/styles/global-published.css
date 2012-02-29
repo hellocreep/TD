@@ -410,7 +410,7 @@ a:hover {
 	height: 35px;
 	list-style-type: none;
 	position: relative;
-	width: 960px;
+	width: 970px;
 	z-index: 210;
 	float:left;
 	margin-top:24px;
@@ -475,14 +475,16 @@ a:hover {
 
 #nav-last li{
 	float:left;
+	margin: 5px 0 0;
 }
 #nav-last li a{
+	display: block;
 	color:#ffffff;
 	background:#505050;
 	font-size:10px;
-	margin:5px 2px;
-	height:24px;
-	line-height:24px;
+	margin: 0 2px 0;
+	height:16px;
+	line-height: 16px;
 	padding:7px 3px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
@@ -772,7 +774,7 @@ a:hover {
     line-height: 32px;
     cursor: pointer;
     padding: 0 0 0 20px;
-    font-size: 15px;
+    font-size: 13px;
     display: block;
     text-decoration: none;
 }
@@ -1019,7 +1021,9 @@ a:hover {
 
 a.reco-title{
     display:block;
+    /*
     background:url("/imagesnew/train_black.png") no-repeat 0 0;
+    */
     color:#434343;
     padding: 2px 0 0 20px;
     font-weight:bold;
@@ -1053,3 +1057,4 @@ a.reco-click:hover{
 }
 
 /*火车页面sidebar样式-----end*/
+

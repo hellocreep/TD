@@ -1,4 +1,4 @@
-( function ( $ ){
+;( function ( $ ){
 
 function gm_initialize( e ) {
     e.preventDefault();
@@ -6,7 +6,7 @@ function gm_initialize( e ) {
     $( '.map_container' ).show();
     
      //当前attration
-    var thisAttraction = $( '.hotel_h1Title' ).text()//'St Regis Lhasa Resort';
+    var thisAttraction = $( '.hotel_h1Title' ).text();//'St Regis Lhasa Resort';
     
     //attractions 坐标
     var attractions = [
@@ -69,7 +69,7 @@ function gm_initialize( e ) {
         var greenlocal = 'imagesnew/hotel/hotel-icon2.png';
         var new_latlng1, latlng2;
         //区分当前坐标
-        for(var i = 0; i < attractions.length - 2; i++) {
+        for(var i = 0; i < attractions[0].length - 2; i++) {
             if(attractions[i][0] == thisAttraction) {
                 attractions[i][3] = redlocal;
                 new_latlng1 = attractions[i][1];
