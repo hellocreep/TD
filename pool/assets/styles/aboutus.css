@@ -415,7 +415,6 @@ div.slideshow div.images div.image img{
 	margin-bottom: 0;
 }
 
-
 .contact-form1 ul {
 	margin-left: 50px;
 	border: 1px solid #dddfe6;
@@ -438,12 +437,12 @@ div.slideshow div.images div.image img{
 .contact-form1 .call-question {
 	float: right;
     position: relative;
-    top: -100px;
+    top: -125px;
 }
 
 .call-question textarea{ 
-    width: 300px;
-    height: 55px;
+    width: 260px;
+    height: 80px;
 }
 
 .contact-form1 .call-question label {
@@ -475,7 +474,7 @@ div.slideshow div.images div.image img{
     float: left;
     margin-right: 8px;
     text-align: right;
-    width: 130px;
+    width: 150px;
 }
 
 .contact-form2 ul li textarea {

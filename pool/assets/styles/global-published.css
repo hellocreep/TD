@@ -167,6 +167,20 @@ a:hover {
 	background-position:0 -39px;
 }
 
+input[type="text"]{
+	height: 17px;
+	width: 180px;
+}
+
+input[type="text"],textarea {
+	 border: 1px solid #DEDEDE;
+	 border-radius: 3px;
+	 padding: 3px 8px;
+}
+
+input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
+	border-color: #B5DFF1;
+}
 
 .title-margin {
     margin: 20px 0 6px;
