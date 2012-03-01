@@ -562,4 +562,36 @@ div.slideshow div.images div.image img{
 }
 
 /*Our Team*/
-
+.boxzone{
+	width: 690px;
+	min-height:100px;
+	
+	margin-top:10px;
+	position: relative;
+	left:0px;
+}
+.boxzone div{
+	float:left;
+	overflow:hidden;
+	min-height:100px;
+	
+}
+.width260{
+	width:270px;
+	
+	
+}
+.width410{
+	width:420px;
+}
+.boxzone img{
+	float:left;
+	margin:5px;
+}
+.boxzone img:hover{
+	margin:4px;
+	border:1px solid #fff;
+	outline:1px dashed #dddddd;
+	
+	cursor:pointer;
+}
