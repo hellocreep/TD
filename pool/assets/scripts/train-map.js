@@ -127,7 +127,11 @@
                     $( '.marker' ).show();
                     $( '.attraction-icons' ).show();
                 }
-                if( $('.content').attr('name')=='train-qinghai'){
+                if( $( '.content').attr('name')=='train-qinghai'){
+                    $( '.marker' ).hide();
+                    $( '.attraction-icons' ).hide();
+                }
+                if( $( '.content[name*="flight"]' ) ||$( '.content[name*="road"]' )){
                     $( '.marker' ).hide();
                     $( '.attraction-icons' ).hide();
                 }
