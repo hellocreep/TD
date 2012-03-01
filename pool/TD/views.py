@@ -30,3 +30,9 @@ def contactus(request):
 
 def whychooseus(request):
     return render_to_response('whychooseus.html',{})
+
+def ourteam(request):
+    return render_to_response('ourteam.html',{})
+
+def salesteam(request):
+    return render_to_response('salesteam.html',{})
