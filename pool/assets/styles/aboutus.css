@@ -575,3 +575,6 @@ div.slideshow div.images div.image img{
 	border: 2px solid #fa9005;
 }
 
+.images-pannel a {
+	text-decoration: none;
+}
