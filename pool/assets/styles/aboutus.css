@@ -358,10 +358,11 @@ div.slideshow div.images div.image img{
 .contact-header {
 	width: 680px;
 	height: 330px;
-	background: url(/imagesnew/sample/bg-aboutus-head.png) no-repeat center center;
+	/*background: url(/imagesnew/sample/bg-aboutus-head.png) no-repeat center center;*/
 	position: relative;
 	border: 1px solid #dddfe6;
 	margin-top:13px;
+	padding: 1px
 }
 
 .contact-header p {
@@ -408,7 +409,7 @@ div.slideshow div.images div.image img{
 }
 
 .contact-form p {
-	margin-left: 30px;
+	margin-left: 55px;
 }
 
 .contact-form ul {
@@ -449,13 +450,17 @@ div.slideshow div.images div.image img{
 
 .contact-form .contact-icon {
 	height: 26px;
-	padding-left: 45px;
-	line-height: 32px;
+	padding-left: 35px;
+	line-height: 27px;
 	margin: 0 0 10px 8px;
 }
 
-.contact-form1 .contact-phone {
-	background: url(/imagesnew/tel-aboutus.png) no-repeat left center;
+.contact-form .contact-phone {
+	background: url(/imagesnew/call-contact.png) no-repeat left center;
+}
+
+.contact-form .contact-email {
+	background: url(/imagesnew/email-contact.png) no-repeat left center;
 }
 
 .contact-form2 {
@@ -463,10 +468,13 @@ div.slideshow div.images div.image img{
 }
 
 .visit-us h3 {
+	height: 30px;
+    line-height: 30px;
 	margin-bottom: 10px;
-	padding: 0 0 4px 30px;
+	padding: 0 0 0 30px;
 	border-bottom: 1px solid #dddddd;
 	color: #434343;	
+	background: url(/imagesnew/person-contact.png) no-repeat left center;
 }
 
 .visitus-head {
@@ -478,13 +486,15 @@ div.slideshow div.images div.image img{
 }
 
 .visit-title2 {
-	margin-bottom: 20px;
-	margin-left: 50px;
+	margin-bottom: 5px;
+	margin-left: 30px;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .visit-us .visitus-head img {
 	float: left;
-	margin-right: 10px;
+	margin-right: 28px;
 }
 
 .office-location {
@@ -497,7 +507,7 @@ div.slideshow div.images div.image img{
 
 .section ul {
 	margin-top: 5px;
-	padding: 20px 0 25px 50px;
+	padding: 20px 0 25px 30px;
 	border-top: 1px solid #dddfe6;
 	border-bottom: 1px solid #dddfe6;
 }
