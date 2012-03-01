@@ -358,10 +358,11 @@ div.slideshow div.images div.image img{
 .contact-header {
 	width: 680px;
 	height: 330px;
-	background: url(/imagesnew/sample/bg-aboutus-head.png) no-repeat center center;
+	/*background: url(/imagesnew/sample/bg-aboutus-head.png) no-repeat center center;*/
 	position: relative;
 	border: 1px solid #dddfe6;
 	margin-top:13px;
+	padding: 1px
 }
 
 .contact-header p {
@@ -449,8 +450,8 @@ div.slideshow div.images div.image img{
 
 .contact-form .contact-icon {
 	height: 26px;
-	padding-left: 45px;
-	line-height: 32px;
+	padding-left: 35px;
+	line-height: 27px;
 	margin: 0 0 10px 8px;
 }
 
