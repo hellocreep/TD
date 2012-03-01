@@ -546,6 +546,32 @@ div.slideshow div.images div.image img{
 	font-weight: bold;
 }
 
-/*Why Choose Us页面特别样式*/
+/*Why Choose Us*/
+.block-container {
+	margin: 0 0 20px 0;
+	width: 680px;
+}
 
+.block-container .words-pannel {
+	width: 31%;
+	float: left;
+	padding: 10px;
+}
+
+.block-container .images-pannel {
+	width: 65%;
+	float: left;
+}
+
+.images-pannel img {
+	display: inline;
+	margin: 3px;
+	border: 1px solid #a69c8f;
+}
+
+.images-pannel img:hover {
+	padding: 1px;
+	margin: 1px;
+	border: 2px solid #fa9005;
+}
 
