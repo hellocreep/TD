@@ -363,6 +363,7 @@ div.slideshow div.images div.image img{
 	background: url(/imagesnew/sample/bg-aboutus-head.png) no-repeat center center;
 	position: relative;
 	border: 1px solid #dddfe6;
+	margin-top:13px;
 }
 
 .contact-header p {
@@ -544,3 +545,7 @@ div.slideshow div.images div.image img{
 	margin: 30px 0 30px 125px;
 	font-weight: bold;
 }
+
+/*Why Choose Us页面特别样式*/
+
+

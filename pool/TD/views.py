@@ -27,3 +27,6 @@ def aboutus(request):
 
 def contactus(request):
     return render_to_response('contactus.html',{})
+
+def whychooseus(request):
+    return render_to_response('whychooseus.html',{})
