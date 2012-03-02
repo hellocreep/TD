@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}hotel-index{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/aboutus.css" type="text/css" rel="stylesheet"/>
+<link href="/assets/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen" />
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript" src="/assets/scripts/aboutus.js"></script>
+<script type="text/javascript" src="/assets/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="/assets/fancybox/jquery.easing-1.3.pack.js"></script>
+{% endblock %}
+{% block body%}
+{% include 'header.html' %} <div class="bread"></div>
+<div class="wrapper clearfix">
+	{% include 'sidebar-aboutus.html' %}
+	<div class="content">
+		<h1>Why Tour Tibet with us?</h1>
+		
+		<div class="block-container clearfix">
+			<div class="words-pannel">
+				For many experienced travellers, Tibet is the ultimate destination - 
+				an exotic land on the roof 
+				of the world - for us it is our home. Each year we migrate to Tibet as the 
+				nomads migrate to the higher summer pastures.
+				 I guess we are now nomads too. We know and 
+				 understand Tibet better than any other travel company. 
+				</br>
+				Tibet is the trip of a lifetime. We believe that your trip 
+				should be truly unforgettable, so 
+				we never take any chances. Take the hassle out 
+				of planning your next Tibet trip, and leave it
+				 to Tibetdiscovery. We've spent 20 years 
+				 discovering the every corner
+				 of Tibet for the best things to see and do in the Holy Land, 
+				 and we can't wait to share it all with you. 
+			</div>
+			<div class="images-pannel">
+				<a href="/imagesnew/sample/why-1.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-1.jpg" width="317" />
+				</a>
+				<a href="/imagesnew/sample/why-2.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-2.jpg"  height="209" />
+				</a>
+				<a href="/imagesnew/sample/why-3.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-3.jpg" />
+				</a>
+				<a href="/imagesnew/sample/why-4.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-4.jpg" width="210" height="167"/>
+				</a>
+			</div>
+		</div>
+		
+		<div class="block-container clearfix">
+			<div class="images-pannel">
+				<a href="/imagesnew/sample/why-1.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-1.jpg" width="317"/>
+				</a>
+				<a href="/imagesnew/sample/why-2.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-2.jpg"  height="209" />
+				</a>
+				<a href="/imagesnew/sample/why-3.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-3.jpg" />
+				</a>
+				<a href="/imagesnew/sample/why-4.jpg" rel="images-gallery">
+					<img src="/imagesnew/sample/why-4.jpg" width="210" height="167"/>
+				</a>
+			</div>
+			
+			<div class="words-pannel">
+				When helping your tour planning, they are always prompt and efficient, getting back to you within 0.5~23.5hrs. You can rely on their first-hand knowledge and boundless enthusiasm. At Tibet Discovery Tours we believe in an honest 'tell is how it is' approach to planning an itinerary, suggesting sights, selecting accommodation and discussing the practicalities of your Tibet travel. 
+				<br>
+				During your Tibet tour, your personal travel consultant will remain in contact with you, continually checking if everything is going well as planned. In the case of unexpected events, such as the late flight, activity cancellation, or you do not feel well, your travel consultant will react promptly and responsibly with alternative plans to make sure nothing is going to ruin your experience. Anyway, remember that your travel consultant is always just a phone call away! 
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</div>
+</div>
+</div>
+{% include 'footer.html' %}
+{% endblock %}

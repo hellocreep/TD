@@ -1,90 +1,6 @@
-/**
- * @author Administrator
- */
-//ACCORDION脚本
-$(document).ready(function() {
-	/*$('.accordion li:even').addClass('oddli');*/
-	$('.accordion h6').click(function() {
-		$(this).next().toggle('fast');
-	})
-});
-/*Tips from TC翻页*/
-
-$(document).ready(function() {
-	var listNum = $('.accordion li').length;
-	var pageNum = Math.ceil(listNum / 4);
-	for(var i = 1; i <= pageNum; i++) {
-		$('ul.pagenum').append('<li>' + i + '</li>');
-	};
-	$('.accordion li p').hide();
-	$('.accordion li').hide();
-	$('ul.pagenum li').first().addClass('activedcss');
-	for(var a = 0; a < 4; a++) {
-		$('.accordion li').eq(a).show();
-	}
-	$('ul.pagenum li').click(function() {
-		$('ul.pagenum li').removeClass();
-		$(this).addClass('activedcss');
-		var clickNum = $(this).text();
-		var n = (clickNum - 1) * 4;
-		$('.accordion li').hide();
-		for(var x = n; x < n + 4; x++) {
-			$('.accordion li').eq(x).show();
-		}
-	})
-});
-/*
- $('.accordion li p').hide();
- $(document).ready(function Pagenate(perPage,aimDiv,ulId){
- var listNum = $(aimDiv).length;
- var pageNum = Math.ceil(listNum/perPage);
- for(var i=1;i<=pageNum;i++){
- $(ulId).append('<li>'+i+'</li>');
- };
-
- $(aimDiv).hide();
- for(var a=0;a<perPage;a++){
- $(aimDiv).eq(a).show();
- }
- $('ulId').click(function(){
- $(ulId+' li').removeClass();
- $(this).addClass('activedcss');
- var clickNum = $(this).text();
- var n=(clickNum-1)*perPage;
- $(aimDiv).hide();
- for(var x=n;x<n+perPage;x++){
- $(aimDiv).eq(x).show();
- }
- })
- });
-
- Pagenate(5,".accordion li","pagenum");
-
- */
-$(document).ready(function() {
-	var listNum = $('.letter-content').length;
-	var pageNum = Math.ceil(listNum / 4);
-	for(var i = 1; i <= pageNum; i++) {
-		$('ul.letter-page').append('<li>' + i + '</li>');
-	};
-	$('ul.letter-page li').first().addClass('activedcss');
-	for(var a = 0; a < 4; a++) {
-		$('.letter-content').eq(a).show();
-	}
-	$('ul.letter-page li').click(function() {
-		$('ul.letter-page li').removeClass();
-		$(this).addClass('activedcss');
-		var clickNum = $(this).text();
-		var n = (clickNum - 1) * 4;
-		$('.letter-content').hide();
-		for(var x = n; x < n + 4; x++) {
-			$('.letter-content').eq(x).show();
-		}
-	})
-});
-//SLIDESHOW脚本
-(function(a) {
-	a.fn.slideshow = function(b) {
+(function() {
+	//PIC SLIDE
+	$.fn.slideshow = function(b) {
 		return this.each(function() {
 			var j = a(this);
 			var d = j.find("div.images");
@@ -200,7 +116,97 @@ $(document).ready(function() {
 
 		})
 	}
+$(function() {
+		
+		$("div.slideshow").slideshow();
+		
+		//ACCORDION脚本
+		$('.accordion h6').click(function() {
+			$(this).next().toggle('fast');
+		});
+		/*Tips from TC翻页*/
+		var listNum = $('.accordion li').length;
+		var pageNum = Math.ceil(listNum / 4);
+		for(var i = 1; i <= pageNum; i++) {
+			$('ul.pagenum').append('<li>' + i + '</li>');
+		};
+		$('.accordion li p').hide();
+		$('.accordion li').hide();
+		$('ul.pagenum li').first().addClass('activedcss');
+		for(var a = 0; a < 4; a++) {
+			$('.accordion li').eq(a).show();
+		}
+		$('ul.pagenum li').click(function() {
+			$('ul.pagenum li').removeClass();
+			$(this).addClass('activedcss');
+			var clickNum = $(this).text();
+			var n = (clickNum - 1) * 4;
+			$('.accordion li').hide();
+			for(var x = n; x < n + 4; x++) {
+				$('.accordion li').eq(x).show();
+			}
+		});
+		
+		var listNum = $('.letter-content').length;
+		var pageNum = Math.ceil(listNum / 4);
+		for(var i = 1; i <= pageNum; i++) {
+			$('ul.letter-page').append('<li>' + i + '</li>');
+		};
+		$('ul.letter-page li').first().addClass('activedcss');
+		for(var a = 0; a < 4; a++) {
+			$('.letter-content').eq(a).show();
+		}
+		$('ul.letter-page li').click(function() {
+			$('ul.letter-page li').removeClass();
+			$(this).addClass('activedcss');
+			var clickNum = $(this).text();
+			var n = (clickNum - 1) * 4;
+			$('.letter-content').hide();
+			for(var x = n; x < n + 4; x++) {
+				$('.letter-content').eq(x).show();
+			}
+		});
+		
+		//FANCYBOX
+		$( 'a[rel="images-gallery"]' ).fancybox({
+			'transitionIn' : 'none',
+			'transitionOut' : 'none',
+			'titlePosition' : 'over',
+			'titleFormat' : function(title, currentArray, currentIndex, currentOpts) {
+				return '<span id="fancybox-title-over">Image ' + 
+				(currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+			}
+		});
+		
+		
+})
 })(jQuery);
-$(document).ready(function() {
-	$("div.slideshow").slideshow()
-});
+
+/*
+ $('.accordion li p').hide();
+ $(document).ready(function Pagenate(perPage,aimDiv,ulId){
+ var listNum = $(aimDiv).length;
+ var pageNum = Math.ceil(listNum/perPage);
+ for(var i=1;i<=pageNum;i++){
+ $(ulId).append('<li>'+i+'</li>');
+ };
+
+ $(aimDiv).hide();
+ for(var a=0;a<perPage;a++){
+ $(aimDiv).eq(a).show();
+ }
+ $('ulId').click(function(){
+ $(ulId+' li').removeClass();
+ $(this).addClass('activedcss');
+ var clickNum = $(this).text();
+ var n=(clickNum-1)*perPage;
+ $(aimDiv).hide();
+ for(var x=n;x<n+perPage;x++){
+ $(aimDiv).eq(x).show();
+ }
+ })
+ });
+
+ Pagenate(5,".accordion li","pagenum");
+
+ */

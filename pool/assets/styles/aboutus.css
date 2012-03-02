@@ -122,8 +122,6 @@
 	color:#fff;
 }
 
-
-
 .accordion li{
 	display:block;
 	border:1px dotted #ccc;
@@ -360,9 +358,11 @@ div.slideshow div.images div.image img{
 .contact-header {
 	width: 680px;
 	height: 330px;
-	background: url(/imagesnew/sample/bg-aboutus-head.png) no-repeat center center;
+	/*background: url(/imagesnew/sample/bg-aboutus-head.png) no-repeat center center;*/
 	position: relative;
 	border: 1px solid #dddfe6;
+	margin-top:13px;
+	padding: 1px
 }
 
 .contact-header p {
@@ -397,97 +397,88 @@ div.slideshow div.images div.image img{
 	margin: 0 0 15px 0;
 }
 
-.contact-form1 .contact-icon {
+.contact-form {
+	margin-top: 30px;
+}
+
+.contact-form h3 {
+	color: #434343;
+	text-align: left;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.contact-form p {
+	margin-left: 55px;
+}
+
+.contact-form ul {
+	padding: 16px 0 0;
+}
+
+.contact-form .inset-title {
+	font-size: 14px;
+	color: #78282e;
+	font-weight: bold;
+}
+
+.contact-form .last-btn {
+	margin-left: 290px;
+}
+
+.contact-form textarea {
+	height: 100px;
+    width: 340px;
+}
+
+.contact-form ul li {
+	margin-bottom: 12px;
+	padding-left: 20px
+}
+
+.contact-form label {
+	display: block;
+    float: left;
+    text-align: right;
+    width: 135px;
+    margin-right: 5px;
+}
+
+.contact-form select {
+	width: 100px;
+}
+
+.contact-form .contact-icon {
 	height: 26px;
-	padding-left: 45px;
-	line-height: 32px;
+	padding-left: 35px;
+	line-height: 27px;
 	margin: 0 0 10px 8px;
 }
 
-.contact-form1 .contact-phone {
-	background: url(/imagesnew/tel-aboutus.png) no-repeat left center;
-}
-.contact-form1 .contact-fax {
-	background: url(/imagesnew/fax-aboutus.png) no-repeat left center;
+.contact-form .contact-phone {
+	background: url(/imagesnew/call-contact.png) no-repeat left center;
 }
 
-.contact-icon.last {
-	margin-bottom: 0;
+.contact-form .contact-email {
+	background: url(/imagesnew/email-contact.png) no-repeat left center;
 }
 
-.contact-form1 ul {
-	margin-left: 50px;
-	border: 1px solid #dddfe6;
-	padding: 16px 18px 0;
-	width: 600px;
+.contact-form2 {
+	margin-top: 20px;
 }
 
-.contact-form1 ul li {
-	margin-bottom: 20px;
-}
-
-.contact-form1 ul li label {
-	display: block;
-    float: left;
-    margin-right: 8px;
-    text-align: right;
-    width: 90px;
-}
-
-.contact-form1 .call-question {
-	float: right;
-    position: relative;
-    top: -125px;
-}
-
-.call-question textarea{ 
-    width: 260px;
-    height: 80px;
-}
-
-.contact-form1 .call-question label {
-	text-align: left;
-	display: block;
-	float: none;
-}
-
-.contact-form1 .call-submit {
-	margin-left: 400px;
-}
-
-.contact-form2 ul{
-	margin-left: 50px;
-}
-
-.contact-form2 ul li {
-	margin-bottom: 20px;
-}
-
-.contact-form2 ul .form-title {
-	color: #7E0122;
-	font-weight: bold;
+.visit-us h3 {
+	height: 30px;
+    line-height: 30px;
 	margin-bottom: 10px;
-}
-
-.contact-form2 ul li label {
-	display: block;
-    float: left;
-    margin-right: 8px;
-    text-align: right;
-    width: 150px;
-}
-
-.contact-form2 ul li textarea {
-	width: 430px;
-	height: 125px;
-}
-
-.comment-submit {
-	margin-left: 200px;
+	padding: 0 0 0 30px;
+	border-bottom: 1px solid #dddddd;
+	color: #434343;	
+	background: url(/imagesnew/person-contact.png) no-repeat left center;
 }
 
 .visitus-head {
-	margin: 0 0 16px 50px;
+	margin: 0 0 16px 30px;
 }
 
 .visit-title {
@@ -495,17 +486,19 @@ div.slideshow div.images div.image img{
 }
 
 .visit-title2 {
-	margin-bottom: 20px;
-	margin-left: 50px;
+	margin-bottom: 5px;
+	margin-left: 30px;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .visit-us .visitus-head img {
 	float: left;
-	margin-right: 10px;
+	margin-right: 28px;
 }
 
 .office-location {
-	margin-left: 50px;
+	margin-left: 30px;
 }
 
 .section {
@@ -514,7 +507,7 @@ div.slideshow div.images div.image img{
 
 .section ul {
 	margin-top: 5px;
-	padding: 20px 0 25px 50px;
+	padding: 20px 0 25px 30px;
 	border-top: 1px solid #dddfe6;
 	border-bottom: 1px solid #dddfe6;
 }
@@ -543,4 +536,72 @@ div.slideshow div.images div.image img{
 	float: left;
 	margin: 30px 0 30px 125px;
 	font-weight: bold;
+}
+
+/*Why Choose Us*/
+.block-container {
+	margin: 0 0 20px 0;
+	width: 680px;
+}
+
+.block-container .words-pannel {
+	width: 31%;
+	float: left;
+	padding: 10px;
+}
+
+.block-container .images-pannel {
+	width: 65%;
+	float: left;
+}
+
+.images-pannel img {
+	display: inline;
+	margin: 3px;
+	border: 1px solid #a69c8f;
+}
+
+.images-pannel img:hover {
+	padding: 1px;
+	margin: 1px;
+	border: 2px solid #fa9005;
+}
+
+.images-pannel a {
+	text-decoration: none;
+}
+
+/*Our Team*/
+.boxzone{
+	width: 690px;
+	min-height:100px;
+	
+	margin-top:10px;
+	position: relative;
+	left:0px;
+}
+.boxzone div{
+	float:left;
+	overflow:hidden;
+	min-height:100px;
+	
+}
+.width260{
+	width:270px;
+	
+	
+}
+.width410{
+	width:420px;
+}
+.boxzone img{
+	float:left;
+	margin:5px;
+}
+.boxzone img:hover{
+	margin:4px;
+	border:1px solid #fff;
+	outline:1px dashed #dddddd;
+	
+	cursor:pointer;
 }

@@ -38,7 +38,7 @@
 
 .flight-col1 {
     float: left;
-    padding: 30px 0 0 25px;
+    padding: 0px 0 0 25px;
     width:90px;
 }
 
@@ -55,9 +55,9 @@
 .flight-col2 li {
     text-align: center;
     float: left;
-    padding: 5px;
+    padding: 18px 0;
     border-left: 1px dashed #DDDDDD;
-    height: 55px;
+    height: 50px;
     width: 100px;
 }
 
