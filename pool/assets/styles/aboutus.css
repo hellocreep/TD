@@ -54,6 +54,7 @@
 	background: url("/imagesnew/email-icon-white.png") no-repeat right center;
 	padding-right: 20px;
 	color: #DEDEDE;
+	display: block;
 }
 .tc-email a:hover {
 	text-decoration: none;

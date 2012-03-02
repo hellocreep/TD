@@ -1,6 +1,7 @@
 (function() {
 	//PIC SLIDE
 	$.fn.slideshow = function(b) {
+	    var a = $;
 		return this.each(function() {
 			var j = a(this);
 			var d = j.find("div.images");
@@ -167,7 +168,7 @@ $(function() {
 			}
 		});
 		
-		//FANCYBOX
+		//FANCYBOX CHOOSEUS 图片
 		$( 'a[rel="images-gallery"]' ).fancybox({
 			'transitionIn' : 'none',
 			'transitionOut' : 'none',
@@ -178,6 +179,15 @@ $(function() {
 			}
 		});
 		
+		//FANCYBOX GET FORM
+		$(".quickform").fancybox({
+            'width' : '55%',
+            'height' : '85%',
+            'autoScale' : false,
+            'transitionIn' : 'none',
+            'transitionOut' : 'none',
+            'type' : 'iframe'
+        }); 
 		
 })
 })(jQuery);

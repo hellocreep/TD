@@ -1,7 +1,80 @@
-<div>
+<style>
+body{
+    border: 0 none;
+    font-size: 13px;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.quickform {
+    width: 500px;
+    color: #434343;
+    margin: 0 auto;
+}
+
+.quickform h1,h2 {
+    color: #7E0122
+}
+
+.quickform h2 {
+    font-size: 18px;
+}
+
+.quickform label {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 135px;
+    margin-right: 5px;
+}
+
+.quickform ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.quickform ul li {
+    margin: 20px 0 0 10px;
+    list-style: none;
+}
+
+
+.btn{
+    background-image:url(/imagesnew/btn.png);
+    display:block;
+    color: #ffffff;
+    text-decoration:none;
+    text-align:center;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    text-decoration:none;
+}
+
+.btn.middle {
+    font-size: 13px;
+    background-position:-193px 0;
+    width: 86px; 
+    height: 25px;
+    line-height:25px;
+}
+.btn.middle:hover {
+    background-position:-193px -39px;
+}
+
+.quick-submit {
+    margin-left: 200px;
+}  
+</style>
+
+<div class="quickform">
     <h2>Want a Quick Question?</h2>
     <h3>Ask our Tibetan Experts.</h3>
-    <p>Send us your travel-related questions. We are Tibet specialists.
+    <p class="des">Send us your travel-related questions. We are Tibet specialists.
          We live here and know this land – the geography,
           the local amenities (hotels, restaurants, museums, shops), 
           and the people, their culture and religion. 
@@ -9,12 +82,27 @@
         not stole tips from the tour books.
          And all this at an unbeatable price.
     </p>
+    <ul>
+        <li>
+            <label for="question-name"><img src="/imagesnew/required.gif">Your Name:</label><input tyep="text" name="question-name" />
+        </li>
+        <li>
+            <label for="question-nation"><img src="/imagesnew/required.gif">Your Nationality:</label><input type="text" name="question-nation" />
+        </li>
+        <li>
+            <label for="question-email"><img src="/imagesnew/required.gif">Your Nationality:</label><input type="text" name="question-email" />
+        </li>
+        <li>
+            <label for="question-question">Your Question:</label><textarea type="text" name="question-question"></textarea>
+        </li>
+        <li>
+            If you would like us to contact you about your question, please enter your telephone number. 
+        </li>
+        <li>
+            <label for="question-phone">Your Phone Number:</label><input type="text" name="question-phone" />
+        </li>
+    </ul>
     
-    <label for="question-name">Your Name:</label><input tyep="text" name="question-name" />
-    <label for="question-nation">Your Nationality:</label><input type="text" name="question-nation" />
-    <label for="question-email">Your Nationality:</label><input type="text" name="question-email" />
-    <label for="question-question">Your Nationality:</label><textarea type="text" name="question-question"></textarea>
-    <p>If you would like us to contact you about your question, please enter your telephone number. </p>
-    <p><a href="#" class="btn middle">Submit</a></p>
+    <p><a href="#" class="btn middle quick-submit">Submit</a></p>
     
 </div>
