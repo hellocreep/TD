@@ -115,6 +115,15 @@ a:hover {
     display: block;
 }
 
+label.error {
+    color: #92240D;
+    float: none;
+}
+
+input.error {
+    border: 1px solid #92240D;
+}
+
 .btn{
 	background-image:url(/imagesnew/btn.png);
 	display:block;
@@ -122,6 +131,8 @@ a:hover {
 	text-decoration:none;
 	text-align:center;
 	cursor: pointer;
+	border: none;
+	border: none;
 }
 .btn:hover{
 	text-decoration:none;
@@ -164,6 +175,21 @@ a:hover {
 }
 .btn.large:hover {
 	background-position:0 -39px;
+}
+
+input[type="text"]{
+	height: 17px;
+	width: 180px;
+}
+
+input[type="text"],textarea {
+	 border: 1px solid #DEDEDE;
+	 border-radius: 3px;
+	 padding: 3px 8px;
+}
+
+input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
+	border-color: #B5DFF1;
 }
 
 .title-margin {
@@ -262,9 +288,9 @@ a:hover {
 /*使面包屑导航样式与老版改良版一致。。*/
 
 .wrapper {
-	background-color:#ffffff;
+	background:url("/imagesnew/sidebar-bg.png") repeat-y 0 0  #ffffff;
     margin:0 auto;
-    width: 960px;
+    width: 970px;
 	position:relative;
     min-height: 900px;
     border: 1px solid #B8B8B8; 
@@ -280,7 +306,7 @@ a:hover {
     width: 682px;
     float: right;
 	margin-top:10px;
-	margin-right:10px;
+	margin-right:22px;
 }
 
 .content h1 {
@@ -410,7 +436,7 @@ a:hover {
 	height: 35px;
 	list-style-type: none;
 	position: relative;
-	width: 960px;
+	width: 970px;
 	z-index: 210;
 	float:left;
 	margin-top:24px;
@@ -475,14 +501,16 @@ a:hover {
 
 #nav-last li{
 	float:left;
+	margin: 5px 0 0;
 }
 #nav-last li a{
+	display: block;
 	color:#ffffff;
 	background:#505050;
 	font-size:10px;
-	margin:5px 2px;
-	height:24px;
-	line-height:24px;
+	margin: 0 2px 0;
+	height:16px;
+	line-height: 16px;
 	padding:7px 3px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
@@ -718,8 +746,8 @@ a:hover {
     width: 240px;
     float: left;
     min-height: 1100px;
-	border-right:2px solid #b6b6b6;
-    background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;
+	/*border-right:2px solid #b6b6b6;
+    background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;*/
     padding-bottom: 80px;
 /*    -webkit-box-shadow: #666 1px 0px 3px;
     -moz-box-shadow: #666 1px 0px 3px;
@@ -765,14 +793,14 @@ a:hover {
 }
 
 .nav-left li a{
-	color:#222222;
-    height: 38px;
-    border-bottom: 1px solid #F8F3E7;
+	color:#434343;
+    height: 32px;
+    border-bottom: 1px solid  #F8F3E7;
     vertical-align: middle;
-    line-height: 2.5;
+    line-height: 32px;
     cursor: pointer;
     padding: 0 0 0 20px;
-    font-size: 15px;
+    font-size: 14px;
     display: block;
     text-decoration: none;
 }
@@ -781,6 +809,7 @@ a:hover {
 .nav-left li a:hover {
     background-color: #FCFBF8;
 	text-decoration:none;
+	color:#222222;
 }
 
 .nav-left li a.nohover:hover {
@@ -790,11 +819,13 @@ a:hover {
 }
 
 .nav-left li a.active {
-    background: url(/imagesnew/sidebar-nav.png) no-repeat scroll 0 0 transparent;
+    background: url(/imagesnew/sidebar-nav.png) no-repeat scroll left center transparent;
     border: medium none;
     color: #FFFFFF;
     left: -1px;
     position: relative;
+    height:33px;
+    line-height:33px;
     width: 253px;
 	*width:233px;
 }
@@ -811,10 +842,10 @@ a:hover {
 .subnav-left li a{
 	color:#434343;
 	display:block;
-	height: 24px;
+	height: 30px;
     padding-left: 40px;
     font-size: 12px;
-	line-height:24px;
+	line-height:30px;
 	background:url(/imagesnew/nav-dot.png) no-repeat 26px center transparent;
 	position:relative;
 	
@@ -943,7 +974,7 @@ a:hover {
 .btn-enquiry a {
     color: #FFFFFF;
     display: block;
-	background:url(/imagesnew/btn-enquiry1.png) no-repeat;
+	background:url(/imagesnew/btn.png) no-repeat -301px -110px;
 	width:199px;
 	height:43px;
 	line-height:43px;
@@ -954,7 +985,7 @@ a:hover {
 }
 .btn-enquiry a:hover {
 	text-decoration:none;
-	background:url(/imagesnew/btn-enquiry2.png) no-repeat;
+	background:url(/imagesnew/btn.png) no-repeat -301px -161px;
 }
 .author-list {
     clear: both;
@@ -1016,7 +1047,9 @@ a:hover {
 
 a.reco-title{
     display:block;
+    /*
     background:url("/imagesnew/train_black.png") no-repeat 0 0;
+    */
     color:#434343;
     padding: 2px 0 0 20px;
     font-weight:bold;
@@ -1050,3 +1083,4 @@ a.reco-click:hover{
 }
 
 /*火车页面sidebar样式-----end*/
+

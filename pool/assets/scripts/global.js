@@ -29,6 +29,7 @@
             $( this ).html( model.substring( 0, len ))
         })
    }
+   
     
 $( function(){
 

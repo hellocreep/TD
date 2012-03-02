@@ -24,3 +24,21 @@ def sitemap(request):
 
 def aboutus(request):
     return render_to_response('aboutus.html',{})
+
+def contactus(request):
+    return render_to_response('contactus.html',{})
+
+def whychooseus(request):
+    return render_to_response('whychooseus.html',{})
+
+def ourteam(request):
+    return render_to_response('ourteam.html',{})
+
+def salesteam(request):
+    return render_to_response('salesteam.html',{})
+
+def quick_form(request):
+    return render_to_response('form-quick-question.html',{})
+
+def whatwedo(request):
+    return render_to_response('whatwedo.html',{})

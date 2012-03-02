@@ -82,7 +82,7 @@
         
         if($('.nav-left li a').hasClass('active')) {
             var location = $('.nav-left .active').attr('id');
-            zoomNum = 10;
+            zoomNum = 13;
             if( location=='shigatse-hotels'){
                 latlng =  new google.maps.LatLng(29.269963112030908, 88.88195615541102);
             }
