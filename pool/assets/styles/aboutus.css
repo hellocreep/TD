@@ -543,17 +543,17 @@ div.slideshow div.images div.image img{
 /*Why Choose Us*/
 .block-container {
 	margin: 0 0 20px 0;
-	width: 680px;
+	width: 700px;
 }
 
 .block-container .short-pannel {
-	width: 34%;
+	width:270px;
 	float: left;
 	padding: 5px;
 }
 
 .block-container .long-pannel {
-	width: 63%;
+	width: 420px;
 	float: left;
 }
 
