@@ -603,7 +603,7 @@ ul.wedo-nav {
 }
 .wedo-nav li:hover ,
 .wedo-nav .active{
-	background:#ec7f32 url(/imagesnew/aboutus/bg_nav_chevron.png) no-repeat center 85px;
+	background:#D14E44 url(/imagesnew/aboutus/bg_nav_chevron.png) no-repeat center 85px;
 	height:120px;
 	top:-10px;
 }
