@@ -354,7 +354,8 @@ div.slideshow div.images div.image img{
     text-align: left;
 }
 
-/*CONTACTUS*/
+/* @CONTACTUS
+-----------------------------------------------------------------------------*/
 
 .contact-header {
 	width: 680px;
@@ -546,13 +547,13 @@ div.slideshow div.images div.image img{
 }
 
 .block-container .words-pannel {
-	width: 31%;
+	width: 34%;
 	float: left;
-	padding: 10px;
+	padding: 5px;
 }
 
 .block-container .images-pannel {
-	width: 65%;
+	width: 63%;
 	float: left;
 }
 
@@ -572,37 +573,84 @@ div.slideshow div.images div.image img{
 	text-decoration: none;
 }
 
-/*Our Team*/
-.boxzone{
-	width: 690px;
-	min-height:100px;
+
+
+
+
+/* @WHAT WE DO
+-------------------------------------------------------------------------------*/
+ul.wedo-nav {
+	width:680px;
+	height:100px;
+	background:#ccc;
+	overflow: hidden;
+	margin:20px 0;
+}
+.wedo-nav li{
+	width:225px;
+	background:#EA592C;
+	background:#B33F47;
+	height:100px;
+	display:block;
+	float:left;
+	margin:0 1px 0 0;
+	text-align: center;
+	line-height:100px;
+	color:#fff;
+	font-weight:bold;
+	font-size:20px;
+	cursor:pointer;
+}
+.wedo-nav li:hover{
+	background:#B35E64;
+}
+.wedo-unit{
 	
+}
+
+.wedo-unit p {
+	margin:20px 0;
+}
+
+.wedo-left{
+	float:left;
+	width:45%;
+	min-height:100px;
+	margin-right:5%;
+	clear:left;
+}
+
+/* @OUR TEAM
+-------------------------------------------------------------------------------*/
+/*.boxzone{
+	width: 680px;
+	min-height:100px;	
 	margin-top:10px;
 	position: relative;
-	left:0px;
+
 }
-.boxzone div{
+div.boxzone{
 	float:left;
 	overflow:hidden;
 	min-height:100px;
-	
+	position: absolute;
 }
-.width260{
-	width:270px;
-	
-	
+.box-short{
+	width:260px;
+	margin-right:10px;
 }
-.width410{
-	width:420px;
+.box-long{
+	width:410px;
+	margin-right:10px;
 }
+
 .boxzone img{
-	float:left;
-	margin:5px;
+	border:none;
 }
 .boxzone img:hover{
-	margin:4px;
-	border:1px solid #fff;
-	outline:1px dashed #dddddd;
-	
 	cursor:pointer;
 }
+*/
+
+
+

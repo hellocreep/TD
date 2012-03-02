@@ -39,3 +39,6 @@ def salesteam(request):
 
 def quick_form(request):
     return render_to_response('form-quick-question.html',{})
+
+def whatwedo(request):
+    return render_to_response('whatwedo.html',{})
