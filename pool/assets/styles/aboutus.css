@@ -601,23 +601,62 @@ ul.wedo-nav {
 	font-size:20px;
 	cursor:pointer;
 }
-.wedo-nav li:hover{
+.wedo-nav li:hover,
+.wedo-nav .active{
 	background:#B35E64;
 }
-.wedo-unit{
-	
+.wedo-unit h2{
+	color:#fff;
+	text-indent:10px;
 }
-
+.wedo-unit h3{
+	font-size:14px;
+	margin:0 0 10px 0;
+}
+.wedo-unit strong{
+	color:#222;
+	padding:20px 0;
+	display:block;
+}
 .wedo-unit p {
-	margin:20px 0;
+	margin:15px 0;
 }
-
+.wedo-left p{
+	color:#fff;
+}
 .wedo-left{
 	float:left;
-	width:45%;
+	width:280px;
+	padding:10px;
+	height:400px;
 	min-height:100px;
-	margin-right:5%;
+	margin-right:10px;
 	clear:left;
+	background:url(/imagesnew/aboutus/wedo-bg.png) 0 20px no-repeat #2B539C;
+}
+.wedo-right{
+	float:right;
+	width:365px;
+}
+.wedo-title{
+	display:block;
+	height:30px;
+	line-height:30px;
+	background:#4EB5BE;
+}
+.wedo-left2{
+	float:left;
+	width:400px;
+	min-height:100px;
+	margin-top:20px;
+	margin-right:10px;
+	clear:left;	
+}
+
+.wedo-reco{
+	float:right;
+	width:250px;
+	
 }
 
 /* @OUR TEAM
