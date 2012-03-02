@@ -36,3 +36,6 @@ def ourteam(request):
 
 def salesteam(request):
     return render_to_response('salesteam.html',{})
+
+def whatwedo(request):
+    return render_to_response('whatwedo.html',{})

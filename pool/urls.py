@@ -36,5 +36,6 @@ urlpatterns += patterns('TD.views',
     (r'^whychooseus/$','whychooseus'),
     (r'^ourteam/$','ourteam'),
     (r'^salesteam/$','salesteam'),
+    (r'^whatwedo/$','whatwedo'),
     (r'^$','sitemap'),
 )
