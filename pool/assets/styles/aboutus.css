@@ -343,9 +343,9 @@ div.slideshow div.images div.image img{
 	position: relative;
 }
 .abuout-side-img img {
-    left: -18px;
+    left: 30px;
     position: absolute;
-    top: 2px;
+    top: 17px;
 }
 .abuout-side-img p {
     margin-left: 90px;
@@ -546,30 +546,30 @@ div.slideshow div.images div.image img{
 	width: 680px;
 }
 
-.block-container .words-pannel {
+.block-container .short-pannel {
 	width: 34%;
 	float: left;
 	padding: 5px;
 }
 
-.block-container .images-pannel {
+.block-container .long-pannel {
 	width: 63%;
 	float: left;
 }
 
-.images-pannel img {
+.block-container img {
 	display: inline;
 	margin: 3px;
 	border: 1px solid #a69c8f;
 }
 
-.images-pannel img:hover {
+.block-container img:hover {
 	padding: 1px;
 	margin: 1px;
 	border: 2px solid #fa9005;
 }
 
-.images-pannel a {
+.block-container a {
 	text-decoration: none;
 }
 
