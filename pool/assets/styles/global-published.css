@@ -115,6 +115,15 @@ a:hover {
     display: block;
 }
 
+label.error {
+    color: #92240D;
+    float: none;
+}
+
+input.error {
+    border: 1px solid #92240D;
+}
+
 .btn{
 	background-image:url(/imagesnew/btn.png);
 	display:block;

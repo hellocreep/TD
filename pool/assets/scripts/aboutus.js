@@ -182,12 +182,13 @@ $(function() {
 		//FANCYBOX GET FORM
 		$(".quickform").fancybox({
             'width' : '55%',
-            'height' : '85%',
+            'height' : '95%',
             'autoScale' : false,
             'transitionIn' : 'none',
             'transitionOut' : 'none',
             'type' : 'iframe'
         }); 
+		
 		
 })
 })(jQuery);
