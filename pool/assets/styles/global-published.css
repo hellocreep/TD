@@ -790,7 +790,7 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
     line-height: 32px;
     cursor: pointer;
     padding: 0 0 0 20px;
-    font-size: 13px;
+    font-size: 14px;
     display: block;
     text-decoration: none;
 }
@@ -832,10 +832,10 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 .subnav-left li a{
 	color:#434343;
 	display:block;
-	height: 24px;
+	height: 30px;
     padding-left: 40px;
     font-size: 12px;
-	line-height:24px;
+	line-height:30px;
 	background:url(/imagesnew/nav-dot.png) no-repeat 26px center transparent;
 	position:relative;
 	
