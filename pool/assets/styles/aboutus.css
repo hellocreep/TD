@@ -581,14 +581,14 @@ div.slideshow div.images div.image img{
 -------------------------------------------------------------------------------*/
 ul.wedo-nav {
 	width:680px;
-	height:100px;
-	background:url(/imagesnew/aboutus/bg_nav.jpg) repeat-x #D14E44;
+	height:110px;
+	background:url(/imagesnew/aboutus/bg_nav.png) repeat-x #D14E44;
 	overflow: hidden;
 	margin:20px 0;
 }
 .wedo-nav li{
 	width:225px;
-	height:100px;
+	height:110px;
 	display:block;
 	float:left;
 	margin:0 1px 0 0;
@@ -601,11 +601,14 @@ ul.wedo-nav {
 }
 .wedo-nav li:hover ,
 .wedo-nav .active{
-	background:#D14E44;
+	background:#EA592C url(/imagesnew/aboutus/bg_nav_chevron.png) no-repeat center 85px;
+	height:120px;
+
 }
 .wedo-unit h2{
 	color:#fff;
-	text-indent:10px;
+	text-indent:20px;
+
 }
 .wedo-unit h3{
 	font-size:14px;
@@ -628,19 +631,27 @@ ul.wedo-nav {
 	padding:10px;
 	height:400px;
 	min-height:100px;
-	margin-right:10px;
 	clear:left;
-	background:url(/imagesnew/aboutus/wedo-bg.png) 0 20px no-repeat #2B539C;
+	background:url(/imagesnew/aboutus/wedo-bg.png) 0 86px no-repeat #2B539C;
+	position:relative;
 }
 .wedo-right{
-	float:right;
-	width:365px;
+	float:left;
+	width:360px;
+	height:420px;
+	padding-left:10px;
+	padding-right:10px;
 }
 .wedo-title{
 	display:block;
-	height:30px;
-	line-height:30px;
-	background:#4EB5BE;
+	height:56px;
+	width:300px;
+	line-height:40px;
+	background:url(/imagesnew/aboutus/bg_left_side_heading.png);
+	position:relative;
+	left:-10px;
+	top:0;
+	text-indent:20px;
 }
 .wedo-left2{
 	float:left;
