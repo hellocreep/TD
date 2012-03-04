@@ -566,7 +566,7 @@ div.slideshow div.images div.image img{
 }
 
 .block-container p{
-	padding:15px 5px 15px 10px;
+	padding:0px 5px 20px 10px;
 }
 .block-container h2{
 	margin-bottom:30px;
@@ -603,7 +603,7 @@ ul.wedo-nav {
 }
 .wedo-nav li:hover ,
 .wedo-nav .active{
-	background:#D14E44 url(/imagesnew/aboutus/bg_nav_chevron.png) no-repeat center 85px;
+	background:#D14E44 url(/imagesnew/aboutus/bg_nav.gif) no-repeat center 85px;
 	height:120px;
 	top:-10px;
 }
@@ -670,37 +670,9 @@ ul.wedo-nav {
 	
 }
 
-/* @OUR TEAM
--------------------------------------------------------------------------------*/
-/*.boxzone{
-	width: 680px;
-	min-height:100px;	
-	margin-top:10px;
-	position: relative;
-
+.h1-below{
+	margin:0 0 20px;
+	display: block;
+	
 }
-div.boxzone{
-	float:left;
-	overflow:hidden;
-	min-height:100px;
-	position: absolute;
-}
-.box-short{
-	width:260px;
-	margin-right:10px;
-}
-.box-long{
-	width:410px;
-	margin-right:10px;
-}
-
-.boxzone img{
-	border:none;
-}
-.boxzone img:hover{
-	cursor:pointer;
-}
-*/
-
-
 
