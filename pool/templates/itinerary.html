@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Itinerary{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/itinerary.css"  type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block script %}
+<!-- 页面js脚本 -->
+{% endblock %}
+
+{% block body%}
+{% include 'header.html' %}
+<div class="bread"></div>
+<div class="itinerary-wrap">
+    
+    <div class="tour-info"></div>
+    
+    <div class="tour-detail"></div>
+    
+    <div class="tour-foot"></div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

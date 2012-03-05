@@ -42,3 +42,6 @@ def quick_form(request):
 
 def whatwedo(request):
     return render_to_response('whatwedo.html',{})
+
+def itinerary(request):
+    return render_to_response('itinerary.html',{})

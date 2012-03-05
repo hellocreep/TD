@@ -1,0 +1,12 @@
+.itinerary-wrap {
+    margin:0 auto;
+    background: #ffffff;
+    width: 970px;
+    position:relative;
+    min-height: 900px;
+    border: 1px solid #B8B8B8; 
+    -webkit-box-shadow: #666 0px 0px 3px;
+    -moz-box-shadow: #666 0px 0px 3px;
+    box-shadow: #666 0px 0px 3px;
+    behavior: url(PIE.htc);
+}
