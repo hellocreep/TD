@@ -13,23 +13,36 @@
     behavior: url(PIE.htc);
 }
 
+.tour-info {
+	margin: 30px 10px 10px;
+}
+
 .tour-info h1 {
-    padding: 0 0 0 20px;
-    
+    height: 30px;
+    line-height: 30px;
+}
+
+.tour-info h1 img {
+	float: left;
+	margin-right: 5px;
 }
 
 .tour-sub {
-    margin-bottom: 15px;
+    margin: 15px 0;
     text-align: left;
+    font-style: italic;
+    padding-right: 55px;
 }
 
 .tour-sub .tour-price {
+	font-size: 15px;
     float: right;
+    font-style: normal;
 }
 
 .light-price {
-    color: #92240D;
-    font-size: 16px;
+    color: #c73838;
+    font-size: 24px;
 }
 
 .tour-des {
@@ -38,30 +51,50 @@
 
 .tour-des .tour-pic-gallery{
     float: left;
+    width: 360px;
+    height: 245px;
 }
 
 .tour-des .des-detail {
     float: right;
-    margin-left: 10px;
+    margin-left: 28px;
 }
 
 .des-detail ul li{
-    margin: 10px 0;
+    margin: 0 0 20px 0;
+    width: 285px;
+}
+
+.trip-for ul {
+	margin-top: 15px;
 }
 
 .trip-for ul li{
     float: left;
-    width: 30%;
+    width: 110px;
+    text-align: center;
 }
 
 .trip-for ul li img {
     display: block;
+    margin: 0 auto;
 }
 
 .tour-glance {
     float: right;
+    width: 210px;
 }
 
 .tour-glance li {
     margin: 10px 0;
+    padding-left: 40px;
+    line-height: 23px;
+    background: url(/imagesnew/sample/glance.png) no-repeat left center;
+    height: 23px;
+}
+
+.tour-glance li.first {
+	background: none;
+	font-weight: bold;
+	padding-left: 0;
 }
