@@ -98,3 +98,143 @@
 	font-weight: bold;
 	padding-left: 0;
 }
+
+.share-tools {
+	height: 37px;
+	background: url(/imagesnew/itinerary/bg-share.png) no-repeat right center;
+	margin-right: 20px;
+}
+
+.share-tools .add-wish {
+	float: right;
+	display: block;
+	background: url(/imagesnew/itinerary/icon-wish.png) no-repeat left center;
+	height: 18px;
+	padding-left: 18px;
+	margin: 8px 110px 8px 0;
+}
+
+/*ITINERARY BODY*/
+.tour-detail {
+	padding: 0 20px;
+}
+
+.tour-tab {
+	height: 40px;
+	border-bottom: 2px solid #b03935;
+}
+.tour-tab li {
+	float: left;
+	color: #8a2321;
+	font-weight: bold;
+}
+
+.tour-tab li.last {
+	float: right;
+	margin: -7px 0 0 0;
+}
+
+.tour-tab li.active {
+	color: #FFFFFF;
+}
+
+.tour-intro {
+	background: url("/imagesnew/itinerary/bg-top-intro.png") no-repeat scroll center -1px #FAF8F7;
+    border-left: 1px solid #865F58;
+    border-right: 1px solid #865F58;
+    border-top: 1px solid #865F58;
+    margin: 20px 0 0;
+    padding: 18px 0;
+    width: 918px;
+}
+
+.tour-intro p {
+	margin-top: 20px;
+}
+
+.tour-intro-foot {
+	background: url(/imagesnew/itinerary/bg-bottom-intro.png) no-repeat -1px 0 #FAF8F7;
+	height: 34px;
+	width: 923px;
+}
+
+.tc-say {
+	float: left;
+	margin-left: 20px;
+	width: 550px;
+}
+
+.tc-say ul li {
+	background: url(/imagesnew/itinerary/icon-list.png) no-repeat left top;
+	padding-left: 20px;
+	margin: 24px 0 0 0;
+}
+
+.tailoring {
+	float: right;
+	margin-right: 20px;
+	width: 300px;
+	border-left: 1px solid #f1ebe7;
+	padding-left: 22px;
+}
+
+.tailoring h2 {
+	font-size: 16px;
+	background: url(/imagesnew/itinerary/bg-tailoring-title.png) no-repeat right bottom;
+	height: 35px;
+	line-height: 35px;
+	color: #323232;
+	padding-left: 24px;
+}
+
+.tailoring ul li{
+	background: url(/imagesnew/itinerary/icon-list.png) no-repeat left top;
+	padding-left: 20px;
+	margin: 24px 0 0 0;
+}
+
+.itinerary-full {
+	margin-top: 40px;
+}
+
+#itinerary h2 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.day-by-day {
+	float: left;
+	margin-right: 30px;
+	width: 590px;
+}
+
+.day-by-day .day {
+	font-size: 16px;
+	color: #ff1e00;
+}
+
+.day-by-day h3 {
+	font-size: 13px;
+	color: #434343;
+	margin: 15px 0 20px 10px;
+}
+
+.day-by-day li {
+	border: 1px solid #fff2e1;
+	background: url(/imagesnew/itinerary/bg-day.png) repeat-x 0 0 #fff5f0;
+	margin-bottom: 26px;
+	padding: 0 20px 35px 10px;
+}
+
+.day-by-day .day-des {
+	float: left;
+	width: 340px;
+}
+
+.day-by-day img {
+	float: right;
+	margin: 0 0 50px;
+}
+.itinerary-right {
+	float: right;
+}
