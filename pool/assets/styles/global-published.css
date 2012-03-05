@@ -178,8 +178,8 @@ input.error {
 }
 
 input[type="text"]{
-	height: 17px;
-	width: 180px;
+	height: 27px;
+	width: 200px;
 }
 
 input[type="text"],textarea {
