@@ -1,3 +1,5 @@
+/*ITINERARY HEAD*/
+
 .itinerary-wrap {
     margin:0 auto;
     background: #ffffff;
@@ -9,4 +11,57 @@
     -moz-box-shadow: #666 0px 0px 3px;
     box-shadow: #666 0px 0px 3px;
     behavior: url(PIE.htc);
+}
+
+.tour-info h1 {
+    padding: 0 0 0 20px;
+    
+}
+
+.tour-sub {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.tour-sub .tour-price {
+    float: right;
+}
+
+.light-price {
+    color: #92240D;
+    font-size: 16px;
+}
+
+.tour-des {
+    float: left;
+}
+
+.tour-des .tour-pic-gallery{
+    float: left;
+}
+
+.tour-des .des-detail {
+    float: right;
+    margin-left: 10px;
+}
+
+.des-detail ul li{
+    margin: 10px 0;
+}
+
+.trip-for ul li{
+    float: left;
+    width: 30%;
+}
+
+.trip-for ul li img {
+    display: block;
+}
+
+.tour-glance {
+    float: right;
+}
+
+.tour-glance li {
+    margin: 10px 0;
 }
