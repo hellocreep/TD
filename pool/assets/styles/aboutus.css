@@ -566,66 +566,88 @@ div.slideshow div.images div.image img{
 }
 
 .block-container p{
-	padding:0px 5px 20px 10px;
+	padding:0px 10px 20px 10px;
 }
 .block-container h2{
-	margin-bottom:30px;
+	margin:10px 0 10px 10px;
 }
 .block-container strong{
-	
-	padding:0 5px 30px 0;
+	padding:10px 0 5px 0px;
 	display: block;
+	color:#670E14;
+}
+
+h2.howwe{
+	padding:10px 0;
 }
 
 /* @WHAT WE DO
 -------------------------------------------------------------------------------*/
 ul.wedo-nav {
-	width:680px;
-	height:120px;
-	overflow: hidden;
-	margin:20px 0;
-	position:relative;
+	width:679px;
+	background: url("/imagesnew/aboutus/bg_nav.png") repeat-x scroll 0 0 transparent;
+    float: left;
+    height: 107px;
+    list-style: none outside none;
+    margin-top: 20px;
+    padding: 3px 0 0 2px;
+    position: relative;
+    z-index:10000;
 }
 .wedo-nav li{
 	width:225px;
-	height:120px;
-	display:block;
-	float:left;
-	margin:0 1px 0 0;
-	text-align: center;
-	line-height:100px;
-	color:#fff;
-	font-weight:bold;
-	font-size:20px;
-	cursor:pointer;
-	background:url(/imagesnew/aboutus/bg_nav.jpg) repeat-x;
-	position: relative;
+    display: inline-block;
+    float: left;
+    height: 97px;
+    margin: 3px 0 0 -1px;
+    padding: 0;
+    text-align:center;
+    font-weight: bold;
+    font-size:20px;
+    color:#fff;
+    line-height:97px;
+    background:url("/imagesnew/aboutus/bg_nav_chevron.png") no-repeat 50% 80%;
+    cursor:pointer;
 }
 .wedo-nav li:hover ,
 .wedo-nav .active{
-	background:#D14E44 url(/imagesnew/aboutus/bg_nav.gif) no-repeat center 85px;
-	height:120px;
-	top:-10px;
+    background:url("/imagesnew/aboutus/bg_active_wide.png") no-repeat scroll 50% 93% transparent;
+    height: 116px;
+    color:#ececec;
 }
 .wedo-unit h2{
 	color:#fff;
 	text-indent:20px;
+	margin-top:15px;
 
 }
-.wedo-unit h3{
+.wrap-js h3{
 	font-size:14px;
-	margin:0 0 10px 0;
+	margin:0px 0 10px 0;
+	border-bottom: 1px solid #CCCCCC;
+	padding:5px 0;
 }
-.wedo-unit strong{
+.wrap-js strong{
 	color:#222;
-	padding:20px 0;
+    padding: 10px 0 0px;
 	display:block;
 }
 .wedo-unit p {
-	margin:15px 0;
+	margin:10px 0;
 }
 .wedo-left p{
 	color:#fff;
+}
+.wedo-bg{
+	background:#fff;
+	padding-left:20px;
+	padding-top:20px;
+	padding-bottom:1px;
+	padding-right:10px;
+}
+.wedo-bg2{
+	padding-left:20px;
+	padding-right:10px;
 }
 .wedo-left{
 	float:left;
@@ -639,10 +661,9 @@ ul.wedo-nav {
 }
 .wedo-right{
 	float:left;
-	width:360px;
+	width:382px;
 	height:420px;
-	padding-left:10px;
-	padding-right:10px;
+	background:#ececec;
 }
 .wedo-title{
 	display:block;
@@ -657,7 +678,7 @@ ul.wedo-nav {
 }
 .wedo-left2{
 	float:left;
-	width:400px;
+	
 	min-height:100px;
 	margin-top:20px;
 	margin-right:10px;
@@ -665,14 +686,21 @@ ul.wedo-nav {
 }
 
 .wedo-reco{
-	float:right;
-	width:250px;
+	float:left;
 	
+	margin-top:20px;
 }
-
+.wedo-reco .side-reco{
+	float:left;
+	margin:0 10px 10px;
+	display:inline;
+}
 .h1-below{
 	margin:0 0 20px;
 	display: block;
 	
 }
 
+.flow-img{
+	margin-top:17px;
+}
