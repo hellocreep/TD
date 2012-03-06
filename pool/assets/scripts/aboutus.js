@@ -118,13 +118,19 @@
 		})
 	}
 $(function() {
+	
+	
+
+		
+
+	
+	
+	
+	
 		
 		$("div.slideshow").slideshow();
 		
-		//ACCORDION脚本
-		$('.accordion h6').click(function() {
-			$(this).next().toggle('fast');
-		});
+		
 		/*Tips from TC翻页*/
 		var listNum = $('.accordion li').length;
 		var pageNum = Math.ceil(listNum / 4);
@@ -168,6 +174,25 @@ $(function() {
 			}
 		});
 		
+		//ACCORDION脚本
+		$('.accordion h6').click(function() {
+			$(this).next().toggle('fast');
+		});
+		$('.accordion h6').eq(0).click();
+		//What We Do 页面切换js
+		$( '.wedo-nav li' ).each(function(index){
+			$( this ).click(function(){
+				$(this).addClass('active').siblings().removeClass( 'active' );
+				$('.wrap-js').hide();
+				$('.wrap-js').eq(index).show();
+			})
+		})
+		
+		$( '.wedo-nav li' ).eq( 0 ).click();
+		
+		
+		
+		
 		//FANCYBOX CHOOSEUS 图片
 		$( 'a[rel="images-gallery"]' ).fancybox({
 			'transitionIn' : 'none',
@@ -193,31 +218,3 @@ $(function() {
 })
 })(jQuery);
 
-/*
- $('.accordion li p').hide();
- $(document).ready(function Pagenate(perPage,aimDiv,ulId){
- var listNum = $(aimDiv).length;
- var pageNum = Math.ceil(listNum/perPage);
- for(var i=1;i<=pageNum;i++){
- $(ulId).append('<li>'+i+'</li>');
- };
-
- $(aimDiv).hide();
- for(var a=0;a<perPage;a++){
- $(aimDiv).eq(a).show();
- }
- $('ulId').click(function(){
- $(ulId+' li').removeClass();
- $(this).addClass('activedcss');
- var clickNum = $(this).text();
- var n=(clickNum-1)*perPage;
- $(aimDiv).hide();
- for(var x=n;x<n+perPage;x++){
- $(aimDiv).eq(x).show();
- }
- })
- });
-
- Pagenate(5,".accordion li","pagenum");
-
- */

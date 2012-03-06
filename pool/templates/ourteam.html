@@ -4,9 +4,12 @@
 
 {% block style %}
 <link href="/assets/styles/aboutus.css" type="text/css" rel="stylesheet"/>
+<link href="/assets/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen" />
 {% endblock %}
 
 {% block script %} <script type="text/javascript" src="/assets/scripts/aboutus.js"></script>
+<script type="text/javascript" src="/assets/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="/assets/fancybox/jquery.easing-1.3.pack.js"></script>
 {% endblock %}
 {% block body%}
 {% include 'header.html' %} <div class="bread"></div>
@@ -24,19 +27,19 @@
 				</p>
 			</div>
 			<div class="long-pannel">
-				<img src="/imagesnew/aboutus/photos/ourteam01.jpg" width="410" height="200"/>
+				<a href="/imagesnew/aboutus/big/ourteam01.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam01.jpg" width="410" height="200"/></a>
 			</div>
 		</div>
 		<div class="block-container clearfix">
 			<div class="short-pannel">
-				<img src="/imagesnew/aboutus/photos/ourteam09.jpg" width="260" height="200"/>
-				<img src="/imagesnew/aboutus/photos/ourteam07.jpg" width="125" height="100"/>
-				<img src="/imagesnew/aboutus/photos/ourteam04.jpg" width="125" height="100"/>
-				<img src="/imagesnew/aboutus/photos/ourteam03.jpg" width="125" height="210"/>
-				<img src="/imagesnew/aboutus/photos/ourteam08.jpg" width="125" height="100"/>
-				<img src="/imagesnew/aboutus/photos/ourteam06.jpg" width="125" height="100"/>
-				<img src="/imagesnew/aboutus/photos/ourteam05.jpg" width="125" height="200"/>
-				<img src="/imagesnew/aboutus/photos/ourteam02.jpg" width="125" height="200"/>
+				<a href="/imagesnew/aboutus/big/ourteam09.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam09.jpg" width="260" height="200"/></a>
+				<a href="/imagesnew/aboutus/big/ourteam07.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam07.jpg" width="125" height="100"/></a>
+				<a href="/imagesnew/aboutus/big/ourteam04.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam04.jpg" width="125" height="100"/></a>
+				<a href="/imagesnew/aboutus/big/ourteam03.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam03.jpg" width="125" height="210"/></a>
+				<a href="/imagesnew/aboutus/big/ourteam08.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam08.jpg" width="125" height="100"/></a>
+				<a href="/imagesnew/aboutus/big/ourteam06.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam06.jpg" width="125" height="100"/></a>
+				<a href="/imagesnew/aboutus/big/ourteam05.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam05.jpg" width="125" height="200"/></a>
+				<a href="/imagesnew/aboutus/big/ourteam02.jpg" rel="images-gallery"><img src="/imagesnew/aboutus/photos/ourteam02.jpg" width="125" height="200"/></a>
 			</div>
 			<div class="long-pannel">
 				<h2>Meet Our Teams</h2>
@@ -44,25 +47,31 @@
 				<p>
 					You meet Tibet Discovery Tours firstly via this website created by our marketing department. They make sure the travel guide and resources provided are helpful and updated, and the suggested travel ideas and sample Tibet tours, China & Tibet tours, and Nepal Tibet tours are attractive and meeting your travel interests.
 				</p>
+				<br>
+				<br>
 				<strong>Online Travel Consultants Team </strong>
 				<p>
 					Our travel consultants at the sales department are whom you contact us in person in the first place. They are working closely with every customer for every tour from the beginning of tour planning to the last minutes the customer leaving for home.
 				</p>
+				<br>
+				<br>
 				<strong>Our Tibetan Tour Guide & Driver Team </strong>
 				<p>
 					When you arrive in Lhasa, the ones you meet firstly are your personal tour guide and driver. All of them are qualified Tibetan professionals, and they know this land very well, and provide you with maximized personal care, scurity, and flexibility.
 				</p>
+				<br>
+				<br>
 				<strong>Quality Supervisors</strong>
 				<p>
 					Their work is to guarantee that all travel services experienced during your tour are smooth and consistent in quality. Moreover, after your tour, they'll evaluate the service of your guide and driver from your tour reviews.
 				</p>
 			</div>
 		</div>
-		<h2>How We Plan & Fullfill your Tibet Trip </h2>
+		<h2 class="howwe">How We Plan & Fullfill your Tibet Trip </h2>
 		<p>
 			The following charts briefly illustrates how we work for you.
 		</p>
-		<img src="/imagesnew/aboutus/photos/ourteam01.jpg" width="680" height="700"/ alt="trip plan flow">
+		<img class="flow-img" src="/imagesnew/aboutus/workflow.png" width="683" height="675"  alt="trip plan flow">
 	</div>
 </div>
 {% include 'footer.html' %}
