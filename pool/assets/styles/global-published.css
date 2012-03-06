@@ -204,6 +204,10 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
     float: right;
 }
 
+.red {
+	color: #c73838;
+}
+
 .black {
     color: #000000;
 }
