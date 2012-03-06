@@ -62,6 +62,17 @@ body {
 	width:960px;
 	height:auto;
 }
+.allpage-wrap
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B8B8B8;
+    box-shadow: 0 0 3px #666666;
+    margin: 0 auto;
+    min-height: 900px;
+    position: relative;
+    width: 950px;
+    padding: 10px;
+}
 /*暂时不用本地字体，此样式暂时不用
 @font-face {
     font-family: 'Cantarell';
