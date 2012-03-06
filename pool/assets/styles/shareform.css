@@ -1,0 +1,46 @@
+.allpage-wrap h1{
+	line-height: 35px;
+}
+.allpage-wrap p{
+	line-height:25px;
+	font-size:13px;
+}
+.allpage-wrap .share-content
+{
+	float:left;
+	width:20%;
+	background:#ccc;
+	padding:10px;
+	background:#F5FBFB;
+}
+.allpage-wrap .picshow
+{
+	float:left;
+	width:20%;
+	margin-left:2px;
+}
+.allpage-wrap .form
+{
+	float:right;
+	width:50%;
+	padding:5px 10px 15px;
+}
+#shareForm table th
+{
+	text-align:left;
+	padding:5px 0px 0px;
+}
+#shareForm table td
+{
+	width:250px;
+}
+#shareForm table input
+{
+	width:200px;
+	height:20px;
+}
+#shareForm .upfile
+{
+	height: 25px;
+	size:200px;
+}

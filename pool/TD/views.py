@@ -45,3 +45,7 @@ def whatwedo(request):
 
 def itinerary(request):
     return render_to_response('itinerary.html',{})
+def share(request):
+    return render_to_response('share-form.html',{})
+def form(request):
+    return render_to_response('shareform.html',{})

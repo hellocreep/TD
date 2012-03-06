@@ -39,5 +39,7 @@ urlpatterns += patterns('TD.views',
     (r'^quickform/$','quick_form'),
     (r'^whatwedo/$','whatwedo'),
     (r'^itinerary/$','itinerary'),
+    (r'^share/$','share'),
+    (r'^form/$','form'),
     (r'^$','sitemap'),
 )
