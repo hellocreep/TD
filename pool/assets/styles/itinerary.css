@@ -119,6 +119,14 @@
 	padding: 0 20px;
 }
 
+.tour-detail h2 {
+	margin-bottom: 20px;
+	font-size: 18px;
+	background: url(/imagesnew/itinerary/bg-h2.png) repeat-x left top #fffefd;
+	height: 35px;
+	line-height: 40px;
+}
+
 .tour-tab {
 	height: 40px;
 	border-bottom: 2px solid #b03935;
@@ -170,6 +178,10 @@
 	margin: 24px 0 0 0;
 }
 
+.tc-say h2 {
+	background: none;
+}
+
 .tailoring {
 	float: right;
 	margin-right: 20px;
@@ -197,46 +209,131 @@
 	margin-top: 40px;
 }
 
-/*
-#itinerary h2 {
-	font-size: 18px;
-	margin-bottom: 20px;
-}
-
-.day-by-day {
+#itinerary {
 	float: left;
 	margin-right: 30px;
 	width: 590px;
 }
 
-.day-by-day .day {
-	font-size: 16px;
-	color: #ff1e00;
+#itinerary .dayCloum {
+	border-radius: 5px;
+	border: 1px solid #FFD7A2;
+    margin: 12px 0 50px 0;
+    width: 590px;
+    float: left;
 }
 
-.day-by-day h3 {
-	font-size: 13px;
-	color: #434343;
-	margin: 15px 0 20px 10px;
+.dayCloum dt span {
+	color: red;
+    font-size: 16px;
+    margin-right: 5px;
 }
 
-.day-by-day li {
-	border: 1px solid #fff2e1;
-	background: url(/imagesnew/itinerary/bg-day.png) repeat-x 0 0 #fff5f0;
-	margin-bottom: 26px;
-	padding: 0 20px 35px 10px;
+.dayCloum > div {
+	background: url(/imagesnew/itinerary/day_line.png) repeat-x scroll 0 0 #FFF4EF;
+    width: 590px;
+    margin: 2px 0;
+    float: left;
 }
 
-.day-by-day .day-des {
-	float: left;
-	width: 340px;
+.dayCloum dt {
+	font: bold 13px Arial,Helvetica,sans-serif;
+    padding: 15px 10px;
 }
 
-.day-by-day img {
-	float: right;
-	margin: 0 0 50px;
+.dayCloum dt + dd {
+	/*background: url(/imagesnew/itinerary/shadow.png) no-repeat scroll right bottom transparent;
+	 * 
+	 */
+	border: 1px solid #c6cacc;
+	padding: 2px;
+	background: #FFFFFF;
+    float: right;
+    margin: 0 20px 10px 40px;
 }
+
+.dayCloum dt + dd img {
+	display: block;
+	margin: 0 auto;
+}
+
+.dayCloum dt + dd + dd p {
+	line-height: 150%;
+    margin-bottom: -2px;
+    padding: 0 20px 10px 10px;
+}
+
+.dayCloum > div + dd {
+    width: 590px
+}
+
+
+
 .itinerary-right {
 	float: right;
 }
-*/
+
+.price-book {
+	border: 1px solid #eeeeee;
+	padding: 20px 10px;
+	background: url(/imagesnew/itinerary/bg-price-book.png) repeat-x left bottom #fffefd;
+}
+
+.price-book h3 {
+	color: #323232;
+	font-size: 15px;
+	margin-bottom: 16px;
+}
+
+.price-left {
+	float: left;
+	width: 500px;
+}
+
+.price-left ul li {
+	padding-left: 18px; 
+	margin-bottom: 18px;
+	line-height: 14px;
+}
+
+.price-include li {
+	background: url(/imagesnew/itinerary/list-correct-red.png) no-repeat left top;
+}
+
+.price-nonclude li {
+	background: url(/imagesnew/itinerary/list-none-red.png) no-repeat left top;
+}
+
+.price-right {
+	float: right;
+	width: 320px;
+	margin-left: 30px;
+	background: #FFFFFF;
+	padding-left: 20px;
+}
+
+.price-right p {
+	margin-bottom: 25px;
+}
+
+.price-right .first {
+	border-bottom: 1px solid #e2e1e1;
+	padding-bottom: 20px;
+}
+
+.book-step {
+	border-top: 1px dashed #656565;
+	margin-top: 30px;
+	padding-top: 25px;
+}
+
+.book-step img {
+	display: block;
+	margin: 0 auto 25px;
+}
+
+.book-step ul li {
+	width: 105px;
+	float: left;
+	margin-left: 43px;
+}
