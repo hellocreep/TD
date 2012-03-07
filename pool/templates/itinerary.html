@@ -4,10 +4,12 @@
 
 {% block style %}
 <link href="/assets/styles/itinerary.css"  type="text/css" rel="stylesheet"/>
+<link href="/assets/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen" />
 {% endblock %}
 
 {% block script %}
 <script src="/assets/scripts/itinerary.js" type="text/javascript"></script>
+<script src="/assets/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
 {% endblock %}
 
 {% block body%}
@@ -27,6 +29,11 @@
             <div class="tour-des clearfix">
                 <div class="tour-pic-gallery">
                 	<img src="/imagesnew/sample/itinerary-1.png" />
+                	<a href="#" class="view-gallery">View Gallery</a>
+                	<ul class="gallery-list" style="display: none">
+                		<li name="http://farm5.static.flickr.com/4044/4286199901_33844563eb.jpg"></li>
+                		<li name="http://farm3.static.flickr.com/2687/4220681515_cc4f42d6b9.jpg"></li>
+                	</ul>
                 </div>
                 <div class="des-detail">
                     <ul>
@@ -66,16 +73,18 @@ private car/SUV<img src="/imagesnew/itinerary/icon-question.png"></li>
         </div>
     </div>
     <div class="share-tools clearfix">
-    	<a class="add-wish" href="#">Add to my wishlist</a>
+    	<a class="add-wish iframe" href="http://www.tibetdiscovery.com/wishlist">Add to my wishlist</a>
     </div>
     
     <ul class="tour-tab clearfix">
-		<li class="tour-tab-detail"><a href="#">Itinerary Details</a></li>
-		<li>Price Guide & Booking Info</li>
-		<li>Trip FAQs</li>
-		<li>Reviews</li>
+		<li class="tab-detail"><a href="/itinerary/#tab-detail">Itinerary Details</a></li>
+		<li class="tab-price"><a href="/itinerary/#tab-price">&nbsp;&nbsp;&nbsp;&nbsp;Price Guide & Booking Info</a></li>
+		<li class="tab-faq"><a href="/itinerary/#tab-faq">&nbsp;Trip FAQs</a></li>
+		<li class="tab-review"><a href="/itinerary/#tab-review">&nbsp;&nbsp;&nbsp;&nbsp;Reviews</a></li>
 		<li class="last"><span class="btn-enquiry"><a href="#" class="">Make an Enquiry</a></span></li>
     </ul>
+    <ul class="tab-replace" style="height:36px; width: 970px; display: none"></ul>
+    
     <div class="tour-detail">
     	<div class="tour-intro clearfix">
     		<div class="tc-say">
@@ -108,9 +117,8 @@ what is possible.</p>
     		
     	</div>
     	<div class="tour-intro-foot"></div>
-    	
     	<div class="itinerary-full clearfix">
-    		<h2>Full Itinerary</h2>
+    		<h2 id="tab-detail">Full Itinerary</h2>
     		<div id="itinerary">
 				<dl class="dayCloum">
 					<div>
@@ -160,7 +168,7 @@ what is possible.</p>
     		<div class="itinerary-right"></div>
     	</div>
     	
-    	<h2>Price Guide & Booking Info</h2>
+    	<h2 id="tab-price">Price Guide & Booking Info</h2>
 		<div class="price-book clearfix">
 			<div class="price-left">
 				<h3>What's included in this price?	</h3>
@@ -217,7 +225,7 @@ be valid for a lifetime, if you has no plans for the Tibet trip, then we'll refu
     	</div>
     	
     	<div class="tour-faq">
-    		<h2>Trip FAQs</h2>
+    		<h2 id="tab-faq">Trip FAQs</h2>
     		<h3><span class="red">FAQs</span> for Taking this Trip</h3>
     		<ol class="accordion">
     			<li><h6>When is the best time for Tibet tour? </h6>
@@ -257,7 +265,7 @@ be valid for a lifetime, if you has no plans for the Tibet trip, then we'll refu
     	</div>
     	
     	<div class="tour-review clearfix">
-    		<h2>Reviews</h2>
+    		<h2 id="tab-review">Reviews</h2>
     		<h3>Still Not sure if this trip suits you? Check out what our previous customers say...</h3>
 			<dl>
 				<dt>
