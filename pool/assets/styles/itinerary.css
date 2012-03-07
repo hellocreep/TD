@@ -2,7 +2,7 @@
 
 .itinerary-wrap {
     margin:0 auto;
-    background: #ffffff;
+    background: #FFFFFF;
     width: 970px;
     position:relative;
     min-height: 900px;
@@ -14,7 +14,8 @@
 }
 
 .tour-info {
-	margin: 30px 10px 10px;
+	padding: 30px 10px 10px;
+	background: url(/imagesnew/itinerary/bg-head.png) repeat-x left top;
 }
 
 .tour-info h1 {
@@ -47,6 +48,7 @@
 
 .tour-des {
     float: left;
+    width: 720px;
 }
 
 .tour-des .tour-pic-gallery{
@@ -57,7 +59,6 @@
 
 .tour-des .des-detail {
     float: right;
-    margin-left: 28px;
 }
 
 .des-detail ul li{
@@ -67,12 +68,15 @@
 
 .trip-for ul {
 	margin-top: 15px;
+	background: #ffffff;
 }
 
 .trip-for ul li{
     float: left;
     width: 110px;
+    margin-left: 2px;
     text-align: center;
+    border: 1px solid #fafafa;
 }
 
 .trip-for ul li img {
@@ -82,7 +86,7 @@
 
 .tour-glance {
     float: right;
-    width: 210px;
+    width: 200px;
 }
 
 .tour-glance li {
@@ -102,7 +106,8 @@
 .share-tools {
 	height: 37px;
 	background: url(/imagesnew/itinerary/bg-share.png) no-repeat right center;
-	margin-right: 20px;
+	margin: 0 20px 17px 0;
+	width: 100%;
 }
 
 .share-tools .add-wish {
@@ -128,18 +133,47 @@
 }
 
 .tour-tab {
-	height: 40px;
+	height: 37px;
 	border-bottom: 2px solid #b03935;
 }
+
 .tour-tab li {
 	float: left;
 	color: #8a2321;
 	font-weight: bold;
+	height: 37px;
+}
+
+.tour-tab li a {
+	color: #8A2321;
+	display: block;
+	height: 37px;
+	text-align: center;
+	line-height: 37px;
+}
+
+.tour-tab li a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.tour-tab-detail {
+	background: url(/imagesnew/itinerary/tourtab-detail.png) no-repeat left top;
+	width: 167px;
+}
+
+.tour-tab-detail.active ,.tour-tab-detail:hover {
+	background-position: left bottom;
 }
 
 .tour-tab li.last {
 	float: right;
 	margin: -7px 0 0 0;
+}
+
+.tour-tab li.last a {
+	color: #FFFFFF;
+	text-align: left;
 }
 
 .tour-tab li.active {
@@ -200,13 +234,14 @@
 }
 
 .tailoring ul li{
-	background: url(/imagesnew/itinerary/icon-list.png) no-repeat left top;
+	background: url(/imagesnew/itinerary/list-circle.png) no-repeat left 3px;
 	padding-left: 20px;
 	margin: 24px 0 0 0;
 }
 
 .itinerary-full {
 	margin-top: 40px;
+	width: 100%;
 }
 
 #itinerary {
@@ -217,6 +252,7 @@
 
 #itinerary .dayCloum {
 	border-radius: 5px;
+	behavior: url(PIE.htc);
 	border: 1px solid #FFD7A2;
     margin: 12px 0 50px 0;
     width: 590px;
@@ -250,6 +286,7 @@
 	background: #FFFFFF;
     float: right;
     margin: 0 20px 10px 40px;
+    width: 202px;
 }
 
 .dayCloum dt + dd img {
@@ -274,6 +311,7 @@
 }
 
 .price-book {
+	min-height: 360px;
 	border: 1px solid #eeeeee;
 	padding: 20px 10px;
 	background: url(/imagesnew/itinerary/bg-price-book.png) repeat-x left bottom #fffefd;
@@ -327,13 +365,252 @@
 	padding-top: 25px;
 }
 
+.book-step h3 {
+	color: #333333;
+	font-size: 16px;
+	margin: 0 0  30px 30px;
+}
+
 .book-step img {
 	display: block;
-	margin: 0 auto 25px;
+	margin: 0 auto 20px;
+}
+
+.book-step ul {
+	padding: 0 30px;
+	margin-bottom: 30px;
+	height: 55px;
 }
 
 .book-step ul li {
 	width: 105px;
 	float: left;
-	margin-left: 43px;
+	margin-right: 30px;
+	text-align: center;
+}
+
+.book-step ul .diff {
+	margin-right: 57px;
+}
+
+.book-step ul .last {
+	float: right;
+	margin: 0;
+}
+
+.tibet-promise {
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+
+.tibet-promise h3 {
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.tibet-promise ul li {
+	background: url(/imagesnew/itinerary/list-circle.png) no-repeat left 5px;
+	padding-left: 15px; 
+	line-height: 23px;
+	width: 860px;
+	margin-bottom: 20px;
+}
+
+.tour-faq .accordion {
+	list-style: decimal inside none;
+    margin-bottom: 10px;
+    width: 682px;
+}
+
+.tour-faq h3 {
+	color: #333333;
+	font-size: 16px;
+	margin: 12px 0;
+}
+
+.accordion li {
+    background: url("/imagesnew/grid.png") repeat-x scroll 0 0 transparent;
+    border: 1px dotted #CCCCCC;
+    display: block;
+    margin-bottom: 5px
+}
+
+.accordion li h6 {
+    background: url("/imagesnew/ask-icon.png") no-repeat scroll 2px center transparent;
+    color: #434343;
+    cursor: pointer;
+    font-weight: normal;
+    height: 30px;
+    line-height: 28px;
+    text-indent: 25px;
+    width: 100%;
+}
+
+.accordion li p {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px dashed #CCCCCC;
+    line-height: 20px;
+    padding: 8px;
+    width: 664px;
+}
+
+.tour-faq .faq-bottom {
+	width: 830px;
+	height: 100px;
+	border: 1px dashed #000000;
+	padding: 12px 0 10px 15px;
+	margin: 25px 0 40px;
+}
+
+.faq-bottom h3 {
+	color: #c73838;
+	background: url(/imagesnew/itinerary/list-question.png) no-repeat left top ;
+	padding-left: 30px;
+	margin-bottom: 5px;
+}
+
+.faq-bottom .faq-contact {
+	margin-top: 15px;
+}
+
+.faq-contact span {
+	float: right;
+	margin-right: 35px;
+}
+
+.tour-review {
+	border-bottom: 1px dashed #000000;
+	margin-bottom: 15px;
+	*padding-bottom: 40px;
+}
+
+.tour-review h3 {
+	font-size: 16px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+.tour-review dl {
+	background: url(/imagesnew/itinerary/bg-msg-title.png) no-repeat scroll left top transparent;
+    margin: 0 120px 25px 0;
+    width: 773px;
+    float: left;
+}
+
+.tour-review dl dt {
+	float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-top: 15px;
+    width: 680px;
+}
+
+.tour-review dl dt + dd {
+    float: left;
+    font-size: 13px;
+    line-height: 160%;
+    margin-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 680px
+}
+
+.tour-review dl dt + dd + dd {
+	background: url(/imagesnew/itinerary/bg-msg-bottom.png) no-repeat scroll left bottom transparent;
+    float: left;
+    height: 69px;
+    width: 773px
+}
+
+.tour-review dl dt + dd + dd + dd {
+	color: #666666;
+    float: right;
+    font-style: italic
+}
+
+.tour-review dl dt + dd + dd + dd + dd {
+	float: right;
+}
+
+.btn-review {
+	color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+	margin: 0 155px 10px 0;
+}
+
+.tour-foot {
+	margin: 0 25px 50px 25px;
+}
+
+.tour-foot h2 {
+	color: #8a2622;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.tour-foot .itinerary-first {
+	float: left;
+	width: 310px;
+}
+
+.tour-foot img {
+	display: block;
+	margin: 0 auto;
+}
+
+.itinerary-first h3 {
+	background: #8c2621;
+	height: 45px;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 45px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 45px;
+}
+
+.itinerary-first h3 span {
+	font-size: 28px;
+	color: #292929;
+	margin-left: 25px;
+}
+
+.itinerary-other {
+	float: right;
+	width: 500px;
+}
+
+.itinerary-other li {
+	float: left;
+	position: relative;
+	width: 160px;
+	text-align: center;
+	margin: 0 80px 18px 0;
+}
+
+.itinerary-other li .tour-name {
+	background: url("/imagesnew/itinerary/icon-wish.png") no-repeat scroll right center;
+	padding-right: 16px;
+	display: block;
+	width: 110px;
+	margin-left: 10px;
+}
+
+.itinerary-other .rate {
+	background: url("/imagesnew/itinerary/bg-rate.png") no-repeat 0 0;
+    color: #FFFFFF;
+    display: block;
+    height: 32px;
+    position: absolute;
+    right: -25px;
+    top: 4px;
+    width: 67px;
+    line-height: 35px;
+    font-size: 14px;
 }

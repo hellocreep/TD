@@ -21,7 +21,9 @@
             $( '.btn-page' ).each(function(){
                 $( this ).click( function(){
                     $( this ).addClass( 'selected' ).siblings().removeClass( 'selected' );
-                    $( window ).scrollTop( 350 );
+                    if( opts['scroll'] > -1 ){
+                    	$( window ).scrollTop( opts['scroll'] );
+                    }
                     var begin = $( this ).attr( 'name' )*1;
                     var end = begin + opts['num']*1;
                     pager(begin,end);
@@ -47,7 +49,8 @@ $(function(){
         var _num = 4;
         pager_opts = {
             list: hotel_list,
-            num: _num
+            num: _num,
+            scroll: 350
         }
         $( '#pager' ).autoPager( pager_opts );
     
