@@ -570,15 +570,21 @@ div.slideshow div.images div.image img{
 }
 .block-container h2{
 	margin:10px 0 10px 10px;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 10px 0 10px 10px;
+    padding-bottom: 8px;
+    width: 95%;
 }
 .block-container strong{
-	padding:10px 0 5px 0px;
+	padding: 10px 0 5px 10px;
 	display: block;
 	color:#670E14;
 }
 
 h2.howwe{
-	padding:10px 0;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 5px;
+    padding: 8px 0;
 }
 
 /* @WHAT WE DO
@@ -592,7 +598,7 @@ ul.wedo-nav {
     margin-top: 20px;
     padding: 3px 0 0 2px;
     position: relative;
-    z-index:10000;
+    z-index:60;
 }
 .wedo-nav li{
 	width:225px;
@@ -608,12 +614,15 @@ ul.wedo-nav {
     line-height:97px;
     background:url("/imagesnew/aboutus/bg_nav_chevron.png") no-repeat 50% 80%;
     cursor:pointer;
+    border:1px solid #fa7750;
 }
 .wedo-nav li:hover ,
 .wedo-nav .active{
     background:url("/imagesnew/aboutus/bg_active_wide.png") no-repeat scroll 50% 93% transparent;
     height: 116px;
     color:#ececec;
+    border:none;
+    
 }
 .wedo-unit h2{
 	color:#fff;
@@ -653,16 +662,28 @@ ul.wedo-nav {
 	float:left;
 	width:280px;
 	padding:10px;
-	height:400px;
+	height:380px;
 	min-height:100px;
 	clear:left;
-	background:url(/imagesnew/aboutus/wedo-bg.png) 0 86px no-repeat #2B539C;
+	
 	position:relative;
+}
+.wedo-left-tibet{
+	background:url(/imagesnew/aboutus/wedo-bg-tibet.png) 0 0 no-repeat ;
+}
+.wedo-left-tibetchina{
+	background:url(/imagesnew/aboutus/wedo-bg-tibetchina.jpg) 0 0 no-repeat ;
+}
+.wedo-left-nepal{
+	background:url(/imagesnew/aboutus/wedo-bg-nepal.jpg) 0 0 no-repeat ;
+}
+.wedo-left-tibetchina p{
+	color:#222222;
 }
 .wedo-right{
 	float:left;
 	width:382px;
-	height:420px;
+	height:400px;
 	background:#ececec;
 }
 .wedo-title{
@@ -690,6 +711,9 @@ ul.wedo-nav {
 	
 	margin-top:20px;
 }
+.wedo-reco a.reco-title{
+	font-weight:normal;
+}
 .wedo-reco .side-reco{
 	float:left;
 	margin:0 10px 10px;
@@ -703,4 +727,20 @@ ul.wedo-nav {
 
 .flow-img{
 	margin-top:17px;
+}
+
+.block-container a{
+	position:relative;
+	display:block;
+	float:left;
+}
+
+.zoom{
+	position:absolute;
+	right: 15px;
+	bottom:15px;
+	width:57px;
+	height:17px;
+	background:url(/imagesnew/aboutus/zoom-more.gif) no-repeat;
+	display:block;
 }

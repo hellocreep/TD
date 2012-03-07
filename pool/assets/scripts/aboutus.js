@@ -213,6 +213,13 @@ $(function() {
             'transitionOut' : 'none',
             'type' : 'iframe'
         }); 
+        
+        $('a[rel="images-gallery"]').addClass('clearfix').hover(function(){
+        	$(this).append('<span class="zoom"></span>');
+        },function(){
+        	$(this).children('.zoom').remove();
+        }
+        );
 		
 		
 })
