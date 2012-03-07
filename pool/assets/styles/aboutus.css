@@ -763,3 +763,9 @@ a.tc-name{
 	font-size:15px;
 	padding: 0 0 10px;
 }
+a.more-details{
+	display:inline;
+	display:block;
+	float:right;
+	margin-top:27px;
+}
