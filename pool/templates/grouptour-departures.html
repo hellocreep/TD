@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}<!--填标题-->{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/departures.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block script %}
+<script src="/assets/scripts/jquery.validate.min.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block body%}
+{% include 'header.html' %}
+<div class="bread"></div>
+
+<div class="allpage-wrap">
+	<h1>2012 Group Tour Departures </h1>
+	<ul class="calenav">
+		<li>Jan,2012</li>
+		<li>Feb,2012</li>
+		<li>Mar,2012</li>
+		<li>Apr,2012</li>
+		<li>May,2012</li>
+		<li>Jun,2012</li>
+		<li>Jul,2012</li>
+		<li>Aug,2012</li>
+		<li>Sep,2012</li>
+		<li>Oct,2012</li>
+		<li>Nov,2012</li>
+		<li>Dec,2012</li>
+	</ul>
+	<div class="departures">
+		<table class="ocalendar">
+			<tr><th class="red">Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th class="red">Sat</th></tr>
+			<tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+		</table>
+	</div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}
+

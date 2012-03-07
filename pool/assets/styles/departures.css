@@ -1,0 +1,37 @@
+.calenav li{
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: 700 1em/25px Verdana,Arial,Helvetica,sans-serif;
+    height: 27px;
+    margin-top: 10px; !important;
+    padding: 0;
+    text-align: center;
+    width: 78px;
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-right: 1px solid #FFFFFF;
+}
+.calenav li:hover{
+	background: none repeat scroll 0 0 #505050;
+	color:#FFF;
+}
+.departures{
+	  clear: both;
+    margin-top: 10px;
+}
+.ocalendar
+{
+	width:940px;
+}
+.ocalendar th {
+    background: none repeat scroll 0 0 #E3E3E3;
+    font: 1.2em Verdana,Arial,Helvetica,sans-serif;
+    width:14%;
+}
+.ocalendar th, .ocalendar td, .ocalendar tr {
+    border: 1px solid #AACADD;
+}
+.red
+{
+	color:red;
+}

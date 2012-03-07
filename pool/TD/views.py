@@ -49,3 +49,5 @@ def share(request):
     return render_to_response('share-form.html',{})
 def form(request):
     return render_to_response('shareform.html',{})
+def departures(request):
+    return render_to_response('grouptour-departures.html',{})

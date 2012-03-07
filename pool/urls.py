@@ -41,5 +41,6 @@ urlpatterns += patterns('TD.views',
     (r'^itinerary/$','itinerary'),
     (r'^share/$','share'),
     (r'^form/$','form'),
+    (r'^departures/$','departures'),
     (r'^$','sitemap'),
 )
