@@ -563,8 +563,12 @@ div.slideshow div.images div.image img{
 	margin-bottom:10px;
 	margin-right:10px;
 	display:inline;
+	
 }
-
+.block-container img:hover{
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
 .block-container p{
 	padding:0px 10px 20px 10px;
 }
@@ -576,9 +580,10 @@ div.slideshow div.images div.image img{
     width: 95%;
 }
 .block-container strong{
-	padding: 10px 0 5px 10px;
+	padding: 10px 0 5px 0px;
 	display: block;
 	color:#670E14;
+	font-size:15px;
 }
 
 h2.howwe{
@@ -714,6 +719,9 @@ ul.wedo-nav {
 .wedo-reco a.reco-title{
 	font-weight:normal;
 }
+.wedo-reco .reco-img{
+	height:130px;
+}
 .wedo-reco .side-reco{
 	float:left;
 	margin:0 10px 10px;
@@ -734,7 +742,6 @@ ul.wedo-nav {
 	display:block;
 	float:left;
 }
-
 .zoom{
 	position:absolute;
 	right: 15px;
@@ -743,4 +750,16 @@ ul.wedo-nav {
 	height:17px;
 	background:url(/imagesnew/aboutus/zoom-more.gif) no-repeat;
 	display:block;
+}
+
+.team-hr{
+	border-top: 1px dashed #ccc;color:#fff; padding:10px 0;border-left:none;
+}
+a.tc-name{
+	float:none;
+	color:#670e14;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:15px;
+	padding: 0 0 10px;
 }
