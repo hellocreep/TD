@@ -57,6 +57,18 @@
     height: 245px;
 }
 
+.view-gallery {
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	color: #5ec1f3;
+}
+
+.view-gallery:hover {
+	color: #17a6ed;	
+	text-decoration: none;
+}
+
 .tour-des .des-detail {
     float: right;
 }
@@ -133,7 +145,7 @@
 }
 
 .tour-tab {
-	height: 37px;
+	height: 36px;
 	border-bottom: 2px solid #b03935;
 }
 
@@ -141,32 +153,62 @@
 	float: left;
 	color: #8a2321;
 	font-weight: bold;
-	height: 37px;
+	height: 36px;
+	background: url(/imagesnew/itinerary/tab-itinerary.png) no-repeat;
+	margin-left: 10px;
 }
 
 .tour-tab li a {
 	color: #8A2321;
 	display: block;
-	height: 37px;
+	height: 36px;
 	text-align: center;
-	line-height: 37px;
+	line-height: 36px;
 }
 
-.tour-tab li a:hover {
+.tour-tab li a:hover, .tour-tab li a.active {
 	text-decoration: none;
 	color: #FFFFFF;
 }
 
-.tour-tab-detail {
-	background: url(/imagesnew/itinerary/tourtab-detail.png) no-repeat left top;
-	width: 167px;
+.tour-tab .tab-detail {
+	width: 162px;
+	background-position: 0 -36px;
 }
 
-.tour-tab-detail.active ,.tour-tab-detail:hover {
-	background-position: left bottom;
+.tour-tab .tab-detail.active ,.tab-detail:hover {
+	background-position: 0 1px;
+}
+
+.tour-tab .tab-price {
+	width: 230px;
+	background-position: -168px -36px;
+}
+
+.tab-price.active, .tab-price:hover {
+	background-position: -168px 1px;
+}
+
+.tour-tab .tab-faq {
+	background-position: -403px -36px;
+    width: 117px
+}
+
+.tab-faq.active, .tab-faq:hover {
+	background-position: -403px 1px;
+}
+
+.tour-tab .tab-review {
+	background-position: -523px -36px;
+    width: 106px;
+}
+
+.tab-review.active, .tab-review:hover {
+	background-position: -523px 1px;
 }
 
 .tour-tab li.last {
+	background: none;
 	float: right;
 	margin: -7px 0 0 0;
 }
