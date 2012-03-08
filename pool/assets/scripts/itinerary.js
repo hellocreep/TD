@@ -1,5 +1,11 @@
 (function(){
-	
+	function Submitform1( e ){
+		e.preventDefault();
+		var formobj=document.getElementById("inquiryform1");
+		formobj.method="post";
+		formobj.action="http://www.tibetdiscovery.com/forms/mailer.php";
+		formobj.submit();
+	}
 $(function(){
 	
 	$( '.accordion p' ).hide();
@@ -53,16 +59,16 @@ $(function(){
 				});
 	});
 	
-	/*
-	$( '.divReview' ).hide();
-	$( '.btn-review' ).click(function(){
-		$( '.divReview' ).fadeTo(1000,1);
-		//$( 'div#wrapper').addClass('positon');
+	$('.divReview').hide();
+	$('.btn-review').click(function( e ){
+		e.preventDefault();
+		$( window ).scrollTop( 100 )
+		$('.divReview').fadeTo(1000,1);
+		});
+	$('.close').click(function(){
+		$('.divReview').hide();
 	});
-	$( '.close' ).click(function(){
-		$( '.divReview' ).hide();
-		//$('div#wrapper').removeClass('positon');
-	}); 
-	*/
+	
+	$( '#inquirysub').click(Submitform1); 
 })
 })(jQuery);

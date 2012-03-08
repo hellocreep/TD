@@ -88,12 +88,11 @@ private car/SUV<img src="/imagesnew/itinerary/icon-question.png"></li>
     <div class="tour-detail">
     	<div class="tour-intro clearfix">
     		<div class="tc-say">
-    			<h2>Sue says</h2>
+    			<h2>Our Expert Says</h2>
     			<p>    You can stop anywhere on the road to discover the real Tibet;
     Your private Tibetan local guide and driver will show you the best of Tibetan people, landscape, religion and culture;
     The trekking will
 </p>
-    			<p align="right">-<a href="#">who is Sue?</a></p>
     			<h3>Trip Highlights & our service value</h3>
     			<ul>
     				<li>You can stop anywhere on the road to discover the real Tibet;</li>
@@ -165,7 +164,12 @@ what is possible.</p>
 				
     		</div>
     		
-    		<div class="itinerary-right"></div>
+    		<div class="itinerary-right">
+    			<img src="/imagesnew/sample/itinerary-map.png" / style="margin-top: 15px; border-bottom: 1px dashed #434343; padding-bottom: 12px">
+    			<div class="update-enquiri">
+    				
+    			</div>
+    		</div>
     	</div>
     	
     	<h2 id="tab-price">Price Guide & Booking Info</h2>
@@ -333,7 +337,7 @@ be valid for a lifetime, if you has no plans for the Tibet trip, then we'll refu
     			<li>
     				<img src="/imagesnew/sample/tour.png" width="150" height="105" /> 
     				<a href="#" class="tour-name">Classic Tibet Tour</a>
-    				<p>7 days from <span class="red">$688</span></p>
+    				<p><span class="red">$688</span></p>
     				<span class="rate">13%</span>
     			</li>
     			<li>
@@ -358,6 +362,78 @@ be valid for a lifetime, if you has no plans for the Tibet trip, then we'll refu
     	</div>
     	
     </div>
+</div>
+
+<div style="opacity: 1;" class="inquirybox divReview">
+	<script src="/forms/inquiry.js" language="javascript"></script>
+	<h3>Been on this tour?</h3><span class="close">close</span>
+	<p>
+		Fellow Tibet Discovery travelers would like to know what you think of this tour.
+	</p>
+	<form id="inquiryform1">
+		<input type="hidden" value="Inquiry:Tour review" id="subject" name="subject">
+		<input type="hidden" value="20" id="inqtype" name="Inqtype">
+		<input type="hidden" value="FullName" name="required">
+		<input type="hidden" value="167" id="pfid" name="pfid">
+		<input type="hidden" value="reviews" id="reviews" name="reviews">
+		<script type="text/javascript" language="javascript">
+			// &lt;![CDATA[
+			document.write("<input name=\"PageTitle\" value=\"" + document.title + "\" type=\"hidden\" >");
+			document.write("<input name=\"PageLink\" value=\"" + location.href + "\" type=\"hidden\" >");
+			document.write("<input type=\"hidden\" name=\"Ref_Page\" value=\"" + document.referrer + "\" >");
+			// ]]&gt;
+			function toenter(x) {
+				if(x.value == x.defaultValue)
+					x.value = '';
+				x.style.color = '#000';
+			}
+
+			function overenter(x) {
+				if(/^\s*$/.test(x.value)) {
+					x.value = x.defaultValue;
+					x.style.color = '#aaa';
+				}
+			}
+		</script>
+		<input type="hidden" value="Lhasa Tour in Tibet to See Potala Palace &amp; Jokhang Temple" name="PageTitle">
+		<input type="hidden" value="http://www.tibetdiscovery.com/private-tours/essence-tour-of-lhasa/#bookings" name="PageLink">
+		<input type="hidden" value="" name="Ref_Page">
+		<div class="reviewInfo">
+			<label>Your Overall Rating <span>*</span></label>
+			<div class="star">
+				<input type="radio" checked="checked" value="Highly Recommended(5star)" id="s5" name="star">
+				<label for="s5">Highly Recommended</label>
+				<input type="radio" value="Recommended(4star)" id="s4" name="star">
+				<label for="s4">Recommended</label>
+				<input type="radio" value="worth doing(3star)" id="s3" name="star">
+				<label for="s3">worth doing</label>
+				<input type="radio" value="it was OK, but could have been better(2star)" id="s2" name="star">
+				<label for="s2">it was OK, but could have been better</label>
+				<input type="radio" value="I don’t recommend this(1star)" id="s1" name="star">
+				<label for="s1">I don’t recommend this</label>
+			</div>
+			<label for="text">Write Your Review <span>*</span></label>
+			<textarea onblur="if(value=='') {value='Please describe your tour. You may include tour guide, driver, accommodation, meals, sights, or anything else that happened during your trip.'}" onfocus="if(value=='Please describe your tour. You may include tour guide, driver, accommodation, meals, sights, or anything else that happened during your trip.') {value=''}" id="text" name="text">Please describe your tour. You may include tour guide, driver, accommodation, meals, sights, or anything else that happened during your trip.</textarea>
+			<label for="caption">Write a Caption for your Trip</label>
+			<input type="text" id="caption" name="caption">
+		</div>
+		<div class="personalInfo">
+			<label for="FullName">Your Name <span>*</span></label>
+			<input type="text" id="FullName" name="FullName">
+			<em>(If you’d rather your name wasn’t published, please enter your initials)</em>
+			<label for="nationality">Your Nationality <span>*</span></label>
+			<input type="text" id="nationality" name="nationality">
+			<label for="date">Your Traveled Date <span>*</span></label>
+			<input type="text" id="date" name="date">
+			<em>(mm-dd-yy)</em>
+			<label for="facebook">Your Facebook</label>
+			<input type="text" value="http://facebook.com/" id="facebook" name="facebook">
+			<a class="facebook" href="#">Connect with our Facebook</a>
+		</div>
+		<p align="center">
+			<a id="inquirysub" class="btn_submit" href="#">Submit</a>
+		</p>
+	</form>
 </div>
 
 {% include 'footer.html' %}
