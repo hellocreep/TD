@@ -84,10 +84,24 @@ body {
     font-style: normal;
 }
 */
+/*全局h1-h6通用字体
+------------------------------------------------------------------------------
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('../fonts/MuseoSans_500-webfont.eot');
+    src: url('../fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('../fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('../fonts/MuseoSans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*/
 
 h1, h2, h3, h4, h5, h6 {
     color: #7E0122;/*臧红色*/
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
     font-weight: bold;
 }
 
@@ -320,15 +334,15 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 .content {
     width: 682px;
     float: right;
-	margin-top:10px;
+	margin-top:18px;
 	margin-right:22px;
 }
 
 .content h1 {
-	font-family: 'Cantarell';
+	/*font-family: 'Cantarell';
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 10px;*/
 }
 
 .content .content-h2,content-h3 {
@@ -786,6 +800,7 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 	width:240px;
 	background:url(/imagesnew/nav-bg-up.png) no-repeat center top;
 	padding:20px 0;
+	margin-bottom:0;
 }
 
 .sidebar h1 a {
@@ -848,7 +863,6 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 .have-arrow li{
 	background:url(/imagesnew/nav-arrow.png) no-repeat 200px center;
 }
-
 .subnav-left li {
     border: none;
     position: relative;
@@ -966,13 +980,18 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 
 /* CONTENT FOOT NOT SURE*/
 .FAQ-footer {
-    border-top: 1px dashed #DDDDDD;
-    margin: 50px 0 0;
-    padding: 20px 20px 0;
+    
+    padding: 60px 20px 60px;
+    
 }
 .FAQ-footer h4{
 	color:#444444;
 	text-align:center;
+}
+.FAQ-help {
+	margin-top:10px;
+	padding-top:25px;
+	border-top: 1px dashed #DDDDDD;
 }
 .FAQ-help p {
     color: #434343;
@@ -1002,6 +1021,9 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 	text-decoration:none;
 	background:url(/imagesnew/btn.png) no-repeat -301px -161px;
 }
+/*
+ * 页面底部TC联系头像
+ */
 .author-list {
     clear: both;
     margin:20px 0 0;
@@ -1010,35 +1032,29 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 .author-list h2{
 	color:#434343;
 }
-.author-list li {
-    float: left;
-    display: inline-block;
-    margin: 0 0 20px 40px;
-    text-align: center;
-    width: 120px;
-}
 .author-list li a {
     color: #666666;
     display: block;
-    padding-top: 5px;
     text-decoration: none;
-	border:1px solid #ffffff;
+    float:left;
+    padding:10px;
+    margin:10px 30px;
 }
 .author-list li a:hover {
-    background-color: #F5F5F5;
-    border: 1px dashed #E0E0E0;
-    margin: 0;
+    background-color: #f0f0f0;
+    color:#222222;
+    text-decoration:underline;
+    border:1px dashed #ddd;
+    padding:9px;
 }
 .img-icon {
-    border: 1px dashed white;
+	width: 60px;
     height: 60px;
-    margin: 0 auto;
-    outline: 1px solid #DDDDDD;
+    padding: 1px;
+    border:1px solid #ccc;
     overflow: hidden;
-    width: 60px;
     display: block;
 }
-
 /*火车页面sidebar样式*/
 .recommend-h3{
     font-size:14px;
