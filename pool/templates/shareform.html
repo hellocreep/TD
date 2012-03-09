@@ -1,4 +1,3 @@
-
 {% extends 'base.html' %}
 
 {% block title %}<!--填标题-->{% endblock %}
@@ -33,9 +32,11 @@
 				<tr><th colspan="2"><h2>Attach your article and/or photos </h2></th></tr>
 				<tr><td colspan="2">Use these fields to attach your article or photos to this form.</td></tr>
 				<tr><th>Attach a file </th></tr>
-				<tr class="attach"><td colspan="2"><input type="file" name="pic[]" class="upfile"></td></tr>
+				<tr><td colspan="2"><input type="file" name="pic[]" class="upfile"></td></tr>
 				<tr><th>Attach a file </th></tr>
-				<tr><td colspan="2"><span class="send-more">Send More</span> </td></tr>
+				<tr><td colspan="2"><input type="file" name="pic[]" class="upfile"></td></tr>
+				<tr><th>Attach a file </th></tr>
+				<tr><td colspan="2"><input type="file" name="pic[]" class="upfile"></td></tr>
 				<tr><th>Title</th><th>Email</th></tr>
 				<tr><td align="left"><input type="text" name="title" class="requird"></td><td align="left"><input type="text" name="EmailAdress" class="requird email"></td></tr>
 				<tr><th>First Name</th><th>Surname</th></tr>
@@ -51,39 +52,8 @@
 			</table>
 		</form>
 	</div>
-	
-	<!--<form id="shareForm" method="post" action="#">
-		<table>
-			<tr><th align="left">Title<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="title" id="title" class="required"></td></tr>
-			<tr><th align="left">First Name<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="FirstName" id="firstname" class="required"></td></tr>
-			<tr><th align="left">Surname<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="Surname " id="surname" class="required"></td></tr>
-			<tr><th align="left">Your email address<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="EmailAdress" id="emailadress" class="required email"></td></tr>
-			<tr><th align="left">Phone Number<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="PhoneNumber" id="phonenumber" class="required"></td></tr>
-			<tr><th align="left">Your postcode or town<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="PostCode" id="postcode" class="required"></td></tr>
-			<tr><th align="left">Does your article or photos relate to a trip you had with Audley?</th></tr>
-			<tr><td><input type="text" name="Audley" id="audley" class="audley"></td></tr>
-			<tr><th align="left">About your trip</th></tr>
-			<tr><td>Tell us a little about the trip your article or photos relate to. Where did you travel? If sending us photos, where were they taken and what are they of? How would you describe the experience?</td></tr>
-			<tr><td><textarea name="abouttrips" rows="5" cols="46"></textarea></td></tr>
-			<tr><th style="border-bottom:1px #ccc dotted"></th></tr>
-			<tr><th align="left"><h2>Attach your article and/or photos </h2></th></tr>
-			<tr><td>Use these fields to attach your article or photos to this form.</td></tr>
-			<tr><th align="left">Attach a file </th></tr>
-			<tr><td><input type="file" name="pic[]" class="uploade"></td></tr>
-			<tr><th align="left">Attach a file </th></tr>
-			<tr><td><input type="file" name="pic[]" class="uploade"></td></tr>
-			<tr><th align="left">Attach a file </th></tr>
-			<tr><td><input type="file" name="pic[]" class="uploade"></td></tr>
-			<tr><td align="center"><input type="submit" name="submit" value="Send" style="width:80px; height: 30px;margin-top:10px;"></td></tr>
-		</table>
-	</form>-->
 </div>
 
 {% include 'footer.html' %}
 {% endblock %}
+
