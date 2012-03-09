@@ -39,11 +39,27 @@
 	font-size: 15px;
     float: right;
     font-style: normal;
+    position: relative;
 }
 
 .light-price {
     color: #c73838;
     font-size: 24px;
+}
+
+.price-tip {
+    position: absolute;
+    padding: 10px;
+    border: 1px dashed #D0D0C2;
+    background: #FAF8F7;
+    display: none;
+    top: 20px;
+    width: 200px;
+}
+
+.price-tip ul li {
+    list-style: none;
+    margin-top: 10px;
 }
 
 .tour-des {
@@ -57,7 +73,13 @@
     height: 245px;
 }
 
+.tour-pic-gallery img{
+    display: block;
+    margin: 0 auto;
+}
+
 .view-gallery {
+    margin-top: 10px;
 	display: block;
 	font-size: 16px;
 	text-align: center;
@@ -74,11 +96,13 @@
 }
 
 .des-detail ul li{
+    list-style: none;
     margin: 0 0 20px 0;
     width: 285px;
 }
 
 .trip-for ul {
+    list-style: none;
 	margin-top: 15px;
 	background: #ffffff;
 }
@@ -92,9 +116,37 @@
     border: 1px solid #fafafa;
 }
 
+.trip ul li:hover {
+    background: #F7F0E3;
+}
+
+.tips-title {
+    color: #C73838;
+}
+
 .trip-for ul li img {
     display: block;
     margin: 0 auto;
+}
+
+.trip-for .tripfor-detail {
+    display: none;
+    width: 650px;
+}
+
+.trip-tips {
+    min-height: 400px;
+    padding: 20px;
+    font-size: 14px;
+    max-width: 675px;
+}
+
+.trip-tips ul {
+    list-style: disc inside; 
+}
+
+.trip-tips ul li{
+    margin-bottom: 10px;
 }
 
 .tour-glance {
@@ -250,9 +302,10 @@
 }
 
 .tc-say ul li {
+    list-style: none;
 	background: url(/imagesnew/itinerary/icon-list.png) no-repeat left top;
 	padding-left: 20px;
-	margin: 24px 0 0 0;
+	margin: 10px 0 0 0;
 }
 
 .tc-say h2 {
@@ -281,6 +334,7 @@
 }
 
 .tailoring ul li{
+    list-style: none;
 	background: url(/imagesnew/itinerary/list-circle.png) no-repeat left 3px;
 	padding-left: 20px;
 	margin: 24px 0 0 0;
@@ -357,6 +411,19 @@
 	float: right;
 }
 
+.itinerary-map {
+   
+}
+
+.itineray-map img {
+    margin-top: 15px; 
+    border-bottom: 1px dashed #434343;
+    padding-bottom: 12px;
+    width: 300px;
+    height: 200px;
+    
+}
+
 .price-book {
 	min-height: 360px;
 	border: 1px solid #eeeeee;
@@ -376,6 +443,7 @@
 }
 
 .price-left ul li {
+    list-style: none;
 	padding-left: 18px; 
 	margin-bottom: 6px;
 	line-height: 14px;
@@ -424,6 +492,7 @@
 }
 
 .book-step ul {
+    list-style: none;
 	padding: 0 30px;
 	margin-bottom: 30px;
 	height: 55px;
@@ -456,11 +525,11 @@
 }
 
 .tibet-promise ul li {
+    list-style: none;
 	background: url(/imagesnew/itinerary/list-circle.png) no-repeat left 5px;
 	padding-left: 15px; 
-	line-height: 23px;
-	width: 860px;
-	margin-bottom: 20px;
+	width: 760px;
+	margin-bottom: 10px;
 }
 
 .tour-faq .accordion {
@@ -495,7 +564,6 @@
 
 .accordion li p {
     background: none repeat scroll 0 0 #FFFFFF;
-    border-top: 1px dashed #CCCCCC;
     line-height: 20px;
     padding: 8px;
     width: 664px;
@@ -595,6 +663,10 @@
 	margin: 0 25px 50px 25px;
 }
 
+.total-rank {
+    display: none;
+}
+
 .tour-foot h2 {
 	color: #8a2622;
 	font-size: 16px;
@@ -622,6 +694,15 @@
 	line-height: 45px;
 }
 
+.itinerary-first a {
+    color: #FFFFFF;
+}
+
+.itinerary-first a:hover {
+    text-decoration: none;
+    color: #FBB017;
+}
+
 .itinerary-first h3 span {
 	font-size: 28px;
 	color: #292929;
@@ -631,6 +712,7 @@
 .itinerary-other {
 	float: right;
 	width: 500px;
+	list-style: none;
 }
 
 .itinerary-other li {
@@ -657,6 +739,10 @@
     width: 67px;
     line-height: 35px;
     font-size: 14px;
+}
+
+.wide-foot .content-foot{
+    float: none;
 }
 
 /* REVIEW BOX */
@@ -822,4 +908,13 @@ div.divReview a#inquirysub {
 }
 div.divReview a#inquirysub:hover {
 	background-position: left bottom;
+}
+
+#inquiryform {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    display: none;
+    z-index: 500;
+    background: #ffffff;
 }
