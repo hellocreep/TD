@@ -52,6 +52,9 @@ def travelsytle(request):
 def responsible(request):
     return render_to_response('responsible.html',{})
 
+def ourcompany(request):
+    return render_to_response('ourcompany.html',{})
+
 def itinerary(request):
     return render_to_response('itinerary.html',{})
 

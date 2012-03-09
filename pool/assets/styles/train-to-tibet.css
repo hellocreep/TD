@@ -76,12 +76,6 @@ dl.recommend-info:hover{
 
 
 /*火车页面sidebar样式-----end*/
-.content h1{
-	font-family:'Cantarell';
-	font-weight:bold;
-	margin-bottom:20px;
-	margin-top:10px;
-}
 
 .train-map {
     margin: 10px auto;

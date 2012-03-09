@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% block title %}hotel-index{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/aboutus.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block script %} <script type="text/javascript" src="/assets/scripts/aboutus.js"></script>
+<script src="/assets/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#inquiryform").validate();
+	});
+
+</script>
+{% endblock %}
+{% block body%}
+{% include 'header.html' %} <div class="bread"></div>
+<div class="wrapper clearfix">
+	{% include 'sidebar-aboutus.html' %}
+	<div class="content">
+		<div class="contact-header">
+			<img src="/imagesnew/sample/bg-aboutus-head.png" />
+			<span> Your Tibet Dream is not so far out of reach </span>
+		</div>
+		<h1>Private Tibet Local Tour Guide & Transfer </h1>
+		<p>
+			<strong>Welcome to Tibetdiscovery.com,</strong> the leading online local tour operator based in Lhasa, Tibet.
+		</p>
+		<p>
+			<strong class="tibetred">We are Tibetan specialists.</strong> We live here and know this land - the geography, the local amenities (hotels, restaurants,
+			museums, shops), and the people, their culture and religion. We know this Holy Land better than any other tour operator,
+			giving your up-to-date information, not stolen tips from the tour books. And all this at an unbeatable price.
+		</p>
+		<p>
+			<strong class="tibetred">Traveling with us isn't about ticking the boxes.</strong> We live in Tibet and can get you off the tourist trails and into the heart of the
+			places we visit. Eat where the Tibetan locals eat, and get close to the people and places that make Tibet come alive.
+		</p>
+		<p>
+			<strong class="tibetred">We'll do all the legwork for you so there's more time to explore.</strong> And we'll be right there with you to help you create your
+			lifetime Tibet adventure.
+		</p>
+		<div class="company-profile">
+			<h2 class="underline">Company Profile</h2>
+			<img src="/imagesnew/sample/bg-aboutus-head.png" width="198" height="128">
+			<img src="/imagesnew/sample/bg-aboutus-head.png" width="198" height="128">
+			<p>
+				Tibetdiscovery.com is the leading online travel service platform operated by
+				Niwei International Tours Co.ltd, based in Lhasa, Tibet, since 1996.
+			</p>
+			<p>
+				Tibetdiscovery.com (online since 2009) provides online Tibet travel services
+				directly to the end consumers for English speaking people from all over
+				the world.
+			</p>
+			<p>
+				As the leading local tour operator in Tibet, we have a long-established
+				relationship with the hotels, restaurants, and transportation companies of
+				Tibet, and can provide guaranteed service at a lower price.
+			</p>
+			<p>
+				Note: As a local tour operator, the prices of our Tibet tours are regularly
+				10%-20% lower than our competitors from Chinese cities like Chengdu,
+				Shanghai, Guilin, Beijing, etc., and 15%-25% lower than overseas travel
+				agents or wholesalers.
+			</p>
+		</div>
+		<div class="ourservice">
+			<h2 class="underline">Our Service</h2>
+			<img alt="tour guide" src="/imagesnew/aboutus/tourguide.jpg">
+			<ul>
+				<li class="li-title">
+					Private Tibet Tours
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+			</ul>
+			<ul>
+				<li class="li-title">
+					Private Tibet Tours
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+			</ul>
+			<ul>
+				<li class="li-title">
+					Private Tibet Tours
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+				<li>
+					<a href="#">Private Tibet Tours </a>
+				</li>
+			</ul>
+		</div>
+		<div class="ourcustomers">
+			<h2 class="underline">Our Customers</h2>
+			<img src="/imagesnew/sample/bg-aboutus-head.png" width="316" height="224">
+			<p>
+				If you have travelled with us before, we hope we
+				have convinced you that our 'specialist' approach
+				means you enjoy an expertly planned trip tailored
+				to your interests and budget. For those who
+				haven't travelled with us before, find out more
+				about the 'discovery way'.
+			</p>
+			
+			<a href="###">Check what past customers say about us</a>
+		</div>
+	</div><!--end of div.content -->
+</div><!--end of div.wrapper -->
+{% include 'footer.html' %}
+{% endblock %}

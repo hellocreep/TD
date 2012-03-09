@@ -31,11 +31,12 @@ h5 { font-size: 14px; line-height:18px;}
 
 h6 { font-size: 12px; line-height:14px;}
 
-h1, h2, h3, h4, h5, h6, b,strong { font-weight: normal;font-family:"Museo Sans 500",Lucida Grande,Arial,Sans-serif ;}
+h1, h2, h3, h4, h5, h6{ font-weight: normal;font-family:"Museo Sans 500",Lucida Grande,Arial,Sans-serif ;}
 
 
 .underline {
-    border-bottom: 1px solid #DDDDDD;
+	background:url("/imagesnew/aboutus/underline.png") repeat-x bottom;
+    /*border-bottom: 1px solid #DDDDDD;*/
 }
 
 .tc-info {
@@ -245,7 +246,8 @@ ul.letter-page li.activedcss {
 	margin-top:60px;
 }
 
-/*SLIDESHOW*/
+/*SLIDESHOW
+---------------------------------------------------------------------------------*/
 div.slideshow {
 	height: 340px;
 	overflow: hidden;
@@ -346,7 +348,8 @@ div.slideshow div.images div.image img{
 	height:320px;
 }
 
-/*LETTER*/
+/*LETTER
+-----------------------------------------------------------------------------*/
 
 .letter{
 	/*background: url(/imagesnew/grid.png) 0 0;*/
@@ -363,7 +366,8 @@ div.slideshow div.images div.image img{
 .letter-content p {
 	margin: 10px 0;
 }
-/*SIDEBAR*/
+/* @SIDEBAR
+-----------------------------------------------------------------------------*/
 .aboutus-side-foot {
 	background: url(/imagesnew/sidebar-flower-down.png) no-repeat top center;
 	padding-top: 45px;
@@ -405,7 +409,7 @@ div.slideshow div.images div.image img{
 	position: relative;
 	border: 1px solid #dddfe6;
 	padding: 1px;
-	margin:5px 0 10px;
+	margin:-8px 0 20px;
 }
 .contact-header img{
 	width:676px;
@@ -554,9 +558,6 @@ div.slideshow div.images div.image img{
 	margin: 40px 0 10px 0;
 	background:url(/imagesnew/aboutus/flower.png) no-repeat center right;
 	height:355px;
-}
-.foots{
-	background:url(/imagesnew/aboutus/flower.png) no-repeat center right;
 }
 .aboutus-foot p{
 	text-align: center;
@@ -758,7 +759,21 @@ ul.wedo-nav {
 	margin-top:17px;
 }
 
+.responsible h2{
+	color:#434343;
+	font-size:18px;
+}
+
+
 /*******Departures*******/
+.departures {
+	margin-top:40px;
+}
+
+.departures h2{
+	text-indent:30px;
+}
+
 #departures-monthly{
 	margin-top:10px;
 }
@@ -862,5 +877,51 @@ a.more-details{
 }
 .travelstyle p{
 	margin-bottom:0;
+}
 
+.company-profile img{
+	float:right;
+	padding:1px;
+	background:#fff;
+	border:1px solid #ddd;
+	margin:10px 0px 0 30px;
+	clear:right;
+}
+
+.ourservice img{
+	margin: 15px 15px 10px;
+	
+}
+.ourservice ul{
+	width:160px;
+	min-height:100px;
+	float:left;
+	margin:20px 30px; 
+}
+.ourservice ul li{
+	list-style-type:disc;
+	list-style-position: inside;
+	line-height:22px;
+}
+.ourservice ul li.li-title{
+	list-style-type:none;
+	color:#222222;
+	font-weight:bold;
+	line-height:26px;
+}
+.ourcustomers img{
+	float:right;
+	margin:15px 0px 10px 45px;
+	padding:1px;
+	background:#fff;
+	border:1px solid #ddd;
+}
+.ourcustomers a{
+	display:block;
+	margin-top:30px;
+}
+.ourcustomers p{
+}
+.tibetred{
+	color:#7E0122;
 }
