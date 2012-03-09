@@ -126,8 +126,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .underline {
-	background: url("/imagesnew/aboutus/underline.png") repeat-x bottom;
+    border-bottom: 1px solid #DDDDDD;
 }
+
 /*--------------------------------*/
 
 a {

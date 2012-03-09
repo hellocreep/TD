@@ -34,10 +34,6 @@ h6 { font-size: 12px; line-height:14px;}
 h1, h2, h3, h4, h5, h6{ font-weight: normal;font-family:"Museo Sans 500",Lucida Grande,Arial,Sans-serif ;}
 
 
-.underline {
-	background:url("/imagesnew/aboutus/underline.png") repeat-x bottom;
-    /*border-bottom: 1px solid #DDDDDD;*/
-}
 
 .tc-info {
 }
@@ -608,7 +604,6 @@ div.slideshow div.images div.image img{
 }
 .block-container h2{
 	margin:10px 0 10px 10px;
-    border-bottom: 1px solid #CCCCCC;
     margin: 10px 0 10px 10px;
     width: 95%;
 }
