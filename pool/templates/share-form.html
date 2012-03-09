@@ -1,60 +1,37 @@
 {% extends 'base.html' %}
 
-{% block title %}<!--填标题-->{% endblock %}
+{% block title %}<!--填标题-->
+{% endblock %}
 
 {% block style %}
 <link href="/assets/styles/share-form.css" type="text/css" rel="stylesheet"/>
 {% endblock %}
 
-{% block script %}
-<script src="/assets/scripts/jquery.validate.min.js" type="text/javascript"></script>
+{% block script %} <script src="/assets/scripts/jquery.validate.min.js" type="text/javascript"></script>
 <script src="/assets/scripts/share-form.js" type="text/javascript"></script>
 {% endblock %}
 
 {% block body%}
-{% include 'header.html' %}
-<div class="bread"></div>
+{% include 'header.html' %} <div class="bread"></div>
+<div class="wrapper clearfix">
+	{% include 'sidebar-aboutus.html' %}
+	<div class="content">
+			<h1>Do You Have An Interesting Tibet Travel Story? Do Tell! </h1>
+			<p>
+				Tibetdiscovery.com is all about our company’s Tibet travel stories, tour highlights, and travel tips (as you may have guessed!).
+			</p>
+			<p>
+				But, now, we’d like to turn the tables on <strong>you</strong>.
+			</p>
+			<p>
+				We would <strong>love</strong> to hear about <strong>your</strong> best experiences,your most interesting information on Tibet, your top Tibet travel tips, your precious photos…anything about Tibet that you’d love to share.
+			</p>
+			<p>
+				tips, your precious photos…anything about Tibet that you’d love to share.
 
-<div class="allpage-wrap">
-	<h1>Do You Have An Interesting Tibet Travel Story? Do Tell! </h1>
-	<p>Tibetdiscovery.com is all about our company’s Tibet travel stories, tour highlights, and travel tips (as you may have guessed!).</p>
-	<p>But, now, we’d like to turn the tables on <strong>you</strong>. </p>
-	<p>We would <strong>love</strong> to hear about <strong>your</strong> best experiences,your most interesting information on Tibet, your top Tibet travel tips, your precious photos…anything about Tibet that you’d love to share.</p>
-	<p>tips, your precious photos…anything about Tibet that you’d love to share.
-
-Everybody has something they love most about Tibet. What makes Tibet, Tibet to you? Is it the grassland? The simple people? The religion? What is it that really tingles you about this Holy Land? We’re sure others who visit this site will thank you, too!</p>
-	<form id="shareForm" method="post" action="#">
-		<table>
-			<tr><th align="left">Title<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="title" id="title" class="required"></td></tr>
-			<tr><th align="left">First Name<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="FirstName" id="firstname" class="required"></td></tr>
-			<tr><th align="left">Surname<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="Surname " id="surname" class="required"></td></tr>
-			<tr><th align="left">Your email address<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="EmailAdress" id="emailadress" class="required email"></td></tr>
-			<tr><th align="left">Phone Number<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="PhoneNumber" id="phonenumber" class="required"></td></tr>
-			<tr><th align="left">Your postcode or town<span style="color:#ff0000;">*</span></th></tr>
-			<tr><td><input type="text" name="PostCode" id="postcode" class="required"></td></tr>
-			<tr><th align="left">Does your article or photos relate to a trip you had with Audley?</th></tr>
-			<tr><td><input type="text" name="Audley" id="audley" class="audley"></td></tr>
-			<tr><th align="left">About your trip</th></tr>
-			<tr><td>Tell us a little about the trip your article or photos relate to. Where did you travel? If sending us photos, where were they taken and what are they of? How would you describe the experience?</td></tr>
-			<tr><td><textarea name="abouttrips" rows="5" cols="46"></textarea></td></tr>
-			<tr><th style="border-bottom:1px #ccc dotted"></th></tr>
-			<tr><th align="left"><h2>Attach your article and/or photos </h2></th></tr>
-			<tr><td>Use these fields to attach your article or photos to this form.</td></tr>
-			<tr><th align="left">Attach a file </th></tr>
-			<tr><td><input type="file" name="pic[]" class="uploade"></td></tr>
-			<tr><th align="left">Attach a file </th></tr>
-			<tr><td><input type="file" name="pic[]" class="uploade"></td></tr>
-			<tr><th align="left">Attach a file </th></tr>
-			<tr><td><input type="file" name="pic[]" class="uploade"></td></tr>
-			<tr><td align="center"><input type="submit" name="submit" value="Send" style="width:80px; height: 30px;margin-top:10px;"></td></tr>
-		</table>
-	</form>
-</div>
-
+				Everybody has something they love most about Tibet. What makes Tibet, Tibet to you? Is it the grassland? The simple people? The religion? What is it that really tingles you about this Holy Land? We’re sure others who visit this site will thank you, too!
+			</p>
+	</div><!--end of div.content -->
+</div><!--end of div.wrapper -->
 {% include 'footer.html' %}
-{% endblock %}
+{% endblock %} 
