@@ -101,7 +101,8 @@ p {
 }
 h2 {
 	font-size: 20px;
-	line-height: 28px;
+	line-height: 30px;
+	margin-bottom:16px;
 }
 h3 {
 	font-size: 18px;
@@ -119,16 +120,14 @@ h6 {
 	font-size: 12px;
 	line-height: 14px;
 }
-h1, h2, h3, h4, h5, h6{ 
+h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	font-family:"Museo Sans 500",Lucida Grande,Arial,Sans-serif ;  
+	font-family: "Museo Sans 500", Lucida Grande, Arial, Sans-serif;
 	color: #7E0122;
 }
-
 .underline {
-    border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
 }
-
 /*--------------------------------*/
 
 a {
@@ -776,6 +775,10 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	width: 253px;
 	*
 	width: 233px;
+}
+ul.subnav a.active {
+	color: #888888;
+	background: url("/imagesnew/nav-dot.png") no-repeat scroll 26px center transparent;
 }
 .have-arrow li {
 	background: url(/imagesnew/nav-arrow.png) no-repeat 200px center;
