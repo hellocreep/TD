@@ -48,6 +48,12 @@ table {
     border-spacing: 0;
 }
 
+
+
+
+
+
+
 /* COMMON STYLE */
 body {
     font-family: Arial,Helvetica,sans-serif;
@@ -73,31 +79,8 @@ body {
     width: 950px;
     padding: 10px;
 }
-/*暂时不用本地字体，此样式暂时不用
-@font-face {
-    font-family: 'Cantarell';
-    src: url('../fonts/Cantarell-Regular.ttf');
-    src: url('../fonts/Cantarell-Regular.ttf') format('truetype'),
-         url('../fonts/Cantarell-Oblique.ttf') format('truetype'),
-         url('../fonts/Cantarell-BoldOblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-/*全局h1-h6通用字体
-------------------------------------------------------------------------------
-@font-face {
-    font-family: 'MuseoSans500';
-    src: url('../fonts/MuseoSans_500-webfont.eot');
-    src: url('../fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MuseoSans_500-webfont.woff') format('woff'),
-         url('../fonts/MuseoSans_500-webfont.ttf') format('truetype'),
-         url('../fonts/MuseoSans_500-webfont.svg#MuseoSans500') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-*/
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #7E0122;/*臧红色*/
@@ -124,6 +107,62 @@ p {
 img {
     border: medium none;
 }
+
+
+
+
+/* 全局reset new------------------*/
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('/fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('/fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('/fonts/MuseoSans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 { 
+	font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 16px; 
+}
+
+
+p {
+    margin: 8px 0 16px;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+h2 { font-size: 20px; line-height:28px;}
+
+h3 { font-size: 18px; line-height:24px;}
+
+h4 { font-size: 16px; line-height:22px;}
+
+h5 { font-size: 14px; line-height:18px;}
+
+h6 { font-size: 12px; line-height:14px;}
+
+h1, h2, h3, h4, h5, h6,{ font-weight: normal;font-family:"Museo Sans 500",Lucida Grande,Arial,Sans-serif ;}
+b, strong {
+	font-family:"Museo Sans 500",Lucida Grande,Arial,Sans-serif ;
+}
+
+.underline {
+    background:url("/imagesnew/aboutus/underline.png") repeat-x bottom;
+}
+
+
+
+
+/*--------------------------------*/
+
+
+
+
+
 a {
     color: #2368C7;
     text-decoration: none;
@@ -338,12 +377,6 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 	margin-right:22px;
 }
 
-.content h1 {
-	/*font-family: 'Cantarell';
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 10px;*/
-}
 
 .content .content-h2,content-h3 {
     margin: 20px 0 6px 0;
@@ -978,7 +1011,9 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 
 /* CONTENT FOOT NOT SURE*/
 .FAQ-footer {
+	background: url("/imagesnew/aboutus/flower.png") no-repeat scroll right 0 transparent;
     padding: 20px 20px 60px;
+    margin-right:-8px;
 }
 .FAQ-footer h4{
 	color:#444444;
