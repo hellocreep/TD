@@ -7,6 +7,15 @@
 		formobj.action="http://www.tibetdiscovery.com/forms/mailer.php";
 		formobj.submit();
 	}
+	/******recent inquery 文字滚动**************/
+function AutoScroll(){
+        $('.Recent-Inquiry').find("ul:first").animate({
+                marginTop:"-25px"
+        },500,function(){
+                $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+        });
+        
+}
 $(function(){
 	//FAQ accordion
 	$( '.accordion div' ).hide();
@@ -127,6 +136,11 @@ $(function(){
 	$( '.close_form' ).click( function(){
 	   $( '#inquiryform' ).hide();
 	});
+	
+/******recent inquery 文字滚动**************/
+setInterval(AutoScroll,5000);
+
+	
 	
 })
 })(jQuery);
