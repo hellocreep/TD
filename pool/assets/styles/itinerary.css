@@ -443,7 +443,7 @@
 
 .itinerary-right {
 	float: right;
-	width: 290px;
+	width:290px;
 }
 
 .itinerary-map {
@@ -477,7 +477,10 @@
     margin-top: 10px;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> d5bbfbfebb4a0cfc70eec97dc71a7cfcdcbb3079
 .price-book {
 	min-height: 360px;
 	border: 1px solid #eeeeee;
