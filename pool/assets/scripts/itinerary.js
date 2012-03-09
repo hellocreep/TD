@@ -67,7 +67,7 @@ $(function(){
 			
 		}else{
 			$( '.tab-replace' ).hide();
-			t.css('position', 'static');
+			t.css({'position':'static','background':'none'});
 		}
 	});
 	
@@ -140,8 +140,6 @@ $(function(){
 	});
 	
 	//Make Enquiry
-	//TODO
-	//添加关闭按钮
 	$( '.make-enquiry' ).click(function( e ){
 	    e.preventDefault();
 	    var form_content = $( '#inquiryform' )

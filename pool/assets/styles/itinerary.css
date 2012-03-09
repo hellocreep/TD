@@ -332,8 +332,12 @@
 
 .tc-say {
 	float: left;
-	margin-left: 20px;
-	width: 550px;
+	margin-left: 40px;
+    width: 500px
+}
+
+.tc-say {
+    margin-bottom: 5px;
 }
 
 .tc-say ul li {
