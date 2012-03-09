@@ -84,24 +84,10 @@ body {
     font-style: normal;
 }
 */
-/*全局h1-h6通用字体
-------------------------------------------------------------------------------
-@font-face {
-    font-family: 'MuseoSans500';
-    src: url('../fonts/MuseoSans_500-webfont.eot');
-    src: url('../fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MuseoSans_500-webfont.woff') format('woff'),
-         url('../fonts/MuseoSans_500-webfont.ttf') format('truetype'),
-         url('../fonts/MuseoSans_500-webfont.svg#MuseoSans500') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-*/
 
 h1, h2, h3, h4, h5, h6 {
     color: #7E0122;/*臧红色*/
-    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
     font-weight: bold;
 }
 
@@ -334,15 +320,15 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 .content {
     width: 682px;
     float: right;
-	margin-top:18px;
+	margin-top:10px;
 	margin-right:22px;
 }
 
 .content h1 {
-	/*font-family: 'Cantarell';
+	font-family: 'Cantarell';
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: 10px;*/
+    margin-top: 10px;
 }
 
 .content .content-h2,content-h3 {
@@ -794,30 +780,31 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 }
 
 .sidebar h1 {
-	
-	font-family: verdana;
-	font-size:18px;
-	text-indent:10px;
+	font-family: 'Wellfleet', cursive;
+	text-align:center;
 	display:block;
 	width:240px;
 	background:url(/imagesnew/nav-bg-up.png) no-repeat center top;
 	padding:20px 0;
-	margin-bottom:0;
 }
 
 .sidebar h1 a {
-	color:#434343;
+    color: #7E0122;
     display: block;
 }
 
 .sidebar h1 a:hover {
     text-decoration: none;
-    text-shadow: 1px 1px 1px #ccc;
-	filter: dropshadow(color=#ccc, offx=1, offy=1);
+    text-shadow: 1px 1px 1px #B35E64;
+	filter: dropshadow(color=#B35E64, offx=1, offy=1);
 }
 
 .sidebar-pic {
     height: 147px;
+}
+
+.nav-left {
+
 }
 
 .nav-left li a{
@@ -860,6 +847,26 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 
 .have-arrow li{
 	background:url(/imagesnew/nav-arrow.png) no-repeat 200px center;
+}
+
+.top-subnav li a{
+    background: url("/imagesnew/nav-dot.png") no-repeat scroll 46px center transparent;
+    color: #434343;
+    display: block;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    padding-left:60px;
+    width:180px;
+}
+.top-subnav li a.active{
+	color:#888888;
+	background:url("/imagesnew/nav-dot.png") no-repeat 46px center transparent;
+	cursor:pointer;
+	width:180px;
+	left:0;
+	text-decoration:none;
 }
 .subnav-left li {
     border: none;
@@ -978,16 +985,13 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 
 /* CONTENT FOOT NOT SURE*/
 .FAQ-footer {
-    padding: 20px 20px 60px;
+    border-top: 1px dashed #DDDDDD;
+    margin: 50px 0 0;
+    padding: 20px 20px 0;
 }
 .FAQ-footer h4{
 	color:#444444;
 	text-align:center;
-}
-.FAQ-help {
-	margin-top:10px;
-	padding-top:25px;
-	border-top: 1px dashed #DDDDDD;
 }
 .FAQ-help p {
     color: #434343;
@@ -1017,9 +1021,6 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 	text-decoration:none;
 	background:url(/imagesnew/btn.png) no-repeat -301px -161px;
 }
-/*
- * 页面底部TC联系头像
- */
 .author-list {
     clear: both;
     margin:20px 0 0;
@@ -1028,29 +1029,35 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 .author-list h2{
 	color:#434343;
 }
+.author-list li {
+    float: left;
+    display: inline-block;
+    margin: 0 0 20px 40px;
+    text-align: center;
+    width: 120px;
+}
 .author-list li a {
     color: #666666;
     display: block;
+    padding-top: 5px;
     text-decoration: none;
-    float:left;
-    padding:10px;
-    margin:10px 30px;
+	border:1px solid #ffffff;
 }
 .author-list li a:hover {
-    background-color: #f0f0f0;
-    color:#222222;
-    text-decoration:underline;
-    border:1px dashed #ddd;
-    padding:9px;
+    background-color: #F5F5F5;
+    border: 1px dashed #E0E0E0;
+    margin: 0;
 }
 .img-icon {
-	width: 60px;
+    border: 1px dashed white;
     height: 60px;
-    padding: 1px;
-    border:1px solid #ccc;
+    margin: 0 auto;
+    outline: 1px solid #DDDDDD;
     overflow: hidden;
+    width: 60px;
     display: block;
 }
+
 /*火车页面sidebar样式*/
 .recommend-h3{
     font-size:14px;
