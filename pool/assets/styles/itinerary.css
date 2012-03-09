@@ -332,8 +332,12 @@
 
 .tc-say {
 	float: left;
-	margin-left: 20px;
-	width: 550px;
+	margin-left: 40px;
+    width: 500px
+}
+
+.tc-say {
+    margin-bottom: 5px;
 }
 
 .tc-say ul li {
@@ -462,25 +466,26 @@
 
 .Recent-Inquiry {
     border: 1px solid #DDDDDD;
-    margin-top: 50px;
+    height:285px;
+    overflow: hidden;
 }
 
-.Recent-Inquiry h2 {
+.itinerary-right h2 {
     background: none repeat scroll 0 0 #94332F;
     color: #FFFFFF;
     height: 35px;
     line-height: 35px;
     padding-left: 15px;
+    margin-bottom:0px;
+    margin-top:50px;
 }
 .Recent-Inquiry ul li {
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 10px;
+    padding-left:10px;
+    background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 3px transparent;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d5bbfbfebb4a0cfc70eec97dc71a7cfcdcbb3079
 .price-book {
 	min-height: 360px;
 	border: 1px solid #eeeeee;
