@@ -123,6 +123,7 @@
     margin-left: 2px;
     text-align: center;
     border: 1px solid #fafafa;
+    padding: 2px;
 }
 
 .trip-for ul li:hover {
@@ -152,7 +153,8 @@
 }
 
 .trip-tips h2,h3,h4 {
-    margin: 15px 0;
+    font-size: 18px;
+    margin: 0 0 15px;
 }
 
 .trip-tips p {
@@ -163,8 +165,16 @@
     list-style: disc inside; 
 }
 
+.trip-tips .physical-require{
+    
+}
+
 .trip-tips ul li{
     margin-bottom: 10px;
+}
+
+.trip-tips ul li.active {
+    background: #EBF69F;
 }
 
 .tour-glance {
@@ -970,5 +980,12 @@ div.divReview a#inquirysub:hover {
 
 .close_form {
     position: relative;
-    left: 200px;
+    left: 420px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.close_form:hover {
+    color: #92240D;
 }

@@ -419,7 +419,7 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
 .call-you {
     position: relative;
     font-size: 11px;
-    z-index: 99999;
+    z-index: 999;
 }
 
 #call-you {
@@ -435,7 +435,7 @@ input[type="text"]:hover,input[type="text"]:focus,textarea:hover,textarea:focus{
     position: absolute;
     top: 23px;
     left: 0;
-    z-index: 99999;
+    z-index: 999;
     padding: 10px;
     width: 163px;
     background-color: #F9F9F9;

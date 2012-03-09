@@ -25,6 +25,20 @@ $(function(){
 	        });
 	    });
 	});
+	//高亮 tips
+	var h_light = $( '.tripfor-detail' ).eq( 0 ).attr( 'rel' )
+                    .replace('demand-','').replace('.png','');
+	$( '.physical-require li' ).eq( h_light*1-1 ).addClass( 'active' );
+	var h_light2 = $( '.tripfor-detail' ).eq( 1 ).text();
+	if( h_light2 =='Leisure' ){
+	    $( '.tripfor-detail ul li' ).eq( 0 ).addClass( 'active' );
+	}
+	if( h_light2=='Comfortable' ){
+	    $( '.tripfor-detail ul li' ).eq( 1 ).addClass( 'active' );
+	}
+	if( h_light2=='Tight' ){
+	    $( '.tripfor-detail ul li' ).eq( 2 ).addClass( 'active' );
+	}
 	
 	//tour-map fancybox
 	$( '.itinerary-map' ).fancybox();
@@ -120,9 +134,10 @@ $(function(){
 	//TODO
 	//添加关闭按钮
 	$( '.make-enquiry' ).click(function( e ){
-	    e.prevnetDefault();
+	    e.preventDefault();
 	    var form_content = $( '#inquiryform' )
 	    form_content.show();
+	    $( '.close_form' ).show();
 	}); 
 	$( '.close_form' ).click( function(){
 	   $( '#inquiryform' ).hide();
