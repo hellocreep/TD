@@ -16,6 +16,13 @@ function AutoScroll(){
         });
         
 }
+    //TAB切换
+    function change_tab( t ){
+        t.addClass( 'active' ).children( 'a' ).addClass( 'active' )
+        .parent()
+        .siblings().removeClass( 'active' )
+        .children( 'a' ).removeClass( 'active' );
+    }
 $(function(){
 	//FAQ accordion
 	$( '.accordion div' ).hide();
@@ -38,15 +45,16 @@ $(function(){
 	var h_light = $( '.tripfor-detail' ).eq( 0 ).attr( 'rel' )
                     .replace('demand-','').replace('.png','');
 	$( '.physical-require li' ).eq( h_light*1-1 ).addClass( 'active' );
-	var h_light2 = $( '.tripfor-detail' ).eq( 1 ).text();
+	
+	var h_light2 = $( '.tips-title' ).eq( 0 ).text();
 	if( h_light2 =='Leisure' ){
-	    $( '.tripfor-detail ul li' ).eq( 0 ).addClass( 'active' );
+	    $( '.tour-pace-tips li' ).eq( 0 ).addClass( 'active' );
 	}
 	if( h_light2=='Comfortable' ){
-	    $( '.tripfor-detail ul li' ).eq( 1 ).addClass( 'active' );
+	    $( '.tour-pace-tips li' ).eq( 1 ).addClass( 'active' );
 	}
 	if( h_light2=='Tight' ){
-	    $( '.tripfor-detail ul li' ).eq( 2 ).addClass( 'active' );
+	    $( '.tour-pace-tips li' ).eq( 2 ).addClass( 'active' );
 	}
 	
 	//tour-map fancybox
@@ -58,17 +66,36 @@ $(function(){
 	$( window ).unbind( 'scroll' );
 	var t = $( '.tour-tab' );
 	t_top = t.offset().top;
+	var d = $( '#tab-detail' ).offset().top;
+    var p = $( '#tab-price' ).offset().top;
+    var f = $( '#tab-faq' ).offset().top;
+    var r = $( '#tab-review' ).offset().top;
 	$( window ).bind( 'scroll',function(){
+		var s_top = $( this ).scrollTop()
 		
-		if( $( this ).scrollTop() > t_top ){
+		if( s_top > t_top ){
 			$( '.tab-replace' ).show();
 			t.css({'position':'fixed','top':0,
 			'z-index':10,'width':970,'background':'#FBFBF5'});
-			
+			if( s_top > (d -10) ){
+                change_tab( $( '.tab-detail' ) );
+            }
+            if( s_top > (p -10) ){
+                change_tab( $( '.tab-price' ) );
+            }
+            if( s_top > (f -10) ){
+                change_tab( $( '.tab-faq' ) );
+            }
+			if( s_top > (r -10)){
+                change_tab( $( '.tab-review' ) );
+            }
 		}else{
 			$( '.tab-replace' ).hide();
 			t.css({'position':'static','background':'none'});
+			$( '.tour-tab li' ).not( '.last' ).removeClass( 'active' )
+			.children( 'a' ).removeClass( 'active' );
 		}
+		
 	});
 	
 	//锚点

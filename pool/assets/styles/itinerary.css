@@ -33,6 +33,7 @@
     text-align: left;
     font-style: italic;
     padding-right: 55px;
+    padding-left: 28px;
 }
 
 .tour-sub .tour-price {
@@ -146,7 +147,7 @@
 }
 
 .trip-tips {
-    min-height: 400px;
+    min-height: 200px;
     padding: 20px;
     font-size: 14px;
     max-width: 675px;
@@ -170,7 +171,7 @@
 }
 
 .trip-tips ul li{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .trip-tips ul li.active {
@@ -633,6 +634,7 @@
     line-height: 20px;
     padding: 8px;
     width: 664px;
+    margin: 0;
 }
 
 .tour-faq .faq-bottom {
@@ -695,6 +697,10 @@
     padding-left: 45px;
     padding-right: 45px;
     width: 680px
+}
+
+.tour-review p {
+    margin: 8px 0 0 0;
 }
 
 .tour-review dl dt + dd + dd {
@@ -787,7 +793,11 @@
 	position: relative;
 	width: 160px;
 	text-align: center;
-	margin: 0 80px 18px 0;
+	margin: 0 80px 0 0;
+}
+
+.itinerary-other p {
+    margin: 0;
 }
 
 .itinerary-other li .tour-name {
