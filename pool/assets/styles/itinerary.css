@@ -84,6 +84,15 @@
 	font-size: 16px;
 	text-align: center;
 	color: #5ec1f3;
+	background: url("/imagesnew/itinerary/icon-gallery.png") no-repeat scroll left center transparent;
+    color: #5EC1F3;
+    display: block;
+    font-size: 16px;
+    height: 46px;
+    line-height: 48px;
+    margin: 10px auto;
+    text-align: right;
+    width: 145px;
 }
 
 .view-gallery:hover {
@@ -97,7 +106,7 @@
 
 .des-detail ul li{
     list-style: none;
-    margin: 0 0 20px 0;
+    margin: 0 0 12px 0;
     width: 285px;
 }
 
@@ -116,12 +125,13 @@
     border: 1px solid #fafafa;
 }
 
-.trip ul li:hover {
-    background: #F7F0E3;
+.trip-for ul li:hover {
+    background: #F8F1F1;
 }
 
 .tips-title {
     color: #C73838;
+    font-family: Papyrus;
 }
 
 .trip-for ul li img {
@@ -141,6 +151,14 @@
     max-width: 675px;
 }
 
+.trip-tips h2,h3,h4 {
+    margin: 15px 0;
+}
+
+.trip-tips p {
+    margin-bottom: 10px;
+}
+
 .trip-tips ul {
     list-style: disc inside; 
 }
@@ -155,11 +173,11 @@
 }
 
 .tour-glance li {
-    margin: 10px 0;
-    padding-left: 40px;
-    line-height: 23px;
-    background: url(/imagesnew/sample/glance.png) no-repeat left center;
+    background: url("/imagesnew/itinerary/icon-list.png") no-repeat scroll left top transparent;
     height: 23px;
+    line-height: 17px;
+    margin: 0 0 10px;
+    padding-left: 26px
 }
 
 .tour-glance li.first {
@@ -405,13 +423,13 @@
     width: 590px
 }
 
-
-
 .itinerary-right {
 	float: right;
 }
 
 .itinerary-map {
+   display: block;
+   cursor: url(/imagesnew/itinerary/icon-zoom.png), auto;
    
 }
 
@@ -421,7 +439,42 @@
     padding-bottom: 12px;
     width: 300px;
     height: 200px;
+}
+
+.Recent-Inquiry {
+    margin-top: 50px;
+    border: 1px solid #DDDDDD;
+}
+
+.Recent-Inquiry h2 {
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    background: #94332f;
+}
+
+.Recent-Inquiry ul li {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.Recent-Inquiry ul li span {
+    display: block;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+}
+
+.cusname {
+    width: 80px;     
+}
+
+.nationality {
     
+}
+
+.Recent-Inquiry ul li .date {
+    float: right;
 }
 
 .price-book {
@@ -438,8 +491,11 @@
 }
 
 .price-left {
-	float: left;
-	width: 500px;
+	border-right: 1px solid #DDDDDD;
+    float: left;
+    margin-left: 20px;
+    padding-right: 15px;
+    width: 500px
 }
 
 .price-left ul li {
@@ -469,9 +525,10 @@
 	margin-bottom: 25px;
 }
 
-.price-right .first {
-	border-bottom: 1px solid #e2e1e1;
-	padding-bottom: 20px;
+.best-time-go {
+    margin-left: 20px;
+    margin-top: 35px;
+    width: 80%;
 }
 
 .book-step {
