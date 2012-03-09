@@ -144,6 +144,7 @@ $(function(){
 	    e.preventDefault();
 	    var form_content = $( '#inquiryform' )
 	    form_content.show();
+	    $( window ).scrollTop( 200 );
 	    $( '.close_form' ).show();
 	}); 
 	$( '.close_form' ).click( function(){
