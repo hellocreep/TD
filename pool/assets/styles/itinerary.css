@@ -425,6 +425,7 @@
 
 .itinerary-right {
 	float: right;
+	width:290px;
 }
 
 .itinerary-map {
@@ -442,39 +443,20 @@
 }
 
 .Recent-Inquiry {
-    margin-top: 50px;
     border: 1px solid #DDDDDD;
+    margin-top: 50px;
 }
 
 .Recent-Inquiry h2 {
+    background: none repeat scroll 0 0 #94332F;
+    color: #FFFFFF;
     height: 35px;
     line-height: 35px;
-    color: #ffffff;
-    background: #94332f;
+    padding-left: 15px;
 }
-
 .Recent-Inquiry ul li {
     margin-left: 15px;
     margin-top: 10px;
-}
-
-.Recent-Inquiry ul li span {
-    display: block;
-    float: left;
-    height: 20px;
-    overflow: hidden;
-}
-
-.cusname {
-    width: 80px;     
-}
-
-.nationality {
-    
-}
-
-.Recent-Inquiry ul li .date {
-    float: right;
 }
 
 .price-book {
