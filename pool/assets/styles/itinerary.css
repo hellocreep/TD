@@ -123,6 +123,7 @@
     margin-left: 2px;
     text-align: center;
     border: 1px solid #fafafa;
+    padding: 2px;
 }
 
 .trip-for ul li:hover {
@@ -152,7 +153,8 @@
 }
 
 .trip-tips h2,h3,h4 {
-    margin: 15px 0;
+    font-size: 18px;
+    margin: 0 0 15px;
 }
 
 .trip-tips p {
@@ -163,8 +165,16 @@
     list-style: disc inside; 
 }
 
+.trip-tips .physical-require{
+    
+}
+
 .trip-tips ul li{
     margin-bottom: 10px;
+}
+
+.trip-tips ul li.active {
+    background: #EBF69F;
 }
 
 .tour-glance {
@@ -193,13 +203,20 @@
 	width: 100%;
 }
 
-.share-tools .add-wish {
+.share-tools .addwish {
 	float: right;
 	display: block;
 	background: url(/imagesnew/itinerary/icon-wish.png) no-repeat left center;
 	height: 18px;
 	padding-left: 18px;
-	margin: 8px 110px 8px 0;
+	margin: 8px 165px 8px 0;
+}
+
+.social-tools {
+    float: right;
+    left: 272px;
+    position: relative;
+    top: 9px;
 }
 
 /*ITINERARY BODY*/
@@ -328,6 +345,7 @@
 
 .tc-say h2 {
 	background: none;
+	margin-left: 50px;
 }
 
 .tc-say h3 {
@@ -425,6 +443,7 @@
 
 .itinerary-right {
 	float: right;
+	width:290px;
 }
 
 .itinerary-map {
@@ -442,41 +461,26 @@
 }
 
 .Recent-Inquiry {
-    margin-top: 50px;
     border: 1px solid #DDDDDD;
+    margin-top: 50px;
 }
 
 .Recent-Inquiry h2 {
+    background: none repeat scroll 0 0 #94332F;
+    color: #FFFFFF;
     height: 35px;
     line-height: 35px;
-    color: #ffffff;
-    background: #94332f;
+    padding-left: 15px;
 }
-
 .Recent-Inquiry ul li {
-    margin-left: 15px;
+    margin-left: 5px;
     margin-top: 10px;
 }
 
-.Recent-Inquiry ul li span {
-    display: block;
-    float: left;
-    height: 20px;
-    overflow: hidden;
-}
+<<<<<<< HEAD
+=======
 
-.cusname {
-    width: 80px;     
-}
-
-.nationality {
-    
-}
-
-.Recent-Inquiry ul li .date {
-    float: right;
-}
-
+>>>>>>> d5bbfbfebb4a0cfc70eec97dc71a7cfcdcbb3079
 .price-book {
 	min-height: 360px;
 	border: 1px solid #eeeeee;
@@ -732,7 +736,7 @@
 
 .tour-foot .itinerary-first {
 	float: left;
-	width: 310px;
+	width: 304px;
 }
 
 .tour-foot img {
@@ -749,6 +753,7 @@
 	font-weight: normal;
 	text-align: center;
 	line-height: 45px;
+	margin: 0;
 }
 
 .itinerary-first a {
@@ -798,8 +803,8 @@
     font-size: 14px;
 }
 
-.wide-foot .content-foot{
-    float: none;
+.wide-foot {
+    width: 960px;
 }
 
 /* REVIEW BOX */
@@ -974,4 +979,16 @@ div.divReview a#inquirysub:hover {
     display: none;
     z-index: 500;
     background: #ffffff;
+}
+
+.close_form {
+    position: relative;
+    left: 420px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.close_form:hover {
+    color: #92240D;
 }

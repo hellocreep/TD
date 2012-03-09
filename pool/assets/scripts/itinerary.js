@@ -25,6 +25,20 @@ $(function(){
 	        });
 	    });
 	});
+	//高亮 tips
+	var h_light = $( '.tripfor-detail' ).eq( 0 ).attr( 'rel' )
+                    .replace('demand-','').replace('.png','');
+	$( '.physical-require li' ).eq( h_light*1-1 ).addClass( 'active' );
+	var h_light2 = $( '.tripfor-detail' ).eq( 1 ).text();
+	if( h_light2 =='Leisure' ){
+	    $( '.tripfor-detail ul li' ).eq( 0 ).addClass( 'active' );
+	}
+	if( h_light2=='Comfortable' ){
+	    $( '.tripfor-detail ul li' ).eq( 1 ).addClass( 'active' );
+	}
+	if( h_light2=='Tight' ){
+	    $( '.tripfor-detail ul li' ).eq( 2 ).addClass( 'active' );
+	}
 	
 	//tour-map fancybox
 	$( '.itinerary-map' ).fancybox();
@@ -56,8 +70,13 @@ $(function(){
 		.children( 'a' ).removeClass( 'active' );
 	});
 	
+	/*屏蔽不显示图片*/
+    $("dl.dayCloum div dt+dd p:contains('No documents found.')").parent().hide();
+    /*屏蔽不显示图片*/
+    $("ul#optformlist p:contains('No documents found.')").hide(); 
+	
 	//Price Question
-	$( '.light-price img' ).hover(function(){
+	$( '.tour-price img' ).hover(function(){
 	    $( '.price-tip' ).show();
 	},function(){
 	    $( '.price-tip' ).hide();
@@ -79,6 +98,7 @@ $(function(){
 	//add wish fancybox
 	//TODO
 	//不能跳转页面
+	/*
 	$( '.add-wish' ).click(function(){
 		$.fancybox({
 				'width' : '75%',
@@ -89,12 +109,12 @@ $(function(){
 				'type' : 'iframe'
 				});
 	});
-	
+	*/
 	//Review 弹出框
 	$('.divReview').hide();
 	$('.btn-review').click(function( e ){
 		e.preventDefault();
-		$( window ).scrollTop( 100 )
+		$( window ).scrollTop( 100 );
 		$('.divReview').fadeTo(1000,1);
 		});
 	$('.close').click(function(){
@@ -105,21 +125,23 @@ $(function(){
 	//底部百分比分配
 	var total_rank = $( '.total-rank' ).text().split( ',' );
 	$( '.itinerary-first h3 span' ).text( total_rank[0] );
-	$( '.itinerary-other .rate' ).each(function(){
-	    var rank = $( this ).index() + 1
-	    $( this ).text( total_rank[rank] );
+	$( '.itinerary-other .rate' ).each(function( index ){
+	    var rank = index + 1
+        $( this ).text( total_rank[rank] );
 	});
 	
 	//Make Enquiry
 	//TODO
 	//添加关闭按钮
-	$( '.make-enquiry' ).click(function(){
+	$( '.make-enquiry' ).click(function( e ){
+	    e.preventDefault();
 	    var form_content = $( '#inquiryform' )
 	    form_content.show();
-	    //$.fancybox({
-	    //    'content': form_content
-	    //})
+	    $( '.close_form' ).show();
 	}); 
-	 
+	$( '.close_form' ).click( function(){
+	   $( '#inquiryform' ).hide();
+	});
+	
 })
 })(jQuery);
