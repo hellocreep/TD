@@ -49,6 +49,9 @@ def tourguide(request):
 def travelsytle(request):
     return render_to_response('travelsytle.html',{})
 
+def responsible(request):
+    return render_to_response('responsible.html',{})
+
 def itinerary(request):
     return render_to_response('itinerary.html',{})
 
