@@ -698,6 +698,14 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 .footer .info a {
 	color: #FFFFFF;
 }
+
+.footer-wrapper {
+	position: relative;
+}
+
+.ta-link {
+	position: absolute;
+}
 /* SIDEBAR */
 
 .sidebar {
