@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}hotel-index{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/destination.css" type="text/css" rel="stylesheet"/>
+<link href="/assets/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen" />
+{% endblock %}
+
+{% block script %} <script src="/assets/scripts/destination.js" type="text/javascript"></script>
+{% endblock %}
+{% block body%}
+{% include 'header.html' %} <div class="bread"></div>
+<div class="wrapper clearfix">
+	{% include 'sidebar-destination.html' %}
+	<div class="content" name="[*frag*]">
+		<div class="destination-top">
+			<div class="slides">
+				<div class="slide">
+					<img width="404" height="289" src="/imagesnew/flight-demo.png">
+					<h2>Visit the Terracotta Warriors</h2>
+						<p>
+							Widely regarded as one of China’s top three historical sites, the 2500 year old Terracotta Army has been amazing visitors since they were accidentally unearthed in 1974.
+						</p>
+						<a class="nav-button" href="">
+							<span>Read more</span>
+						</a>
+					
+					</div>
+				
+				
+			</div>
+			<div class="thumbs"></div>
+		</div>
+		<!--<div class="dest-top">
+			<div class="slides">
+				<div class="slide clearfix">
+					<img width="404" height="289" src="/imagesnew/flight-demo.png">
+					<div class="excerpt">
+						<h2>Visit the Terracotta Warriors</h2>
+						<p>
+							Widely regarded as one of China’s top three historical sites, the 2500 year old Terracotta Army has been amazing visitors since they were accidentally unearthed in 1974.
+						</p>
+						<a class="nav-button" href="">
+							<span>Read more</span>
+						</a>
+					</div>
+					<div class="caption">
+						Visit the Terracotta Warriors
+					</div>
+				</div>
+			</div>
+			<div class="thumbs">
+				<ul>
+					<li class="thumb">
+						<div class="iconic"><img alt="">
+						</div><span>Gallery</span>
+					</li>
+					<li class="thumb">
+						<div class="iconic"><img alt="">
+						</div><span>Gallery4345</span>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+	</div><!--end of div.content-->
+</div><!--end of div.wrapper-->
+{% include 'footer.html' %}
+{% endblock %}

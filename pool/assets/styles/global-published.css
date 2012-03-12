@@ -893,6 +893,53 @@ ul.subnav a.active {
 #feedback:hover {
 	left: 0;
 }
+
+/*******Departures*******/
+.departures {
+	margin-top:40px;
+}
+
+.departures h2{
+	text-indent:30px;
+}
+
+#departures-monthly{
+	margin-top:10px;
+}
+#departures-monthly .departure-month {
+    float: left;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    text-align: center;
+    padding:5px 0px 0px;
+    margin-left:10px;
+}
+#departures-monthly .departure-month a {
+    border: 1px solid #D6D6D6;
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    padding: 4px;
+    width: 2.5em;
+}
+#departures-monthly .departure-month a:hover {
+text-decoration: none;
+border: 1px solid #342559;
+box-shadow: 2px 2px 2px #DDD; } 
+#departures-monthly .month {
+font-weight: 700;
+display: block; }
+#departures-monthly .year {
+font-weight: 400;
+font-size: 0.8em; } 
+#departures-monthly  a:hover
+{
+	color:#AAD045;
+}
+
+
+
+
+
 /* CONTENT FOOT NOT SURE*/
 .FAQ-footer {
 	background: url("/imagesnew/aboutus/flower.png") no-repeat scroll right 0 transparent;
