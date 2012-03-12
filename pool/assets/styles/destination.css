@@ -1,0 +1,36 @@
+.slides{
+	background:#434343;	
+	width:100%;
+	height:300px;
+	position:relative;
+}
+.slide{
+	width:600px;
+	height:290px;
+	position:absolute;
+	border:1px solid red;
+}
+
+
+
+.slide{
+	position:absolute;
+	top:0;
+	left:0;
+	background:#fff;
+}
+.excerpt{
+	width:250px;
+	float:right;
+}
+.caption{
+	height:30px;
+	background:#ccc;
+	line-height:30px;
+	text-indent:20px;
+}
+.thumbs{
+	width:100%;
+	height:20px;
+	background:#888888;
+}
