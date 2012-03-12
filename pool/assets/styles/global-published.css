@@ -12,6 +12,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 ol {
 	list-style-type: disc;
+	list-style-position: inside;
 }
 li {
 	color: #434343;
