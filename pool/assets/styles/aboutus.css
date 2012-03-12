@@ -727,11 +727,25 @@ ul.wedo-nav {
 	margin-top:17px;
 }
 
-.responsible h2{
+.responsible h3{
 	color:#434343;
-	font-size:18px;
 }
-
+.responsible ul{
+	margin-bottom:10px;
+}
+.responsible ul li{
+	list-style:disc inside;
+	padding: 5px 0 5px 20px;
+}
+/*
+.responsible ol{
+	margin:8px 0 10px 0;
+}
+.responsible ol li{
+	list-style:decimal inside;
+	padding: 5px 0 5px 20px;
+}
+*/
 .block-container a{
 	position:relative;
 	display:block;
