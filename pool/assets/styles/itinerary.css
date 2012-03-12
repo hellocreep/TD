@@ -355,6 +355,7 @@
 .tc-say h2 {
 	background: none;
 	font-family: Papyrus;
+	font-weight: bold;
 }
 
 .tc-say h3 {
@@ -618,6 +619,7 @@
 	list-style: decimal inside none;
     margin-bottom: 10px;
     width: 760px;
+    margin-left: 32px
 }
 
 .tour-faq h3 {
@@ -677,7 +679,6 @@
 }
 
 .tour-review {
-	border-bottom: 1px dashed #000000;
 	margin-bottom: 15px;
 	*padding-bottom: 40px;
 }
@@ -686,11 +687,12 @@
 	font-size: 13px;
 	color: #333333;
 	margin-bottom: 20px;
+	margin-left: 30px;
 }
 
 .tour-review dl {
 	background: url(/imagesnew/itinerary/bg-msg-title.png) no-repeat scroll left top transparent;
-    margin: 0 120px 25px 0;
+    margin: 0 100px 25px 30px;
     width: 773px;
     float: left;
 }
@@ -1091,5 +1093,18 @@ div.divReview a#inquirysub:hover {
 }
 
 .faq-intro {
-	margin-left: 45px;
+	margin-left: 108px;
+	width: auto;
+}
+
+.wide-foot .author-list{
+	padding-left: 70px;
+}
+
+.wide-foot .btn-enquiry {
+	margin-right: 50px;
+}
+
+.wide-foot .btn-enquiry a {
+	text-indent: 6px;
 }

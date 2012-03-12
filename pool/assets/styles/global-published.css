@@ -698,6 +698,26 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 .footer .info a {
 	color: #FFFFFF;
 }
+
+.footer-wrapper {
+	position: relative;
+}
+
+.ta-link {
+	padding-bottom: 10px;
+    position: absolute;
+    right: 149px;
+    top: -29px;
+}
+
+.ta-link a {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    display: block;
+    margin-top: -6px;
+    padding-bottom: 7px;
+    text-align: center
+}
 /* SIDEBAR */
 
 .sidebar {

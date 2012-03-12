@@ -64,6 +64,9 @@ def whentogo(request):
 def thingstodo(request):
     return render_to_response('thingstodo.html',{})
 
+def whentogo(request):
+    return render_to_response('whentogo.html',{})
+
 def itinerary(request):
     return render_to_response('itinerary.html',{})
 
