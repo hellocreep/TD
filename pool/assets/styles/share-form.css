@@ -5,12 +5,8 @@
 	line-height:25px;
 	font-size:13px;
 }
-#shareForm
-{
+#shareForm{
 	padding: 15px;
-}
-table 
-{
 }
 table th{
 	font-size:13px;
@@ -19,10 +15,10 @@ table th{
 	padding:5px 0px 0px;
 }
 #shareForm input{
-	width:260px;
+	width: 260px;
 	height: 20px;
 }
-#shareForm .audley
+#shareForm .tibet
 {
 	width:460px;
 }

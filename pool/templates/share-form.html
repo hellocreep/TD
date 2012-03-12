@@ -16,8 +16,8 @@
 {% include 'header.html' %} <div class="bread"></div>
 <div class="wrapper clearfix">
 	{% include 'sidebar-aboutus.html' %}
-	<div class="content">
-		<h1>Do You Have An Interesting Tibet Travel Story? Do Tell! </h1>
+	<div class="content" name="[*frag*]">
+		<h1>Do You Have An Interesting Tibet Travel Story? Do Tell!</h1>
 		<p>
 			Tibetdiscovery.com is all about our company’s Tibet travel stories, tour highlights, and travel tips (as you may have guessed! ).
 		</p>
@@ -82,11 +82,11 @@
 					</td>
 				</tr>
 				<tr>
-					<th align="left">Does your article or photos relate to a trip you had with Audley?</th>
+					<th align="left">Does your article or photos relate to a trip you had with Tibetdiscovery?</th>
 				</tr>
 				<tr>
 					<td>
-					<input type="text" name="Audley" id="audley" class="audley">
+					<input type="text" name="Tibet" id="tibet" class="tibet">
 					</td>
 				</tr>
 				<tr>
@@ -96,7 +96,9 @@
 					<td>Tell us a little about the trip your article or photos relate to. Where did you travel? If sending us photos, where were they taken and what are they of? How would you describe the experience?</td>
 				</tr>
 				<tr>
-					<td>					<textarea name="abouttrips" rows="5" cols="46"></textarea></td>
+					<td>					
+						<textarea name="abouttrips" rows="5" cols="46"></textarea>
+					</td>
 				</tr>
 				<tr>
 					<th style="border-bottom:1px #ccc dotted"></th>
@@ -133,7 +135,7 @@
 				</tr>
 				<tr>
 					<td align="center">
-					<input type="submit" name="submit" value="Send" style="width:80px; height: 30px;margin-top:10px;">
+					<input class="btn middle" type="submit" name="submit" value="Send" style="height:25px; width:86px;">
 					</td>
 				</tr>
 			</table>

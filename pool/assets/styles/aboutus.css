@@ -235,9 +235,6 @@ ul.letter-page li.activedcss {
 	background:#922811;
 	color:#fff;
 }
-
-
-
 .custom-say{
 	margin-top:60px;
 }
@@ -346,12 +343,6 @@ div.slideshow div.images div.image img{
 
 /*LETTER
 -----------------------------------------------------------------------------*/
-
-.letter{
-	/*background: url(/imagesnew/grid.png) 0 0;*/
-}
-
-
 .letter-content {
 	background:url(/imagesnew/dialog.png) no-repeat -6px -6px;
 	margin: 20px 0px;
@@ -423,31 +414,21 @@ div.slideshow div.images div.image img{
 	right:1px;
 	bottom: 1px;
 }
-
-
-
 .contact-body {
 	margin-top: 40px;
 }
-
-
-
 .contact-form {
 	margin-top: 30px;
 }
-
 .contact-form h3 {
 	color: #434343;
 	text-align: left;
 	padding-bottom: 3px;
 	border-bottom: 1px solid #DDDDDD;
 }
-
 .contact-form p {
 	margin-left: 35px;
 }
-
-
 .contact-form .inset-title {
 	font-size: 14px;
 	color: #434343;
@@ -524,11 +505,9 @@ div.slideshow div.images div.image img{
 .office-location {
 	margin-left: 30px;
 }
-
 .section {
 	margin-top: 40px;
 }
-
 .section ul {
 	margin-top: 5px;
 	padding: 20px 0 0 30px;
@@ -558,11 +537,9 @@ div.slideshow div.images div.image img{
 .aboutus-foot p{
 	text-align: center;
 }
-
 .aboutus-foot .btn-enquiry {
 	margin: 20px 85px 0 0;
 }
-
 .aboutus-foot span {
 	font-size; 16px;
 	float: left;
@@ -593,7 +570,6 @@ div.slideshow div.images div.image img{
 	margin-bottom:10px;
 	margin-right:10px;
 	display:inline;
-	
 }
 .block-container img:hover{
 	opacity:0.8;
@@ -721,7 +697,6 @@ ul.wedo-nav {
 }
 .wedo-left2{
 	float:left;
-	
 	min-height:100px;
 	margin-top:20px;
 	margin-right:10px;
@@ -730,7 +705,6 @@ ul.wedo-nav {
 
 .wedo-reco{
 	float:left;
-	
 	margin-top:20px;
 }
 .wedo-reco a.reco-title{
@@ -747,7 +721,6 @@ ul.wedo-nav {
 .h1-below{
 	margin:0 0 20px;
 	display: block;
-	
 }
 
 .flow-img{
@@ -852,9 +825,6 @@ a.more-details{
 .tour-guides img{
 	margin:15px 15px 10px;
 }
-.aboutus-foot{
-	
-}
 .travelstyle ul{
 	border-bottom:1px dotted #dddddd;
 }
@@ -873,7 +843,6 @@ a.more-details{
 .travelstyle p{
 	margin-bottom:0;
 }
-
 .company-profile img{
 	float:right;
 	padding:1px;
@@ -882,11 +851,9 @@ a.more-details{
 	margin:10px 0px 0 30px;
 	clear:right;
 }
-
 .ourservice img{
 	margin: 15px 15px 10px;
-	
-}
+s}
 .ourservice ul{
 	width:160px;
 	min-height:100px;
