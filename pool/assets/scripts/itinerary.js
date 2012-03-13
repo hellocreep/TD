@@ -1,5 +1,7 @@
 (function(){
     //表单提交
+    
+    
 	function Submitform1( e ){
 		e.preventDefault();
 		var formobj=document.getElementById("inquiryform1");
@@ -166,11 +168,53 @@ $(function(){
 	    var rank = index + 1
         $( this ).text( total_rank[rank] );
 	});
-	
-	//Make Enquiry
+	//新版make enquiry
 	$( '.make-enquiry' ).click(function( e ){
 	    e.preventDefault();
+	    var form_content = $( '#enquireform' )
+	    //让form根据屏幕大小居中
+	    var left_mt = ($(window).width() - $( '#enquireform' ).width())/2;
+	    var top_mt = ($(window).height() - $( '#enquireform' ).height())/2;
+	    
+	    if( top_mt < 0 ){
+	    	top_mt = 0 ;
+	    }else if(left_mt < 0 ){
+	    	left_mt = 0;
+	    }
+	    
+	    $( '#enquireform' ).css({'top':top_mt,'left':left_mt});
+	    
+	    form_content.show();
+	    $( window ).scrollTop( 0 );
+	    $( '.exit_ico' ).show();
+	    $( 'body' ).append("<div class='form-mask'></div>");
+	    $( '.form-mask' ).click(function(){
+	    	$( '.form-mask' ).remove()
+	    	$( '#enquireform' ).hide();
+	    })
+	}); 
+	$( '.exit_ico' ).click( function(){
+		$( '.form-mask' ).click();
+	});
+	
+	
+	$( '#form-js' ).validate();
+	//Make Enquiry
+	/*$( '.make-enquiry' ).click(function( e ){
+	    e.preventDefault();
 	    var form_content = $( '#inquiryform' )
+	    //让form根据屏幕大小居中
+	    var left_mt = ($(window).width() - $( '#inquiryform' ).width())/2;
+	    var top_mt = ($(window).height() - $( '#inquiryform' ).height())/2;
+	    
+	    if( top_mt < 0 ){
+	    	top_mt = 0 ;
+	    }else if(left_mt < 0 ){
+	    	left_mt = 0;
+	    }
+	    
+	    $( '#inquiryform' ).css({'top':top_mt,'left':left_mt});
+	    
 	    form_content.show();
 	    $( window ).scrollTop( 0 );
 	    $( '.close_form' ).show();
@@ -182,7 +226,7 @@ $(function(){
 	}); 
 	$( '.close_form' ).click( function(){
 		$( '.form-mask' ).click();
-	});
+	});*/
 	
 	//地图放大
 	$( '.itinerary-map' ).hover(function(){
