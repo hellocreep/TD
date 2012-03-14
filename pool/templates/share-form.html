@@ -8,7 +8,8 @@
 <link href="/assets/styles/aboutus.css" type="text/css" rel="stylesheet"/>
 {% endblock %}
 
-{% block script %} <script src="/assets/scripts/jquery.validate.min.js" type="text/javascript"></script>
+{% block script %} 
+<script src="/assets/scripts/jquery.validate.min.js" type="text/javascript"></script>
 <script src="/assets/scripts/share-form.js" type="text/javascript"></script>
 {% endblock %}
 
@@ -16,7 +17,7 @@
 {% include 'header.html' %} <div class="bread"></div>
 <div class="wrapper clearfix">
 	{% include 'sidebar-aboutus.html' %}
-	<div class="content" name="[*frag*]">
+	<div class="content" name="">
 		<h1>Do You Have An Interesting Tibet Travel Story? Do Tell!</h1>
 		<p>
 			Tibetdiscovery.com is all about our company’s Tibet travel stories, tour highlights, and travel tips (as you may have guessed! ).
@@ -31,7 +32,7 @@
 		<p>
 			Everybody has something they love most about Tibet. What makes Tibet, Tibet to you? Is it the grassland? The simple people? The religion? What is it that really tingles you about this Holy Land? We’re sure others who visit this site will thank you, too!
 		</p>
-		<form id="shareForm" method="post" action="#">
+		<form id="shareForm" method="post" action="share.php">
 			<table>
 				<tr>
 					<th align="left">Title<span style="color:#ff0000;">*</span></th>
@@ -66,19 +67,19 @@
 					</td>
 				</tr>
 				<tr>
-					<th align="left">Phone Number<span style="color:#ff0000;">*</span></th>
+					<th align="left">Phone Number</th>
 				</tr>
 				<tr>
 					<td>
-					<input type="text" name="PhoneNumber" id="phonenumber" class="required">
+					<input type="text" name="PhoneNumber" id="phonenumber">
 					</td>
 				</tr>
 				<tr>
-					<th align="left">Your postcode or town<span style="color:#ff0000;">*</span></th>
+					<th align="left">Nationality</th>
 				</tr>
 				<tr>
 					<td>
-					<input type="text" name="PostCode" id="postcode" class="required">
+					<input type="text" name="Nationality" id="Nationality" >
 					</td>
 				</tr>
 				<tr>
@@ -112,27 +113,30 @@
 				<tr>
 					<th align="left">Attach a file </th>
 				</tr>
-				<tr>
+				<tr class="attach">
+					<td>
+					<input type="file" name="pic[]" class="{accept:'png|jpeg|gif|jpg'} uploade ">
+					</td>
+				</tr>
+				<tr class="attach">
+					<td>
+					<input type="file" name="pic[]" class="uploade">
+					</td>
+				</tr>
+				<tr class="attach">
 					<td>
 					<input type="file" name="pic[]" class="uploade">
 					</td>
 				</tr>
 				<tr>
-					<th align="left">Attach a file </th>
-				</tr>
-				<tr>
 					<td>
-					<input type="file" name="pic[]" class="uploade">
+						<div id="new_up"></div>
 					</td>
 				</tr>
 				<tr>
-					<th align="left">Attach a file </th>
+					<th align="left"><input type="button" class="Sendmore" style="cursor:pointer;width:90px;height:25px;" value="sendmore"></th>
 				</tr>
-				<tr>
-					<td>
-					<input type="file" name="pic[]" class="uploade">
-					</td>
-				</tr>
+				
 				<tr>
 					<td align="center">
 					<input class="btn middle" type="submit" name="submit" value="Send" style="height:25px; width:86px;">

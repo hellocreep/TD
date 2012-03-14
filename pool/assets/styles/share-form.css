@@ -27,5 +27,7 @@ table th{
 	widows: 260px;
 	height: 25px;
 }
-
+.error{
+	color:#FF0000;
+}
 
