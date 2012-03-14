@@ -1,10 +1,8 @@
 (function(){
     //表单提交
-    
-    
 	function Submitform1( e ){
 		e.preventDefault();
-		var formobj=document.getElementById("inquiryform1");
+		var formobj = $( "#form-js" );
 		formobj.method="post";
 		formobj.action="http://www.tibetdiscovery.com/forms/mailer.php";
 		formobj.submit();
@@ -169,7 +167,7 @@ $(function(){
         $( this ).text( total_rank[rank] );
 	});
 	//新版make enquiry
-	$( '.make-enquiry' ).click(function( e ){
+	$( '.make-enquiry a' ).click(function( e ){
 	    e.preventDefault();
 	    var form_content = $( '#enquireform' )
 	    //让form根据屏幕大小居中
@@ -196,38 +194,15 @@ $(function(){
 	$( '.exit_ico' ).click( function(){
 		$( '.form-mask' ).click();
 	});
-	
-	
 	$( '#form-js' ).validate();
-	//Make Enquiry
-	/*$( '.make-enquiry' ).click(function( e ){
-	    e.preventDefault();
-	    var form_content = $( '#inquiryform' )
-	    //让form根据屏幕大小居中
-	    var left_mt = ($(window).width() - $( '#inquiryform' ).width())/2;
-	    var top_mt = ($(window).height() - $( '#inquiryform' ).height())/2;
-	    
-	    if( top_mt < 0 ){
-	    	top_mt = 0 ;
-	    }else if(left_mt < 0 ){
-	    	left_mt = 0;
-	    }
-	    
-	    $( '#inquiryform' ).css({'top':top_mt,'left':left_mt});
-	    
-	    form_content.show();
-	    $( window ).scrollTop( 0 );
-	    $( '.close_form' ).show();
-	    $( 'body' ).append("<div class='form-mask'></div>");
-	    $( '.form-mask' ).click(function(){
-	    	$( '.form-mask' ).remove()
-	    	$( '#inquiryform' ).hide();
-	    })
-	}); 
-	$( '.close_form' ).click( function(){
-		$( '.form-mask' ).click();
-	});*/
-	
+
+	//底部隐藏无价格的Price
+	$( '.itinerary-other .red' ).each(function(){
+    	if( $(this).text()==''){
+    		$( this ).parent().hide();
+		}
+	});
+		
 	//地图放大
 	$( '.itinerary-map' ).hover(function(){
         	$(this).append('<span class="zoom"></span>');
