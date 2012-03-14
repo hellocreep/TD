@@ -907,10 +907,11 @@ ul.subnav a.active {
 	margin-top: 40px;
 }
 .departures h2 {
-	text-indent: 30px;
+	text-indent: 10px;
+	margin-bottom:5px;
 }
 #departures-monthly {
-	margin-top: 10px;
+	margin-top: 5px;
 }
 #departures-monthly .departure-month {
 	float: left;
@@ -919,6 +920,21 @@ ul.subnav a.active {
 	text-align: center;
 	padding: 5px 0px 0px;
 	margin-left: 10px;
+}
+#departures-monthly .departure-month .old
+{
+	border: 1px solid #D6D6D6;
+	border-radius: 3px 3px 3px 3px;
+	display: block;
+	padding: 4px;
+	width: 2.5em;
+	color:#ccc;
+}
+#departures-monthly .departure-month .old:hover
+{
+	text-decoration: none;
+	border: 1px solid #D6D6D6;
+	box-shadow: 2px 2px 2px #DDD;
 }
 #departures-monthly .departure-month a {
 	border: 1px solid #D6D6D6;

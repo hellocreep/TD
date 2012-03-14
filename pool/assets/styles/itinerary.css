@@ -1014,9 +1014,12 @@ div.divReview a#inquirysub:hover {
 	float: left;
 }
 .enquireform form select {
+	margin:10px 16px;
 }
 .enquireform form textarea {
 	width: 200px;
+	 margin: 20px 0 0 16px;
+	 *margin-top:35px;
 }
 .exit_ico {
 	display: block;

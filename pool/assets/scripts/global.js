@@ -121,6 +121,37 @@ $( function(){
     $( '.tag' ).removeComma();
     //酒店主页与内页surroundings 去逗号
     $( '.surrounding-name' ).removeComma();
+    
+    //departures 侧边栏       grouptour发团日期的侧边栏
+    var arr=new Array();
+	arr[1]="Jan.";
+	arr[2]="Feb.";
+	arr[3]="Mar.";
+	arr[4]="Apr.";
+	arr[5]="May.";
+	arr[6]="June";
+	arr[7]="July";
+	arr[8]="Aug.";
+	arr[9]="Sept";
+	arr[10]="Oct.";
+	arr[11]="Nov.";
+	arr[12]="Dec.";
+	var date=new Date();
+	var year=date.getFullYear();
+	var month=date.getMonth()+1;
+	var d='';
+	for(var i=1;i<=12;i++)
+	{
+		if(i<month)
+		{
+			d+='<div class="departure-month"><a class="old"><span class="month">'+arr[i]+'</span><span class="year">2012</span></a></div>';
+		}
+		else
+		{
+			d+='<div class="departure-month"><a href="http://www.tibetdiscovery.com/join-in-tours/grouptour-departures/?year='+year+'&&month='+i+'&&'+Math.random()+'"><span class="month">'+arr[i]+'</span><span class="year">2012</span></a></div>';
+		}
+	}
+	$('#departures-monthly').html(d);
 
 });
 })( jQuery );
