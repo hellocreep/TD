@@ -549,7 +549,7 @@
 <div id="enquireform" class="enquireform">
 	<span class="exit_ico"></span>
 	<div class="formwrap">
-		<h2>You are inquiring about the "4 Days Holy City Lhasa Tour". </h2>
+		<h2>You are inquiring about the "<span class="get-tour-name"></span>". </h2>
 		<p>
 			Please tell us more about your travel plans within just a few simple steps. We'll get back to you with a quotation in 0.5~23.5hrs.
 		</p>
@@ -648,7 +648,7 @@
 					<option value="31">31st</option>
 				</select>
 				<label>Number for Travelers:</label>
-				<select name="AdultsNumber" class="">
+				<select name="AdultsNumber" class="select-fleft">
 					<option value="Adults">Adults</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -661,7 +661,7 @@
 					<option value="9">9</option>
 					<option value="&gt;10">&gt;10</option>
 				</select>
-				<select name="ChildrenNumber" class="">
+				<select name="ChildrenNumber" class="select-fleft">
 					<option value="Children">Children</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -670,7 +670,7 @@
 					<option value="5">5</option>
 					<option value="6">6</option>
 				</select>
-				<select name="Babies" class="">
+				<select name="Babies" class="select-fleft">
 					<option value="Babies">Babies</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -692,11 +692,13 @@
 				<input type="text" name="Budget">
 				<label>Additonal Comment or Qusetions:</label>
 				<textarea name="Comments" cols="" rows="5"></textarea>
-				<input class="btn middle" type="submit">
+				<p class="mt8" align="center">
+					<a id="inquirysub" class="btn middle" href="javascript:Submitform()">Submit</a>
+				</p>
 			</fieldset>
 		</form>
 		<div class="yourbooking">
-			<h3>Price from $345 per person</h3>
+			<h3>Price from <span class="get-tour-price"></span> per person</h3>
 			<span class="booking">(Absolutely no hidden charges)</span>
 			<p class="select">
 				<span>Private travel consultant</span>
@@ -714,16 +716,15 @@
 		Fellow Tibet Discovery travelers would like to know what you think of this tour.
 	</p>
 	<form id="inquiryform1">
-		<input type="hidden" value="Inquiry:Tour review" id="subject" name="subject">
-		<input type="hidden" value="20" id="inqtype" name="Inqtype">
-		<input type="hidden" value="FullName" name="required">
-		<input type="hidden" value="167" id="pfid" name="pfid">
-		<input type="hidden" value="reviews" id="reviews" name="reviews">
+		<input id="subject" type="hidden" value="Inquiry: Inquiry Tibet Tour" name="subject">
+		<input type="hidden" value="FullName, EmailAdress" name="required">
+		<input id="inqtype" type="hidden" value="21" name="Inqtype">
+		<input id="pfid" type="hidden" value="167" name="pfid">
 		<script type="text/javascript" language="javascript">
 			// &lt;![CDATA[
-			document.write("<input name=\"PageTitle\" value=\"" + document.title + "\" type=\"hidden\" >");
-			document.write("<input name=\"PageLink\" value=\"" + location.href + "\" type=\"hidden\" >");
-			document.write("<input type=\"hidden\" name=\"Ref_Page\" value=\"" + document.referrer + "\" >");
+			document.write("<input name=\"PageTitle\" value=\""+document.title+"\" type=\"hidden\" />");
+			document.write("<input name=\"PageLink\" value=\""+location.href+"\" type=\"hidden\" />");
+			document.write("<input type=\"hidden\" name=\"Ref_Page\" value=\""+document.referrer+"\" />"); 
 			// ]]&gt;
 			function toenter(x) {
 				if(x.value == x.defaultValue)
@@ -738,9 +739,6 @@
 				}
 			}
 		</script>
-		<input type="hidden" value="Lhasa Tour in Tibet to See Potala Palace &amp; Jokhang Temple" name="PageTitle">
-		<input type="hidden" value="http://www.tibetdiscovery.com/private-tours/essence-tour-of-lhasa/#bookings" name="PageLink">
-		<input type="hidden" value="" name="Ref_Page">
 		<div class="reviewInfo">
 			<label>Your Overall Rating <span>*</span></label>
 			<div class="star">

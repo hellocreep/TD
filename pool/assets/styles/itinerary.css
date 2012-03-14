@@ -18,6 +18,7 @@
 }
 .tour-info h1 {
 	line-height: 30px;
+	padding-left: 23px;
 }
 .tour-info h1 img {
 	float: left;
@@ -72,16 +73,15 @@
 	margin: 0 auto;
 }
 .view-gallery {
-	display: block;
-	font-size: 12px;
-	text-align: center;
 	background: url("/imagesnew/itinerary/icon-gallery.png") no-repeat scroll right center transparent;
-	display: block;
-	width: 70px;
-	bottom: 8px;
-	padding-right: 24px;
-	position: absolute;
-	right: 38px;
+    bottom: 14px;
+    display: block;
+    font-size: 12px;
+    padding-right: 24px;
+    position: absolute;
+    right: 28px;
+    text-align: center;
+    width: 70px;
 }
 .view-gallery:hover {
 	color: #17a6ed;
@@ -151,21 +151,23 @@
 }
 .tour-glance {
 	float: right;
-	width: 200px;
+	width: 210px;
 	border-left: 1px solid #DEDEDE;
-	padding-left: 15px;
+	padding-left: 10px;
 }
 .tour-glance li {
 	background: url("/imagesnew/itinerary/icon-list.png") no-repeat scroll left top transparent;
+	padding-left: 26px;
 	height: 23px;
-	line-height: 17px;
+	line-height: 18px;
 	margin: 0 0 10px;
-	padding-left: 26px
+	font-size: 11px;
 }
 .tour-glance li.first {
 	background: none;
 	font-weight: bold;
 	padding-left: 0;
+	font-size: 13px;
 }
 .share-tools {
 	height: 37px;
@@ -501,12 +503,13 @@
 	margin: 0;
 }
 .tibet-promise {
-	margin-bottom: 30px;
+	margin-bottom: 36px;
 	margin-left: 30px;
 }
 .tibet-promise h3 {
 	color: #333333;
 	margin-bottom: 15px;
+	font-weight: bold;
 }
 .tibet-promise ul li {
 	list-style: none;
@@ -571,8 +574,8 @@
 }
 .tour-review {
 	margin-bottom: 15px;
-	*
-	padding-bottom: 40px;
+	*padding-bottom: 40px;
+	margin-top: 36px;
 }
 .tour-review h3 {
 	font-size: 13px;
@@ -971,7 +974,8 @@ div.divReview a#inquirysub:hover {
 	/*left: -9999em;*/
 	z-index: 10000;
 	padding:10px;
-	border: 10px solid #f9f9f9;
+	border: 10px solid #AFACA8;
+	display: none;
 }
 .formwrap {
 	overflow-y: scroll;
@@ -983,7 +987,7 @@ div.divReview a#inquirysub:hover {
 	padding-left: 5px;
 }
 .enquireform form {
-	width: 520px;
+	width: 530px;
 	float: left;
 }
 .enquireform form fieldset {
@@ -1014,6 +1018,7 @@ div.divReview a#inquirysub:hover {
 	float: left;
 }
 .enquireform form select {
+
 	margin:10px 16px;
 }
 .enquireform form textarea {
@@ -1021,14 +1026,21 @@ div.divReview a#inquirysub:hover {
 	 margin: 20px 0 0 16px;
 	 *margin-top:35px;
 }
+
+
+.select-fleft {
+	float: left;
+}
+
 .exit_ico {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background: url("/imagesnew/fancybox.png") no-repeat -43px 0px;
+	background: url("/assets/fancybox/fancybox.png") no-repeat -43px 0px;
 	position: absolute;
 	right: -15px;
 	top: -15px;
+	cursor: pointer;
 }
 .yourbooking {
 	width: 260px;
@@ -1055,4 +1067,8 @@ div.divReview a#inquirysub:hover {
 }
 .yourbooking p {
 	width: 180px;
+}
+
+#inquirysub {
+	float: none;
 }
