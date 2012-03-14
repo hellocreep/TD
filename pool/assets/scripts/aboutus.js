@@ -1,7 +1,7 @@
 (function() {
 	//PIC SLIDE
 	$.fn.slideshow = function(b) {
-	    var a = $;
+		var a = $;
 		return this.each(function() {
 			var j = a(this);
 			var d = j.find("div.images");
@@ -117,20 +117,10 @@
 
 		})
 	}
-$(function() {
-	
-	
+	$(function() {
 
-		
-
-	
-	
-	
-	
-		
 		$("div.slideshow").slideshow();
-		
-		
+
 		/*Tips from TC翻页*/
 		var listNum = $('.accordion li').length;
 		var pageNum = Math.ceil(listNum / 4);
@@ -153,7 +143,6 @@ $(function() {
 				$('.accordion li').eq(x).show();
 			}
 		});
-		
 		var listNum = $('.letter-content').length;
 		var pageNum = Math.ceil(listNum / 4);
 		for(var i = 1; i <= pageNum; i++) {
@@ -173,55 +162,53 @@ $(function() {
 				$('.letter-content').eq(x).show();
 			}
 		});
-		
 		//ACCORDION脚本
 		$('.accordion h6').click(function() {
 			$(this).next().toggle('fast');
 		});
 		$('.accordion h6').eq(0).click();
 		//What We Do 页面切换js
-		$( '.wedo-nav li' ).each(function(index){
-			$( this ).click(function(){
-				$(this).addClass('active').siblings().removeClass( 'active' );
+		$('.wedo-nav li').each(function(index) {
+			$(this).click(function() {
+				$(this).addClass('active').siblings().removeClass('active');
 				$('.wrap-js').hide();
 				$('.wrap-js').eq(index).show();
 			})
 		})
-		
-		$( '.wedo-nav li' ).eq( 0 ).click();
-		
-		
-		
-		
+
+		$('.wedo-nav li').eq(0).click();
+		//also in this section去掉当前页链接
+		$('.section ul li').each(function() {
+			if($(this).attr('name') == $('.content').attr('name')) {
+				$(this).hide();
+			} else if($('.content').attr('name') == "tourguide" || $('.content').attr('name') == "saleteam") {
+				$('.section ul li[name="about-team"]').hide();
+			}
+		})
 		//FANCYBOX CHOOSEUS 图片
-		$( 'a[rel="images-gallery"]' ).fancybox({
+		$('a[rel="images-gallery"]').fancybox({
 			'transitionIn' : 'none',
 			'transitionOut' : 'none',
 			'titlePosition' : 'over',
 			'titleFormat' : function(title, currentArray, currentIndex, currentOpts) {
-				return '<span id="fancybox-title-over">Image ' + 
-				(currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
 			}
 		});
-		
+
 		//FANCYBOX GET FORM
 		$(".quickform").fancybox({
-            'width' : '55%',
-            'height' : '95%',
-            'autoScale' : false,
-            'transitionIn' : 'none',
-            'transitionOut' : 'none',
-            'type' : 'iframe'
-        }); 
-        
-        $('a[rel="images-gallery"]').addClass('clearfix').hover(function(){
-        	$(this).append('<span class="zoom"></span>');
-        },function(){
-        	$(this).children('.zoom').remove();
-        }
-        );
-		
-		
-})
-})(jQuery);
+			'width' : '55%',
+			'height' : '95%',
+			'autoScale' : false,
+			'transitionIn' : 'none',
+			'transitionOut' : 'none',
+			'type' : 'iframe'
+		});
 
+		$('a[rel="images-gallery"]').addClass('clearfix').hover(function() {
+			$(this).append('<span class="zoom"></span>');
+		}, function() {
+			$(this).children('.zoom').remove();
+		});
+	})
+})(jQuery);

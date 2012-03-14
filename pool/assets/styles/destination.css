@@ -1,0 +1,76 @@
+/* @OVERVIEW
+---------------------------------------------------------------*/
+.overview-top{
+	width:100%;
+	height:315px;
+}
+.slides{
+	width:100%;
+	height:275px;
+	position:relative;
+	
+}
+.slides h2{
+	font-size:16px;
+}
+.slide{
+	width:100%;
+	height:290px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.slide img{
+	float:left;
+	margin:0 10px 0 0;
+}
+
+.thumbs{
+	width:100%;
+	height:35px;
+	border-top:5px solid #8e271f;
+}
+.thumbs ul li{
+	padding:0 15px;
+	margin: 0 5px;
+	float:left;
+	background: #ccc;
+	line-height:35px;
+	color:#8e271f;
+	font-size:16px;
+	cursor: pointer;
+	border-radius:0 0 5px 5px;
+}
+.thumbs ul li:hover, .thumbs ul li.active{
+	color:#fff;
+	background:#8e271f;
+	
+}
+
+.overview-left{
+	float: left;
+	width:450px;
+	height:600px;
+}
+.popular{
+	margin:10px 0;
+}
+
+.popular img{
+	float:left;
+	clear: left;
+	padding:1px;
+	border:1px solid #ddd;
+	background:#fff;
+	margin:0 20px 0 0;
+}
+.popular .view{
+	width:
+}
+h3.most-title{
+	float:left;
+	width:270px;
+}
+a.view-btn{
+	float: left;
+}

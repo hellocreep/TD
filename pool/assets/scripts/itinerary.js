@@ -1,5 +1,7 @@
 (function(){
     //表单提交
+    
+    
 	function Submitform1( e ){
 		e.preventDefault();
 		var formobj=document.getElementById("inquiryform1");
@@ -28,6 +30,7 @@ $(function(){
 	$( '.accordion div' ).hide();
 	$('.accordion h6').click(function() {
 		$(this).next().toggle('fast');
+		$( this ).parent().siblings().children( 'div:visible' ).slideUp();
 	}); 
 	$( '.accordion h6' ).eq(0).click();
 	
@@ -37,7 +40,7 @@ $(function(){
 	        $.fancybox({
                 'transitionIn' : 'none',
                 'transitionOut' : 'none', 
-	            'content': $( this ).children( '.tripfor-detail' ).html(),
+	            'content': $( this ).children( '.tripfor-detail' ).html()
 	        });
 	    });
 	});
@@ -61,8 +64,6 @@ $(function(){
 	$( '.itinerary-map' ).fancybox();
 	
 	//TAB fiexd
-	//TODO
-	//随锚点高度更换TAB active
 	$( window ).unbind( 'scroll' );
 	var t = $( '.tour-tab' );
 	t_top = t.offset().top;
@@ -77,16 +78,16 @@ $(function(){
 			$( '.tab-replace' ).show();
 			t.css({'position':'fixed','top':0,
 			'z-index':10,'width':970,'background':'#FBFBF5'});
-			if( s_top > (d -10) ){
+			if( s_top > ( d-35 ) ){
                 change_tab( $( '.tab-detail' ) );
             }
-            if( s_top > (p -10) ){
+            if( s_top > ( p-35 ) ){
                 change_tab( $( '.tab-price' ) );
             }
-            if( s_top > (f -10) ){
+            if( s_top > ( f-35 ) ){
                 change_tab( $( '.tab-faq' ) );
             }
-			if( s_top > (r -10)){
+			if( s_top > ( r-35 )){
                 change_tab( $( '.tab-review' ) );
             }
 		}else{
@@ -100,10 +101,7 @@ $(function(){
 	
 	//锚点
 	$( '.tour-tab li' ).not( '.last' ).click(function(){
-		$( this ).addClass( 'active' ).children( 'a' ).addClass( 'active' )
-		.parent()
-		.siblings().removeClass( 'active' )
-		.children( 'a' ).removeClass( 'active' );
+		change_tab( $(this) );
 	});
 	
 	/*屏蔽不显示图片*/
@@ -116,6 +114,11 @@ $(function(){
 	    $( '.price-tip' ).show();
 	},function(){
 	    $( '.price-tip' ).hide();
+	});
+	$( '.price-tip' ).hover(function(){
+		$( this ).show();
+	},function(){
+		$( this ).hide();
 	})
 	
 	//Pic gallery
@@ -126,7 +129,7 @@ $(function(){
 	$( '.view-gallery' ).click(function( e ){
 	    e.preventDefault();
 		$.fancybox( gallery_list,{
-					'type' : 'image',
+					'type' : 'image'
 				});
 	});
 	
@@ -165,19 +168,73 @@ $(function(){
 	    var rank = index + 1
         $( this ).text( total_rank[rank] );
 	});
-	
-	//Make Enquiry
+	//新版make enquiry
 	$( '.make-enquiry' ).click(function( e ){
 	    e.preventDefault();
-	    var form_content = $( '#inquiryform' )
+	    var form_content = $( '#enquireform' )
+	    //让form根据屏幕大小居中
+	    var left_mt = ($(window).width() - $( '#enquireform' ).width())/2;
+	    var top_mt = ($(window).height() - $( '#enquireform' ).height())/2;
+	    
+	    if( top_mt < 0 ){
+	    	top_mt = 0 ;
+	    }else if(left_mt < 0 ){
+	    	left_mt = 0;
+	    }
+	    
+	    $( '#enquireform' ).css({'top':top_mt,'left':left_mt});
+	    
 	    form_content.show();
-	    $( window ).scrollTop( 200 );
-	    $( '.close_form' ).show();
+	    $( window ).scrollTop( 0 );
+	    $( '.exit_ico' ).show();
+	    $( 'body' ).append("<div class='form-mask'></div>");
+	    $( '.form-mask' ).click(function(){
+	    	$( '.form-mask' ).remove()
+	    	$( '#enquireform' ).hide();
+	    })
 	}); 
-	$( '.close_form' ).click( function(){
-	   $( '#inquiryform' ).hide();
+	$( '.exit_ico' ).click( function(){
+		$( '.form-mask' ).click();
 	});
 	
+	
+	$( '#form-js' ).validate();
+	//Make Enquiry
+	/*$( '.make-enquiry' ).click(function( e ){
+	    e.preventDefault();
+	    var form_content = $( '#inquiryform' )
+	    //让form根据屏幕大小居中
+	    var left_mt = ($(window).width() - $( '#inquiryform' ).width())/2;
+	    var top_mt = ($(window).height() - $( '#inquiryform' ).height())/2;
+	    
+	    if( top_mt < 0 ){
+	    	top_mt = 0 ;
+	    }else if(left_mt < 0 ){
+	    	left_mt = 0;
+	    }
+	    
+	    $( '#inquiryform' ).css({'top':top_mt,'left':left_mt});
+	    
+	    form_content.show();
+	    $( window ).scrollTop( 0 );
+	    $( '.close_form' ).show();
+	    $( 'body' ).append("<div class='form-mask'></div>");
+	    $( '.form-mask' ).click(function(){
+	    	$( '.form-mask' ).remove()
+	    	$( '#inquiryform' ).hide();
+	    })
+	}); 
+	$( '.close_form' ).click( function(){
+		$( '.form-mask' ).click();
+	});*/
+	
+	//地图放大
+	$( '.itinerary-map' ).hover(function(){
+        	$(this).append('<span class="zoom"></span>');
+        },function(){
+        	$(this).children('.zoom').remove();
+        }
+        );
 /******recent inquery 文字滚动**************/
 setInterval(AutoScroll,5000);
 

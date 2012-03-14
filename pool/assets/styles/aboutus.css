@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'MuseoSans500';
     src: url('/fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/MuseoSans_500-webfont.woff') format('woff'),
@@ -33,7 +33,7 @@ h6 { font-size: 12px; line-height:14px;}
 
 h1, h2, h3, h4, h5, h6{ font-weight: normal;font-family:"Museo Sans 500",Lucida Grande,Arial,Sans-serif ;}
 
-
+*/
 
 .tc-info {
 }
@@ -727,58 +727,34 @@ ul.wedo-nav {
 	margin-top:17px;
 }
 
-.responsible h2{
+.responsible h3{
 	color:#434343;
-	font-size:18px;
 }
-
-
-/*******Departures*******/
-.departures {
-	margin-top:40px;
+.responsible ul{
+	margin-bottom:10px;
 }
-
-.departures h2{
-	text-indent:30px;
+.responsible ul li{
+	list-style:disc inside;
+	padding: 5px 0 5px 20px;
 }
-
-#departures-monthly{
-	margin-top:10px;
+/*
+.responsible ol{
+	margin:8px 0 10px 0;
 }
-#departures-monthly .departure-month {
-    float: left;
-    margin-bottom: 4px;
-    margin-right: 4px;
-    text-align: center;
-    padding:5px 0px 0px;
-    margin-left:10px;
+.responsible ol li{
+	list-style:decimal inside;
+	padding: 5px 0 5px 20px;
 }
-#departures-monthly .departure-month a {
-    border: 1px solid #D6D6D6;
-    border-radius: 3px 3px 3px 3px;
-    display: block;
-    padding: 4px;
-    width: 2.5em;
-}
-#departures-monthly .departure-month a:hover {
-text-decoration: none;
-border: 1px solid #342559;
-box-shadow: 2px 2px 2px #DDD; } 
-#departures-monthly .month {
-font-weight: 700;
-display: block; }
-#departures-monthly .year {
-font-weight: 400;
-font-size: 0.8em; } 
-#departures-monthly  a:hover
-{
-	color:#AAD045;
-}
-
+*/
 .block-container a{
 	position:relative;
 	display:block;
 	float:left;
+}
+.block-container p a{
+	position: static;
+	display: inline;
+	float:none;
 }
 .zoom{
 	position:absolute;
@@ -801,7 +777,10 @@ a.tc-name{
 	font-size:15px;
 	padding: 0 0 10px;
 }
-a.more-details{
+a.tc-name:hover{
+	text-shadow: 1px 1px 1px #ccc;
+}
+.block-container p a.more-details{
 	display:inline;
 	display:block;
 	float:right;

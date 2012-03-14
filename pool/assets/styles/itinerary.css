@@ -1,209 +1,178 @@
 /*ITINERARY HEAD*/
 
 .itinerary-wrap {
-    margin:0 auto;
-    background: #FFFFFF;
-    width: 970px;
-    position:relative;
-    min-height: 900px;
-    border: 1px solid #B8B8B8; 
-    -webkit-box-shadow: #666 0px 0px 3px;
-    -moz-box-shadow: #666 0px 0px 3px;
-    box-shadow: #666 0px 0px 3px;
-    behavior: url(PIE.htc);
+	margin: 0 auto;
+	background: #FFFFFF;
+	width: 970px;
+	position: relative;
+	min-height: 900px;
+	border: 1px solid #B8B8B8;
+	-webkit-box-shadow: #666 0px 0px 3px;
+	-moz-box-shadow: #666 0px 0px 3px;
+	box-shadow: #666 0px 0px 3px;
+	behavior: url(PIE.htc);
 }
-
 .tour-info {
 	padding: 30px 10px 10px;
 	background: url(/imagesnew/itinerary/bg-head.png) repeat-x left top;
 }
-
 .tour-info h1 {
-    height: 30px;
-    line-height: 30px;
+	line-height: 30px;
 }
-
 .tour-info h1 img {
 	float: left;
 	margin-right: 5px;
 }
-
 .tour-sub {
-    margin: 15px 0;
-    text-align: left;
-    font-style: italic;
-    padding-right: 55px;
-    padding-left: 28px;
+	margin: 15px 0;
+	text-align: left;
+	font-style: italic;
+	padding-right: 55px;
+	padding-left: 28px;
 }
-
-.tour-sub .tour-price {
+.tour-price {
 	font-size: 15px;
-    float: right;
-    font-style: normal;
-    position: relative;
+	float: right;
+	font-style: normal;
+	position: relative;
+	margin-right: 55px;
 }
-
+.tour-info .tour-price img {
+	float: none;
+}
 .light-price {
-    color: #c73838;
-    font-size: 24px;
+	color: #c73838;
+	font-size: 24px;
 }
-
 .price-tip {
-    position: absolute;
-    padding: 10px;
-    border: 1px dashed #D0D0C2;
-    background: #FAF8F7;
-    display: none;
-    top: 20px;
-    width: 200px;
+	position: absolute;
+	padding: 7px;
+	border: 1px dashed #D0D0C2;
+	background: #FAF8F7;
+	display: none;
+	top: 25px;
+	width: 180px;
+	font-size: 13px;
 }
-
 .price-tip ul li {
-    list-style: none;
-    margin-top: 10px;
+	list-style: none;
 }
-
 .tour-des {
-    float: left;
-    width: 720px;
+	float: left;
+	width: 720px;
 }
-
-.tour-des .tour-pic-gallery{
-    float: left;
-    width: 360px;
-    height: 245px;
+.tour-des .tour-pic-gallery {
+	float: left;
+	width: 360px;
+	height: 245px;
+	position: relative;
 }
-
-.tour-pic-gallery img{
-    display: block;
-    margin: 0 auto;
-}
-
-.view-gallery {
-    margin-top: 10px;
+.tour-pic-gallery img {
 	display: block;
-	font-size: 16px;
-	text-align: center;
-	color: #5ec1f3;
-	background: url("/imagesnew/itinerary/icon-gallery.png") no-repeat scroll left center transparent;
-    color: #5EC1F3;
-    display: block;
-    font-size: 16px;
-    height: 46px;
-    line-height: 48px;
-    margin: 10px auto;
-    text-align: right;
-    width: 145px;
+	margin: 0 auto;
 }
-
+.view-gallery {
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	background: url("/imagesnew/itinerary/icon-gallery.png") no-repeat scroll right center transparent;
+	display: block;
+	width: 70px;
+	bottom: 8px;
+	padding-right: 24px;
+	position: absolute;
+	right: 38px;
+}
 .view-gallery:hover {
-	color: #17a6ed;	
+	color: #17a6ed;
 	text-decoration: none;
 }
-
 .tour-des .des-detail {
-    float: right;
+	float: right;
 }
-
-.des-detail ul li{
-    list-style: none;
-    margin: 0 0 12px 0;
-    width: 285px;
+.des-detail ul li {
+	list-style: none;
+	margin: 0 0 12px 0;
+	width: 285px;
 }
-
 .trip-for ul {
-    list-style: none;
+	list-style: none;
 	margin-top: 15px;
 	background: #ffffff;
 }
-
-.trip-for ul li{
+.trip-for ul li {
 	cursor: pointer;
-    float: left;
-    width: 110px;
-    margin-left: 2px;
-    text-align: center;
-    border: 1px solid #fafafa;
-    padding: 2px;
+	float: left;
+	width: 110px;
+	margin-left: 2px;
+	text-align: center;
+	border: 1px solid #fafafa;
+	padding: 2px;
 }
-
 .trip-for ul li:hover {
-    background: #F8F1F1;
+	background: #F8F1F1;
 }
-
 .tips-title {
-    color: #C73838;
-    font-family: Papyrus;
+	color: #C73838;
+	font-family: Papyrus;
 }
-
 .trip-for ul li img {
-    display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
-
 .trip-for .tripfor-detail {
-    display: none;
-    width: 650px;
+	display: none;
+	width: 650px;
 }
-
 .trip-tips {
-    min-height: 200px;
-    padding: 20px;
-    font-size: 14px;
-    max-width: 675px;
+	min-height: 200px;
+	padding: 20px;
+	font-size: 14px;
+	max-width: 675px;
 }
-
-.trip-tips h2,h3,h4 {
-    font-size: 18px;
-    margin: 0 0 15px;
+.trip-tips h2, h3, h4 {
+	font-size: 18px;
+	margin: 0 0 15px;
 }
-
 .trip-tips p {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
-
 .trip-tips ul {
-    list-style: disc inside; 
+	list-style: disc inside;
 }
+.trip-tips .physical-require {
 
-.trip-tips .physical-require{
-    
 }
-
-.trip-tips ul li{
-    margin-bottom: 5px;
+.trip-tips ul li {
+	margin-bottom: 5px;
 }
-
 .trip-tips ul li.active {
-    background: #EBF69F;
+	background: #EBF69F;
 }
-
 .tour-glance {
-    float: right;
-    width: 200px;
+	float: right;
+	width: 200px;
+	border-left: 1px solid #DEDEDE;
+	padding-left: 15px;
 }
-
 .tour-glance li {
-    background: url("/imagesnew/itinerary/icon-list.png") no-repeat scroll left top transparent;
-    height: 23px;
-    line-height: 17px;
-    margin: 0 0 10px;
-    padding-left: 26px
+	background: url("/imagesnew/itinerary/icon-list.png") no-repeat scroll left top transparent;
+	height: 23px;
+	line-height: 17px;
+	margin: 0 0 10px;
+	padding-left: 26px
 }
-
 .tour-glance li.first {
 	background: none;
 	font-weight: bold;
 	padding-left: 0;
 }
-
 .share-tools {
 	height: 37px;
 	background: url(/imagesnew/itinerary/bg-share.png) no-repeat right center;
 	margin: 0 20px 17px 0;
 	width: 100%;
 }
-
 .share-tools .addwish {
 	float: right;
 	display: block;
@@ -212,19 +181,16 @@
 	padding-left: 18px;
 	margin: 8px 165px 8px 0;
 }
-
 .social-tools {
-    float: right;
-    left: 272px;
-    position: relative;
-    top: 9px;
+	float: right;
+	left: 272px;
+	position: relative;
+	top: 9px;
 }
-
 /*ITINERARY BODY*/
 .tour-detail {
 	padding: 0 20px;
 }
-
 .tour-detail h2 {
 	margin-bottom: 20px;
 	font-size: 18px;
@@ -232,12 +198,10 @@
 	height: 35px;
 	line-height: 40px;
 }
-
 .tour-tab {
 	height: 36px;
 	border-bottom: 2px solid #b03935;
 }
-
 .tour-tab li {
 	float: left;
 	color: #8a2321;
@@ -246,7 +210,6 @@
 	background: url(/imagesnew/itinerary/tab-itinerary.png) no-repeat;
 	margin-left: 10px;
 }
-
 .tour-tab li a {
 	color: #8A2321;
 	display: block;
@@ -254,109 +217,90 @@
 	text-align: center;
 	line-height: 36px;
 }
-
 .tour-tab li a:hover, .tour-tab li a.active {
 	text-decoration: none;
 	color: #FFFFFF;
 }
-
 .tour-tab .tab-detail {
 	width: 162px;
 	background-position: 0 -36px;
 }
-
-.tour-tab .tab-detail.active ,.tab-detail:hover {
+.tour-tab .tab-detail.active, .tab-detail:hover {
 	background-position: 0 1px;
 }
-
 .tour-tab .tab-price {
 	width: 230px;
 	background-position: -168px -36px;
 }
-
 .tab-price.active, .tab-price:hover {
 	background-position: -168px 1px;
 }
-
 .tour-tab .tab-faq {
 	background-position: -403px -36px;
-    width: 117px
+	width: 117px
 }
-
 .tab-faq.active, .tab-faq:hover {
 	background-position: -403px 1px;
 }
-
 .tour-tab .tab-review {
 	background-position: -523px -36px;
-    width: 106px;
+	width: 106px;
 }
-
 .tab-review.active, .tab-review:hover {
 	background-position: -523px 1px;
 }
-
 .tour-tab li.last {
 	background: none;
 	float: right;
 	margin: -7px 0 0 0;
 }
-
 .tour-tab li.last a {
 	color: #FFFFFF;
 	text-align: left;
 }
-
 .tour-tab li.active {
 	color: #FFFFFF;
 }
-
 .tour-intro {
 	background: url("/imagesnew/itinerary/bg-top-intro.png") no-repeat scroll center -1px #FAF8F7;
-    border-left: 1px solid #865F58;
-    border-right: 1px solid #865F58;
-    border-top: 1px solid #865F58;
-    margin: 20px 0 0;
-    padding: 18px 0;
-    width: 918px;
+	border-left: 1px solid #865F58;
+	border-right: 1px solid #865F58;
+	border-top: 1px solid #865F58;
+	margin: 20px 6px 0;
+	padding: 18px 0;
+	width: 918px;
 }
-
 .tour-intro p {
 	margin-top: 20px;
 }
-
 .tour-intro-foot {
 	background: url(/imagesnew/itinerary/bg-bottom-intro.png) no-repeat -1px 0 #FAF8F7;
 	height: 34px;
 	width: 923px;
+	margin-left: 6px;
 }
-
 .tc-say {
 	float: left;
 	margin-left: 40px;
-    width: 500px
+	width: 500px
 }
-
 .tc-say {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
-
 .tc-say ul li {
-    list-style: none;
-	background: url(/imagesnew/itinerary/icon-list.png) no-repeat left top;
+	list-style: none;
+	background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 3px transparent;
 	padding-left: 20px;
 	margin: 10px 0 0 0;
 }
-
 .tc-say h2 {
 	background: none;
-	margin-left: 50px;
+	font-family: Papyrus;
+	font-weight: bold;
 }
-
 .tc-say h3 {
 	margin-top: 20px;
 }
-
 .tailoring {
 	float: right;
 	margin-right: 20px;
@@ -364,7 +308,6 @@
 	border-left: 1px solid #f1ebe7;
 	padding-left: 22px;
 }
-
 .tailoring h2 {
 	font-size: 16px;
 	background: url(/imagesnew/itinerary/bg-tailoring-title.png) no-repeat right bottom;
@@ -373,156 +316,141 @@
 	color: #323232;
 	padding-left: 24px;
 }
-
-.tailoring ul li{
-    list-style: none;
+.tailoring ul li {
+	list-style: none;
 	background: url(/imagesnew/itinerary/list-circle.png) no-repeat left 3px;
 	padding-left: 20px;
-	margin: 24px 0 0 0;
+	margin: 10px 0 0 0;
 }
-
 .itinerary-full {
 	margin-top: 40px;
 	width: 100%;
 }
-
 #itinerary {
 	float: left;
 	margin-right: 30px;
 	width: 590px;
 }
-
 #itinerary .dayCloum {
 	border-radius: 5px;
 	behavior: url(PIE.htc);
 	border: 1px solid #FFD7A2;
-    margin: 12px 0 50px 0;
-    width: 590px;
-    float: left;
+	margin: 12px 0 50px 0;
+	width: 590px;
+	float: left;
 }
-
 .dayCloum dt span {
 	color: red;
-    font-size: 16px;
-    margin-right: 5px;
+	font-size: 16px;
+	margin-right: 5px;
 }
-
 .dayCloum > div {
 	background: url(/imagesnew/itinerary/day_line.png) repeat-x scroll 0 0 #FFF4EF;
-    width: 590px;
-    margin: 2px 0;
-    float: left;
+	width: 590px;
+	margin: 2px 0;
+	float: left;
 }
-
 .dayCloum dt {
-	font: bold 13px Arial,Helvetica,sans-serif;
-    padding: 15px 10px;
+	font: bold 13px Arial, Helvetica, sans-serif;
+	padding: 15px 10px;
 }
-
 .dayCloum dt + dd {
 	/*background: url(/imagesnew/itinerary/shadow.png) no-repeat scroll right bottom transparent;
-	 * 
+	 *
 	 */
 	border: 1px solid #c6cacc;
 	padding: 2px;
 	background: #FFFFFF;
-    float: right;
-    margin: 0 20px 10px 40px;
-    width: 202px;
+	float: right;
+	margin: 0 20px 10px 40px;
+	width: 202px;
 }
-
 .dayCloum dt + dd img {
 	display: block;
 	margin: 0 auto;
 }
-
 .dayCloum dt + dd + dd p {
 	line-height: 150%;
-    margin-bottom: -2px;
-    padding: 0 20px 10px 10px;
+	margin-bottom: -2px;
+	padding: 0 20px 10px 10px;
 }
-
 .dayCloum > div + dd {
-    width: 590px
+	width: 590px
 }
-
 .itinerary-right {
 	float: right;
-	width:290px;
+	width: 290px;
 }
-
 .itinerary-map {
-   display: block;
-   cursor: url(/imagesnew/itinerary/icon-zoom.png), auto;
-   
+	display: block;
+	cursor: pointer;
+	position: relative;
 }
-
 .itineray-map img {
-    margin-top: 15px; 
-    border-bottom: 1px dashed #434343;
-    padding-bottom: 12px;
-    width: 300px;
-    height: 200px;
+	margin-top: 15px;
+	border-bottom: 1px dashed #434343;
+	padding-bottom: 12px;
+	width: 300px;
+	height: 200px;
 }
-
+.itinerary-map img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
 .Recent-Inquiry {
-    border: 1px solid #DDDDDD;
-    height:285px;
-    overflow: hidden;
+	border: 1px solid #DDDDDD;
+	height: 285px;
+	overflow: hidden;
 }
-
 .itinerary-right h2 {
-    background: none repeat scroll 0 0 #94332F;
-    color: #FFFFFF;
-    height: 35px;
-    line-height: 35px;
-    padding-left: 15px;
-    margin-bottom:0px;
-    margin-top:50px;
+	background: none repeat scroll 0 0 #94332F;
+	color: #FFFFFF;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	margin-bottom: 0px;
+	margin-top: 50px;
 }
 .Recent-Inquiry ul li {
-    margin-left: 3px;
-    margin-top: 10px;
-    padding-left:10px;
-    background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 3px transparent;
+	margin-left: 3px;
+	margin-top: 10px;
+	padding-left: 10px;
+	background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 3px transparent;
 }
-
 .price-book {
 	min-height: 360px;
 	border: 1px solid #eeeeee;
 	padding: 20px 10px;
 	background: url(/imagesnew/itinerary/bg-price-book.png) repeat-x left bottom #fffefd;
 }
-
 .price-book h3 {
 	color: #323232;
 	font-size: 15px;
 	margin-bottom: 16px;
+	font-weight: bold;
 }
-
 .price-left {
 	border-right: 1px solid #DDDDDD;
-    float: left;
-    margin-left: 20px;
-    padding-right: 15px;
-    width: 500px
+	float: left;
+	margin-left: 20px;
+	padding-right: 15px;
+	width: 500px
 }
-
 .price-left ul li {
-    list-style: none;
-	padding-left: 18px; 
+	list-style: none;
+	padding-left: 18px;
 	margin-bottom: 6px;
 	line-height: 14px;
 }
-
+.price-include {
+	margin-bottom: 15px;
+}
 .price-include li {
 	background: url(/imagesnew/itinerary/list-correct-red.png) no-repeat left top;
 }
-
 .price-nonclude li {
 	background: url(/imagesnew/itinerary/list-none-red.png) no-repeat left top;
 }
-
 .price-right {
 	float: right;
 	width: 320px;
@@ -530,113 +458,97 @@
 	background: #FFFFFF;
 	padding-left: 20px;
 }
-
 .price-right p {
 	margin-bottom: 15px;
 }
-
 .best-time-go {
-    margin-left: 20px;
-    margin-top: 35px;
-    width: 80%;
+	margin-left: 20px;
+	margin-top: 35px;
+	width: 80%;
 }
-
 .book-step {
 	border-top: 1px dashed #656565;
 	margin-top: 30px;
 	padding-top: 25px;
 }
-
 .book-step h3 {
 	color: #333333;
 	font-size: 16px;
-	margin: 0 0  30px 30px;
+	margin: 0 0 30px 30px;
+	font-weight: bold;
 }
-
 .book-step img {
 	display: block;
 	margin: 0 auto 20px;
 }
-
 .book-step ul {
-    list-style: none;
+	list-style: none;
 	padding: 0 30px;
 	margin-bottom: 30px;
 	height: 55px;
 }
-
 .book-step ul li {
 	width: 105px;
 	float: left;
 	margin-right: 30px;
 	text-align: center;
 }
-
 .book-step ul .diff {
 	margin-right: 57px;
 }
-
 .book-step ul .last {
 	float: right;
 	margin: 0;
 }
-
 .tibet-promise {
 	margin-bottom: 30px;
 	margin-left: 30px;
 }
-
 .tibet-promise h3 {
 	color: #333333;
 	margin-bottom: 15px;
 }
-
 .tibet-promise ul li {
-    list-style: none;
+	list-style: none;
 	background: url(/imagesnew/itinerary/list-circle.png) no-repeat left 5px;
-	padding-left: 15px; 
+	padding-left: 15px;
 	width: 760px;
 	margin-bottom: 10px;
 }
-
 .tour-faq .accordion {
 	list-style: decimal inside none;
-    margin-bottom: 10px;
-    width: 682px;
+	margin-bottom: 10px;
+	width: 760px;
+	margin-left: 32px
 }
-
 .tour-faq h3 {
 	color: #333333;
 	font-size: 16px;
 	margin: 12px 0;
 }
-
 .accordion li {
-    background: url("/imagesnew/grid.png") repeat-x scroll 0 0 transparent;
-    border: 1px dotted #CCCCCC;
-    display: block;
-    margin-bottom: 5px
+	background: url("/imagesnew/grid.png") repeat-x scroll 0 0 transparent;
+	border: 1px dotted #CCCCCC;
+	display: block;
+	margin-bottom: 5px
 }
-
 .accordion li h6 {
-    background: url("/imagesnew/ask-icon.png") no-repeat scroll 2px center transparent;
-    color: #434343;
-    cursor: pointer;
-    font-weight: normal;
-    height: 30px;
-    line-height: 28px;
-    text-indent: 25px;
-    width: 100%;
+	background: url("/imagesnew/itinerary/ask-icon-long.png") no-repeat scroll 2px center transparent;
+	color: #434343;
+	cursor: pointer;
+	font-weight: normal;
+	height: 30px;
+	line-height: 28px;
+	text-indent: 25px;
+	width: 100%;
 }
-
 .accordion li p {
-    background: none repeat scroll 0 0 #FFFFFF;
-    line-height: 20px;
-    padding: 8px;
-    width: 664px;
-    margin: 0;
+	background: none repeat scroll 0 0 #FFFFFF;
+	line-height: 20px;
+	padding: 8px;
+	width: 742px;
+	margin: 0;
 }
-
 .tour-faq .faq-bottom {
 	width: 830px;
 	height: 100px;
@@ -644,117 +556,113 @@
 	padding: 12px 0 10px 15px;
 	margin: 25px 0 40px;
 }
-
 .faq-bottom h3 {
 	color: #c73838;
-	background: url(/imagesnew/itinerary/list-question.png) no-repeat left top ;
+	background: url(/imagesnew/itinerary/list-question.png) no-repeat left top;
 	padding-left: 30px;
 	margin-bottom: 5px;
 }
-
 .faq-bottom .faq-contact {
 	margin-top: 15px;
 }
-
 .faq-contact span {
 	float: right;
 	margin-right: 35px;
 }
-
 .tour-review {
-	border-bottom: 1px dashed #000000;
 	margin-bottom: 15px;
-	*padding-bottom: 40px;
+	*
+	padding-bottom: 40px;
 }
-
 .tour-review h3 {
-	font-size: 16px;
+	font-size: 13px;
 	color: #333333;
 	margin-bottom: 20px;
+	margin-left: 30px;
 }
-
 .tour-review dl {
 	background: url(/imagesnew/itinerary/bg-msg-title.png) no-repeat scroll left top transparent;
-    margin: 0 120px 25px 0;
-    width: 773px;
-    float: left;
+	margin: 0 100px 25px 30px;
+	width: 773px;
+	float: left;
 }
-
 .tour-review dl dt {
 	float: left;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 45px;
-    margin-top: 15px;
-    width: 680px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 45px;
+	margin-top: 15px;
+	width: 680px;
 }
-
 .tour-review dl dt + dd {
-    float: left;
-    font-size: 13px;
-    line-height: 160%;
-    margin-top: 10px;
-    padding-left: 45px;
-    padding-right: 45px;
-    width: 680px
+	float: left;
+	font-size: 13px;
+	line-height: 160%;
+	margin-top: 10px;
+	padding-left: 45px;
+	padding-right: 45px;
+	width: 680px
 }
-
 .tour-review p {
-    margin: 8px 0 0 0;
+	margin: 8px 0 0 0;
 }
-
 .tour-review dl dt + dd + dd {
 	background: url(/imagesnew/itinerary/bg-msg-bottom.png) no-repeat scroll left bottom transparent;
-    float: left;
-    height: 69px;
-    width: 773px
+	float: left;
+	height: 69px;
+	width: 773px
 }
-
 .tour-review dl dt + dd + dd + dd {
 	color: #666666;
-    float: right;
-    font-style: italic
+	float: right;
+	font-style: italic
 }
-
 .tour-review dl dt + dd + dd + dd + dd {
 	float: right;
 }
-
 .btn-review {
-	color: #FFFFFF;
-    cursor: pointer;
-    float: right;
-    font-size: 14px;
-    font-weight: bold;
-    height: 30px;
-    line-height: 30px;
+	background: url("/imagesnew/itinerary/Write-a-riview.png") repeat scroll 0 0 transparent;
+	cursor: pointer;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
 	margin: 0 155px 10px 0;
+	text-indent: -9999px;
+	width: 134px;
 }
-
+.btn-review:hover {
+	background-position: 0 -39px;
+}
 .tour-foot {
 	margin: 0 25px 50px 25px;
 }
-
 .total-rank {
-    display: none;
+	display: none;
 }
-
 .tour-foot h2 {
 	color: #8a2622;
 	font-size: 16px;
 	margin-bottom: 30px;
+	background: url("/imagesnew/itinerary/bg-h2.png") repeat-x scroll left top #FFFEFD;
+	font-size: 18px;
+	height: 35px;
+	line-height: 40px;
 }
-
 .tour-foot .itinerary-first {
 	float: left;
 	width: 304px;
+	margin-left: 50px;
 }
-
 .tour-foot img {
 	display: block;
 	margin: 0 auto;
 }
-
+.tour-foot img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
 .itinerary-first h3 {
 	background: #8c2621;
 	height: 45px;
@@ -766,28 +674,23 @@
 	line-height: 45px;
 	margin: 0;
 }
-
 .itinerary-first a {
-    color: #FFFFFF;
+	color: #FFFFFF;
 }
-
 .itinerary-first a:hover {
-    text-decoration: none;
-    color: #FBB017;
+	text-decoration: none;
+	color: #FBB017;
 }
-
 .itinerary-first h3 span {
 	font-size: 28px;
 	color: #292929;
 	margin-left: 25px;
 }
-
 .itinerary-other {
 	float: right;
 	width: 500px;
 	list-style: none;
 }
-
 .itinerary-other li {
 	float: left;
 	position: relative;
@@ -795,41 +698,35 @@
 	text-align: center;
 	margin: 0 80px 0 0;
 }
-
 .itinerary-other p {
-    margin: 0;
+	margin: 0;
 }
-
 .itinerary-other li .tour-name {
 	display: block;
 	width: 150px;
 }
-
 .itinerary-other .rate {
 	background: url("/imagesnew/itinerary/bg-rate.png") no-repeat 0 0;
-    color: #FFFFFF;
-    display: block;
-    height: 32px;
-    position: absolute;
-    right: -25px;
-    top: 4px;
-    width: 67px;
-    line-height: 35px;
-    font-size: 14px;
+	color: #FFFFFF;
+	display: block;
+	height: 32px;
+	position: absolute;
+	right: -25px;
+	top: 4px;
+	width: 67px;
+	line-height: 35px;
+	font-size: 14px;
 }
-
 .wide-foot {
-    width: 960px;
+	width: 960px;
 }
-
 /* REVIEW BOX */
-/*  
-	name:write a review  
-	date:2011.7.25
-	author:chen
-	email:itechen@gmail.com
-*/
-
+/*
+ name:write a review
+ date:2011.7.25
+ author:chen
+ email:itechen@gmail.com
+ */
 
 .divReview {
 	color: #666;
@@ -861,6 +758,8 @@
 }
 div.divReview {
 	background: #fff url(../images/form/bg.jpg) repeat-x left top;
+	width: 600px;
+	height: auto;
 }
 div.divReview span {
 	color: #F00;
@@ -986,24 +885,171 @@ div.divReview a#inquirysub {
 div.divReview a#inquirysub:hover {
 	background-position: left bottom;
 }
-
 #inquiryform {
-    position: absolute;
-    top: 200px;
-    left: 400px;
-    display: none;
-    z-index: 500;
-    background: #ffffff;
+	position: absolute;
+	display: none;
+	z-index: 1001;
+	border-radius: 5px;
+	background: #ffffff;
+	padding: 10px;
 }
-
+#inquiryform .mt8 {
+	margin-top: 0;
+}
+#inquiryform .inquirybox h2 {
+	background: url("../img/allbg.png") no-repeat scroll 0 -386px #434343;
+	color: #FFFFFF;
+}
+.inquirybox {
+	width: 880px;
+	height: 600px;
+	overflow: auto;
+}
 .close_form {
-    position: relative;
-    left: 420px;
-    font-size: 15px;
-    cursor: pointer;
-    display: none;
+	background: url("/assets/fancybox/fancybox.png") repeat scroll -40px 0 transparent;
+	cursor: pointer;
+	display: block;
+	font-size: 15px;
+	height: 30px;
+	left: 826px;
+	position: relative;
+	top: -30px;
+	width: 30px;
+	z-index: 1005;
+	text-indent: -9999px;
 }
-
 .close_form:hover {
-    color: #92240D;
+	color: #FBB017;
+}
+.form-mask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #DEDEDE;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	z-index: 1000;
+}
+.arch {
+	height: 36px;
+	margin-top: -36px;
+}
+.zoom {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	width: 57px;
+	height: 17px;
+	background: url(/imagesnew/aboutus/zoom-more.gif) no-repeat;
+	display: block;
+}
+.faq-intro {
+	margin-left: 108px;
+	width: auto;
+}
+.wide-foot .author-list {
+	padding-left: 70px;
+}
+.wide-foot .btn-enquiry {
+	margin-right: 50px;
+}
+.wide-foot .btn-enquiry a {
+	text-indent: 6px;
+}
+/* @make an enquire form
+ ---------------------------------------*/
+.enquireform {
+	width: 860px;
+	height: 600px;
+	border-radius: 6px;
+	background: #ffffff;
+	position: absolute;
+	top: 100px;
+	/*left: -9999em;*/
+	z-index: 10000;
+	padding:10px;
+	border: 10px solid #f9f9f9;
+}
+.formwrap {
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+}
+.enquireform p {
+	width: 520px;
+	padding-left: 5px;
+}
+.enquireform form {
+	width: 520px;
+	float: left;
+}
+.enquireform form fieldset {
+	border-radius: 5px;
+	padding: 15px 5px;
+	background:url("/imagesnew/room-show.png") no-repeat center 14px;
+}
+.enquireform form fieldset legend {
+	font-weight: bold;
+	color: #7E0122;
+	border-bottom:1px dashed #ddd;
+	width:500px;
+	padding:5px 0;
+	
+}
+.enquireform form label {
+	width: 200px;
+	display:block;
+	text-align: right;
+	line-height: 25px;
+	margin: 5px 0;
+	float:left;
+	clear:left;
+}
+.enquireform form input {
+	margin: 0px 0 0px 15px;
+	height: 20px;
+	float: left;
+}
+.enquireform form select {
+}
+.enquireform form textarea {
+	width: 200px;
+}
+.exit_ico {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url("/imagesnew/fancybox.png") no-repeat -43px 0px;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+}
+.yourbooking {
+	width: 260px;
+	background: #DEEFF8;
+	float: right;
+	border-radius: 5px;
+	padding: 10px;
+	right: 30px;
+	top: 30px;
+	margin-right: 13px;
+	margin-top:-50px;
+}
+.yourbooking h3{
+	margin-bottom:0px;
+}
+.yourbooking span.booking{
+	color:#7E0122;
+	font-size:11px;
+}
+.yourbooking .select span{
+	display:block;
+	text-indent:25px;
+	background:url('/imagesnew/select.png') no-repeat center left;
+}
+.yourbooking p {
+	width: 180px;
 }
