@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}hotel-index{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/destination.css" type="text/css" rel="stylesheet"/>
+<link href="/assets/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen" />
+{% endblock %}
+
+{% block script %} <script src="/assets/scripts/destination.js" type="text/javascript"></script>
+{% endblock %}
+{% block body%}
+{% include 'header.html' %} <div class="bread"></div>
+<div class="wrapper clearfix">
+	{% include 'sidebar-destination.html' %}
+	<div class="content" name="">
+		<div class="share-tools clearfix">
+			<a rel="lightbox[addwish 640 480]" href="wishlist?addxl=167" class="addwish iframe">Add to my wishlist</a>
+			<div class="social-tools">
+				<span class="addthis clearfix"> <!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style ">
+						<a class="addthis_button_preferred_1 addthis_button_facebook at300b" title="Send to Facebook" href="#"><span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span></a>
+						<a class="addthis_button_preferred_2 addthis_button_twitter at300b" title="Tweet This" href="#"><span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span></a>
+						<a class="addthis_button_preferred_3 addthis_button_email at300b" target="_blank" title="Email" href="#"><span class="at16nc at300bs at15nc at15t_email at16t_email"><span class="at_a11y">Share on email</span></span></a>
+						<a class="addthis_button_preferred_4 addthis_button_print at300b" title="Print" href="#"><span class="at16nc at300bs at15nc at15t_print at16t_print"><span class="at_a11y">Share on print</span></span></a>
+						<a class="addthis_button_compact at300m" href="#"><span class="at16nc at300bs at15nc at15t_compact at16t_compact"><span class="at_a11y">More Sharing Services</span></span></a>
+						<a class="addthis_counter addthis_bubble_style" style="display: block;" href="#"><a class="addthis_button_expanded" target="_blank" title="View more services" href="#">0</a><a class="atc_s addthis_button_compact"><span></span></a></a>
+						<div class="atclear"></div>
+					</div> <script src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-4f055a77189d3286" type="text/javascript"></script> <!-- AddThis Button END --> </span>
+			</div>
+		</div>
+		<h1>Things to Do in Tingri & Everest</h1>
+		<img src="/imagesnew/destination/map2.jpg" width="680" height="380">
+		<p>
+			Tingri, a country of the Shigatse Prefecture in Tibet, is located at the foot  of Mt. Everest. And in this town, there are
+			totally four mountains which are over 8,000 metres above the sea level. They are Mt. Everest (8,844.43 m / 17,060 ft),
+			Lhotse (the forth highest mountain in the world, 8,516 m / 27,940 ft), Makalu ( the fifth highest mountain in the world,
+			8,481 m / 27,825 ft), and Cho Oyu ( the sixth highest mountain in the world 8,201 m / 26,906 ft).
+		</p>
+		<p>
+			As the place which must be passed to Mt. Everest, Tingri is often used as the last base by travelers and climbers
+			refreshing and preparing themselves to ascend Mt. Everest. And in fact, there are two towns in this county for
+			travelers take a break before their adventures, namely Shegar Town ( New Tingri ) and Gangka Town ( Old Tingri ).
+		</p>
+		<h2>Popular Places to go in this region</h2>
+		<dl class="pop-place clearfix">
+			<dt><img src="/imagesnew/train-img.jpg" width="210" height="150">
+			</dt>
+			<dd>
+				<h3>Rongbuk Monastery</h3>
+				ratings:<span></span>
+				<p>
+					Why go: At the foothills of Mt.Everest, is located the highest monastery
+					in the world - Rongbuk Monastery. It was founded by a Nyingmapa
+					Lama in 1902 and had been in used by monks and hermits for over 400
+					years. The ancient monastery is only 200 metres (660 ft) lower than the
+					north side Everest Base Camp of Mount Everest, and in the background
+					of Rongbuk Monastery is the top pf the world - Qomolangma.
+				</p>
+				<a class="read-more" href="###">Read more</a>
+			</dd>
+		</dl>
+		<dl class="pop-place clearfix">
+			<dt><img src="/imagesnew/train-img.jpg" width="210" height="150">
+			</dt>
+			<dd>
+				<h3>Rongbuk Monastery</h3>
+				ratings:<span></span>
+				<p>
+					Why go: At the foothills of Mt.Everest, is located the highest monastery
+					in the world - Rongbuk Monastery. It was founded by a Nyingmapa
+					Lama in 1902 and had been in used by monks and hermits for over 400
+					years. The ancient monastery is only 200 metres (660 ft) lower than the
+					north side Everest Base Camp of Mount Everest, and in the background
+					of Rongbuk Monastery is the top pf the world - Qomolangma.
+				</p>
+				<a class="read-more" href="###">Read more</a>
+			</dd>
+		</dl>
+	</div><!--end of div.content-->
+</div><!--end of div.wrapper-->
+{% include 'footer.html' %}
+{% endblock %}
