@@ -2,27 +2,35 @@
  ---------------------------------------------------------------*/
 .overview-top {
 	width: 100%;
-	margin:0 0 10px;
+	margin: 0 0 10px;
 }
 .slides {
-	width: 100%;
-	height: 275px;
+	width: 680px;
+	height: 273px;
+	border: 1px solid #8e271f;
+	overflow: hidden;
 	position: relative;
 }
 .slides h2 {
-	font-size: 16px;
-	margin:10px 0 0 0;
+	font-size: 18px;
+	margin: 10px 0 0 0;
 }
 .slide {
-    border: 1px solid #8e271f;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 680px
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 680px;
+	background: #fff;
 }
 .slide img {
 	float: left;
 	margin: 0 10px 0 0;
+}
+.slide p {
+	font-size: 13px;
+	max-height: 153px;
+	line-height: 19px;
+	overflow: hidden;
 }
 .thumbs {
 	width: 100%;
@@ -30,19 +38,23 @@
 	border-top: 5px solid #8e271f;
 }
 .thumbs ul li {
-    background: none repeat scroll 0 0 #EEEEEE;
-    border-radius: 0 0 2px 2px;
-    color: #8E271F;
-    cursor: pointer;
-    float: left;
-    font-size: 13px;
-    line-height: 40px;
-    margin: 0 4px;
-    padding: 0 10px
+	background: none repeat scroll 0 0 #EEEEEE;
+	border-radius: 0 0 2px 2px;
+	color: #8E271F;
+	cursor: pointer;
+	float: left;
+	font-size: 13px;
+	line-height: 40px;
+	margin: 0 4px;
+	padding: 0 10px
 }
 .thumbs ul li:hover, .thumbs ul li.active {
 	color: #fff;
 	background: #8e271f;
+}
+.thumbs a.all-things {
+	line-height: 40px;
+	padding-left: 17px;
 }
 .share-tools {
 	background: url("/imagesnew/itinerary/bg-share.png") no-repeat scroll right center transparent;
@@ -59,7 +71,7 @@
 }
 .social-tools {
 	float: right;
-    left: 309px;
+	left: 309px;
 	position: relative;
 	top: 9px;
 }
@@ -72,32 +84,32 @@
 	color: #222;
 	margin: 20px 0 0;
 }
-.overview-left p{
-	margin:0px 0 10px;
+.overview-left p {
+	margin: 0px 0 10px;
 }
-.most-title a{
-	font-size:13px;
-	float:right;
+.most-title a {
+	font-size: 13px;
+	float: right;
 }
 dl.pop-tour {
 	margin: 10px 0 20px;
 }
-dl.pop-tour dt{
-	width:180px;
-	float:left;
+dl.pop-tour dt {
+	width: 180px;
+	float: left;
 }
-dl.pop-tour dd{
-	width:230px;
-	float:right;
+dl.pop-tour dd {
+	width: 230px;
+	float: right;
 }
-dl.pop-tour h4{
-	background:url("/imagesnew/overview-star.png") no-repeat center left;
-	text-indent:20px;
-	color:#222222;
+dl.pop-tour h4 {
+	background: url("/imagesnew/overview-star.png") no-repeat center left;
+	text-indent: 20px;
+	color: #222222;
 }
-dl.pop-tour p{
-	margin:3px 0;
-	font-size:12px;
+dl.pop-tour p {
+	margin: 3px 0;
+	font-size: 12px;
 }
 .pop img {
 	float: left;
@@ -118,111 +130,119 @@ dl.pop-tour p{
 	min-height: 500px;
 	float: right;
 }
-.overview-right h5{
-	color:#222222;
-	margin:1px 0 10px;
+.overview-right h5 {
+	color: #222222;
+	margin: 1px 0 10px;
 }
-.overview-right div{
-	border:1px solid #ddd;
-	padding:10px;
-	margin:10px 0 20px;
-	background:#fbfaf9;
+.overview-right div {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px 0 20px;
+	background: #fbfaf9;
 }
-.overview-right .right-more{
-	float:right;
+.overview-right .right-more {
+	float: right;
 }
-.WWtable td{
-	width:50px;
-	height:30px;
-	text-align:center;
+.WWtable td {
+	width: 53px;
+	height: 20px;
+	text-align: center;
 }
-.v-icon, .vv-icon, .x-icon, .n-icon{
-	background:url("/imagesnew/destination/allicon.png") no-repeat ;
+.ww-r1 {
+	background: url("/imagesnew/destination/weather-rank1.png") no-repeat center center;
 }
-.v-icon{
-	background-position:0 -20px;
+.ww-r2 {
+	background: url("/imagesnew/destination/weather-rank2.png") no-repeat center center;
 }
-.vv-icon{
-	background-position:0 -58px;
+.ww-r3 {
+	background: url("/imagesnew/destination/weather-rank3.png") no-repeat center center;
 }
-.x-icon{
-	background-position:0 -100px;
+.ww-r4 {
+	background: url("/imagesnew/destination/weather-rank4.png") no-repeat center center;
 }
-.n-icon{
-	background-position:0 0;
+.ww-r5 {
+	background: url("/imagesnew/destination/weather-rank5.png") no-repeat center center;
 }
 .further-reading {
-	width:100%;
-	float:left;
-	min-height:100px;
-	border-top:1px dashed #ddd;
-	padding:20px 0;
-	margin:50px 0 0;
+	width: 100%;
+	float: left;
+	min-height: 100px;
+	border-top: 1px dashed #ddd;
+	padding: 20px 0;
+	margin: 50px 0 0;
 }
-.further-reading ul{
-	margin:10px 0 20px;
+.further-reading ul {
+	margin: 10px 0 20px;
 }
-.further-reading h3{
-	color:#434343;
-	text-align:center;
+.further-reading h3 {
+	color: #434343;
+	text-align: center;
 }
-.further-reading ul li{
-	margin:0 auto;
-	float:left;
+.further-reading ul li {
+	margin: 0 auto;
+	float: left;
 }
-.further-reading ul li a{
-	border:1px solid #ddd;
-	float:left;
-	padding:5px 10px;
-	margin:5px;
+.further-reading ul li a {
+	border: 1px solid #ddd;
+	float: left;
+	padding: 5px 10px;
+	margin: 5px;
 }
-.further-reading ul li a{
-	color:#434343;
-	text-decoration:none;
+.further-reading ul li a {
+	color: #434343;
+	text-decoration: none;
 }
-.further-reading ul li a:hover{
-	color:#888888;
+.further-reading ul li a:hover {
+	color: #888888;
 }
 /* @WHEN TO GO
------------------------------------------------------------------------*/
-.temp span{
+ -----------------------------------------------------------------------*/
+.wea-table table {
+	width: 680px;
+}
+.temp span {
 	display: block;
-    float: left;
-    height: 18px;
-    width: 16px;
-	background:url("/imagesnew/destination/temperature-plus.png") repeat-x;
+	float: left;
+	height: 18px;
+	max-width:100px;
+	background: url("/imagesnew/destination/temperature-plus.png") repeat-x;
 }
-.temp table td{
-	width:160px;
-}
-.temp table th{
-	width:160px;
-}
-.temp table td{
-	width:160px;
-}
-
-
- 
-/* @THINGS TO DO
------------------------------------------------------------------------*/
-dl.pop-place{
-	background:#fdfdfd;
+.wea-table table th {
+	text-align: center;
+	padding: 0 8px;
+	background:#eee;
 	border:1px solid #ddd;
-	border-radius:5px;
-	padding:10px;
-	margin:20px 0;
 }
-dl.pop-place dt{
-	width:210px;
-	float:left;
+.wea-table table td {
+	width:150px;
+	max-width: 160px;
+	text-align: right;
+	padding: 3px 8px;
+	border: 1px solid #ddd;
 }
-dl.pop-place dd{
-	width:430px;
-	float:right;
+.wea-table table tr td:first-child, .wea-table table th:first-child {
+	text-align: left;
+	width:100px;
 }
-.pop-place a.read-more{
-	display:block;
-	float:right;
+/* @THINGS TO DO
+ -----------------------------------------------------------------------*/
+dl.pop-place {
+	background: #fdfdfd;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 0;
+}
+dl.pop-place dt {
+	width: 210px;
+	float: left;
+}
+dl.pop-place dd {
+	width: 430px;
+	float: right;
+}
+.pop-place a.read-more {
+	display: block;
+	float: right;
 	margin: 0 10px 0 0;
 }

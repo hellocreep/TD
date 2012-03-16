@@ -12,7 +12,7 @@ $(document).ready(function() {
 })
 //WHEN TO GO条形图
 
-var temp = new Array(["Saab", "Volvo", "BMW"], ["Saab", "Volvo", "BMW"]);
+/*
 var January = new Array("-110", "20", "30");
 var Febrary = new Array("10", "110", "50");
 var March = new Array("30", "110", "50");
@@ -25,9 +25,16 @@ var September = new Array("30", "-110", "50");
 var October = new Array("30", "110", "-50");
 var Novemeber = new Array("-30", "10", "50");
 var December = new Array("10", "110", "50");
-var Allmonth = new Array(January, Febrary, March, April, May, June, July, August, September, October, Novemeber, December);
 
+var Recommend = new Array("1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2");
+var Allmonth = new Array(January, Febrary, March, April, May, June, July, August, September, October, Novemeber, December);
+*/
 $(document).ready(function() {
+	var Allmonth = new Array(January, Febrary, March, April, May, June, July, August, September, October, Novemeber, December);
+	$.each(Recommend,function(x,y){
+		$('.temp tr').eq(x).children('td:eq(1)').addClass('ww-r'+y);
+		$('.WWtable tr:odd td').eq(x).addClass('ww-r'+y);
+	});
 	$.each(Allmonth, function(m, n) {
 		$.each(n, function(i, j) {
 			if(j <= 0) {
