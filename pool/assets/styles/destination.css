@@ -235,8 +235,25 @@ dl.pop-place {
 	margin: 20px 0;
 }
 dl.pop-place dt {
-	width: 210px;
+	width: 220px;
+	height:158px;
 	float: left;
+	background:url("/imagesnew/destination/img-border.png") no-repeat 0 0;
+	position: relative;
+}
+dl.pop-place dt img{
+	margin:7px 6px;
+}
+dl.pop-place dt div {
+	width: 47px;
+	height:34px;
+	background:url("/imagesnew/destination/img-num.png") no-repeat 0 0;
+	position:absolute;
+	left:20px;
+	top:-5px;
+	line-height:34px;
+	text-align: center;
+	color:#fff;
 }
 dl.pop-place dd {
 	width: 430px;
