@@ -118,7 +118,12 @@ $(function(){
 	},function(){
 		$( this ).hide();
 	})
-	
+	$( '.yourbooking img' ).hover(function(){
+		$( '.yourbooking .price-tip' ).css({'top':'80px','right':'90px'})
+	    $( '.yourbooking .price-tip' ).show();
+	},function(){
+	    $( '.yourbooking .price-tip' ).hide();
+	});
 	//Pic gallery
 	var gallery_list = [];
 	$( '.gallery-list li' ).each( function(){
@@ -168,6 +173,10 @@ $(function(){
 	});
 	//新版make enquiry
 	$( '.make-enquiry a' ).click(function( e ){
+		var price=$('.light-price').text();
+		$('.tourprice').text(price);
+		$('.post-tour-price').remove();
+		$('.fielddisplay').append('<input class="post-tour-price" type="text" value="from '+price+'" name="Tour_Price">');
 	    e.preventDefault();
 	    var form_content = $( '#enquireform' )
 	    //让form根据屏幕大小居中
@@ -190,9 +199,13 @@ $(function(){
 	    	$( '.form-mask' ).remove()
 	    	$( '#enquireform' ).hide();
 	    })
-	}); 
+	});
 	//价格表弹出表单
 	$( '.group a' ).click(function( e ){
+		var price=$(this).text();
+		$('.tourprice').html(price);
+		$('.post-tour-price').remove();
+		$('.fielddisplay').append('<input class="post-tour-price" type="text" value="from '+price+'" name="Tour_Price">');
 	e.preventDefault();
 	var form_content = $( '#enquireform' )
 	//让form根据屏幕大小居中
@@ -235,7 +248,10 @@ $(function(){
 /******recent inquery 文字滚动**************/
 setInterval(AutoScroll,5000);
 
-	
-	
+	/****检查线路是否有价格**********************/
+	if($('.post-tour-price').val()=='')
+	{
+		$(this).remove();
+	}
 })
 })(jQuery);
