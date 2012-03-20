@@ -103,13 +103,17 @@ dl.pop-tour dd {
 	float: right;
 }
 dl.pop-tour h4 {
-	background: url("/imagesnew/overview-star.png") no-repeat center left;
+	background: url("/imagesnew/overview-star.png") no-repeat left 3px;
 	text-indent: 20px;
 	color: #222222;
 }
 dl.pop-tour p {
 	margin: 3px 0;
 	font-size: 12px;
+}
+dl.pop-tour img.reco-img {
+	width: 180px;
+	height: 150px;
 }
 .pop img {
 	float: left;
@@ -204,25 +208,22 @@ dl.pop-tour p {
 	display: block;
 	float: left;
 	height: 18px;
-	max-width:100px;
+	max-width: 100px;
 	background: url("/imagesnew/destination/temperature-plus.png") repeat-x;
 }
 .wea-table table th {
-	text-align: center;
+	text-align: left;
 	padding: 0 8px;
-	background:#eee;
-	border:1px solid #ddd;
 }
 .wea-table table td {
-	width:150px;
+	width: 150px;
 	max-width: 160px;
 	text-align: right;
 	padding: 3px 8px;
-	border: 1px solid #ddd;
 }
 .wea-table table tr td:first-child, .wea-table table th:first-child {
 	text-align: left;
-	width:100px;
+	width: 100px;
 }
 /* @THINGS TO DO
  -----------------------------------------------------------------------*/
@@ -245,4 +246,119 @@ dl.pop-place dd {
 	display: block;
 	float: right;
 	margin: 0 10px 0 0;
+}
+#mapContainer {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+#mapContainer {
+	padding: 15px 0 0;
+}
+#mapContainer img.worldMap {
+	margin: 5px 0 0;
+}
+#worldMapList a {
+	background: url("/imagesnew/sprite-destinationsMap.png") no-repeat scroll 100% -120px transparent;
+	cursor: pointer;
+	float: left;
+	font-size: 0.94em;
+	height: 26px;
+	overflow: visible;
+	padding: 0 15px 0 0;
+	text-align: center;
+	text-decoration: none;
+}
+#worldMapList a span {
+	background: url("/imagesnew/sprite-destinationsMap.png") no-repeat scroll 0 -60px transparent;
+	color: #FFFFFF;
+	float: left;
+	height: 26px;
+	line-height: 24px;
+	padding: 0 0 0 15px;
+	position: relative;
+	white-space: nowrap;
+}
+#worldMapList a:hover {
+	background-position: 100% -153px;
+}
+#worldMapList a:hover span {
+	background-position: 0 -93px;
+}
+#worldMapList li {
+	background-color: transparent;
+	position: absolute;
+}
+#worldMapList li.northAmerica {
+	left: 62px;
+	top: 97px;
+}
+#worldMapList li.caribbean {
+	left: 160px;
+	top: 173px;
+}
+#worldMapList li.centralAmerica {
+	left: 48px;
+	top: 190px;
+}
+#worldMapList li.southAmerica {
+	left: 150px;
+	top: 238px;
+}
+#worldMapList li.europe {
+	left: 330px;
+	top: 105px;
+}
+#worldMapList li.middleEast {
+	left: 353px;
+	top: 151px;
+}
+#worldMapList li.africa {
+	left: 333px;
+	top: 187px;
+}
+#worldMapList li.antarctica {
+	bottom: 53px;
+	left: 380px;
+}
+#worldMapList li.asia {
+	right: 424px;
+	top: 130px;
+}
+#worldMapList li.pacific {
+	right: 362px;
+	top: 210px;
+}
+#sponsoredPinsContainer li {
+	background: url("/imagesnew/sprite-destinationsMap.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 40px;
+	position: absolute;
+	width: 19px;
+}
+#sponsoredPinsContainer li a {
+	color: #000000;
+	display: block;
+	height: 32px;
+	width: 19px;
+}
+#sponsoredPinsContainer li span {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-color: rgba(0, 0, 0, 0.13) rgba(0, 0, 0, 0.13) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.08);
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 1px 1px 2px rgba(221, 0, 0, 0.5);
+	cursor: pointer;
+	display: none;
+	font-size: 11px;
+	left: 22px;
+	padding: 2px 8px;
+	position: absolute;
+	top: 0;
+	white-space: nowrap;
 }

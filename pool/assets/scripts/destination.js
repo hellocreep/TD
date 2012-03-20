@@ -29,6 +29,19 @@ var December = new Array("10", "110", "50");
 var Recommend = new Array("1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2");
 var Allmonth = new Array(January, Febrary, March, April, May, June, July, August, September, October, Novemeber, December);
 */
+var January = new Array("","","");
+var Febrary = new Array("","","");
+var March = new Array("","","");
+var April = new Array("","","");
+var May = new Array("","","");
+var June = new Array("","","");
+var July = new Array("","","");
+var August = new Array("","","");
+var September = new Array("","","");
+var October = new Array("","","");
+var Novemeber = new Array("","","");
+var December = new Array("","","");
+var Recommend = new Array("", "", "", "", "", "", "", "", "", "", "", "");
 $(document).ready(function() {
 	var Allmonth = new Array(January, Febrary, March, April, May, June, July, August, September, October, Novemeber, December);
 	$.each(Recommend,function(x,y){
@@ -37,6 +50,7 @@ $(document).ready(function() {
 	});
 	$.each(Allmonth, function(m, n) {
 		$.each(n, function(i, j) {
+			$('.temp tr').eq(m).children('td').eq(i + 2).children('span').after(j);
 			if(j <= 0) {
 				$('.temp tr').eq(m).children('td').eq(i + 2).children('span').css({
 					"background" : 'url("/imagesnew/destination/temperature-minus.png") repeat-x'
