@@ -244,6 +244,12 @@ dl.pop-place dt {
 dl.pop-place dt img{
 	margin:7px 6px;
 }
+dl.pop-place h3 a{
+	color:inherit;
+}
+dl.pop-place h3 a:hover{
+	text-decoration:none;
+}
 dl.pop-place dt div {
 	width: 47px;
 	height:34px;
