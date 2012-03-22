@@ -63,29 +63,29 @@ $(function(){
 	
 	//TAB fiexd
 	$( window ).unbind( 'scroll' );
-	var t = $( '.tour-tab' );
-	t_top = t.offset().top;
-	var d = $( '#tab-detail' ).offset().top;
-    var p = $( '#tab-price' ).offset().top;
-    var f = $( '#tab-faq' ).offset().top;
-    var r = $( '#tab-review' ).offset().top;
+	   var t = $( '.tour-tab' );
+       t_top = t.offset().top;
 	$( window ).bind( 'scroll',function(){
+        var d = $( '#tab-detail' ).offset().top;
+        var p = $( '#tab-price' ).offset().top;
+        var f = $( '#tab-faq' ).offset().top;
+        var r = $( '#tab-review' ).offset().top;
 		var s_top = $( this ).scrollTop()
 		
 		if( s_top > t_top ){
 			$( '.tab-replace' ).show();
 			t.css({'position':'fixed','top':0,
 			'z-index':10,'width':970,'background':'#FBFBF5'});
-			if( s_top > ( d-35 ) ){
+			if( s_top > (d-40) ){
                 change_tab( $( '.tab-detail' ) );
             }
-            if( s_top > ( p-35 ) ){
+            if( s_top > (p-40) ){
                 change_tab( $( '.tab-price' ) );
             }
-            if( s_top > ( f-35 ) ){
+            if( s_top > (f-40) ){
                 change_tab( $( '.tab-faq' ) );
             }
-			if( s_top > ( r-35 )){
+			if( s_top > (r-40) ){
                 change_tab( $( '.tab-review' ) );
             }
 		}else{
@@ -104,8 +104,13 @@ $(function(){
 	
 	/*屏蔽不显示图片*/
     $("dl.dayCloum div dt+dd p:contains('No documents found.')").parent().hide();
-    /*屏蔽不显示图片*/
     $("ul#optformlist p:contains('No documents found.')").hide(); 
+    //隐藏价格问题
+    var tour_code = $( '.des-detail li').eq(3).text().replace( 'Tour code: ','');
+    if( tour_code== 'TD-JT-7B' || tour_code=='TD-JT-04' || tour_code=='TD-JT-08'){
+        $( '.tour-price img').hide();
+    }
+    
 	
 	//Price Question
 	$( '.tour-price img' ).hover(function(){
@@ -165,12 +170,14 @@ $(function(){
 	$( '#inquirysub').click(Submitform1);
 	
 	//底部百分比分配
+	/*
 	var total_rank = $( '.total-rank' ).text().split( ',' );
 	$( '.itinerary-first h3 span' ).text( total_rank[0] );
 	$( '.itinerary-other .rate' ).each(function( index ){
 	    var rank = index + 1
         $( this ).text( total_rank[rank] );
 	});
+	*/
 	//新版make enquiry
 	$( '.make-enquiry a' ).click(function( e ){
 		var price=$('.light-price').text();

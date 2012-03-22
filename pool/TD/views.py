@@ -75,3 +75,5 @@ def share(request):
 
 def form(request):
     return render_to_response('shareform.html',{})
+def travel_resource(request):
+    return render_to_response('travel-resource.html',{})
