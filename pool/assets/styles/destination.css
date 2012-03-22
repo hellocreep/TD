@@ -385,3 +385,27 @@ dl.pop-place dd {
 	top: 0;
 	white-space: nowrap;
 }
+
+
+
+.map-list dl{
+	float:left;
+	margin:10px 20px 10px 0;
+	padding:10px;
+	border:1px solid #ddd;
+	position:relative;
+}
+.map-list dl dt img{
+	width:180px;
+	height:200px;
+}
+.map-list dl:hover{
+	background:rgba(243,234,213,0.6);
+	cursor:pointer;
+}
+.map-list dl .zoom{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	widht
+}
