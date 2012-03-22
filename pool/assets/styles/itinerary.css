@@ -325,7 +325,7 @@
 	margin: 10px 0 0 0;
 }
 .itinerary-full {
-	margin-top: 40px;
+	padding-top: 40px;
 	width: 100%;
 }
 #itinerary {
@@ -337,7 +337,7 @@
 	border-radius: 5px;
 	behavior: url(PIE.htc);
 	border: 1px solid #FFD7A2;
-	margin: 12px 0 50px 0;
+	margin: 12px 0 30px 0;
 	width: 590px;
 	float: left;
 }
@@ -421,8 +421,7 @@
 }
 .price-book {
 	min-height: 360px;
-	border: 1px solid #eeeeee;
-	padding: 20px 10px;
+	padding: 40px 10px 0;
 	background: url(/imagesnew/itinerary/bg-price-book.png) repeat-x left bottom #fffefd;
 }
 .price-book h3 {
@@ -503,7 +502,6 @@
 	margin: 0;
 }
 .tibet-promise {
-	margin-bottom: 36px;
 	margin-left: 30px;
 }
 .tibet-promise h3 {
@@ -518,6 +516,11 @@
 	width: 760px;
 	margin-bottom: 10px;
 }
+
+.tour-faq {
+    padding-top: 30px;
+}
+
 .tour-faq .accordion {
 	list-style: decimal inside none;
 	margin-bottom: 10px;
@@ -575,7 +578,7 @@
 .tour-review {
 	margin-bottom: 15px;
 	*padding-bottom: 40px;
-	margin-top: 36px;
+	padding-top: 40px;
 }
 .tour-review h3 {
 	font-size: 13px;
@@ -601,13 +604,12 @@
 	float: left;
 	font-size: 13px;
 	line-height: 160%;
-	margin-top: 10px;
 	padding-left: 45px;
 	padding-right: 45px;
 	width: 680px
 }
 .tour-review p {
-	margin: 8px 0 0 0;
+	margin: 0px;
 }
 .tour-review dl dt + dd + dd {
 	background: url(/imagesnew/itinerary/bg-msg-bottom.png) no-repeat scroll left bottom transparent;
