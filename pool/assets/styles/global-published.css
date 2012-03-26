@@ -845,6 +845,38 @@ ul.subnav a.active {
 .icon-navRight {
 	margin-left: 30px;
 }
+
+.sidebar-resource h2{
+    background: url("/imagesnew/hotel-leftbar-h2bg.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.sidebar-resource ul {
+    list-style: none outside none;
+    padding: 5px 5px 5px 15px;
+}
+
+.sidebar-resource ul li {
+    background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
+    margin-top: 5px;
+    padding-left: 15px;
+    text-indent: -10px;
+}
+
+.sidebar-resource ul li a {
+    height: 25px;
+    line-height: 25px;
+}
+
+.sidebar-resource .select {
+    color: #7E0122;
+}
+
 /*左侧弹出框*/
 
 .poptips {

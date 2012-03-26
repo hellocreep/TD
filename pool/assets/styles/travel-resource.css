@@ -1,0 +1,47 @@
+.travel-res-title {
+    height: 50px;
+    margin: 30px 0 20px;
+    padding-top: 28px;
+    padding-left: 30px;
+    color: #ffffff;
+}
+
+.title-fir {
+    background: url("/imagesnew/travel-resource/b1.jpg") no-repeat 0 0;
+}
+
+.travel-res-wrap div {
+    float: left;
+    height: 182px;
+    width: 200px;
+    position: relative;
+    margin-left: 25px;
+}
+
+.travel-res-wrap div a {
+    bottom: 5px;
+    color: #FFFFFF;
+    display: block;
+    height: 100%;
+    line-height: 343px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.travel-res-wrap div:hover {
+    opacity: 0.8;
+    filter: opacity(alpha=80)
+}
+
+.res-1 {
+    background: url("/imagesnew/travel-resource/1.jpg") no-repeat 0 0;
+}
+
+.res-2 {
+    background: url("/imagesnew/travel-resource/2.jpg") no-repeat 0 0;
+}
+
+.res-3 {
+    background: url("/imagesnew/travel-resource/3.jpg") no-repeat 0 0;
+}
