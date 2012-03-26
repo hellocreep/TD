@@ -169,15 +169,10 @@ $(function(){
 	});
 	$( '#inquirysub').click(Submitform1);
 	
-	//底部百分比分配
-	/*
-	var total_rank = $( '.total-rank' ).text().split( ',' );
-	$( '.itinerary-first h3 span' ).text( total_rank[0] );
+	//底部线路排名
 	$( '.itinerary-other .rate' ).each(function( index ){
-	    var rank = index + 1
-        $( this ).text( total_rank[rank] );
-	});
-	*/
+        $( this ).text( 'Top '+(index+2));
+    });
 	//新版make enquiry
 	$( '.make-enquiry a' ).click(function( e ){
 		var price=$('.light-price').text();

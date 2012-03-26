@@ -659,6 +659,7 @@
 	float: left;
 	width: 304px;
 	margin-left: 50px;
+	position: relative;
 }
 .tour-foot img {
 	display: block;
@@ -670,13 +671,10 @@
 }
 .itinerary-first h3 {
 	background: #8c2621;
-	height: 45px;
 	color: #FFFFFF;
 	font-size: 14px;
-	line-height: 45px;
 	font-weight: normal;
-	text-align: center;
-	line-height: 45px;
+	padding-left: 52px;
 	margin: 0;
 }
 .itinerary-first a {
@@ -710,17 +708,29 @@
 	display: block;
 	width: 150px;
 }
-.itinerary-other .rate {
-	background: url("/imagesnew/itinerary/bg-rate.png") no-repeat 0 0;
-	color: #FFFFFF;
-	display: block;
-	height: 32px;
-	position: absolute;
-	right: -25px;
-	top: 4px;
-	width: 67px;
-	line-height: 35px;
-	font-size: 14px;
+
+.tour-foot .rate {
+    background: url("/imagesnew/itinerary/bg-rate.png") no-repeat 0 0;
+    color: #FFFFFF;
+    display: block;
+    height: 38px;
+    position: absolute;
+    width: 55px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.itinerary-other .rate{
+	right: 105px;
+    top: -4px;
+    
+}
+.itinerary-first .rate {
+    font-size: 15px;
+    right: 254px;
+    top: -4px;
 }
 .wide-foot {
 	width: 960px;

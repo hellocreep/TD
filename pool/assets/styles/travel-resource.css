@@ -1,0 +1,95 @@
+/*Travel Tips*/
+.travel-res-title {
+    margin-top: 30px;
+    padding-left: 8px;
+    font-size: 17px;
+    background: #EAE0E1;
+}
+
+.travel-res-wrap div {
+    float: left;
+    height: 182px;
+    width: 200px;
+    position: relative;
+    margin: 25px 20px 0 5px;
+}
+
+.travel-res-wrap div a {
+    bottom: 5px;
+    color: #FFFFFF;
+    display: block;
+    height: 100%;
+    line-height: 343px;
+    position: absolute;
+    text-indent: 30px;
+    width: 100%;
+    background: url("/imagesnew/travel-resource/right-tri.png") no-repeat 15px 167px;
+}
+
+.travel-res-wrap div a:hover {
+    text-decoration: none;
+    color: #FBB017;
+}
+
+.travel-res-wrap div:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.res-1 {
+    background: url("/imagesnew/travel-resource/1.jpg") no-repeat 0 0;
+}
+.res-2 {
+    background: url("/imagesnew/travel-resource/2.jpg") no-repeat 0 0;
+}
+.res-3 {
+    background: url("/imagesnew/travel-resource/3.jpg") no-repeat 0 0;
+}
+.res-4 {
+    background: url("/imagesnew/travel-resource/4.jpg") no-repeat 0 0;
+}
+.res-5 {
+    background: url("/imagesnew/travel-resource/5.jpg") no-repeat 0 0;
+}
+.res-6 {
+    background: url("/imagesnew/travel-resource/6.jpg") no-repeat 0 0;
+}
+.res-7 {
+    background: url("/imagesnew/travel-resource/7.jpg") no-repeat 0 0;
+}
+.res-8 {
+    background: url("/imagesnew/travel-resource/8.jpg") no-repeat 0 0;
+}
+.res-9 {
+    background: url("/imagesnew/travel-resource/9.jpg") no-repeat 0 0;
+}
+.res-10 {
+    background: url("/imagesnew/travel-resource/10.jpg") no-repeat 0 0;
+}
+.res-11 {
+    background: url("/imagesnew/travel-resource/11.jpg") no-repeat 0 0;
+}
+.res-12 {
+    background: url("/imagesnew/travel-resource/12.jpg") no-repeat 0 0;
+}
+.res-13 {
+    background: url("/imagesnew/travel-resource/13.jpg") no-repeat 0 0;
+}
+.res-14 {
+    background: url("/imagesnew/travel-resource/14.jpg") no-repeat 0 0;
+}
+.res-15 {
+    background: url("/imagesnew/travel-resource/15.jpg") no-repeat 0 0;
+}
+.res-16 {
+    background: url("/imagesnew/travel-resource/16.jpg") no-repeat 0 0;
+}
+.res-17 {
+    background: url("/imagesnew/travel-resource/17.jpg") no-repeat 0 0;
+}
+.res-18 {
+    background: url("/imagesnew/travel-resource/18.jpg") no-repeat 0 0;
+}
+.res-19 {
+    background: url("/imagesnew/travel-resource/19.jpg") no-repeat 0 0;
+}
