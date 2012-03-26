@@ -315,7 +315,7 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	margin-right: 22px;
 }
 
-.content li {
+.content ol li {
     margin-top: 11px;
 }
 
@@ -875,10 +875,12 @@ ul.subnav a.active {
 .sidebar-resource ul li a {
     height: 25px;
     line-height: 25px;
+    font-size: 13px;
 }
 
 .sidebar-resource .select {
     color: #7E0122;
+    font-weight: bold;
 }
 
 /*左侧弹出框*/
@@ -1161,6 +1163,19 @@ a.reco-click:hover {
 
 .photoblock {
     text-align: center;
+    list-style: none outside none;
+}
+.photoblock li {
+    float: left;
+    text-align: center;
+}
+.photoblock li.c1 {
+    padding: 10px;
+    width: 650px;
+}
+.photoblock li.c2 {
+    padding: 10px 42px;
+    width: 254px;
 }
 .photoblock a img {
     border: 1px solid #CCCCCC;
@@ -1176,6 +1191,7 @@ a.reco-click:hover {
     font-size: 13px;
     margin-bottom: 20px;
     width: 100%;
+    text-align: center;
 }
 .tableu th {
     background: none repeat scroll 0 0 #E7E7E7;
@@ -1186,4 +1202,13 @@ a.reco-click:hover {
     background: none repeat scroll 0 0 #F6F6F6;
     border: 2px solid #FFFFFF;
     padding: 4px;
+}
+.box05 {
+    float: left;
+    margin: 0;
+    padding: 0 10px 30px;
+    width: 320px;
+}
+.box05 p:first-letter {
+    font-size: 1.6em;
 }

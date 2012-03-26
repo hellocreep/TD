@@ -11,7 +11,7 @@
     height: 182px;
     width: 200px;
     position: relative;
-    margin:25px 0 0 25px;
+    margin: 25px 20px 0 5px;
 }
 
 .travel-res-wrap div a {
@@ -33,7 +33,7 @@
 
 .travel-res-wrap div:hover {
     opacity: 0.8;
-    filter: opacity(alpha=80)
+    filter: alpha(opacity=80);
 }
 
 .res-1 {
