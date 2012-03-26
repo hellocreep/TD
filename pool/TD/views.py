@@ -67,6 +67,9 @@ def thingstodo(request):
 def maps(request):
     return render_to_response('maps.html',{})
 
+def whattosee(request):
+    return render_to_response('whattosee.html',{})
+
 def itinerary(request):
     return render_to_response('itinerary.html',{})
 
