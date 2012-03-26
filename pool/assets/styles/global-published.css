@@ -314,6 +314,11 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	margin-top: 18px;
 	margin-right: 22px;
 }
+
+.content li {
+    margin-top: 11px;
+}
+
 .content .content-h2, content-h3 {
 	margin: 20px 0 6px 0;
 }
@@ -1150,6 +1155,10 @@ a.reco-click:hover {
     overflow: hidden;
     width: 267px;
 }
+.btn-tailor:hover {
+    background-position: 0 -35px;
+}
+
 .photoblock {
     text-align: center;
 }
@@ -1159,4 +1168,22 @@ a.reco-click:hover {
 }
 .photoblock a:hover img {
     background: none repeat scroll 0 0 #FBB017;
+}
+
+.tableu {
+    border: medium none;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.tableu th {
+    background: none repeat scroll 0 0 #E7E7E7;
+    border: 2px solid #FFFFFF;
+    padding: 4px;
+}
+.tableu td {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 2px solid #FFFFFF;
+    padding: 4px;
 }
