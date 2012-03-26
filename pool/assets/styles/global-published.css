@@ -738,11 +738,9 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 
 }
 .sidebar h1 {
-
 	font-family: verdana;
 	font-size: 18px;
-	text-indent: 10px;
-	display: block;
+	text-align: center;
 	width: 240px;
 	background: url(/imagesnew/nav-bg-up.png) no-repeat center top;
 	padding: 20px 0;

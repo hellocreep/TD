@@ -58,10 +58,11 @@
 .hotel-sidebar h2{
     font-size:18px;
     background:url('/imagesnew/hotel-leftbar-h2bg.png') no-repeat;
-    height: 37px;
-    line-height: 37px;
+    height: 30px;
+    line-height: 30px;
     color:#FFF;
     padding-left: 15px;
+    margin-bottom: 0;
 }
 .hotel-viewd .v-hotel{
     padding: 5px;
@@ -94,11 +95,13 @@
 .near-list{
     list-style: none;
     padding:5px;
+    padding-left: 15px;
 }
 .near-list li
 {
     background:url('/imagesnew/nav-dot.png') no-repeat left;
     padding-left:15px;
+    margin-top: 5px;
 }
 
 /*hotel*/
