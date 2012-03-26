@@ -54,7 +54,8 @@
 }
 .thumbs a.all-things {
 	line-height: 40px;
-	padding-left: 17px;
+	padding-right: 15px;
+	float:right;
 }
 .share-tools {
 	background: url("/imagesnew/itinerary/bg-share.png") no-repeat scroll right center transparent;
@@ -102,11 +103,13 @@ dl.pop-tour dd {
 	width: 230px;
 	float: right;
 }
-dl.pop-tour h4 {
-	background: url("/imagesnew/overview-star.png") no-repeat left 3px;
-	text-indent: 20px;
-	color: #222222;
+dl.pop-tour h4 a {
+	text-decoration:none;
+	color:#434343;
 }
+dl.pop-tour h4 a:hover{
+	color:#888888;
+} 
 dl.pop-tour p {
 	margin: 3px 0;
 	font-size: 12px;
@@ -187,17 +190,16 @@ dl.pop-tour img.reco-img {
 	float: left;
 }
 .further-reading ul li a {
-	border: 1px solid #ddd;
+	border: 1px solid #fff;
 	float: left;
 	padding: 5px 10px;
 	margin: 5px;
-}
-.further-reading ul li a {
 	color: #434343;
 	text-decoration: none;
 }
 .further-reading ul li a:hover {
-	color: #888888;
+	color: #888;
+	border: 1px solid #ddd;
 }
 /* @WHEN TO GO
  -----------------------------------------------------------------------*/
@@ -387,7 +389,9 @@ dl.pop-place dd {
 }
 
 
-
+.map-list h3{
+	clear:both;
+}
 .map-list dl{
 	float:left;
 	margin:10px 20px 10px 0;
@@ -407,5 +411,7 @@ dl.pop-place dd {
 	position:absolute;
 	right:10px;
 	bottom:10px;
-	widht
+}
+.price-color{
+	color:#7E0122;
 }

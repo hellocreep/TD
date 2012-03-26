@@ -789,11 +789,10 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	height: 33px;
 	line-height: 33px;
 	width: 253px;
-	*
-	width: 233px;
+	*width: 233px;
 }
 ul.subnav a.active {
-	color: #888888;
+	color: #7E0122;
 	background: url("/imagesnew/nav-dot.png") no-repeat scroll 26px center transparent;
 }
 .have-arrow li {
@@ -814,7 +813,7 @@ ul.subnav a.active {
 	position: relative;
 }
 .subnav-left li a:hover {
-	color: #888888;
+	color: #7E0122;
 	background-color: transparent;
 	cursor: pointer;
 	text-decoration: none;
