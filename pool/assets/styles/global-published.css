@@ -983,6 +983,7 @@ ul.subnav a.active {
 	font-size: 12px;
 }
 .btn-enquiry {
+    display; block;
 	float: right;
 	margin: 7px 30px 0 0;
 }
@@ -1091,3 +1092,42 @@ a.reco-click:hover {
 }
 /*火车页面sidebar样式-----end*/
 
+/*延用老页面的一些全局样式*/
+.mt30 {
+    margin-top: 30px;
+}
+.box3 {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 2px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+}
+.box3 p {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.ml8 {
+    margin-left: 8px;
+}
+.fright {
+    float: right;
+}
+.btn_tailor {
+    background-image: url("../img/btn_tailormade.gif");
+    background-repeat: no-repeat;
+    display: block;
+    height: 35px;
+    line-height: 200px;
+    overflow: hidden;
+    width: 267px;
+}
+.photoblock {
+    text-align: center;
+}
+.photoblock a img {
+    border: 1px solid #CCCCCC;
+    padding: 1px;
+}
+.photoblock a:hover img {
+    background: none repeat scroll 0 0 #FBB017;
+}
