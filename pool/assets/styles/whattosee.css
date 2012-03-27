@@ -1,3 +1,7 @@
+.see-top{
+	margin:0 0 20px;
+}
+
 .see-map {
 	position: relative;
 }
@@ -36,6 +40,7 @@
 .map-attr li {
 	top: 30px;
 	left: 60px;
+	cursor:pointer;
 }
 .map-attr a {
 	background: none repeat scroll 0 0 #FFFFFF;
@@ -51,12 +56,16 @@
 	position: absolute;
 	top: 0;
 	white-space: nowrap;
+	z-index:30;
 }
 .map-attr li:hover a {
 	display: block;
 }
 ul.attr-list {
-	padding: 20px 0;
+	padding: 20px 0 10px;
+}
+ul.attr-list li{
+	margin:12px 0;
 }
 ul.attr-list h4 a {
 	color: #434343;
@@ -66,6 +75,35 @@ ul.attr-list h4 a {
 }
 ul.attr-list a {
 	background: url(/imagesnew/list-dot.png) center left no-repeat;
-	padding: 0 0 0 10px;
-	line-height: 30px;
+	padding: 0 50px 0 10px;
+	line-height: 24px;
+}
+.other-attr{
+	padding:10px 0 0 0;
+}
+.other-attr a{
+	padding:3px 15px;
+	line-height:24px;
+}
+
+.attr-con h2{
+	margin-bottom:10px;
+}
+.attr-con h3{
+	border-bottom:1px dashed #ddd;
+}
+.attr-con h4{
+	border-bottom:1px dashed #ddd;
+	background:url("/imagesnew/plus-icon.png") left center no-repeat;
+	text-indent:30px;
+}
+.attr-con dl{
+	margin:20px 0;
+}
+.attr-con dt{
+	font-weight:bold;
+	color:#222;
+}
+.attr-con dt span{
+	color:red;
 }
