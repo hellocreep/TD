@@ -52,5 +52,7 @@ urlpatterns += patterns('TD.views',
     (r'^form/$','form'),
     (r'^travel-resource/$','travel_resource'),
     (r'^group-tour/$','group_tour'),
+    (r'^travel-resource','travel_resource'),
+    (r'^themetour-train','themetour_train'),
     (r'^$','sitemap'),
 )

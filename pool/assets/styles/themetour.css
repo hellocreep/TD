@@ -1,0 +1,130 @@
+body{
+	background:url("/imagesnew/themetour/theme-bg.png") repeat-x;
+}
+.headnav{
+	width:100%;
+	height:40px;
+}
+.themetour-wrap{
+	width:970px;
+	margin:0 auto;
+	background:#ffffff;
+	position:relative;
+	z-index:400;
+	border: 1px solid #B8B8B8;
+    box-shadow: 0 0 3px #666666;
+}
+
+ul.topnav {
+	height:40px;
+	background:#8c2621;
+	margin:0 auto;
+	padding-left: 149px;
+    width: 821px
+}
+ul.topnav li{
+	display:block;
+	float: left;
+	background:url("/imagesnew/themetour/nav-li-bg.png") no-repeat right center;
+}
+ul.topnav li:last-child{
+	background:none;
+}
+ul.topnav li a{
+	color:#fff;
+	text-decoration:none;
+	display: block;
+	line-height:40px;
+	margin:0 10px;
+}
+ul.topnav li a:hover{
+	text-decoration:none;
+	color:#888;
+}
+.section{
+	width:930px;
+	margin:40px auto;
+	background:url("/imagesnew/themetour/section-bg.png") no-repeat 100% 30%
+}
+.section h2{
+	background:url("/imagesnew/themetour/train.png") no-repeat left center;
+	text-indent:70px;
+	border-bottom:1px solid #ddd;
+	line-height:44px;
+}
+.sec-img{
+	float:left;
+	width:460px;
+}
+.sec-img p{
+	text-align:center;
+}
+.sec-con{
+	float:right;
+	width:450px;
+	
+}
+.sec-tours li{
+	display:block;
+	height:40px;
+	margin:10px 0;
+}
+.sec-tours span{
+	display:block;
+	float:left;	
+	padding:0 5px;
+}
+.sec-tours span.price{
+	color:red;
+	float:right;
+}
+.sec-tours span.destination{
+	font-size: 11px; 
+	padding-left: 65px;
+}
+/*
+.sec-con dl dt{
+	float:left;
+	margin-top:10px;
+}
+.sec-con dl dt img{
+	border:1px solid #ddd;
+	padding:1px;
+	background:#fff;
+}
+.sec-con dl dd{
+	float:right;
+	width:282px;
+}
+.sec-con dl dd .btn{
+	float:right;
+}
+*/
+ul.facts img{
+	border:1px solid #ddd;
+	padding:1px ;
+	background:#fff;
+}
+ul.facts li{
+	border:1px solid #F8F4ED;
+	display:block;
+	padding:10px;
+	float:left;
+	margin:10px 45px 20px 0;
+}
+ul.facts li a{
+	color:#434343;
+	display:block;
+}
+ul.facts li:hover{
+	border:1px solid #dddddd;
+	background:rgba(243,234,213,0.6);
+	opacity: 0.8;
+}
+.sec-fact{
+	background:none;
+}
+
+.themetour-wrap .FAQ-footer{
+	margin:0;
+}
