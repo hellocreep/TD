@@ -75,3 +75,6 @@ def share(request):
 
 def form(request):
     return render_to_response('shareform.html',{})
+
+def thankyou(request):
+    return render_to_response('thankyou.html',{})

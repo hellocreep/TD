@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}<!--填标题-->{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/thankyou.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block script %}
+<script src="/assets/scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/assets/scripts/share-form.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block body%}
+{% include 'header.html' %}
+<div class="bread"></div>
+
+<div class="allpage-wrap">
+	<div class="success">
+	<h1>Your Submission is Successful! </h1>
+	<p>We have received your inquiry and one of our private travel consultants will reply you within 0.5-23.5 hours!</p>
+	</div>
+	<div class="content">
+	<h4 class="note">At Tibetdiscovery.com, 1-on-1 travel consultant will get back to you within 0.5~23.5 hours.</h4>
+	<ul class="travel">
+		<li>He/she will email you a tour plan with a quotation according to your information;</li>
+		<li>You may ask your travel consultant to change your tour arrangement as you like until you are satisfied with it. It's
+<strong>fast & free </strong>!</li>
+	</ul>
+	
+	<h3>Very Important Notice:</h3>
+	<h4>Emails may get lost. Why?</h4>
+	<ul>
+		<li class="notice">Sometimes emails get lost when they are "traveling" through lots of Internet routers, especially when crossing
+countries or continents. And the powerful filters by the state governments often made mistakes to stop a lot of good emails.</li>
+	</ul>
+	<h4>What to do when you have no reply from your Travel Consultant at TibetDiscovery.com in 24 hours?</h4>
+	<ul>
+		<li class="notice">Please write down our support email address: info@tibetdiscovery.com</li>
+		<li class="notice">Use <strong>other ways</strong> of contact if necessary:</br><strong><span class="red">TEL</span></strong>: 86-891-6809260</li>
+	</ul>
+	<h4>Please check the filter of your email software or email server.</h4>
+	<ul>
+		<li class="notice">Sometimes emails get filtered by your email software (Outlook, etc), or by he email server in your company</li>
+		<li class="notice">To ensure successful delivery to your inbox (not your bulk or junk folder), please add our email server to
+the     safe senders      or     white list      : Tibetdiscovery.com</li>
+	</ul>
+	</div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}
+
