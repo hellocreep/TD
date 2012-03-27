@@ -143,20 +143,16 @@ $(function(){
 	
 	
 	//add wish fancybox
-	//TODO
-	//不能跳转页面
-	/*
-	$( '.add-wish' ).click(function(){
-		$.fancybox({
-				'width' : '75%',
-				'height' : '75%',
-				'autoScale' : false,
-				'transitionIn' : 'none',
-				'transitionOut' : 'none',
-				'type' : 'iframe'
-				});
-	});
-	*/
+	$(' .addwish').fancybox({
+		'width' : '50%',
+		'scrolling': 'auto',
+		'height': '75%',
+		'transitionIn' : 'none',
+		'transitionOut' : 'none',
+		'type' : 'iframe',
+		//'onClosed':function(){window.location.href=window.location.href;}
+	}); 
+	
 	//Review 弹出框
 	$('.divReview').hide();
 	$('.btn-review').click(function( e ){

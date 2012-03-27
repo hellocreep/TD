@@ -45,14 +45,14 @@ body {
 	height: auto;
 }
 .allpage-wrap {
-	background: none repeat scroll 0 0 #FFFFFF;
+	background: none repeat scroll 0 0 #fdfcfc;
 	border: 1px solid #B8B8B8;
 	box-shadow: 0 0 3px #666666;
 	margin: 0 auto;
 	min-height: 900px;
 	position: relative;
-	width: 950px;
-	padding: 10px;
+	width: 960px;
+	padding: 10px 20px;
 }
 /*
  h1, h2, h3, h4, h5, h6 {
@@ -215,10 +215,10 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 .title-margin {
 	margin: 20px 0 6px;
 }
-.left {
+body .left {
 	float: left;
 }
-.right {
+body .right {
 	float: right;
 }
 .red {
@@ -402,6 +402,9 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	background-color: #F9F9F9;
 	border: 2px solid #F1EDE2;
 }
+.tiny-form p {
+	margin: 0;
+}
 .tiny-form .error {
 	font-size: 12px;
 	color: red;
@@ -410,6 +413,7 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	margin-bottom: 5px;
 	padding: 3px;
 	width: 155px;
+	height: auto;
 }
 .form-question {
 	height: 55px;
@@ -661,7 +665,8 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	float: left;
 	width: 230px;
 	color: #ffffff;
-	font-size: 10px
+	font-size: 10px;
+	margin: 0;
 }
 .newsletter-container {
 	border: 1px dashed #999;
