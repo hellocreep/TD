@@ -76,7 +76,7 @@ $(function(){
 			}
 		});
 	});
-	
+	//FANCYBOX addwish
 	$( '.addwish' ).fancybox({
 		'width' : '50%',
 		'scrolling': 'auto',
@@ -86,5 +86,16 @@ $(function(){
 		'type' : 'iframe'
 		//'onClosed':function(){window.location.href=window.location.href;}
 	}); 
+	//schedule 形式切换
+	$( '.schedule-tab li' ).each(function(){
+		$( this ).click(function(){
+			var t = $( this ).attr( 'name' );
+			$( this ).addClass( 'active' )
+			.siblings().removeClass( 'active' )
+			.parent().siblings( '.schedule-wrap' ).hide()
+			.siblings( '.'+t ).show(); 
+		});
+	});
+	
 });
 })(jQuery);
