@@ -1,5 +1,5 @@
 (function(){
-function get_schedule(id,y,m){
+function get_schedule(id,y,m,num,current_target){
 	$.ajax({
 		url: 'http://www.tibetdiscovery.com/assets/snippets/grouptour/group-tour.php',
 		type:'POST',
@@ -10,9 +10,31 @@ function get_schedule(id,y,m){
 			year: y
 		},
 		success: function( result ){
-			$('.schedule-wrap').html(result);
-			$( '.schedule-arrow' ).each(function(){
+			$( '.cal-wrap' ).eq(num).html(result);
+			
+			schedule( current_target.children( '.schedule-arrow' ) );
+			
+		}
+	});
+}
+
+function schedule( target ){
+	target.each(function( index ){
+		
 				$( this ).click(function(){
+					var target;
+					var current_target = $( this ).parent();
+					if( index==1 || index==0)
+					{
+						target=0;
+					}else if(index==2 || index==3)
+					{
+						target=1;
+					}
+					else
+					{
+						target=2;
+					}
 					var tourid=$(this).parent().attr('name');
 					var year=$(this).siblings('.schedule-year').text();
 					var month;
@@ -35,12 +57,10 @@ function get_schedule(id,y,m){
 					}
 					if(month>=monthnow)
 					{
-						get_schedule(tourid,year,month);	
+						get_schedule(tourid,year,month,target,current_target);	
 					}
 				});
 			});
-		}
-	});
 }
 	
 $(function(){
@@ -48,34 +68,8 @@ $(function(){
 		$( this ).text( index+1 );
 	});
 	
-	$( '.schedule-arrow' ).each(function(){
-		$( this ).click(function(){
-			var tourid=$(this).parent().attr('name');
-			var year=$(this).siblings('.schedule-year').text();
-			var month;
-			var date=new Date();
-			if( $(this).hasClass('arrow-prev') ){
-				month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1-1;
-			}else{
-				month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1+1;
-			}
-			var monthnow=date.getMonth();
-			if(month==0)
-			{
-				month=12;
-				year=year-1;
-			}
-			else if(month==13)
-			{
-				month=1;
-				year=year+1;
-			}
-			if(month>=monthnow)
-			{
-				get_schedule(tourid,year,month);	
-			}
-		});
-	});
+	schedule( $( '.schedule-arrow') );
+	
 	//FANCYBOX addwish
 	$( '.addwish' ).fancybox({
 		'width' : '50%',
