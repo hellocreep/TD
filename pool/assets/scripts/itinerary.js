@@ -149,7 +149,7 @@ $(function(){
 		'height': '75%',
 		'transitionIn' : 'none',
 		'transitionOut' : 'none',
-		'type' : 'iframe',
+		'type' : 'iframe'
 		//'onClosed':function(){window.location.href=window.location.href;}
 	}); 
 	

@@ -25,6 +25,7 @@
 	margin-right: 5px;
 }
 .tour-sub {
+	width: 650px; 
 	margin: 15px 0;
 	text-align: left;
 	font-style: italic;

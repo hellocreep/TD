@@ -1031,7 +1031,7 @@ ul.subnav a.active {
 .btn-enquiry a {
 	color: #FFFFFF;
 	display: block;
-	background: url(/imagesnew/btn.png) no-repeat -301px -110px;
+	background: url(/imagesnew/btn.png) no-repeat -301px -110px #D94343;
 	width: 199px;
 	height: 43px;
 	line-height: 43px;
@@ -1041,7 +1041,7 @@ ul.subnav a.active {
 }
 .btn-enquiry a:hover {
 	text-decoration: none;
-	background: url(/imagesnew/btn.png) no-repeat -301px -161px;
+	background: url(/imagesnew/btn.png) no-repeat -301px -161px #D94343;
 }
 /*
  * 页面底部TC联系头像

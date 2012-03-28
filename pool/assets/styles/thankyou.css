@@ -1,0 +1,76 @@
+.allpage-wrap{
+	text-align:center;
+	padding-top:30px;
+	background: url('../../imagesnew/itinerary/Thank-you.jpg') -230px -190px #ffffff;
+}
+.success
+{
+	margin:0 auto;
+	width:780px;
+	background:#F0F0F0;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow:6px 6px 5px #ccc;
+}
+.allpage-wrap .content
+{
+	width:780px;
+	margin:0 auto;
+	text-align:left;
+	padding-right:50px;
+}
+.allpage-wrap h1{
+	line-height: 35px;
+	margin-bottom:6px;
+}
+.allpage-wrap p{
+	line-height:25px;
+	font-size:13px;
+}
+.note
+{
+    font-size:16px;
+    line-height: 20px;
+    margin-bottom:10px;
+    color:#7E0122;
+}
+.travel
+{
+	margin:0 auto;
+	padding:0px;
+	text-align:left;
+	margin-bottom:35px;
+}
+.allpage-wrap .content ul
+{
+	margin-bottom:30px;
+}
+.allpage-wrap .content li{
+	padding-left:20px;
+	line-height: 25px;
+}
+.travel li
+{
+	background: url('../../imagesnew/itinerary/Thank-you_03.png') no-repeat 0 7px;
+	margin:0px;
+}
+
+h3{
+	margin:0 auto;
+	text-align:left;
+	margin-bottom:10px;
+	border-bottom:dotted 1px  #ccc;
+	padding-bottom:10px;
+}
+h4{
+	color:#000;
+	margin-bottom:15px;
+}
+.notice
+{
+	background: url('../../imagesnew/itinerary/Thank-you_07.png') no-repeat 0 7px;
+	margin:0px;
+}
+
