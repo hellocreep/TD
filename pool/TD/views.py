@@ -86,6 +86,12 @@ def thankyou(request):
     return render_to_response('shareform.html', {})
 
 def travel_resource(request):
+
+    return render_to_response('travel-resource.html',{})
+
+def group_tour(request):
+    return render_to_response('Group-tour.html',{})
+
     return render_to_response('travel-resource.html', {})
 
 def themetour_train(request):

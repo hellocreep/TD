@@ -50,11 +50,9 @@ urlpatterns += patterns('TD.views',
     (r'^itinerary/$','itinerary'),
     (r'^share/$','share'),
     (r'^form/$','form'),
-<<<<<<< HEAD
     (r'^thankyou/$','thankyou'),
-=======
+    (r'^group-tour/$','group_tour'),
     (r'^travel-resource','travel_resource'),
     (r'^themetour-train','themetour_train'),
->>>>>>> 1fed758c7b2bdb5ac41897956a7af8e47c707e82
     (r'^$','sitemap'),
 )
