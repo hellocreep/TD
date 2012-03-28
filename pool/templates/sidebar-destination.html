@@ -37,16 +37,6 @@
 			<li>
 				<a href="#">Namtso Lake</a>
 			</li>
-			<script type="text/javascript">
-			$('.subnav-left li:gt(3)').hide();
-				function toggleLi() {
-					$('.subnav-left li:gt(3)').toggle();
-				}
-
-				
-				
-			</script>
-			
 		</ul>
 		<a href="" onclick="toggleLi();return false" style="display: block ;margin:10px 10px 10px 180px;">more</a>
 		<li>
@@ -182,3 +172,10 @@
 		</div>
 	</div>
 </div>
+<script>
+	//sidebar点击more显示全部二级子导航
+	$('.subnav li:gt(3)').hide();
+	function toggleLi() {
+		$('.subnav li:gt(3)').slideToggle();
+	};
+</script>

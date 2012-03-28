@@ -54,7 +54,8 @@
 }
 .thumbs a.all-things {
 	line-height: 40px;
-	padding-left: 17px;
+	padding-right: 15px;
+	float:right;
 }
 .share-tools {
 	background: url("/imagesnew/itinerary/bg-share.png") no-repeat scroll right center transparent;
@@ -102,11 +103,13 @@ dl.pop-tour dd {
 	width: 230px;
 	float: right;
 }
-dl.pop-tour h4 {
-	background: url("/imagesnew/overview-star.png") no-repeat left 3px;
-	text-indent: 20px;
-	color: #222222;
+dl.pop-tour h4 a {
+	text-decoration:none;
+	color:#434343;
 }
+dl.pop-tour h4 a:hover{
+	color:#888888;
+} 
 dl.pop-tour p {
 	margin: 3px 0;
 	font-size: 12px;
@@ -187,17 +190,16 @@ dl.pop-tour img.reco-img {
 	float: left;
 }
 .further-reading ul li a {
-	border: 1px solid #ddd;
+	border: 1px solid #fff;
 	float: left;
 	padding: 5px 10px;
 	margin: 5px;
-}
-.further-reading ul li a {
 	color: #434343;
 	text-decoration: none;
 }
 .further-reading ul li a:hover {
-	color: #888888;
+	color: #888;
+	border: 1px solid #ddd;
 }
 /* @WHEN TO GO
  -----------------------------------------------------------------------*/
@@ -235,8 +237,31 @@ dl.pop-place {
 	margin: 20px 0;
 }
 dl.pop-place dt {
-	width: 210px;
+	width: 220px;
+	height:158px;
 	float: left;
+	background:url("/imagesnew/destination/img-border.png") no-repeat 0 0;
+	position: relative;
+}
+dl.pop-place dt img{
+	margin:7px 6px;
+}
+dl.pop-place h3 a{
+	color:inherit;
+}
+dl.pop-place h3 a:hover{
+	text-decoration:none;
+}
+dl.pop-place dt div {
+	width: 47px;
+	height:34px;
+	background:url("/imagesnew/destination/img-num.png") no-repeat 0 0;
+	position:absolute;
+	left:20px;
+	top:-5px;
+	line-height:34px;
+	text-align: center;
+	color:#fff;
 }
 dl.pop-place dd {
 	width: 430px;
@@ -361,4 +386,32 @@ dl.pop-place dd {
 	position: absolute;
 	top: 0;
 	white-space: nowrap;
+}
+
+
+.map-list h3{
+	clear:both;
+}
+.map-list dl{
+	float:left;
+	margin:10px 20px 10px 0;
+	padding:10px;
+	border:1px solid #ddd;
+	position:relative;
+}
+.map-list dl dt img{
+	width:180px;
+	height:200px;
+}
+.map-list dl:hover{
+	background:rgba(243,234,213,0.6);
+	cursor:pointer;
+}
+.map-list dl .zoom{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+.price-color{
+	color:#7E0122;
 }

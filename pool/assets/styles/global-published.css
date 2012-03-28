@@ -314,6 +314,11 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	margin-top: 18px;
 	margin-right: 22px;
 }
+
+.content ol li {
+    margin-top: 11px;
+}
+
 .content .content-h2, content-h3 {
 	margin: 20px 0 6px 0;
 }
@@ -738,11 +743,9 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 
 }
 .sidebar h1 {
-
 	font-family: verdana;
 	font-size: 18px;
-	text-indent: 10px;
-	display: block;
+	text-align: center;
 	width: 240px;
 	background: url(/imagesnew/nav-bg-up.png) no-repeat center top;
 	padding: 20px 0;
@@ -791,11 +794,10 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 	height: 33px;
 	line-height: 33px;
 	width: 253px;
-	*
-	width: 233px;
+	*width: 233px;
 }
 ul.subnav a.active {
-	color: #888888;
+	color: #7E0122;
 	background: url("/imagesnew/nav-dot.png") no-repeat scroll 26px center transparent;
 }
 .have-arrow li {
@@ -816,7 +818,7 @@ ul.subnav a.active {
 	position: relative;
 }
 .subnav-left li a:hover {
-	color: #888888;
+	color: #7E0122;
 	background-color: transparent;
 	cursor: pointer;
 	text-decoration: none;
@@ -847,6 +849,40 @@ ul.subnav a.active {
 .icon-navRight {
 	margin-left: 30px;
 }
+
+.sidebar-resource h2{
+    background: url("/imagesnew/hotel-leftbar-h2bg.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.sidebar-resource ul {
+    list-style: none outside none;
+    padding: 5px 5px 5px 15px;
+}
+
+.sidebar-resource ul li {
+    background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
+    margin-top: 5px;
+    padding-left: 15px;
+    text-indent: -10px;
+}
+
+.sidebar-resource ul li a {
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+.sidebar-resource .select {
+    color: #7E0122;
+    font-weight: bold;
+}
+
 /*左侧弹出框*/
 
 .poptips {
@@ -983,6 +1019,7 @@ ul.subnav a.active {
 	font-size: 12px;
 }
 .btn-enquiry {
+    display; block;
 	float: right;
 	margin: 7px 30px 0 0;
 }
@@ -1091,3 +1128,87 @@ a.reco-click:hover {
 }
 /*火车页面sidebar样式-----end*/
 
+/*延用老页面的一些全局样式*/
+.mt30 {
+    margin-top: 30px;
+}
+.box3 {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 2px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+}
+.box3 p {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.ml8 {
+    margin-left: 8px;
+}
+.fright {
+    float: right;
+}
+.btn_tailor {
+    background-image: url("../img/btn_tailormade.gif");
+    background-repeat: no-repeat;
+    display: block;
+    height: 35px;
+    line-height: 200px;
+    overflow: hidden;
+    width: 267px;
+}
+.btn-tailor:hover {
+    background-position: 0 -35px;
+}
+
+.photoblock {
+    text-align: center;
+    list-style: none outside none;
+}
+.photoblock li {
+    float: left;
+    text-align: center;
+}
+.photoblock li.c1 {
+    padding: 10px;
+    width: 650px;
+}
+.photoblock li.c2 {
+    padding: 10px 42px;
+    width: 254px;
+}
+.photoblock a img {
+    border: 1px solid #CCCCCC;
+    padding: 1px;
+}
+.photoblock a:hover img {
+    background: none repeat scroll 0 0 #FBB017;
+}
+
+.tableu {
+    border: medium none;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.tableu th {
+    background: none repeat scroll 0 0 #E7E7E7;
+    border: 2px solid #FFFFFF;
+    padding: 4px;
+}
+.tableu td {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 2px solid #FFFFFF;
+    padding: 4px;
+}
+.box05 {
+    float: left;
+    margin: 0;
+    padding: 0 10px 30px;
+    width: 320px;
+}
+.box05 p:first-letter {
+    font-size: 1.6em;
+}

@@ -1,0 +1,43 @@
+<div class="sidebar">
+    <h1 class="sidebar-title"><a href="###">About Tibetdiscovery</a></h1>
+    <div class="sidebar-pic"><img src="/imagesnew/train-img.jpg" alt="">
+    </div>
+    <div class="sidebar-resource">
+        <h2>Most Useful Travel Info</h2>
+        <ul class="nav-left">
+        	<li><a href="">Tibet Permits & Visa</a></li>
+        	<li><a href="">High Altitude Sickness</a></li>
+        	<li><a href="">What to Pack</a></li>
+        	<li><a href="">Best Time to Go</a></li>
+        	<li><a href="#">Money & Credit Car</a></li>
+        	<li><a href="#">Do's & Don'ts</a></li>
+        	<li><a href="#">Useful Number & Words</a></li>
+        	<li><a href="#">Tibet Travel FAQs</a></li>
+        	<li><a href="#">About Tibet</a></li>
+        </ul>
+        <h2>Tibet Guide-What, Where…</h2>
+        <ul class="nav-left">
+        	<li><a href="">What to See</a></li>
+        	<li><a href="">Where to Stay</a></li>
+        	<li><a href="">What to Eat</a></li>
+        	<li><a href="">What to Buy</a></li>
+        	<li><a href="#">Useful Maps</a></li>
+        </ul>
+        <h2>Get to Tibet & Tibet Road</h2>
+        <ul class="nav-left">
+            <li><a href="">Train to Tibet</a></li>
+            <li><a href="">Flight to Tibet</a></li>
+            <li><a href="">Tibet Friendship Highway</a></li>
+            <li><a href="#">Qinghai-Tibet Highway</a></li>
+            <li><a href="#">Road Condition in Tibet</a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    local = location.href.replace( 'http://www.tibetdiscovery.com/','')
+    $( '.nav-left a' ).each(function(){
+        if( $(this).attr('href')==local){
+            $( this ).addClass('select')    
+    }
+});
+</script>

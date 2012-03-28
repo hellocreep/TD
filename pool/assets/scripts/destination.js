@@ -65,3 +65,14 @@ $(document).ready(function() {
 		})
 	})
 });
+
+
+//thingstodo加排序序号
+$(document).ready(function(){
+	$('.pop-place dt div').each(function(index){
+        $(this).text(index+1);
+    })	
+});
+
+
+

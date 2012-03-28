@@ -122,6 +122,10 @@ $( function(){
     //酒店主页与内页surroundings 去逗号
     $( '.surrounding-name' ).removeComma();
     
+
+    
+    
+    
     //departures 侧边栏       grouptour发团日期的侧边栏
     var arr=new Array();
 	arr[1]="Jan.";
@@ -152,6 +156,13 @@ $( function(){
 		}
 	}
 	$('#departures-monthly').html(d);
-
+	
+	
+	
+	
+	
 });
 })( jQuery );
+
+
+
