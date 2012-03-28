@@ -2,7 +2,7 @@
 function get_schedule(id,y,m){
 	$.ajax({
 		url: 'http://www.tibetdiscovery.com/assets/snippets/grouptour/group-tour.php',
-		type:'GET',
+		type:'POST',
 		dataType:'html',
 		data: {
 			tour_id: id,
@@ -13,27 +13,32 @@ function get_schedule(id,y,m){
 			$('.schedule-wrap').html(result);
 			$( '.schedule-arrow' ).each(function(){
 				$( this ).click(function(){
-				var tourid=$(this).parent.attr('name');
-				var year=$(this).siblings('.schedule-year').text();
-				var month;
-				if( $(this).hasClass('arrow-prev') ){
-					month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1-1;
-				}else{
-					month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1+1;
-				}
-				if(month==0)
-				{
-					month=12;
-					year=year-1;
-				}
-				else if(month==13)
-				{
-					month=1;
-					year=year+1;
-				}
-				get_schedule(tourid,year,month);	
+					var tourid=$(this).parent().attr('name');
+					var year=$(this).siblings('.schedule-year').text();
+					var month;
+					var date=new Date();
+					if( $(this).hasClass('arrow-prev') ){
+						month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1-1;
+					}else{
+						month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1+1;
+					}
+					var monthnow=date.getMonth();
+					if(month==0)
+					{
+						month=12;
+						year=year-1;
+					}
+					else if(month==13)
+					{
+						month=1;
+						year=year+1;
+					}
+					if(month>=monthnow)
+					{
+						get_schedule(tourid,year,month);	
+					}
+				});
 			});
-		});
 		}
 	});
 }
@@ -45,14 +50,16 @@ $(function(){
 	
 	$( '.schedule-arrow' ).each(function(){
 		$( this ).click(function(){
-			var tourid=$(this).parent.attr('name');
+			var tourid=$(this).parent().attr('name');
 			var year=$(this).siblings('.schedule-year').text();
 			var month;
+			var date=new Date();
 			if( $(this).hasClass('arrow-prev') ){
 				month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1-1;
 			}else{
 				month = $( this ).siblings( '.schedule-month' ).attr( 'name' )*1+1;
 			}
+			var monthnow=date.getMonth();
 			if(month==0)
 			{
 				month=12;
@@ -63,10 +70,10 @@ $(function(){
 				month=1;
 				year=year+1;
 			}
-			alert(tourid);
-			alert(year);
-			alert(month);
-			//get_schedule(tourid,year,month);	
+			if(month>=monthnow)
+			{
+				get_schedule(tourid,year,month);	
+			}
 		});
 	});
 	

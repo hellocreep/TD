@@ -77,6 +77,12 @@ def share(request):
     return render_to_response('share-form.html', {})
 
 def form(request):
+<<<<<<< HEAD
+    return render_to_response('shareform.html',{})
+
+def thankyou(request):
+    return render_to_response('thankyou.html',{})
+=======
     return render_to_response('shareform.html', {})
 
 def travel_resource(request):
@@ -90,3 +96,4 @@ def group_tour(request):
 
 def themetour_train(request):
     return render_to_response('themetour-train.html', {})
+>>>>>>> 1fed758c7b2bdb5ac41897956a7af8e47c707e82
