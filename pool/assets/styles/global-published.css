@@ -51,8 +51,8 @@ body {
 	margin: 0 auto;
 	min-height: 900px;
 	position: relative;
-	width: 960px;
-	padding: 10px 20px;
+	width: 940px;
+	padding: 10px 15px;
 }
 /*
  h1, h2, h3, h4, h5, h6 {
@@ -308,11 +308,16 @@ body .right {
 }
 /* CONTENT */
 
+
 .content {
 	width: 682px;
 	float: right;
 	margin-top: 18px;
 	margin-right: 22px;
+}
+
+.allpage-wrap .content {
+    margin-right: 0px;
 }
 
 .content ol li {
@@ -949,7 +954,7 @@ ul.subnav a.active {
 	margin-top: 40px;
 }
 .departures h2 {
-	text-indent: 10px;
+    padding-left: 13px;
 	margin-bottom:5px;
 }
 #departures-monthly {
