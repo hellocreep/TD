@@ -766,7 +766,8 @@ body .right {
 	/*filter: dropshadow(color=#ccc, offx=1, offy=1);*/
 }
 .sidebar-pic {
-	height: 147px;
+	height: 148px;
+	width:240px
 }
 .nav-left li a {
 	color: #434343;

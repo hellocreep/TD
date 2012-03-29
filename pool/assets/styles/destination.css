@@ -156,19 +156,19 @@ dl.pop-tour img.reco-img {
 	text-align: center;
 }
 .ww-r1 {
-	background: url("/imagesnew/destination/weather-rank1.png") no-repeat center center;
+	background: url("/imagesnew/destination/weather-rank1.png") no-repeat 64px center;
 }
 .ww-r2 {
-	background: url("/imagesnew/destination/weather-rank2.png") no-repeat center center;
+	background: url("/imagesnew/destination/weather-rank2.png") no-repeat 64px center;
 }
 .ww-r3 {
-	background: url("/imagesnew/destination/weather-rank3.png") no-repeat center center;
+	background: url("/imagesnew/destination/weather-rank3.png") no-repeat 64px center;
 }
 .ww-r4 {
-	background: url("/imagesnew/destination/weather-rank4.png") no-repeat center center;
+	background: url("/imagesnew/destination/weather-rank4.png") no-repeat 64px center;
 }
 .ww-r5 {
-	background: url("/imagesnew/destination/weather-rank5.png") no-repeat center center;
+	background: url("/imagesnew/destination/weather-rank5.png") no-repeat 64px center;
 }
 .further-reading {
 	width: 100%;
@@ -210,7 +210,9 @@ dl.pop-tour img.reco-img {
 	border-bottom:1px solid #ddd;
 }
 .wea-table table {
-	width: 680px;
+	margin-left: 30px;
+	margin-top:20px;
+    width: 660px;
 }
 .temp span {
 	display: block;
@@ -221,17 +223,15 @@ dl.pop-tour img.reco-img {
 }
 .wea-table table th {
 	text-align: left;
-	padding: 0 8px;
 }
 .wea-table table td {
 	width: 150px;
-	max-width: 160px;
 	text-align: right;
-	padding: 3px 8px;
+	padding: 3px 60px 3px 0;
 }
 .wea-table table tr td:first-child, .wea-table table th:first-child {
 	text-align: left;
-	width: 100px;
+	width: 30px;
 }
 /* @THINGS TO DO
  -----------------------------------------------------------------------*/
