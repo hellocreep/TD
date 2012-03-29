@@ -171,11 +171,11 @@ $(function(){
     });
 	//新版make enquiry
 	$( '.make-enquiry a' ).click(function( e ){
+	    e.preventDefault();
 		var price=$('.light-price').text();
 		$('.tourprice').text(price);
 		$('.post-tour-price').remove();
 		$('.fielddisplay').append('<input class="post-tour-price" type="text" value="from '+price+'" name="Tour_Price">');
-	    e.preventDefault();
 	    var form_content = $( '#enquireform' )
 	    //让form根据屏幕大小居中
 	    var left_mt = ($(window).width() - $( '#enquireform' ).width())/2;
@@ -199,30 +199,16 @@ $(function(){
 	    })
 	});
 	//价格表弹出表单
-	$( '.group a' ).click(function( e ){
-		var price=$(this).text();
-		$('.tourprice').html(price);
-		$('.post-tour-price').remove();
-		$('.fielddisplay').append('<input class="post-tour-price" type="text" value="from '+price+'" name="Tour_Price">');
-	e.preventDefault();
-	var form_content = $( '#enquireform' )
-	//让form根据屏幕大小居中
-	var left_mt = ($(window).width() - $( '#enquireform' ).width())/2;
-	var top_mt = ($(window).height() - $( '#enquireform' ).height())/2;
-	if( top_mt < 0 ){
-	top_mt = 0 ;
-	}else if(left_mt < 0 ){
-	left_mt = 0;
-	}
-	$( '#enquireform' ).css({'top':top_mt,'left':left_mt});
-	form_content.show();
-	$( window ).scrollTop( 0 );
-	$( '.exit_ico' ).show();
-	$( 'body' ).append("<div class='form-mask'></div>");
-	$( '.form-mask' ).click(function(){
-	$( '.form-mask' ).remove()
-	$( '#enquireform' ).hide();
-	})
+	$( '.group a' ).click(function(){
+	    var date = $( this ).parent().attr( 'name' );
+	    var year = date.substring( 0,8 );
+	    var day = date.substring( 9 );
+        $( '.make-enquiry a' ).click();
+        //TODO
+        //无法执行
+        $( 'select[name="TravelDate"] option[value="'+year+'"]').attr( 'selected' );
+        $( 'select[name="Date"] option[value="'+day+'"]').attr( 'selected' );
+        
 	}); 
 	$( '.exit_ico' ).click( function(){
 		$( '.form-mask' ).click();

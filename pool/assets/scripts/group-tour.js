@@ -64,6 +64,9 @@ function schedule( target ){
 }
 	
 $(function(){
+    //TODO
+    //点击date跳转页面弹出form
+    
 	$( '.tour-container .tour-num' ).each(function( index ){
 		$( this ).text( index+1 );
 	});

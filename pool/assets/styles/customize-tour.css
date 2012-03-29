@@ -1,0 +1,45 @@
+.content-head {
+    height: 280px;
+    padding: 10px 5px;
+}
+
+.content-head p {
+    width: 600px;
+}
+
+.container {
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #DDDDDD;
+}
+
+.container h2 {
+    height: 40px;
+}
+
+.container table {
+    margin-left: 90px;
+    font-size: 15px;
+}
+
+.container table td {
+    padding: 10px 15px 0 0;
+    vertical-align: middle;
+}
+
+.container table label {
+    text-align: right;
+    display: block;
+}
+
+.float-list li {
+    float: left;
+}
+
+.destination li {
+    
+}
+
+.city li {
+    
+}
