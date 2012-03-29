@@ -607,7 +607,10 @@
 	line-height: 160%;
 	padding-left: 45px;
 	padding-right: 45px;
-	width: 680px
+	width: 677px;
+	border-left: 3px solid #E3E3E3;
+    border-right: 3px solid #E3E3E3;
+    background: none repeat scroll 0 0 #FFFFFB;
 }
 .tour-review p {
 	margin: 0px;
@@ -1040,7 +1043,7 @@ div.divReview a#inquirysub:hover {
 }
 .enquireform form select {
 	height:25px;
-	margin:10px 16px;
+	margin:10px 10px;
 }
 .enquireform form textarea {
 	width: 200px;
@@ -1211,8 +1214,23 @@ table {
     text-align: center;
     width: 81px;
 }
-.group:hover{
-background:#F78D10;
+
+.calendar .group {
+    background: none repeat scroll 0 0 #FFBB93;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease; 
+}
+
+.calendar .group a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.calendar .group:hover{
+    background:#F78D10;
 }
 .tabletitle{
 	font-size:14px;
