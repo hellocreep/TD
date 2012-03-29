@@ -2,7 +2,7 @@
 	width: 690px;
 	margin-top: 45px;
 	*margin-bottom: 45px;
-	border: 3px solid #ffd8a0;
+	border: 5px solid #ffd8a0;
 	position: relative;
 	padding: 15px;
 	border-radius: 3px;
@@ -73,9 +73,9 @@
 }
 
 .tour-price .check-detail:hover {
-	color: #9c3829;
-	text-decoration: none;
-	background: #E6A79F;
+	background: #ffa94d;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .tour-info ul{
@@ -96,13 +96,143 @@
 }
 
 .schedule-wrap {
+	display: none;
+	background: #f6f1f1;
+    background:-moz-linear-gradient(top, #f6f1f1, #ffffff);
+    background:-webkit-linear-gradient(top, #f6f1f1, #ffffff);
+    background:-o-linear-gradient(top, #f6f1f1, #ffffff);
+    background:-ms-linear-gradient(top, #f6f1f1, #ffffff);
+    background:linear-gradient(top, #f6f1f1, #ffffff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f1f1', endColorstr='#ffffff',GradientType=0);
+}
+
+.schedule-wrap.select {
+	display: block;
+}
+
+.cal-wrap {
 	border: 1px solid #515151;
-	margin-top: 20px;
+	border-top: none;
+}
+
+.list-wrap {
+	padding-top: 15px;
+	height: 250px;
+	overflow: auto;
+	background: #f6f1f1;
+	background:-moz-linear-gradient(top, #f6f1f1, #ffffff);
+	background:-webkit-linear-gradient(top, #f6f1f1, #ffffff);
+	background:-o-linear-gradient(top, #f6f1f1, #ffffff);
+	background:-ms-linear-gradient(top, #f6f1f1, #ffffff);
+	background:linear-gradient(top, #f6f1f1, #ffffff);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f1f1', endColorstr='#ffffff',GradientType=0);
+}
+
+.list-wrap p {
+	margin-top: 0;
+	text-align: center;
+}
+
+.list-wrap .schedule-list {
+	width: 100%;
+	text-align: center;
+}
+
+.schedule-list .schedule-tr {
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
+.schedule-list .schedule-tr:hover {
+    background: #ffebdf;
+}
+
+.list-wrap .schedule-list th {
+	border-top: 1px solid #969696;
+	border-bottom: 1px solid #969696;
+	height: 35px;
+	vertical-align: middle;
+}
+
+.list-wrap .schedule-list td {
+	height: 35px;
+	vertical-align: middle;
+	border-bottom: 1px dashed #dddddd;
+}
+
+.tour-info .schedule-tab {
+    margin-top: 5px;
+	text-align: center;
+	height: 27px;
+	border: none;
+	margin-bottom: 0;
+	border-bottom: 2px solid #991926;
+}
+
+.tour-info .schedule-tab li {
+	width: 25%;
+	height: 18px;
+    float:left;
+    background: #E4E4E4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#E4E4E4), to(#F6F6F6));
+    background: -webkit-linear-gradient(#E4E4E4, #F6F6F6);
+    background: -moz-linear-gradient(#E4E4E4, #F6F6F6);
+    background: -ms-linear-gradient(#E4E4E4, #F6F6F6);
+    background: -o-linear-gradient(#E4E4E4, #F6F6F6);
+    background: linear-gradient(#E4E4E4, #F6F6F6);
+    margin-right: 15px;
+    padding:4px 0px;
+    color:#990100;
+    border:1px solid #ccc;
+    border-bottom:none;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    cursor:pointer;
+    position:relative;
+    z-index:1;
+    behavior: url(PIE.htc);
+}
+
+.tour-info .schedule-tab li:hover , .tour-info .schedule-tab li.active {
+	text-align: center;
+    background: #9B5E5D;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9B5E5D), to(#680001));
+    background: -webkit-linear-gradient(#9B5E5D, #680001);
+    background: -moz-linear-gradient(#9B5E5D, #680001);
+    background: -ms-linear-gradient(#9B5E5D, #680001);
+    background: -o-linear-gradient(#9B5E5D, #680001);
+    background: linear-gradient(#9B5E5D, #680001);
+    -pie-background: linear-gradient(#9B5E5D, #680001); 
+    color:#fff;
+    z-index:1;
+    behavior: url(PIE.htc);
 }
 
 .tirp-schedule {
 	width: 100%;
 	height: auto;
+}
+
+.tirp-schedule .group {
+    background: none repeat scroll 0 0 #FFBB93;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
+.tirp-schedule .group:hover {
+    background: #f78d10;
+}
+
+.tirp-schedule .group a:hover {
+    text-decoration: none;
+    color: #e8688e;
 }
 
 .tirp-schedule .turn-page div{
@@ -142,7 +272,7 @@
 	top: 102px;
 }
 
-.tirp-schedule th,td {
+.tirp-schedule th, .tirp-schedule td {
 	border: 1px solid #b1b1b1;
 	width: 38px;
 	height: 46px;
@@ -152,6 +282,7 @@
 
 .tirp-schedule th {
 	color: #8d2622;
+	font-weight: bold;
 }
 
 .tour-intro {
@@ -166,7 +297,12 @@
 
 .tour-intro img {
 	width: 350px;
-	height: 267px;	
+	height: 267px;
+}
+
+.tour-intro img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
 }
 
 .tools-bar {
@@ -183,7 +319,7 @@
 .funny-font {
 	font-family: Poor Richard;
 	color: #8c2621;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .departure-wrap .departures {
@@ -200,4 +336,27 @@
 
 .departures p {
 	font-size: 12px;
+}
+
+.wide-foot {
+    float: left;
+    margin-top: -115px;
+    width: 970px;
+}
+
+.wide-foot .btn-enquiry a {
+    text-indent: 6px;
+}
+
+.faq-intro {
+    margin-left: 108px;
+}
+
+.wide-foot .author-list {
+    padding-left: 70px;
+}
+
+.trip-tips h2, h3, h4 {
+    font-size: 18px;
+    margin: 0 0 15px;
 }
