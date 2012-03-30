@@ -430,7 +430,7 @@ body .right {
 	height: 35px;
 	list-style-type: none;
 	position: relative;
-	width: 970px;
+	width: 1000px;
 	z-index: 210;
 	float: left;
 	margin-top: 24px;
@@ -528,7 +528,7 @@ body .right {
 	left: 336px;
 	padding: 8px 10px 3px;
 	position: absolute;
-	top: 35px;
+	top: 36px;
 	width: 425px;
 	z-index: 100;
 }
@@ -585,7 +585,7 @@ body .right {
 	left: 0;
 	padding: 8px 10px 3px;
 	position: absolute;
-	top: 35px;
+	top: 36px;
 	width: 880px;
 	z-index: 100;
 }
@@ -956,6 +956,8 @@ ul.subnav a.active {
 .departures h2 {
     padding-left: 13px;
 	margin-bottom:5px;
+	font-size: 18px;
+	line-height: 22px;
 }
 #departures-monthly {
 	margin-top: 5px;

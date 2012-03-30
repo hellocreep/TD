@@ -1,5 +1,5 @@
 (function(){
-function get_schedule(id,y,m,num,current_target){
+function get_schedule(id,y,m,num){
 	$.ajax({
 		url: 'http://www.tibetdiscovery.com/assets/snippets/grouptour/group-tour.php',
 		type:'POST',
@@ -12,7 +12,7 @@ function get_schedule(id,y,m,num,current_target){
 		success: function( result ){
 			$( '.cal-wrap' ).eq(num).html(result);
 			
-			schedule( current_target.children( '.schedule-arrow' ) );
+			schedule( $( '.arrow-warp' ).eq(num).children( '.schedule-arrow' ) );
 			
 		}
 	});
@@ -21,9 +21,8 @@ function get_schedule(id,y,m,num,current_target){
 function schedule( target ){
 	target.each(function( index ){
 		
-				$( this ).click(function(){
+				$( this ).live('click',function(){
 					var target;
-					var current_target = $( this ).parent();
 					if( index==1 || index==0)
 					{
 						target=0;
@@ -57,13 +56,14 @@ function schedule( target ){
 					}
 					if(month>=monthnow)
 					{
-						get_schedule(tourid,year,month,target,current_target);	
+						get_schedule(tourid,year,month,target);	
 					}
 				});
 			});
 }
 	
 $(function(){
+    
 	$( '.tour-container .tour-num' ).each(function( index ){
 		$( this ).text( index+1 );
 	});

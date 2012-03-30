@@ -24,6 +24,7 @@ function AutoScroll(){
         .children( 'a' ).removeClass( 'active' );
     }
 $(function(){
+	
 	//FAQ accordion
 	$( '.accordion div' ).hide();
 	$('.accordion h6').click(function() {
@@ -171,11 +172,11 @@ $(function(){
     });
 	//新版make enquiry
 	$( '.make-enquiry a' ).click(function( e ){
+	    e.preventDefault();
 		var price=$('.light-price').text();
 		$('.tourprice').text(price);
 		$('.post-tour-price').remove();
 		$('.fielddisplay').append('<input class="post-tour-price" type="text" value="from '+price+'" name="Tour_Price">');
-	    e.preventDefault();
 	    var form_content = $( '#enquireform' )
 	    //让form根据屏幕大小居中
 	    var left_mt = ($(window).width() - $( '#enquireform' ).width())/2;
@@ -199,30 +200,14 @@ $(function(){
 	    })
 	});
 	//价格表弹出表单
-	$( '.group a' ).click(function( e ){
-		var price=$(this).text();
-		$('.tourprice').html(price);
-		$('.post-tour-price').remove();
-		$('.fielddisplay').append('<input class="post-tour-price" type="text" value="from '+price+'" name="Tour_Price">');
-	e.preventDefault();
-	var form_content = $( '#enquireform' )
-	//让form根据屏幕大小居中
-	var left_mt = ($(window).width() - $( '#enquireform' ).width())/2;
-	var top_mt = ($(window).height() - $( '#enquireform' ).height())/2;
-	if( top_mt < 0 ){
-	top_mt = 0 ;
-	}else if(left_mt < 0 ){
-	left_mt = 0;
-	}
-	$( '#enquireform' ).css({'top':top_mt,'left':left_mt});
-	form_content.show();
-	$( window ).scrollTop( 0 );
-	$( '.exit_ico' ).show();
-	$( 'body' ).append("<div class='form-mask'></div>");
-	$( '.form-mask' ).click(function(){
-	$( '.form-mask' ).remove()
-	$( '#enquireform' ).hide();
-	})
+	$( '.group a' ).click(function(){
+	    var date = $( this ).parent().attr( 'name' );
+	    var year = date.substring( 0,7 );
+	    var day = date.substring( 8 );
+        $( '.make-enquiry a' ).click();
+        $( 'option[value="'+year+'"]').attr( 'selected','true' );
+        $( 'option[value="'+day+'"]').attr( 'selected','true' );
+        
 	}); 
 	$( '.exit_ico' ).click( function(){
 		$( '.form-mask' ).click();
@@ -243,13 +228,18 @@ $(function(){
         	$(this).children('.zoom').remove();
         }
         );
-/******recent inquery 文字滚动**************/
-setInterval(AutoScroll,5000);
+	/******recent inquery 文字滚动**************/
+	setInterval(AutoScroll,5000);
 
 	/****检查线路是否有价格**********************/
 	if($('.post-tour-price').val()=='')
 	{
 		$(this).remove();
 	}
+	
+	//bookings hash 弹出表单
+	if( location.hash == '#bookings' ){
+    	$( '.make-enquiry a' ).click();
+    }
 })
 })(jQuery);
