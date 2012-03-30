@@ -51,8 +51,8 @@ body {
 	margin: 0 auto;
 	min-height: 900px;
 	position: relative;
-	width: 960px;
-	padding: 10px 20px;
+	width: 940px;
+	padding: 10px 15px;
 }
 /*
  h1, h2, h3, h4, h5, h6 {
@@ -308,11 +308,16 @@ body .right {
 }
 /* CONTENT */
 
+
 .content {
 	width: 682px;
 	float: right;
 	margin-top: 18px;
 	margin-right: 22px;
+}
+
+.allpage-wrap .content {
+    margin-right: 0px;
 }
 
 .content ol li {
@@ -425,7 +430,7 @@ body .right {
 	height: 35px;
 	list-style-type: none;
 	position: relative;
-	width: 970px;
+	width: 1000px;
 	z-index: 210;
 	float: left;
 	margin-top: 24px;
@@ -520,10 +525,10 @@ body .right {
 	color: #666666;
 	float: left;
 	font: 13px Arial, Helvetica, sans-serif;
-	left: 165px;
+	left: 336px;
 	padding: 8px 10px 3px;
 	position: absolute;
-	top: 35px;
+	top: 36px;
 	width: 425px;
 	z-index: 100;
 }
@@ -580,7 +585,7 @@ body .right {
 	left: 0;
 	padding: 8px 10px 3px;
 	position: absolute;
-	top: 35px;
+	top: 36px;
 	width: 880px;
 	z-index: 100;
 }
@@ -766,7 +771,8 @@ body .right {
 	/*filter: dropshadow(color=#ccc, offx=1, offy=1);*/
 }
 .sidebar-pic {
-	height: 147px;
+	height: 148px;
+	width:240px
 }
 .nav-left li a {
 	color: #434343;
@@ -948,8 +954,10 @@ ul.subnav a.active {
 	margin-top: 40px;
 }
 .departures h2 {
-	text-indent: 10px;
+    padding-left: 13px;
 	margin-bottom:5px;
+	font-size: 18px;
+	line-height: 22px;
 }
 #departures-monthly {
 	margin-top: 5px;

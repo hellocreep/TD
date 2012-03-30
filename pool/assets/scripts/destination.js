@@ -55,7 +55,7 @@ $(document).ready(function() {
 				$('.temp tr').eq(m).children('td').eq(i + 2).children('span').css({
 					"background" : 'url("/imagesnew/destination/temperature-minus.png") repeat-x'
 				}).animate({
-					"width" : Math.abs(j)
+					"width" : Math.abs(j)*3
 				}, 1000);
 			} else {
 				$('.temp tr').eq(m).children('td').eq(i + 2).children('span').animate({

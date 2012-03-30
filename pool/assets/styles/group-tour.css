@@ -1,8 +1,8 @@
 .tour-container {
-	width: 690px;
+	width: 650px;
 	margin-top: 45px;
 	*margin-bottom: 45px;
-	border: 3px solid #ffd8a0;
+	border: 5px solid #ffd8a0;
 	position: relative;
 	padding: 15px;
 	border-radius: 3px;
@@ -50,7 +50,7 @@
     line-height: 71px;
     margin-left: -35px;
     padding-left: 66px;
-    width: 337px;
+    width: 275px;
 }
 
 .tour-price .check-detail {
@@ -63,7 +63,7 @@
 	border-radius: 3px;
 	background: #fee6c1;
 	border: 1px solid #cc8a71;
-	margin: 14px 75px 0 0;
+	margin: 14px 20px 0 0;
 	text-align: center;
 	line-height: 40px;
 	color:#333333;
@@ -73,9 +73,9 @@
 }
 
 .tour-price .check-detail:hover {
-	color: #9c3829;
-	text-decoration: none;
-	background: #E6A79F;
+	background: #ffa94d;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .tour-info ul{
@@ -97,6 +97,13 @@
 
 .schedule-wrap {
 	display: none;
+	background: #f6f1f1;
+    background:-moz-linear-gradient(top, #f6f1f1, #ffffff);
+    background:-webkit-linear-gradient(top, #f6f1f1, #ffffff);
+    background:-o-linear-gradient(top, #f6f1f1, #ffffff);
+    background:-ms-linear-gradient(top, #f6f1f1, #ffffff);
+    background:linear-gradient(top, #f6f1f1, #ffffff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f1f1', endColorstr='#ffffff',GradientType=0);
 }
 
 .schedule-wrap.select {
@@ -110,7 +117,7 @@
 
 .list-wrap {
 	padding-top: 15px;
-	height: 200px;
+	height: 250px;
 	overflow: auto;
 	background: #f6f1f1;
 	background:-moz-linear-gradient(top, #f6f1f1, #ffffff);
@@ -131,6 +138,18 @@
 	text-align: center;
 }
 
+.schedule-list .schedule-tr {
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
+.schedule-list .schedule-tr:hover {
+    background: #ffebdf;
+}
+
 .list-wrap .schedule-list th {
 	border-top: 1px solid #969696;
 	border-bottom: 1px solid #969696;
@@ -145,6 +164,7 @@
 }
 
 .tour-info .schedule-tab {
+    margin-top: 5px;
 	text-align: center;
 	height: 27px;
 	border: none;
@@ -197,6 +217,24 @@
 	height: auto;
 }
 
+.tirp-schedule .group {
+    background: none repeat scroll 0 0 #FFBB93;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
+.tirp-schedule .group:hover {
+    background: #f78d10;
+}
+
+.tirp-schedule .group a:hover {
+    text-decoration: none;
+    color: #e8688e;
+}
+
 .tirp-schedule .turn-page div{
 	position: relative;
 }
@@ -244,12 +282,12 @@
 
 .tirp-schedule th {
 	color: #8d2622;
+	font-weight: bold;
 }
 
 .tour-intro {
-	width: 350px;
+	width: 320px;
 	float: right;
-	margin-right: 10px;
 }
 
 .tour-intro p {
@@ -257,8 +295,13 @@
 }
 
 .tour-intro img {
-	width: 350px;
-	height: 267px;	
+	width: 320px;
+	height: 267px;
+}
+
+.tour-intro img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
 }
 
 .tools-bar {
@@ -275,7 +318,7 @@
 .funny-font {
 	font-family: Poor Richard;
 	color: #8c2621;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .departure-wrap .departures {
@@ -292,4 +335,27 @@
 
 .departures p {
 	font-size: 12px;
+}
+
+.wide-foot {
+    float: left;
+    margin-top: -115px;
+    width: 946px;
+}
+
+.wide-foot .btn-enquiry a {
+    text-indent: 6px;
+}
+
+.faq-intro {
+    margin-left: 108px;
+}
+
+.wide-foot .author-list {
+    padding-left: 70px;
+}
+
+.trip-tips h2, h3, h4 {
+    font-size: 18px;
+    margin: 0 0 15px;
 }
