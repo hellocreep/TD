@@ -24,6 +24,7 @@ function AutoScroll(){
         .children( 'a' ).removeClass( 'active' );
     }
 $(function(){
+	
 	//FAQ accordion
 	$( '.accordion div' ).hide();
 	$('.accordion h6').click(function() {
@@ -201,13 +202,11 @@ $(function(){
 	//价格表弹出表单
 	$( '.group a' ).click(function(){
 	    var date = $( this ).parent().attr( 'name' );
-	    var year = date.substring( 0,8 );
-	    var day = date.substring( 9 );
+	    var year = date.substring( 0,7 );
+	    var day = date.substring( 8 );
         $( '.make-enquiry a' ).click();
-        //TODO
-        //无法执行
-        $( 'select[name="TravelDate"] option[value="'+year+'"]').attr( 'selected' );
-        $( 'select[name="Date"] option[value="'+day+'"]').attr( 'selected' );
+        $( 'option[value="'+year+'"]').attr( 'selected','true' );
+        $( 'option[value="'+day+'"]').attr( 'selected','true' );
         
 	}); 
 	$( '.exit_ico' ).click( function(){
@@ -229,13 +228,18 @@ $(function(){
         	$(this).children('.zoom').remove();
         }
         );
-/******recent inquery 文字滚动**************/
-setInterval(AutoScroll,5000);
+	/******recent inquery 文字滚动**************/
+	setInterval(AutoScroll,5000);
 
 	/****检查线路是否有价格**********************/
 	if($('.post-tour-price').val()=='')
 	{
 		$(this).remove();
 	}
+	
+	//bookings hash 弹出表单
+	if( location.hash == '#bookings' ){
+    	$( '.make-enquiry a' ).click();
+    }
 })
 })(jQuery);
