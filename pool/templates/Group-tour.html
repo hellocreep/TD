@@ -46,7 +46,11 @@
 				document.write("<input type=\"hidden\" name=\"Ref_Page\" value=\""+document.referrer+"\" />")
 			</script>
         <div class="container">
-            <h2><span class="num">1</span>Contact Information</h2>
+            <h2 class="clearfix">
+            	<span class="num">1</span>
+            	Contact Information
+            	<span class="banner-pattern"></span>	
+            </h2>
             <table>
                 <tbody>
                     <tr>
@@ -86,7 +90,7 @@
             </table>
         </div>
         <div class="container">
-            <h2><span class="num">2</span> Ideal Itinerary & Destinations</h2>
+            <h2 class="clearfix"><span class="num">2</span> Ideal Itinerary & Destinations<span class="banner-pattern"></span></h2>
             <div class="user-choice">
                 <p class="des">
                     Which destinations do you want to visit in Tibet ?
@@ -158,44 +162,62 @@
                     <li>
                         <img src="/imagesnew/sample/sample-2.jpg"/>
                         <p><b>Beijing</b></p>
-                        <input type="checkbox" name="city[]" value="Beijing"/>
+                        <input type="checkbox" name="city" value="Beijing"/>
                     </li>
                     <li>
                         <img src="/imagesnew/sample/sample-2.jpg"/>
                         <p><b>Chengdu</b></p>
-                        <input type="checkbox" name="city[]" value="Chengdu"/>
+                        <input type="checkbox" name="city" value="Chengdu"/>
                     </li>
                     <li>
                         <img src="/imagesnew/sample/sample-2.jpg"/>
                         <p><b>Shanghai</b></p>
-                        <input type="checkbox" name="city[]" value="Shanghai"/>
+                        <input type="checkbox" name="city" value="Shanghai"/>
                     </li>
                     <li>
                         <img src="/imagesnew/sample/sample-2.jpg"/>
                         <p><b>Guangzhou</b></p>
-                        <input type="checkbox" name="city[]" value="Guangzhou"/>
+                        <input type="checkbox" name="city" value="Guangzhou"/>
                     </li>
                     <li>
                         <img src="/imagesnew/sample/sample-2.jpg"/>
                         <p><b>Xian</b></p>
-                        <input type="checkbox" name="city[]" value="Xian"/>
+                        <input type="checkbox" name="city" value="Xian"/>
                     </li>
                     <li>
                         <img src="/imagesnew/sample/sample-2.jpg"/>
                         <p><b>Xining </b></p>
-                        <input type="checkbox" name="city[]" value="Xining "/>
+                        <input type="checkbox" name="city" value="Xining "/>
                     </li>
                 </ul>
             </div>
+            <div class="user-choice">
+                <p class="des">
+                    Which way will you plan to enter into Tibet ?
+                </p>
+                <ul class="float-list city clearfix">
+                    <li>
+                        <img src="/imagesnew/sample/sample-2.jpg"/>
+                        <p><b>Beijing</b></p>
+                        <input type="checkbox" name="trans" value="flight"/>
+                    </li>
+                    <li>
+                        <img src="/imagesnew/sample/sample-2.jpg"/>
+                        <p><b>Chengdu</b></p>
+                        <input type="checkbox" name="trans" value="train"/>
+                    </li>
+                </ul>
+            </div>
+            
         </div>
         <div class="container">
-            <h2><span class="num">3</span>Trip Details (optional)</h2>
+            <h2 class="clearfix"><span class="num">3</span>Trip Details (optional)<span class="banner-pattern"></span></h2>
             <table>
                 <tbody>
                     <tr>
                         <td><label>Your Travel Date:</label></td>
                         <td>
-                        <select name="TravelDate" type="text" id="StartingDate">
+                        <select name="TravelDate" type="text" id="StartingDate" style="margin-right: 8px;">
                             <option value="2012-02"> Feb, 2012</option>
                             <option value="2012-03"> Mar, 2012</option>
                             <option value="2012-04"> Apr, 2012</option>
@@ -316,7 +338,7 @@
         </div>
         
         <div class="container">
-            <h2><span class="num">4</span>Special Instructions (optional)</h2>
+            <h2 class="clearfix"><span class="num">4</span>Special Instructions (optional)<span class="banner-pattern"></span></h2>
             <table style="margin-left: 90px;">
                 <tbody>
                 	<tr>
@@ -327,7 +349,7 @@
             </table>
         </div>
         
-        <input id="inquirysub" type="submit" class="inquirysub" value="Submit" />
+        <a id="customsub" href="#" class="inquirysub btn large">Submit</a>
     </form>
     <!--
     <div class="content left">

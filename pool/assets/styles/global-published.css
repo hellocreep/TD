@@ -51,8 +51,7 @@ body {
 	margin: 0 auto;
 	min-height: 900px;
 	position: relative;
-	width: 940px;
-	padding: 10px 15px;
+	width: 970px;
 }
 /*
  h1, h2, h3, h4, h5, h6 {
@@ -161,6 +160,7 @@ input.error {
 	cursor: pointer;
 	border: none;
 	border: none;
+	font-weight: bold;
 }
 .btn:hover {
 	text-decoration: none;
