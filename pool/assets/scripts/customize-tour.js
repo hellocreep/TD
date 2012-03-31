@@ -38,14 +38,16 @@ $(function(){
 	$( '.first-block' ).focus(function(){
 		$( '.container h2' ).removeClass( 'active' ).eq( 0 ).addClass( 'active' ); 
 	});
+	$( '.other-choice input' ).focus(function(){
+		$( '.container h2' ).removeClass( 'active' ).eq( 1 ).addClass( 'active' ); 
+	});
 	$( '.third-block' ).focus(function(){
 		$( '.container h2' ).removeClass( 'active' ).eq( 2 ).addClass( 'active' ); 
 	});
 	$( '.fourth-block' ).focus(function(){
 		$( '.container h2' ).removeClass( 'active' ).eq( 3 ).addClass( 'active' ); 
 	});
-	
-	
+
 	
 	$( '#customsub' ).click(function( e ){
 		e.preventDefault();

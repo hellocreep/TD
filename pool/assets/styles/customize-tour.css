@@ -107,6 +107,7 @@
 .user-choice {
 	padding: 8px;
 	margin-top: 15px;
+	border-bottom: 1px solid #dddddd;
 }
 
 .user-choice .des {
@@ -118,7 +119,6 @@
 
 .float-list {
 	list-style: none;
-	border-bottom: 1px solid #dddddd;
 }
 
 .float-list li {
@@ -180,14 +180,12 @@
 	width: 0;
 }
 
-.float-list li .other-choice {
-	width: 500px;
+.user-choice .other-choice {
+	margin: 0 0 10px 32px;
 }
 
-.float-list li .other-choice input {
-	height: auto;
-	width: 200px;
-	visibility: visible;
+.user-choice .other-choice input {
+	width: 270px;
 }
 
 .destination li {
