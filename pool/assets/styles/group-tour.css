@@ -324,9 +324,13 @@
 .departure-wrap .departures {
 	float: right;
 	width: 200px;
-	background: #faf8f7;
+	background:#faf8f7 url("/imagesnew/departure-bg.png") no-repeat left top;
 	border: 1px solid #dddddd;
 	padding: 10px 5px;
+}
+.departure-wrap .departures h2{
+	padding:0;
+	text-align:center;
 }
 
 .departure-wrap #departures-monthly .departure-month {

@@ -78,7 +78,7 @@
 }
 .overview-left {
 	float: left;
-	width: 430px;
+	width: 450px;
 }
 .overview-left h2 {
 	font-size: 16px;
@@ -94,10 +94,22 @@
 }
 dl.pop-tour {
 	margin: 10px 0 40px;
+	padding:10px;
+	border:1px solid #fff;
+}
+dl.pop-tour:hover{
+	background:rgba(234,234,234,0.6);
+	border:1px solid #e0e0e0;
+	cursor:pointer;
 }
 dl.pop-tour dt {
-	width: 180px;
+	width: 184px;
 	float: left;
+}
+dl.pop-tour dt img{
+	border:1px solid #ddd;
+	padding:1px;
+	background:#fff;
 }
 dl.pop-tour dd {
 	width: 230px;
@@ -156,19 +168,19 @@ dl.pop-tour img.reco-img {
 	text-align: center;
 }
 .ww-r1 {
-	background: url("/imagesnew/destination/weather-rank1.png") no-repeat 64px center;
+	background: url("/imagesnew/destination/weather-rank1.png") no-repeat center center;
 }
 .ww-r2 {
-	background: url("/imagesnew/destination/weather-rank2.png") no-repeat 64px center;
+	background: url("/imagesnew/destination/weather-rank2.png") no-repeat center center;
 }
 .ww-r3 {
-	background: url("/imagesnew/destination/weather-rank3.png") no-repeat 64px center;
+	background: url("/imagesnew/destination/weather-rank3.png") no-repeat center center;
 }
 .ww-r4 {
-	background: url("/imagesnew/destination/weather-rank4.png") no-repeat 64px center;
+	background: url("/imagesnew/destination/weather-rank4.png") no-repeat center center;
 }
 .ww-r5 {
-	background: url("/imagesnew/destination/weather-rank5.png") no-repeat 64px center;
+	background: url("/imagesnew/destination/weather-rank5.png") no-repeat center center;
 }
 .further-reading {
 	width: 100%;
