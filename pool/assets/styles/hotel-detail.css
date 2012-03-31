@@ -104,6 +104,10 @@
     margin-top: 5px;
 }
 
+.hotel-sidebar .near {
+	margin-top: 10px;
+}
+
 /*hotel*/
 .hotel_h1Title,.hotel_star{
     display:inline;

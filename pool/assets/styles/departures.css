@@ -6,10 +6,11 @@
     height: 27px;
     margin-top: 10px; !important;
     padding: 0;
-    text-align: center;
+    text-align: left;
     width: 78px;
     background: none repeat scroll 0 0 #CCCCCC;
     border-right: 1px solid #FFFFFF;
+    min-height: 150px;
 }
 .calenav li:hover{
 	background: none repeat scroll 0 0 #505050;
