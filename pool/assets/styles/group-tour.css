@@ -321,12 +321,19 @@
 	font-size: 18px;
 }
 
+
 .departure-wrap .departures {
 	float: right;
 	width: 200px;
-	background:#faf8f7 url("/imagesnew/departure-bg.png") no-repeat left top;
+	background:#faf8f7;
 	border: 1px solid #dddddd;
 	padding: 10px 5px;
+}
+.departure-wrap .leftflowers {
+	background:#faf8f7 url("/imagesnew/departure-bg.png") no-repeat left top;
+}
+.departure-wrap .rightflowers {
+	background:#faf8f7 url("/imagesnew/departure-bg.png2") no-repeat right bottom;
 }
 .departure-wrap .departures h2{
 	padding:0;
