@@ -9,7 +9,7 @@ function Submitform(){
 
 $(function(){
 	var choosed = '<span class="ok"></span>'
-	$( '.float-list li' ).each(function(){
+	$( '.destination li' ).each(function(){
 		$( this ).click(function(){
 			if( $(this).children('input:checked').length>0){
 				$( this ).removeClass( 'active' ).children( '.ok' ).remove();
@@ -20,7 +20,21 @@ $(function(){
 		})	
 	});	
 	
-	$( '#inquirysub' ).click(function(){
+	$( '.city li' ).each(function(){
+		$( this ).click(function(){
+			if( $(this).children('input:checked').length>0){
+				$( this ).removeClass( 'active' ).children( '.ok' ).remove();
+				$( this ).children( 'input' ).attr( 'checked', false );
+			}else{
+				$( this ).addClass( 'active' ).append( choosed ).children( 'input' ).attr( 'checked', true );
+				$( this ).siblings().removeClass( 'active' ).children( 'input' ).attr( 'checked', false);
+				$( this ).siblings().children( '.ok' ).remove();
+			}
+		});
+	});
+	
+	$( '#customsub' ).click(function( e ){
+		e.preventDefault();
 		Submitform();
 	});
 	

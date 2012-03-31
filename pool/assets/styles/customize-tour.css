@@ -1,15 +1,22 @@
 .content-head {
+    background: url("/imagesnew/sample/tibet_map_3.png") no-repeat scroll right center #F0DFC9;
     height: 280px;
-    padding: 10px 5px;
+    padding: 10px 19px
 }
 
 .content-head p {
-    width: 700px;
+    width: 600px;
+}
+
+.content-head ul li {
+	background: url("../img/list02.gif") no-repeat scroll 0 3px transparent;
+    margin-bottom: 7px;
+    padding-left: 11px;
 }
 
 .container {
     padding: 0 0 10px 0;
-    margin-top: 15px;
+    margin: 15px;
     border: 1px solid #DDDDDD;
 }
 
@@ -54,6 +61,15 @@
     -ms-border-radius: 3px;
 }
 
+.container h2 .banner-pattern {
+	display: block;
+	float: right;
+	background: url("/imagesnew/banner-pattern.png") no-repeat 0 0;
+	margin-right: 10px;
+	height: 40px;
+	width: 274px;
+}
+
 .container table {
     margin-left: 180px;
     font-size: 15px;
@@ -78,6 +94,7 @@
 .user-choice .des {
 	font-size: 15px;
 	font-weight: bold;
+	margin-left: 25px;
 }
 
 .float-list {
@@ -108,6 +125,7 @@
 }
 
 .float-list li p {
+	font-size: 12px;
 	margin: 0;
 	padding: 3px;
 	border: 1px solid #b8b7b6;
@@ -144,7 +162,7 @@
 
 .destination li {
     width: 190px;
-    margin: 0 10px 0 27px;
+    margin: 0 0 0 27px;
 }
 
 .destination li .ok {
@@ -156,7 +174,7 @@
 }
 
 .city li {
-    margin: 0 25px;
+    margin: 0 24px;
 }
 
 .city li .ok {
@@ -169,6 +187,7 @@
 
 .city li p {
 	height: 22px;
+	width: 92px;
 }
 
 .inquirysub {

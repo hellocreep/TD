@@ -161,6 +161,7 @@ input.error {
 	cursor: pointer;
 	border: none;
 	border: none;
+	font-weight: bold;
 }
 .btn:hover {
 	text-decoration: none;
