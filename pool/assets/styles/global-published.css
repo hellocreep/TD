@@ -466,7 +466,7 @@ body .right {
 .menu > li > a {
 	color: #92240d;
 	display: block;
-	padding: 0 7px;
+	padding: 0 9px 0 7px;
 	text-decoration: none;
 }
 .menu > li > a:hover {
