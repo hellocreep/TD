@@ -152,7 +152,7 @@ input.error {
 	border: 1px solid #92240D;
 }
 .btn {
-	background-image: url(/imagesnew/btn.png);
+	background: url(/imagesnew/btn.png) no-repeat 0 0 #8B240D;
 	display: block;
 	color: #ffffff;
 	text-decoration: none;
@@ -161,9 +161,14 @@ input.error {
 	border: none;
 	border: none;
 	font-weight: bold;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-ms-border-radius: 4px;
 }
 .btn:hover {
 	text-decoration: none;
+	color: #FBB017;
 }
 .btn-wrap {
 	margin-top: 10px;
