@@ -11,26 +11,26 @@ $(document).ready(function() {
 	$('.thumbs .thumb').eq(0).click();
 })
 //WHEN TO GO条形图
-var January = new Array("","","");
-var Febrary = new Array("","","");
-var March = new Array("","","");
-var April = new Array("","","");
-var May = new Array("","","");
-var June = new Array("","","");
-var July = new Array("","","");
-var August = new Array("","","");
-var September = new Array("","","");
-var October = new Array("","","");
-var Novemeber = new Array("","","");
-var December = new Array("","","");
+var January = new Array("", "", "");
+var Febrary = new Array("", "", "");
+var March = new Array("", "", "");
+var April = new Array("", "", "");
+var May = new Array("", "", "");
+var June = new Array("", "", "");
+var July = new Array("", "", "");
+var August = new Array("", "", "");
+var September = new Array("", "", "");
+var October = new Array("", "", "");
+var Novemeber = new Array("", "", "");
+var December = new Array("", "", "");
 var Recommend = new Array("1", "2", "3", "4", "5", "5", "4", "3", "3", "2", "1", "1");
 $(document).ready(function() {
 	var Allmonth = new Array(January, Febrary, March, April, May, June, July, August, September, October, Novemeber, December);
-	$.each(Recommend, function(x,y){
-		$('.temp tr').eq(x).children('td:eq(1)').addClass('ww-r'+y);
-		$('.WWtable tr:odd td').eq(x).addClass('ww-r'+y);
+	$.each(Recommend, function(x, y) {
+		$('.temp tr').eq(x).children('td:eq(1)').addClass('ww-r' + y);
+		$('.WWtable tr:odd td').eq(x).addClass('ww-r' + y);
 	});
-	
+
 	$.each(Allmonth, function(m, n) {
 		$.each(n, function(i, j) {
 			$('.temp tr').eq(m).children('td').eq(i + 2).children('span').after(j);
@@ -38,31 +38,39 @@ $(document).ready(function() {
 				$('.temp tr').eq(m).children('td').eq(i + 2).children('span').css({
 					"background" : 'url("/imagesnew/destination/temperature-minus.png") repeat-x'
 				}).animate({
-					"width" : Math.abs(j)*3
+					"width" : Math.abs(j) * 3
 				}, 1000);
 			} else {
 				$('.temp tr').eq(m).children('td').eq(i + 2).children('span').animate({
-					"width" : j*3
+					"width" : j * 3
 				}, 1000);
 			}
 		})
 	})
 });
-
-
 //thingstodo加排序序号
-$(document).ready(function(){
-	$('.pop-place dt div').each(function(index){
-        $(this).text(index+1);
-    })	
+$(document).ready(function() {
+	$('.pop-place dt div').each(function(index) {
+		$(this).text(index + 1);
+	})
 });
-
 //列表框点击跳转
-$(document).ready(function(){
-	$('dl.pop-tour').click(function(){
-		var lo= $(this).children('a').attr('class');
+/*
+$(document).ready(function() {
+	$('dl.pop-tour').click(function() {
+		var lo = $(this).children('a').attr('class');
 		alert(lo);
 	});
 });
-
-
+*/
+//地图页面fancybox效果
+$(document).ready(function() {
+	$('a[rel="images-gallery"]').fancybox({
+		'transitionIn' : 'none',
+		'transitionOut' : 'none',
+		'titlePosition' : 'over',
+		'titleFormat' : function(title, currentArray, currentIndex, currentOpts) {
+			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+		}
+	});
+});

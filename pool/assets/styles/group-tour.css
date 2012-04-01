@@ -329,11 +329,11 @@
 	border: 1px solid #dddddd;
 	padding: 10px 5px;
 }
-.departure-wrap .leftflowers {
+.departure-wrap .left-flower {
 	background:#faf8f7 url("/imagesnew/departure-bg.png") no-repeat left top;
 }
-.departure-wrap .rightflowers {
-	background:#faf8f7 url("/imagesnew/departure-bg.png2") no-repeat right bottom;
+.departure-wrap .right-flower {
+	background:#faf8f7 url("/imagesnew/departure-bg2.png") no-repeat right bottom;
 }
 .departure-wrap .departures h2{
 	padding:0;
