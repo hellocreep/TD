@@ -1,0 +1,77 @@
+.nepal-color {
+	background: #bb5641;
+}
+
+.content-head {
+	background: url("/imagesnew/sample/nepal-1.png") no-repeat 0 top;
+	min-height: 500px;
+	color: #ffffff;
+	position: relative;
+}
+
+.content-words {
+	position: absolute;
+	bottom: 0;
+	margin: 0 20px 20px;
+}
+
+.content-words h1 {
+	color: #ffffff;
+}
+
+.tour-block {
+	background: #ffffff;
+	min-height: 277px;
+	padding: 5px 18px;
+	margin: 0 0 20px 25px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px; 
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); 
+}
+
+.tour-block h2 {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.tour-content img {
+	float: left;
+}
+
+.tour-content .tour-info {
+	float: right;
+	width: 320px;
+}
+
+.right-pannel {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px; 
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	width: 245px;
+	margin-bottom: 20px;
+}
+
+.right-pannel p {
+	padding: 0 8px;
+}
+
+.pannel-fir {
+	background: url("/imagesnew/sample/nepal-3.png") no-repeat 0 bottom #ffffff;
+	padding: 0 0 10px 0;
+}
+
+.pannel-sec {
+	background: url("/imagesnew/sample/nepal-4.png") no-repeat 0 bottom #f1f2f4;
+	padding: 8px 0 15px;
+}
+
+.pannel-sec h3 {
+	font-size: 15px;
+	text-align: center;
+}

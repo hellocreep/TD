@@ -717,27 +717,33 @@
 }
 
 .tour-foot .rate {
-    background: url("/imagesnew/itinerary/bg-rate-small.png") no-repeat 0 0;
     color: #FFFFFF;
     display: block;
-    height: 38px;
     position: absolute;
-    width: 55px;
-    line-height: 38px;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
 }
 
 .itinerary-other .rate{
-	right: 105px;
-    top: -4px;
+	background: url("/imagesnew/itinerary/bg-rate-small.png") no-repeat 0 0;
+	right: 124px;
+    top: 0px;
+    height: 31px;
+    width: 31px;
+    line-height: 23px;
+    text-indent: -15px;
     
 }
 .itinerary-first .rate {
-    font-size: 15px;
-    right: 254px;
-    top: -4px;
+	background: url("/imagesnew/itinerary/bg-rate-big.png") no-repeat 0 0;
+    font-size: 20px;
+    right: 250px;
+    top: 0px;
+    height: 56px;
+    width: 56px;
+    line-height: 38px;
+    text-indent: -20px;
 }
 .wide-foot {
 	width: 960px;

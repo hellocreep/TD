@@ -168,7 +168,7 @@ $(function(){
 	
 	//底部线路排名
 	$( '.itinerary-other .rate' ).each(function( index ){
-        $( this ).text( 'Top '+(index+2));
+        $( this ).text( (index+2) );
     });
 	//新版make enquiry
 	$( '.make-enquiry a' ).click(function( e ){
