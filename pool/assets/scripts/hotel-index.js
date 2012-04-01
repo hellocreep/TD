@@ -61,7 +61,46 @@
             //飞机场坐标
             ['Airport',29.291220248740697, 90.90149849653244,'imagesnew/hotel/airport-icon.png','']
     ];
-    
+    //跳转的链接
+    var links = ['http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/st-regis-lhasa-resort/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/brahmaputra-grand-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/four-points-by-sheraton-lhasa/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/jardin-secret-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/xin-ding-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/lhasa-manasarovar-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/tibet-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/yak-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/thangka-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/the-tibet-cang-gyan-lhasa-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/dhood-gu-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/shangbala-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/kyichu-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/new-mandala-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/tashi-takge-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/jiumu-yamei-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/zhaxiquta-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/zanglong-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/taixing-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/shigatse-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/wutse-grand-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/holy-land-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/gyantse-hotels/gyantse-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/gyantse-hotels/gyantse-jianzang-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/tingri-and-ebc/everest-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/tingri-and-ebc/tent-guest-house/',
+        			 '',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/zhangmu-hotel/caiyuan-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/zhangmu-hotel/zhangmu-hotel1/',
+        			 '',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/nyingchi-hotels/nyingchi-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/nyingchi-hotels/chongqing-xiaotiane-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/nyingchi-hotels/nyingchi-mingren-business-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shannan-hotel/tsetang-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shannan-hotel/yalong-river-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shannan-hotel/tibet-yulong-holiday-hotel/',
+        			 '',
+        			 ''
+        ]
 
         //当前酒店与其他酒店
         var redlocal = 'imagesnew/hotel/hotel-icon1.png';
@@ -137,12 +176,10 @@
             attachSecretMessage(marker, i);
         }
 
-    
-
         function attachSecretMessage(marker, number) {
             //消息框
             var infowindow = new google.maps.InfoWindow({
-                content : '<dl><dt>' + attractions[number][0] + '</dt><dd id="img"><img width="200" height="110" src=' + attractions[number][4] + '></dd>' + '</dl>',
+                content : '<dl><dt><a href='+links[number]+'>' + attractions[number][0] + '</a></dt><dd id="img"><img width="200" height="110" src=' + attractions[number][4] + '></dd>' + '</dl>',
                 size : new google.maps.Size(50, 50)
             });
             //marker绑定方法

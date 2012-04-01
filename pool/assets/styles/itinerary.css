@@ -52,9 +52,10 @@
 	border: 1px dashed #D0D0C2;
 	background: #FAF8F7;
 	display: none;
-	top: 25px;
+	top: 23px;
 	width: 180px;
 	font-size: 13px;
+	right: 1px;
 }
 .price-tip ul li {
 	list-style: none;
@@ -85,7 +86,7 @@
     width: 70px;
 }
 .view-gallery:hover {
-	color: #17a6ed;
+	color: #8A2321;
 	text-decoration: none;
 }
 .tour-des .des-detail {

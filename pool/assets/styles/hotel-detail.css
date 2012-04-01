@@ -104,6 +104,10 @@
     margin-top: 5px;
 }
 
+.hotel-sidebar .near {
+	margin-top: 10px;
+}
+
 /*hotel*/
 .hotel_h1Title,.hotel_star{
     display:inline;
@@ -455,9 +459,11 @@
     height: 25px;
     line-height: 25px;
     width: 86px;
+    font-weight: bold;
 }
 .inquiry:hover{
-    background-position: -139px 39px;
+    color: #FBB017;
+    text-decoration: none;
 }
 .hotel_roomAmenities,.hotel_roomAmenitiesList{
     float:left;

@@ -1,4 +1,4 @@
-;( function ( $ ){
+( function ( $ ){
 
 function gm_initialize( e ) {
     e.preventDefault();
@@ -6,7 +6,7 @@ function gm_initialize( e ) {
     $( '.map_container' ).show();
     
      //当前attration
-    var thisAttraction = $( '.hotel_h1Title' ).text();//'St Regis Lhasa Resort';
+    var thisAttraction = $( '.hotel_h1Title' ).text()//'St Regis Lhasa Resort';
     
     //attractions 坐标
     var attractions = [
@@ -62,14 +62,52 @@ function gm_initialize( e ) {
             //飞机场坐标
             ['Airport',29.291220248740697, 90.90149849653244,'imagesnew/hotel/airport-icon.png','']
     ];
-    
-
-        //当前酒店与其他酒店
+    	//跳转的链接
+		var links = ['http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/st-regis-lhasa-resort/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/brahmaputra-grand-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/four-points-by-sheraton-lhasa/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/jardin-secret-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/xin-ding-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/lhasa-manasarovar-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/tibet-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/yak-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/thangka-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/the-tibet-cang-gyan-lhasa-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/dhood-gu-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/shangbala-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/kyichu-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/new-mandala-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/lhasa-hotels/tashi-takge-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/jiumu-yamei-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/zhaxiquta-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/zanglong-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/taixing-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/shigatse-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/wutse-grand-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shigatse-hotels/holy-land-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/gyantse-hotels/gyantse-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/gyantse-hotels/gyantse-jianzang-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/tingri-and-ebc/everest-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/tingri-and-ebc/tent-guest-house/',
+        			 '',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/zhangmu-hotel/caiyuan-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/zhangmu-hotel/zhangmu-hotel1/',
+        			 '',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/nyingchi-hotels/nyingchi-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/nyingchi-hotels/chongqing-xiaotiane-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/nyingchi-hotels/nyingchi-mingren-business-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shannan-hotel/tsetang-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shannan-hotel/yalong-river-hotel/',
+        			 'http://www.tibetdiscovery.com/tibet-hotels/shannan-hotel/tibet-yulong-holiday-hotel/',
+        			 '',
+        			 ''
+        ]
+        //当前酒店与其他酒店 
         var redlocal = 'imagesnew/hotel/hotel-icon1.png';
         var greenlocal = 'imagesnew/hotel/hotel-icon2.png';
         var new_latlng1, latlng2;
         //区分当前坐标
-        for(var i = 0; i < attractions[0].length - 2; i++) {
+        for(var i = 0; i < attractions.length - 2; i++) {
             if(attractions[i][0] == thisAttraction) {
                 attractions[i][3] = redlocal;
                 new_latlng1 = attractions[i][1];
@@ -79,11 +117,39 @@ function gm_initialize( e ) {
             }
         }
         
-        var latlng,zoomNum;
+        var latlng ='';
+        var zoomNum = '';
+        
+        if($('.nav-left li a').hasClass('active')) {
+            var hotel_local = $('.nav-left .active').attr('id');
+            zoomNum = 8;
+            if( hotel_local=='shigatse-hotels'){
+                latlng =  new google.maps.LatLng(29.269963112030908, 88.88195615541102);
+            }
+            if( hotel_local=='lhasa-hotels' ){
+                latlng =  new google.maps.LatLng(29.64704578172058, 91.14141401943789);
+            }
+            if( hotel_local=='gyantse-hotels'){
+                laflng = new google.maps.LatLng(28.908927157641713, 89.6045994758606);
+            }
+            if( hotel_local=='tingri-ebc'){
+                laflng = new google.maps.LatLng(28.63291394726706, 87.17448860406876);
+            }
+            if( hotel_local=='zhangmu-hotels'){
+                laflng = new google.maps.LatLng(27.98532305497405, 85.98381847143173);
+            }
+            if( hotel_local=='shannan-hotels'){
+                laflng = new google.maps.LatLng(29.23196098171095, 91.77076488733292);
+            }
+            if( hotel_local=='nyingchi-hotels'){
+                laflng = new google.maps.LatLng(29.66639420415487, 94.35520201921463);
+            }
+        } else {
             //地图中心位置
             latlng = new google.maps.LatLng(new_latlng1 * 1, new_latlng2 * 1);
             //29.646605206678142, 91.13964915275574
             zoomNum = 16
+        }
 
         var myOptions = {
             zoom : zoomNum,
@@ -93,12 +159,8 @@ function gm_initialize( e ) {
 
         var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-
-
 //显示attractions
-
-
-        for(var i = 0; i < attractions.length; i++) {
+        for(var i = 0; i < attractions.length - 2; i++) {
             var beach = attractions[i];
             var myLatLng = new google.maps.LatLng(beach[1], beach[2]);
             var marker = new google.maps.Marker({
@@ -111,35 +173,31 @@ function gm_initialize( e ) {
             attachSecretMessage(marker, i);
         }
 
-    
-
-        function attachSecretMessage(marker, number) {
-            //消息框
-            var infowindow = new google.maps.InfoWindow({
-                content : '<dl><dt>' + attractions[number][0] + '</dt><dd id="img"><img width="200" height="110" src=' + attractions[number][4] + '></dd>' + '</dl>',
-                size : new google.maps.Size(50, 50)
-            });
-            //marker绑定方法
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(map, marker);
-            });
-        }
-
-        }
+		function attachSecretMessage(marker, number) {
+			//消息框
+			var infowindow = new google.maps.InfoWindow({
+				content : '<dl><dt><a href=' + links[number] + '>' + attractions[number][0] + '</a></dt><dd id="img"><img width="200" height="110" src=' + attractions[number][4] + '></dd>' + '</dl>',
+				size : new google.maps.Size(50, 50)
+			});
+			//marker绑定方法
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
 
 
+}
 
 $( function(){
         $( '.map-show' ).click(function( e ){
             e.preventDefault();
             $( '#show_map' ).click();
-        });    
+        })    
         $( '#show_map' ).click( gm_initialize );
         $( '#close_map' ).click( function( e ){
             e.preventDefault();
             $( '.map_container' ).hide();
         });
-        
-        
+
 });
 })(jQuery);
