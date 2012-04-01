@@ -91,3 +91,6 @@ def group_tour(request):
 
 def themetour_train(request):
     return render_to_response('themetour-train.html', {})
+
+def nepal(request):
+    return render_to_response('Nepal-Lhasa.html', {})
