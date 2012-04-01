@@ -432,3 +432,27 @@ dl.pop-place dd {
 .price-color{
 	color:#7E0122;
 }
+/*SIDEBAR*/
+.des-side-foot {
+    background: url("/imagesnew/sidebar-flower-down.png") no-repeat scroll center top transparent;
+    margin-top: 60px;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.des-side-foot h3 {
+    color: #434343;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.des-side-img {
+    background: url("/imagesnew/sidebar-flower-up.png") no-repeat scroll center bottom transparent;
+    margin-top: 5px;
+    padding-bottom: 45px;
+    position: relative;
+    text-align: left;
+    text-indent: 22px;
+}
