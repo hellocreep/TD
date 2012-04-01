@@ -442,10 +442,8 @@ dl.pop-place dd {
 
 .des-side-foot h3 {
     color: #434343;
-    font-size: 13px;
-    font-style: italic;
-    font-weight: normal;
-    letter-spacing: normal;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .des-side-img {
@@ -455,4 +453,12 @@ dl.pop-place dd {
     position: relative;
     text-align: left;
     text-indent: 22px;
+}
+
+.des-side-img .nav-left a {
+	background:url("/imagesnew/nav-dot.png") no-repeat scroll 26px center transparent;
+}
+
+.des-side-img .nav-left a:hover {
+	color: #7E0122;
 }

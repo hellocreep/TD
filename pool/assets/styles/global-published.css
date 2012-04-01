@@ -547,6 +547,7 @@ body .right {
 	float: left;
 	list-style-type: none;
 	width: 207px;
+	margin: 0;
 }
 #travelStyle h2 + h2, div#travelStyle p + p, div#travelStyle ul + ul {
 	border: medium none;
