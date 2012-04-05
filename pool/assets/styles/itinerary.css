@@ -675,12 +675,13 @@
 	filter: alpha(opacity=80);
 }
 .itinerary-first h3 {
-	background: #8c2621;
+	background: #666;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: normal;
 	padding-left: 52px;
 	margin: 0;
+	height: 55px;
 }
 .itinerary-first a {
 	color: #FFFFFF;
@@ -727,8 +728,8 @@
 
 .itinerary-other .rate{
 	background: url("/imagesnew/itinerary/bg-rate-small.png") no-repeat 0 0;
-	right: 124px;
-    top: 0px;
+	right: 125px;
+    top: -1px;
     height: 31px;
     width: 31px;
     line-height: 23px;
@@ -738,8 +739,8 @@
 .itinerary-first .rate {
 	background: url("/imagesnew/itinerary/bg-rate-big.png") no-repeat 0 0;
     font-size: 20px;
-    right: 250px;
-    top: 0px;
+    right: 249px;
+    top: -1px;
     height: 56px;
     width: 56px;
     line-height: 38px;

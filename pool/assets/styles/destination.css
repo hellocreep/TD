@@ -151,6 +151,7 @@ dl.pop-tour img.reco-img {
 .overview-right h5 {
 	color: #222222;
 	margin: 1px 0 10px;
+	font-weight:bold;
 }
 .overview-right div {
 	border: 1px solid #ddd;

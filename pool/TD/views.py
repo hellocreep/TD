@@ -94,3 +94,6 @@ def themetour_train(request):
 
 def nepal(request):
     return render_to_response('Nepal-Lhasa.html', {})
+
+def beijing_lhasa(request):
+    return render_to_response('beijing-Lhasa.html', {})

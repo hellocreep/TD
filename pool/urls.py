@@ -55,5 +55,6 @@ urlpatterns += patterns('TD.views',
     (r'^travel-resource','travel_resource'),
     (r'^themetour-train','themetour_train'),
     (r'^nepal','nepal'),
+    (r'^beijing-lhasa','beijing_lhasa'),
     (r'^$','sitemap'),
 )
