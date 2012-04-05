@@ -82,12 +82,16 @@
     display: none;
 }
 
+.tour-style {
+	
+}
+
 .tour-style-p {
-	background: url("/imagesnew/sample/Private-tour.png") no-repeat scroll 30px 140px transparent
+	background: url("/imagesnew/sample/Private-tour.png") no-repeat scroll 0px 0px transparent
 }
 
 .tour-style-g {
-	background: url("/imagesnew/sample/Group-tour.png") no-repeat scroll 30px 140px transparent;
+	background: url("/imagesnew/sample/Group-tour.png") no-repeat scroll 0px 0px transparent;
 }
 
 .tour-content .tour-info {
@@ -111,7 +115,7 @@
 	font-size: 24px;
 	display: block;
 	float: left;
-	margin: 13px 0 0 50px;
+	margin: 30px 0 0 50px;
 }
 
 .check-btn {
@@ -125,6 +129,7 @@
 	line-height: 44px;
 	font-weight: bold;
 	font-style: italic;
+	margin-top: 18px;
 }
 
 .check-btn:hover {
@@ -168,6 +173,13 @@
 .pannel-sec {
 	background: url("/imagesnew/sample/nepal-4.png") no-repeat 0 bottom #f1f2f4;
 	padding: 8px 0 15px;
+}
+
+.list-num {
+	font-size: 16px;
+	color: #7D7D74;
+	padding-right: 5px;
+	font-weight: bold;
 }
 
 .wide-foot {
