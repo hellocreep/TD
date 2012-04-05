@@ -93,6 +93,7 @@
 .tour-content .tour-info {
 	float: right;
 	width: 320px;
+	min-height: 210px;
 }
 
 .tour-content .img-wrap {
@@ -138,6 +139,8 @@
 	border-radius: 3px; 
 	width: 245px;
 	margin-bottom: 20px;
+	background: #ffffff;
+	padding: 8px 0;
 	/*
 	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
@@ -147,7 +150,10 @@
 	-moz-box-shadow: #666 0px 0px 5px;
 	box-shadow: #666 0px 0px 5px;
 	behavior: url(PIE.htc);
-	behavior: url(PIE.htc);
+}
+
+.right-pannel h3, .right-pannel h4 {
+	padding-left: 8px;
 }
 
 .right-pannel p {
@@ -162,11 +168,6 @@
 .pannel-sec {
 	background: url("/imagesnew/sample/nepal-4.png") no-repeat 0 bottom #f1f2f4;
 	padding: 8px 0 15px;
-}
-
-.pannel-sec h3 {
-	font-size: 15px;
-	text-align: center;
 }
 
 .wide-foot {
