@@ -238,8 +238,13 @@ $(function(){
 	}
 	
 	//bookings hash 弹出表单
-	if( location.hash == '#bookings' ){
+	if( location.hash.indexOf( '#bookings' ) !== -1 ){
+		var date = location.hash.substring( location.hash.indexOf('&')+1 );
+		var year = date.substring( 0,7 );
+		var day = date.substring( 8 );
     	$( '.make-enquiry a' ).click();
+    	$( 'option[value="'+year+'"]').attr( 'selected','true' );
+        $( 'option[value="'+day+'"]').attr( 'selected','true' );
     }
 })
 })(jQuery);

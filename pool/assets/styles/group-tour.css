@@ -1,8 +1,7 @@
 .tour-container {
 	width: 650px;
 	margin-top: 45px;
-	*
-	margin-bottom: 45px;
+	*margin-bottom: 45px;
 	border: 5px solid #ffd8a0;
 	position: relative;
 	padding: 15px;
@@ -12,8 +11,7 @@
 .tour-container h2 {
 	text-indent: 45px;
 	font-size: 18px;
-	*
-	line-height: 18px;
+	*line-height: 18px;
 }
 .tour-container .des {
 	padding-left: 45px;
@@ -39,23 +37,23 @@
 	float: left;
 }
 .tour-price {
-	background: url("/imagesnew/bg-arrow-left.png") no-repeat scroll 0 0 transparent;
+	position: relative;
+	background: url("/imagesnew/bg-arrow-left.png") no-repeat scroll 20px 0 transparent;
 	color: #FFFFFF;
 	font-size: 20px;
 	line-height: 64px;
-	margin-left: -36px;
-	width: 353px;
+	margin-left: -35px;
+	width: 375px;
 	text-indent: 48px;
 	font-family: Times New Roman;
+	z-index: 3;
 }
 .tour-price .check-detail {
 	background: url("/imagesnew/buyit.png") no-repeat;
 	display: block;
-	*
-	display: inline;
+	*display: inline;
 	float: right;
-	*
-	float: none;
+	*float: none;
 	width: 124px;
 	font-size:16px;
 	height: 36px;
