@@ -518,9 +518,10 @@ body .right {
 }
 
 .slide-menu {
+	display: none;
 	background: none repeat scroll 0 0 #FAFAFA;
-	border-color: #CCCCCC #CCCCCC;
 	border: 2px solid #CCCCCC;
+	border-top: none;
 	color: #666666;
 	font: 13px Arial, Helvetica, sans-serif;
 	padding: 8px 10px 3px;
@@ -543,16 +544,15 @@ body .right {
 
 .slide-menu ul li {
 	border-top: 1px dashed #CCCCCC;
-    height: 60px;
-    line-height: 60px;
-    width: 200px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .slide-menu ul li a {
 	color: #2368C7;
     display: block;
     text-decoration: none;
-    width: 200px
+    width: 200px;
 }
 
 .slide-menu ul li a:hover {
@@ -562,8 +562,7 @@ body .right {
 }
 
 .slide-travel-guide {
-	width: 400px;
-	left: 473px;
+	width: 200px;
 }
 
 #travelStyle {

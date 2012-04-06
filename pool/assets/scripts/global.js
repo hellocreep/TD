@@ -78,6 +78,14 @@ $( function(){
         $('#travelStyle').hide();
     });
 	
+	$( '.toggle-menu' ).each( function(){
+		$( this ).hover(function(){
+			$( this ).children( '.slide-menu' ).show();
+		},function(){
+			$( this ).children( '.slide-menu' ).hide();
+		});
+	});
+	
 	/****newsletter**/
 
         $('#submit').click(function(e) {
