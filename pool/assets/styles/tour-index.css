@@ -571,7 +571,10 @@ dl.QA dd {
 	background: url("/imagesnew/sample/answer-icon.png") no-repeat left top;
 	border-bottom:1px dashed #a4956c;
 }
-	
+dl.QA dd.last{
+	border:none;
+	padding: 0 0 0 45px;
+}	
 .check {
 	float: right;
 	margin: 0 10px 10px 0;
