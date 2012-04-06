@@ -72,7 +72,7 @@ $( function(){
         $('#tibetTours').hide();
     })
     
-    $('#menus>li:eq(2)').hover(function(){
+    $('#menus>li:eq(4)').hover(function(){
         $('#travelStyle').show();
     },function(){
         $('#travelStyle').hide();
