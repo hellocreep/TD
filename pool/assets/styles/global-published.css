@@ -516,6 +516,55 @@ body .right {
 	text-decoration: none;
 	background: #333;
 }
+
+.slide-menu {
+	display: none;
+	background: none repeat scroll 0 0 #FAFAFA;
+	border: 2px solid #CCCCCC;
+	border-top: none;
+	color: #666666;
+	font: 13px Arial, Helvetica, sans-serif;
+	padding: 8px 10px 3px;
+	position: absolute;
+	top: 36px;
+	z-index: 100;
+}
+
+.slide-menu:after {
+	content: '';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.slide-menu ul {
+	float: left;
+}
+
+.slide-menu ul li {
+	border-top: 1px dashed #CCCCCC;
+    height: 40px;
+    line-height: 40px;
+}
+
+.slide-menu ul li a {
+	color: #2368C7;
+    display: block;
+    text-decoration: none;
+    width: 200px;
+}
+
+.slide-menu ul li a:hover {
+	background: none repeat scroll 0 0 #990100;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.slide-travel-guide {
+	width: 200px;
+}
+
 #travelStyle {
 	-moz-border-bottom-colors: none;
 	-moz-border-image: none;
@@ -741,7 +790,7 @@ body .right {
 .sidebar {
 	width: 240px;
 	float: left;
-	min-height: 1100px;
+	min-height: 1000px;
 	/*border-right:2px solid #b6b6b6;
 	 background: url(/imagesnew/nav-bg-down.png) no-repeat center bottom #F8F4ED;*/
 	padding-bottom: 80px;
