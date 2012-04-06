@@ -2,6 +2,10 @@
 	background: #bb5641;
 }
 
+.BL-color{
+	background:#dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
+}
+
 .content-head {
 	background: url("/imagesnew/sample/nepal-1.jpg") no-repeat 0 top;
 	min-height: 475px;
@@ -477,4 +481,76 @@
 
 .wide-foot .btn-enquiry a {
     text-indent: 6px;
+}
+
+
+
+/* @Beijing-Lhasa Tour */
+.box-effect{
+	border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px #666666;
+}
+.BL-color{
+	background:#dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
+}
+.one-col{
+	width:930px;
+	margin:20px 20px;
+	float: left;
+}
+.rt-col{
+	width: 245px;
+	min-height:600px;
+    background:#fafafa;
+    float:right;
+    margin:18px 20px 0 0;
+}
+.rt-col img{
+	margin:10px 0 0 0 ;
+}
+.rt-col .unit{
+	margin:10px;
+	border-top:1px dashed #ddd;
+	padding:10px 0;
+}
+.expat{
+	background:#fafafa;
+	padding:15px;
+	width:900px;
+	position:relative;
+}
+.expat dt{
+	font-size:15px;
+	font-weight:bold;
+	color:#222222;
+}
+.expat dd{
+	background:url("/imagesnew/sample/list-icon.png") no-repeat left center;
+	padding:0 0 0 20px;
+}
+.expat li{
+	border:1px solid #c8c8c8;
+	width:230px;
+	min-height:300px;
+	float:left;
+	margin-right:60px;
+	background:#f0f0f0;
+}
+.expat li p{
+	margin:8px;
+}
+dl.QA{
+	width:800px;
+	height:115px;
+	background:#f0ebdd ;
+}
+dl.QA dt{
+	height:40px;
+	margin:10px;
+	padding:0 0 0 40px;
+	background:url("/imagesnew/sample/question-icon.png") no-repeat left center;
+}
+dl.QA dd{
+	height:40px;
+	background: url("/imagesnew/sample/answer-icon.png") no-repeat left center;
 }
