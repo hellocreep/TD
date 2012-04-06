@@ -1,3 +1,13 @@
+.fancybox {
+	cursor: pointer;
+    display: block;
+    position: relative;
+}
+.fancybox img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
 /* @Nepal Tour */
 .nepal-color {
 	background: #bb5641;
@@ -7,13 +17,13 @@
 }
 .content-head {
 	background: url("/imagesnew/sample/nepal-1.jpg") no-repeat 0 top;
-	min-height: 475px;
+	min-height: 430px;
 	color: #ffffff;
 	position: relative;
 }
 .content-words {
 	position: absolute;
-	bottom: 0px;
+	bottom: 5px;
 	margin: 0 20px 0px;
 }
 .content-words h1 {
@@ -457,6 +467,17 @@
 .wide-foot .btn-enquiry a {
 	text-indent: 6px;
 }
+
+.zoom {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	width: 57px;
+	height: 17px;
+	background: url(/imagesnew/aboutus/zoom-more.gif) no-repeat;
+	display: block;
+}
+
 /* @Beijing-Lhasa Tour */
 .box-effect {
 	border-radius: 3px 3px 3px 3px;
