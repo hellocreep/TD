@@ -3,33 +3,29 @@
     display: block;
     position: relative;
 }
-
 .fancybox img:hover {
 	opacity: 0.8;
 	filter: alpha(opacity=80);
 }
 
+/* @Nepal Tour */
 .nepal-color {
 	background: #bb5641;
 }
-
-.BL-color{
-	background:#dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
+.BL-color {
+	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
 }
-
 .content-head {
 	background: url("/imagesnew/sample/nepal-1.jpg") no-repeat 0 top;
 	min-height: 430px;
 	color: #ffffff;
 	position: relative;
 }
-
 .content-words {
 	position: absolute;
 	bottom: 5px;
 	margin: 0 20px 0px;
 }
-
 .content-words h1 {
 	color: #ffffff;
 }
@@ -67,11 +63,11 @@
     font-size: 16px;
     font-weight: bold;
     height: 62px;
-    left: -13px;
+    left: -14px;
     line-height: 61px;
     position: absolute;
     text-align: center;
-    top: -13px;
+    top: -15px;
     width: 61px;
 }
 
@@ -307,18 +303,17 @@
 	margin: 0 0 20px 25px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border-radius: 3px; 
+	border-radius: 3px;
 	/*
-	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); */
+	 -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	 -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); */
 	-webkit-box-shadow: #666 0px 0px 5px;
 	-moz-box-shadow: #666 0px 0px 5px;
 	box-shadow: #666 0px 0px 5px;
 	behavior: url(PIE.htc);
 }
-
 .tour-block h2 {
 	font-size: 20px;
 	color: #7e0122;
@@ -328,16 +323,13 @@
 	font-style: italic;
 	font-weight: bold;
 }
-
 .tour-block h2 a {
 	color: #7e0122;
 }
-
 .tour-block h2 a:hover {
 	color: #ca0236;
 	text-decoration: none;
 }
-
 .tour-rank {
 	position: absolute;
 	display: block;
@@ -350,7 +342,6 @@
 	color: #ffffff;
 	line-height: 23px;
 }
-
 .tour-hot {
 	background: url("/imagesnew/tour-hot.png") no-repeat scroll 0 0 transparent;
     display: block;
@@ -360,30 +351,25 @@
     top: -12px;
     width: 68px;
     display: none;
-}
 
+}
 .tour-style {
-	
-}
 
+}
 .tour-style-p {
 	background: url("/imagesnew/sample/Private-tour.png") no-repeat scroll 0px 0px transparent
 }
-
 .tour-style-g {
 	background: url("/imagesnew/sample/Group-tour.png") no-repeat scroll 0px 0px transparent;
 }
-
 .tour-content .tour-info {
 	float: right;
 	width: 320px;
 	min-height: 210px;
 }
-
 .tour-content .img-wrap {
 	float: left;
 }
-
 .tour-content .img-wrap img {
 	width: 280px;
 	height: 210px;
@@ -402,7 +388,6 @@
 	float: left;
 	margin: 30px 0 0 50px;
 }
-
 .check-btn {
 	background: url("/imagesnew/nepal-btn.png") no-repeat 0 0;
 	display: block;
@@ -416,82 +401,71 @@
 	font-style: italic;
 	margin-top: 18px;
 }
-
 .check-btn:hover {
 	color: #92240D;
 	text-decoration: none;
 }
-
 .right-pannel {
 	position: relative;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border-radius: 3px; 
+	border-radius: 3px;
 	width: 245px;
 	margin-bottom: 20px;
 	background: #ffffff;
 	padding: 8px 0;
 	/*
-	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); */
+	 -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	 -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); */
 	-webkit-box-shadow: #666 0px 0px 5px;
 	-moz-box-shadow: #666 0px 0px 5px;
 	box-shadow: #666 0px 0px 5px;
 	behavior: url(PIE.htc);
 }
-
 .right-pannel h3, .right-pannel h4 {
 	padding-left: 8px;
 }
-
 .right-pannel p {
 	padding: 0 8px;
 }
-
 .pannel-fir {
 	background: url("/imagesnew/sample/nepal-3.png") no-repeat 0 bottom #ffffff;
 	padding: 0 0 10px 0;
 }
-
 .pannel-sec {
 	background: url("/imagesnew/sample/nepal-4.png") no-repeat 0 bottom #f1f2f4;
 	padding: 8px 0 15px;
 }
-
 .list-num {
 	font-size: 16px;
 	color: #7D7D74;
 	padding-right: 5px;
 	font-weight: bold;
 }
-
 .wide-foot {
 	background: none repeat scroll 0 0 #FFFFFF;
-    float: left;
-    margin-bottom: 100px;
-    margin-left: 19px;
-    margin-top: -118px;
-    width: 934px;
-    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+	float: left;
+	margin-bottom: 100px;
+	margin-left: 19px;
+	margin-top: -118px;
+	width: 934px;
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
 	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
 }
-
 .wide-foot .author-list {
-    padding-left: 70px;
+	padding-left: 70px;
 }
 .faq-intro {
-    margin-left: 108px;
+	margin-left: 108px;
 }
-
 .wide-foot .btn-enquiry {
-    margin-right: 50px;
+	margin-right: 50px;
 }
-
 .wide-foot .btn-enquiry a {
-    text-indent: 6px;
+	text-indent: 6px;
 }
 
 .zoom {
@@ -505,71 +479,98 @@
 }
 
 /* @Beijing-Lhasa Tour */
-.box-effect{
+.box-effect {
 	border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 0 5px #666666;
+	box-shadow: 0 0 5px #666666;
 }
-.BL-color{
-	background:#dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
+.BL-color {
+	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
 }
-.one-col{
-	width:930px;
-	margin:20px 20px;
+.one-col {
+	width: 930px;
+	margin: 0px 20px;
 	float: left;
 }
-.rt-col{
+.rt-col {
 	width: 245px;
-	min-height:600px;
-    background:#fafafa;
-    float:right;
-    margin:18px 20px 0 0;
+	min-height: 600px;
+	background: #fafafa;
+	float: right;
+	margin: 18px 20px 0 0;
 }
-.rt-col img{
-	margin:10px 0 0 0 ;
+.rt-col img {
+	margin: 10px 0 0 0;
 }
-.rt-col .unit{
-	margin:10px;
+.rt-col .unit {
+	margin: 10px;
+	border-top: 1px dashed #ddd;
+	padding: 10px 0;
+}
+.expat {
+	background: #fafafa;
+	padding: 15px;
+	width: 900px;
+	position: relative;
+	margin-bottom:40px;
+}
+dl.service {
+	margin: 20px 0;
+}
+.service dt {
+	font-size: 15px;
+	font-weight: bold;
+	color: #222222;
+}
+.service dd {
+	background: url("/imagesnew/sample/list-icon.png") no-repeat left center;
+	padding: 2px 0 2px 20px;
+}
+ul.itinerary {
+	margin: 0 0 20px;
+}
+.itinerary h4 {
+	text-align: center;
+}
+.itinerary h4 a{
+	text-decoration:none;
+	color:#7E0122;
+}
+.itinerary li {
+	border: 1px solid #c8c8c8;
+	width: 230px;
+	min-height: 300px;
+	float: left;
+	margin-right: 60px;
+	background: #f0f0f0;
+}
+.itinerary li p {
+	margin: 8px;
+}
+dl.QA {
+	width: 816px;
+	background: #f0ebdd;
+	padding: 1px;
+	border-radius: 3px 3px 3px 3px;
+	margin: 20px 0;
+}
+.expat h3{
 	border-top:1px dashed #ddd;
-	padding:10px 0;
+	width:816px;
+	padding:15px 0 0 0 ;
 }
-.expat{
-	background:#fafafa;
-	padding:15px;
-	width:900px;
-	position:relative;
+dl.QA dt {
+	height: 40px;
+	margin: 10px;
+	padding: 0 0 0 45px;
+	background: url("/imagesnew/sample/question-icon.png") no-repeat left center;
 }
-.expat dt{
-	font-size:15px;
-	font-weight:bold;
-	color:#222222;
-}
-.expat dd{
-	background:url("/imagesnew/sample/list-icon.png") no-repeat left center;
-	padding:0 0 0 20px;
-}
-.expat li{
-	border:1px solid #c8c8c8;
-	width:230px;
-	min-height:300px;
-	float:left;
-	margin-right:60px;
-	background:#f0f0f0;
-}
-.expat li p{
-	margin:8px;
-}
-dl.QA{
-	width:800px;
-	height:115px;
-	background:#f0ebdd ;
-}
-dl.QA dt{
-	height:40px;
-	margin:10px;
-	padding:0 0 0 40px;
-	background:url("/imagesnew/sample/question-icon.png") no-repeat left center;
-}
-dl.QA dd{
-	height:40px;
+dl.QA dd {
+	height: 40px;
+	margin: 10px;
+	padding: 0 0 0 45px;
 	background: url("/imagesnew/sample/answer-icon.png") no-repeat left center;
+}
+.check {
+	float: right;
+	margin: 0 10px 10px 0;
 }
