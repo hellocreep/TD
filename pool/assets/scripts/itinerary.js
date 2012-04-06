@@ -111,7 +111,9 @@ $(function(){
     if( tour_code== 'TD-JT-7B' || tour_code=='TD-JT-04' || tour_code=='TD-JT-08'){
         $( '.tour-price img').hide();
     }
-    
+    if($( '.light-price' ).text() == ''){
+    	$( '.tour-price' ).hide();
+    }
 	
 	//Price Question
 	$( '.tour-price img' ).hover(function(){

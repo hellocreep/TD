@@ -70,16 +70,6 @@ $(function(){
 	
 	schedule( $( '.schedule-arrow') );
 	
-	//FANCYBOX addwish
-	$( '.addwish' ).fancybox({
-		'width' : '50%',
-		'scrolling': 'auto',
-		'height': '75%',
-		'transitionIn' : 'none',
-		'transitionOut' : 'none',
-		'type' : 'iframe'
-		//'onClosed':function(){window.location.href=window.location.href;}
-	}); 
 	//schedule 形式切换
 	$( '.schedule-tab li' ).each(function(){
 		$( this ).click(function(){
@@ -90,6 +80,21 @@ $(function(){
 			.siblings( '.'+t ).show(); 
 		});
 	});
+	
+	//FANCYBOX addwish
+	try{
+		$( '.addwish' ).fancybox({
+		'width' : '50%',
+		'scrolling': 'auto',
+		'height': '75%',
+		'transitionIn' : 'none',
+		'transitionOut' : 'none',
+		'type' : 'iframe'
+		//'onClosed':function(){window.location.href=window.location.href;}
+	}); 
+	}catch(e){
+		
+	}
 	
 });
 })(jQuery);
