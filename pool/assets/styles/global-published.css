@@ -544,8 +544,8 @@ body .right {
 
 .slide-menu ul li {
 	border-top: 1px dashed #CCCCCC;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .slide-menu ul li a {
@@ -553,6 +553,12 @@ body .right {
     display: block;
     text-decoration: none;
     width: 200px;
+}
+
+.slide-menu ul li img {
+	border: 2px solid #FFFFFF;
+    float: left;
+    margin: 3px 8px 3px 5px;
 }
 
 .slide-menu ul li a:hover {
