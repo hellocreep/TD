@@ -8,7 +8,7 @@ body {
 .themetour-wrap {
 	width: 970px;
 	margin: 0 auto;
-	background: url("/imagesnew/themetour/theme-bg.png") repeat-x;
+	background:#ffffff url("/imagesnew/themetour/theme-bg.png") repeat-x;
 	position: relative;
 	z-index: 400;
 	border: 1px solid #B8B8B8;

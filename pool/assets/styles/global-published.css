@@ -1056,6 +1056,32 @@ ul.subnav a.active {
 	text-decoration: none;
 	background: url(/imagesnew/btn.png) no-repeat -301px -161px #D94343;
 }
+
+/* 新的按钮可根据内容撑开*/
+.btn-enquirys {
+    display: block;
+	float: right;
+	margin: 7px 30px 0 0;
+}
+.btn-enquirys a {
+	color: #FFFFFF;
+	display: block;
+	background: url(/imagesnew/btn.png) no-repeat center -320px #D94343;
+	height: 43px;
+	line-height: 43px;
+	font-weight: bold;
+	font-size: 16px;
+	padding:0 10px;
+	border-radius:3px;
+}
+.btn-enquirys a img{
+	float: right;
+    margin: 13px 0 0 10px;
+}
+.btn-enquirys a:hover {
+	text-decoration: none;
+	background: url(/imagesnew/btn.png) no-repeat center -371px #D94343;
+}
 /*
  * 页面底部TC联系头像
  */
