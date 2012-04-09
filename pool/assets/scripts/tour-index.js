@@ -23,5 +23,6 @@ $(function(){
 		$( this ).text( index+1 );
 	});
 	
+	$( '.fancybox' ).fancybox();
 })
 })(jQuery);
