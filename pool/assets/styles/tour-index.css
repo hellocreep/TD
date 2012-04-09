@@ -412,7 +412,7 @@
 	border-radius: 3px;
 	width: 245px;
 	margin-bottom: 20px;
-	background: #ffffff;
+	background: #F1F2F4;
 	padding: 8px 0;
 	/*
 	 -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
@@ -435,7 +435,7 @@
 	padding: 0 0 10px 0;
 }
 .pannel-sec {
-	background: url("/imagesnew/sample/nepal-4.png") no-repeat 0 bottom #f1f2f4;
+	background: url("/imagesnew/sample/nepal-4.png") no-repeat 0 bottom #F1F2F4;
 	padding: 8px 0 15px;
 }
 .list-num {
@@ -479,6 +479,15 @@
 }
 
 /* @Beijing-Lhasa Tour */
+.banner {
+	height: 340px;
+	position: relative;
+}
+
+.banner img {
+	position: absolute;
+}
+
 .box-effect {
 	border-radius: 3px 3px 3px 3px;
 	box-shadow: 0 0 5px #666666;
@@ -525,7 +534,7 @@ dl.service {
 	background: url("/imagesnew/sample/list-icon.png") no-repeat left center;
 	padding: 2px 0 2px 20px;
 }
-ul.itinerary {
+.itinerary {
 	margin: 0 0 20px;
 }
 .itinerary h4 {
@@ -546,7 +555,13 @@ ul.itinerary {
 .itinerary li p {
 	margin: 8px;
 }
-dl.QA {
+
+.itinerary .img-wrap img {
+	width: 230px;
+	height: 180px;
+}
+
+.QA {
 	width: 816px;
 	background: #f0ebdd;
 	padding: 1px;
@@ -558,20 +573,22 @@ dl.QA {
 	width:816px;
 	padding:15px 0 0 0 ;
 }
-dl.QA dt {
+.QA dt {
 	height: 35px;
 	margin: 10px;
 	padding: 0 0 0 45px;
 	background: url("/imagesnew/sample/question-icon.png") no-repeat left top;
+	line-height: 35px;
 }
-dl.QA dd {
+.QA dd {
 	height: 35px;
 	margin: 10px;
 	padding: 0 0 10px 45px;
 	background: url("/imagesnew/sample/answer-icon.png") no-repeat left top;
 	border-bottom:1px dashed #a4956c;
+	line-height: 35px;
 }
-dl.QA dd.last{
+.QA dd.last{
 	border:none;
 	padding: 0 0 0 45px;
 }	

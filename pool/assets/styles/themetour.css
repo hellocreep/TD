@@ -161,3 +161,109 @@ ul.facts li:hover {
 .themetour-wrap .FAQ-footer {
 	margin: 0;
 }
+
+/*Expats*/
+.theme-content {
+	padding: 10px 10px 0 25px;
+}
+
+.content-block {
+	margin:0 0 20px 20px;
+}
+
+.content-block h3 {
+	font-size: 16px;
+	margin-left: -28px;
+	height: 30px;
+}
+
+
+.content-block h3 img {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.tour-block {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px #666666;
+    margin: 0 0 50px 25px;
+    min-height: 277px;
+    padding: 10px 40px;
+	width: 800px;
+}
+
+.tour-block h3 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.tour-block h3 a {
+	color: #7E0122;
+}
+
+.tour-block h3 a:hover {
+	text-decoration: none;
+	color: #CA0236;
+}
+
+.tour-content:after {
+	content: '';
+	visibility: hidden;
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+.tour-content img {
+	float: left;
+	height: 215px;
+    width: 290px;
+}
+
+.tour-content img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.tour-content .tour-info {
+	float: right;
+	width: 60%;
+}
+
+.theme-btn {
+	background: #990000;
+	background:-moz-linear-gradient(top, #990000, #cc0000);
+	background:-webkit-linear-gradient(top, #990000, #cc0000);
+	background:-o-linear-gradient(top, #990000, #cc0000);
+	background:-ms-linear-gradient(top, #990000, #cc0000);
+	background:linear-gradient(top, #990000, #cc0000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#cc0000',GradientType=0);
+	display: block;
+	float: right;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 13px;
+	margin: 5px 15px 0 30px;
+	width: 170px;
+	text-align: center;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.theme-btn:hover {
+	text-decoration: none;
+	color: #fca000;
+	background: #990000;
+	background:-moz-linear-gradient(bottom, #990000, #cc0000);
+	background:-webkit-linear-gradient(bottom, #990000, #cc0000);
+	background:-o-linear-gradient(bottom, #990000, #cc0000);
+	background:-ms-linear-gradient(bottom, #990000, #cc0000);
+	background:linear-gradient(bottom, #990000, #cc0000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#990000',GradientType=0);
+}
+
+
+.ml-45 {
+	margin-left: 45px;
+}

@@ -955,6 +955,7 @@ ul.menu ul{
     text-align: left;
     width: 60%;
 	font-size:12px;
+	margin-left: 40px;
 }
 .btn-enquiry {
     float: right;
