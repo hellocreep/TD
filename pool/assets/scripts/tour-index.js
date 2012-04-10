@@ -22,6 +22,7 @@ $(function(){
 	$( '.tour-rank' ).each(function( index ){
 		$( this ).text( index+1 );
 	});
+	$( '.tour-price' ).eq( 3 ).hide();
 	
 	$( '.fancybox' ).fancybox();
 })

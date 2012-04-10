@@ -480,12 +480,69 @@
 
 /* @Beijing-Lhasa Tour */
 .banner {
-	height: 340px;
+	height: 300px;
 	position: relative;
+}
+
+.banner h2 {
+	position: absolute;
+	font-family: Times New Roman;
+	font-size: 20px;
+	color: #ffffff;
+	font-style: italic;
+	background: url("/imagesnew/red-title-bg.png") no-repeat 0 0;
+	height: 49px;
+	width: 376px;
+	left: 0;
+	line-height: 49px;
+	padding-left: 30px;
+	font-weight: bold;
+}
+
+.map-list {
+	position: absolute;
+	bottom: 10px;
+}
+
+.map-list li {
+	float: left;
+	padding: 5px;
+	border-radius: 3px;
+	width: 205px;
+	height: 79px;
+	position: relative;
+}
+
+.map-list li img {
+	width: 205px;
+	height: 79px;
+	box-shadow: 0 0 4px #333333;
+}
+
+.map-list li.active {
+	background: #d14242;
+}
+
+.crystal-bubble {
+	position: absolute;
+	background: url("/imagesnew/tour-index/crystal-head.png") no-repeat center top;
+	width: 205px;
+}
+
+.crystal-bubble dt {
+	background: url("/imagesnew/tour-index/crystal-body.png") repeat-y 0 0;
+	height: 8px;
+}
+
+.crystal-bubble dd {
+	background: url("/imagesnew/tour-index/crystal-bottom.png") no-repeat center bottom;
+	height: 18px;
 }
 
 .banner img {
 	position: absolute;
+	height: 300px;
+	width: 100%;
 }
 
 .box-effect {
@@ -493,7 +550,7 @@
 	box-shadow: 0 0 5px #666666;
 }
 .BL-color {
-	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
+	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 300px;
 }
 .one-col {
 	width: 930px;
@@ -596,3 +653,5 @@ dl.service {
 	float: right;
 	margin: 0 10px 10px 0;
 }
+
+/*China Tibet Tour*/
