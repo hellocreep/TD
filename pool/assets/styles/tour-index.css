@@ -480,7 +480,7 @@
 
 /* @Beijing-Lhasa Tour */
 .banner {
-	height: 340px;
+	height: 300px;
 	position: relative;
 }
 
@@ -493,7 +493,7 @@
 	box-shadow: 0 0 5px #666666;
 }
 .BL-color {
-	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
+	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 300px;
 }
 .one-col {
 	width: 930px;
