@@ -31,6 +31,7 @@ $(function(){
 	
 	if( $('.allpage-wrap').attr('name')=='china'){
 		$( '.expat' ).hide();
+		$( '.crystal-bubble' ).eq( 0 ).show();
 		$( '.banner > img:not(:first)' ).hide();
 		slideshow();
 		$( '.allpage-wrap' ).removeClass( 'BL-color' ).addClass( 'china-color' );

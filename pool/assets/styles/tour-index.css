@@ -318,7 +318,7 @@
 	background: #ffffff;
 	min-height: 277px;
 	padding: 10px 18px;
-	margin: 0 0 20px 25px;
+	margin: 0 0 40px 25px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -500,7 +500,7 @@
 .banner {
 	height: 300px;
 	position: relative;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 }
 
 .banner img {
@@ -523,7 +523,6 @@
 }
 .rt-col {
 	width: 245px;
-	min-height: 600px;
 	background: #fafafa;
 	float: right;
 	margin: 18px 20px 0 0;
@@ -634,7 +633,7 @@ dl.service {
 
 .map-list {
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 }
 
 .map-list li {
@@ -689,4 +688,21 @@ dl.service {
 
 .white-p {
 	color: #ffffff;
+	font-weight: bold;
+}
+
+.more-info-sidebar {
+	text-align: center;
+    float: right;
+    margin: 18px 20px 200px 0;
+    width: 245px;
+}
+
+.more-info-sidebar img {
+	margin-bottom: 20px;
+}
+
+.more-info-sidebar img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);	
 }
