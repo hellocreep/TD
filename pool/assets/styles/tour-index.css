@@ -9,11 +9,17 @@
 }
 
 .allpage-wrap .content {
-	margin-bottom: 105px;
+	margin-bottom: 10px;
 }
 /* @Nepal Tour */
 .nepal-color {
 	background: #bb5641;
+	background:-moz-linear-gradient(top, #bb5641, #ca7765);
+	background:-webkit-linear-gradient(top, #bb5641, #ca7765);
+	background:-o-linear-gradient(top, #bb5641, #ca7765);
+	background:-ms-linear-gradient(top, #bb5641, #ca7765);
+	background:linear-gradient(top, #bb5641, #ca7765);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb5641', endColorstr='#ca7765',GradientType=0);
 }
 .BL-color {
 	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
@@ -500,7 +506,6 @@
 .banner {
 	height: 300px;
 	position: relative;
-	margin-bottom: 10px;
 }
 
 .banner img {
@@ -520,6 +525,9 @@
 	width: 930px;
 	margin: 0px 20px;
 	float: left;
+	position: relative;
+    top: -20px;
+    z-index: 3;
 }
 .rt-col {
 	width: 245px;
@@ -530,10 +538,12 @@
 .rt-col img {
 	margin: 10px 0 0 0;
 }
+.rt-col .fancybox img {
+	margin: 0;
+}
 .rt-col .unit {
-	margin: 10px;
 	border-top: 1px dashed #ddd;
-	padding: 10px 0;
+	padding: 10px;
 }
 .expat {
 	background: #fafafa;
@@ -563,13 +573,17 @@ dl.service {
 	text-align: center;
 }
 .itinerary h4 a{
-	text-decoration:none;
 	color:#7E0122;
+}
+.itinerary h4 a:hover {
+	color: #CA0236;
+    text-decoration: none;
 }
 .itinerary li {
 	border: 1px solid #c8c8c8;
 	width: 230px;
-	min-height: 300px;
+	min-height: 250px;
+	overflow: hidden;
 	float: left;
 	margin-right: 60px;
 	background: #f0f0f0;
@@ -582,6 +596,10 @@ dl.service {
 .itinerary .img-wrap img {
 	width: 230px;
 	height: 180px;
+}
+.itinerary .img-wrap img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
 }
 
 .QA {
@@ -605,14 +623,20 @@ dl.service {
 .QA dd {
 	height: 35px;
 	margin: 10px;
-	padding: 0 0 10px 45px;
-	background: url("/imagesnew/sample/answer-icon.png") no-repeat left top;
+	padding: 0 0 10px 0px;
+	/*background: url("/imagesnew/sample/answer-icon.png") no-repeat left top;*/
 	border-bottom:1px dashed #a4956c;
 	line-height: 35px;
 }
+
+.QA dd img {
+	float: left;
+    margin: 0 5px 0 0
+}
+
 .QA dd.last{
 	border:none;
-	padding: 0 0 0 45px;
+	padding: 0;
 }	
 .check {
 	float: right;
