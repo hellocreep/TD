@@ -203,9 +203,10 @@ ul.facts li:hover {
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 0 5px #666666;
+    /*box-shadow: 0 0 5px #666666;
     -moz-box-shadow: 0 0 5px #666666;
-    -webkit-box-shadow: 0 0 5px #666666;
+    -webkit-box-shadow: 0 0 5px #666666;*/
+   border:1px solid #ddd;
     margin: 0 0 50px 2px;
     min-height: 277px;
     padding: 10px 40px;
@@ -220,6 +221,10 @@ ul.facts li:hover {
 
 .tour-block h3 a {
 	color: #7E0122;
+	font-family: Times New Roman;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .tour-block h3 a:hover {
@@ -236,8 +241,11 @@ ul.facts li:hover {
 }
 
 .tour-content img {
-	float: left;
-	height: 215px;
+	border: 1px solid #DDDDDD;
+    float: left;
+    height: 215px;
+    margin: 10px 0 0;
+    padding: 1px;
     width: 258px;
 }
 
