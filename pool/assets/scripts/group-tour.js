@@ -22,17 +22,17 @@ function schedule( target ){
 	target.each(function( index ){
 		
 				$( this ).live('click',function(){
-					var target;
+					var t;
 					if( index==1 || index==0)
 					{
-						target=0;
+						t=0;
 					}else if(index==2 || index==3)
 					{
-						target=1;
+						t=1;
 					}
 					else
 					{
-						target=2;
+						t=2;
 					}
 					var tourid=$(this).parent().attr('name');
 					var year=$(this).siblings('.schedule-year').text();
@@ -56,7 +56,7 @@ function schedule( target ){
 					}
 					if(month>=monthnow)
 					{
-						get_schedule(tourid,year,month,target);	
+						get_schedule(tourid,year,month,t);	
 					}
 				});
 			});

@@ -6,7 +6,7 @@ body {
 	background:#8C2621;
 }
 
-.themetour-bg {
+.themetour-bg-train {
 	background: url("/imagesnew/themetour/train/train-tour-bg-goth.jpg") no-repeat top center;
 }
 
@@ -170,12 +170,24 @@ ul.facts li:hover {
 }
 
 /*Expats*/
+.themetour-bg-expats {
+	background: url("/imagesnew/themetour/expats-tibet-travel-banner-goth.jpg") no-repeat top center;
+}
+
+.head-banner-expats {
+	background: url("/imagesnew/themetour/expats-tibet-travel-banner.jpg") no-repeat;
+	width: 970px;
+	height: 372px;
+	position: relative;
+}
+
 .theme-content {
-	padding: 10px 10px 0 25px;
+	padding: 10px 10px 50px 25px;
 }
 
 .theme-content ul li {
-	list-style: circle;
+	list-style: disc outside none;
+	margin-left: 13px;
 }
 
 .theme-content h1 {
@@ -217,6 +229,7 @@ ul.facts li:hover {
 	font-size: 16px;
 	margin-bottom: 10px;
 	font-family: Times New Roman;
+	font-weight: bold;
 }
 
 .tour-block h3 a {
@@ -261,12 +274,12 @@ ul.facts li:hover {
 
 .theme-btn {
 	background: #990000;
-	background:-moz-linear-gradient(top, #990000, #cc0000);
-	background:-webkit-linear-gradient(top, #990000, #cc0000);
-	background:-o-linear-gradient(top, #990000, #cc0000);
-	background:-ms-linear-gradient(top, #990000, #cc0000);
-	background:linear-gradient(top, #990000, #cc0000);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#cc0000',GradientType=0);
+	background:-moz-linear-gradient(bottom, #990000, #cc0000);
+	background:-webkit-linear-gradient(bottom, #990000, #cc0000);
+	background:-o-linear-gradient(bottom, #990000, #cc0000);
+	background:-ms-linear-gradient(bottom, #990000, #cc0000);
+	background:linear-gradient(bottom, #990000, #cc0000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#990000',GradientType=0);
 	display: block;
 	float: right;
 	padding: 10px;
@@ -276,20 +289,27 @@ ul.facts li:hover {
 	text-align: center;
 	border-radius: 3px;
 	font-weight: bold;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
 }
 
 .theme-btn:hover {
 	text-decoration: none;
 	color: #fca000;
 	background: #990000;
-	background:-moz-linear-gradient(bottom, #990000, #cc0000);
-	background:-webkit-linear-gradient(bottom, #990000, #cc0000);
-	background:-o-linear-gradient(bottom, #990000, #cc0000);
-	background:-ms-linear-gradient(bottom, #990000, #cc0000);
-	background:linear-gradient(bottom, #990000, #cc0000);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#990000',GradientType=0);
+	background:-moz-linear-gradient(top, #990000, #cc0000);
+	background:-webkit-linear-gradient(top, #990000, #cc0000);
+	background:-o-linear-gradient(top, #990000, #cc0000);
+	background:-ms-linear-gradient(top, #990000, #cc0000);
+	background:linear-gradient(top, #990000, #cc0000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#cc0000',GradientType=0);
 }
 
+.theme-btn:active {
+	position: relative;
+	top: 1px;
+}
 
 .ml-45 {
 	margin-left: 45px;

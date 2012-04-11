@@ -115,7 +115,8 @@
             var route = $( '.content h1:eq(0)' ).text();
 
             for( var i = 0; i < 11; i++ ) {
-                if( trainStation[i][4] != route && trainStation[i][4] != '1') {
+            	
+                if( trainStation[i][4] !== route && trainStation[i][4] !== '1') {
                     $('.' + trainStation[i][0]).hide()
                     $('.' + trainStation[i][0].replace('icon', 'marker')).hide();
                 }
@@ -131,10 +132,13 @@
                     $( '.marker' ).hide();
                     $( '.attraction-icons' ).hide();
                 }
+                //TODO 飞机和公路页面没有弹出框
+                /*
                 if( $( '.content[name*="flight"]' ) ||$( '.content[name*="road"]' )){
                     $( '.marker' ).hide();
                     $( '.attraction-icons' ).hide();
                 }
+                */
 
             }
         }

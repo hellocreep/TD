@@ -8,6 +8,9 @@
 	filter: alpha(opacity=80);
 }
 
+.allpage-wrap .content {
+	margin-bottom: 105px;
+}
 /* @Nepal Tour */
 .nepal-color {
 	background: #bb5641;
@@ -15,6 +18,21 @@
 .BL-color {
 	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
 }
+
+.china-color {
+	background: #ffffff;
+}
+
+.china-tour-block {
+	background: #f9f0d1;
+	background:-moz-linear-gradient(top, #f9f0d1, #fefefb);
+	background:-webkit-linear-gradient(top, #f9f0d1, #fefefb);
+	background:-o-linear-gradient(top, #f9f0d1, #fefefb);
+	background:-ms-linear-gradient(top, #f9f0d1, #fefefb);
+	background:linear-gradient(top, #f9f0d1, #fefefb);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f0d1', endColorstr='#fefefb',GradientType=0);
+}
+
 .content-head {
 	background: url("/imagesnew/sample/nepal-1.jpg") no-repeat 0 top;
 	min-height: 430px;
@@ -300,7 +318,7 @@
 	background: #ffffff;
 	min-height: 277px;
 	padding: 10px 18px;
-	margin: 0 0 20px 25px;
+	margin: 0 0 40px 25px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -482,10 +500,13 @@
 .banner {
 	height: 300px;
 	position: relative;
+	margin-bottom: 10px;
 }
 
 .banner img {
 	position: absolute;
+	height: 300px;
+	width: 100%;
 }
 
 .box-effect {
@@ -502,7 +523,6 @@
 }
 .rt-col {
 	width: 245px;
-	min-height: 600px;
 	background: #fafafa;
 	float: right;
 	margin: 18px 20px 0 0;
@@ -518,9 +538,10 @@
 .expat {
 	background: #fafafa;
 	padding: 15px;
-	width: 900px;
 	position: relative;
 	margin-bottom:40px;
+	width: 630px;
+	left: 5px;
 }
 dl.service {
 	margin: 20px 0;
@@ -536,6 +557,7 @@ dl.service {
 }
 .itinerary {
 	margin: 0 0 20px;
+	width: 645px;
 }
 .itinerary h4 {
 	text-align: center;
@@ -551,6 +573,7 @@ dl.service {
 	float: left;
 	margin-right: 60px;
 	background: #f0f0f0;
+	margin-top: 15px;
 }
 .itinerary li p {
 	margin: 8px;
@@ -562,7 +585,6 @@ dl.service {
 }
 
 .QA {
-	width: 816px;
 	background: #f0ebdd;
 	padding: 1px;
 	border-radius: 3px 3px 3px 3px;
@@ -595,4 +617,92 @@ dl.service {
 .check {
 	float: right;
 	margin: 0 10px 10px 0;
+}
+
+/*China Tibet Tour*/
+.banner h2 {
+	position: absolute;
+	font-size: 20px;
+	color: #ffffff;
+	height: 49px;
+	width: 376px;
+	left: 0;
+	line-height: 49px;
+	padding-left: 30px;
+}
+
+.map-list {
+	position: absolute;
+	bottom: 20px;
+}
+
+.map-list li {
+	float: left;
+	padding: 5px;
+	border-radius: 3px;
+	width: 170px;
+	height: 70px;
+	position: relative;
+	margin: 0 0 0 50px;
+	cursor: pointer;
+}
+
+.map-list li:hover {
+	background: #d14242;
+}
+
+.map-list li img {
+	width: 170px;
+	height: 70px;
+	box-shadow: 0 0 4px #333333;
+}
+
+.map-list li.active {
+	background: #d14242;
+}
+
+.crystal-bubble {
+	position: absolute;
+	left: 0;
+	bottom: 80px;
+	display: none;
+}
+
+.crystal-body {
+	background: url("/imagesnew/tour-index/rgba-bg.png") repeat-y center top;
+	width: 170px;
+	padding: 8px;
+	min-height: 70px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.crystal-bottom {
+	background: url("/imagesnew/tour-index/bottom-triangle.png") no-repeat center bottom;
+	height: 11px;
+}
+
+.crystal-body p {
+	margin: 0;
+}
+
+.white-p {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.more-info-sidebar {
+	text-align: center;
+    float: right;
+    margin: 18px 20px 200px 0;
+    width: 245px;
+}
+
+.more-info-sidebar img {
+	margin-bottom: 20px;
+}
+
+.more-info-sidebar img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);	
 }
