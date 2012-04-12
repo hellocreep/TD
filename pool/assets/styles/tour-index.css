@@ -644,75 +644,36 @@ dl.service {
 }
 
 /*China Tibet Tour*/
-.banner h2 {
-	position: absolute;
-	font-size: 20px;
-	color: #ffffff;
-	height: 49px;
-	width: 376px;
-	left: 0;
-	line-height: 49px;
-	padding-left: 30px;
+.ct-bg {
+	background: #fffcf1;
 }
 
-.map-list {
-	position: absolute;
-	bottom: 20px;
+.content-top {
+	padding: 25px 20px 15px 20px;	
 }
 
-.map-list li {
-	float: left;
-	padding: 5px;
-	border-radius: 3px;
-	width: 170px;
-	height: 70px;
-	position: relative;
-	margin: 0 0 0 50px;
-	cursor: pointer;
+.city-wrap {
+	margin: 0 auto 27px;
+    width: 920px;
 }
 
-.map-list li:hover {
-	background: #d14242;
+.pannel-head {
+	height: 44px;
+	background: url("/imagesnew/tour-index/c-bg-1.png") no-repeat 0 0;
 }
 
-.map-list li img {
-	width: 170px;
-	height: 70px;
-	box-shadow: 0 0 4px #333333;
+.pannel-body {
+	background: url("/imagesnew/tour-index/c-bg-2.png") repeat-y 0 0;
+	min-height: 200px;
 }
 
-.map-list li.active {
-	background: #d14242;
+.pannel-foot {
+	height: 44px;
+	background: url("/imagesnew/tour-index/c-bg-3.png") no-repeat 0 0;
 }
 
-.crystal-bubble {
-	position: absolute;
-	left: 0;
-	bottom: 80px;
-	display: none;
-}
-
-.crystal-body {
-	background: url("/imagesnew/tour-index/rgba-bg.png") repeat-y center top;
-	width: 170px;
-	padding: 8px;
-	min-height: 70px;
-	border-radius: 3px;
-	text-align: center;
-}
-
-.crystal-bottom {
-	background: url("/imagesnew/tour-index/bottom-triangle.png") no-repeat center bottom;
-	height: 11px;
-}
-
-.crystal-body p {
-	margin: 0;
-}
-
-.white-p {
-	color: #ffffff;
-	font-weight: bold;
+.city-choose {
+	margin-left: 27px;
 }
 
 .more-info-sidebar {

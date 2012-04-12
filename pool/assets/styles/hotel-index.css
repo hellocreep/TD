@@ -2,6 +2,7 @@
 	background: url(/imagesnew/hotel-index.png) no-repeat;
 	width: 680px;
 	min-height: 265px;
+	margin-bottom: 8px;
 }
 .content-head h3 {
 	color:#fff;

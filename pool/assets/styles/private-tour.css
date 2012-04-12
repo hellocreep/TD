@@ -25,6 +25,10 @@
 	background: url("/imagesnew/tour-index/private-tour-bg.png") no-repeat left top #912712;
 	padding: 10px;
 	width: 670px;
+	border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	-ms-border-radius: 4px 0 0 4px;
 }
 
 .tour-list-wrap h2 {
@@ -71,35 +75,47 @@
 .tour-list li {
 	border-bottom: 1px solid #dddddd;
 	background: url("/imagesnew/tour-index/tour-list-bg.png") repeat-x 0 0 #fff6d3;
+}
+
+.tour-list li a {
+	display: block;
 	height: 64px;
 	padding: 6px;
 }
 
-.tour-list li img {
-	width: 86px;
+.tour-list .tour-thumb {
+	width: 85px;
 	height: 55px;
 	float: left;
 	margin: 4px 15px 4px 0;
 }
 
-.tour-list li:hover {
+.tour-list li a:hover {
 	background: #f7e2ab;
+	text-decoration: none;
 }
 
 .tour-info {
 	float: left;
-	margin: 5px;
+	color: #333333;
+	width: 420px;
 }
 
-.tour-info a {
-	font-size: 14px;
+.tour-info .tour-name {
+	font-weight: bold;
+	color: #4694EC;
+	font-size; 14px;
+}
+
+.tour-info p {
+	font-size: 13px;
+	margin: 3px 0 0 0;
 }
 
 .tour-price {
 	float: right;
 	color: #f20e0e;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 15px;
 	margin: 25px;
 }
 
@@ -119,7 +135,7 @@
 	background: url("/imagesnew/tour-index/sidebar-left-bg.png") no-repeat 0 0;
 }
 
-.right-bar h2, .right-bar p {
+.right-bar h4, .right-bar p {
 	padding: 0 24px;
 }
 
@@ -142,6 +158,7 @@
 }
 
 .theme-tour {
+	*background: #FFFBEC;
 	background: #ffffff;
 	background:-moz-linear-gradient(top, #ffffff, #fff7d7);
 	background:-webkit-linear-gradient(top, #ffffff, #fff7d7);
@@ -153,8 +170,31 @@
 
 .theme-tour-list {
 	float: left;
-	margin: 16px 0 16px 16px;
+	margin: 21px 0 21px 0px;
 	position: relative;
+}
+
+.theme-tour-list:hover {
+	background: #ffffff;
+}
+
+.theme-tour-list a {
+	display:block;
+	color: #6e6e6e;
+	text-align: center;
+}
+
+.theme-tour-list a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+
+.dash-line {
+	background: none repeat scroll 0 0 #DDDDDD;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    float: left;
+    height: 1px;
+    width: 100%;
 }
 
 .theme-tour-list h3 {
@@ -168,18 +208,20 @@
 
 .theme-tour-list img {
 	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
 }
 
 .theme-tour-list img:hover {
-	opacity: 0.8;
-	filter: alpha(opacity=80);
+	opacity: 0.7;
+	filter: alpha(opacity=70);
 }
 
 .theme-tour-1 {
-	width: 205px;
+	width: 223px;
 }
 
 .theme-tour-2 {
-	width: 140px;
-	margin-left: 23px;
+	width: 167px;
 }
