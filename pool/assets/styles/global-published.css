@@ -235,6 +235,11 @@ body .right {
 .grey {
 	color: #868282;
 }
+
+.white {
+	color: #ffffff;
+}
+
 .none {
 	display: none;
 }

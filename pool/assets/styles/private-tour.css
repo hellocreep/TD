@@ -1,0 +1,185 @@
+.private-tour {
+	background: #fffcf1;
+}
+
+.content-head {
+	padding: 30px 23px;
+}
+
+.content-head h1 {
+	font-size: 24px;
+}
+
+.content-head h2 {
+	color: #333333;
+	font-size: 18px;
+}
+
+.private-block {
+	width: 930px;
+	margin: 0 20px 50px 20px;
+}
+
+.tour-list-wrap {
+	float: left;
+	background: url("/imagesnew/tour-index/private-tour-bg.png") no-repeat left top #912712;
+	padding: 10px;
+	width: 670px;
+}
+
+.tour-list-wrap h2 {
+	color: #ffffff;
+	position: relative;
+	font-size: 18px;
+	margin-bottom: 0;
+	text-indent: 1px;
+}
+
+.tour-list-wrap h3 {
+	color: #ffffff;
+	font-size: 12px;
+	margin-bottom: 7px;
+	text-indent: 1px;
+}
+
+.tour-tag {
+	display: block;
+	width: 65px;
+	height: 65px;
+	position:absolute;
+	right: -14px;
+    top: -11px;
+}
+
+.tag-hot {
+	background: url("/imagesnew/tour-index/tour-hot.png") no-repeat 0 0;
+}
+
+.tag-spe {
+	background: url("/imagesnew/tour-index/tour-special.png") no-repeat 0 0;
+}
+
+.tag-the {
+	background: url("/imagesnew/tour-index/tour-theme.png") no-repeat 0 0;
+}
+
+.tour-list {
+	border: 1px solid #dddddd;
+	border-bottom: none;
+}
+
+.tour-list li {
+	border-bottom: 1px solid #dddddd;
+	background: url("/imagesnew/tour-index/tour-list-bg.png") repeat-x 0 0 #fff6d3;
+	height: 64px;
+	padding: 6px;
+}
+
+.tour-list li img {
+	width: 86px;
+	height: 55px;
+	float: left;
+	margin: 4px 15px 4px 0;
+}
+
+.tour-list li:hover {
+	background: #f7e2ab;
+}
+
+.tour-info {
+	float: left;
+	margin: 5px;
+}
+
+.tour-info a {
+	font-size: 14px;
+}
+
+.tour-price {
+	float: right;
+	color: #f20e0e;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 25px;
+}
+
+.right-bar {
+	float: right;
+	width: 238px;
+	padding: 23px 0px 0;
+	border: 1px solid #912712;
+	position: relative;
+}
+
+.right-bar.r {
+	background: url("/imagesnew/tour-index/sidebar-right-bg.png") no-repeat 0 0;
+}
+
+.right-bar.l {
+	background: url("/imagesnew/tour-index/sidebar-left-bg.png") no-repeat 0 0;
+}
+
+.right-bar h2, .right-bar p {
+	padding: 0 24px;
+}
+
+.flower-right {
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	width: 238px;
+	background: url("/imagesnew/tour-index/flower-right.png") no-repeat 0 -8px;
+	height: 60px;
+}
+
+.flower-left {
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	width: 238px;
+	background: url("/imagesnew/tour-index/flower-left.png") no-repeat 0 0;
+	height: 60px;
+}
+
+.theme-tour {
+	background: #ffffff;
+	background:-moz-linear-gradient(top, #ffffff, #fff7d7);
+	background:-webkit-linear-gradient(top, #ffffff, #fff7d7);
+	background:-o-linear-gradient(top, #ffffff, #fff7d7);
+	background:-ms-linear-gradient(top, #ffffff, #fff7d7);
+	background:linear-gradient(top, #ffffff, #fff7d7);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fff7d7',GradientType=0);
+}
+
+.theme-tour-list {
+	float: left;
+	margin: 16px 0 16px 16px;
+	position: relative;
+}
+
+.theme-tour-list h3 {
+	position: absolute;
+	top: 0;
+	font-weight: bold;
+	color: #9f0000;
+	right: 19px;
+	font-size: 17px;
+}
+
+.theme-tour-list img {
+	border-radius: 3px;
+}
+
+.theme-tour-list img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.theme-tour-1 {
+	width: 205px;
+}
+
+.theme-tour-2 {
+	width: 140px;
+	margin-left: 23px;
+}
