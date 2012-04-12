@@ -218,7 +218,7 @@ ul.facts li:hover {
     /*box-shadow: 0 0 5px #666666;
     -moz-box-shadow: 0 0 5px #666666;
     -webkit-box-shadow: 0 0 5px #666666;*/
-   border:1px solid #ddd;
+    border:1px solid #ddd;
     margin: 0 0 50px 2px;
     min-height: 277px;
     padding: 10px 40px;
@@ -228,6 +228,7 @@ ul.facts li:hover {
 .tour-block h3 {
 	font-size: 16px;
 	margin-bottom: 10px;
+	margin-top:20px;
 	font-family: Times New Roman;
 	font-weight: bold;
 }
