@@ -1,44 +1,40 @@
 .fancybox {
 	cursor: pointer;
-    display: block;
-    position: relative;
+	display: block;
+	position: relative;
 }
 .fancybox img:hover {
 	opacity: 0.8;
 	filter: alpha(opacity=80);
 }
-
 .allpage-wrap .content {
 	margin-bottom: 10px;
 }
 /* @Nepal Tour */
 .nepal-color {
 	background: #bb5641;
-	background:-moz-linear-gradient(top, #bb5641, #ca7765);
-	background:-webkit-linear-gradient(top, #bb5641, #ca7765);
-	background:-o-linear-gradient(top, #bb5641, #ca7765);
-	background:-ms-linear-gradient(top, #bb5641, #ca7765);
-	background:linear-gradient(top, #bb5641, #ca7765);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb5641', endColorstr='#ca7765',GradientType=0);
+	background: -moz-linear-gradient(top, #bb5641, #ca7765);
+	background: -webkit-linear-gradient(top, #bb5641, #ca7765);
+	background: -o-linear-gradient(top, #bb5641, #ca7765);
+	background: -ms-linear-gradient(top, #bb5641, #ca7765);
+	background: linear-gradient(top, #bb5641, #ca7765);
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#bb5641', endColorstr='#ca7765',GradientType=0);
 }
 .BL-color {
 	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
 }
-
 .china-color {
 	background: #ffffff;
 }
-
 .china-tour-block {
 	background: #f9f0d1;
-	background:-moz-linear-gradient(top, #f9f0d1, #fefefb);
-	background:-webkit-linear-gradient(top, #f9f0d1, #fefefb);
-	background:-o-linear-gradient(top, #f9f0d1, #fefefb);
-	background:-ms-linear-gradient(top, #f9f0d1, #fefefb);
-	background:linear-gradient(top, #f9f0d1, #fefefb);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f0d1', endColorstr='#fefefb',GradientType=0);
+	background: -moz-linear-gradient(top, #f9f0d1, #fefefb);
+	background: -webkit-linear-gradient(top, #f9f0d1, #fefefb);
+	background: -o-linear-gradient(top, #f9f0d1, #fefefb);
+	background: -ms-linear-gradient(top, #f9f0d1, #fefefb);
+	background: linear-gradient(top, #f9f0d1, #fefefb);
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#f9f0d1', endColorstr='#fefefb',GradientType=0);
 }
-
 .content-head {
 	background: url("/imagesnew/sample/nepal-1.jpg") no-repeat 0 top;
 	min-height: 430px;
@@ -53,11 +49,9 @@
 .content-words h1 {
 	color: #ffffff;
 }
-
 .goup-tour {
 	border: 5px solid #FFD8A0;
 }
-
 .tour-intro {
 	width: 282px;
 	float: right;
@@ -73,68 +67,63 @@
 	opacity: 0.8;
 	filter: alpha(opacity=80);
 }
-
 .funny-font {
 	font-family: verdana;
 	color: #8c2621;
 	font-size: 15px;
 }
-
 .tour-num {
-    background: url("/imagesnew/bg-circle.png") no-repeat scroll 0 0 transparent;
-    color: #BF473F;
-    display: block;
-    font-size: 15px;
-    font-weight: bold;
-    height: 62px;
-    left: -14px;
-    position: absolute;
-    text-align: center;
-    top: -15px;
-    width: 61px;
-    padding-top: 24px;
-}
-
-.tour-info {
-    float: left;
-    width: 300px;
-}
-
-.group-tour-price {
-    background: url("/imagesnew/bg-arrow-left.png") no-repeat scroll 20px 0 transparent;
-    color: #FFFFFF;
-    font-family: Times New Roman;
-    font-size: 20px;
-    line-height: 64px;
-    margin-left: -35px;
-    position: relative;
-    text-indent: 48px;
-    width: 375px;
-    z-index: 3;
-}
-
-.group-tour-price .check-detail {
-    background: url("/imagesnew/buyit.png") no-repeat;
+	background: url("/imagesnew/bg-circle.png") no-repeat scroll 0 0 transparent;
+	color: #BF473F;
 	display: block;
-	*display: inline;
+	font-size: 15px;
+	font-weight: bold;
+	height: 62px;
+	left: -14px;
+	position: absolute;
+	text-align: center;
+	top: -15px;
+	width: 61px;
+	padding-top: 24px;
+}
+.tour-info {
+	float: left;
+	width: 300px;
+}
+.group-tour-price {
+	background: url("/imagesnew/bg-arrow-left.png") no-repeat scroll 20px 0 transparent;
+	color: #FFFFFF;
+	font-family: Times New Roman;
+	font-size: 20px;
+	line-height: 64px;
+	margin-left: -35px;
+	position: relative;
+	text-indent: 48px;
+	width: 375px;
+	z-index: 3;
+}
+.group-tour-price .check-detail {
+	background: url("/imagesnew/buyit.png") no-repeat;
+	display: block;
+	*
+	display: inline;
 	float: right;
-	*float: none;
+	*
+	float: none;
 	width: 124px;
-	font-size:16px;
+	font-size: 16px;
 	height: 36px;
 	text-indent: 0;
 	margin: 14px 45px 0 0;
 	text-align: center;
 	line-height: 36px;
 	color: #333333;
-	font-weight:bold;
+	font-weight: bold;
 }
-
 .group-tour-price .check-detail:hover {
 	color: #ffffff;
 	text-decoration: none;
 }
-
 .schedule-wrap {
 	display: none;
 	background: #f6f1f1;
@@ -299,26 +288,22 @@
 	color: #8d2622;
 	font-weight: bold;
 }
-
 .group-tour-price .price-detail {
 	height: 70px;
 	margin-left: 35px;
 	margin-top: -1px;
 	width: 282px;
-	text-indent:0;
+	text-indent: 0;
 	border: 1px solid #dddddd;
 }
-
 .group-tour-price .price-detail li {
 	float: left;
-    text-align: center;
-    width: 33%;
+	text-align: center;
+	width: 33%;
 }
-
-.group-price-detail p{
-	font-size:15px;
+.group-price-detail p {
+	font-size: 15px;
 }
-
 .tour-block {
 	position: relative;
 	background: #ffffff;
@@ -368,14 +353,13 @@
 }
 .tour-hot {
 	background: url("/imagesnew/tour-hot.png") no-repeat scroll 0 0 transparent;
-    display: block;
-    height: 60px;
-    position: absolute;
-    right: -23px;
-    top: -12px;
-    width: 68px;
-    display: none;
-
+	display: block;
+	height: 60px;
+	position: absolute;
+	right: -23px;
+	top: -12px;
+	width: 68px;
+	display: none;
 }
 .tour-style {
 
@@ -398,12 +382,10 @@
 	width: 280px;
 	height: 210px;
 }
-
 .tour-content .img-wrap img:hover {
 	opacity: 0.8;
 	filter: alpha(opacity=80);
 }
-
 .tour-price {
 	font-family: Times New Roman;
 	color: #f50000;
@@ -491,7 +473,6 @@
 .wide-foot .btn-enquiry a {
 	text-indent: 6px;
 }
-
 .zoom {
 	position: absolute;
 	right: 15px;
@@ -501,19 +482,16 @@
 	background: url(/imagesnew/aboutus/zoom-more.gif) no-repeat;
 	display: block;
 }
-
 /* @Beijing-Lhasa Tour */
 .banner {
 	height: 300px;
 	position: relative;
 }
-
 .banner img {
 	position: absolute;
 	height: 300px;
 	width: 100%;
 }
-
 .box-effect {
 	border-radius: 3px 3px 3px 3px;
 	box-shadow: 0 0 5px #666666;
@@ -526,8 +504,8 @@
 	margin: 0px 20px;
 	float: left;
 	position: relative;
-    top: -20px;
-    z-index: 3;
+	top: -20px;
+	z-index: 3;
 }
 .rt-col {
 	width: 245px;
@@ -549,7 +527,7 @@
 	background: #fafafa;
 	padding: 15px;
 	position: relative;
-	margin-bottom:40px;
+	margin-top: 20px;
 	width: 630px;
 	left: 5px;
 }
@@ -571,47 +549,51 @@ dl.service {
 }
 .itinerary h4 {
 	text-align: center;
+	padding: 0 10px;
+	width: 186px;
 }
-.itinerary h4 a{
-	color:#7E0122;
+.itinerary h4 a {
+	color: #434343;
+	font-size: 14px;
 }
 .itinerary h4 a:hover {
 	color: #CA0236;
-    text-decoration: none;
+	text-decoration: none;
 }
 .itinerary li {
-	border: 1px solid #c8c8c8;
-	width: 230px;
-	min-height: 250px;
-	overflow: hidden;
+	border: 1px solid #FAFAFA;
+	background: #FAFAFA;
 	float: left;
-	margin-right: 60px;
-	background: #f0f0f0;
-	margin-top: 15px;
+	margin: 10px 20px 0 0;
+	padding: 10px;
+	overflow: hidden;
 }
-.itinerary li p {
-	margin: 8px;
+.itinerary li:hover {
+	background: none repeat scroll 0 0 #F0F0F0;
+	border: 1px solid #C8C8C8;
 }
-
 .itinerary .img-wrap img {
-	width: 230px;
-	height: 180px;
+	width: 208px;
+	height: 143px;
+	padding: 1px;
 }
 .itinerary .img-wrap img:hover {
 	opacity: 0.8;
 	filter: alpha(opacity=80);
 }
-
+.itinerary li p {
+	margin: 8px;
+}
 .QA {
 	background: #f0ebdd;
 	padding: 1px;
 	border-radius: 3px 3px 3px 3px;
 	margin: 20px 0;
 }
-.expat h3{
-	border-top:1px dashed #ddd;
-	width:816px;
-	padding:15px 0 0 0 ;
+.expat h3 {
+	border-top: 1px dashed #ddd;
+	width: 816px;
+	padding: 15px 0 0 0;
 }
 .QA dt {
 	height: 35px;
@@ -625,69 +607,57 @@ dl.service {
 	margin: 10px;
 	padding: 0 0 10px 0px;
 	/*background: url("/imagesnew/sample/answer-icon.png") no-repeat left top;*/
-	border-bottom:1px dashed #a4956c;
+	border-bottom: 1px dashed #a4956c;
 	line-height: 35px;
 }
-
 .QA dd img {
 	float: left;
-    margin: 0 5px 0 0
+	margin: 0 5px 0 0
 }
-
-.QA dd.last{
-	border:none;
+.QA dd.last {
+	border: none;
 	padding: 0;
-}	
+}
 .check {
 	float: right;
 	margin: 0 10px 10px 0;
 }
-
 /*China Tibet Tour*/
 .ct-bg {
 	background: #fffcf1;
 }
-
 .content-top {
-	padding: 25px 20px 15px 20px;	
+	padding: 25px 20px 15px 20px;
 }
-
 .city-wrap {
 	margin: 0 auto 27px;
-    width: 920px;
+	width: 920px;
 }
-
 .pannel-head {
 	height: 44px;
 	background: url("/imagesnew/tour-index/c-bg-1.png") no-repeat 0 0;
 }
-
 .pannel-body {
 	background: url("/imagesnew/tour-index/c-bg-2.png") repeat-y 0 0;
 	min-height: 200px;
 }
-
 .pannel-foot {
 	height: 44px;
 	background: url("/imagesnew/tour-index/c-bg-3.png") no-repeat 0 0;
 }
-
 .city-choose {
 	margin-left: 27px;
 }
-
 .more-info-sidebar {
 	text-align: center;
-    float: right;
-    margin: 18px 20px 200px 0;
-    width: 245px;
+	float: right;
+	margin: 18px 20px 200px 0;
+	width: 245px;
 }
-
 .more-info-sidebar img {
 	margin-bottom: 20px;
 }
-
 .more-info-sidebar img:hover {
 	opacity: 0.8;
-	filter: alpha(opacity=80);	
+	filter: alpha(opacity=80);
 }
