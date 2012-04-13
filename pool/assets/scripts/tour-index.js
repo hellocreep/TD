@@ -16,18 +16,6 @@
 		}, delay );
 	}
 	
-	//China Tibet Tour 图片轮播
-	function slideshow(){
-		$( '.map-list li' ).each(function( index ){
-			$( this ).hover(function(){
-				$( this ).children( '.crystal-bubble' ).fadeIn();
-				$( this ).addClass( 'active' ).siblings().removeClass( 'active' );
-				$( '.banner > img' ).eq( index ).fadeIn().siblings( 'img' ).hide();
-			},function(){
-				$( this ).children( '.crystal-bubble' ).fadeOut();
-			});
-		});
-	}
 	//Tibet Tour Tab Change
 	function tabChange( target ){
 	    var t = $( target );
@@ -46,11 +34,6 @@ $(function(){
 	
 	//判断China tour 或者其他页面 来更改样式
 	if( $('.allpage-wrap').attr('name')=='china'){
-		$( '.expat' ).hide();
-		$( '.crystal-bubble' ).eq( 0 ).show();
-		$( '.banner > img:not(:first)' ).hide();
-		slideshow();
-		$( '.allpage-wrap' ).removeClass( 'BL-color' ).addClass( 'china-color' );
 		$( '.tour-block' ).css( 'background','url(/imagesnew/tour-index/bg-tour.png) repeat-x 0 0 #ffffff');
 	}else{
 		mainautoshow( '.banner',1000,2000,5000);

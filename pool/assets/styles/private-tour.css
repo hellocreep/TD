@@ -136,7 +136,11 @@
 }
 
 .right-bar h4, .right-bar p {
-	padding: 0 24px;
+	padding: 0 15px;
+}
+
+.right-bar p {
+	margin: 6px 0;
 }
 
 .flower-right {
