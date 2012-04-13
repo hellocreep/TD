@@ -668,6 +668,7 @@ dl.service {
 .city-detail {
 	margin-right: 10px;
 	width: 620px;
+	display: none;
 }
 
 .why-get {
