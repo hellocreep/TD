@@ -20,6 +20,11 @@
 	line-height: 30px;
 	padding-left: 23px;
 }
+.tour-name
+{
+	float:left;
+	width:500px;
+}
 .tour-info h1 img {
 	float: left;
 	margin-right: 5px;
