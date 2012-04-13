@@ -235,11 +235,9 @@ body .right {
 .grey {
 	color: #868282;
 }
-
 .white {
 	color: #ffffff;
 }
-
 .none {
 	display: none;
 }
@@ -248,11 +246,10 @@ body .right {
 }
 .list-num {
 	color: #7D7D74;
-    font-size: 16px;
-    font-weight: bold;
-    padding-right: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	padding-right: 5px;
 }
-
 /* PAGER */
 #pager {
 	text-align: center;
@@ -325,22 +322,18 @@ body .right {
 }
 /* CONTENT */
 
-
 .content {
 	width: 682px;
 	float: right;
 	margin-top: 18px;
 	margin-right: 22px;
 }
-
 .allpage-wrap .content {
-    margin-right: 0px;
+	margin-right: 0px;
 }
-
 .content ol li {
-    margin: 11px 0;
+	margin: 11px 0;
 }
-
 .content .content-h2, content-h3 {
 	margin: 20px 0 6px 0;
 }
@@ -528,7 +521,6 @@ body .right {
 	text-decoration: none;
 	background: #333;
 }
-
 .slide-menu {
 	display: none;
 	background: none repeat scroll 0 0 #FAFAFA;
@@ -541,7 +533,6 @@ body .right {
 	top: 36px;
 	z-index: 100;
 }
-
 .slide-menu:after {
 	content: '';
 	display: block;
@@ -549,40 +540,33 @@ body .right {
 	height: 0;
 	clear: both;
 }
-
 .slide-menu ul {
 	float: left;
 }
-
 .slide-menu ul li {
 	border-top: 1px dashed #CCCCCC;
-    height: 60px;
-    line-height: 60px;
+	height: 60px;
+	line-height: 60px;
 }
-
 .slide-menu ul li a {
 	color: #2368C7;
-    display: block;
-    text-decoration: none;
-    width: 200px;
+	display: block;
+	text-decoration: none;
+	width: 200px;
 }
-
 .slide-menu ul li img {
 	border: 2px solid #FFFFFF;
-    float: left;
-    margin: 3px 8px 3px 5px;
+	float: left;
+	margin: 3px 8px 3px 5px;
 }
-
 .slide-menu ul li a:hover {
 	background: none repeat scroll 0 0 #990100;
 	color: #FFFFFF;
 	text-decoration: none;
 }
-
 .slide-travel-guide {
 	width: 200px;
 }
-
 #travelStyle {
 	-moz-border-bottom-colors: none;
 	-moz-border-image: none;
@@ -845,7 +829,7 @@ body .right {
 }
 .sidebar-pic {
 	height: 148px;
-	width:240px
+	width: 240px
 }
 .nav-left li a {
 	color: #434343;
@@ -878,7 +862,8 @@ body .right {
 	height: 33px;
 	line-height: 33px;
 	width: 253px;
-	*width: 233px;
+	*
+	width: 233px;
 }
 ul.subnav a.active {
 	color: #7E0122;
@@ -933,40 +918,34 @@ ul.subnav a.active {
 .icon-navRight {
 	margin-left: 30px;
 }
-
-.sidebar-resource h2{
-    background: url("/imagesnew/hotel-leftbar-h2bg.png") no-repeat scroll 0 0 transparent;
-    color: #FFFFFF;
-    font-size: 15px;
-    height: 30px;
-    line-height: 30px;
-    margin-bottom: 0;
-    padding-left: 15px;
+.sidebar-resource h2 {
+	background: url("/imagesnew/hotel-leftbar-h2bg.png") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	font-size: 15px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 0;
+	padding-left: 15px;
 }
-
 .sidebar-resource ul {
-    list-style: none outside none;
-    padding: 5px 5px 5px 15px;
+	list-style: none outside none;
+	padding: 5px 5px 5px 15px;
 }
-
 .sidebar-resource ul li {
-    background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
-    margin-top: 5px;
-    padding-left: 15px;
-    text-indent: -10px;
+	background: url("/imagesnew/nav-dot.png") no-repeat scroll left center transparent;
+	margin-top: 5px;
+	padding-left: 15px;
+	text-indent: -10px;
 }
-
 .sidebar-resource ul li a {
-    height: 25px;
-    line-height: 25px;
-    font-size: 13px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
 }
-
 .sidebar-resource .select {
-    color: #7E0122;
-    font-weight: bold;
+	color: #7E0122;
+	font-weight: bold;
 }
-
 /*左侧弹出框*/
 
 .poptips {
@@ -1027,8 +1006,8 @@ ul.subnav a.active {
 	margin-top: 40px;
 }
 .departures h2 {
-    padding-left: 13px;
-	margin-bottom:5px;
+	padding-left: 13px;
+	margin-bottom: 5px;
 	font-size: 18px;
 	line-height: 22px;
 }
@@ -1043,17 +1022,15 @@ ul.subnav a.active {
 	padding: 5px 0px 0px;
 	margin-left: 10px;
 }
-#departures-monthly .departure-month .old
-{
+#departures-monthly .departure-month .old {
 	border: 1px solid #D6D6D6;
 	border-radius: 3px 3px 3px 3px;
 	display: block;
 	padding: 4px;
 	width: 2.5em;
-	color:#ccc;
+	color: #ccc;
 }
-#departures-monthly .departure-month .old:hover
-{
+#departures-monthly .departure-month .old:hover {
 	text-decoration: none;
 	border: 1px solid #D6D6D6;
 	box-shadow: 2px 2px 2px #DDD;
@@ -1105,7 +1082,7 @@ ul.subnav a.active {
 	margin-left: 40px;
 }
 .btn-enquiry {
-    display: block;
+	display: block;
 	float: right;
 	margin: 7px 30px 0 0;
 }
@@ -1124,10 +1101,9 @@ ul.subnav a.active {
 	text-decoration: none;
 	background: url(/imagesnew/btn.png) no-repeat -301px -161px #D94343;
 }
-
 /* 新的按钮可根据内容撑开*/
 .btn-enquirys {
-    display: block;
+	display: block;
 	float: right;
 	margin: 7px 30px 0 0;
 }
@@ -1139,12 +1115,16 @@ ul.subnav a.active {
 	line-height: 43px;
 	font-weight: bold;
 	font-size: 16px;
-	padding:0 10px;
-	border-radius:3px;
+	padding: 0 10px;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	behavior: url(PIE.htc);
 }
-.btn-enquirys a img{
-	float: right;
-    margin: 13px 0 0 10px;
+.btn-enquirys a img {
+	padding: 0 0 0 10px;
+    position: relative;
+    top: 4px;
 }
 .btn-enquirys a:hover {
 	text-decoration: none;
@@ -1242,85 +1222,83 @@ a.reco-click:hover {
 
 /*延用老页面的一些全局样式*/
 .mt30 {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 .box3 {
-    background: none repeat scroll 0 0 #F6F6F6;
-    border: 2px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
-    padding: 10px;
+	background: none repeat scroll 0 0 #F6F6F6;
+	border: 2px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	padding: 10px;
 }
 .box3 p {
-    font-size: 1.2em;
-    font-weight: 700;
+	font-size: 1.2em;
+	font-weight: 700;
 }
 .ml8 {
-    margin-left: 8px;
+	margin-left: 8px;
 }
 .fright {
-    float: right;
+	float: right;
 }
 .btn_tailor {
-    background-image: url("../img/btn_tailormade.gif");
-    background-repeat: no-repeat;
-    display: block;
-    height: 35px;
-    line-height: 200px;
-    overflow: hidden;
-    width: 267px;
+	background-image: url("../img/btn_tailormade.gif");
+	background-repeat: no-repeat;
+	display: block;
+	height: 35px;
+	line-height: 200px;
+	overflow: hidden;
+	width: 267px;
 }
 .btn-tailor:hover {
-    background-position: 0 -35px;
+	background-position: 0 -35px;
 }
-
 .photoblock {
-    text-align: center;
-    list-style: none outside none;
+	text-align: center;
+	list-style: none outside none;
 }
 .photoblock li {
-    float: left;
-    text-align: center;
+	float: left;
+	text-align: center;
 }
 .photoblock li.c1 {
-    padding: 10px;
-    width: 650px;
+	padding: 10px;
+	width: 650px;
 }
 .photoblock li.c2 {
-    padding: 10px 42px;
-    width: 254px;
+	padding: 10px 42px;
+	width: 254px;
 }
 .photoblock a img {
-    border: 1px solid #CCCCCC;
-    padding: 1px;
+	border: 1px solid #CCCCCC;
+	padding: 1px;
 }
 .photoblock a:hover img {
-    background: none repeat scroll 0 0 #FBB017;
+	background: none repeat scroll 0 0 #FBB017;
 }
-
 .tableu {
-    border: medium none;
-    border-collapse: collapse;
-    font-size: 13px;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
+	border: medium none;
+	border-collapse: collapse;
+	font-size: 13px;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
 }
 .tableu th {
-    background: none repeat scroll 0 0 #E7E7E7;
-    border: 2px solid #FFFFFF;
-    padding: 4px;
+	background: none repeat scroll 0 0 #E7E7E7;
+	border: 2px solid #FFFFFF;
+	padding: 4px;
 }
 .tableu td {
-    background: none repeat scroll 0 0 #F6F6F6;
-    border: 2px solid #FFFFFF;
-    padding: 4px;
+	background: none repeat scroll 0 0 #F6F6F6;
+	border: 2px solid #FFFFFF;
+	padding: 4px;
 }
 .box05 {
-    float: left;
-    margin: 0;
-    padding: 0 10px 30px;
-    width: 320px;
+	float: left;
+	margin: 0;
+	padding: 0 10px 30px;
+	width: 320px;
 }
 .box05 p:first-letter {
-    font-size: 1.6em;
+	font-size: 1.6em;
 }
