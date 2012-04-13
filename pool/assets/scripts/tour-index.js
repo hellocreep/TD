@@ -37,6 +37,7 @@ $(function(){
 		$( '.tour-block' ).css( 'background','url(/imagesnew/tour-index/bg-tour.png) repeat-x 0 0 #ffffff');
 		$( '.city-choose li' ).each(function( index ){
     		$( this ).click(function(){
+    			$( this ).addClass( 'active' ).siblings().removeClass( 'active' );
         		$( '.city-detail' ).hide().eq( index ).show();
     		});
 		});
