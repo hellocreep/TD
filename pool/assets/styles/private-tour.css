@@ -3,7 +3,7 @@
 }
 
 .content-head {
-	padding: 30px 23px;
+	padding: 30px 23px 15px;
 }
 
 .content-head h1 {
@@ -174,12 +174,15 @@
 
 .theme-tour-list {
 	float: left;
-	margin: 21px 0 21px 0px;
+	margin: 21px 0 21px 8px;
 	position: relative;
+	padding: 1px;
 }
 
 .theme-tour-list:hover {
 	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	padding: 0;
 }
 
 .theme-tour-list a {
@@ -211,6 +214,8 @@
 }
 
 .theme-tour-list img {
+	border: 1px solid #DDDDDD;
+	padding: 1px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -223,9 +228,10 @@
 }
 
 .theme-tour-1 {
-	width: 223px;
+	width: 210px;
 }
 
 .theme-tour-2 {
-	width: 167px;
+	width: 148px;
+	margin-left: 14px;
 }
