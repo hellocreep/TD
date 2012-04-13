@@ -338,7 +338,7 @@ body .right {
 }
 
 .content ol li {
-    margin-top: 11px;
+    margin: 11px 0;
 }
 
 .content .content-h2, content-h3 {
