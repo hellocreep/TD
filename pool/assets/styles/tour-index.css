@@ -521,7 +521,7 @@
 }
 .rt-col .unit {
 	border-top: 1px dashed #ddd;
-	padding: 10px;
+	padding: 4px;
 }
 .expat {
 	background: #fafafa;
@@ -575,7 +575,7 @@ dl.service {
     background:#ffffff;
     height: 150px;
     padding: 1px;
-    width: 186px;
+    width: 184px;
     height:130px;
 }
 .itinerary .img-wrap img:hover {
@@ -622,7 +622,8 @@ dl.service {
 }
 /*China Tibet Tour*/
 .ct-bg {
-	background: #fffcf1;
+	background: url("/imagesnew/yellow-white-bg.png") repeat-x scroll 0 0 #FFFFFF;
+	/*background: #fffcf1;*/
 }
 .content-top {
 	padding: 25px 20px 15px 20px;
@@ -634,6 +635,15 @@ dl.service {
 .pannel-head {
 	height: 44px;
 	background: url("/imagesnew/tour-index/c-bg-1.png") no-repeat 0 0;
+    font-family: times New Roman;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    height: 44px;
+    line-height: 34px;
+    text-align: center;
+    color:#7E0122;
+	
 }
 .pannel-body {
 	background: url("/imagesnew/tour-index/c-bg-2.png") repeat-y 0 0;
@@ -670,9 +680,22 @@ dl.service {
 	width: 620px;
 	display: none;
 }
+.city-detail h3{
+	color:#434343;
+}
+.note{
+	clear:both;
+	margin: 0 50px;
+    padding: 20px 0 0;
+}
+
+.note strong{
+	color:red;
+}
 
 .why-get {
 	margin-bottom: 20px;
+	margin-top:12px;
 }
 
 .why-get li {
@@ -682,7 +705,7 @@ dl.service {
 
 .why-get li img {
 	float: left;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .city-tour-list {

@@ -225,6 +225,7 @@ body .left {
 }
 body .right {
 	float: right;
+	margin-top: 10px;
 }
 .red {
 	color: #c73838;
@@ -440,7 +441,7 @@ body .right {
 	height: 35px;
 	list-style-type: none;
 	position: relative;
-	width: 1000px;
+	width: 1100px;
 	z-index: 210;
 	float: left;
 	margin-top: 24px;
