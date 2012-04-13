@@ -544,17 +544,16 @@ dl.service {
 	padding: 2px 0 2px 20px;
 }
 .itinerary {
-	margin: 0 0 20px;
 	width: 645px;
 }
 .itinerary h4 {
 	text-align: center;
-	padding: 0 10px;
-	width: 186px;
+	padding: 0 5px;
+	width: 170px;
 }
 .itinerary h4 a {
 	color: #434343;
-	font-size: 14px;
+	font-size: 13px;
 }
 .itinerary h4 a:hover {
 	color: #CA0236;
@@ -564,7 +563,6 @@ dl.service {
 	border: 1px solid #FAFAFA;
 	background: #FAFAFA;
 	float: left;
-	margin: 10px 20px 0 0;
 	padding: 10px;
 	overflow: hidden;
 }
@@ -573,9 +571,12 @@ dl.service {
 	border: 1px solid #C8C8C8;
 }
 .itinerary .img-wrap img {
-	width: 208px;
-	height: 143px;
-	padding: 1px;
+    border: 1px solid #DDDDDD;
+    background:#ffffff;
+    height: 150px;
+    padding: 1px;
+    width: 186px;
+    height:130px;
 }
 .itinerary .img-wrap img:hover {
 	opacity: 0.8;
@@ -585,9 +586,8 @@ dl.service {
 	margin: 8px;
 }
 .QA {
-	background: #f0ebdd;
+	/*background: #f0ebdd;*/
 	padding: 1px;
-	border-radius: 3px 3px 3px 3px;
 	margin: 20px 0;
 }
 .expat h3 {
@@ -603,12 +603,10 @@ dl.service {
 	line-height: 35px;
 }
 .QA dd {
-	height: 35px;
-	margin: 10px;
-	padding: 0 0 10px 0px;
-	/*background: url("/imagesnew/sample/answer-icon.png") no-repeat left top;*/
-	border-bottom: 1px dashed #a4956c;
-	line-height: 35px;
+	height: 24px;
+    line-height: 28px;
+    margin: 10px;
+    padding: 0 0 10px 0;
 }
 .QA dd img {
 	float: left;
@@ -735,9 +733,6 @@ dl.service {
 }
 .more-info-sidebar {
 	text-align: center;
-	float: right;
-	margin: 18px 20px 200px 0;
-	width: 245px;
 }
 .more-info-sidebar img {
 	margin-bottom: 20px;

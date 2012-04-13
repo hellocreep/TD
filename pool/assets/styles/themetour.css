@@ -312,3 +312,46 @@ ul.facts li:hover {
 .ml-45 {
 	margin-left: 45px;
 }
+
+.itinerary h4 {
+	text-align: center;
+	padding: 0 5px;
+	width: 170px;
+}
+.itinerary h4 a {
+	color: #434343;
+	font-size: 13px;
+}
+.itinerary h4 a:hover {
+	color: #CA0236;
+	text-decoration: none;
+}
+.itinerary li {
+	border: 1px solid #FAFAFA;
+	float: left;
+	padding: 10px;
+	overflow: hidden;
+}
+.itinerary li:hover {
+	background: none repeat scroll 0 0 #F0F0F0;
+	border: 1px solid #C8C8C8;
+}
+.itinerary .img-wrap img {
+    border: 1px solid #DDDDDD;
+    background:#ffffff;
+    height: 150px;
+    padding: 1px;
+    width: 186px;
+    height:130px;
+}
+.itinerary .img-wrap img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.itinerary li p {
+	margin: 8px;
+}
+
+.author-list ul li{
+	list-style-type:none;
+}
