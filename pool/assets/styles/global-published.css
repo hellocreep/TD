@@ -1418,17 +1418,23 @@ a.reco-click:hover {
 	margin:5px 0 0 5px;
 	font-size:13px;
 	border:none;
-	color:#434343;
+	color:#7E0122;
 	background:none;
 	font-weight:bold;
-	background:url("/imagesnew/nav-tips.png") no-repeat left center;
 	padding-left:15px;
 }
+
 .nav-new .last a:hover{
-	background:url("/imagesnew/nav-tips.png") no-repeat left center;
+	color:#434343;
 }
-.nav-new .last a:first-child{
+.nav-new .last a.guide,.nav-new .last a.guide:hover {
 	background:url("/imagesnew/nav-guide.png") no-repeat left center;
+
+}
+
+.nav-new .last a.tips,.nav-new .last a.tips:hover{
+	background:url("/imagesnew/nav-tips.png") no-repeat left center;
+
 }
 .nav-new .last a span{
 	height:29px;
@@ -1522,4 +1528,33 @@ a.reco-click:hover {
 	border: 2px solid #FFFFFF;
 	float: left;
 	margin: 3px 8px 3px 5px;
+}
+#sidenav{
+	display: none;
+	z-index:55;
+	position: absolute;
+	left:5px;
+	top:31px;
+	background:url("/imagesnew/legend.gif") no-repeat center top #EBEDEA;
+	width:100px;
+	text-align:center;
+	padding:5px 0 0 0 ;
+}
+#sidenav li{
+	background:none;
+	float: left;
+	display: block;
+	clear: both;
+	padding:0;
+	margin:0;
+}
+#sidenav li a{
+	padding:0;
+	margin:0;
+	width:100px;
+	color:#434343;
+}
+#sidenav li a:hover{
+	background:none;
+	color:#7E0122;
 }

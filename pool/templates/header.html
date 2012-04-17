@@ -29,7 +29,7 @@
                         </div> </span>
                 </li>
                 <li>
-                    <a class="custom muti-li" href="#">Customize a Tour</a>
+                    <a class="custom" href="#">Customize a Tour</a>
                     <a class="contact" href="#">Contact us</a>
                 </li>
             </ul>
@@ -45,7 +45,11 @@
                 $(this).children('a').css({"position":"static"});
             });    
 
-            $()           
+            $('.last').hover(function(){
+                $(this).children('#sidenav').slideDown();
+            },function(){
+                $(this).children('#sidenav').hide();
+            })           
         });
             
         </script>
@@ -147,10 +151,21 @@
                 <li>
                     <a href="#">About Us</a>
                 </li>
-                <li class="last">
-                    <a href="#">TIBET GUIDE</a>
-                    <a href="#">TRAVEL TIPS</a>
+                 <li class="last">
+                    <a href="#" class="tips">TRAVEL TIPS</a>
                 </li>
+                <li class="last">
+                    <a href="#" class="guide">TIBET GUIDE</a>
+                    <ul id="sidenav">
+                        <li><a href="">Lhasa</a></li>
+                        <li><a href="">Kathmandu</a></li>
+                        <li><a href="">Gyantse</a></li>
+                        <li><a href="">Shigatse</a></li>
+                        <li><a href="">Tingri</a></li>
+                    </ul>       
+                </li>
+               
+
             </ul>
 
         </div>
