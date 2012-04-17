@@ -21,7 +21,7 @@
 	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#bb5641', endColorstr='#ca7765',GradientType=0);
 }
 .BL-color {
-	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 340px;
+	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 247px;
 }
 .china-color {
 	background: #ffffff;
@@ -484,21 +484,19 @@
 }
 /* @Beijing-Lhasa Tour */
 .banner {
-	height: 300px;
+	height: 247px;
 	position: relative;
 }
 .banner img {
 	position: absolute;
-	height: 300px;
+	height: 247px;
 	width: 100%;
 }
 .box-effect {
 	border-radius: 3px 3px 3px 3px;
 	box-shadow: 0 0 5px #666666;
 }
-.BL-color {
-	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 300px;
-}
+
 .one-col {
 	width: 930px;
 	margin: 0px 20px;
@@ -506,6 +504,7 @@
 	position: relative;
 	top: -20px;
 	z-index: 3;
+	margin-top:20px;
 }
 .rt-col {
 	width: 245px;
@@ -603,10 +602,9 @@ dl.service {
 	line-height: 35px;
 }
 .QA dd {
-	height: 24px;
-    line-height: 28px;
+	
     margin: 10px;
-    padding: 0 0 10px 0;
+    padding: 0;
 }
 .QA dd img {
 	float: left;

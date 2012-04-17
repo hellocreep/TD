@@ -430,6 +430,7 @@ body .right {
 	padding: 3px;
 	width: 155px;
 	height: auto;
+	cursor:pointer;
 }
 .form-question {
 	height: 55px;
@@ -1303,3 +1304,141 @@ a.reco-click:hover {
 .box05 p:first-letter {
 	font-size: 1.6em;
 }
+
+
+/*------ 新版导航样式------*/
+#nav-div{
+	width:970px;
+	height:34px;
+	float: left;
+	margin:24px  0 0 0;
+}
+.nav{
+	widht:970px;
+	height:35px;
+}
+.nav li{
+	display: block;
+	float: left;
+}
+.nav li a{
+	height:33px;
+	padding: 0px 8px;
+	float:left;
+	border-radius:5px 5px 0 0;
+	border:1px solid #c4c4c4;
+	border-bottom:none;
+	margin:0 10px 0 0;
+	background:url("/imagesnew/nav-bg-hover2.png") repeat-x;
+	line-height:33px;
+	text-decoration:none;
+	font-size:15px;
+}
+.nav li a:hover{
+	background:url("/imagesnew/nav-bg.png") repeat-x;
+}
+.nav li a.current{
+	background:url("/imagesnew/nav-current.png") repeat-x;
+	color: #ffffff;
+	border:1px solid #a42a0f;
+	border-bottom:none;
+}
+
+.nav li a.home span{
+	width:16px;
+	height:33px;
+	display: inline-block;
+	background:url("/imagesnew/nav-home.png") no-repeat center center;
+	margin:0;
+}
+.nav li a.home:hover span{
+	background:url("/imagesnew/nav-home.png") no-repeat center center;
+}
+
+.nav li.last{
+	height:33px;
+	background:url("/imagesnew/nav-last.png") repeat-x;
+	background:none;	
+	padding:0 5px 0 0;
+	float: right;
+	border-radius:5px 5px 0 0 ;
+	border:none;
+	
+}
+.nav .last a{
+	height:27px;
+	line-height:29px;
+	margin:5px 0 0 5px;
+	font-size:13px;
+	border:none;
+	color:#434343;
+	background:none;
+	font-weight:bold;
+	background:url("/imagesnew/nav-tips.png") no-repeat left center;
+	padding-left:15px;
+}
+.nav .last a:first-child{
+	background:url("/imagesnew/nav-guide.png") no-repeat left center;
+}
+.nav .last a:hover{
+	
+}
+.nav .last a span{
+	height:29px;
+}
+
+
+
+.nav li a span{
+	display: inline-block;
+	width:10px;
+	height:35px;
+	background:url("/imagesnew/nav-down.png") no-repeat center center;
+	margin-left:5px;
+}
+
+.nav li a:hover span{
+	background:url("/imagesnew/nav-up.png") no-repeat center center;
+}
+/*
+#main-menu {
+    height: 34px;
+    list-style-type: none;
+    margin-left: 8px;
+    margin-top: 96px;
+    padding: 0;
+    position: absolute;
+}
+#main-menu li {
+    background: url("/imagesnew/sprite-1.png") no-repeat scroll right -136px transparent;
+    display: inline;
+    float: left;
+    margin-right: 14px;
+    position: relative;
+}
+#main-menu li a {
+    background: url("/imagesnew/sprite-1.png") no-repeat scroll 0 -136px transparent;
+    border: medium none;
+    color: #444444;
+    display: block;
+    float: left;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: normal;
+    height: 16px;
+    line-height: 16px;
+    margin-left: -8px;
+    padding: 9px 9px 8px;
+    position: relative;
+    text-decoration: none;
+}
+#menu-destinations span {
+    background: url("/imagesnews/sprite-1.png") no-repeat scroll -444px -436px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 31px;
+    margin: -8px 0 0;
+    vertical-align: top;
+    width: 27px;
+}
+*/
