@@ -21,7 +21,7 @@
 	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#bb5641', endColorstr='#ca7765',GradientType=0);
 }
 .BL-color {
-	background: #dcd0a8 url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x 0 247px;
+	background: url("/imagesnew/sample/beijing-lhasa-bg.png") repeat-x scroll 0 247px #F7F4EB;
 }
 .china-color {
 	background: #ffffff;
@@ -309,18 +309,15 @@
 	background: #ffffff;
 	min-height: 277px;
 	padding: 10px 18px;
-	margin: 0 0 25px 25px;
+	margin: 0 0 20px 20px;
+	
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	/*
-	 -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	 -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); */
-	-webkit-box-shadow: #666 0px 0px 5px;
-	-moz-box-shadow: #666 0px 0px 5px;
-	box-shadow: #666 0px 0px 5px;
+	
+	-webkit-box-shadow: #666 0px 0px 2px;
+	-moz-box-shadow: #666 0px 0px 2px;
+	box-shadow: #666 0px 0px 2px;
 	behavior: url(PIE.htc);
 }
 .tour-block h2 {
@@ -413,21 +410,18 @@
 }
 .right-pannel {
 	position: relative;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	width: 245px;
 	margin-bottom: 20px;
 	background: #F1F2F4;
 	padding: 8px 0;
-	/*
-	 -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	 -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	 box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); */
-	-webkit-box-shadow: #666 0px 0px 5px;
-	-moz-box-shadow: #666 0px 0px 5px;
-	box-shadow: #666 0px 0px 5px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	-webkit-box-shadow: #888 0px 0px 2px;
+	-moz-box-shadow: #888 0px 0px 2px;
+	box-shadow: #888 0px 0px 2px;
 	behavior: url(PIE.htc);
 }
 .right-pannel h3, .right-pannel h4 {
@@ -479,7 +473,7 @@
 	bottom: 15px;
 	width: 57px;
 	height: 17px;
-	background: url(/imagesnew/aboutus/zoom-more.gif) no-repeat;
+	background: url(/imagesnew/zoom-large.gif) no-repeat;
 	display: block;
 }
 /* @Beijing-Lhasa Tour */
@@ -494,7 +488,7 @@
 }
 .box-effect {
 	border-radius: 3px 3px 3px 3px;
-	box-shadow: 0 0 5px #666666;
+	box-shadow: 0 0 2px #888;
 }
 
 .one-col {
@@ -504,7 +498,6 @@
 	position: relative;
 	top: -20px;
 	z-index: 3;
-	margin-top:20px;
 }
 .rt-col {
 	width: 245px;
@@ -520,15 +513,19 @@
 }
 .rt-col .unit {
 	border-top: 1px dashed #ddd;
-	padding: 4px;
 }
+
+.rt-col .unit h3, .rt-col .unit p{
+	margin:0 10px;
+
+}
+
 .expat {
 	background: #fafafa;
-	padding: 15px;
+	padding: 18px;
 	position: relative;
 	margin-top: 20px;
-	width: 630px;
-	left: 5px;
+	width: 626px;
 }
 dl.service {
 	margin: 20px 0;

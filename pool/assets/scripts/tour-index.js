@@ -34,7 +34,7 @@ $(function(){
 	
 	//判断China tour 或者其他页面 来更改样式
 	if( $('.allpage-wrap').attr('name')=='china'){
-		$( '.tour-block' ).css( 'background','url(/imagesnew/tour-index/bg-tour.png) repeat-x 0 0 #ffffff');
+		//$( '.tour-block' ).css( 'background','url(/imagesnew/tour-index/bg-tour.png) repeat-x 0 0 #ffffff');
 		$( '.city-choose li' ).each(function( index ){
     		$( this ).click(function(){
     			$( this ).addClass( 'active' ).siblings().removeClass( 'active' );
@@ -43,8 +43,8 @@ $(function(){
 		});
 	}else{
 		//mainautoshow( '.banner',1000,2000,5000);
-		$( '.FAQ-footer' ).css({'background':'url("/imagesnew/aboutus/flower.png") no-repeat scroll right 0 #FFFFFF','margin':'30px',
-								'box-shadow':'0 1px 3px #666666'
+		//$( '.FAQ-footer' ).css({'background':'url("/imagesnew/aboutus/flower.png") no-repeat scroll right 0 #FFFFFF','margin':'30px',
+		//						'box-shadow':'0 1px 3px #666666'
 		});
 	}
 	//tour num

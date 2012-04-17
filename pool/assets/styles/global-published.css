@@ -1313,15 +1313,15 @@ a.reco-click:hover {
 	float: left;
 	margin:24px  0 0 0;
 }
-.nav{
+.nav-new{
 	widht:970px;
 	height:35px;
 }
-.nav li{
+.nav-new li{
 	display: block;
 	float: left;
 }
-.nav li a{
+.nav-new li a{
 	height:33px;
 	padding: 0px 8px;
 	float:left;
@@ -1334,28 +1334,28 @@ a.reco-click:hover {
 	text-decoration:none;
 	font-size:15px;
 }
-.nav li a:hover{
+.nav-new li a:hover{
 	background:url("/imagesnew/nav-bg.png") repeat-x;
 }
-.nav li a.current{
+.nav-new li a.current{
 	background:url("/imagesnew/nav-current.png") repeat-x;
 	color: #ffffff;
 	border:1px solid #a42a0f;
 	border-bottom:none;
 }
 
-.nav li a.home span{
+.nav-new li a.home span{
 	width:16px;
 	height:33px;
 	display: inline-block;
 	background:url("/imagesnew/nav-home.png") no-repeat center center;
 	margin:0;
 }
-.nav li a.home:hover span{
+.nav-new li a.home:hover span{
 	background:url("/imagesnew/nav-home.png") no-repeat center center;
 }
 
-.nav li.last{
+.nav-new li.last{
 	height:33px;
 	background:url("/imagesnew/nav-last.png") repeat-x;
 	background:none;	
@@ -1365,7 +1365,7 @@ a.reco-click:hover {
 	border:none;
 	
 }
-.nav .last a{
+.nav-new .last a{
 	height:27px;
 	line-height:29px;
 	margin:5px 0 0 5px;
@@ -1377,19 +1377,19 @@ a.reco-click:hover {
 	background:url("/imagesnew/nav-tips.png") no-repeat left center;
 	padding-left:15px;
 }
-.nav .last a:first-child{
+.nav-new .last a:first-child{
 	background:url("/imagesnew/nav-guide.png") no-repeat left center;
 }
-.nav .last a:hover{
+.nav-new .last a:hover{
 	
 }
-.nav .last a span{
+.nav-new .last a span{
 	height:29px;
 }
 
 
 
-.nav li a span{
+.nav-new li a span{
 	display: inline-block;
 	width:10px;
 	height:35px;
@@ -1397,7 +1397,7 @@ a.reco-click:hover {
 	margin-left:5px;
 }
 
-.nav li a:hover span{
+.nav-new li a:hover span{
 	background:url("/imagesnew/nav-up.png") no-repeat center center;
 }
 
