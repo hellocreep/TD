@@ -1347,7 +1347,8 @@ a.reco-click:hover {
 .nav-new li a.home span{
 	width:16px;
 	height:33px;
-	display: inline-block;
+	display: block;
+	float:right;
 	background:url("/imagesnew/nav-home.png") no-repeat center center;
 	margin:0;
 }
@@ -1357,13 +1358,16 @@ a.reco-click:hover {
 
 .nav-new li.last{
 	height:33px;
-	background:url("/imagesnew/nav-last.png") repeat-x;
+	background:none;
 	background:none;	
 	padding:0 5px 0 0;
 	float: right;
 	border-radius:5px 5px 0 0 ;
 	border:none;
 	
+}
+.nav-new li.last:hover{
+
 }
 .nav-new .last a{
 	height:27px;
@@ -1377,11 +1381,11 @@ a.reco-click:hover {
 	background:url("/imagesnew/nav-tips.png") no-repeat left center;
 	padding-left:15px;
 }
+.nav-new .last a:hover{
+	background:url("/imagesnew/nav-tips.png") no-repeat left center;
+}
 .nav-new .last a:first-child{
 	background:url("/imagesnew/nav-guide.png") no-repeat left center;
-}
-.nav-new .last a:hover{
-	
 }
 .nav-new .last a span{
 	height:29px;
@@ -1390,7 +1394,8 @@ a.reco-click:hover {
 
 
 .nav-new li a span{
-	display: inline-block;
+	display: block;
+	float: right;
 	width:10px;
 	height:35px;
 	background:url("/imagesnew/nav-down.png") no-repeat center center;
@@ -1401,45 +1406,3 @@ a.reco-click:hover {
 	background:url("/imagesnew/nav-up.png") no-repeat center center;
 }
 
-/*
-#main-menu {
-    height: 34px;
-    list-style-type: none;
-    margin-left: 8px;
-    margin-top: 96px;
-    padding: 0;
-    position: absolute;
-}
-#main-menu li {
-    background: url("/imagesnew/sprite-1.png") no-repeat scroll right -136px transparent;
-    display: inline;
-    float: left;
-    margin-right: 14px;
-    position: relative;
-}
-#main-menu li a {
-    background: url("/imagesnew/sprite-1.png") no-repeat scroll 0 -136px transparent;
-    border: medium none;
-    color: #444444;
-    display: block;
-    float: left;
-    font-family: arial;
-    font-size: 14px;
-    font-weight: normal;
-    height: 16px;
-    line-height: 16px;
-    margin-left: -8px;
-    padding: 9px 9px 8px;
-    position: relative;
-    text-decoration: none;
-}
-#menu-destinations span {
-    background: url("/imagesnews/sprite-1.png") no-repeat scroll -444px -436px transparent;
-    cursor: pointer;
-    display: inline-block;
-    height: 31px;
-    margin: -8px 0 0;
-    vertical-align: top;
-    width: 27px;
-}
-*/

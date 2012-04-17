@@ -41,12 +41,12 @@ $(function(){
         		$( '.city-detail' ).hide().eq( index ).show();
     		});
 		});
-	}else{
+	}//else{
 		//mainautoshow( '.banner',1000,2000,5000);
 		//$( '.FAQ-footer' ).css({'background':'url("/imagesnew/aboutus/flower.png") no-repeat scroll right 0 #FFFFFF','margin':'30px',
 		//						'box-shadow':'0 1px 3px #666666'
-		});
-	}
+		//});
+	//}
 	//tour num
 	$( '.tour-rank' ).each(function( index ){
 		$( this ).text( index+1 );
