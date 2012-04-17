@@ -29,7 +29,7 @@
                         </div> </span>
                 </li>
                 <li>
-                    <a class="custom" href="#">Customize a Tour</a>
+                    <a class="custom muti-li" href="#">Customize a Tour</a>
                     <a class="contact" href="#">Contact us</a>
                 </li>
             </ul>
@@ -38,10 +38,14 @@
         <script type="text/javascript">
         $(document).ready(function(){
             $('.muti-li').hover(function(){
+                $(this).children('a').css({"position":"relative"});
                $(this).children('.dropdown').show();
             },function(){
                 $(this).children('.dropdown').hide();
-            });               
+                $(this).children('a').css({"position":"static"});
+            });    
+
+            $()           
         });
             
         </script>
@@ -54,32 +58,54 @@
                 <li class="muti-li">
                     <a href="#" class="current">Private Tibet Tours<span>&nbsp;</span></a>
 
-                    <div class="dropdown">
+                    <div class="dropdown col3">
                     
-                        <h2>Classic Tours</h2>
-                     <p>    
-                        Top-rated and best-selling
-                    </p>
-                    
-                    <ul>
-                        <li>
-                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
-                        </li>
-                        <li>
-                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
-                        </li>
-                        <li>
-                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
-                        </li>
-                        <li>
-                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
-                        </li>                                      
-                    </ul>
-                    
-                    
+                    <dl>
+                        <dt>
+                            <h2>Most Popular Tibet Tours</h2>
+                            <p>Top-rated and best-selling</p>
+                        </dt>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Classic Tibet Tours</a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Tibet Discovery Tours</a>
+                        </dd>  
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Tour Index</a>
+                        </dd>                                       
+                    </dl>
 
-                    
-
+                    <dl>
+                        <dt>
+                            <h2>By Regions</h2>
+                            <p>Top-rated and best-selling</p>
+                        </dt>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Everest</a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Mt.Kailash </a>
+                        </dd>           
+                    </dl>
+                    <dl>
+                        <dt>
+                            <h2>By Theme </h2>
+                            <p>Top-rated and best-selling</p>
+                        </dt>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Train</a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Hiking</a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Family</a>
+                        </dd>                                                     
+                    </dl>
                 </div>
                 
 
@@ -87,8 +113,33 @@
                 <li>
                     <a href="#">Group Tibet Tours</a>
                 </li>
-                <li>
+                <li class="muti-li">
                     <a href="#">China Tibet Tours<span>&nbsp;</span></a>
+
+                     <div class="dropdown">
+                    
+                    <dl>
+                        <dt>
+                            <h2>Top Destinations to Enter Tibet </h2>
+                            <p>Top-rated and best-selling</p>
+                        </dt>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Beijing Tibet Tours</a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Chengdu Tibet Tours</a>
+                        </dd>  
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Shanghai Tibet Tours </a>
+                        </dd>      
+                        <dd>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Expats</a>
+                        </dd>                                       
+                    </dl>
+
+                    
+                </div>
+
                 </li>
                 <li>
                     <a href="#">Nepal Tibet Tours</a>
