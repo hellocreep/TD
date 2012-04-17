@@ -34,15 +34,55 @@
                 </li>
             </ul>
         </div>
-        
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.muti-li').hover(function(){
+               $(this).children('.dropdown').show();
+            },function(){
+                $(this).children('.dropdown').hide();
+            });               
+        });
+            
+        </script>
         <div id="nav-div">
             <ul class="nav-new" class="clearfix">
                 <li>
                     <a class="home" href="#"><span></span></a>
 
                 </li>
-                <li>
+                <li class="muti-li">
                     <a href="#" class="current">Private Tibet Tours<span>&nbsp;</span></a>
+
+                    <div class="dropdown">
+                    
+                        <h2>Classic Tours</h2>
+                     <p>    
+                        Top-rated and best-selling
+                    </p>
+                    
+                    <ul>
+                        <li>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
+                        </li>
+                        <li>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
+                        </li>
+                        <li>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
+                        </li>
+                        <li>
+                            <a href="#"><img width="50px" height="50px" title="" alt="" src="/imagesnew/head1.jpg">Lhasa &amp; Surrounding</a>
+                        </li>                                      
+                    </ul>
+                    
+                    
+
+                    
+
+                </div>
+                
+
                 </li>
                 <li>
                     <a href="#">Group Tibet Tours</a>

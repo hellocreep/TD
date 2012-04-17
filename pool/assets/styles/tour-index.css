@@ -444,16 +444,12 @@
 	padding-right: 5px;
 	font-weight: bold;
 }
-.wide-foot {
-	background: none repeat scroll 0 0 #FFFFFF;
+.wide-foot {	
 	float: left;
 	margin-bottom: 100px;
 	margin-left: 19px;
 	margin-top: -118px;
 	width: 934px;
-	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
-	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
 }
 .wide-foot .author-list {
 	padding-left: 70px;
