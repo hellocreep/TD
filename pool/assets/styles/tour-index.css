@@ -499,7 +499,7 @@
 
 .one-col {
 	width: 930px;
-	margin: 0px 20px;
+	margin: 0 20px -20px;
 	float: left;
 	position: relative;
 	top: -20px;
