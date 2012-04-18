@@ -734,8 +734,7 @@ body .right {
 	margin-top: -100px;
 }
 .newsletter {
-	padding-top: 145px;
-	margin-bottom: 30px;
+	padding-top: 125px;
 	color: #FFFFFF;
 }
 .newsletter-title {
@@ -767,7 +766,7 @@ body .right {
 	line-height: 50px;
 }
 .footer .nav {
-	float: left;
+	float: right;
 	padding: 10px 5px;
 	width: 180px;
 }
@@ -1398,7 +1397,9 @@ a.reco-click:hover {
 .nav-new li a.home:hover span{
 	background:url("/imagesnew/nav-home.png") no-repeat center center;
 }
-
+.nav-new li a.home.current span {
+	background:url("/imagesnew/nav-home.png") no-repeat center center; 
+}
 .nav-new li.last{
 	height:33px;
 	background:none;
@@ -1529,7 +1530,8 @@ a.reco-click:hover {
 	float: left;
 	margin: 3px 8px 3px 5px;
 }
-#sidenav{
+
+#sidenav {
 	display: none;
 	z-index:55;
 	position: absolute;
@@ -1540,7 +1542,7 @@ a.reco-click:hover {
 	text-align:center;
 	padding:5px 0 0 0 ;
 }
-#sidenav li{
+ #sidenav li{
 	background:none;
 	float: left;
 	display: block;

@@ -984,3 +984,224 @@ ul.menu ul{
     width: 60px;
     display: block;
 }
+
+/*------ 新版导航样式------*/
+#nav-div{
+    width:980px;
+    height:34px;
+    float: left;
+    margin:24px  0 0 0;
+}
+.nav-new{
+    widht:970px;
+    height:35px;
+}
+.nav-new li{
+    display: block;
+    float: left;
+    position: relative;
+}
+.nav-new li a{
+    *width:60px;
+    display: block;
+    height:33px;
+    padding: 0px 8px;
+    float:left;
+    border:1px solid #c4c4c4;
+    border-bottom:none;
+    margin:0 10px 0 0;
+    background:url("/imagesnew/nav-bg-hover2.png") repeat-x;
+    line-height:33px;
+    text-decoration:none;
+    font-size:15px;
+    border-radius:5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    behavior: url(PIE.htc);
+}
+.nav-new li a:hover{
+    background:url("/imagesnew/nav-bg.png") repeat-x;
+}
+.nav-new li a.current{
+    background:url("/imagesnew/nav-current.png") repeat-x;
+    color: #ffffff;
+    border:1px solid #a42a0f;
+    border-bottom:none;
+}
+
+.nav-new li a.home span{
+    width:16px;
+    height:33px;
+    display: block;
+    float:right;
+    background:url("/imagesnew/nav-home.png") no-repeat center center;
+    margin:0;
+}
+.nav-new li a.home:hover span{
+    background:url("/imagesnew/nav-home.png") no-repeat center center;
+}
+.nav-new li a.home.current span {
+    background:url("/imagesnew/nav-home2.png") no-repeat center center; 
+}
+.nav-new li.last{
+    height:33px;
+    background:none;
+    background:none;    
+    padding:0 5px 0 0;
+    float: right;
+    border:none;
+    border-radius:5px 5px 0 0 ;
+    -moz-border-radius: 5px 5px 0 0 ;
+    -webkit-border-radius: 5px 5px 0 0 ;
+    behavior: url(PIE.htc);
+}
+
+.nav-new .last a{
+    height:27px;
+    line-height:29px;
+    margin:5px 0 0 5px;
+    font-size:13px;
+    border:none;
+    color:#7E0122;
+    background:none;
+    font-weight:bold;
+    padding-left:15px;
+}
+
+.nav-new .last a:hover{
+    color:#434343;
+}
+.nav-new .last a.guide,.nav-new .last a.guide:hover {
+    background:url("/imagesnew/nav-guide.png") no-repeat left center;
+
+}
+
+.nav-new .last a.tips,.nav-new .last a.tips:hover{
+    background:url("/imagesnew/nav-tips.png") no-repeat left center;
+
+}
+.nav-new .last a span{
+    height:29px;
+}
+
+.nav-new li a span{
+    display: block;
+    float: right;
+    width:10px;
+    height:35px;
+    background:url("/imagesnew/nav-down.png") no-repeat center center;
+    margin-left:5px;
+}
+
+.nav-new li a:hover span{
+    background:url("/imagesnew/nav-up.png") no-repeat center center;
+}
+
+.nav-new .muti-li a{
+    z-index:60;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    left:0;
+    top:33px;
+    border:1px solid #c4c4c4;
+    z-index:50;
+    background:#ffffff;
+    padding:0;
+}
+
+.dropdown dl{
+    float: left;
+    display: block;
+    padding-right:10px;
+    padding-left:10px;
+    border-left:1px solid #c4c4c4;
+    margin:10px 0;
+    width:220px;
+}
+.dropdown dl:first-child{
+    border-left:none;
+}
+.col2{
+    width:482px;
+}
+
+.col3{
+    width:723px;
+}
+.dropdown dl dt{
+    border-bottom:1px dashed #c4c4c4;
+}
+.dropdown h2{
+    font-size:15px;
+    margin:0;
+    line-height:1;
+}
+.dropdown p{
+    margin:0;
+    line-height:28px;
+}
+
+.dropdown dl dd a{
+    display: block;
+    height:60px;
+    width:220px;
+    margin:0;
+    border:none;
+    border-bottom: 1px dashed #CCCCCC;
+    float: left;
+    line-height: 60px;
+    background:#ffffff;
+    color: #2368C7;
+    
+    text-decoration: none;
+    padding:0;
+    font-size:12px;
+    border-radius:0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    behavior: url(PIE.htc);
+}
+.dropdown dl dd a:hover{
+    background:#990100;
+    color:#ffffff;
+}
+.dropdown dl dd img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    margin: 3px 8px 3px 5px;
+}
+#sidenav {
+    display: none;
+    z-index:55;
+    position: absolute;
+    left:5px;
+    top:31px;
+    background:url("/imagesnew/legend.gif") no-repeat center top #EBEDEA;
+    width:100px;
+    text-align:center;
+    padding:5px 0 0 0 ;
+}
+ #sidenav li{
+    background:none;
+    float: left;
+    display: block;
+    clear: both;
+    padding:0;
+    margin:0;
+}
+#sidenav li a{
+    padding:0;
+    margin:0;
+    width:100px;
+    color:#434343;
+}
+#sidenav li a:hover{
+    background:none;
+    color:#7E0122;
+}
+.sidenav {
+    text-align: left;
+}
