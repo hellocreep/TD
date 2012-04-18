@@ -44,9 +44,9 @@ $( function(){
                 $(this).children('a').css({"position":"static"});
             });    
             $('.last').hover(function(){
-                $(this).children('#sidenav').slideDown();
+                $(this).children('.sidenav').slideDown();
             },function(){
-                $(this).children('#sidenav').hide();
+                $(this).children('.sidenav').hide();
             });
 
  //top menu 选择当前页面
@@ -128,7 +128,16 @@ $( function(){
 	}
 	$('#departures-monthly').html(d);
 	
-	
+	//wish list fancybox
+      $(' #upwishlist').fancybox({
+        'width' : '50%',
+        'scrolling': 'auto',
+        'height': '75%',
+        'transitionIn' : 'none',
+        'transitionOut' : 'none',
+        'type' : 'iframe'
+      //'onClosed':function(){window.location.href=window.location.href;}
+      }); 
 	
 	
 	
