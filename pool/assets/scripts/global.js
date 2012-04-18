@@ -35,6 +35,36 @@ $( function(){
 
     $( window ).bind( 'scroll',syncHeight)
 
+    //顶部导航
+     $('.muti-li').hover(function(){
+                $(this).children('a').css({"position":"relative"});
+                $(this).children('.dropdown').show();
+            },function(){
+                $(this).children('.dropdown').hide();
+                $(this).children('a').css({"position":"static"});
+            });    
+            $('.last').hover(function(){
+                $(this).children('#sidenav').slideDown();
+            },function(){
+                $(this).children('#sidenav').hide();
+            });
+
+ //top menu 选择当前页面
+    var bread_len = $( '.bread a' ).length;
+    if( bread_len > 1 ) {
+        var selected = $( '.bread a' ).eq(1).text();
+    } else {
+        var selected = $( '.bread' ).text().substring( 18 );
+    }
+    if($( '.homebread' ).length!=0){
+        $( '.nav-new li a' ).eq( 0 ).addClass( 'current' );
+    }
+    $( '.nav-new li a' ).each(function() {
+        if( $( this ).attr( 'title' ) == selected ) {
+            $( this ).addClass( 'current' );
+        }
+    });
+
     //contact us 弹出框
     $( '#call-you' ).click( function(){
        $( '.tiny-form' ).slideToggle( 'slow' ); 
@@ -61,79 +91,12 @@ $( function(){
     //sidebar判断当前页面 
     $( '#'+$( '.content' ).attr( 'name' )).addClass( 'active' );
     
-	//头部menu下拉效果
-	$('#tibetTours').hide();
-    
-    $('#travelStyle').hide();
-    
-    $('#menus>li:eq(1)').hover(function(){
-        $('#tibetTours').show();
-    },function(){
-        $('#tibetTours').hide();
-    })
-    
-    $('#menus>li:eq(4)').hover(function(){
-        $('#travelStyle').show();
-    },function(){
-        $('#travelStyle').hide();
-    });
-	
-	$( '.toggle-menu' ).each( function(){
-		$( this ).hover(function(){
-			$( this ).children( '.slide-menu' ).show();
-		},function(){
-			$( this ).children( '.slide-menu' ).hide();
-		});
-	});
-	
-	/****newsletter**/
-
-        $('#submit').click(function(e) {
-            e.preventDefault();
-            var email = $('#newsletter').val();
-            $.ajax({
-                url : "http://www.tibetdiscovery.com/forms/newsletter.php?email=" + email + "&&" + Math.random(),
-                context : '',
-                success : function(data) {
-                    if(data == "1") {
-                        alert('Thank you for subscribing to our newsletter. The tibetdiscovery Team');
-                    } else if(data == "2") {
-                        alert('You are already registered to our newsletter. We hope you have enjoyed our previous publications.');
-                    } else {
-                        alert('The system is busy, please try again later.');
-                    }
-                },
-                error : function() {
-                    alert('error')
-                }
-            });
-        });
-
-    //top menu 选择当前页面
-    var bread_len = $( '.bread a' ).length;
-    if( bread_len > 1 ) {
-        var selected = $( '.bread a' ).eq(1).text();
-    } else {
-        var selected = $( '.bread' ).text().substring( 18 );
-    }
-    if($( '.homebread' ).length!=0){
-        $( '#menus li a' ).eq( 0 ).addClass( 'selected' );
-    }
-    $( '#menus li a' ).each(function() {
-        if( $( this ).attr( 'title' ) == selected ) {
-            $( this ).addClass( 'selected' );
-        }
-    });
-    
     //train-info tag标签去逗号
     $( '.tag' ).removeComma();
     //酒店主页与内页surroundings 去逗号
     $( '.surrounding-name' ).removeComma();
     
 
-    
-    
-    
     //departures 侧边栏       grouptour发团日期的侧边栏
     var arr=new Array();
 	arr[1]="Jan.";

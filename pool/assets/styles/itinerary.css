@@ -65,6 +65,20 @@
 .price-tip ul li {
 	list-style: none;
 }
+.expat-from {
+	border: 3px solid #DDDDDD;
+    	border-radius: 5px 5px 5px 5px;
+    	font-size: 13px;
+    	padding: 0 5px 5px;
+    	position: absolute;
+    	right: 100px;
+    	top: 13px;
+    	width: 140px;
+}
+.expat-from li {
+	height: 20px;
+}
+
 .tour-des {
 	float: left;
 	width: 720px;
