@@ -1534,37 +1534,7 @@ a.reco-click:hover {
 	float: left;
 	margin: 3px 8px 3px 5px;
 }
-/*
-#sidenav {
-	display: none;
-	z-index:55;
-	position: absolute;
-	left:5px;
-	top:31px;
-	background:url("/imagesnew/legend.gif") no-repeat center top #EBEDEA;
-	width:100px;
-	text-align:center;
-	padding:5px 0 0 0 ;
-}
- #sidenav li{
-	background:none;
-	float: left;
-	display: block;
-	clear: both;
-	padding:0;
-	margin:0;
-}
-#sidenav li a{
-	padding:0;
-	margin:0;
-	width:100px;
-	color:#434343;
-}
-#sidenav li a:hover{
-	background:none;
-	color:#7E0122;
-}
-*/
+
 #nav-div .sidenav {
     display: none;
     z-index:55;
@@ -1593,4 +1563,12 @@ a.reco-click:hover {
 #nav-div .sidenav li a:hover{
     background:none;
     color:#7E0122;
+}
+/*wish list*/
+#nav-div .wishlist {
+    top: -60px;
+}
+
+#nav-div .wishlist a:hover {
+    background: none;
 }
