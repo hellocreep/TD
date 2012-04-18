@@ -41,7 +41,7 @@ body {
 }
 .wrap {
 	margin: 0 auto;
-	width: 960px;
+	width: 970px;
 	height: auto;
 }
 .allpage-wrap {
@@ -766,9 +766,13 @@ body .right {
 	line-height: 50px;
 }
 .footer .nav {
-	float: right;
+	/*float: right;
 	padding: 10px 5px;
-	width: 180px;
+	width: 180px;*/
+	float: right;
+    margin: 42px 24px 0 0;
+    padding: 10px 5px;
+    width: 180px;
 }
 .footer .nav h4 {
 	color: #FFFFFF;
