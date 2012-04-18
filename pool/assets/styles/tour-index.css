@@ -536,6 +536,10 @@ dl.service {
 	background: url("/imagesnew/sample/list-icon.png") no-repeat left center;
 	padding: 2px 0 2px 20px;
 }
+
+
+
+/*
 .itinerary {
 	width: 645px;
 }
@@ -578,6 +582,63 @@ dl.service {
 .itinerary li p {
 	margin: 8px;
 }
+*/
+.tour-list {
+	border: 1px solid #dddddd;
+	border-bottom: none;
+}
+
+.tour-list li {
+	border-bottom: 1px solid #dddddd;
+	background: url("/imagesnew/tour-index/tour-list-bg.png") repeat-x 0 0 #fff6d3;
+}
+
+.tour-list li a {
+	display: block;
+	height: 64px;
+	padding: 6px;
+}
+
+.tour-list .tour-thumb {
+	width: 85px;
+	height: 55px;
+	float: left;
+	margin: 4px 15px 4px 0;
+}
+
+.tour-list li a:hover {
+	background: #f7e2ab;
+	text-decoration: none;
+}
+
+.tour-info {
+	float: left;
+	color: #333333;
+	width: 420px;
+}
+
+.tour-info .tour-name {
+	font-weight: bold;
+	color: #4694EC;
+	font-size; 14px;
+}
+
+.tour-info p {
+	font-size: 13px;
+	margin: 3px 0 0 0;
+}
+
+.tour-price {
+	float: right;
+	color: #f20e0e;
+	font-size: 15px;
+	margin: 25px;
+}
+
+
+
+
+
 .QA {
 	/*background: #f0ebdd;*/
 	padding: 1px;
