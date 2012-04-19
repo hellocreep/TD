@@ -1,0 +1,22 @@
+.headtop {
+	width: 938px;
+	height:200px;
+	margin: 15px 0 15px 15px;
+	border: 1px solid red;
+}
+
+.aside{
+	width:258px;
+	min-height: 600px;
+	border:1px dashed red;
+	float: right;
+	margin:0 15px 0 0;
+}
+
+.section{
+	width:663px;
+	float:left;
+	margin:0 0 15px 15px;
+	min-height:200px;
+	border:1px dashed red;
+}

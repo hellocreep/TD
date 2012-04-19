@@ -1,29 +1,25 @@
 {% extends 'base.html' %}
 
-{% block title %}<!--填标题-->{% endblock %}
+{% block title %}index{% endblock %}
 
-{% block style %}
-<!-- 页面样式表 -->
+{% block style %} <!-- 页面样式表 -->
+<link href="/assets/styles/index.css" type="text/css" rel="stylesheet">
 {% endblock %}
 
-{% block script %}
-<!-- 页面js脚本 -->
+{% block script %} <!-- 页面js脚本 -->
 {% endblock %}
 
 {% block body%}
-{% include 'header.html' %}
-<div class="bread"></div>
+{% include 'header.html' %} <div class="bread"></div>
 <div class="wrapper clearfix">
-    {% include 'sidebar.html' %} 
-    <div class="content">
-        
-        
-        
-        
-        
-        
-    </div>
+	<div class="allpage-wrap clearfix">
+		<div class="headtop"></div>
+		<div class="aside"></div>
+		<div class="section"></div>
+		<div class="section"></div>
+		<div class="section"></div>
+		<div class="section"></div>
+	</div>
 </div>
-
 {% include 'footer.html' %}
 {% endblock %}
