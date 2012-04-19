@@ -1436,7 +1436,7 @@ a.reco-click:hover {
 	color:#7E0122;
 	background:none;
 	font-weight:bold;
-	padding-left:15px;
+	padding-left:20px;
 }
 
 .nav-new .last a:hover{
@@ -1552,7 +1552,7 @@ a.reco-click:hover {
     left:5px;
     top:31px;
     background:url("/imagesnew/legend.gif") no-repeat center top #EBEDEA;
-    width:100px;
+    width:107px;
     text-align:center;
     padding:5px 0 10px 0 ;
     border-radius:0 0 3px 3px;

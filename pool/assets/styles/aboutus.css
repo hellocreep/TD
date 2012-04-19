@@ -601,7 +601,7 @@ ul.wedo-nav {
     list-style: none outside none;
     margin-top: 20px;
     position: relative;
-    z-index: 60;
+    z-index: 40;
 }
 .wedo-nav li{
 	width:225px;
