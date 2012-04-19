@@ -1005,6 +1005,10 @@ ul.subnav a.active {
 .poptips p {
 	float: right;
 	width: 340px;
+	margin:0 0 3px 0;
+}
+.poptips h2{
+	margin:0;
 }
 #triangle-left {
 	border: none;
@@ -1546,7 +1550,11 @@ a.reco-click:hover {
     background:url("/imagesnew/legend.gif") no-repeat center top #EBEDEA;
     width:100px;
     text-align:center;
-    padding:5px 0 0 0 ;
+    padding:5px 0 10px 0 ;
+    border-radius:0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+	behavior: url(PIE.htc);
 }
 #nav-div .sidenav li{
     background:none;
