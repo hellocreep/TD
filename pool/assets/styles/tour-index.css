@@ -611,32 +611,25 @@ dl.service {
 	text-decoration: none;
 }
 
-.tour-info {
+
+
+.tour-info2 {
 	float: left;
 	color: #333333;
-	width: 420px;
+	width: 450px;
 }
 
-.tour-info .tour-name {
+
+.tour-info2 .tour-name {
 	font-weight: bold;
 	color: #4694EC;
 	font-size; 14px;
 }
 
-.tour-info p {
+.tour-info2 p {
 	font-size: 13px;
-	margin: 3px 0 0 0;
+	margin: 9px 0 0 0;
 }
-
-.tour-price {
-	float: right;
-	color: #f20e0e;
-	font-size: 15px;
-	margin: 25px;
-}
-
-
-
 
 
 .QA {
