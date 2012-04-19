@@ -124,7 +124,7 @@ $( function(){
 		else
 		{
 			d+='<div class="departure-month"><a href="http://www.tibetdiscovery.com/join-in-tours/grouptour-departures/?year='+year+'&&month='+i+'&&'+Math.random()+'"><span class="month">'+arr[i]+'</span><span class="year">2012</span></a></div>';
-		}
+    }
 	}
 	$('#departures-monthly').html(d);
 	
