@@ -11,34 +11,34 @@
 	float: left;
 	position: relative;
 }
-.banner ul li{
-	position:absolute;
-	left:0;
-	top:0;
+.banner ul li {
+	position: absolute;
+	left: 0;
+	top: 0;
 }
-.banner h1{
-	position:absolute;
-	left:20px;
-	top:35px;
-	color:#ebac01;
-	font: italic 30px/32px times New Roman;
+.banner h1 {
+	position: absolute;
+	left: 20px;
+	top: 35px;
+	color: #ebac01;
+	font: italic 30px /32px times New Roman;
 }
-.banner h1 span{
-	font-size:16px;
-	text-indent:20px;
-	margin:0 0 0 53px;
+.banner h1 span {
+	font-size: 16px;
+	text-indent: 20px;
+	margin: 0 0 0 53px;
 }
-.banner p{
-	position:absolute;
-	width:650px;
-	height:67px;
-	padding:15px 0 0 10px;
-	margin:0;
-	left:0px;
-	bottom:0;
-	line-height:25px;
-	color:#222;
-	background:url("/imagesnew/index/banner-p.png") no-repeat 0 0;
+.banner p {
+	position: absolute;
+	width: 650px;
+	height: 67px;
+	padding: 15px 0 0 10px;
+	margin: 0;
+	left: 0px;
+	bottom: 0;
+	line-height: 25px;
+	color: #222;
+	background: url("/imagesnew/index/banner-p.png") no-repeat 0 0;
 }
 .tc {
 	width: 260px;
@@ -76,7 +76,7 @@
 .talkto {
 	display: block;
 	float: left;
-	font: italic 24px /43px times New Roman;
+	font: italic 24px  /43px times New Roman;
 	margin: 20px 32px;
 	width: 199px;
 	height: 43px;
@@ -94,5 +94,83 @@
 	float: left;
 	margin: 0 0 15px 15px;
 	min-height: 200px;
-	border: 1px dashed red;
+	background: url("/imagesnew/index/bg-section.png") no-repeat left top #ECE4D2;
+}
+.section h4 {
+	color: #ffffff;
+	font-weight: bold;
+	margin: 10px 0 10px 15px;
+}
+.section-content {
+	padding: 3px 10px 0 15px;
+	color: #7d7d7d;
+}
+.section-one {
+	background: url("/imagesnew/index/bg-gtour.jpg") no-repeat left bottom;
+	height: 333px;
+}
+.g-tour-list {
+	width: 296px;
+	float: right;
+}
+.g-tour-list li {
+	background: url("/imagesnew/index/bg-gtour-list.png") no-repeat 0 0;
+	width: 296px;
+	height: 82px;
+	padding: 10px 0;
+	margin: 5px 0 0 5px;
+}
+.g-tour-list li h3 a {
+	color: #FED022;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 5px 0 0 58px;
+	width: 147px;
+	display: block;
+}
+.btn-check {
+	background: url("/imagesnew/index/bg-check.png") no-repeat scroll 0 0 transparent;
+	color: #434343;
+	display: block;
+	float: left;
+	font-size: 11px;
+	height: 22px;
+	line-height: 22px;
+	margin: 6px 0 0 58px;
+	text-indent: 7px;
+	width: 95px;
+}
+.btn-check:hover {
+	color: #971e2d;
+	text-decoration: none;
+}
+.g-price {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 8px;
+	float: left;
+}
+.g-discount {
+	float: right;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 8px 12px;
+}
+.p-tour-list {
+	float: right;
+	margin-right: 105px;
+}
+.p-tour-list li {
+	margin-bottom: 12px;
+}
+.p-tour-list li a {
+	color: #c12b39;
+}
+.more-tour {
+	display: block;
+	width: 128px;
+	margin: 0 0 20px 400px;
+	color: #7d7d7d;
 }
