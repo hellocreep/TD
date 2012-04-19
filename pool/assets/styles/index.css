@@ -1,22 +1,98 @@
 .headtop {
-	width: 938px;
-	height:200px;
-	margin: 15px 0 15px 15px;
-	border: 1px solid red;
+	width: 970px;
+	margin: 0 0 15px;
+	background: #f4f0e7;
+	padding: 15px 0 15px 0;
 }
-
-.aside{
-	width:258px;
-	min-height: 600px;
-	border:1px dashed red;
+.banner {
+	width: 665px;
+	height: 333px;
+	margin: 0 0 0 15px;
+	float: left;
+	position: relative;
+}
+.banner ul li{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.banner h1{
+	position:absolute;
+	left:20px;
+	top:35px;
+	color:#ebac01;
+	font: italic 30px/32px times New Roman;
+}
+.banner h1 span{
+	font-size:16px;
+	text-indent:20px;
+	margin:0 0 0 53px;
+}
+.banner p{
+	position:absolute;
+	width:650px;
+	height:67px;
+	padding:15px 0 0 10px;
+	margin:0;
+	left:0px;
+	bottom:0;
+	line-height:25px;
+	color:#222;
+	background:url("/imagesnew/index/banner-p.png") no-repeat 0 0;
+}
+.tc {
+	width: 260px;
+	margin: 0 15px 0 0;
+	padding: 40px 0 0 0;
 	float: right;
-	margin:0 15px 0 0;
+	text-align: center;
 }
-
-.section{
-	width:663px;
-	float:left;
-	margin:0 0 15px 15px;
-	min-height:200px;
-	border:1px dashed red;
+.tc-list {
+	background: url("/imagesnew/index/tc-line.png") no-repeat top center;
+	padding: 20px 0 0 0;
+}
+.tc-list li {
+	float: left;
+}
+.tc-list li a {
+	text-decoration: none;
+	color: #7E0122;
+}
+.tc-list li a:hover {
+	color: #434343;
+	opacity: 0.8;
+}
+.tc-list img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ddd;
+	padding: 1px;
+	background: #fff;
+	margin: 0 5px;
+}
+.tc-list span {
+	display: block;
+}
+.talkto {
+	display: block;
+	float: left;
+	font: italic 24px /43px times New Roman;
+	margin: 20px 32px;
+	width: 199px;
+	height: 43px;
+	background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343
+}
+.aside {
+	width: 258px;
+	min-height: 600px;
+	border: 1px dashed red;
+	float: right;
+	margin: 0 15px 0 0;
+}
+.section {
+	width: 663px;
+	float: left;
+	margin: 0 0 15px 15px;
+	min-height: 200px;
+	border: 1px dashed red;
 }
