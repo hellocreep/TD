@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6{ font-weight: normal;font-family:"Museo Sans 500",Lucida 
 	text-align: right;
 }
 .tc-email span {
+	position: relative;
 	background: #8F1105;
 	float: right;
 	height: 25px;

@@ -1151,6 +1151,7 @@ ul.subnav a.active {
 	margin: 7px 30px 0 0;
 }
 .btn-enquirys a {
+	position: relative;
 	color: #FFFFFF;
 	display: block;
 	background: url(/imagesnew/btn.png) no-repeat center -320px #D94343;
@@ -1367,6 +1368,7 @@ a.reco-click:hover {
 	position: relative;
 }
 .nav-new li a{
+	position: relative;
 	*width:60px;
 	display: block;
 	height:33px;
@@ -1573,10 +1575,20 @@ a.reco-click:hover {
     color:#7E0122;
 }
 /*wish list*/
-#nav-div .wishlist {
-    top: -60px;
+#mywishlist {
+    visibility: hidden;
+    background: url("/imagesnew/itinerary/icon-wish.png") no-repeat scroll left center #FBE5E0;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    color: #912711;
+    display: block;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    position: fixed;
+    right: 105px;
+    text-decoration: none;
+    top: 350px;
 }
-
-#nav-div .wishlist a:hover {
-    background: none;
+#mywishlist:hover{
+	background-color: #F7C7BD;
 }
