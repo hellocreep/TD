@@ -97,3 +97,6 @@ def nepal(request):
 
 def beijing_lhasa(request):
     return render_to_response('beijing-Lhasa.html', {})
+
+def index(request):
+    return render_to_response('index.html', {})
