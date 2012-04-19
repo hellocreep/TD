@@ -1007,8 +1007,11 @@ ul.subnav a.active {
 	width: 340px;
 	margin:0 0 3px 0;
 }
-.poptips h2{
+.poptips h2, .poptips h3{
 	margin:0;
+	font-size:18px;
+	line-height:1;
+	padding:0 0 4px 209px;
 }
 #triangle-left {
 	border: none;
@@ -1306,6 +1309,7 @@ a.reco-click:hover {
 .photoblock li {
 	float: left;
 	text-align: center;
+	margin:0 10px 15px;
 }
 .photoblock li.c1 {
 	padding: 10px;

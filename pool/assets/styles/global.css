@@ -1019,6 +1019,7 @@ ul.menu ul{
     -moz-border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
     behavior: url(PIE.htc);
+    position: relative;
 }
 .nav-new li a:hover{
     background:url("/imagesnew/nav-bg.png") repeat-x;
