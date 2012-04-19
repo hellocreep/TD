@@ -1007,8 +1007,11 @@ ul.subnav a.active {
 	width: 340px;
 	margin:0 0 3px 0;
 }
-.poptips h2{
+.poptips h2, .poptips h3{
 	margin:0;
+	font-size:18px;
+	line-height:1;
+	padding:0 0 4px 209px;
 }
 #triangle-left {
 	border: none;
@@ -1306,6 +1309,7 @@ a.reco-click:hover {
 .photoblock li {
 	float: left;
 	text-align: center;
+	margin:0 10px 15px;
 }
 .photoblock li.c1 {
 	padding: 10px;
@@ -1432,7 +1436,7 @@ a.reco-click:hover {
 	color:#7E0122;
 	background:none;
 	font-weight:bold;
-	padding-left:15px;
+	padding-left:20px;
 }
 
 .nav-new .last a:hover{
@@ -1548,7 +1552,7 @@ a.reco-click:hover {
     left:5px;
     top:31px;
     background:url("/imagesnew/legend.gif") no-repeat center top #EBEDEA;
-    width:100px;
+    width:107px;
     text-align:center;
     padding:5px 0 10px 0 ;
     border-radius:0 0 3px 3px;

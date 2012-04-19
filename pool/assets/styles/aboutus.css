@@ -601,7 +601,7 @@ ul.wedo-nav {
     list-style: none outside none;
     margin-top: 20px;
     position: relative;
-    z-index: 60;
+    z-index: 40;
 }
 .wedo-nav li{
 	width:225px;
@@ -769,13 +769,15 @@ ul.wedo-nav {
 .team-hr{
 	border-top: 1px dashed #ccc;color:#fff; padding:10px 0;border-left:none;
 }
-a.tc-name{
+.block-container p a.tc-name{
 	float:none;
 	color:#670e14;
 	font-weight:bold;
 	text-decoration:none;
 	font-size:15px;
 	padding: 0 0 10px;
+	width:240px;
+	display: block;
 }
 a.tc-name:hover{
 	text-shadow: 1px 1px 1px #ccc;
