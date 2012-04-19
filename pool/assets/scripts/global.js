@@ -141,7 +141,8 @@ $( function(){
       }); 
   	
     	if( $.cookie( 'user' ) != null ){
-          $( '#mywishlist' ).css('visibility','visible');
+          var tourlist = $.cookie( 'user' ).split( ',' )
+          $( '#mywishlist' ).css('visibility','visible').text('My wish list ('+tourlist.length+')' );
       }
 	
 });
