@@ -128,18 +128,21 @@ $( function(){
 	}
 	$('#departures-monthly').html(d);
 	
+
 	//wish list fancybox
-      $(' #upwishlist').fancybox({
+      $(' #mywishlist').fancybox({
         'width' : '50%',
         'scrolling': 'auto',
         'height': '75%',
         'transitionIn' : 'none',
         'transitionOut' : 'none',
         'type' : 'iframe'
-      //'onClosed':function(){window.location.href=window.location.href;}
+        //'onClosed':function(){}
       }); 
-	
-	
+  	
+    	if( $.cookie( 'user' ) != null ){
+          $( '#mywishlist' ).css('visibility','visible');
+      }
 	
 });
 })( jQuery );

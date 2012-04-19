@@ -1204,10 +1204,21 @@ ul.menu ul{
     color:#7E0122;
 }
 
-#nav-div .wishlist {
-    top: -60px;
+/*wish list*/
+#mywishlist {
+    visibility: hidden;
+    background: url("/imagesnew/itinerary/icon-wish.png") no-repeat scroll left center #FBE5E0;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    color: #912711;
+    display: block;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    position: fixed;
+    right: 105px;
+    text-decoration: none;
+    top: 350px;
 }
-
-#nav-div .wishlist a:hover {
-    background: none;
+#mywishlist:hover{
+    background-color: #F7C7BD;
 }
