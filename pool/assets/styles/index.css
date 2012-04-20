@@ -2,7 +2,7 @@
 	width: 970px;
 	margin: 0 0 15px;
 	background: #f4f0e7;
-	padding: 15px 0 15px 0;
+	padding: 15px 0 25px 0;
 }
 .banner {
 	width: 665px;
@@ -15,6 +15,11 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+.banner ul li img{
+	border:1px solid #ddd;
+	padding:1px;
+	background:#ffffff;
 }
 .banner h1 {
 	position: absolute;
@@ -34,8 +39,8 @@
 	height: 67px;
 	padding: 15px 0 0 10px;
 	margin: 0;
-	left: 0px;
-	bottom: 0;
+	left: 2px;
+	bottom: -2px;
 	line-height: 25px;
 	color: #222;
 	background: url("/imagesnew/index/banner-p.png") no-repeat 0 0;

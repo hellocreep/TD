@@ -65,7 +65,12 @@
 			}
 		});
 		//首页banner轮播
-
+		$(document).ready(function() {
+			$(".banner ul li:gt(0)").hide();
+			setInterval(function() {
+				$('.banner ul li:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.banner ul');
+			}, 5000);
+		})
 		//contact us 弹出框
 		$('#call-you').click(function() {
 			$('.tiny-form').slideToggle('slow');
