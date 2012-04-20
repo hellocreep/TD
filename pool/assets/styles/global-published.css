@@ -217,7 +217,6 @@ input[type="text"], textarea {
 	-moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     -ms-border-radius: 3px;
-	behavior: url(PIE.htc);
 }
 input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus {
 	border-color: #B5DFF1;
