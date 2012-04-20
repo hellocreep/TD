@@ -1,8 +1,9 @@
 .headtop {
 	width: 970px;
 	margin: 0 0 15px;
-	background: #f4f0e7;
-	padding: 15px 0 25px 0;
+	background:url("/imagesnew/index/headbg.png") repeat-y #f4f0e7;
+	padding: 15px 0 21px 0;
+	border-bottom:1px solid #eeeeee;
 }
 .banner {
 	width: 665px;

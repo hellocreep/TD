@@ -30,18 +30,16 @@
 	}
 	$(function() {
 
-		$(window).bind('scroll', syncHeight)
-
 		//顶部导航
 		$('.muti-li').hover(function() {
 			$(this).children('a').css({
-				"position" : "relative"
+				"z-index" : "60"
 			});
 			$(this).children('.dropdown').show();
 		}, function() {
 			$(this).children('.dropdown').hide();
 			$(this).children('a').css({
-				"position" : "static"
+				"z-index" : "40"
 			});
 		});
 		$('.last').hover(function() {
@@ -49,6 +47,9 @@
 		}, function() {
 			$(this).children('.sidenav').hide();
 		});
+		
+		$(window).bind('scroll', syncHeight)
+		
 		//top menu 选择当前页面
 		var bread_len = $('.bread a').length;
 		if(bread_len > 1) {
@@ -69,7 +70,7 @@
 			$(".banner ul li:gt(0)").hide();
 			setInterval(function() {
 				$('.banner ul li:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.banner ul');
-			}, 5000);
+			}, 3000);
 		})
 		//contact us 弹出框
 		$('#call-you').click(function() {
