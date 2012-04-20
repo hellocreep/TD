@@ -175,16 +175,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .section {
 	width: 663px;
 	float: left;
@@ -204,6 +194,9 @@
 	background: url("/imagesnew/index/bg-gtour.jpg") no-repeat left bottom;
 	height: 257px;
 	margin: 0 0 15px 15px;
+}
+.section.last {
+	margin-bottom: 50px;
 }
 .g-tour-list {
 	width: 303px;
