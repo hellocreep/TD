@@ -88,6 +88,7 @@
 	height: 43px;
 	background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343
 }
+/*---右侧边栏样式--*/
 .aside {
 	width: 260px;
 	min-height: 600px;
@@ -174,15 +175,19 @@
 	background-position:-480px -92px;
 }
 
+/*-recent-inqiuries-*/
+.Recent-Inquiry ul li {
+    background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 4px transparent;
+    margin-left: 3px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.Recent-Inquiry ul li a{
+	color:#7E0122;
+}	
+	
 
-
-
-
-
-
-
-
-
+/*--右侧边栏样式   结束---*/
 
 
 .section {
