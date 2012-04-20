@@ -100,16 +100,25 @@
 }
 .iconlist {
 	width: 258px;
+	margin:0 0 15px 0;
 }
 .iconlist li a {
 	text-align: center;
 	display: block;
 	float: left;
 	margin: 10px 18px;
+	color:#434343;
 	width: 45px;
 	padding: 45px 0 0 0;
 	height: 25px;
+	color:#434343;
+	text-decoration:none;
 	background-image: url("/imagesnew/sprite01.png");
+}
+
+.iconlist li a:hover{
+	color:#7E0122;
+	text-decoration:none;
 }
 .permit-ico a{
 	background-position:-1px 0px;
@@ -176,6 +185,12 @@
 }
 
 /*-recent-inqiuries-*/
+.Recent-Inquiry {
+    height: 285px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
 .Recent-Inquiry ul li {
     background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 4px transparent;
     margin-left: 3px;
@@ -185,6 +200,30 @@
 .Recent-Inquiry ul li a{
 	color:#7E0122;
 }	
+
+.list3 {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.list3 li {
+    background: url("../img/list02.gif") no-repeat scroll 0 3px transparent;
+    padding-left: 11px;
+}
+a {
+    color: #2368C7;
+    text-decoration: none;
+}
+.list3 .time {
+    display: block;
+}
+.time {
+    color: #666666;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+
 /*--右侧边栏样式   结束---*/
 .section {
 	width: 663px;
@@ -212,7 +251,7 @@
 .g-tour-list {
 	width: 303px;
 	float: right;
-	margin-right: 50px;
+	margin-right: 21px;
 }
 .g-tour-list li {
 	background: url("/imagesnew/index/bg-gtour-list.png") no-repeat 0 0;
@@ -283,6 +322,8 @@
 }
 .inline-list li a {
 	display: block;
+	color:#7E0122;
+	font-weight:bold;
 }
 .expat-list li {
 	margin: 30px 0 15px 3px;
