@@ -323,7 +323,6 @@ body .right {
 	-webkit-box-shadow: #666 0px 0px 3px;
 	-moz-box-shadow: #666 0px 0px 3px;
 	box-shadow: #666 0px 0px 3px;
-	behavior: url(PIE.htc);
 }
 /* CONTENT */
 
@@ -1068,13 +1067,13 @@ ul.subnav a.active {
 	border-radius: 3px;
 	-moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    behavior: url(PIE.htc);
+
 }
 #departures-monthly .departure-month .old:hover {
 	text-decoration: none;
 	border: 1px solid #D6D6D6;
 	box-shadow: 2px 2px 2px #DDD;
-	behavior: url(PIE.htc);
+
 }
 #departures-monthly .departure-month a {
 	border: 1px solid #D6D6D6;
@@ -1084,13 +1083,13 @@ ul.subnav a.active {
 	border-radius: 3px;
 	-moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    behavior: url(PIE.htc);
+
 }
 #departures-monthly .departure-month a:hover {
 	text-decoration: none;
 	border: 1px solid #342559;
 	box-shadow: 2px 2px 2px #DDD;
-	behavior: url(PIE.htc);
+
 }
 #departures-monthly .month {
 	font-weight: 700;
@@ -1165,7 +1164,6 @@ ul.subnav a.active {
 	border-radius: 3px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
-	behavior: url(PIE.htc);
 }
 .btn-enquirys a img {
 	padding: 0 0 0 10px;
@@ -1277,7 +1275,6 @@ a.reco-click:hover {
 	border-radius: 3px;
 	-moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    behavior: url(PIE.htc);
 }
 .box3 p {
 	font-size: 1.2em;
@@ -1362,7 +1359,7 @@ a.reco-click:hover {
 	margin:24px  0 0 0;
 }
 .nav-new{
-	widht:970px;
+	width:970px;
 	height:35px;
 }
 .nav-new li{

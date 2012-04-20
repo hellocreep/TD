@@ -105,11 +105,9 @@
 .group-tour-price .check-detail {
 	background: url("/imagesnew/buyit.png") no-repeat;
 	display: block;
-	*
-	display: inline;
+	*display: inline;
 	float: right;
-	*
-	float: none;
+	*float: none;
 	width: 124px;
 	font-size: 16px;
 	height: 36px;
