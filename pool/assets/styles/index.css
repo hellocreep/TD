@@ -188,7 +188,6 @@
 .section {
 	width: 663px;
 	float: left;
-	margin: 0 0 15px 15px;
 	min-height: 200px;
 	background: url("/imagesnew/index/bg-section.png") no-repeat left top #ECE4D2;
 }
@@ -203,37 +202,40 @@
 }
 .section-one {
 	background: url("/imagesnew/index/bg-gtour.jpg") no-repeat left bottom;
-	height: 333px;
+	height: 257px;
+	margin: 0 0 15px 15px;
 }
 .g-tour-list {
-	width: 296px;
+	width: 303px;
 	float: right;
+	margin-right: 50px;
 }
 .g-tour-list li {
 	background: url("/imagesnew/index/bg-gtour-list.png") no-repeat 0 0;
-	width: 296px;
-	height: 82px;
-	padding: 10px 0;
-	margin: 5px 0 0 5px;
+	width: 303px;
+	height: 73px;
+	padding: 10px 0 0;
+	margin: 4px 0 0 5px;
 }
 .g-tour-list li h3 a {
-	color: #FED022;
+	color: #932812;
 	font-size: 15px;
 	font-weight: bold;
 	line-height: 18px;
-	margin: 5px 0 0 58px;
-	width: 147px;
 	display: block;
+	margin: 0 10px;
+	overflow: hidden;
+	width: 278px;
 }
 .btn-check {
 	background: url("/imagesnew/index/bg-check.png") no-repeat scroll 0 0 transparent;
 	color: #434343;
 	display: block;
-	float: left;
+	float: right;
 	font-size: 11px;
 	height: 22px;
 	line-height: 22px;
-	margin: 6px 0 0 58px;
+	margin: 5px 25px 0 12px;
 	text-indent: 7px;
 	width: 95px;
 }
@@ -242,17 +244,13 @@
 	text-decoration: none;
 }
 .g-price {
-	color: #ffffff;
 	font-size: 18px;
 	font-weight: bold;
 	margin: 8px;
-	float: left;
-}
-.g-discount {
 	float: right;
-	font-weight: bold;
-	font-size: 24px;
-	margin: 8px 12px;
+}
+.g-price .price-s {
+	font-size: 15px;
 }
 .p-tour-list {
 	float: right;
