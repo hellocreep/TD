@@ -69,8 +69,8 @@
 		$(document).ready(function() {
 			$(".banner ul li:gt(0)").hide();
 			setInterval(function() {
-				$('.banner ul li:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.banner ul');
-			}, 3000);
+				$('.banner ul li:first').fadeOut(3000).next().fadeIn(3000).end().appendTo('.banner ul');
+			}, 5000);
 		})
 		//contact us 弹出框
 		$('#call-you').click(function() {

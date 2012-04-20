@@ -141,10 +141,12 @@
 
 .right-bar p {
 	margin: 6px 0;
-	padding: 0 30px;
-    	text-indent: -23px;
+	
 }
-
+.p-indent{
+	padding: 0 0 0 30px;
+	text-indent: -22px;
+}
 .flower-right {
 	position:absolute;
 	left: 0;
