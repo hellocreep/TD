@@ -165,7 +165,6 @@ input.error {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-ms-border-radius: 4px;
-	behavior: url(PIE.htc);
 }
 .btn:hover {
 	text-decoration: none;
