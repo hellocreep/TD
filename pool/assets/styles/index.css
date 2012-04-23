@@ -248,6 +248,10 @@ a {
 	padding: 3px 10px 0 15px;
 	color: #7d7d7d;
 }
+.section-content img {
+	outline: 1px solid #DDDDDD;
+    	padding: 1px;
+}
 .section-one {
 	background: url("/imagesnew/index/bg-gtour.jpg") no-repeat left bottom;
 	height: 257px;
@@ -317,6 +321,11 @@ a {
 }
 .p-tour-list li a {
 	color: #c12b39;
+}
+.p-tour-list .the-price {
+	color: #912711;
+	font-weight: bold;
+	margin-left: 10px;
 }
 .more-tour {
 	display: block;
