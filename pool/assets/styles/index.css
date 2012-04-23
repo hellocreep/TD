@@ -257,7 +257,7 @@ a {
 	border: 1px solid #932812;
 }
 .section p {
-	margin: 13px 15px;
+	margin: 35px 15px 20px;
 }
 .section h4 {
 	color: #ffffff;
@@ -412,7 +412,7 @@ a {
 	padding: 1px;
 }
 .theme-list li {
-	margin: 26px 0 0 21px;
+	margin: 0 0 0 21px;
 }
 .theme-list img {
 	width: 190px;
@@ -422,7 +422,7 @@ a {
 .tour-list {
 	border: 1px solid #dddddd;
 	border-bottom: none;
-	margin: 30px 10px 10px;
+	margin: 23px 10px 10px;
 }
 .tour-list li {
 	border-bottom: 1px solid #dddddd;
@@ -460,7 +460,7 @@ a {
 .hreview {
     background: url("/imagesnew/index/review-bg.png") no-repeat scroll 0 0 transparent;
     padding: 10px;
-    margin:15px 0 0 5px;
+    margin:13px 0 0 5px;
 }
 .hreview .cont a {
     color: #FFFFFF;
