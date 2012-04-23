@@ -5,10 +5,10 @@
 	padding: 15px 0 21px 0;
 	border-bottom: 1px solid #eeeeee;
 }
-.headtop .about{
-	width:940px;
-	float:left;
-	margin:15px 0 0 15px;
+.headtop .about {
+	width: 940px;
+	float: left;
+	margin: 15px 0 0 15px;
 }
 .banner {
 	width: 665px;
@@ -23,8 +23,8 @@
 	top: 0;
 }
 .banner ul li img {
-	width:650px;
-	height:288px;
+	width: 650px;
+	height: 288px;
 	border: 1px solid #ddd;
 	padding: 1px;
 	background: #ffffff;
@@ -34,7 +34,7 @@
 	left: 20px;
 	top: 35px;
 	color: #ebac01;
-	font: italic 30px/32px times New Roman;
+	font: italic 30px /32px times New Roman;
 }
 .banner h1 span {
 	font-size: 16px;
@@ -87,13 +87,13 @@
 	display: block;
 }
 .talkto {
+	background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343;
 	display: block;
 	float: left;
-	font: italic 24px     /43px times New Roman;
-	margin: 20px 32px;
-	width: 199px;
-	height: 43px;
-	background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343
+	font: italic 24px /31px times New Roman;
+	height: 31px;
+	margin: 20px 59px;
+	width: 147px;
 }
 /*---右侧边栏样式--*/
 .aside {
@@ -104,150 +104,137 @@
 }
 .aside h3 {
 	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	margin: 0 0 10px 0;
 }
 .iconlist {
 	width: 258px;
-	margin:0 0 15px 0;
+	margin: 5px 0 15px 0;
 }
-.iconlist li{
-	display:block;
-	float:left;
-	border:1px solid #d5b77e;
-	margin:5px;
-	border-radius:3px;
-	background:url("/imagesnew/index/bar-iconbg.png") repeat-x;
+.iconlist li {
+	display: block;
+	float: left;
+	border: 1px solid #d5b77e;
+	margin: 5px;
+	border-radius: 3px;
+	background: url("/imagesnew/index/bar-iconbg.png") repeat-x;
 }
 .iconlist li a {
+	margin-top:3px;
 	text-align: center;
 	display: block;
 	float: left;
-	color:#434343;
+	color: #434343;
 	width: 70px;
-	padding: 35px 0 0 0;
-	color:#434343;
-	font-family:Verdana;
-	font-size:11px;
-	line-height:1;
-	text-decoration:none;
+	height: 20px;
+	padding: 35px 2px 5px 2px;
+	color: #434343;
+	font-family: Verdana;
+	font-size: 11px;
+	line-height: 1;
+	text-decoration: none;
 	background-image: url("/imagesnew/sprite01.png");
 }
-
-.iconlist li a:hover{
-	color:#7E0122;
-	text-decoration:none;
+.iconlist li a:hover {
+	color: #7E0122;
+	text-decoration: none;
 }
-.permit-ico a{
-	background-position:-1px 0px;
+.permit-ico a {
+	background-position: 18px 4px;
 }
-.permit-ico a:hover{
-	background-position:-1px -89px;
+.permit-ico a:hover {
+	background-position: 18px -106px;
 }
-
-.altitude-ico a{
-	background-position:-61px -3px;
+.altitude-ico a {
+	background-position: -66px 0px;
 }
-.altitude-ico a:hover{
-	background-position:-61px -92px;
+.altitude-ico a:hover {
+	background-position: -66px -110px;
 }
-
-.pack-ico a{
-	background-position:-120px -5px;
+.pack-ico a {
+	background-position: -150px -0px;
 }
-.pack-ico a:hover{
-	background-position:-120px -94px;
+.pack-ico a:hover {
+	background-position: -150px -110px;
 }
-
-.accommodation-ico a{
-	background-position:-187px -3px;
+.accommodation-ico a {
+	background-position: -234px -2px;
 }
-.accommodation-ico a:hover{
-	background-position:-187px -92px;
+.accommodation-ico a:hover {
+	background-position: -234px -112px;
 }
-
-.train-ico a{
-	background-position:-245px -3px;
-	
+.train-ico a {
+	background-position: -320px -3px;
 }
-.train-ico a:hover{
-	background-position:-245px -93px;
+.train-ico a:hover {
+	background-position: -320px -113px;
 }
-
-.beijing-ico a{
-	background-position:-299px -4px;
+.beijing-ico a {
+	background-position: -405px -4px;
 }
-.beijing-ico a:hover{
-	background-position:-299px -93px;
+.beijing-ico a:hover {
+	background-position: -405px -114px;
 }
-
-.nepal-ico a{
-	background-position:-359px -3px;
+.nepal-ico a {
+	background-position: 20px -218px;
 }
-.nepal-ico a:hover{
-	background-position:-359px -92px;
+.nepal-ico a:hover {
+	background-position: -236px -213px;
 }
-
-.road-ico a{
-	background-position:-422px -3px;
+.road-ico a {
+	background-position: -66px -218px;
 }
-.road-ico a:hover{
-	background-position:-422px -92px;
+.road-ico a:hover {
+	background-position: -322px -213px;
 }
-
-.chengdu-ico a{
-	background-position:-480px -3px;
+.chengdu-ico a {
+	background-position: -151px -218px;
 }
-.chengdu-ico a:hover{
-	background-position:-480px -92px;
+.chengdu-ico a:hover {
+	background-position: -407px -213px;
 }
-
 /*-recent-inqiuries-*/
 .Recent-Inquiry {
-    height: 285px;
-    margin-bottom:15px;
-    overflow: hidden;
+	height: 276px;
+	margin-bottom: 15px;
+	overflow: hidden;
 }
-
 .Recent-Inquiry ul li {
-    background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 4px transparent;
-    margin-left: 3px;
-    margin-top: 10px;
-    padding-left: 15px;
+	background: url("/imagesnew/itinerary/list-circle.png") no-repeat scroll left 4px transparent;
+	padding-left: 15px;
 }
-.Recent-Inquiry ul li a{
-	color:#7E0122;
-}	
-
+.Recent-Inquiry ul li a {
+	color: #7E0122;
+}
 .list3 {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
 }
 .list3 li {
-    background: url("../img/list02.gif") no-repeat scroll 0 3px transparent;
-    padding-left: 11px;
+	background: url("../img/list02.gif") no-repeat scroll 0 3px transparent;
+	padding-left: 14px;
 }
 a {
-    color: #2368C7;
-    text-decoration: none;
+	color: #2368C7;
+	text-decoration: none;
 }
 .list3 .time {
-    display: block;
+	display: block;
 }
 .time {
-    color: #666666;
-    font-size: 0.9em;
-    font-style: italic;
+	color: #666666;
+	font-size: 0.9em;
+	font-style: italic;
 }
-
-
 /*--右侧边栏样式   结束---*/
 .section {
 	width: 648px;
-	margin:0 0 30px 15px;
+	margin: 0 0 30px 15px;
 	float: left;
 	min-height: 200px;
-	background: url("/imagesnew/index/bg-section.png") no-repeat left top ;
-	border:1px solid #932812;
+	background: url("/imagesnew/index/bg-section.png") no-repeat left top;
+	border: 1px solid #932812;
 }
 .section h4 {
 	color: #ffffff;
@@ -285,6 +272,7 @@ a {
 	margin: 0 10px;
 	overflow: hidden;
 	width: 278px;
+	text-decoration:none;
 }
 .btn-check {
 	background: url("/imagesnew/index/bg-check.png") no-repeat scroll 0 0 transparent;
@@ -340,24 +328,23 @@ a {
 }
 .inline-list li a {
 	display: block;
-	color:#7E0122;
-	font-weight:bold;
+	color: #7E0122;
+	font-weight: bold;
+	text-decoration:none;
 }
 .expat-list li {
-	margin: 50px 0 15px 3px;
-	padding: 1px;
-	width: 24%;
+	margin: 31px 0 9px 8px;
 }
 .expat-list li a {
 	position: relative;
 }
 .expat-list .caption {
-	
+
 	width: 144px;
 	position: absolute;
 	padding: 3px;
-	bottom: 0;
-	left: 5px;
+	bottom: 5px;
+	left: 1px;
 	background: rgba(0,0,0,0.3);
 	color: #ffffff;
 }
@@ -381,10 +368,47 @@ a {
 	padding: 1px;
 }
 .theme-list li {
-	margin: 26px 0 0 25px;
+	margin: 26px 0 0 21px;
 }
 .theme-list img {
 	width: 188px;
 	height: 88px;
 	border-radius: 3px;
+}
+.tour-list {
+	border: 1px solid #dddddd;
+	border-bottom: none;
+	 margin: 15px 10px 10px;
+}
+.tour-list li {
+	border-bottom: 1px solid #dddddd;
+	background: url("/imagesnew/tour-index/tour-list-bg.png") repeat-x 0 0 #fff6d3;
+}
+.tour-list li a {
+	display: block;
+	height: 64px;
+	padding: 6px;
+}
+.tour-list .tour-thumb {
+	width: 85px;
+	height: 55px;
+	float: left;
+	margin: 4px 15px 4px 0;
+}
+.tour-list li a:hover {
+	background: #f7e2ab;
+	text-decoration: none;
+}
+.tour-info2 {
+	float: left;
+	color: #333333;
+	width: 450px;
+}
+.tour-info2 .tour-name {
+	font-weight: bold;
+	color: #4694EC;font-size; 14px;
+}
+.tour-info2 p {
+	font-size: 13px;
+	margin: 9px 0 0 0;
 }
