@@ -342,6 +342,8 @@ a {
 	margin-bottom: 12px;
 	background: url("../images/list02.gif") no-repeat scroll 5px 3px transparent;
 	padding-left: 15px;
+	width: 300px;
+	position: relative;
 }
 .p-tour-list li a {
 	color: #434343;
@@ -350,11 +352,17 @@ a {
 .p-tour-list li a:hover {
 	color:#7E0122;
 }
-.p-tour-list .the-price {
+.p-tour-list .price-from {
 	color: #912711;
 	font-weight: bold;
 	margin-left: 10px;
+	position: absolute;
+   	right: 0;
 }
+.p-tour-list .price-from .the-price {
+	font-size: 15px;
+}
+
 .more-tour {
 	display: block;
 	width: 128px;
