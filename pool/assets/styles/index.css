@@ -5,9 +5,14 @@
 	padding: 15px 0 21px 0;
 	border-bottom: 1px solid #eeeeee;
 }
+.headtop .about{
+	width:940px;
+	float:left;
+	margin:15px 0 0 15px;
+}
 .banner {
 	width: 665px;
-	height: 333px;
+	height: 288px;
 	margin: 0 0 0 15px;
 	float: left;
 	position: relative;
@@ -18,6 +23,8 @@
 	top: 0;
 }
 .banner ul li img {
+	width:650px;
+	height:288px;
 	border: 1px solid #ddd;
 	padding: 1px;
 	background: #ffffff;
@@ -27,7 +34,7 @@
 	left: 20px;
 	top: 35px;
 	color: #ebac01;
-	font: italic 30px    /32px times New Roman;
+	font: italic 30px/32px times New Roman;
 }
 .banner h1 span {
 	font-size: 16px;
@@ -102,16 +109,25 @@
 	width: 258px;
 	margin:0 0 15px 0;
 }
+.iconlist li{
+	display:block;
+	float:left;
+	border:1px solid #d5b77e;
+	margin:5px;
+	border-radius:3px;
+	background:url("/imagesnew/index/bar-iconbg.png") repeat-x;
+}
 .iconlist li a {
 	text-align: center;
 	display: block;
 	float: left;
-	margin: 10px 18px;
 	color:#434343;
-	width: 45px;
-	padding: 45px 0 0 0;
-	height: 25px;
+	width: 70px;
+	padding: 35px 0 0 0;
 	color:#434343;
+	font-family:Verdana;
+	font-size:11px;
+	line-height:1;
 	text-decoration:none;
 	background-image: url("/imagesnew/sprite01.png");
 }
@@ -226,10 +242,12 @@ a {
 
 /*--右侧边栏样式   结束---*/
 .section {
-	width: 663px;
+	width: 648px;
+	margin:0 0 30px 15px;
 	float: left;
 	min-height: 200px;
-	background: url("/imagesnew/index/bg-section.png") no-repeat left top #ECE4D2;
+	background: url("/imagesnew/index/bg-section.png") no-repeat left top ;
+	border:1px solid #932812;
 }
 .section h4 {
 	color: #ffffff;
@@ -243,15 +261,13 @@ a {
 .section-one {
 	background: url("/imagesnew/index/bg-gtour.jpg") no-repeat left bottom;
 	height: 257px;
-	margin: 0 0 15px 15px;
 }
 .section.last {
 	margin-bottom: 50px;
 }
 .g-tour-list {
-	width: 303px;
 	float: right;
-	margin-right: 21px;
+	margin: 0 6px 0 0;
 }
 .g-tour-list li {
 	background: url("/imagesnew/index/bg-gtour-list.png") no-repeat 0 0;
