@@ -1,3 +1,7 @@
+.homewrap{
+	margin-top:36px;
+} 
+
 .headtop {
 	width: 970px;
 	margin: 0 0 15px;
@@ -29,6 +33,7 @@
 	padding: 1px;
 	background: #ffffff;
 }
+/*
 .banner h1 {
 	position: absolute;
 	left: 20px;
@@ -53,12 +58,16 @@
 	color: #222;
 	background: url("/imagesnew/index/banner-p.png") no-repeat 0 0;
 }
+*/
 .tc {
 	width: 260px;
 	margin: 0 15px 0 0;
 	padding: 40px 0 0 0;
 	float: right;
 	text-align: center;
+}
+.tc-h3{
+	font-size:16px;
 }
 .tc-list {
 	background: url("/imagesnew/index/tc-line.png") no-repeat top center;
@@ -69,10 +78,10 @@
 }
 .tc-list li a {
 	text-decoration: none;
-	color: #7E0122;
+	color: #434343;
 }
 .tc-list li a:hover {
-	color: #434343;
+	color: #7E0122;
 	opacity: 0.8;
 }
 .tc-list img {
