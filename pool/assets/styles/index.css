@@ -301,6 +301,8 @@ a {
 }
 .p-tour-list li {
 	margin-bottom: 12px;
+	background: url("../images/list02.gif") no-repeat scroll 5px 3px transparent;
+	padding-left: 15px;
 }
 .p-tour-list li a {
 	color: #c12b39;
@@ -326,14 +328,35 @@ a {
 	font-weight:bold;
 }
 .expat-list li {
-	margin: 30px 0 15px 3px;
+	margin: 50px 0 15px 3px;
 	padding: 1px;
 	width: 24%;
 }
-.expat-list li:hover {
-	background: #FFFFFF;
-	border: 1px solid #E0E0E0;
-	padding: 0;
+.expat-list li a {
+	position: relative;
+}
+.expat-list .caption {
+	
+	width: 144px;
+	position: absolute;
+	padding: 3px;
+	bottom: 0;
+	left: 5px;
+	background: rgba(0,0,0,0.3);
+	color: #ffffff;
+}
+.expat-list .caption h5 {
+	font-weight: bold;
+	line-height: 13px;
+	color: #ffffff;
+	font-size: 13px;
+}
+.expat-list .caption p {
+	display: none;
+	font-size: 11px;
+	margin-bottom: 0;
+	line-height: 13px;
+	font-weight: normal;
 }
 .expat-list img {
 	width: 150px;
