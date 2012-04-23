@@ -236,6 +236,9 @@ a {
 	background: url("/imagesnew/index/bg-section.png") no-repeat left top;
 	border: 1px solid #932812;
 }
+.section p {
+	margin: 13px 15px;
+}
 .section h4 {
 	color: #ffffff;
 	font-weight: bold;
@@ -305,7 +308,7 @@ a {
 }
 .p-tour-list {
 	float: right;
-	margin-right: 105px;
+	margin-right: 85px;
 }
 .p-tour-list li {
 	margin-bottom: 12px;
@@ -337,7 +340,7 @@ a {
 	text-decoration:none;
 }
 .expat-list li {
-	margin: 31px 0 9px 8px;
+	margin: 0px 0 9px 8px;
 }
 .expat-list li a {
 	position: relative;
