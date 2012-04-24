@@ -100,3 +100,6 @@ def beijing_lhasa(request):
 
 def index(request):
     return render_to_response('index.html', {})
+
+def latestnew(request):
+    return render_to_response('latestnew.html', {})

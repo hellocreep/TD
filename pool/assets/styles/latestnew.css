@@ -1,0 +1,59 @@
+.news-block {
+	margin-top: 35px;
+	background: url("/imagesnew/bg-news-block.jpg") no-repeat 0 0;
+	min-height: 460px;
+}
+.block-title {
+	position: relative;
+	height: 40px;
+	margin-bottom: 5px;
+}
+.block-title h2 a{
+	font-size: 14px;
+	padding-left: 160px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #7E0122;
+}
+.news-date {
+	background: url("/imagesnew/bg-calendar.png") no-repeat 0 0;
+	position: absolute;
+	height: 47px;
+	width: 42px;
+	left: 39px;
+	top: 0;
+	text-align: center;
+}
+.news-date .date-m {
+	color: #ffffff;
+	font-size: 11px;
+	margin-top: 5px
+}
+.news-date .date-d {
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 2px;
+}
+.block-body {
+	padding: 20px 22px;
+}
+.news-time {
+	width: 105px;
+	padding: 18px;
+}
+.news-info {
+	width: 480px;
+}
+.news-info img {
+	padding: 1px;
+	border: 1px solid #dddddd;
+}
+.news-info img:hover {
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.continue-read {
+	margin-left: 293px;
+}
