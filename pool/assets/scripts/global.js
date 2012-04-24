@@ -52,6 +52,9 @@
 		
 		//top menu 选择当前页面
 		var bread_len = $('.bread a').length;
+		if( bread_len == 0 ){
+			$( '.home' ).addClass( 'current' )
+		}	
 		if(bread_len > 1) {
 			var selected = $('.bread a').eq(1).text();
 		} else {
