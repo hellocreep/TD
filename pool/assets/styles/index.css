@@ -116,6 +116,10 @@
 .roll-tips li {
 	height: 25px;
 }
+.roll-tips li span {
+	color: #8E2611;
+    	font-weight: bold;
+}
 .talkto {
 	background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343;
 	display: block;
