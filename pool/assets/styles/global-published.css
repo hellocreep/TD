@@ -357,12 +357,12 @@ body .right {
 	height: 85px;
 	background: url(/imagesnew/logo.png) no-repeat;
 	display: block;
-    margin: 11px 0 11px 11px;
+    margin: 18px 0 3px 11px;
 	float: left;
 }
 .header .slogan {
 	float: left;
-	margin: 36px 0 0 20px;
+    margin:49px 0 4px 10px;
 	background: url(/imagesnew/slogan.png) no-repeat 0 0;
 	width: 296px;
 	height: 34px;
