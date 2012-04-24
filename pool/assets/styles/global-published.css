@@ -53,10 +53,6 @@ body {
 	position: relative;
 	width: 970px;
 }
-/*Chrome 兼容字体大小*/
-html,body{
-      -webkit-text-size-adjust:none;
-}
 /*
  h1, h2, h3, h4, h5, h6 {
  color: #7E0122;
@@ -1411,7 +1407,7 @@ a.reco-click:hover {
 	background:url("/imagesnew/nav-home.png") no-repeat center center;
 }
 .nav-new li a.home.current span {
-	background:url("/imagesnew/nav-home2.png") no-repeat center center; 
+	background:url("/imagesnew/nav-home.png") no-repeat center center; 
 }
 .nav-new li.last{
 	height:33px;

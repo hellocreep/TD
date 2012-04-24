@@ -21,7 +21,7 @@
 }
 .headtop .about a.check-a{
     float:right;
-    margin-right:200px;
+    margin-right:124px;
 }
 .headtop .about a:hover{
 	color:#7E0122;
@@ -132,6 +132,15 @@
 	padding-bottom: 5px;
 	margin: 0 0 10px 0;
 }
+.board{
+	text-align:center;
+	border:1px dashed #ddd;
+	margin:0 0 20px 0;
+	padding:10px 0;
+	font-family:times New Roman;
+	font-size:18px;
+}
+
 .iconlist {
 	width: 258px;
 	margin: 5px 0 38px 0;
