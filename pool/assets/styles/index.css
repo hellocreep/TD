@@ -15,10 +15,13 @@
 	margin: 15px 0 0 15px;
 }
 .headtop .about a{
-	display:block;
 	padding-left:30px;
 	text-decoration:none;
 	background:url("/imagesnew/index/about-a.png") left center no-repeat;
+}
+.headtop .about a.check-a{
+    float:right;
+    margin-right:30px;
 }
 .headtop .about a:hover{
 	color:#7E0122;
