@@ -116,6 +116,10 @@
 .roll-tips li {
 	height: 25px;
 }
+.roll-tips li span {
+	color: #8E2611;
+    	font-weight: bold;
+}
 .talkto {
 	background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343;
 	display: block;
@@ -187,40 +191,40 @@
 	text-decoration: none;
 }
 .permit-ico a {
-	background-position: 18px 4px;
+	background-position: 16px 4px;
 }
 .permit-ico a:hover {
-	background-position: 18px -106px;
+	background-position: 16px -106px;
 }
 .altitude-ico a {
-	background-position: -66px 0px;
+	background-position: -70px 0px;
 }
 .altitude-ico a:hover {
-	background-position: -66px -110px;
+	background-position: -70px -110px;
 }
 .pack-ico a {
-	background-position: -150px -0px;
+	background-position: -154px -0px;
 }
 .pack-ico a:hover {
-	background-position: -150px -110px;
+	background-position: -154px -110px;
 }
 .accommodation-ico a {
-	background-position: -234px -2px;
+	background-position: -238px -2px;
 }
 .accommodation-ico a:hover {
-	background-position: -234px -112px;
+	background-position: -238px -112px;
 }
 .train-ico a {
-	background-position: -320px -3px;
+	background-position: -323px -3px;
 }
 .train-ico a:hover {
-	background-position: -320px -113px;
+	background-position: -323px -113px;
 }
 .beijing-ico a {
-	background-position: -405px -4px;
+	background-position: -407px -4px;
 }
 .beijing-ico a:hover {
-	background-position: -405px -114px;
+	background-position: -407px -114px;
 }
 .nepal-ico a {
 	background-position: 20px -218px;
@@ -229,16 +233,16 @@
 	background-position: -236px -213px;
 }
 .road-ico a {
-	background-position: -66px -218px;
+	background-position: -69px -218px;
 }
 .road-ico a:hover {
-	background-position: -322px -213px;
+	background-position: -325px -213px;
 }
 .chengdu-ico a {
-	background-position: -151px -218px;
+	background-position: -155px -218px;
 }
 .chengdu-ico a:hover {
-	background-position: -407px -213px;
+	background-position: -411px -213px;
 }
 /*-recent-inqiuries-*/
 .Recent-Inquiry {
