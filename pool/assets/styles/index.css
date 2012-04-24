@@ -107,6 +107,15 @@
 .tc-list span {
 	display: block;
 }
+.roll-tips {
+	height: 25px;
+	overflow: hidden;
+	line-height: 25px;
+	margin-top: 10px;
+}
+.roll-tips li {
+	height: 25px;
+}
 .talkto {
 	background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343;
 	display: block;
@@ -114,7 +123,7 @@
 	height: 31px;
 	line-height:31px;
 	font-size:15px;
-	margin: 20px 59px;
+	margin: 15px 59px;
 	width: 147px;
 }
 /*---右侧边栏样式--*/
