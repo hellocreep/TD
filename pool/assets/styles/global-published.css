@@ -354,10 +354,10 @@ body .right {
 }
 .logo {
 	width: 165px;
-	height: 55px;
+	height: 85px;
 	background: url(/imagesnew/logo.png) no-repeat;
 	display: block;
-	margin-top: 25px;
+    margin: 11px 0 11px 11px;
 	float: left;
 }
 .header .slogan {
@@ -1355,7 +1355,6 @@ a.reco-click:hover {
 	width:980px;
 	height:34px;
 	float: left;
-	margin:24px  0 0 0;
 }
 .nav-new{
 	width:970px;
@@ -1407,7 +1406,7 @@ a.reco-click:hover {
 	background:url("/imagesnew/nav-home.png") no-repeat center center;
 }
 .nav-new li a.home.current span {
-	background:url("/imagesnew/nav-home.png") no-repeat center center; 
+	background:url("/imagesnew/nav-home2.png") no-repeat center center; 
 }
 .nav-new li.last{
 	height:33px;
