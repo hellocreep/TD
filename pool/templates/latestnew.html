@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}latest news{% endblock %}
+
+{% block style %}
+<link href="/assets/styles/destination.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block script %} 
+
+{% endblock %}
+{% block body%}
+{% include 'header.html' %} <div class="bread"></div>
+<div class="wrapper clearfix">
+	{% include 'sidebar-destination.html' %}
+	<div class="content" name="">
+		<h1>Latest & Hottest Tibet Travel News</h1>
+		<p>2012 Tibet Discovery travel news shows you the latest and hottest Tibet travel information. Here, 
+many aspects of Tibet conveyed, true stories of Tibet shown. All news sources come from authoritative 
+news-websites, which may help you get better on the sacred journey and witness real Tibet.</p>
+		
+		<div class="news-block">
+			<div class="block-title">
+				<h2></h2>
+				<span class="news-date"></span>
+			</div>
+			<div class="block-body clearfix">
+				<div class="left"></div>
+				<div class="right">
+					<img src="" alt="">
+					<p></p>
+					<a href="" class="btn"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="pager">
+			
+		</div>
+	</div>
+</div>
+{% include 'footer.html' %}
+{% endblock %}
