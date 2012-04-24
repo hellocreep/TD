@@ -363,9 +363,12 @@ a {
 
 .more-tour {
 	display: block;
-	width: 128px;
-	margin: 0 0 20px 400px;
-	color: #7d7d7d;
+	margin: 15px 0 10px 568px;
+	color: #2368C7;
+}
+.more-tour:hover {
+	text-decoration: none;
+	color: #7E0122;
 }
 .inline-list li {
 	float: left;
@@ -407,8 +410,8 @@ a {
 .expat-list .caption p {
 	display: none;
 	font-size: 11px;
-	margin-bottom: 0;
 	line-height: 13px;
+	margin: 5px 0 0;
 	font-weight: normal;
 }
 .expat-list img {

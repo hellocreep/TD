@@ -404,12 +404,13 @@ div.slideshow div.images div.image img{
 }
 .contact-header span {
 	width:676px;
-	height: 35px;
+	min-height: 25px;
 	color: #FFFFFF;
 	font-size: 14px;
 	background: rgba(0,0,0,0.2);
-	line-height: 35px;
 	text-indent:20px;
+	padding: 5px 0;
+	line-height: 22px;
 	position: absolute;
 	right:1px;
 	bottom: 1px;
