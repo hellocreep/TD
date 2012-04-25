@@ -261,7 +261,7 @@ body .right {
 /* PAGER */
 #pager {
 	text-align: center;
-	padding: 0 230px;
+	padding: 0 100px 0 200px;
 }
 #pager:after {
 	content: '';
@@ -1590,6 +1590,7 @@ a.reco-click:hover {
     right: 85px;
     text-decoration: none;
     top: 350px;
+    z-index: 10;
 }
 #mywishlist:hover{
 	background-color: #F7C7BD;

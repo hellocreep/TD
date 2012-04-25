@@ -1,7 +1,7 @@
 .news-block {
 	margin-top: 35px;
 	background: url("/imagesnew/bg-news-block.jpg") no-repeat 0 0;
-	min-height: 460px;
+	min-height: 420px;
 }
 .block-title {
 	position: relative;
@@ -9,11 +9,16 @@
 	margin-bottom: 5px;
 }
 .block-title h2 a{
-	font-size: 14px;
-	padding-left: 160px;
-	line-height: 40px;
-	font-size: 20px;
+	line-height: 22px;
+	font-size: 18px;
 	color: #7E0122;
+	display: block;
+	margin: 8px 36px 0 160px;
+	padding-top: 8px;
+}
+.block-title h2 a:hover {
+    color: #C52929;
+    text-decoration: none;
 }
 .news-date {
 	background: url("/imagesnew/bg-calendar.png") no-repeat 0 0;
@@ -27,7 +32,8 @@
 .news-date .date-m {
 	color: #ffffff;
 	font-size: 11px;
-	margin-top: 5px
+	margin-top: 5px;
+	font-weight: bold;
 }
 .news-date .date-d {
 	color: #000000;
@@ -55,5 +61,5 @@
 	filter:alpha(opacity=80);
 }
 .continue-read {
-	margin-left: 293px;
+	margin-left: 340px;
 }
