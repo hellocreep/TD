@@ -357,12 +357,12 @@ body .right {
 	color: #92240D;
 }
 .logo {
-	width: 140px;
-	height: 85px;
 	background: url(/imagesnew/logo.png) no-repeat;
 	display: block;
-    margin: 18px 0 3px 11px;
 	float: left;
+	height: 62px;
+    margin: 22px 100px 23px 0;
+    width: 200px;
 }
 .header .slogan {
 	float: left;

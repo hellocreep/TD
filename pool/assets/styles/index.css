@@ -151,6 +151,7 @@
 	border:1px dashed #ddd;
 	margin:0 0 20px 0;
 	padding:10px 0;
+	background:url("/imagesnew/index/board.png") no-repeat center top;
 }
 .board p{
 	margin:0;
