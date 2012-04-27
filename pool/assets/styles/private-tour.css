@@ -42,10 +42,14 @@
 .tour-list-wrap h3 {
 	color: #ffffff;
 	font-size: 12px;
-	margin-bottom: 7px;
+	/*margin-bottom: 7px;*/
 	text-indent: 1px;
 }
-
+/*more链接样式*/
+.tour-list-wrap .more{
+	text-align:right;
+	display:block;
+}
 .tour-tag {
 	display: block;
 	width: 65px;
