@@ -39,14 +39,14 @@
 				if( $(this).hasClass('muti-li') ){
 					$(this).children('a').css({
 					"z-index" : "60"
-					}).addClass('hover');
+					});
 					$(this).children('.dropdown').show();
-					}
+				}
 				if( $(this).hasClass('last') ){
 					$(this).children('.sidenav').slideDown();
 				}
 			},function(){
-				$( this ).removeClass( 'hover' ).children( 'a' ).removeClass( 'hover' );
+				$( this ).removeClass( 'hover' ).children( 'a' ).removeClass( 'hover');
 				if( $(this).hasClass('muti-li') ){
 					$(this).children('.dropdown').hide();
 					$(this).children('a').css({
