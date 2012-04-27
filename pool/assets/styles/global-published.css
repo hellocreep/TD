@@ -1087,16 +1087,17 @@ a.reco-click:hover {
 /*------ 新版导航样式------*/
 #nav-div{
 	width:1025px;
-	height:34px;
+	height:33px;
 	float: left;
 }
 .nav-new{
 	width:1025px;
-	height:35px;
+	height:33px;
 }
 .nav-new li{
-	display: block;
+	background: url("/imagesnew/sprite01.png") no-repeat scroll right -368px transparent;
 	float: left;
+	margin-right: 18px;
 	position: relative;
 }
 .nav-new li a{
@@ -1106,28 +1107,26 @@ a.reco-click:hover {
 	height:33px;
 	padding: 0px 8px;
 	float:left;
-	border:1px solid #c4c4c4;
-	border-bottom:none;
-	margin:0 10px 0 0;
-	background:url("/imagesnew/nav-bg-hover2.png") repeat-x;
+	background: url("/imagesnew/sprite01.png") no-repeat scroll 0 -368px transparent;
 	line-height:33px;
 	text-decoration:none;
 	font-size:15px;
-	border-radius:5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    behavior: url(PIE.htc);
+	margin-left: -8px;
 }
-.nav-new li a:hover{
-	background:url("/imagesnew/nav-bg.png") repeat-x;
+.nav-new li a.hover{
+	background:url('/imagesnew/sprite01.png') no-repeat 0 -412px;
 }
 .nav-new li a.current{
-	background:url("/imagesnew/nav-current.png") repeat-x;
+	background:url('/imagesnew/sprite01.png') no-repeat 0 -325px;
 	color: #ffffff;
-	border:1px solid #a42a0f;
 	border-bottom:none;
 }
-
+.nav-new li.current {
+	background: url('/imagesnew/sprite01.png') no-repeat right -325px;
+}
+.nav-new li.hover {
+	background: url('/imagesnew/sprite01.png') no-repeat right -412px;
+}
 .nav-new li a.home span{
 	width:16px;
 	height:33px;
@@ -1149,9 +1148,6 @@ a.reco-click:hover {
 	padding:0 5px 0 0;
 	float: left;
 	border:none;
-	border-radius:5px 5px 0 0 ;
-	-moz-border-radius: 5px 5px 0 0 ;
-            -webkit-border-radius: 5px 5px 0 0 ;
 }
 
 .nav-new .last a{
@@ -1198,11 +1194,14 @@ a.reco-click:hover {
 .nav-new .muti-li a{
 	z-index:45;
 }
+.nav-new .muti-li a.hover {
+	background:url('/imagesnew/sprite01.png') no-repeat 0 -412px;	
+}
 
 .dropdown{
 	display: none;
 	position: absolute;
-	left:0;
+	left:-8px;
 	top:33px;
 	border:1px solid #c4c4c4;
 	z-index:50;
@@ -1253,14 +1252,9 @@ a.reco-click:hover {
 	line-height: 60px;
 	background:#ffffff;
 	color: #2368C7;
-	
 	text-decoration: none;
 	padding:0;
 	font-size:12px;
-	border-radius:0;
-	-moz-border-radius: 0;
-   	-webkit-border-radius: 0;
-	behavior: url(PIE.htc);
 }
 .dropdown dl dd a:hover{
 	background:#990100;
@@ -1285,7 +1279,6 @@ a.reco-click:hover {
     border-radius:0 0 3px 3px;
     -moz-border-radius: 0 0 3px 3px;
     -webkit-border-radius: 0 0 3px 3px;
-	behavior: url(PIE.htc);
 }
 #nav-div .sidenav li{
     background:none;
