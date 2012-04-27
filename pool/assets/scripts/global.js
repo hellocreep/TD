@@ -31,23 +31,35 @@
 	$(function() {
 
 		//顶部导航
-		$('.muti-li').hover(function() {
-			$(this).children('a').css({
-				"z-index" : "60"
-			});
-			$(this).children('.dropdown').show();
-		}, function() {
-			$(this).children('.dropdown').hide();
-			$(this).children('a').css({
-				"z-index" : "40"
+		$( '.nav-new li' ).each(function(){
+			$( this ).hover(function(){
+				if( !$(this).hasClass('current')){
+					$( this ).addClass( 'hover' ).children( 'a' ).addClass( 'hover' );
+				}
+				if( $(this).hasClass('muti-li') ){
+					$(this).children('a').css({
+					"z-index" : "60"
+					}).addClass('hover');
+					$(this).children('.dropdown').show();
+					}
+				if( $(this).hasClass('last') ){
+					$(this).children('.sidenav').slideDown();
+				}
+			},function(){
+				$( this ).removeClass( 'hover' ).children( 'a' ).removeClass( 'hover' );
+				if( $(this).hasClass('muti-li') ){
+					$(this).children('.dropdown').hide();
+					$(this).children('a').css({
+					"z-index" : "40"
+					}).removeClass('hover');
+				}
+				if( $(this).hasClass('last') ){
+					$(this).children('.sidenav').hide();
+				}
+
 			});
 		});
-		$('.last').hover(function() {
-			$(this).children('.sidenav').slideDown();
-		}, function() {
-			$(this).children('.sidenav').hide();
-		});
-		
+		//左导航同content高度	
 		$(window).bind('scroll', syncHeight)
 		
 		//top menu 选择当前页面
@@ -60,12 +72,13 @@
 		} else {
 			var selected = $('.bread').text().substring(18);
 		}
-		if($('.homebread').length != 0) {
-			$('.nav-new li a').eq(0).addClass('current');
+		if($('.bread').length == 0) {
+			$('.nav-new li a').eq(0).addClass('current')
+			$( '.nav-new li' ).eq(0).addClass('current');
 		}
 		$('.nav-new li a').each(function() {
 			if($(this).attr('title') == selected) {
-				$(this).addClass('current');
+				$(this).addClass('current').parent().addClass('current');
 			}
 		});
 		

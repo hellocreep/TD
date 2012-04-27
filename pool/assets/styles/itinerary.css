@@ -102,7 +102,7 @@
     position: absolute;
     right: 28px;
     text-align: center;
-    width: 70px;
+    width: 73px;
 }
 .view-gallery:hover {
 	color: #8A2321;
@@ -124,7 +124,7 @@
 .trip-for ul li {
 	cursor: pointer;
 	float: left;
-	width: 110px;
+	width: 112px;
 	margin-left: 2px;
 	text-align: center;
 	border: 1px solid #fafafa;

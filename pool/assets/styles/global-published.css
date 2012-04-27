@@ -458,275 +458,6 @@ body .right {
 }
 /*let's call you 弹出框结束----------------------------*/
 
-/*HEADER MENU*/
-.menu {
-	font: 14px Arial, Helvetica, sans-serif;
-	height: 35px;
-	list-style-type: none;
-	position: relative;
-	width: 1100px;
-	z-index: 210;
-	float: left;
-	margin-top: 24px;
-}
-.menu > li {
-	background: #D2D2D2;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#D2D2D2), to(#FFFFFF));
-	background: -webkit-linear-gradient(#D2D2D2, #FFFFFF);
-	background: -moz-linear-gradient(#D2D2D2, #FFFFFF);
-	background: -ms-linear-gradient(#D2D2D2, #FFFFFF);
-	background: -o-linear-gradient(#D2D2D2, #FFFFFF);
-	background: linear-gradient(#D2D2D2, #FFFFFF);
-	/*    -pie-background: linear-gradient(#D2D2D2, #FFFFFF);
-	 */
-	float: left;
-	line-height: 34px;
-	border-top: 1px solid #7d7d7d;
-	border-left: 1px solid #7d7d7d;
-	border-right: 1px solid #7d7d7d;
-	margin-right: 5px;
-	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	behavior: url(PIE.htc);
-}
-.nav-slide {
-	background: url(/imagesnew/menu/ico_arrows2.png) no-repeat scroll 99% 55%;
-}
-.menu > li > a {
-	color: #92240d;
-	display: block;
-	padding: 0 9px 0 7px;
-	text-decoration: none;
-}
-.menu > li > a:hover {
-	background-color: #92240d;
-	color: #ffffff;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
-	behavior: url(PIE.htc);
-}
-.menu > li > a.selected {
-	background-color: #92240d;
-	color: #ffffff;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
-	behavior: url(PIE.htc);
-}
-.nav-slide:hover {
-	background: #92240d url(/imagesnew/menu/ico_arrows.png) no-repeat scroll 99% 55%;
-}
-#nav-last {
-	background: #92240d;
-	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	behavior: url(PIE.htc);
-}
-#nav-last li {
-	float: left;
-	margin: 5px 0 0;
-}
-#nav-last li a {
-	display: block;
-	color: #ffffff;
-	background: #505050;
-	font-size: 10px;
-	margin: 0 2px 0;
-	height: 16px;
-	line-height: 16px;
-	padding: 7px 3px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	behavior: url(PIE.htc);
-}
-#nav-last li a:hover {
-	text-decoration: none;
-	background: #333;
-}
-.slide-menu {
-	display: none;
-	background: none repeat scroll 0 0 #FAFAFA;
-	border: 2px solid #CCCCCC;
-	border-top: none;
-	color: #666666;
-	font: 13px Arial, Helvetica, sans-serif;
-	padding: 8px 10px 3px;
-	position: absolute;
-	top: 36px;
-	z-index: 100;
-}
-.slide-menu:after {
-	content: '';
-	display: block;
-	visibility: hidden;
-	height: 0;
-	clear: both;
-}
-.slide-menu ul {
-	float: left;
-}
-.slide-menu ul li {
-	border-top: 1px dashed #CCCCCC;
-	height: 60px;
-	line-height: 60px;
-}
-.slide-menu ul li a {
-	color: #2368C7;
-	display: block;
-	text-decoration: none;
-	width: 200px;
-}
-.slide-menu ul li img {
-	border: 2px solid #FFFFFF;
-	float: left;
-	margin: 3px 8px 3px 5px;
-}
-.slide-menu ul li a:hover {
-	background: none repeat scroll 0 0 #990100;
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.slide-travel-guide {
-	width: 200px;
-}
-#travelStyle {
-	-moz-border-bottom-colors: none;
-	-moz-border-image: none;
-	-moz-border-left-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-top-colors: none;
-	background: none repeat scroll 0 0 #FAFAFA;
-	border-color: -moz-use-text-color #CCCCCC #CCCCCC;
-	border-right: 2px solid #CCCCCC;
-	border-style: none solid solid;
-	border-width: medium 2px 2px;
-	color: #666666;
-	float: left;
-	font: 13px Arial, Helvetica, sans-serif;
-	left: 336px;
-	padding: 8px 10px 3px;
-	position: absolute;
-	top: 36px;
-	width: 425px;
-	z-index: 100;
-}
-#travelStyle h2 {
-	color: #990100;
-	font-size: 15px;
-	font-weight: normal;
-}
-#travelStyle h2, div#travelStyle p, div#travelStyle ul {
-	border-right: 1px solid #CCCCCC;
-	float: left;
-	list-style-type: none;
-	width: 207px;
-	margin: 0;
-}
-#travelStyle h2 + h2, div#travelStyle p + p, div#travelStyle ul + ul {
-	border: medium none;
-	margin-left: 10px;
-}
-#travelStyle p {
-	padding: 8px 0 5px;
-}
-#travelStyle ul li {
-	border-top: 1px dashed #CCCCCC;
-	float: left;
-	height: 60px;
-	line-height: 60px;
-	width: 200px;
-}
-#travelStyle ul li a {
-	color: #2368C7;
-	display: block;
-	height: 60px;
-	text-decoration: none;
-	width: 200px;
-}
-#travelStyle ul li img {
-	border: 2px solid #FFFFFF;
-	float: left;
-	margin: 3px 8px 3px 5px;
-}
-#travelStyle ul li a:hover {
-	background: none repeat scroll 0 0 #990100;
-	color: #FFFFFF;
-}
-#tibetTours {
-	background: none repeat scroll 0 0 #FAFAFA;
-	border-color: -moz-use-text-color #CCCCCC #CCCCCC;
-	border-right: 2px solid #CCCCCC;
-	border-style: none solid solid;
-	border-width: medium 2px 2px;
-	color: #666666;
-	float: left;
-	font: 13px Arial, Helvetica, sans-serif;
-	left: 0;
-	padding: 8px 10px 3px;
-	position: absolute;
-	top: 36px;
-	width: 880px;
-	z-index: 100;
-}
-#tibetTours * {
-	margin: 0;
-	padding: 0;
-}
-#tibetTours h2 {
-	color: #990100;
-	font-size: 15px;
-	font-weight: normal;
-}
-#tibetTours h2, div#tibetTours p, div#tibetTours ul {
-	border-right: 1px solid #CCCCCC;
-	float: left;
-	list-style-type: none;
-	margin-left: 8px;
-	width: 213px;
-}
-#tibetTours h2.first, div#tibetTours p.first, div#tibetTours ul.first {
-	margin-left: 0;
-}
-#tibetTours h2 + h2 + h2 + h2, div#tibetTours p + p + p + p, div#tibetTours ul + ul + ul + ul {
-	border: medium none;
-}
-#tibetTours p {
-	padding: 8px 0 5px;
-}
-#tibetTours ul li {
-	border-top: 1px dashed #CCCCCC;
-	float: left;
-	height: 60px;
-	line-height: 60px;
-}
-#tibetTours ul.first li.last img {
-	border: medium none;
-	margin: 9px 0 9px 5px;
-}
-#tibetTours ul.first li.last a:hover {
-	background: none repeat scroll 0 0 transparent;
-	color: #2368C7;
-}
-#tibetTours ul li a {
-	color: #2368C7;
-	display: block;
-	height: 60px;
-	text-decoration: none;
-	width: 213px;
-}
-#tibetTours ul li img {
-	border: 2px solid #FFFFFF;
-	float: left;
-	margin: 3px 8px 3px 5px;
-}
-#tibetTours ul li a:hover {
-	background: none repeat scroll 0 0 #990100;
-	color: #FFFFFF;
-}
 /* FOOTER */
 
 .footer {
@@ -894,8 +625,7 @@ body .right {
 	height: 33px;
 	line-height: 33px;
 	width: 253px;
-	*
-	width: 233px;
+	*width: 233px;
 }
 ul.subnav a.active {
 	color: #7E0122;
@@ -1356,17 +1086,19 @@ a.reco-click:hover {
 
 /*------ 新版导航样式------*/
 #nav-div{
-	width:980px;
-	height:34px;
+	width:1025px;
+	height:33px;
 	float: left;
+	margin-left: 8px;
 }
 .nav-new{
-	width:980px;
-	height:35px;
+	width:1025px;
+	height:33px;
 }
 .nav-new li{
-	display: block;
+	background: url("/imagesnew/sprite01.png") no-repeat scroll right -368px transparent;
 	float: left;
+	margin-right: 18px;
 	position: relative;
 }
 .nav-new li a{
@@ -1376,28 +1108,26 @@ a.reco-click:hover {
 	height:33px;
 	padding: 0px 8px;
 	float:left;
-	border:1px solid #c4c4c4;
-	border-bottom:none;
-	margin:0 10px 0 0;
-	background:url("/imagesnew/nav-bg-hover2.png") repeat-x;
+	background: url("/imagesnew/sprite01.png") no-repeat scroll 0 -368px transparent;
 	line-height:33px;
 	text-decoration:none;
 	font-size:15px;
-	border-radius:5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    behavior: url(PIE.htc);
+	margin-left: -8px;
 }
-.nav-new li a:hover{
-	background:url("/imagesnew/nav-bg.png") repeat-x;
+.nav-new li a.hover{
+	background:url('/imagesnew/sprite01.png') no-repeat 0 -412px;
 }
 .nav-new li a.current{
-	background:url("/imagesnew/nav-current.png") repeat-x;
+	background:url('/imagesnew/sprite01.png') no-repeat 0 -325px;
 	color: #ffffff;
-	border:1px solid #a42a0f;
 	border-bottom:none;
 }
-
+.nav-new li.current {
+	background: url('/imagesnew/sprite01.png') no-repeat right -325px;
+}
+.nav-new li.hover {
+	background: url('/imagesnew/sprite01.png') no-repeat right -412px;
+}
 .nav-new li a.home span{
 	width:16px;
 	height:33px;
@@ -1417,12 +1147,10 @@ a.reco-click:hover {
 	background:none;
 	background:none;	
 	padding:0 5px 0 0;
-	float: right;
+	float: left;
 	border:none;
-	border-radius:5px 5px 0 0 ;
-	-moz-border-radius: 5px 5px 0 0 ;
-    -webkit-border-radius: 5px 5px 0 0 ;
-    behavior: url(PIE.htc);
+	margin-left: 40px;
+	margin-right: -40px;
 }
 
 .nav-new .last a{
@@ -1469,11 +1197,14 @@ a.reco-click:hover {
 .nav-new .muti-li a{
 	z-index:45;
 }
+.nav-new .muti-li a.hover {
+	background:url('/imagesnew/sprite01.png') no-repeat 0 -412px;	
+}
 
 .dropdown{
 	display: none;
 	position: absolute;
-	left:0;
+	left:-8px;
 	top:33px;
 	border:1px solid #c4c4c4;
 	z-index:50;
@@ -1524,14 +1255,9 @@ a.reco-click:hover {
 	line-height: 60px;
 	background:#ffffff;
 	color: #2368C7;
-	
 	text-decoration: none;
 	padding:0;
 	font-size:12px;
-	border-radius:0;
-	-moz-border-radius: 0;
-    -webkit-border-radius: 0;
-	behavior: url(PIE.htc);
 }
 .dropdown dl dd a:hover{
 	background:#990100;
@@ -1556,7 +1282,6 @@ a.reco-click:hover {
     border-radius:0 0 3px 3px;
     -moz-border-radius: 0 0 3px 3px;
     -webkit-border-radius: 0 0 3px 3px;
-	behavior: url(PIE.htc);
 }
 #nav-div .sidenav li{
     background:none;

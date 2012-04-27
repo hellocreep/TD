@@ -30,7 +30,9 @@
 	-webkit-border-radius: 4px 0 0 4px;
 	-ms-border-radius: 4px 0 0 4px;
 }
-
+.tour-list-wrap.last {
+	height: 475px;
+}
 .tour-list-wrap h2 {
 	color: #ffffff;
 	position: relative;
