@@ -51,6 +51,13 @@
 .tour-list-wrap .more{
 	text-align:right;
 	display:block;
+	margin:0 0 5px 550px;
+	width:100px;
+	color:#ffffff;
+	text-decoration:none;
+}
+.tour-list-wrap .more:hover{
+	color:#888888;
 }
 .tour-tag {
 	display: block;
