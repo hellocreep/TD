@@ -117,9 +117,64 @@
 
 		})
 	}
+
+	//翻页 opts{list:翻页jquery封装集，num:单页显示数量}
+    	//todo: 上一页和下一页,返回window高度未定
+	$.fn.autoPager = function( opts ){
+	        var pageCount = (opts['list'].length / opts['num']).toFixed(0);
+	        if( pageCount<2 ){
+	            return;
+	        }else{
+	            
+	            for( var i = 0; i<pageCount; i++){
+	                var currentPage = i + 1;
+	                var beginPage = i*opts['num'];
+	                $( '#pager' ).append("<span class='btn-page' name="+beginPage+">"+currentPage+"</span>");
+	            };
+	            
+	            var pager = function( begin,end ){
+	                opts['list'].hide();
+	                opts['list'].slice( begin, end ).show();
+	            }
+	            
+	            $( '.btn-page' ).each(function(){
+	                $( this ).click( function(){
+	                    $( this ).addClass( 'selected' ).siblings().removeClass( 'selected' );
+	                    if( opts['scroll'] > -1 ){
+	                    	$( window ).scrollTop( opts['scroll'] );
+	                    }
+	                    var begin = $( this ).attr( 'name' )*1;
+	                    var end = begin + opts['num']*1;
+	                    pager(begin,end);
+	                });
+	            });
+	            
+	            $( '#pager .page-pre' ).click(function(){
+	                $( '#pager .selected' ).prev().click();
+	            });
+	            $( '#pager .page-next' ).click(function(){
+	                $( '#pager .selected' ).next().click();
+	            });
+	            
+	            $( '.btn-page:first' ).click();
+	            $( window ).scrollTop( 0 );
+	        }
+	    }
+
+
 	$(function() {
 
 		$("div.slideshow").slideshow();
+
+		//review 翻页
+		var rev_list = $('.rev-wrap');
+		var _num = 5;
+		pager_opts = {
+		    list: rev_list,
+		    num: _num,
+		    scroll: 0
+		}
+		$( '#pager' ).autoPager( pager_opts );
 
 		/*Tips from TC翻页*/
 		var listNum = $('.accordion li').length;
