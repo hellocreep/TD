@@ -22,20 +22,23 @@
     color:#ffffff;
     border-right:1px solid #ddd;
     border-left:1px solid #ddd;
-    padding:5px 8px;
+    padding: 2px 3px;
+    width: 56px;
+    vertical-align: middle;
 }
 .per-tab td{
     border:1px solid #ccc;
     padding:5px 6px;
     text-align:center;
+    vertical-align: middle;
 }
 td.name{
     text-align:left;
-    text-indent:13px;
-    background:url("/imagesnew/male.png") no-repeat 2px center;
+    padding-left: 15px;
+    background:url("/imagesnew/male.png") no-repeat 0px center;
 }
 td.female{
-    background:url("/imagesnew/female.png") no-repeat 2px center;
+    background:url("/imagesnew/female.png") no-repeat 0px center;
 }
 td.nation{
     text-align:left;
@@ -46,8 +49,9 @@ td.join a{
     display:block;
     border-radius:6px;
     background:#912711;
-    padding:0px 5px;
     color:#ffffff;
+    display: block;
+    margin: 3px 0 0;
     text-decoration:none;
 }
 td.join a:hover{
@@ -85,7 +89,7 @@ $(document).ready(function(){
                     <th>Tour Itinerary</th>
                     <th>Status</th>
                     <th>Join in</th>
-                    <th>Details</th>
+                    <th>Tour Type</th>
                 </tr>
             </thead>
             <tbody>
@@ -98,8 +102,12 @@ $(document).ready(function(){
                     <td>English</td>
                     <td><a href="#">4 days Lhasa Tour</a></td>
                     <td>On</td>
-                    <td class="join"><a href="#">Join now</a></td>
-                    <td class="detail"><a href="#">Details</a></td>
+                    <td class="join"><a href="#">Join now</a>
+                            <a href="#">Details</a>
+                    </td>
+                    <td class="detail">
+                        
+                    </td>
                 </tr>           
                 <tr>
                     <td>2</td>
