@@ -856,7 +856,7 @@ ul.subnav a.active {
 	text-align: left;
 	width: 60%;
 	font-size: 12px;
-	margin-left: 40px;
+	margin-left: 20px;
 }
 .btn-enquiry {
 	display: block;
@@ -927,7 +927,7 @@ ul.subnav a.active {
 	text-decoration: none;
 	float: left;
 	padding: 10px;
-	margin: 0px 30px;
+	margin: 10px 0;
 }
 .author-list li a:hover {
 	background-color: #f0f0f0;
@@ -1171,9 +1171,6 @@ a.reco-click:hover {
 .nav-new .last a.guide,.nav-new .last a.guide:hover {
 	background:url("/imagesnew/nav-guide.png") no-repeat left center;
 
-}
-.nav-new li.last a.current{
-	color:#7E0122;
 }
 
 .nav-new .last a.tips,.nav-new .last a.tips:hover{

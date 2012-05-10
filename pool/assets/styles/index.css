@@ -81,7 +81,29 @@
 .tc h3{
 	font: italic 18px /20px times New Roman;
 }
+.tc-wrap span.back, .tc-wrap span.front{
+	width:20px;
+	height:20px;
+	border-radius:10px;
+	background:red;
+	display:block;
+	position:absolute;
+}
+.tc-wrap{
+	position:relative;
+}
+
+.tc-wrap span.back{
+	left:-9px;
+	top:37px;
+}
+.tc-wrap span.front{
+	right:-6px;
+	top:37px;
+}
+
 .tc-list {
+	float:left;
 	background: url("/imagesnew/index/tc-line.png") no-repeat top center;
 	padding: 20px 0 0 0;
 }

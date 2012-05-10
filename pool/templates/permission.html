@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+
+{% block title %}Itinerary{% endblock %}
+
+{% block style %}
+<link href="/assets/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+.content-head h3{
+    margin:20px 0 0 20px;
+}
+.per-tab{
+    margin:0 0 0 20px;
+}
+.per-tab tr{
+    background:#ffffff;
+}
+.per-tab tr.odd{
+    background:#F5F5F5;
+}
+.per-tab th{
+    background:#912711;
+    color:#ffffff;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    padding:5px 8px;
+}
+.per-tab td{
+    border:1px solid #ccc;
+    padding:5px 6px;
+    text-align:center;
+}
+td.name{
+    text-align:left;
+    text-indent:13px;
+    background:url("/imagesnew/male.png") no-repeat 2px center;
+}
+td.female{
+    background:url("/imagesnew/female.png") no-repeat 2px center;
+}
+td.nation{
+    text-align:left;
+    text-indent:21px;
+    background:url("/imagesnew/nation/Bahamas.png") no-repeat 6px center;
+}
+td.join a{
+    display:block;
+    border-radius:6px;
+    background:#912711;
+    padding:0px 5px;
+    color:#ffffff;
+    text-decoration:none;
+}
+td.join a:hover{
+    background:#dab056;
+}
+</style>
+{% endblock %}
+
+{% block script %} <script src="/assets/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+<script src="/assets/scripts/permission.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+
+        $("tr:odd").addClass("odd");  // Zebra action
+        $("tr:last").addClass("final-row");  // For extra padding
+
+    })
+</script>
+{% endblock %}
+
+{% block body%}
+{% include 'header.html' %} <div class="bread"></div>
+<div class="allpage-wrap">
+    <div class="content-head">
+        <h3>June, 2012</h3>
+        <table class="per-tab">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Nationality</th>
+                    <th>Lhasa Arrival Date</th>
+                    <th>Num of Adults/Children</th>
+                    <th>Tour Guide</th>
+                    <th>Tour Itinerary</th>
+                    <th>Status</th>
+                    <th>Join in</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="name">Louis BingBing</td>
+                    <td class="nation"> USA</td>
+                    <td>2012/7/23</td>
+                    <td>one/two </td>
+                    <td>English</td>
+                    <td><a href="#">4 days Lhasa Tour</a></td>
+                    <td>On</td>
+                    <td class="join"><a href="#">Join now</a></td>
+                    <td class="detail"><a href="#">Details</a></td>
+                </tr>           
+                <tr>
+                    <td>2</td>
+                    <td class="name female">Louis BingBing</td>
+                    <td class="nation"> USA</td>
+                    <td>2012/7/23</td>
+                    <td>one/two </td>
+                    <td>English</td>
+                    <td><a href="#">4 days Lhasa Tour</a></td>
+                    <td>On</td>
+                    <td class="join"><a href="#">Join now</a></td>
+                    <td class="detail"><a href="#">Details</a></td>
+                </tr>     
+                <tr>
+                    <td>3</td>
+                    <td class="name female">Louis BingBing</td>
+                    <td class="nation"> USA</td>
+                    <td>2012/7/23</td>
+                    <td>one/two </td>
+                    <td>English</td>
+                    <td><a href="#">4 days Lhasa Tour</a></td>
+                    <td>On</td>
+                    <td class="join"><a href="#">Join now</a></td>
+                    <td class="detail"><a href="#">Details</a></td>
+                </tr>         
+            </tbody>
+        </table>
+        <h3>June, 2012</h3>
+        <table class="per-tab">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Nationality</th>
+                    <th>Lhasa Arrival Date</th>
+                    <th>Num of Adults/Children</th>
+                    <th>Tour Guide</th>
+                    <th>Tour Itinerary</th>
+                    <th>Status</th>
+                    <th>Join in</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="name">Louis BingBing</td>
+                    <td class="nation"> USA</td>
+                    <td>2012/7/23</td>
+                    <td>one/two </td>
+                    <td>English</td>
+                    <td><a href="#">4 days Lhasa Tour</a></td>
+                    <td>On</td>
+                    <td class="join"><a href="#">Join now</a></td>
+                    <td class="detail"><a href="#">Details</a></td>
+                </tr>           
+                <tr>
+                    <td>2</td>
+                    <td class="name female">Louis BingBing</td>
+                    <td class="nation"> USA</td>
+                    <td>2012/7/23</td>
+                    <td>one/two </td>
+                    <td>English</td>
+                    <td><a href="#">4 days Lhasa Tour</a></td>
+                    <td>On</td>
+                    <td class="join"><a href="#">Join now</a></td>
+                    <td class="detail"><a href="#">Details</a></td>
+                </tr>     
+                <tr>
+                    <td>3</td>
+                    <td class="name female">Louis BingBing</td>
+                    <td class="nation"> USA</td>
+                    <td>2012/7/23</td>
+                    <td>one/two </td>
+                    <td>English</td>
+                    <td><a href="#">4 days Lhasa Tour</a></td>
+                    <td>On</td>
+                    <td class="join"><a href="#">Join now</a></td>
+                    <td class="detail"><a href="#">Details</a></td>
+                </tr>         
+            </tbody>
+        </table>
+    </div>
+
+    <div class="content-left">
+
+    </div>
+
+    <div class="sidebar-right">
+
+    </div>
+
+</div>
+{% include 'footer.html' %}
+{% endblock %}

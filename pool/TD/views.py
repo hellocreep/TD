@@ -103,3 +103,5 @@ def index(request):
 
 def latestnew(request):
     return render_to_response('latestnew.html', {})
+def permission(request):
+    return render_to_response('permission.html', {})

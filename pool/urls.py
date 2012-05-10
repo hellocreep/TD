@@ -58,5 +58,6 @@ urlpatterns += patterns('TD.views',
     (r'^beijing-lhasa/$','beijing_lhasa'),
     (r'^index/$','index'),
     (r'^latestnew/$','latestnew'),
+    (r'^permission/$','permission'),
     (r'^$','sitemap'),
 )
