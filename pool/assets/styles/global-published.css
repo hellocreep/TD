@@ -314,6 +314,12 @@ body .right {
 	color: #C09051;
 	text-decoration: none;
 }
+
+.bread .trip-mate {
+	float: right;
+	margin: 8px;
+}
+
 /*使面包屑导航样式与老版改良版一致。。*/
 
 .wrapper {
@@ -1175,7 +1181,6 @@ a.reco-click:hover {
 .nav-new li.last a.current{
 	color:#7E0122;
 }
-
 .nav-new .last a.tips,.nav-new .last a.tips:hover{
 	background:url("/imagesnew/nav-tips.png") no-repeat left center;
 
