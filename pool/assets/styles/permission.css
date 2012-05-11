@@ -219,13 +219,17 @@ td.join .details:hover {
 .sidebox{
     width:210px;
     float:right;
-    margin:20px 0;
+    margin:30px 0;
 }
 .sidebox h3{
     margin:0 0 5px 0;
 }
+ul.list{
+    padding:0 0 0 15px;
+}
 .list li{
-    padding:2px 0;
+    margin:5px 0;
+    list-style:disc;
 }
 .list li:hover{
     background:#f9f9f9;
