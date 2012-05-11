@@ -1,0 +1,62 @@
+.content-left{
+	padding:20px 10px 20px 20px;
+	width:70%;
+	float:left;
+}
+.content-left p{
+	margin:8px;
+	line-height: 22px;
+}
+.content-left h1{
+	height:30px;
+}
+.tour-name {
+    float: left;
+    width: 450px;
+}
+.tour-price {
+    float: right;
+    font-size: 15px;
+    font-style: normal;
+    margin-right: 55px;
+    position: relative;
+}
+.customer{
+	margin-left:10px;
+	margin-bottom:20px;
+}
+.customer li{
+	padding-left:50px;
+}
+.clance{
+	margin:10px 0;
+}
+.perform{
+	margin-bottom:20px;
+}
+.formtab{
+	margin-left:15%;
+}
+.formtab label{
+	margin-right:10px;
+}
+.formtab input{
+	margin-bottom:10px;
+}
+.formtab .texta{
+	vertical-align:top;
+}
+.talkto {
+    background: url("/imagesnew/btn.png") no-repeat scroll center -320px #D94343;
+    display: block;
+    font-size: 15px;
+    height: 31px;
+    line-height: 31px;
+    margin: 15px 59px;
+    width: 147px;
+}
+.sidebar-right{
+	width:200px;
+	float:right;
+	margin:20px 20px 0 0;
+}
