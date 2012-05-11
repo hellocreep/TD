@@ -4,8 +4,9 @@
 }
 
 .sidebar-right {
-    float: left;
+    float: right;
     width: 240px;
+    margin-right:20px;
 }
 
 .content-head {
@@ -215,3 +216,26 @@ td.join .details:hover {
 .info{
     margin:15px 0 0 20px;
 }
+.sidebox{
+    width:210px;
+    float:right;
+    margin:20px 0;
+}
+.sidebox h3{
+    margin:0 0 5px 0;
+}
+.list li{
+    padding:2px 0;
+}
+.list li:hover{
+    background:#f9f9f9;
+
+}
+.list li a{
+    display:block;
+    text-decoration:none;
+}
+.list li a:hover{
+    color:#7E0122;
+}
+
