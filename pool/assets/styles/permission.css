@@ -151,8 +151,12 @@ td.join .details:hover {
     width: 671px;
 }
 
-.formwrap h2, .formwrap p {
+.formwrap h2 {
     margin: 0 0 0 20px;
+}
+
+.ml20 {
+    margin-left: 20px;
 }
 
 .enquireform form fieldset {
@@ -198,7 +202,7 @@ td.join .details:hover {
     float: left;
 }
 
-.formwrap .permission-btn {
+.permission-btn {
     float: left;
     margin-bottom: 50px;
     margin-left: 250px;
