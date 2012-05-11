@@ -39,8 +39,8 @@
     color:#ffffff;
     border-right:1px solid #ddd;
     border-left:1px solid #ddd;
-    padding: 2px 7px;
-    width: 56px;
+    padding: 2px 17px;
+    width: 65px;
     vertical-align: middle;
 }
 
@@ -124,8 +124,9 @@ td.join a{
     border-radius:6px;
     background:#912711;
     color:#ffffff;
-    margin: 3px 0 0;
+    margin: 3px auto 0;
     text-decoration:none;
+    width: 60px;
 }
 td.join a:hover{
     background:#dab056;
