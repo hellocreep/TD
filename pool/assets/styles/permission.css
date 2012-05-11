@@ -1,0 +1,140 @@
+.content-left {
+    float: left;
+    width: 710px;
+}
+
+.sidebar-right {
+    float: left;
+    width: 240px;
+}
+
+.content-head {
+    padding: 0 23px;
+}
+
+.content-head ul li {
+    list-style: disc;
+}
+
+.content-head h1{
+     margin: 10px 0 0 0;
+}
+
+.content-left h3 {
+    margin: 20px 0 0 20px;
+}
+
+.per-tab{
+     margin: 6px 0 20px 20px;
+}
+.per-tab tr{
+    background:#ffffff;
+}
+.per-tab tr.odd{
+    background:#F5F5F5;
+}
+.per-tab th{
+    background:#912711;
+    color:#ffffff;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    padding: 2px 5px;
+    width: 56px;
+    vertical-align: middle;
+}
+
+.per-tab th.w120 {
+    width: 120px;
+}
+
+.per-tab th.w40 {
+    width: 40px;
+}
+
+.per-tab td{
+    border:1px solid #ccc;
+    padding:5px 2px;
+    text-align:center;
+    vertical-align: middle;
+}
+td.name{
+    text-align:left;
+    padding-left: 15px;
+    background:url("/imagesnew/male.png") no-repeat 0px center;
+}
+td.female{
+    background:url("/imagesnew/female.png") no-repeat 0px center;
+}
+td.nation{
+    text-align:left;
+    text-indent:21px;
+}
+
+td.nation.australia {
+     background:url("/imagesnew/nation/australia.png") no-repeat 6px center;
+}
+
+td.nation.cambodia {
+     background:url("/imagesnew/nation/Cambodia.png") no-repeat 6px center;
+}
+
+td.nation.canada {
+     background:url("/imagesnew/nation/canada.png") no-repeat 6px center;
+}
+
+td.nation.columbia {
+     background:url("/imagesnew/nation/Bahamas.png") no-repeat 6px center;
+}
+
+td.nation.cambodia {
+     background:url("/imagesnew/nation/Columbia.png") no-repeat 6px center;
+}
+
+td.nation.england {
+     background:url("/imagesnew/nation/england.png") no-repeat 6px center;
+}
+
+td.nation.germany {
+     background:url("/imagesnew/nation/germany.png") no-repeat 6px center;
+}
+
+td.nation.indonesia {
+     background:url("/imagesnew/nation/Indonesia.png") no-repeat 6px center;
+}
+
+td.nation.italy {
+     background:url("/imagesnew/nation/italy.png") no-repeat 6px center;
+}
+
+td.nation.malaysia {
+     background:url("/imagesnew/nation/Malaysia.png") no-repeat 6px center;
+}
+
+td.nation.newzealand {
+     background:url("/imagesnew/nation/new-zealand.png") no-repeat 6px center;
+}
+
+td.nation.usa {
+     background:url("/imagesnew/nation/usa.png") no-repeat 6px center;
+}
+
+td.join a{
+    display:block;
+    border-radius:6px;
+    background:#912711;
+    color:#ffffff;
+    margin: 3px 0 0;
+    text-decoration:none;
+}
+td.join a:hover{
+    background:#dab056;
+}
+
+td.join .details {
+    background: none;
+    color: #2368C7;
+}
+td.join .details:hover {
+    background: none;
+    text-decoration: underline;
+}
