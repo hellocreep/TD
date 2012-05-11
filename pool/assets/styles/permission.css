@@ -13,7 +13,7 @@
 }
 
 .content-head ul li {
-    list-style: disc;
+     list-style: disc inside none;
 }
 
 .content-head h1{
@@ -26,6 +26,7 @@
 
 .per-tab{
      margin: 6px 0 20px 20px;
+     border-collapse: collapse;
 }
 .per-tab tr{
     background:#ffffff;
@@ -38,8 +39,8 @@
     color:#ffffff;
     border-right:1px solid #ddd;
     border-left:1px solid #ddd;
-    padding: 2px 5px;
-    width: 56px;
+    padding: 2px 17px;
+    width: 65px;
     vertical-align: middle;
 }
 
@@ -123,8 +124,9 @@ td.join a{
     border-radius:6px;
     background:#912711;
     color:#ffffff;
-    margin: 3px 0 0;
+    margin: 3px auto 0;
     text-decoration:none;
+    width: 60px;
 }
 td.join a:hover{
     background:#dab056;
@@ -137,4 +139,68 @@ td.join .details {
 td.join .details:hover {
     background: none;
     text-decoration: underline;
+}
+
+/*form*/
+
+.enquireform {
+    border: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    width: 671px;
+}
+
+.formwrap h2, .formwrap p {
+    margin: 0 0 0 20px;
+}
+
+.enquireform form fieldset {
+    padding: 15px 5px 0 45px;
+}
+
+.enquireform form fieldset legend {
+    border-bottom: 1px dashed #DDDDDD;
+    color: #7E0122;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 500px;
+}
+
+.enquireform form label {
+    clear: left;
+    display: block;
+    float: left;
+    line-height: 25px;
+    margin: 5px 0;
+    text-align: right;
+    width: 200px;
+}
+
+.enquireform form select {
+    height: 25px;
+    margin: 10px;
+}
+
+.enquireform form input {
+    float: left;
+    height: 20px;
+     margin: 5px 0 10px 10px;
+}
+
+.enquireform form textarea {
+    margin: 10px 0 0 10px;
+    width: 200px;
+    float: left;
+}
+
+.select-fleft {
+    float: left;
+}
+
+.formwrap .permission-btn {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    margin-top: 25px;
 }

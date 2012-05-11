@@ -61,7 +61,7 @@
 .banner p {
 	position: absolute;
 	width: 650px;
-	height: 67px;@
+	height: 67px;
 	padding: 15px 0 0 10px;
 	margin: 0;
 	left: 2px;
@@ -81,29 +81,7 @@
 .tc h3{
 	font: italic 18px /20px times New Roman;
 }
-.tc-wrap span.back, .tc-wrap span.front{
-	width:20px;
-	height:20px;
-	border-radius:10px;
-	background:red;
-	display:block;
-	position:absolute;
-}
-.tc-wrap{
-	position:relative;
-}
-
-.tc-wrap span.back{
-	left:-9px;
-	top:37px;
-}
-.tc-wrap span.front{
-	right:-6px;
-	top:37px;
-}
-
 .tc-list {
-	float:left;
 	background: url("/imagesnew/index/tc-line.png") no-repeat top center;
 	padding: 20px 0 0 0;
 }
@@ -169,9 +147,9 @@
 	margin: 0 0 10px 0;
 }
 .board{
-	height:228px;
-	margin:0 0 39px 0;
-	padding:15px;
+	height: 237px;
+	margin: 0 0 39px 0;
+	padding: 15px;
 	background:url("/imagesnew/index/board.png") no-repeat center bottom;
 	box-shadow: 0 0 2px #666666;
 }
@@ -190,14 +168,14 @@
 	color:#434343;
 }
 .board p{
-	margin:0;
+	 font-size: 12px;
+	line-height: 13px;
+	margin: 5px 0 10px;
 }
 .board .space{
-	text-align:center;
 	font-size:18px;
 	font-weight:bold;
 	font-style:italic;
-	margin:15px 0;
 }
 .board .space a{
 	font-size:14px;
@@ -206,6 +184,17 @@
 .board .space a:hover{
 	color:#7E0122;
 }
+
+.board ul {
+	margin-bottom: 10px;
+}
+
+.board ul li {
+	line-height: 13px;
+	list-style: disc outside none;
+	margin-left: 25px;
+}
+
 .board .price{
 	font-weight:bold;
 	color:red;
@@ -563,7 +552,8 @@ a {
 }
 .tour-info2 .tour-name {
 	font-weight: bold;
-	color: #4694EC;font-size; 14px;
+	color: #4694EC;
+	font-size; 14px;
 }
 .tour-info2 p {
 	font-size: 13px;
