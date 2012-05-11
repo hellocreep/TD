@@ -59,5 +59,6 @@ urlpatterns += patterns('TD.views',
     (r'^index/$','index'),
     (r'^latestnew/$','latestnew'),
     (r'^permission/$','permission'),
+    (r'^permissionForm/$','permissionForm'),
     (r'^$','sitemap'),
 )
