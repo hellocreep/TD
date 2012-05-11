@@ -105,3 +105,5 @@ def latestnew(request):
     return render_to_response('latestnew.html', {})
 def permission(request):
     return render_to_response('permission.html', {})
+def permissionForm(request):
+    return render_to_response('permissionForm.html', {})

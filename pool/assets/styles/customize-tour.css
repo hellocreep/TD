@@ -77,7 +77,9 @@
     -webkit-border-radius: 3px;
     -ms-border-radius: 3px;
 }
-
+.container .first-block {
+	margin-left:33px;
+}
 .container h2 .banner-pattern {
 	background: url("/imagesnew/banner-pattern.png") no-repeat scroll 0 3px transparent;
     display: block;
