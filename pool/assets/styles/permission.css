@@ -1,6 +1,5 @@
 .content-left {
-    float: left;
-    width: 710px;
+    width: 970px;
 }
 
 .sidebar-right {
@@ -46,7 +45,7 @@
 }
 
 .per-tab th.w120 {
-    width: 120px;
+    width: 290px;
 }
 
 .per-tab th.w40 {
@@ -68,8 +67,7 @@ td.female{
     background:url("/imagesnew/female.png") no-repeat 0px center;
 }
 td.nation{
-    text-align:left;
-    text-indent:21px;
+    text-indent: 10px;
 }
 
 td.nation.australia {
@@ -149,11 +147,12 @@ td.join .details:hover {
     margin-bottom: 20px;
     margin-left: 20px;
     padding: 5px;
-    width: 671px;
+    width: 920px;
 }
 
 .formwrap h2 {
     margin: 0 0 0 20px;
+    text-align: center;
 }
 
 .ml20 {
@@ -161,7 +160,7 @@ td.join .details:hover {
 }
 
 .enquireform form fieldset {
-    padding: 15px 5px 0 45px;
+    padding: 15px 5px 0 170px;
 }
 
 .enquireform form fieldset legend {
@@ -185,6 +184,7 @@ td.join .details:hover {
 .enquireform form select {
     height: 25px;
     margin: 10px;
+    float: left;
 }
 
 .enquireform form input {
